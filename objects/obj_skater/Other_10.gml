@@ -19,7 +19,7 @@ if((input[LEFT] and !input[RIGHT])) {
 		xSpeed += 0.5;
 	} 
 // Otherwise not moving at all
-} else if(!onSlopeLeft and !onSlopeRight) {
+} else if(!onSlopeLeft and !onSlopeRight and jump == 0) {
 	// If previously moving right, accelerate left until zero is hit or crossed
 	if(myDirection == 1) {
 		xSpeed -= 0.7;
@@ -35,7 +35,7 @@ if((input[LEFT] and !input[RIGHT])) {
 	}
 }
 
-/*if(onSlopeLeft) {
+if(onSlopeLeft) {
 	myDirection = -1;
 	xSpeed -= 0.45;
 	
@@ -43,7 +43,7 @@ if((input[LEFT] and !input[RIGHT])) {
 	myDirection = 1;
 	xSpeed += 0.45;
 	
-}*/
+}
 
 var maxSpeed = speedThisFrame;
 if(onSlopeLeft or onSlopeRight) {
@@ -73,6 +73,8 @@ if(input[JUMP]) {
 		ySpeed = jumpSpeed;
 		// Set flag so we know the skater is jumping
 		jump = 1;
+		onSlopeLeft = false;
+		onSlopeRight = false;
 	}
 // If skater is jumping, hasn't reached apogee, and player releases jump key
 } else if(jump == 1 && ySpeed < 0){
@@ -80,5 +82,3 @@ if(input[JUMP]) {
 	jump = 2;
 	ySpeed = 0;
 }
-
-show_debug_message("ySpeed: " + string(ySpeed));

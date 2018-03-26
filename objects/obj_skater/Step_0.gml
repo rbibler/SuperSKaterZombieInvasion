@@ -49,7 +49,7 @@ if(colObject != noone) {
 
 
 // Handle slope collisions
-var slopeLeft = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + ySpeed, obj_slopeBlockLeft, true, false);
+var slopeLeft = place_meeting(x, y + ySpeed, obj_slopeBlockLeft);
 if(slopeLeft) {
 	ySpeed = 0;
 	jump = 0;
@@ -72,16 +72,19 @@ if(slopeLeft) {
 	//onSlopeLeft = false;
 } 
 
-var slopeRight = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + ySpeed, obj_slopeBlockRight, true, false);
-if(slopeRight) {
-	ySpeed = 0;
-	jump = 0;
-	var xDepth = abs(x - slopeRight.x);
-	y = slopeRight.y + slopeRight.yValues[xDepth] - 1;
-	//onSlopeRight = true;
-	//onSlopeLeft = false;
-} else {
-	//onSlopeRight = false;
+if(ySpeed >= 0) {
+	var slopeRight = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + ySpeed, obj_slopeBlockRight, true, false);
+	if(slopeRight) {
+		while(collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, obj_slopeBlockRight, true, false)) {
+			y--;
+		}
+		ySpeed = 0;
+		jump = 0;
+		onSlopeRight = true;
+		onSlopeLeft = false;
+	} else {
+		onSlopeRight = false;
+	}
 }
 
 
