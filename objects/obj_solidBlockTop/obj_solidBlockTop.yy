@@ -1,19 +1,10 @@
 {
-    "id": "c0c843fb-4e77-4810-a475-f5ff8197839a",
+    "id": "2bb73a81-f37d-4a8d-8de2-16f876510c3b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_slopeBlockLeft",
+    "name": "obj_solidBlockTop",
     "eventList": [
-        {
-            "id": "822def48-d7f7-425c-8884-ac75a9414713",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "c0c843fb-4e77-4810-a475-f5ff8197839a"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "0f7ce5bb-1b67-4bf7-9119-53f65095cfc2",
+    "spriteId": "ead75910-f41b-4025-b781-1e097bf02504",
     "visible": true
 }

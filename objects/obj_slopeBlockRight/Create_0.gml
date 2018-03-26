@@ -1,0 +1,34 @@
+/// @description Insert description here
+// You can write your code in this editor
+yValues[0] = 0;
+yValues[1] = 0;
+yValues[2] = 1;
+yValues[3] = 1;
+yValues[4] = 2;
+yValues[5] = 2;
+yValues[6] = 3;
+yValues[7] = 3;
+yValues[8] = 4;
+yValues[9] = 4;
+yValues[10] = 5;
+yValues[11] = 5;
+yValues[12] = 6;
+yValues[13] = 6;
+yValues[14] = 7;
+yValues[15] = 7;
+yValues[16] = 8;
+yValues[17] = 8;
+yValues[18] = 9;
+yValues[19] = 9;
+yValues[20] = 10;
+yValues[21] = 10;
+yValues[22] = 11;
+yValues[23] = 11;
+yValues[24] = 12;
+yValues[25] = 12;
+yValues[26] = 13;
+yValues[27] = 13;
+yValues[28] = 14;
+yValues[29] = 14;
+yValues[30] = 15;
+yValues[31] = 15;

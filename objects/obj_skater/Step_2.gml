@@ -26,5 +26,10 @@ if(onSlopeLeft) {
 	}
 }
 
+
+ySpeed += myGravity;
+x += (xSpeed);
+y += (ySpeed);
+
 SaveInput();
 SaveBounds();

@@ -2,26 +2,26 @@
 // You can write your code in this editor
 
 if(input[LEFT] && !input[RIGHT]) {
-	hspeed = -climbSpeed;
+	xSpeed = -climbSpeed;
 } else if(input[RIGHT] && !input[LEFT]) {
-	hspeed = climbSpeed;
+	xSpeed = climbSpeed;
 } else {
-	hspeed = 0;
+	xSpeed = 0;
 }
 
 if(input[UP] && !input[DOWN]) {
-	vspeed = -climbSpeed;
+	ySpeed = -climbSpeed;
 } else if(input[DOWN] && !input[UP]) {
-	vspeed = climbSpeed;
+	ySpeed = climbSpeed;
 } else {
-	vspeed = 0;
+	ySpeed = 0;
 }
 
 if(input[JUMP] && !lastInput[JUMP]) {
-	vspeed = jumpSpeed;
+	ySpeed = jumpSpeed;
 	state = 0;
 	jump = 1;
-	gravity = 1;
+	myGravity = 1;
 }
 
 if not place_meeting(x,y,obj_climbBlock)
@@ -30,6 +30,6 @@ or collision_rectangle(bbox_left,bbox_bottom+1,bbox_right,bbox_bottom+1,obj_soli
 
     //Switch to idle state
     state = 0
-	gravity = 1;
+	myGravity = 1;
 
 }

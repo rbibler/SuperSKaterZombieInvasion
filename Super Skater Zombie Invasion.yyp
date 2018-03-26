@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "2bb73a81-f37d-4a8d-8de2-16f876510c3b",
+            "Value": {
+                "id": "2f2cbd73-359c-4061-afd7-91b5aa9d3017",
+                "resourcePath": "objects\\obj_solidBlockTop\\obj_solidBlockTop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "30ce1638-3297-4f3c-835f-9ab49d93df3f",
             "Value": {
                 "id": "849f9794-81b5-4df0-b20c-582f954766b6",
@@ -323,6 +331,14 @@
             "Value": {
                 "id": "1f611420-c0db-4f38-9d40-202e9ac2e348",
                 "resourcePath": "sprites\\spr_climbBlock\\spr_climbBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ead75910-f41b-4025-b781-1e097bf02504",
+            "Value": {
+                "id": "7bd994da-4d6f-46be-91a5-8d95546b381c",
+                "resourcePath": "sprites\\spr_solidBlockTop\\spr_solidBlockTop.yy",
                 "resourceType": "GMSprite"
             }
         },
