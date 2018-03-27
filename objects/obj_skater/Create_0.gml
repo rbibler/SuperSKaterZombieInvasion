@@ -78,3 +78,20 @@ myGravity = 1;
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);
 
+debugPoints[HOT_SPOT_X] = 0;
+debugPoints[HOT_SPOT_Y] = 0;
+debugPoints[RIGHT_EDGE_X] = 7;
+debugPoints[RIGHT_EDGE_Y] = -16;
+debugPoints[LEFT_EDGE_X] = -7;
+debugPoints[LEFT_EDGE_Y] = -16;
+debugPoints[BOTTOM_RIGHT_X] = 7;
+debugPoints[BOTTOM_RIGHT_Y] = 0;
+debugPoints[BOTTOM_LEFT_X] = -7;
+debugPoints[BOTTOM_LEFT_Y] = 0;
+debugPoints[SLOPE_CATCHER_LEFT_X] = -7;
+debugPoints[SLOPE_CATCHER_LEFT_Y] = -4;
+debugPoints[SLOPE_CATCHER_RIGHT_X] = 7;
+debugPoints[SLOPE_CATCHER_RIGHT_Y] = -4;
+debugPoints[TOP_X] = 8;
+debugPoints[TOP_Y] = -31;
+
