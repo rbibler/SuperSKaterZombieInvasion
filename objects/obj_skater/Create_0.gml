@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+
 // Skater's state
 state = 0;
 
@@ -30,6 +32,19 @@ lastBounds[BBOX_TOP] = bbox_top;
 lastBounds[BBOX_LEFT] = bbox_left;
 lastBounds[BBOX_RIGHT] = bbox_right;
 
+sensors[HOT_SPOT_X] = 0;
+sensors[HOT_SPOT_Y] = 0;
+sensors[RIGHT_EDGE_X] = 7;
+sensors[RIGHT_EDGE_Y] = -16;
+sensors[LEFT_EDGE_X] = -7;
+sensors[LEFT_EDGE_Y] = -16;
+sensors[BOTTOM_RIGHT_X] = 7;
+sensors[BOTTOM_RIGHT_Y] = 0;
+sensors[BOTTOM_LEFT_X] = -7;
+sensors[BOTTOM_LEFT_Y] = 0;
+sensors[TOP_X] = 8;
+sensors[TOP_Y] = -31;
+
 onSlopeRight = false;
 onSlopeLeft = false;
 
@@ -55,4 +70,7 @@ jumpSpeed = -15;
 
 // Set the initial gravity to whatever our gravity is
 myGravity = 1;
+
+var layerId = layer_get_id("CollisionTiles");
+collisionTiles = layer_tilemap_get_id(layerId);
 

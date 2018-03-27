@@ -55,14 +55,6 @@
             }
         },
         {
-            "Key": "0f7ce5bb-1b67-4bf7-9119-53f65095cfc2",
-            "Value": {
-                "id": "f07add5f-46bd-4425-9696-0a1593b42cdb",
-                "resourcePath": "sprites\\spr_slopeBlockLeft\\spr_slopeBlockLeft.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "11354f83-8288-44e7-b0af-bf5fb8aee6e0",
             "Value": {
                 "id": "a5d5c49d-28be-49b2-982d-bd77bc5a864f",
@@ -111,14 +103,6 @@
             }
         },
         {
-            "Key": "2bb73a81-f37d-4a8d-8de2-16f876510c3b",
-            "Value": {
-                "id": "2f2cbd73-359c-4061-afd7-91b5aa9d3017",
-                "resourcePath": "objects\\obj_solidBlockTop\\obj_solidBlockTop.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "30ce1638-3297-4f3c-835f-9ab49d93df3f",
             "Value": {
                 "id": "849f9794-81b5-4df0-b20c-582f954766b6",
@@ -135,19 +119,19 @@
             }
         },
         {
-            "Key": "3812f509-0348-4a45-98ed-1f55b9c60368",
-            "Value": {
-                "id": "0df45c02-b30a-43ec-a6fe-ddb30af33846",
-                "resourcePath": "sprites\\spr_bgTiles\\spr_bgTiles.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "445edee0-4f39-4414-b6a9-c05092520ff4",
             "Value": {
                 "id": "6edacabe-2bf6-4328-a887-7e5c996ec26f",
                 "resourcePath": "views\\445edee0-4f39-4414-b6a9-c05092520ff4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4d01fb19-836e-4a5a-850a-f2ab7f882510",
+            "Value": {
+                "id": "4e573314-edd1-4d07-9ff4-236922ad5875",
+                "resourcePath": "sprites\\spr_levelTiles\\spr_levelTiles.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -231,27 +215,11 @@
             }
         },
         {
-            "Key": "9f352f82-fbe7-4a48-9c79-b7c1fe7d335f",
-            "Value": {
-                "id": "8d3e0c65-9c88-4889-b507-9a2423aadf27",
-                "resourcePath": "sprites\\spr_slopeBlockRight\\spr_slopeBlockRight.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "a151bcd0-7db8-45a0-96ba-f9cd50020bfb",
             "Value": {
                 "id": "2569dd6f-0d4b-4702-b55e-2fad6cf20a6a",
                 "resourcePath": "scripts\\SkaterInput\\SkaterInput.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "a740759e-a245-4d9f-bb2e-8d02a4df561d",
-            "Value": {
-                "id": "b24a00f4-7a86-42a7-901a-44a175c0fe5b",
-                "resourcePath": "sprites\\spr_solidBlock\\spr_solidBlock.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -279,19 +247,19 @@
             }
         },
         {
+            "Key": "b373b3c6-390c-423a-815f-4d4c11c76e91",
+            "Value": {
+                "id": "bc4b8a1d-c6ee-4ec3-a107-7eb8ed427205",
+                "resourcePath": "tilesets\\tiles_collision\\tiles_collision.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "b462e296-52b4-449e-9fa6-809c1ec733cf",
             "Value": {
                 "id": "ab6cffc5-e304-481b-ad9e-c4c765877f0f",
                 "resourcePath": "tilesets\\tiles_bg\\tiles_bg.yy",
                 "resourceType": "GMTileSet"
-            }
-        },
-        {
-            "Key": "b5db07e4-d2e7-4621-ae14-726e5a85b20c",
-            "Value": {
-                "id": "5692a5c9-d2e7-44ac-8b02-14c94a020075",
-                "resourcePath": "objects\\obj_solidBlock\\obj_solidBlock.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -303,14 +271,6 @@
             }
         },
         {
-            "Key": "c0c843fb-4e77-4810-a475-f5ff8197839a",
-            "Value": {
-                "id": "36f3e291-74d0-45b0-b6b7-f2ac5a56685c",
-                "resourcePath": "objects\\obj_slopeBlockLeft\\obj_slopeBlockLeft.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "2f973524-e277-489e-aa12-3777e1225f00",
@@ -319,11 +279,11 @@
             }
         },
         {
-            "Key": "cf75bb34-aff4-42a7-a872-0c11283c318a",
+            "Key": "d9cf050c-a599-468b-86f1-f64172b212ac",
             "Value": {
-                "id": "9b397e69-e894-4292-9804-c35bbdfd2328",
-                "resourcePath": "objects\\obj_slopeBlockRight\\obj_slopeBlockRight.yy",
-                "resourceType": "GMObject"
+                "id": "1b9fc292-bd3e-46f1-9f28-2b88dd91261e",
+                "resourcePath": "sprites\\spr_collisionTiles\\spr_collisionTiles.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -331,14 +291,6 @@
             "Value": {
                 "id": "1f611420-c0db-4f38-9d40-202e9ac2e348",
                 "resourcePath": "sprites\\spr_climbBlock\\spr_climbBlock.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "ead75910-f41b-4025-b781-1e097bf02504",
-            "Value": {
-                "id": "7bd994da-4d6f-46be-91a5-8d95546b381c",
-                "resourcePath": "sprites\\spr_solidBlockTop\\spr_solidBlockTop.yy",
                 "resourceType": "GMSprite"
             }
         },
