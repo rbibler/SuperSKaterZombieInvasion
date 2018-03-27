@@ -69,6 +69,34 @@ if(tileIdBottom == 1 or tileIdRight == 1 or tileIdLeft = 1) {
 	}
 } 
 
+// Checking on a slope collision, right facing
+var tileIdBottom = tilemap_get_at_pixel(collisionTiles, x, y + ySpeed);
+var tileIdRight = tilemap_get_at_pixel(collisionTiles, x + sensors[BOTTOM_RIGHT_X], y + ySpeed);
+var tileIdLeft = tilemap_get_at_pixel(collisionTiles, x + sensors[BOTTOM_LEFT_X], y + ySpeed);
+if(tileIdBottom == 2) {
+	if(ySpeed > 0) {
+		var xOffset = floor(x mod 16);
+		var tileEdge = floor((y + ySpeed) / 16) * 16;
+		var floorOffset = obj_persistent.slopeTiles[xOffset];
+		y = tileEdge + floorOffset - 1;
+		jump = 0;
+		ySpeed = 0;
+	}
+} else if(xSpeed < 0) {
+	// Check for slope collision going uphill and to the left (right-facing slope)
+	var exchequer = x + sensors[SLOPE_CATCHER_LEFT_X];
+	var yCheck = y + ySpeed + sensors[SLOPE_CATCHER_LEFT_Y];
+	var tileIdLeft = tilemap_get_at_pixel(collisionTiles, exchequer, yCheck);
+	if(tileIdLeft == 2) {
+		var xOffset = floor(exchequer mod 16);
+		var tileEdge = floor(yCheck / 16) * 16;
+		var floorOffset = obj_persistent.slopeTiles[xOffset];
+		y = tileEdge + floorOffset - 1;
+		jump = 0;
+		ySpeed = 0;
+	}
+}
+
 
 
 

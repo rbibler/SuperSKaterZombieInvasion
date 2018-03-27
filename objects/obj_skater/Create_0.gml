@@ -42,6 +42,10 @@ sensors[BOTTOM_RIGHT_X] = 7;
 sensors[BOTTOM_RIGHT_Y] = 0;
 sensors[BOTTOM_LEFT_X] = -7;
 sensors[BOTTOM_LEFT_Y] = 0;
+sensors[SLOPE_CATCHER_LEFT_X] = -7;
+sensors[SLOPE_CATCHER_LEFT_Y] = -4;
+sensors[SLOPE_CATCHER_RIGHT_X] = 7;
+sensors[SLOPE_CATCHER_RIGHT_Y] = -4;
 sensors[TOP_X] = 8;
 sensors[TOP_Y] = -31;
 
