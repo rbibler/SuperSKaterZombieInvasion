@@ -252,3 +252,24 @@ slopeHeights[284] = 12
 slopeHeights[285] = 13
 slopeHeights[286] = 14
 slopeHeights[287] = 15
+
+
+// Array to hold the extra x impetus a slope should give the skater
+slopeGravity[4] = -0.15;
+slopeGravity[5] = -0.15;
+slopeGravity[6] = -0.15;
+slopeGravity[7] = -0.15;
+
+slopeGravity[8] =  0.15;
+slopeGravity[9] =  0.15;
+slopeGravity[10] = 0.15;
+slopeGravity[11] = 0.15;
+
+slopeGravity[12] = -0.25;
+slopeGravity[13] = -0.25;
+
+slopeGravity[14] = 0.25;
+slopeGravity[15] = 0.25;
+
+slopeGravity[16] = -0.35;
+slopeGravity[17] = 0.35;

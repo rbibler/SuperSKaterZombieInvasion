@@ -49,8 +49,7 @@ sensors[SLOPE_CATCHER_RIGHT_Y] = -4;
 sensors[TOP_X] = 8;
 sensors[TOP_Y] = -31;
 
-onSlopeRight = false;
-onSlopeLeft = false;
+onSlope = false;
 
 
 // Skater's Normal Speed
@@ -74,6 +73,9 @@ jumpSpeed = -15;
 
 // Set the initial gravity to whatever our gravity is
 myGravity = 1;
+
+// Flag to indiciate that the skater is on the ground
+grounded = false;
 
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);

@@ -6,7 +6,9 @@
     "children": [
         "a151bcd0-7db8-45a0-96ba-f9cd50020bfb",
         "04b58e47-71cc-4791-b1cf-2d9eecf7194d",
-        "8f7c2711-b6e6-445d-91b9-77d8f3c62bf4"
+        "8f7c2711-b6e6-445d-91b9-77d8f3c62bf4",
+        "1c5cb47d-c255-4d76-8a2e-34f7bc810d87",
+        "84cfca7f-e4d2-4576-b4a0-51d5364047b0"
     ],
     "filterType": "GMScript",
     "folderName": "SkaterScripts",

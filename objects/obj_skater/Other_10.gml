@@ -19,7 +19,7 @@ if((input[LEFT] and !input[RIGHT])) {
 		xSpeed += 0.5;
 	} 
 // Otherwise not moving at all
-} else if(!onSlopeLeft and !onSlopeRight and jump == 0) {
+} else if(!onSlope and grounded) {
 	// If previously moving right, accelerate left until zero is hit or crossed
 	if(myDirection == 1) {
 		xSpeed -= 0.7;
@@ -35,18 +35,8 @@ if((input[LEFT] and !input[RIGHT])) {
 	}
 }
 
-if(onSlopeLeft) {
-	myDirection = -1;
-	xSpeed -= 0.45;
-	
-} else if(onSlopeRight) {
-	myDirection = 1;
-	xSpeed += 0.45;
-	
-}
-
 var maxSpeed = speedThisFrame;
-if(onSlopeLeft or onSlopeRight) {
+if(onSlope) {
 	if(input[LEFT] or input[RIGHT]) {
 		if(input[SHOOT]) {
 			maxSpeed = 10;

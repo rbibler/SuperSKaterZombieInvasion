@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "1c5cb47d-c255-4d76-8a2e-34f7bc810d87",
+            "Value": {
+                "id": "114ac16a-617e-4437-bb37-1ddacf9cca35",
+                "resourcePath": "scripts\\GetDebugPoints\\GetDebugPoints.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1f925125-9f30-4850-a624-ec92d45400fc",
             "Value": {
                 "id": "78bd11f0-98a0-457c-8a63-e488b588bd23",
@@ -172,6 +180,14 @@
                 "id": "90d95709-5b0f-4cc6-ae95-d44758f01e32",
                 "resourcePath": "sprites\\spr_camera\\spr_camera.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "84cfca7f-e4d2-4576-b4a0-51d5364047b0",
+            "Value": {
+                "id": "1d9ccbf2-56d0-44f9-ba26-f65f62a3e9f1",
+                "resourcePath": "scripts\\DrawDebugPoints\\DrawDebugPoints.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -331,7 +347,9 @@
         "56eb3467-2fe0-49cf-9425-fbaf74386c6b",
         "a151bcd0-7db8-45a0-96ba-f9cd50020bfb",
         "04b58e47-71cc-4791-b1cf-2d9eecf7194d",
-        "8f7c2711-b6e6-445d-91b9-77d8f3c62bf4"
+        "8f7c2711-b6e6-445d-91b9-77d8f3c62bf4",
+        "1c5cb47d-c255-4d76-8a2e-34f7bc810d87",
+        "84cfca7f-e4d2-4576-b4a0-51d5364047b0"
     ],
     "tutorial": ""
 }
