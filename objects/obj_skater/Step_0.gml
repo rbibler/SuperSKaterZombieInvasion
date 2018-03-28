@@ -114,11 +114,11 @@ if(tileIdBottom == 1 or tileIdRight == 1 or tileIdLeft = 1) {
 
 // Checking on a slope collision, right facing
 var tileIdBottom = tilemap_get_at_pixel(collisionTiles, x + xSpeed, y + ySpeed);
-if(tileIdBottom == 2) {
+if(tileIdBottom > 3) {
 	if(ySpeed > 0) {
 		var xOffset = floor((x + xSpeed) mod 16);
 		var tileEdge = floor((y + ySpeed) / 16) * 16;
-		var floorOffset = obj_persistent.slopeTiles[xOffset];
+		var floorOffset = obj_slopeController.slopeHeights[(tileIdBottom * 16) + xOffset];
 		
 		y = tileEdge + floorOffset - 1;
 		jump = 0;
@@ -126,13 +126,18 @@ if(tileIdBottom == 2) {
 	}
 } else if(xSpeed < 0) {
 	// Check for slope collision going uphill and to the left (right-facing slope)
-	var exchequer = x + sensors[SLOPE_CATCHER_LEFT_X];
+	var exchequer = x + xSpeed + sensors[SLOPE_CATCHER_LEFT_X];
 	var yCheck = y + ySpeed + sensors[SLOPE_CATCHER_LEFT_Y];
 	var tileIdLeft = tilemap_get_at_pixel(collisionTiles, exchequer, yCheck);
-	if(tileIdLeft == 2) {
-		var xOffset = floor(exchequer mod 16);
+	if(tileIdLeft > 3) {
 		var tileEdge = floor(yCheck / 16) * 16;
-		var floorOffset = obj_persistent.slopeTiles[15];
+		var xOffset = 15;
+		if(floor(exchequer / 16) == ((x + xSpeed) / 16)) {
+			xOffset = (x + xSpeed) mod 16;
+			show_debug_message("In same tile");
+		}
+		show_debug_message("Xoffset: " + string(xOffset));
+		var floorOffset = obj_slopeController.slopeHeights[(tileIdLeft * 16) + xOffset];
 		y = tileEdge + floorOffset - 1;
 		jump = 0;
 		ySpeed = 0;

@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "e70a0e39-8c1b-4e15-b151-e4848696d12b",
+            "Value": {
+                "id": "3e579690-2ba7-499b-939c-056ad34bdb3a",
+                "resourcePath": "objects\\obj_slopeController\\obj_slopeController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f2650efe-2817-4182-8ffc-6352b78db421",
             "Value": {
                 "id": "26e6110d-ff9a-4b3b-9e3a-5911cbe85e46",
