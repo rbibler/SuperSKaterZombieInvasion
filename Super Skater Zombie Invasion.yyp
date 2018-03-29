@@ -114,7 +114,7 @@
             "Key": "30ce1638-3297-4f3c-835f-9ab49d93df3f",
             "Value": {
                 "id": "849f9794-81b5-4df0-b20c-582f954766b6",
-                "resourcePath": "objects\\obj_climbBlock\\obj_climbBlock.yy",
+                "resourcePath": "objects\\obj_platform\\obj_platform.yy",
                 "resourceType": "GMObject"
             }
         },

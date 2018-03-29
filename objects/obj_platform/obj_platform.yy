@@ -2,7 +2,7 @@
     "id": "30ce1638-3297-4f3c-835f-9ab49d93df3f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_climbBlock",
+    "name": "obj_platform",
     "eventList": [
         
     ],
