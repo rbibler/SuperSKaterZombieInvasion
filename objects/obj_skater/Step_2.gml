@@ -6,6 +6,6 @@
 ySpeed += myGravity;
 x += (xSpeed);
 y += (ySpeed);
-
+lastXSpeed = xSpeed;
 SaveInput();
 SaveBounds();

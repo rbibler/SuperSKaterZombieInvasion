@@ -24,9 +24,11 @@ if(input[JUMP] && !lastInput[JUMP]) {
 	myGravity = 1;
 }
 
-if not place_meeting(x,y,obj_climbBlock)
-or collision_rectangle(bbox_left,bbox_bottom+1,bbox_right,bbox_bottom+1,obj_solidBlock,0,0)
-{
+var tileTopLeft = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_top);
+var tileTopRight = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_top);
+var tileBottomRight = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_bottom);
+var tileBottomLeft = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_bottom);
+if(tileTopLeft != 2 and tileTopRight != 2 and tileBottomRight != 2 and tileBottomLeft != 2) {
 
     //Switch to idle state
     state = 0

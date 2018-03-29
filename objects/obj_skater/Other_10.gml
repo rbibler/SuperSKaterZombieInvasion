@@ -19,22 +19,26 @@ if((input[LEFT] and !input[RIGHT])) {
 		xSpeed += 0.5;
 	} 
 // Otherwise not moving at all
-} else if(!onSlope and grounded) {
-	// If previously moving right, accelerate left until zero is hit or crossed
-	if(myDirection == 1) {
-		xSpeed -= 0.7;
-		if(xSpeed <= 0) {
+} else if(grounded and !onSlope) {
+	// If no directional input, slow the skater down until he stops
+	if(abs(xSpeed) > 0) {
+		// If horiztonal direction is the same this frame as last, then need to slow down
+		if(sign(xSpeed) == sign(lastXSpeed)) {
+			xSpeed -= (0.25 * sign(xSpeed));
+			// If that last slow down has flipped the direction, stop the skater
+			if(sign(xSpeed) != sign(lastXSpeed)) {
+				xSpeed = 0;
+			}
+		} else {
 			xSpeed = 0;
 		}
-	// otherwise accelerate right until zero is hit or crossed
-	} else {
-		xSpeed += 0.7;
-		if(xSpeed >= 0) {
-			xSpeed = 0;
-		}
+		
 	}
 }
 
+
+// Skater can only go so fast
+// Choose max speed based on situation: faster if on a slope
 var maxSpeed = speedThisFrame;
 if(onSlope) {
 	if(input[LEFT] or input[RIGHT]) {
@@ -48,8 +52,10 @@ if(onSlope) {
 	}
 }
 
+// If the skater is skating too quickly, slow him down gradually until he reaches max speed
+// Don't to just set to max speed, or the transition will feel weird
 if(abs(xSpeed) >= maxSpeed) {
-	xSpeed -= myDirection * 0.6;
+	xSpeed -= sign(xSpeed) * 0.15;
 }
 
 // If the skater crouches, he can't skate so slow him down till he stops
@@ -72,3 +78,4 @@ if(input[JUMP]) {
 	jump = 2;
 	ySpeed = 0;
 }
+

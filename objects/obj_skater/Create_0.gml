@@ -8,6 +8,7 @@ state = 0;
 
 // Skater's current xSpeed
 xSpeed = 0;
+lastXSpeed = 0;
 
 // Skater's current ySpeed
 ySpeed = 0;

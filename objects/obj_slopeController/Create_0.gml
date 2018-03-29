@@ -271,5 +271,5 @@ slopeGravity[13] = -0.25;
 slopeGravity[14] = 0.25;
 slopeGravity[15] = 0.25;
 
-slopeGravity[16] = -0.35;
-slopeGravity[17] = 0.35;
+slopeGravity[16] = -0.3;
+slopeGravity[17] = 0.3;
