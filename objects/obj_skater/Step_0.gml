@@ -82,7 +82,6 @@ if(ySpeed >= 15) {
 var edgeToCheckX = x + xSpeed;
 var edgeToCheckY = y + ySpeed;
 var tileId = tilemap_get_at_pixel(collisionTiles, edgeToCheckX, edgeToCheckY);
-show_debug_message("First check tile: " + string(floor( (y + ySpeed) / 16) ));
 if(tileId == 1) {
 	if(ySpeed > 0) {
 		var tileEdge = floor(edgeToCheckY / 16) * 16;
@@ -164,6 +163,7 @@ if(tileId == 1) {
 
 // Checking on a collision with the ceiling
 var tileIdTop = tilemap_get_at_pixel(collisionTiles, x + xSpeed + sensors[TOP_X], y + ySpeed + sensors[TOP_Y]);
+
 if(tileIdTop == 1) {
 	if(ySpeed < 0) {
 		var tileEdge = (floor((y + ySpeed + sensors[TOP_Y]) / 16) * 16);
@@ -171,9 +171,36 @@ if(tileIdTop == 1) {
 		if(bottomCheck == 0 or bottomCheck == 2) {
 			jump = 0;
 			ySpeed = 0;
-			grounded = true;
 			onSlope = false;
-			show_debug_message("Y Collision check Head");
+			show_debug_message("Y Collision check Head 1");
+		}
+	}
+} else {
+	tileId = tilemap_get_at_pixel(collisionTiles, bbox_right + xSpeed, bbox_top + ySpeed);
+	if(tileId == 1) {
+		if(ySpeed < 0) {
+			var tileEdge = floor((bbox_top + ySpeed) / 16) * 16;
+			var bottomCheck = tilemap_get_at_pixel(collisionTiles, bbox_right + xSpeed, tileEdge + 24);
+			if(bottomCheck == 0 or bottomCheck == 2) {
+				jump = 0;
+				ySpeed = 0;
+				onSlope = false;
+				show_debug_message("Y Collision check Head 2");
+			}
+		}
+	} else {
+		tileId = tilemap_get_at_pixel(collisionTiles, bbox_left + xSpeed, bbox_top + ySpeed);
+		if(tileId == 1) {
+			if(ySpeed < 0) {
+				var tileEdge = floor((bbox_top + ySpeed) / 16) * 16;
+				var bottomCheck = tilemap_get_at_pixel(collisionTiles, bbox_left + xSpeed, tileEdge + 24);
+				if(bottomCheck == 0 or bottomCheck == 2) {
+					jump = 0;
+					ySpeed = 0;
+					onSlope = false;
+					show_debug_message("Y Collision check Head 3");
+				}
+			}
 		}
 	}
 }
