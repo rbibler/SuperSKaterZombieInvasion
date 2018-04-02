@@ -11,6 +11,7 @@ if((input[LEFT] and !input[RIGHT])) {
 	if(xSpeed > -speedThisFrame) {
 		xSpeed -= 0.5;
 	} 
+	state = SKATING;
 // If not moving left, check to see if moving right
 } else if((input[RIGHT] and !input[LEFT])) {
 	myDirection = 1;
@@ -18,10 +19,11 @@ if((input[LEFT] and !input[RIGHT])) {
 	if(xSpeed < speedThisFrame) {
 		xSpeed += 0.5;
 	} 
+	state = SKATING;
 // Otherwise not moving at all
-} else if(grounded and !onSlope) {
+} else if(grounded) {
 	// If no directional input, slow the skater down until he stops
-	if(abs(xSpeed) > 0) {
+	if(abs(xSpeed) > 0 and !onSlope) {
 		// If horiztonal direction is the same this frame as last, then need to slow down
 		if(sign(xSpeed) == sign(lastXSpeed)) {
 			xSpeed -= (0.25 * sign(xSpeed));
@@ -32,8 +34,8 @@ if((input[LEFT] and !input[RIGHT])) {
 		} else {
 			xSpeed = 0;
 		}
-		
 	}
+	state = IDLE;
 }
 
 
@@ -71,6 +73,7 @@ if(input[JUMP]) {
 		jump = 1;
 		onSlopeLeft = false;
 		onSlopeRight = false;
+		state = JUMPING;
 	}
 // If skater is jumping, hasn't reached apogee, and player releases jump key
 } else if(jump == 1 && ySpeed < 0){

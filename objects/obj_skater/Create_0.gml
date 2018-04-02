@@ -4,7 +4,12 @@
 
 
 // Skater's state
+// 0 - Idle; 1 - Skating; 2 - Crouching; 3 - Jumping; 
+// 4 - Slamming; 5 - Recovering; 6 - Hit; 7 - Climbing;
 state = 0;
+
+// Hold on to the skater's state from the previous frame
+lastState = 0;
 
 // Skater's current xSpeed
 xSpeed = 0;
@@ -23,15 +28,14 @@ input[5] = START;
 input[6] = SHOOT;
 input[7] = JUMP;
 
+animIndex[IDLE] = 0;
+animIndex[SKATING] = 0;
+
 // Initialize an array to hold the input from the last frame
 for(var i = 0; i < 8; i++) {
 	lastInput[i] = input[i];
 }
 
-lastBounds[BBOX_BOTTOM] = bbox_bottom;
-lastBounds[BBOX_TOP] = bbox_top;
-lastBounds[BBOX_LEFT] = bbox_left;
-lastBounds[BBOX_RIGHT] = bbox_right;
 
 sensors[HOT_SPOT_X] = 0;
 sensors[HOT_SPOT_Y] = 0;
@@ -81,6 +85,9 @@ grounded = false;
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);
 
+// Reset the timer for the idle animation
+alarm[0] = 60 * 4;
+
 debugPoints[HOT_SPOT_X] = 0;
 debugPoints[HOT_SPOT_Y] = 0;
 debugPoints[RIGHT_EDGE_X] = 7;
@@ -97,5 +104,6 @@ debugPoints[SLOPE_CATCHER_RIGHT_X] = 7;
 debugPoints[SLOPE_CATCHER_RIGHT_Y] = -4;
 debugPoints[TOP_X] = 8;
 debugPoints[TOP_Y] = -31;
+
 
 

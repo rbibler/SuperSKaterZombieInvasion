@@ -12,7 +12,14 @@
 #macro BBOX_LEFT	2
 #macro BBOX_RIGHT	3
 
-#macro CLIMBING		2
+#macro IDLE			0
+#macro SKATING		1
+#macro CROUCHING	2
+#macro JUMPING		3
+#macro SLAMMING		4
+#macro RECOVERING	5
+#macro HIT			6
+#macro CLIMBING		7
 
 #macro HOT_SPOT_X				0
 #macro HOT_SPOT_Y				1
