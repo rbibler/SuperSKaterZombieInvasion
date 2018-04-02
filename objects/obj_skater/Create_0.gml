@@ -58,10 +58,10 @@ onSlope = false;
 
 
 // Skater's Normal Speed
-normalSpeedX = 3;
+normalSpeedX = 2.7;
 
 // Skater's Sprint Speed
-sprintSpeedX = 5;
+sprintSpeedX = 4;
 
 // Keeps track of skater's direction. -1 is left 1 is right. Should never be zero.
 myDirection = 1;

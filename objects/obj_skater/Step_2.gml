@@ -7,7 +7,7 @@ ySpeed += myGravity;
 x += (xSpeed);
 y += (ySpeed);
 lastXSpeed = xSpeed;
-
+show_debug_message("State: " + string(state));
 switch(state) {
 	case IDLE:
 		if(state != lastState) {
@@ -30,6 +30,16 @@ switch(state) {
 			animIndex[SKATING] = 0;
 		}
 		animIndex[SKATING]++;
+	break;
+	case JUMPING:
+		if(state != lastState) {
+			sprite_index = spr_SkaterJump;
+		}
+	break;
+	case CROUCHING:
+		if(state != lastState) {
+			sprite_index = spr_SkaterCrouch;
+		}
 	break;
 	
 }

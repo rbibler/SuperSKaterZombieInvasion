@@ -32,7 +32,6 @@ if(xSpeed > 0) {
 		var colDist = (tileEdge - bbox_right);
 		x += min(colDist, xSpeed);
 		xSpeed = 0;
-		show_debug_message("X Collision check 1");
 	} else  {
 		rightEdgeX = x + xSpeed + sensors[RIGHT_EDGE_X];
 		rightEdgeY = y + ySpeed + sensors[TOP_Y];
@@ -42,7 +41,6 @@ if(xSpeed > 0) {
 			var colDist = (tileEdge - bbox_right);
 			x += min(colDist, xSpeed);
 			xSpeed = 0;
-			show_debug_message("X Collision check 2");
 		}
 	}
 // If not moving right, check left. First middle then top
@@ -55,7 +53,6 @@ if(xSpeed > 0) {
 		var colDist = (tileEdge - bbox_left);
 		x += max(colDist, xSpeed) -1;
 		xSpeed = 0;
-		show_debug_message("X Collision check 3");
 	} else {
 		leftEdgeX = x + xSpeed + sensors[LEFT_EDGE_X];
 		leftEdgeY = y + ySpeed + sensors[TOP_Y];
@@ -65,7 +62,6 @@ if(xSpeed > 0) {
 			var colDist = (tileEdge - bbox_left);
 			x += max(colDist, xSpeed) -1;
 			xSpeed = 0;
-			show_debug_message("X Collision check 4");
 		}
 	}
 }
@@ -93,7 +89,6 @@ if(tileId == 1) {
 			ySpeed = 0;
 			grounded = true;
 			onSlope = false;
-			show_debug_message("Y Collision check 1");
 		} else {
 			grounded = false;
 		}
@@ -116,7 +111,6 @@ if(tileId == 1) {
 		grounded = true;
 		onSlope = true;
 		xSpeed += obj_slopeController.slopeGravity[tileId];
-		show_debug_message("Y Collision check 2");
 	// Didn't collide with a slope, so check the bottom right
 	} else {
 		if(ySpeed > 0) {
@@ -132,7 +126,6 @@ if(tileId == 1) {
 					ySpeed = 0;
 					grounded = true;
 					onSlope = false;
-					show_debug_message("Y Collision check 3");
 				} else {
 					grounded = false;
 				}
@@ -148,13 +141,11 @@ if(tileId == 1) {
 						ySpeed = 0;
 						grounded = true;
 						onSlope = false;
-						show_debug_message("Y Collision check 3");
 					} else {
 						grounded = false;
 					}
 				} else {
 					grounded = false;
-					show_debug_message("No Y Collision");
 				}
 			}
 		}  
@@ -278,6 +269,10 @@ if(ySpeed > 0) {
 
 if(!grounded) {
 	onSlope = false;
+	if(state != CLIMBING) {
+		myGravity = 1;
+		state = JUMPING;
+	}
 }
 
 // Check for collision with ladder tile
@@ -292,6 +287,10 @@ if((tileTopLeft == 2 or tileTopRight == 2 or tileBottomRight == 2 or tileBottomL
 		xSpeed = 0;
 		ySpeed = 0;
 	}
+}
+
+if(input[DOWN]) {
+	state = CROUCHING;
 }
 
 
