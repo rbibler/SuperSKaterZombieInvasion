@@ -20,6 +20,8 @@
 #macro RECOVERING	5
 #macro HIT			6
 #macro CLIMBING		7
+#macro FALLING		8
+#macro ROLLING		9
 
 #macro HOT_SPOT_X				0
 #macro HOT_SPOT_Y				1

@@ -289,10 +289,6 @@ if((tileTopLeft == 2 or tileTopRight == 2 or tileBottomRight == 2 or tileBottomL
 	}
 }
 
-if(input[DOWN]) {
-	state = CROUCHING;
-}
-
 
 
 
