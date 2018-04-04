@@ -88,6 +88,21 @@ collisionTiles = layer_tilemap_get_id(layerId);
 // Reset the timer for the idle animation
 alarm[0] = 60 * 4;
 
+// Setup the state machine
+stateMachineInit();
+
+// Define the skater's states
+stateCreate("IDLE", skaterStateIdle);
+stateCreate("SKATING", skaterStateSkating);
+stateCreate("JUMPING", skaterStateJumping);
+stateCreate("CLIMBING", skaterStateClimbing);
+stateCreate("CROUCHING", skaterStateCrouching);
+stateCreate("FALLING", skaterStateFalling);
+stateCreate("ROLLING", skaterStateRolling);
+
+// Set the default state to IDLE
+stateInit("IDLE");
+
 debugPoints[HOT_SPOT_X] = 0;
 debugPoints[HOT_SPOT_Y] = 0;
 debugPoints[RIGHT_EDGE_X] = 7;

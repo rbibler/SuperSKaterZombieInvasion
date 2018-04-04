@@ -3,7 +3,7 @@
 
 // Get the user's input
 SkaterInput();
-friction = 0;
+/*friction = 0;
 
 
 // Update skater's movement based on current state
@@ -289,6 +289,8 @@ if((tileTopLeft == 2 or tileTopRight == 2 or tileBottomRight == 2 or tileBottomL
 	}
 }
 
+*/
 
+stateExecute();
 
 

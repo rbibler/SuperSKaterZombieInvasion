@@ -6,14 +6,14 @@
 Adapted from PixealatedPope's tutorial: 
 	https://www.reddit.com/r/gamemaker/comments/353aq6/tutorialexample_finite_state_machines_the_most/
 */
-state=noone;
-state_next=state;
-state_name="Unknown";
-state_timer=0;
-state_map=ds_map_create();
-state_stack=ds_stack_create();
-state_new=true;
-state_var[0]=0; //Useful for storing variables specific to a specific state.
+state = noone;
+stateNext = state;
+stateName = "Unknown";
+stateTimer = 0;
+stateMap = ds_map_create();
+stateStack = ds_stack_create();
+stateNew = true;
+stateVar[0] = 0; //Useful for storing variables specific to a specific state.
 //Add any new variables you might need for your game here.
-state_can_interrupt=true;
+stateCanInterrupt = true;
 

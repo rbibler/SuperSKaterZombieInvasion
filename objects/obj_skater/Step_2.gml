@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-
+/*
 ySpeed += myGravity;
 x += (xSpeed);
 y += (ySpeed);
@@ -46,5 +46,8 @@ switch(state) {
 
 
 lastState = state;
+*/
 SaveInput();
 SaveBounds();
+stateUpdate();
+

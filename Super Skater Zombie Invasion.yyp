@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "408038ce-d998-4ff4-afd5-d944162ad440",
+            "Value": {
+                "id": "ed72db07-5ead-4835-a6c3-91d19a3793e1",
+                "resourcePath": "scripts\\skaterStateRolling\\skaterStateRolling.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "445edee0-4f39-4414-b6a9-c05092520ff4",
             "Value": {
                 "id": "6edacabe-2bf6-4328-a887-7e5c996ec26f",
@@ -572,6 +580,7 @@
         "2f5bbd6f-4328-4674-bc5c-10f499e96ec0",
         "fa9037d4-bacb-4408-bb45-650a3c046a48",
         "a80c2bef-6ccc-4878-ba34-150b49435901",
+        "408038ce-d998-4ff4-afd5-d944162ad440",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",
