@@ -3,6 +3,7 @@
 
 // Get the user's input
 SkaterInput();
+SkaterHorizontalInput();
 stateExecute();
 /*
 friction = 0;

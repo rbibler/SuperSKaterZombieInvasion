@@ -19,3 +19,9 @@ if(abs(xSpeed) > 0) {
 		}
 	}
 }
+
+skaterVerticalCollisionCheck();
+
+if(!grounded) {
+	stateSwitch("FALLING");
+}

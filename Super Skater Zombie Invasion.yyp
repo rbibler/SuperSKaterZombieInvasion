@@ -258,7 +258,7 @@
             "Key": "6673222d-aa06-4fe5-b0bd-100c04b624f7",
             "Value": {
                 "id": "bc41bb88-36f9-4571-90a6-131839108ac0",
-                "resourcePath": "scripts\\onGround\\onGround.yy",
+                "resourcePath": "scripts\\skaterVerticalCollisionCheck\\skaterVerticalCollisionCheck.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -291,6 +291,14 @@
             "Value": {
                 "id": "1d9ccbf2-56d0-44f9-ba26-f65f62a3e9f1",
                 "resourcePath": "scripts\\DrawDebugPoints\\DrawDebugPoints.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "85d206ad-0ee8-4290-b1ae-203367030825",
+            "Value": {
+                "id": "c8fdc081-8d84-4ecf-b5dc-df966adedeb4",
+                "resourcePath": "scripts\\SkaterHorizontalMovement\\SkaterHorizontalMovement.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -608,6 +616,7 @@
         "6673222d-aa06-4fe5-b0bd-100c04b624f7",
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "5e5d132a-f96d-426e-af2a-b8f973110a5a",
+        "85d206ad-0ee8-4290-b1ae-203367030825",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",

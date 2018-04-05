@@ -13,7 +13,9 @@ if(input[JUMP]) {
 	stateSwitch("JUMPING");
 }
 
-if(!onGround()) {
+skaterVerticalCollisionCheck();
+
+if(!grounded) {
 	stateSwitch("FALLING");
 }
 

@@ -49,6 +49,8 @@ switch(state) {
 
 lastState = state;
 */
+SkaterHorizontalMovement();
+SkaterVerticalMovement();
 SaveInput();
 SaveBounds();
 stateUpdate();
