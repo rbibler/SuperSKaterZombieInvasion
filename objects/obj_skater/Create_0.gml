@@ -98,7 +98,7 @@ stateCreate("JUMPING", skaterStateJumping);
 stateCreate("CLIMBING", skaterStateClimbing);
 stateCreate("CROUCHING", skaterStateCrouching);
 stateCreate("FALLING", skaterStateFalling);
-stateCreate("ROLLING", skaterStateRolling);
+rollingState = stateCreate("ROLLING", skaterStateRolling);
 
 // Set the default state to IDLE
 stateInit("IDLE");

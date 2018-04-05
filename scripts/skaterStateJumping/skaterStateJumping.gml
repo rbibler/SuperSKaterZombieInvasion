@@ -8,6 +8,7 @@ if(stateNew) {
 	grounded = false;
 }
 
+SkaterHorizontalCollisionCheck();
 
 if(jump == 1 && ySpeed > 0){
 	// Start falling. Can't set jump to zero, because that'll reset the can jump flag

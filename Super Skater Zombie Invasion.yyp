@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "a5ada3a9-acd7-4b21-a75c-496f9b912e5f",
+            "Value": {
+                "id": "6fa090dd-b7fd-43c0-97ca-4f4cc9174723",
+                "resourcePath": "scripts\\SkaterHorizontalCollisionCheck\\SkaterHorizontalCollisionCheck.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a80c2bef-6ccc-4878-ba34-150b49435901",
             "Value": {
                 "id": "e5812d3f-15fe-43f8-85d6-56f24cfb0c75",
@@ -617,6 +625,7 @@
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "5e5d132a-f96d-426e-af2a-b8f973110a5a",
         "85d206ad-0ee8-4290-b1ae-203367030825",
+        "a5ada3a9-acd7-4b21-a75c-496f9b912e5f",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",

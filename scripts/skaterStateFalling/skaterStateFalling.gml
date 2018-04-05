@@ -4,6 +4,7 @@ if(stateNew) {
 }
 
 skaterVerticalCollisionCheck();
+SkaterHorizontalCollisionCheck();
 
 if(grounded) {
 	show_debug_message("ON GROUND FROM FALLING");

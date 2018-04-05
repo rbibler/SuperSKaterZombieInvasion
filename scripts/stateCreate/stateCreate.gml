@@ -9,3 +9,4 @@ Adapted from PixealatedPope's tutorial:
 */
 
 ds_map_replace(stateMap, argument[0], argument[1]);
+return ds_map_find_value(stateMap, argument[0]);
