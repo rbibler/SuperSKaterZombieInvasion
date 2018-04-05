@@ -247,6 +247,22 @@
             }
         },
         {
+            "Key": "5e5d132a-f96d-426e-af2a-b8f973110a5a",
+            "Value": {
+                "id": "d1477db8-a79f-4d79-99ff-be06b0af3fa9",
+                "resourcePath": "scripts\\SkaterVerticalMovement\\SkaterVerticalMovement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6673222d-aa06-4fe5-b0bd-100c04b624f7",
+            "Value": {
+                "id": "bc41bb88-36f9-4571-90a6-131839108ac0",
+                "resourcePath": "scripts\\onGround\\onGround.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "726995d9-185d-43b2-85be-2b5471290ab3",
             "Value": {
                 "id": "90d95709-5b0f-4cc6-ae95-d44758f01e32",
@@ -348,6 +364,14 @@
                 "id": "7aacc71a-e464-46df-b04e-25c92cd729ed",
                 "resourcePath": "objects\\obj_skater\\obj_skater.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
+            "Value": {
+                "id": "b1234d0a-de40-4c66-aa7a-c7e0f94da50d",
+                "resourcePath": "scripts\\SkaterHorizontalInput\\SkaterHorizontalInput.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -581,6 +605,9 @@
         "fa9037d4-bacb-4408-bb45-650a3c046a48",
         "a80c2bef-6ccc-4878-ba34-150b49435901",
         "408038ce-d998-4ff4-afd5-d944162ad440",
+        "6673222d-aa06-4fe5-b0bd-100c04b624f7",
+        "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
+        "5e5d132a-f96d-426e-af2a-b8f973110a5a",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",

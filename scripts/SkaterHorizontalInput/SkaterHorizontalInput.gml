@@ -1,8 +1,3 @@
-if(stateNew) {
-	sprite_index = spr_SkaterSkate;
-	image_index = 0;
-}
-
 // Determine if skater is sprinting or not
 var speedThisFrame = input[SHOOT] ? sprintSpeedX : normalSpeedX;
 
@@ -29,18 +24,6 @@ if(input[LEFT]) {
 	if(abs(xSpeed) > 0) {
 		stateSwitch("ROLLING");
 	}
-}
-
-if(input[DOWN]) {
-	stateSwitch("CROUCHING");
-} 
-
-// Skater can jump if jump is pressed fresh on this frame and skater isn't already jumping
-if(input[JUMP]) {
-	if(jump == 0 && !lastInput[JUMP]) {
-		stateSwitch("JUMPING");
-	}
-// If skater is jumping, hasn't reached apogee, and player releases jump key
 } 
 
 // Skater can only go so fast
@@ -67,14 +50,5 @@ if(abs(xSpeed) >= maxSpeed) {
 if(abs(xSpeed) < 0.15) {
 	xSpeed = 0;
 }
-
-if(xSpeed == 0) {
-	stateSwitch("IDLE");
-}
-
-if(!onGround()) {
-	stateSwitch("FALLING");
-}
-
 
 x += xSpeed;

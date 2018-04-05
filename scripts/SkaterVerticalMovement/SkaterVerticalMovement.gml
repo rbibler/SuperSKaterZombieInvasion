@@ -1,0 +1,2 @@
+ySpeed += myGravity;
+y += ySpeed;

@@ -2,6 +2,7 @@ if(stateNew) {
 	xSpeed = 0;
 	sprite_index = spr_SkaterIdle;
 	image_index = 0;
+	jump = 0;
 }
 
 if(input[LEFT] or input[RIGHT]) {
@@ -10,5 +11,9 @@ if(input[LEFT] or input[RIGHT]) {
 
 if(input[JUMP]) {
 	stateSwitch("JUMPING");
+}
+
+if(!onGround()) {
+	stateSwitch("FALLING");
 }
 

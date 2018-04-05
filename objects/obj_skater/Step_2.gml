@@ -4,9 +4,11 @@
 
 /*
 ySpeed += myGravity;
+
 x += (xSpeed);
 y += (ySpeed);
 lastXSpeed = xSpeed;
+
 show_debug_message("State: " + string(state));
 switch(state) {
 	case IDLE:

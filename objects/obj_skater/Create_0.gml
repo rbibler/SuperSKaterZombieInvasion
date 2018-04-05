@@ -6,10 +6,10 @@
 // Skater's state
 // 0 - Idle; 1 - Skating; 2 - Crouching; 3 - Jumping; 
 // 4 - Slamming; 5 - Recovering; 6 - Hit; 7 - Climbing;
-state = 0;
+//state = 0;
 
 // Hold on to the skater's state from the previous frame
-lastState = 0;
+//lastState = 0;
 
 // Skater's current xSpeed
 xSpeed = 0;

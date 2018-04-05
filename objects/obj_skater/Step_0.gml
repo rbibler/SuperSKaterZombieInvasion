@@ -3,18 +3,10 @@
 
 // Get the user's input
 SkaterInput();
-/*friction = 0;
+stateExecute();
+/*
+friction = 0;
 
-
-// Update skater's movement based on current state
-switch(state) {
-	case CLIMBING:
-		event_user(1);
-	break;
-	default:
-		event_user(0);
-	break;
-}
 
 //GetDebugPoints();
 
@@ -269,10 +261,10 @@ if(ySpeed > 0) {
 
 if(!grounded) {
 	onSlope = false;
-	if(state != CLIMBING) {
-		myGravity = 1;
-		state = JUMPING;
-	}
+	//if(state != CLIMBING) {
+	//	myGravity = 1;
+	//	state = JUMPING;
+	//}
 }
 
 // Check for collision with ladder tile
@@ -282,7 +274,7 @@ var tileBottomRight = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_bott
 var tileBottomLeft = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_bottom);
 if((tileTopLeft == 2 or tileTopRight == 2 or tileBottomRight == 2 or tileBottomLeft == 2) and state != CLIMBING) {
 	if(input[UP] || input[DOWN]) {
-		state = CLIMBING;
+		//state = CLIMBING;
 		myGravity = 0;
 		xSpeed = 0;
 		ySpeed = 0;
@@ -291,6 +283,5 @@ if((tileTopLeft == 2 or tileTopRight == 2 or tileBottomRight == 2 or tileBottomL
 
 */
 
-stateExecute();
 
 
