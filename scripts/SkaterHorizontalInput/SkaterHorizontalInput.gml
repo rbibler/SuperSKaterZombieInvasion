@@ -2,7 +2,6 @@
 var speedThisFrame = input[SHOOT] ? sprintSpeedX : normalSpeedX;
 
 if(input[LEFT]) {
-	show_debug_message("INPUT LEFT!");
 	if(!input[RIGHT] and !input[DOWN]) {
 		myDirection = -1;
 		// If so, accelerate left until max speed is reached
@@ -12,7 +11,6 @@ if(input[LEFT]) {
 	}
 // If not moving left, check to see if moving right
 } else if(input[RIGHT]) {
-	show_debug_message("INPUT RIGHT!");
 	if(!input[LEFT] and !input[DOWN]) {
 		myDirection = 1;
 		// If so, accelerate right until max speed is reached
@@ -23,7 +21,7 @@ if(input[LEFT]) {
 // Otherwise no horizontal impetus. Could still be rolling though
 } else {
 	// If no directional input, slow the skater down until he stops
-	if(abs(xSpeed) > 0 and state != rollingState) {
+	if(abs(xSpeed) > 0 and grounded and state != rollingState) {
 		stateSwitch("ROLLING");
 	}
 } 
@@ -49,7 +47,5 @@ if(abs(xSpeed) >= maxSpeed) {
 	xSpeed -= sign(xSpeed) * 0.15;
 }
 
-if(abs(xSpeed) < 0.15) {
-	xSpeed = 0;
-}
-lastXSpeed = xSpeed;
+
+

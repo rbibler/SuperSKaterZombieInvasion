@@ -5,6 +5,7 @@ if(stateNew) {
 
 SkaterHorizontalCollisionCheck();
 skaterVerticalCollisionCheck();
+SkaterPlatformCollisions();
 
 if(input[DOWN]) {
 	stateSwitch("CROUCHING");
@@ -17,11 +18,9 @@ if(input[JUMP]) {
 	}
 } 
 
-if(xSpeed == 0) {
+if(xSpeed == 0 and !input[RIGHT] and !input[LEFT]) {
 	stateSwitch("IDLE");
 }
-
-
 
 if(!grounded) {
 	stateSwitch("FALLING");

@@ -12,8 +12,9 @@ if(tileId == 1) {
 			y = tileEdge + 1;
 			jump = 0;
 			ySpeed = 0;
+			ySpeedFraction = 0;
 			grounded = true;
-			show_debug_message("Grounded: VC 1");
+			//show_debug_message("Grounded: VC 1");
 			onSlope = false;
 		} else {
 			grounded = false;
@@ -34,8 +35,9 @@ if(tileId == 1) {
 		y = tileEdge + floorOffset - 1;
 		jump = 0;
 		ySpeed = 0;
+		ySpeedFraction = 0;
 		grounded = true;
-		show_debug_message("Grounded: VC 2");
+		//show_debug_message("Grounded: VC 2");
 		onSlope = true;
 		xSpeed += obj_slopeController.slopeGravity[tileId];
 	// Didn't collide with a slope, so check the bottom right
@@ -51,8 +53,9 @@ if(tileId == 1) {
 					y = tileEdge + 1;
 					jump = 0;
 					ySpeed = 0;
+					ySpeedFraction = 0;
 					grounded = true;
-					show_debug_message("Grounded: VC 3");
+					//show_debug_message("Grounded: VC 3");
 					onSlope = false;
 				} else {
 					grounded = false;
@@ -67,8 +70,9 @@ if(tileId == 1) {
 						y = tileEdge + 1;
 						jump = 0;
 						ySpeed = 0;
+						ySpeedFraction = 0;
 						grounded = true;
-						show_debug_message("Grounded: VC 4");
+						//show_debug_message("Grounded: VC 4");
 						onSlope = false;
 					} else {
 						grounded = false;
@@ -81,6 +85,7 @@ if(tileId == 1) {
 	}
 }
 
+
 // Checking on a slope collision
 var tileIdBottom = tilemap_get_at_pixel(collisionTiles, x + xSpeed, y + ySpeed);
 if(tileIdBottom > 3) {
@@ -91,8 +96,9 @@ if(tileIdBottom > 3) {
 		y = tileEdge + floorOffset - 1;
 		jump = 0;
 		ySpeed = 0;
+		ySpeedFraction = 0;
 		grounded = true;
-		show_debug_message("Grounded: VC 5");
+		//show_debug_message("Grounded: VC 5");
 		onSlope = true;
 		xSpeed += obj_slopeController.slopeGravity[tileIdBottom];
 	}

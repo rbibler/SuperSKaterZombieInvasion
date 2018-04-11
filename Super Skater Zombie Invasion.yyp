@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "12a95ca8-5641-4fdd-9a0b-d371ae4b0f81",
+            "Value": {
+                "id": "85a31376-3d88-4287-8259-b7e169e14283",
+                "resourcePath": "scripts\\SkaterHeadCollisionCheck\\SkaterHeadCollisionCheck.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1afd1f86-ae8c-48f5-a884-e4f20d8d1041",
             "Value": {
                 "id": "a8d26600-70ab-4527-9b61-8c173a0a5cbb",
@@ -91,6 +99,14 @@
             "Value": {
                 "id": "114ac16a-617e-4437-bb37-1ddacf9cca35",
                 "resourcePath": "scripts\\GetDebugPoints\\GetDebugPoints.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1f34898c-1c65-49d1-b5da-3fd9d09c9174",
+            "Value": {
+                "id": "8deeee9e-58c3-4323-9149-f79d572e883b",
+                "resourcePath": "scripts\\SkaterMovementFractions\\SkaterMovementFractions.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -159,11 +175,27 @@
             }
         },
         {
+            "Key": "3bebb19f-b7f4-4d2d-bad4-7430a9953893",
+            "Value": {
+                "id": "5961b636-a477-45cb-be54-4498b02fb34a",
+                "resourcePath": "scripts\\SkaterPlatformCollisions\\SkaterPlatformCollisions.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3cc3f266-1088-4e22-a460-b673dcbf64de",
             "Value": {
                 "id": "4157c23c-ef2f-4d16-a0b7-10973ca25535",
                 "resourcePath": "sprites\\spr_SkaterPistol\\spr_SkaterPistol.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3d25c3d6-f74b-4126-b661-f51583543d8d",
+            "Value": {
+                "id": "744a53a8-bfc2-4600-aa39-5a3effb550e6",
+                "resourcePath": "scripts\\CameraUpdate\\CameraUpdate.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -263,6 +295,14 @@
             }
         },
         {
+            "Key": "6ba240ff-0fd2-4365-94fa-4156b3db8b4d",
+            "Value": {
+                "id": "abe3ed71-6a5c-4db1-9648-d859b02197ad",
+                "resourcePath": "scripts\\SkaterStillOnGround\\SkaterStillOnGround.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "726995d9-185d-43b2-85be-2b5471290ab3",
             "Value": {
                 "id": "90d95709-5b0f-4cc6-ae95-d44758f01e32",
@@ -284,6 +324,14 @@
                 "id": "809ee7d1-df37-4c65-b447-07b59e4848f7",
                 "resourcePath": "views\\7c6f63d5-ad21-46e6-8413-5bfa0ed794eb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "81cb1f7d-6532-4372-a6fb-f27a48fa4f2a",
+            "Value": {
+                "id": "d24abf8d-7b6a-4f02-952f-d8a23c71472d",
+                "resourcePath": "scripts\\SkaterOnGround\\SkaterOnGround.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -626,6 +674,11 @@
         "5e5d132a-f96d-426e-af2a-b8f973110a5a",
         "85d206ad-0ee8-4290-b1ae-203367030825",
         "a5ada3a9-acd7-4b21-a75c-496f9b912e5f",
+        "12a95ca8-5641-4fdd-9a0b-d371ae4b0f81",
+        "1f34898c-1c65-49d1-b5da-3fd9d09c9174",
+        "3bebb19f-b7f4-4d2d-bad4-7430a9953893",
+        "81cb1f7d-6532-4372-a6fb-f27a48fa4f2a",
+        "6ba240ff-0fd2-4365-94fa-4156b3db8b4d",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",
@@ -633,7 +686,8 @@
         "f08a32ba-0870-43ac-afc7-0980293fbe6f",
         "bc6328c8-9183-428d-b407-066593b55702",
         "78b7ac21-588d-4bba-a745-648e6ed3b534",
-        "cb9282be-2efe-4b81-bae3-a6fdbc0e19e0"
+        "cb9282be-2efe-4b81-bae3-a6fdbc0e19e0",
+        "3d25c3d6-f74b-4126-b661-f51583543d8d"
     ],
     "tutorial": ""
 }

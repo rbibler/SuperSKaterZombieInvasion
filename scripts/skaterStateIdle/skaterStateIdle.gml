@@ -6,9 +6,7 @@ if(stateNew) {
 
 if(input[LEFT] or input[RIGHT]) {
 	stateSwitch("SKATING");
-} else {
-	show_debug_message("NO INPUT!");
-}
+} 
 
 // Skater can jump if jump is pressed fresh on this frame and skater isn't already jumping
 if(input[JUMP]) {
@@ -18,8 +16,14 @@ if(input[JUMP]) {
 } 
 
 skaterVerticalCollisionCheck();
+SkaterPlatformCollisions();
 
 if(!grounded) {
 	stateSwitch("FALLING");
+}
+
+if(abs(xSpeed) < 0.15) {
+	xSpeed = 0;
+	xSpeedFraction = 0;
 }
 

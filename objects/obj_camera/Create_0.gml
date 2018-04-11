@@ -3,6 +3,10 @@
 follow = obj_skater;
 xTo = 0;
 yTo = 0;
+xSpeed = 0;
+xSpeedFrac = 0;
+ySpeed = 0;
+ySpeedFrac = 0;
 cam = view_camera[0];
 viewW = 512;
 viewH = 240;

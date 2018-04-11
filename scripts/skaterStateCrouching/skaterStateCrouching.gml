@@ -5,8 +5,12 @@ if(state == CROUCHING && !jump) {
 		// If that last slow down has flipped the direction, stop the skater
 		if(sign(xSpeed) != sign(lastXSpeed)) {
 			xSpeed = 0;
+			xSpeedFraction = 0;
 		}
 	} else {
 		xSpeed = 0;
+		xSpeedFraction = 0;
 	}
 }
+
+skaterVerticalCollisionCheck();

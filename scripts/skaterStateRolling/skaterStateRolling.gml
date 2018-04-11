@@ -13,10 +13,12 @@ if(abs(xSpeed) > 0) {
 			// If that last slow down has flipped the direction, stop the skater
 			if(sign(xSpeed) != sign(lastXSpeed)) {
 				xSpeed = 0;
+				xSpeedFraction = 0;
 				stateSwitch("IDLE");
 			}
 		} else {
 			xSpeed = 0;
+			xSpeedFraction = 0;
 			stateSwitch("IDLE");
 		}
 	}
@@ -24,6 +26,7 @@ if(abs(xSpeed) > 0) {
 
 SkaterHorizontalCollisionCheck();
 skaterVerticalCollisionCheck();
+SkaterPlatformCollisions();
 
 if(!grounded) {
 	stateSwitch("FALLING");
@@ -39,3 +42,8 @@ if(input[JUMP]) {
 		stateSwitch("JUMPING");
 	}
 } 
+
+if(abs(xSpeed) < 0.15) {
+	xSpeed = 0;
+	xSpeedFraction = 0;
+}

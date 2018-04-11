@@ -20,7 +20,12 @@
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "5e5d132a-f96d-426e-af2a-b8f973110a5a",
         "85d206ad-0ee8-4290-b1ae-203367030825",
-        "a5ada3a9-acd7-4b21-a75c-496f9b912e5f"
+        "a5ada3a9-acd7-4b21-a75c-496f9b912e5f",
+        "12a95ca8-5641-4fdd-9a0b-d371ae4b0f81",
+        "1f34898c-1c65-49d1-b5da-3fd9d09c9174",
+        "3bebb19f-b7f4-4d2d-bad4-7430a9953893",
+        "81cb1f7d-6532-4372-a6fb-f27a48fa4f2a",
+        "6ba240ff-0fd2-4365-94fa-4156b3db8b4d"
     ],
     "filterType": "GMScript",
     "folderName": "SkaterScripts",

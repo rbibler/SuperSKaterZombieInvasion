@@ -13,10 +13,12 @@
 
 // Skater's current xSpeed
 xSpeed = 0;
+xSpeedFrac = 0;
 lastXSpeed = 0;
 
 // Skater's current ySpeed
 ySpeed = 0;
+ySpeedFrac = 0;
 
 // Array to hold the user's input. 
 input[0] = UP;
@@ -81,6 +83,7 @@ myGravity = 1;
 
 // Flag to indiciate that the skater is on the ground
 grounded = false;
+onGroundStart = false;
 
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);
