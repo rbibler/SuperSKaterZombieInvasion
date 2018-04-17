@@ -8,17 +8,15 @@ Adapted from PixealatedPope's tutorial:
 	https://www.reddit.com/r/gamemaker/comments/353aq6/tutorialexample_finite_state_machines_the_most/
 */
 
-if(is_real(argument[0]))
-{
-    state=argument[0];
-    state_name="Unknown (Use the name to switch next time)";
+if(is_real(argument[0])) {
+    state = argument[0];
+    stateName = "Unknown (Use the name to switch next time)";
 }
-else
-{
-    state=ds_map_find_value(state_map,argument[0]);
-    state_name=argument[0];
+else {
+    state = ds_map_find_value(stateMap, argument[0]);
+    stateName = argument[0];
 }    
-state_next=state;
-ds_stack_push(state_stack,state);
-state_new=true;
+stateNext = state;
+ds_stack_push(stateStack, state);
+stateNew = true;
 
