@@ -1,52 +1,25 @@
 // Check horizontal collisions
-// Moving right first
-// Check right middle, if not check right top
-if(xSpeed > 0) {
-	var rightEdgeX = x + xSpeed + sensors[RIGHT_EDGE_X];
-	var rightEdgeY = y + ySpeed + sensors[RIGHT_EDGE_Y];
-	var tileId = tilemap_get_at_pixel(collisionTiles, rightEdgeX, rightEdgeY);
-	if(tileId == 1) {
-		var tileEdge = floor(rightEdgeX / 16) * 16;
-		var colDist = (tileEdge - bbox_right);
-		x += min(colDist, xSpeed);
-		xSpeed = 0;
-		xSpeedFraction = 0;
-		show_debug_message("Horiz collision 1");
-	} else  {
-		//rightEdgeX = x + xSpeed + sensors[RIGHT_EDGE_X];
-		//rightEdgeY = y + ySpeed + sensors[TOP_Y];
-		//tileId = tilemap_get_at_pixel(collisionTiles, rightEdgeX, rightEdgeY);
-		//if(tileId == 1) {
-			//var tileEdge = floor(rightEdgeX / 16) * 16;
-			
-			//var colDist = (tileEdge - bbox_right);
-			//x += min(colDist, xSpeed);
-			//xSpeed = 0;
-			//show_debug_message("Horiz collision 2");
-		//}
-	}
-// If not moving right, check left. First middle then top
-} else if(xSpeed < 0) {
-	var leftEdgeX = x + xSpeed + sensors[LEFT_EDGE_X];
-	var leftEdgeY = y + ySpeed + sensors[LEFT_EDGE_Y];
-	var tileId = tilemap_get_at_pixel(collisionTiles, leftEdgeX, leftEdgeY)
-	if(tileId == 1) {
-		var tileEdge = (floor(leftEdgeX / 16) * 16) + 16;
-		var colDist = (tileEdge - bbox_left);
-		x += max(colDist, xSpeed) -1;
-		xSpeed = 0;
-		xSpeedFraction = 0;
-		show_debug_message("Horiz collision 3");
+/*
+* Adapted from Shaun Spaulding's tutorial: https://www.youtube.com/watch?v=Yre-XAE8DBA
+*/
+var bbox_side = bbox_right;
+if(xSpeed < 0) {
+	bbox_side = bbox_left;
+}
+var p1 = tilemap_get_at_pixel(collisionTiles, bbox_side + xSpeed, bbox_top);
+var p2 = tilemap_get_at_pixel(collisionTiles, bbox_side + xSpeed, bbox_bottom);
+var p3 = tilemap_get_at_pixel(collisionTiles, bbox_side + xSpeed, bbox_bottom - ((bbox_bottom - bbox_top) / 2));
+if(tilemap_get_at_pixel(collisionTiles, x, bbox_bottom) > 3) {
+	p2 = 0;
+}
+
+if(p1 == 1 or p2 == 1 or p3 == 1 and state != climbingState) {
+	if(xSpeed > 0) {
+		x = x - (x mod 16) + (15) - (bbox_right - x);
+		show_debug_message("X Collision 1");
 	} else {
-		//leftEdgeX = x + xSpeed + sensors[LEFT_EDGE_X];
-		//leftEdgeY = y + ySpeed + sensors[TOP_Y];
-		//tileId = tilemap_get_at_pixel(collisionTiles, leftEdgeX, leftEdgeY)
-		//if(tileId == 1) {
-		//	var tileEdge = (floor(leftEdgeX / 16) * 16) + 16;
-		//	var colDist = (tileEdge - bbox_left);
-		//	x += max(colDist, xSpeed) -1;
-		//	xSpeed = 0;
-		//	show_debug_message("Horiz collision 4");
-		//}
+		x = x - (x mod 16) - (bbox_left - x);
+		show_debug_message("X Collision 2");
 	}
+	xSpeed = 0;
 }

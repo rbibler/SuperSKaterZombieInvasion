@@ -1,33 +1,28 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Get the user's input
-onGroundStart = SkaterOnGround();
+
+// Clear the vertical movement flag to ensure we don't update the skater's y position more than once
+verticalMovementRun = false;
+
+// Get the user's input. 
 SkaterInput();
-SkaterHorizontalInput();
-SkaterMovementFractions();
-stateExecute();
 
-
-
-
-/*
-
-// Check for collision with ladder tile
-var tileTopLeft = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_top);
-var tileTopRight = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_top);
-var tileBottomRight = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_bottom);
-var tileBottomLeft = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_bottom);
-if((tileTopLeft == 2 or tileTopRight == 2 or tileBottomRight == 2 or tileBottomLeft == 2) and state != CLIMBING) {
-	if(input[UP] || input[DOWN]) {
-		//state = CLIMBING;
-		myGravity = 0;
-		xSpeed = 0;
-		ySpeed = 0;
-	}
+// Impart gravity and limit the skater's terminal velocity
+ySpeed += myGravity;
+if(ySpeed >= maxYSpeed) {
+	ySpeed = maxYSpeed;
 }
 
-*/
+SkaterCheckGrounded();
 
+// The real fun happens in the state machine
+stateExecute();
 
+// We don't want the camera to follow us in certain places, so check for them!
+if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_cameraFollowTrigger, false, false)) {
+	camera_set_view_speed(view_camera[0], -1, 0);
+} else {
+	camera_set_view_speed(view_camera[0], -1, -1);
+}
 

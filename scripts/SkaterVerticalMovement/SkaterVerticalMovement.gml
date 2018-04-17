@@ -1,5 +1,8 @@
-ySpeed += myGravity;
-if(ySpeed >= 15) {
-	ySpeed = 15;
+
+if(ySpeed >= maxYSpeed) {
+	ySpeed = maxYSpeed;
 }
 y += ySpeed;
+verticalMovementRun = true;
+
+
