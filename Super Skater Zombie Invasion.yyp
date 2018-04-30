@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "6e59ce6e-6bb6-4bf2-9161-fa33e3c6b9e9",
+            "Value": {
+                "id": "77228c7a-c8f7-4d13-acff-79da6c7126cc",
+                "resourcePath": "sprites\\spr_board\\spr_board.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "726995d9-185d-43b2-85be-2b5471290ab3",
             "Value": {
                 "id": "90d95709-5b0f-4cc6-ae95-d44758f01e32",
@@ -524,6 +532,14 @@
                 "id": "945eb787-e615-4148-9d05-9324654a65ba",
                 "resourcePath": "sprites\\spr_SkaterSkate\\spr_SkaterSkate.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9b98fa49-796d-487f-b7f2-6dc6d3034b7d",
+            "Value": {
+                "id": "d6d350cc-122a-4d4a-9d35-99a1a47b9311",
+                "resourcePath": "objects\\obj_board\\obj_board.yy",
+                "resourceType": "GMObject"
             }
         },
         {

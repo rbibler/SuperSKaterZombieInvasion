@@ -81,7 +81,7 @@ slopeFriction = 0.075;
 airFriction = 0.075;
 
 // Reference to the weapon
-currentWeapon = instance_create_layer(0, 0, "WEAPONS", obj_slingshot);
+currentWeapon = instance_create_layer(0, 0, "WEAPONS", obj_boardSwing);
 weaponAnimCounter = 0;
 
 var layerId = layer_get_id("CollisionTiles");
