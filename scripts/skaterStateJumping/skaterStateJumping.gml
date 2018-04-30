@@ -16,6 +16,16 @@ if(stateNew) {
 	grounded = false;
 }
 
+SkaterBasicStateAnimation();
+
+// Check if we should fire a weapon
+if(currentWeapon != noone) {
+	var shootNow = currentWeapon.isAutomatic ? input[SHOOT] : (input[SHOOT] and !lastInput[SHOOT]);
+	if(shootNow) {
+		script_execute(currentWeapon.fireScript, currentWeapon, false);
+	}
+}
+
 // Check how fast the skater should be moving
 SkaterHorizontalImpetus();
 
@@ -50,6 +60,7 @@ SkaterLadderCollisions();
 
 // If yspeed is greater than zero, we've reached our apogee so it's time to fall
 if(jump == 1 and (ySpeed > 0 or !input[JUMP])){
+	show_debug_message("FAlling in jump");
 	// Start falling. Can't set jump to zero, because that'll reset the can jump flag
 	jump = 2;
 	ySpeed = 0;

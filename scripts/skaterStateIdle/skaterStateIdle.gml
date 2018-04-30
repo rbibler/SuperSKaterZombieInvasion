@@ -18,6 +18,14 @@ if(stateNew) {
 	stateVar[2] = false;
 }
 
+// Check if we should fire a weapon
+if(currentWeapon != noone) {
+	var shootNow = currentWeapon.isAutomatic ? input[SHOOT] : (input[SHOOT] and !lastInput[SHOOT]);
+	if(shootNow) {
+		script_execute(currentWeapon.fireScript, currentWeapon, false);
+	}
+}
+
 // If enough time has passed to start the animation idle thing do it.
 // stateVar[0] = time in steps between idle animation cycles
 // stateVar[1] = amount of time since last animation cycle
@@ -25,17 +33,36 @@ if(stateTimer - stateVar[1] >= stateVar[0]) {
 	stateVar[2] = true;
 }
 
-if(stateVar[2] == true) {
-	if(stateTimer mod (60 / 5) == 0) {
+if(weaponAnimCounter > 0) {
+	var weaponSprite = SkaterGetWeaponSprite(state, currentWeapon);
+	if(sprite_index != weaponSprite) {
+		sprite_index = weaponSprite;
+		image_index = 0;
+	}
+}
+	
+if(stateTimer mod (60 / 5) == 0) {
+	if(weaponAnimCounter > 0) {
 		image_index++;
-		if(image_index >= image_number) {
-			stateVar[1] = stateTimer;
-			stateVar[0] = random_range(60 * 3, 60 * 6);
+		weaponAnimCounter--;
+		if(weaponAnimCounter <= 0) {
+			sprite_index = spr_SkaterIdle;
 			image_index = 0;
-			stateVar[2] = false;
+		}
+	} else {
+		if(stateVar[2] == true) {
+			image_index++;
+			if(image_index >= image_number) {
+				stateVar[1] = stateTimer;
+				stateVar[0] = random_range(60 * 3, 60 * 6);
+				image_index = 0;
+				stateVar[2] = false;
+			}
 		}
 	}
 }
+
+
 
 SkaterCheckSlopeImpetus();
 
@@ -61,17 +88,18 @@ if(input[LEFT] or input[RIGHT]) {
 	stateSwitch("SKATING");
 } 
 
+
+// If you aren't on the ground anymore, you're falling
+if(!grounded) {
+	stateSwitch("FALLING");
+}
+
 // Skater can jump if jump is pressed fresh on this frame and skater isn't already jumping
 if(input[JUMP]) {
 	if(jump == 0 and !lastInput[JUMP] and canJump < jumpFramesAllowance) {
 		stateSwitch("JUMPING");
 	}
 } 
-
-// If you aren't on the ground anymore, you're falling
-if(!grounded) {
-	stateSwitch("FALLING");
-}
 
 // Probably don't need this, but it's here to make sure we slow down to a stop
 if(abs(xSpeed) < 0.15) {

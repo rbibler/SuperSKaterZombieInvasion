@@ -11,6 +11,16 @@ if(stateNew) {
 	image_index = 0;
 }
 
+SkaterBasicStateAnimation();
+
+// Check if we should fire a weapon
+if(currentWeapon != noone) {
+	var shootNow = currentWeapon.isAutomatic ? input[SHOOT] : (input[SHOOT] and !lastInput[SHOOT]);
+	if(shootNow) {
+		script_execute(currentWeapon.fireScript, currentWeapon, true);
+	}
+}
+
 // If the skater crouches, he can't skate so slow him down till he stops
 if(sign(xSpeed) == sign(lastXSpeed)) {
 	xSpeed -= (groundFriction * sign(xSpeed));

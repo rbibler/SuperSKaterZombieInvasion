@@ -80,6 +80,9 @@ groundFriction = 0.25;
 slopeFriction = 0.075;
 airFriction = 0.075;
 
+// Reference to the weapon
+currentWeapon = instance_create_layer(0, 0, "WEAPONS", obj_slingshot);
+weaponAnimCounter = 0;
 
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);
@@ -91,14 +94,14 @@ alarm[0] = 60 * 4;
 stateMachineInit();
 
 // Define the skater's states
-stateCreate("IDLE",SkaterStateIdle);
-stateCreate("SKATING", SkaterStateSkating);
-stateCreate("JUMPING", SkaterStateJumping);
-stateCreate("CLIMBING", SkaterStateClimbing);
-stateCreate("CROUCHING", SkaterStateCrouching);
-stateCreate("FALLING", SkaterStateFalling);
-stateCreate("SLAMMING", SkaterStateSlam);
-stateCreate("DEAD", SkaterStateDead);
+idleState = stateCreate("IDLE",SkaterStateIdle);
+skateState = stateCreate("SKATING", SkaterStateSkating);
+jumpState = stateCreate("JUMPING", SkaterStateJumping);
+climbState = stateCreate("CLIMBING", SkaterStateClimbing);
+crouchState = stateCreate("CROUCHING", SkaterStateCrouching);
+fallState = stateCreate("FALLING", SkaterStateFalling);
+slamState = stateCreate("SLAMMING", SkaterStateSlam);
+deadState = stateCreate("DEAD", SkaterStateDead);
 recoveringState = stateCreate("RECOVERING", SkaterStateSlamRecovery);
 rollingState = stateCreate("ROLLING", SkaterStateRolling);
 climbingState = stateCreate("CLIMBING", SkaterStateClimbing);

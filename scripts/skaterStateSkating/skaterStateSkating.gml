@@ -15,12 +15,16 @@ if(stateNew) {
 	image_index = 0;
 }
 
-if(stateTimer mod (60 / 5) == 0) {
-	image_index++;
-	if(image_index >= image_number) {
-		image_index = 0;
+// Check if we should fire a weapon
+if(currentWeapon != noone) {
+	var shootNow = currentWeapon.isAutomatic ? input[SHOOT] : (input[SHOOT] and !lastInput[SHOOT]);
+	if(shootNow) {
+		script_execute(currentWeapon.fireScript, currentWeapon, false);
 	}
 }
+
+SkaterBasicStateAnimation();
+
 
 // Crouch if the user presses down
 if(input[DOWN] and state != climbingState) {
@@ -40,12 +44,6 @@ SkaterVerticalCollisionCheck();
 SkaterPlatformCollisions();
 SkaterLadderCollisions();
 
-// Skater can jump if jump is pressed fresh on this frame and skater isn't already jumping
-if(input[JUMP]) {
-	if(jump == 0 and !lastInput[JUMP] and canJump < jumpFramesAllowance) {
-		stateSwitch("JUMPING");
-	}
-} 
 
 // If we're not moving and there's no input, then we're idle
 if(xSpeed == 0 and !input[RIGHT] and !input[LEFT]) {
@@ -56,4 +54,13 @@ if(xSpeed == 0 and !input[RIGHT] and !input[LEFT]) {
 if(!grounded) {
 	stateSwitch("FALLING");
 }
+
+
+// Skater can jump if jump is pressed fresh on this frame and skater isn't already jumping
+if(input[JUMP]) {
+	show_debug_message("JumpFrames: " + string(canJump));
+	if(jump == 0 and !lastInput[JUMP] and canJump < jumpFramesAllowance) {
+		stateSwitch("JUMPING");
+	}
+} 
 

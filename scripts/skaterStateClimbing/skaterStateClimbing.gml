@@ -1,6 +1,18 @@
 /// @description Climbing step event
 // You can write your code in this editor
 
+
+// Check if we should fire a weapon
+if(currentWeapon != noone) {
+	var shootNow = currentWeapon.isAutomatic ? input[SHOOT] : (input[SHOOT] and !lastInput[SHOOT]);
+	if(shootNow) {
+		script_execute(currentWeapon.fireScript, currentWeapon, false);
+	}
+}
+
+SkaterBasicStateAnimation();
+
+
 if(input[UP] and !input[DOWN]) {
 	ySpeed = -climbSpeed;
 } else if(input[DOWN] and !input[UP]) {

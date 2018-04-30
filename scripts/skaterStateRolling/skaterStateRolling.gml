@@ -14,6 +14,16 @@ if(stateNew) {
 	image_index = 0;
 }
 
+SkaterBasicStateAnimation();
+
+// Check if we should fire a weapon
+if(currentWeapon != noone) {
+	var shootNow = currentWeapon.isAutomatic ? input[SHOOT] : (input[SHOOT] and !lastInput[SHOOT]);
+	if(shootNow) {
+		script_execute(currentWeapon.fireScript, currentWeapon, false);
+	}
+}
+
 // Check how fast the skater should be moving
 SkaterHorizontalImpetus();
 
