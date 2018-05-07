@@ -7,7 +7,7 @@ Adapted from PixealatedPope's tutorial:
 */
 
 
-ds_stack_pop(state_stack);
-var _state=ds_stack_top(state_stack);
-state_switch(_state,false);
+ds_stack_pop(stateStack);
+var _state = ds_stack_top(stateStack);
+stateSwitch(_state, false);
 

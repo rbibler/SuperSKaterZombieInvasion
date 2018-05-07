@@ -6,17 +6,19 @@
 // Skater's state
 // 0 - Idle; 1 - Skating; 2 - Crouching; 3 - Jumping; 
 // 4 - Slamming; 5 - Recovering; 6 - Hit; 7 - Climbing;
-state = 0;
+//state = 0;
 
 // Hold on to the skater's state from the previous frame
-lastState = 0;
+//lastState = 0;
 
 // Skater's current xSpeed
 xSpeed = 0;
+xSpeedFrac = 0;
 lastXSpeed = 0;
 
 // Skater's current ySpeed
 ySpeed = 0;
+ySpeedFrac = 0;
 
 // Array to hold the user's input. 
 input[0] = UP;
@@ -31,37 +33,24 @@ input[7] = JUMP;
 animIndex[IDLE] = 0;
 animIndex[SKATING] = 0;
 
+tileColliderX = 0;
+tileColliderY = 0;
+
 // Initialize an array to hold the input from the last frame
 for(var i = 0; i < 8; i++) {
 	lastInput[i] = input[i];
 }
 
 
-sensors[HOT_SPOT_X] = 0;
-sensors[HOT_SPOT_Y] = 0;
-sensors[RIGHT_EDGE_X] = 7;
-sensors[RIGHT_EDGE_Y] = -16;
-sensors[LEFT_EDGE_X] = -7;
-sensors[LEFT_EDGE_Y] = -16;
-sensors[BOTTOM_RIGHT_X] = 7;
-sensors[BOTTOM_RIGHT_Y] = 0;
-sensors[BOTTOM_LEFT_X] = -7;
-sensors[BOTTOM_LEFT_Y] = 0;
-sensors[SLOPE_CATCHER_LEFT_X] = -7;
-sensors[SLOPE_CATCHER_LEFT_Y] = -4;
-sensors[SLOPE_CATCHER_RIGHT_X] = 7;
-sensors[SLOPE_CATCHER_RIGHT_Y] = -4;
-sensors[TOP_X] = 8;
-sensors[TOP_Y] = -31;
-
 onSlope = false;
+verticalMovementRun = false;
 
 
 // Skater's Normal Speed
-normalSpeedX = 2.7;
+normalSpeedX = 1.7;
 
 // Skater's Sprint Speed
-sprintSpeedX = 4;
+sprintSpeedX = 2.7;
 
 // Keeps track of skater's direction. -1 is left 1 is right. Should never be zero.
 myDirection = 1;
@@ -69,18 +58,31 @@ myDirection = 1;
 
 // Skater's jump status
 jump = 0;
+canJump = 0;
+jumpFramesAllowance = 12;
 
 // constant climb speed
 climbSpeed = 2;
 
 // constant jump speed
-jumpSpeed = -15;
+jumpSpeed = -7;
 
 // Set the initial gravity to whatever our gravity is
-myGravity = 1;
+myGravity = 0.5;
+standardGravity = 0.5;
+maxYSpeed = 6;
 
 // Flag to indiciate that the skater is on the ground
 grounded = false;
+
+// Ground friction
+groundFriction = 0.25;
+slopeFriction = 0.075;
+airFriction = 0.075;
+
+// Reference to the weapon
+currentWeapon = instance_create_layer(0, 0, "WEAPONS", obj_boardSwing);
+weaponAnimCounter = 0;
 
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);
@@ -88,22 +90,26 @@ collisionTiles = layer_tilemap_get_id(layerId);
 // Reset the timer for the idle animation
 alarm[0] = 60 * 4;
 
-debugPoints[HOT_SPOT_X] = 0;
-debugPoints[HOT_SPOT_Y] = 0;
-debugPoints[RIGHT_EDGE_X] = 7;
-debugPoints[RIGHT_EDGE_Y] = -16;
-debugPoints[LEFT_EDGE_X] = -7;
-debugPoints[LEFT_EDGE_Y] = -16;
-debugPoints[BOTTOM_RIGHT_X] = 7;
-debugPoints[BOTTOM_RIGHT_Y] = 0;
-debugPoints[BOTTOM_LEFT_X] = -7;
-debugPoints[BOTTOM_LEFT_Y] = 0;
-debugPoints[SLOPE_CATCHER_LEFT_X] = -7;
-debugPoints[SLOPE_CATCHER_LEFT_Y] = -4;
-debugPoints[SLOPE_CATCHER_RIGHT_X] = 7;
-debugPoints[SLOPE_CATCHER_RIGHT_Y] = -4;
-debugPoints[TOP_X] = 8;
-debugPoints[TOP_Y] = -31;
+// Setup the state machine
+stateMachineInit();
+
+// Define the skater's states
+idleState = stateCreate("IDLE",SkaterStateIdle);
+skateState = stateCreate("SKATING", SkaterStateSkating);
+jumpState = stateCreate("JUMPING", SkaterStateJumping);
+climbState = stateCreate("CLIMBING", SkaterStateClimbing);
+crouchState = stateCreate("CROUCHING", SkaterStateCrouching);
+fallState = stateCreate("FALLING", SkaterStateFalling);
+slamState = stateCreate("SLAMMING", SkaterStateSlam);
+deadState = stateCreate("DEAD", SkaterStateDead);
+recoveringState = stateCreate("RECOVERING", SkaterStateSlamRecovery);
+rollingState = stateCreate("ROLLING", SkaterStateRolling);
+climbingState = stateCreate("CLIMBING", SkaterStateClimbing);
+
+// Set the default state to IDLE
+stateInit("IDLE");
+
+
 
 
 
