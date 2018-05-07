@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "086fa754-efc3-4f9b-9b55-38e4e7b09dcf",
+            "Value": {
+                "id": "c5e5efa1-78c6-40f2-b5bd-947b6a704cc3",
+                "resourcePath": "views\\086fa754-efc3-4f9b-9b55-38e4e7b09dcf.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "08ec44c9-d0dd-4aa9-9f12-0c84e7a86cbd",
             "Value": {
                 "id": "191b0b93-abfc-4753-87e9-8ce3bf7f6413",
@@ -175,6 +183,14 @@
             }
         },
         {
+            "Key": "3a631d3e-72e4-4a6a-ac86-fd3dd5656ea4",
+            "Value": {
+                "id": "8cc39f53-f40d-4b61-ba25-44d0e83a08c3",
+                "resourcePath": "scripts\\slimeballStateDeadScript\\slimeballStateDeadScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3bebb19f-b7f4-4d2d-bad4-7430a9953893",
             "Value": {
                 "id": "5961b636-a477-45cb-be54-4498b02fb34a",
@@ -188,6 +204,14 @@
                 "id": "744a53a8-bfc2-4600-aa39-5a3effb550e6",
                 "resourcePath": "scripts\\CameraUpdate\\CameraUpdate.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "Value": {
+                "id": "7268cc52-6d8d-45fa-9f28-bdbeafbc4428",
+                "resourcePath": "objects\\obj_enemyParent\\obj_enemyParent.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -239,6 +263,14 @@
             }
         },
         {
+            "Key": "54fe08f3-910d-46bf-9e24-527c8f617279",
+            "Value": {
+                "id": "1e036851-37f2-40d3-93eb-17f6fb16212a",
+                "resourcePath": "scripts\\slimeballStateFallScript\\slimeballStateFallScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "56aade88-259d-4fb7-8097-021b1bab6a74",
             "Value": {
                 "id": "44547c5b-7fd3-4413-ac7b-87bc83ae0d11",
@@ -259,6 +291,14 @@
             "Value": {
                 "id": "952e1e62-f78f-4817-8d28-4814c0555122",
                 "resourcePath": "scripts\\SkaterCheckSlopeImpetus\\SkaterCheckSlopeImpetus.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "588c576d-10dd-4fca-991f-516d815a1bda",
+            "Value": {
+                "id": "c585e4c9-ec14-431e-9a29-482f68726ca4",
+                "resourcePath": "scripts\\slimeballStateJumpScript\\slimeballStateJumpScript.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -292,14 +332,6 @@
                 "id": "d1477db8-a79f-4d79-99ff-be06b0af3fa9",
                 "resourcePath": "scripts\\SkaterVerticalMovement\\SkaterVerticalMovement.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "5e6627a6-6a73-49f2-9f2a-4024d0b98aef",
-            "Value": {
-                "id": "6287d3ee-bc4e-477b-978e-7b925707d09e",
-                "resourcePath": "objects\\object8\\object8.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -455,6 +487,14 @@
             }
         },
         {
+            "Key": "8ce66c38-f31d-4a3c-9888-69704040e346",
+            "Value": {
+                "id": "4c3b1a04-d2ec-4206-8ae3-7a409d8833b9",
+                "resourcePath": "scripts\\slimeballStateIdleScript\\slimeballStateIdleScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8d984489-f452-4b78-aa63-d91d2b42d0a2",
             "Value": {
                 "id": "54c2e228-4a9b-4db6-a6b5-1fb7043b1b3b",
@@ -492,6 +532,14 @@
                 "id": "7f49ebfd-9402-44f6-bf9d-eac08b684680",
                 "resourcePath": "objects\\obj_slingshotRock\\obj_slingshotRock.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9172f944-1520-4ab2-aded-d680cc4438bc",
+            "Value": {
+                "id": "9c29ac65-f575-4e77-9e8e-2e8d547f722c",
+                "resourcePath": "views\\9172f944-1520-4ab2-aded-d680cc4438bc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -567,6 +615,14 @@
             }
         },
         {
+            "Key": "a4eb35a9-c129-494d-af0b-d3ab175b7913",
+            "Value": {
+                "id": "4d29fef5-9f68-4aac-a30a-ed0e742e74c3",
+                "resourcePath": "scripts\\slimeballStateMovingScript\\slimeballStateMovingScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a5ada3a9-acd7-4b21-a75c-496f9b912e5f",
             "Value": {
                 "id": "6fa090dd-b7fd-43c0-97ca-4f4cc9174723",
@@ -588,6 +644,14 @@
                 "id": "e5812d3f-15fe-43f8-85d6-56f24cfb0c75",
                 "resourcePath": "scripts\\SkaterStateCrouching\\SkaterStateCrouching.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a853cf1c-bc94-43d7-ae90-77f690ea4b46",
+            "Value": {
+                "id": "6b55fa5c-0ed9-4199-b665-6d03f6e3cf3f",
+                "resourcePath": "objects\\obj_slimeball\\obj_slimeball.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -663,6 +727,14 @@
             }
         },
         {
+            "Key": "b6d10f64-0f68-4742-87e5-cced5c8bd045",
+            "Value": {
+                "id": "744ed169-c000-4ae4-99cf-6ed87c874778",
+                "resourcePath": "views\\b6d10f64-0f68-4742-87e5-cced5c8bd045.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
             "Value": {
                 "id": "43f9028c-119c-47de-ba3a-013c48ac2559",
@@ -727,6 +799,22 @@
             }
         },
         {
+            "Key": "cd4998c8-eeb6-46ad-aa55-056603f00b20",
+            "Value": {
+                "id": "6f9b6420-db7f-496c-96eb-8be7d7042e11",
+                "resourcePath": "scripts\\slimeballStateAttackScript\\slimeballStateAttackScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cfb3529d-f4dd-4404-bde9-d79cf5309a12",
+            "Value": {
+                "id": "2c9502b3-cdb0-4bcf-ae12-ea508f363403",
+                "resourcePath": "sprites\\spr_slimeball\\spr_slimeball.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d1f95622-5c30-4221-8a67-3cdb9980f450",
             "Value": {
                 "id": "776fe129-f345-4914-b54b-fa44e2c745ee",
@@ -756,6 +844,14 @@
                 "id": "b6dc8cd2-0f28-4e4a-babd-1de7111b1865",
                 "resourcePath": "scripts\\SkaterStateSlam\\SkaterStateSlam.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "df3895de-6a94-4ab9-b218-4211aaff0a5b",
+            "Value": {
+                "id": "99c333ff-c5e5-4882-acc5-48afb0a3f515",
+                "resourcePath": "views\\df3895de-6a94-4ab9-b218-4211aaff0a5b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -899,7 +995,13 @@
         "bc6328c8-9183-428d-b407-066593b55702",
         "78b7ac21-588d-4bba-a745-648e6ed3b534",
         "cb9282be-2efe-4b81-bae3-a6fdbc0e19e0",
-        "3d25c3d6-f74b-4126-b661-f51583543d8d"
+        "3d25c3d6-f74b-4126-b661-f51583543d8d",
+        "8ce66c38-f31d-4a3c-9888-69704040e346",
+        "a4eb35a9-c129-494d-af0b-d3ab175b7913",
+        "588c576d-10dd-4fca-991f-516d815a1bda",
+        "54fe08f3-910d-46bf-9e24-527c8f617279",
+        "cd4998c8-eeb6-46ad-aa55-056603f00b20",
+        "3a631d3e-72e4-4a6a-ac86-fd3dd5656ea4"
     ],
     "tutorial": ""
 }
