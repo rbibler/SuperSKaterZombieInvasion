@@ -73,7 +73,3 @@ if(jump == 1 and (ySpeed > 0 or !input[JUMP])){
 if(grounded) {
 	stateSwitch("IDLE");
 }
-
-if(input[DOWN]) {
-	stateSwitch("SLAMMING");
-}
