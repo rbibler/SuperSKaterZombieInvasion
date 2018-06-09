@@ -6,7 +6,7 @@
 
 // Reset animation when entering state
 if(stateNew) {
-	sprite_index = spr_SkaterJump;
+	sprite_index = spr_SkaterDeath;
 	image_index = 0;
 	xSpeed = 0;
 	ySpeed = 0;
@@ -15,8 +15,14 @@ if(stateNew) {
 	myGravity = 0;
 }
 
-// After 60 frames, reset the game
-if(stateTimer >= 60) {
-	room_restart();
+if(stateTimer < 60) {
+	if(stateTimer > 10 and stateTimer mod 10 == 0) {
+		image_index++;
+	}
+} else {
+	if(stateTimer >= 120) {
+		// After 60 frames, reset the game
+		room_restart();
+	}
 }
 

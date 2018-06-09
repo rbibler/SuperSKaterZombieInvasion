@@ -11,14 +11,14 @@ ySpeed = 0;
 ySpeedFrac = 0;
 
 // Array to hold the user's input. 
-input[0] = UP;
-input[1] = DOWN;
-input[2] = LEFT;
-input[3] = RIGHT;
-input[4] = SELECT;
-input[5] = START;
-input[6] = SHOOT;
-input[7] = JUMP;
+input[0] = 0;
+input[1] = 0;
+input[2] = 0;
+input[3] = 0;
+input[4] = 0;
+input[5] = 0;
+input[6] = 0;
+input[7] = 0;
 
 tileColliderX = 0;
 tileColliderY = 0;
@@ -31,13 +31,6 @@ for(var i = 0; i < 8; i++) {
 
 onSlope = false;
 verticalMovementRun = false;
-
-
-// Skater's Normal Speed
-normalSpeedX = 1.7;
-
-// Skater's Sprint Speed
-sprintSpeedX = 2.7;
 
 // Keeps track of skater's direction. -1 is left 1 is right. Should never be zero.
 myDirection = 1;
@@ -55,12 +48,18 @@ climbSpeed = 2;
 jumpSpeed = -7;
 
 // Set the initial gravity to whatever our gravity is
-myGravity = 0.5;
-standardGravity = 0.5;
+
 maxYSpeed = 6;
 
 // Flag to indiciate that the skater is on the ground
 grounded = false;
+wasGrounded = false;
+
+groundedRight = false;
+wasGroundedRight = false;
+
+groundedLeft = false;
+wasGroundedLeft = false;
 
 // Ground friction
 groundFriction = 0.25;
@@ -79,7 +78,7 @@ stateCreate("MOVING", stateMovingScript);
 stateCreate("JUMPING", stateJumpScript);
 stateCreate("ATTACKING", stateAttackScript);
 stateCreate("FALLING", stateFallScript);
-stateCreate("DEAD", stateDeadScript);
+deadState = stateCreate("DEAD", stateDeadScript);
 
 // Set the default state to IDLE
 stateInit("IDLE");

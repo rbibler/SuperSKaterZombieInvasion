@@ -4,7 +4,13 @@
 
 // Clear the vertical movement flag to ensure we don't update the skater's y position more than once
 verticalMovementRun = false;
+frameTimer++;
 
+if(isImmune) {
+	if(frameTimer - immuneStart >= 60) {
+		isImmune = false;
+	}
+}
 // Get the user's input. 
 SkaterInput();
 

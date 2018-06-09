@@ -11,5 +11,14 @@ if(abs(xSpeed + xSpeedFraction) < 0.15) {
 }
 lastXSpeed = xSpeed;
 SaveInput();
+
+if(infected) {
+	if(frameTimer mod 360 == 0) {
+		stateSwitch("HIT_IMMOBILIZED");
+		health -= 5;
+	}
+}
+
+
 stateUpdate();
 

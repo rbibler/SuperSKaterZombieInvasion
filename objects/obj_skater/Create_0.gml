@@ -11,6 +11,14 @@
 // Hold on to the skater's state from the previous frame
 //lastState = 0;
 
+
+health = 100;
+// Is the skater infected?
+infected = false;
+
+// variable to hold a frame timer
+frameTimer = 0;
+
 // Skater's current xSpeed
 xSpeed = 0;
 xSpeedFrac = 0;
@@ -35,6 +43,15 @@ animIndex[SKATING] = 0;
 
 tileColliderX = 0;
 tileColliderY = 0;
+
+weaponInventory[0] = noone;
+weaponInventory[1] = noone;
+weaponInventory[2] = noone;
+weaponInventory[3] = noone;
+weaponInventory[4] = noone;
+weaponInventory[5] = noone;
+weaponInventory[6] = noone;
+weaponInventroy[7] = noone;
 
 // Initialize an array to hold the input from the last frame
 for(var i = 0; i < 8; i++) {
@@ -81,8 +98,12 @@ slopeFriction = 0.075;
 airFriction = 0.075;
 
 // Reference to the weapon
-currentWeapon = instance_create_layer(0, 0, "WEAPONS", obj_boardSwing);
+currentWeapon = noone;
 weaponAnimCounter = 0;
+currentWeaponIndex = 0;
+weaponInventorySize = array_length_1d(weaponInventory);
+
+PickupWeapon(obj_boardSwing);
 
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);
@@ -105,9 +126,13 @@ deadState = stateCreate("DEAD", SkaterStateDead);
 recoveringState = stateCreate("RECOVERING", SkaterStateSlamRecovery);
 rollingState = stateCreate("ROLLING", SkaterStateRolling);
 climbingState = stateCreate("CLIMBING", SkaterStateClimbing);
-
+hitImmobilizedState = stateCreate("HIT_IMMOBILIZED", SkaterStateHitImmobilized);
 // Set the default state to IDLE
 stateInit("IDLE");
+
+isImmune = false;
+immuneStart = 0;
+drawToggle = true;
 
 
 
