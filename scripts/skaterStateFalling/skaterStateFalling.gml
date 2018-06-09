@@ -67,7 +67,3 @@ if(input[JUMP]) {
 		stateSwitch("JUMPING");
 	}
 } 
-
-if(input[DOWN]) {
-	stateSwitch("SLAMMING");
-}

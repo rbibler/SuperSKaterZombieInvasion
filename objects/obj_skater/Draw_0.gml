@@ -3,7 +3,17 @@
 //with(obj_camera) {
 	//CameraUpdate();
 //}
-draw_self();
+if(isImmune) {
+	if(frameTimer mod 5 == 0) {
+		drawToggle = !drawToggle;
+	}
+} else {
+	drawToggle = true;
+}
+
+if(drawToggle) {
+	draw_self();
+}
 
 var xStart = tileColliderX * 16;
 var yStart = tileColliderY * 16;

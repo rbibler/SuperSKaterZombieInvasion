@@ -13,7 +13,8 @@
         "408038ce-d998-4ff4-afd5-d944162ad440",
         "de839f3e-8597-41af-b639-a6b939308fc2",
         "1e6ca688-0b13-4ce1-af7a-4b57b328475a",
-        "dfa32e27-0393-4efa-96dc-e841bf5b0c14"
+        "dfa32e27-0393-4efa-96dc-e841bf5b0c14",
+        "c468ffca-5429-4e1e-a3b9-01d1cb8bb0e5"
     ],
     "filterType": "GMScript",
     "folderName": "SkaterStateScripts",
