@@ -63,15 +63,7 @@
             "mvc": "1.0",
             "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
             "propertyId": "8ec26f91-cc60-4d28-8d1b-345f66ea480d",
-            "value": "0"
-        },
-        {
-            "id": "f77cdb14-7824-4ce6-8a5f-8ac5d6d2648d",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
-            "propertyId": "368e6ca9-bab5-4dc3-9a62-c277a481ce04",
-            "value": "16"
+            "value": "2"
         },
         {
             "id": "7c2218e9-0dec-4a9b-ac48-fcd03d2443e4",
@@ -104,6 +96,22 @@
             "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
             "propertyId": "3cbe53f1-7d66-4925-bd2e-bdc1b9615816",
             "value": "SkaterSlingshotFireScript"
+        },
+        {
+            "id": "b90a97bb-2c13-4788-bfd7-1c5d57db2afc",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
+            "propertyId": "08e4c603-2948-4bc3-9677-33a965b5a04e",
+            "value": "True"
+        },
+        {
+            "id": "26b3555f-799e-4cb4-8d79-6a5a2a04ec5d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
+            "propertyId": "3b570c7d-3c11-4daa-bd7c-2ce1db627e43",
+            "value": "BoardswingShootSequenceScript"
         }
     ],
     "parentObjectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",

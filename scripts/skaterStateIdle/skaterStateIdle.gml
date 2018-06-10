@@ -20,7 +20,7 @@ if(stateNew) {
 
 // Check if we should fire a weapon
 if(currentWeapon != noone) {
-	var shootNow = currentWeapon.isAutomatic ? input[SHOOT] : (input[SHOOT] and !lastInput[SHOOT]);
+	var shootNow = script_execute(currentWeapon.shootSequenceScript); 
 	if(shootNow) {
 		script_execute(currentWeapon.fireScript, currentWeapon, false);
 	}

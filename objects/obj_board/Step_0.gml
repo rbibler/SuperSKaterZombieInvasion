@@ -4,5 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-x = obj_skater.x + obj_boardSwing.projOffsetX;
-y = obj_skater.y + obj_boardSwing.projOffsetYNormal;
+var xOffset = 0;
+var yOffset = 0;
+

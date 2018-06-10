@@ -8,6 +8,7 @@ event_inherited();
 stateHit = stateCreate("HIT", stateHitScript);
 stateMenacing = stateCreate("MENACING", stateMenacingScript);
 stateExploding = stateCreate("EXPLODING", stateExplodingScript);
+stateDead = stateCreate("DEAD", stateDeadScript);
 moveDirOnRestart = RIGHT;
 
 canEat = true;

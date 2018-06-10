@@ -1,12 +1,26 @@
 // Determine if skater is sprinting or not
+var tileId = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + 1);
+if(tileId > 5 and sign(xSpeed) == sign(lastXSpeed)) {
+	onSlope = true;
+}
+
+
 var speedThisFrame = input[SHOOT] ? sprintSpeedX : normalSpeedX;
+var accel = 0.15;
+if(input[SHOOT]) {
+	accel = 0.25;
+} 
+if(onSlope and ((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0))) {
+	accel = 0.75;
+}
 
 if(input[LEFT]) {
 	if(!input[RIGHT] and !input[DOWN]) {
 		myDirection = -1;
 		// If so, accelerate left until max speed is reached
 		if(xSpeed > -speedThisFrame) {
-			xSpeed -= 0.75;
+			show_debug_message("Slope acceleration = " + string(-accel));
+			xSpeed -= accel;
 		} 
 	}
 // If not moving left, check to see if moving right
@@ -15,7 +29,8 @@ if(input[LEFT]) {
 		myDirection = 1;
 		// If so, accelerate right until max speed is reached
 		if(xSpeed < speedThisFrame) {
-			xSpeed += 0.75;
+			show_debug_message("Slope acceleration = " + string(accel));
+			xSpeed += accel;
 		} 
 	}
 // Otherwise no horizontal impetus. Could still be rolling though

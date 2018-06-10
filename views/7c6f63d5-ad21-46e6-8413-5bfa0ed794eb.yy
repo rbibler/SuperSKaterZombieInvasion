@@ -12,7 +12,8 @@
         "4f321851-dcf9-4fd8-abaa-e180abe189c9",
         "076cbca1-bb31-484e-bcd1-5488b7306316",
         "1afd1f86-ae8c-48f5-a884-e4f20d8d1041",
-        "fd0d8769-c574-409c-8e78-3b8f69c1dbf6"
+        "fd0d8769-c574-409c-8e78-3b8f69c1dbf6",
+        "e42f797f-f102-46aa-821d-1c8ab5de9d34"
     ],
     "filterType": "GMSprite",
     "folderName": "Skater ",

@@ -10,18 +10,24 @@ switch(state) {
 		switch(weapon.object_index) {
 			case obj_slingshot:
 				return spr_SkaterIdleSlingshot;
+			case obj_boardSwing:
+				return spr_SkaterBoardswing;		
 		}
 	break;
 	case skateState:
 		switch(weapon.object_index) {
 			case obj_slingshot:
 				return spr_SkaterSkateSlingshot;
+			case obj_boardSwing:
+				return spr_SkaterBoardswing;
 		}
 	break;
 	case jumpState:
 		switch(weapon.object_index) {
 			case obj_slingshot:
 				return spr_SkaterJumpSlingshot;
+			case obj_boardSwing:
+				return spr_SkaterBoardswing;	
 		}
 	break;
 	case crouchState:
@@ -40,12 +46,16 @@ switch(state) {
 		switch(weapon.object_index) {
 			case obj_slingshot:
 				return spr_SkaterJumpSlingshot;
+			case obj_boardSwing:
+				return spr_SkaterBoardswing;	
 		}
 	break;
 	case rollingState:
 		switch(weapon.object_index) {
 			case obj_slingshot:
 				return spr_SkaterIdleSlingshot;
+			case obj_boardSwing:
+				return spr_SkaterBoardswing;
 		}
 	break;
 }

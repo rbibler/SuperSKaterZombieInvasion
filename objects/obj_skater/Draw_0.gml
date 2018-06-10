@@ -3,6 +3,8 @@
 //with(obj_camera) {
 	//CameraUpdate();
 //}
+
+
 if(isImmune) {
 	if(frameTimer mod 5 == 0) {
 		drawToggle = !drawToggle;
