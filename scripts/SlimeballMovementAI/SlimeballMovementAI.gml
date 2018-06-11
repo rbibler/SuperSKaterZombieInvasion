@@ -47,6 +47,6 @@ if(dist > 0 and input[LEFT]) {
 if(stateVar[2] == true) {
 	if(stateTimer - stateVar[1] >= 60) {
 		stateVar[2] = false;
-		input[moveDirOnReset] = 1;
+		input[moveDirOnRestart] = 1;
 	}
 }
