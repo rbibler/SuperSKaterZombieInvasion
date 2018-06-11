@@ -5,13 +5,11 @@ if(stateNew) {
 	image_index = 0;
 }
 
-var dist = abs(x - obj_skater.x);
 
 if(stateTimer mod 15 == 0) {
 	image_xscale = -image_xscale;
 }
 
 if(stateTimer >= 45) {
-
-	stateSwitch("EXPLODING");
+	stateSwitch("DEAD");
 }

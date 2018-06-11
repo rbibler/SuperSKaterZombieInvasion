@@ -10,9 +10,7 @@
         "b5129a36-8ee4-4414-bf2c-7f9dc90d60b8",
         "54fe08f3-910d-46bf-9e24-527c8f617279",
         "3a631d3e-72e4-4a6a-ac86-fd3dd5656ea4",
-        "698a235c-86fc-4d01-a1a1-e6d453d4612b",
-        "45a03d30-50ce-45f3-b698-bc02a4a983ac",
-        "1a773429-36c5-4a41-a66e-68589747d404"
+        "698a235c-86fc-4d01-a1a1-e6d453d4612b"
     ],
     "filterType": "GMScript",
     "folderName": "SlimeballScripts",

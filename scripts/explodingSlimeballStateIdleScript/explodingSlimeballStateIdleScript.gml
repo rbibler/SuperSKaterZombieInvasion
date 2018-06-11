@@ -43,13 +43,9 @@ EnemyVerticalCollisionCheck();
 // Do need to check platform collisions because those move
 EnemyPlatformCollisions();
 
-if(grounded) {
-	stateSwitch("MOVING");
-	input[RIGHT] = 1;
-}
 
 var dist = abs(x - obj_skater.x);
-if(dist < 50) {
+if(dist < 150) {
 	stateSwitch("ATTACKING");
 }
 

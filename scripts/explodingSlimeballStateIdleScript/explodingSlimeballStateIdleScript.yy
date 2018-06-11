@@ -1,8 +1,8 @@
 {
-    "id": "45a03d30-50ce-45f3-b698-bc02a4a983ac",
+    "id": "44a79e0d-decc-4b5d-8b34-ee69a800b7ad",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "slimeballStateMenacingScript",
+    "name": "explodingSlimeballStateIdleScript",
     "IsCompatibility": false,
     "IsDnD": false
 }

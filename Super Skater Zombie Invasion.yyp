@@ -127,14 +127,6 @@
             }
         },
         {
-            "Key": "1a773429-36c5-4a41-a66e-68589747d404",
-            "Value": {
-                "id": "3d386fd5-4bb6-4323-8ea2-651b2e6b2d27",
-                "resourcePath": "scripts\\slimeballStateExplodingScript\\slimeballStateExplodingScript.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "1afd1f86-ae8c-48f5-a884-e4f20d8d1041",
             "Value": {
                 "id": "a8d26600-70ab-4527-9b61-8c173a0a5cbb",
@@ -330,15 +322,7 @@
             "Key": "44a79e0d-decc-4b5d-8b34-ee69a800b7ad",
             "Value": {
                 "id": "f95c4a3c-5684-4dd2-ad56-103ecfb85343",
-                "resourcePath": "scripts\\explodingSslimeballStateIdleScript\\explodingSslimeballStateIdleScript.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "45a03d30-50ce-45f3-b698-bc02a4a983ac",
-            "Value": {
-                "id": "86141c46-c7f4-42bf-b369-5781dd351407",
-                "resourcePath": "scripts\\slimeballStateMenacingScript\\slimeballStateMenacingScript.yy",
+                "resourcePath": "scripts\\explodingSlimeballStateIdleScript\\explodingSlimeballStateIdleScript.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -380,6 +364,14 @@
                 "id": "3607a121-adec-4532-9082-3a4c8a7998ba",
                 "resourcePath": "scripts\\DrawRectangleAtGrid\\DrawRectangleAtGrid.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "512c89d8-dbb2-4316-ae46-e8370e301b1f",
+            "Value": {
+                "id": "52904b4e-97bc-40b8-9eab-7ef893100756",
+                "resourcePath": "views\\512c89d8-dbb2-4316-ae46-e8370e301b1f.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -570,7 +562,7 @@
             "Key": "79137575-6a47-40d5-93a5-b386fb73b89e",
             "Value": {
                 "id": "3443f0c2-6dd9-4881-b818-7fd7cb92b6ab",
-                "resourcePath": "objects\\ExplodingSlimeball\\ExplodingSlimeball.yy",
+                "resourcePath": "objects\\obj_explodingSlimeball\\obj_explodingSlimeball.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1434,8 +1426,6 @@
         "54fe08f3-910d-46bf-9e24-527c8f617279",
         "3a631d3e-72e4-4a6a-ac86-fd3dd5656ea4",
         "698a235c-86fc-4d01-a1a1-e6d453d4612b",
-        "45a03d30-50ce-45f3-b698-bc02a4a983ac",
-        "1a773429-36c5-4a41-a66e-68589747d404",
         "b1c541f9-2c83-4e7a-a421-ee8549fbbd91",
         "1f57b5e1-87d4-4da2-a418-cd0556125a98",
         "b4b677b0-b98c-42d1-8276-5ad632f7644b",
