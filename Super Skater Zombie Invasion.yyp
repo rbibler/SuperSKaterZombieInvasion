@@ -98,7 +98,7 @@
             "Key": "08e39931-4d25-4883-b362-ac5b335a9808",
             "Value": {
                 "id": "d5795b60-b5e1-4fb7-b2ae-0e6bb57d5325",
-                "resourcePath": "sprites\\spr_BgSprite\\spr_BgSprite.yy",
+                "resourcePath": "sprites\\spr_BgLayer0\\spr_BgLayer0.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "50f33a26-b42a-4c97-817d-ed08491ac4d9",
+            "Value": {
+                "id": "d08442d5-3805-429d-af0b-d04bddd8d52b",
+                "resourcePath": "sprites\\spr_BgLayer1\\spr_BgLayer1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "512c89d8-dbb2-4316-ae46-e8370e301b1f",
             "Value": {
                 "id": "52904b4e-97bc-40b8-9eab-7ef893100756",
@@ -554,8 +562,16 @@
             "Key": "6f726df5-b65d-4a1a-a365-5417d9bffdb6",
             "Value": {
                 "id": "f592666c-ea96-43cc-ab19-71bf247e8b8a",
-                "resourcePath": "sprites\\spr_sky\\spr_sky.yy",
+                "resourcePath": "sprites\\spr_BgLayer3\\spr_BgLayer3.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "725c89d4-7ac5-4140-8963-4c478feed1f7",
+            "Value": {
+                "id": "f2af3809-5fca-4585-9f91-cc8c09b27ed8",
+                "resourcePath": "views\\725c89d4-7ac5-4140-8963-4c478feed1f7.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1167,6 +1183,14 @@
             }
         },
         {
+            "Key": "d6b1c9da-e78c-4869-bac2-aa627bc93fa1",
+            "Value": {
+                "id": "c9b3640f-953c-4fe2-a1ab-e1e75243277f",
+                "resourcePath": "objects\\obj_BGManager\\obj_BGManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d86e95e1-37d4-4a5f-9d53-ccb5f96a456b",
             "Value": {
                 "id": "62aa203c-6128-464d-b441-8e51224b9eb0",
@@ -1260,6 +1284,14 @@
                 "id": "3e579690-2ba7-499b-939c-056ad34bdb3a",
                 "resourcePath": "objects\\obj_slopeController\\obj_slopeController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e92db17b-7078-488e-8a00-d4ce723f6828",
+            "Value": {
+                "id": "8a77f476-f581-450e-8232-06348c6ff8f4",
+                "resourcePath": "sprites\\spr_BgLayer2\\spr_BgLayer2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
