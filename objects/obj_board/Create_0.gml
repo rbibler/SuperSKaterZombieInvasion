@@ -15,4 +15,3 @@ if(obj_skater.image_xscale == -1) {
 
 x = obj_skater.x + xOffset;
 y = obj_skater.y + yOffset;
-

@@ -5,9 +5,7 @@ if(state == stateHit or state == stateDead) {
 	return;
 }
 
-if(other.sprite_index = spr_SkaterBoardswing) {
-	stateSwitch("HIT");
-} else {
+if(other.sprite_index != spr_SkaterBoardswing) {
 	with(other) {
 		if(state != hitImmobilizedState and !isImmune) {
 			stateSwitch("HIT_IMMOBILIZED");

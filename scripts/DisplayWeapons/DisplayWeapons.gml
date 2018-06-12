@@ -1,7 +1,7 @@
 /// This is a script that helps display the skater's currently held weapons in the hud
 var weapon = noone;
 var xGrid = 21;
-var yGrid = 26;
+var yGrid = 1;
 var spriteIndex = 0;
 
 
