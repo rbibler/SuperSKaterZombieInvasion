@@ -96,6 +96,7 @@ climbSpeed = 2;
 
 // constant jump speed
 jumpSpeed = -7;
+bounceSpeed = - 15;
 
 // Set the initial gravity to whatever our gravity is
 myGravity = 0.5;
@@ -131,6 +132,7 @@ stateMachineInit();
 idleState = stateCreate("IDLE",SkaterStateIdle);
 skateState = stateCreate("SKATING", SkaterStateSkating);
 jumpState = stateCreate("JUMPING", SkaterStateJumping);
+bounceState = stateCreate("BOUNCING", SkaterStateBouncing);
 climbState = stateCreate("CLIMBING", SkaterStateClimbing);
 crouchState = stateCreate("CROUCHING", SkaterStateCrouching);
 fallState = stateCreate("FALLING", SkaterStateFalling);

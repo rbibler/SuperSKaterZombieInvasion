@@ -34,6 +34,9 @@ if(stateTimer mod (60 / 5) == 0) {
 				case climbingState:
 					sprite_index = spr_SkaterIdle;
 				break;
+				case bounceState:
+					sprite_index = spr_SkaterJump;
+				break;
 			}
 			image_index = 0;
 		}
