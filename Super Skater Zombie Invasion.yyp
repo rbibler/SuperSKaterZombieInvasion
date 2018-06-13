@@ -194,7 +194,7 @@
             "Key": "204b67c3-03b0-472e-9953-9c204df9f9a0",
             "Value": {
                 "id": "45de69e6-f985-46b6-8854-a7cd91556315",
-                "resourcePath": "sprites\\spr_bg\\spr_bg.yy",
+                "resourcePath": "sprites\\spr_platformDirection\\spr_platformDirection.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -660,6 +660,14 @@
                 "id": "c8fdc081-8d84-4ecf-b5dc-df966adedeb4",
                 "resourcePath": "scripts\\SkaterHorizontalMovement\\SkaterHorizontalMovement.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "862d6466-23bc-4dcf-8d2e-2d7b0e4f3e08",
+            "Value": {
+                "id": "0b4ab91e-9a7a-41f6-b294-62fcd492ad16",
+                "resourcePath": "objects\\obj_platformDirection\\obj_platformDirection.yy",
+                "resourceType": "GMObject"
             }
         },
         {
