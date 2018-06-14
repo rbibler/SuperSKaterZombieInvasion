@@ -53,9 +53,10 @@ SkaterMovementFractions();
 
 // Check all possible collisions
 SkaterHorizontalCollisionCheck();
+SkaterPlatformCollisions();
 SkaterHorizontalMovement();
 SkaterVerticalCollisionCheck();
-SkaterPlatformCollisions();
+
 SkaterLadderCollisions();
 
 

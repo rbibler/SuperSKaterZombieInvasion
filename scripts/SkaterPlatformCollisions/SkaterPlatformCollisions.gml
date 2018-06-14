@@ -1,3 +1,25 @@
+// Horiz collisions
+var side = bbox_right - x;
+if(xSpeed > 0) {
+	side = bbox_right - x;
+} else if(xSpeed < 0) {
+	side = bbox_left - x;
+} 
+
+if(abs(xSpeed > 0)) {
+	if(place_meeting(x + side + xSpeed, y, obj_baseBlock)) {
+		while(!place_meeting(x + side + sign(xSpeed), y, obj_baseBlock)) {
+			x = x + sign(xSpeed);
+		
+		}
+		xSpeed = 0;
+		xSpeedFraction = 0;
+	}
+}
+
+
+
+/*
 
 if(xSpeed > 0) {
 	var platformCollider = collision_rectangle(bbox_right, bbox_top + ySpeed, bbox_right + xSpeed, bbox_bottom + ySpeed, obj_baseBlock, true, false);
@@ -86,3 +108,4 @@ if(ySpeed > 0) {
 		}
 	}
 } 
+*/
