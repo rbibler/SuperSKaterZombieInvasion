@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "23a8ca37-886d-475f-a3f7-fdc5fae529fd",
+            "Value": {
+                "id": "3c36c68f-ac4c-4874-a158-ffc7b0f20236",
+                "resourcePath": "views\\23a8ca37-886d-475f-a3f7-fdc5fae529fd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "24af8ab7-a37d-49be-aa0a-909f50ae7f2d",
             "Value": {
                 "id": "8d80b45d-969d-4d53-9330-5083f7c1b05a",
@@ -1223,6 +1231,14 @@
             }
         },
         {
+            "Key": "c2c6bc53-bb0c-49dc-b15e-f0d6504157d8",
+            "Value": {
+                "id": "9fa29d7a-974f-499a-8a52-d64036e192e8",
+                "resourcePath": "scripts\\MovingPlatformVertCollisionScript\\MovingPlatformVertCollisionScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c468ffca-5429-4e1e-a3b9-01d1cb8bb0e5",
             "Value": {
                 "id": "4f1359de-eb3e-486c-a589-6c6c51623dc9",
@@ -1628,7 +1644,8 @@
         "c57bdf39-5436-4bf5-9932-d73d3eb70942",
         "05572da5-c758-480f-871b-ddfa284a19e0",
         "50b97c71-a535-42cf-a2c2-1cb1c23ded59",
-        "a1b15312-bde7-4ba3-b3bd-baf81f23164c"
+        "a1b15312-bde7-4ba3-b3bd-baf81f23164c",
+        "c2c6bc53-bb0c-49dc-b15e-f0d6504157d8"
     ],
     "tutorial": ""
 }

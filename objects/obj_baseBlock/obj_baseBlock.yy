@@ -50,6 +50,20 @@
             "value": "0",
             "varName": "xSpeed",
             "varType": 0
+        },
+        {
+            "id": "746a4138-d01b-41a4-83ac-431b895df83e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "skaterVertCollisionScript",
+            "varType": 5
         }
     ],
     "solid": false,
