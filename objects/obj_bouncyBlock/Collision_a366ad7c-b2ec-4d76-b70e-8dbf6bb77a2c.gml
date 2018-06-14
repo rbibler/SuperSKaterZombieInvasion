@@ -4,6 +4,19 @@ activated = true;
 frameTimer = 0;
 
 with(other) {
-	bounceSpeed = -9;
+	if(other.bounceDirection == 0) {
+		var speedToAdd = ySpeed;
+		if(input[DOWN]) {
+			speedToAdd = 1;
+		}
+		bounceSpeed = speedToAdd * -2;
+		bounceDirection = 0;
+	} else {
+		bounceSpeed = xSpeed * -2;
+		bounceDirection = 1;
+	}
+	if(state == bounceState) {
+		state = -1;
+	}
 	stateSwitch("BOUNCING");
 }

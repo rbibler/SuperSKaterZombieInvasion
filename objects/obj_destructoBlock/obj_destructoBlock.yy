@@ -1,43 +1,43 @@
 {
-    "id": "1da072bb-995d-413a-b5c4-73b9e349254f",
+    "id": "93913292-f3d8-4379-8ff2-aaaf8536c227",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_bouncyBlock",
+    "name": "obj_destructoBlock",
     "eventList": [
         {
-            "id": "2f065555-4fcf-43c0-a89d-7d7caa6c10f6",
+            "id": "e9fbf4ab-727c-4aac-9301-6d74144172a0",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "1da072bb-995d-413a-b5c4-73b9e349254f"
+            "m_owner": "93913292-f3d8-4379-8ff2-aaaf8536c227"
         },
         {
-            "id": "758e07d3-0bdb-477d-99c0-8e22dd83d1a4",
+            "id": "44af0132-4278-46cb-a6bf-177bcf158c33",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "1da072bb-995d-413a-b5c4-73b9e349254f"
+            "m_owner": "93913292-f3d8-4379-8ff2-aaaf8536c227"
         },
         {
-            "id": "a366ad7c-b2ec-4d76-b70e-8dbf6bb77a2c",
+            "id": "d232f42d-82ec-4f8c-ba84-d487c670d2a9",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af",
+            "collisionObjectId": "9b98fa49-796d-487f-b7f2-6dc6d3034b7d",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "1da072bb-995d-413a-b5c4-73b9e349254f"
+            "m_owner": "93913292-f3d8-4379-8ff2-aaaf8536c227"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "de9ae66e-f636-4141-bf2f-815a0308cf01",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -51,23 +51,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "028d778a-70c7-4143-9f20-10d91cbcbd15",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "bounceDirection",
-            "varType": 0
-        }
-    ],
+    "properties": null,
     "solid": false,
-    "spriteId": "37bade44-ac9e-45b5-b8ed-138fda7cbb9b",
+    "spriteId": "9e503d92-b874-4439-a5b2-3309f28f799e",
     "visible": true
 }

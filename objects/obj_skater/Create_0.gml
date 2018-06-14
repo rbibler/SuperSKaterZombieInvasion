@@ -97,6 +97,7 @@ climbSpeed = 2;
 // constant jump speed
 jumpSpeed = -7;
 bounceSpeed = - 15;
+bounceDirection = 0;
 
 // Set the initial gravity to whatever our gravity is
 myGravity = 0.5;

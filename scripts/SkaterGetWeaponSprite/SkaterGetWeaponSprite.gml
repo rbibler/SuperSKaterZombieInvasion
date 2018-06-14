@@ -30,6 +30,14 @@ switch(state) {
 				return spr_SkaterBoardswing;	
 		}
 	break;
+	case bounceState:
+		switch(weapon.object_index) {
+			case obj_slingshot:
+				return spr_SkaterJumpSlingshot;
+			case obj_boardSwing:
+				return spr_SkaterBoardswing;	
+		}
+	break;
 	case crouchState:
 		switch(weapon.object_index) {
 			case obj_slingshot:
