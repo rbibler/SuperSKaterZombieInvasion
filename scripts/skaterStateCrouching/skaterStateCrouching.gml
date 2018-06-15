@@ -38,9 +38,10 @@ if(sign(xSpeed) == sign(lastXSpeed)) {
 
 // Check all the collisions
 SkaterHorizontalCollisionCheck();
+SkaterPlatformCollisions();
 SkaterHorizontalMovement();
 SkaterVerticalCollisionCheck();
-SkaterPlatformCollisions();
+
 
 
 // Can't crouch unless down is pressed

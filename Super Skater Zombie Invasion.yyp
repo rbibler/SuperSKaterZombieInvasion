@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "7ea1c4a0-019a-486d-9e0a-80ab06041e47",
+            "Value": {
+                "id": "67d7cd20-d040-45a0-99c7-b17d4e00fb10",
+                "resourcePath": "scripts\\CollapseBlockVertCollisionScript\\CollapseBlockVertCollisionScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "807a8df3-1cf4-4dd7-add6-ae828c644d6b",
             "Value": {
                 "id": "cf7e8c55-5461-486b-805f-8aa2b7729a41",
@@ -1645,7 +1653,8 @@
         "05572da5-c758-480f-871b-ddfa284a19e0",
         "50b97c71-a535-42cf-a2c2-1cb1c23ded59",
         "a1b15312-bde7-4ba3-b3bd-baf81f23164c",
-        "c2c6bc53-bb0c-49dc-b15e-f0d6504157d8"
+        "c2c6bc53-bb0c-49dc-b15e-f0d6504157d8",
+        "7ea1c4a0-019a-486d-9e0a-80ab06041e47"
     ],
     "tutorial": ""
 }

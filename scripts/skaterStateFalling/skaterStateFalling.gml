@@ -47,9 +47,9 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 
 // Check all collisions
 SkaterHorizontalCollisionCheck();
+SkaterPlatformCollisions();
 SkaterHorizontalMovement();
 SkaterVerticalCollisionCheck();
-SkaterPlatformCollisions();
 SkaterLadderCollisions();
 
 // If we hit the ground, we're idle. Let the idle state take care of other checks

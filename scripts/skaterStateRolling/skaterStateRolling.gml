@@ -62,9 +62,9 @@ if(abs(xSpeed) > 0) {
 
 // Check all the collisions
 SkaterHorizontalCollisionCheck();
+SkaterPlatformCollisions();
 SkaterHorizontalMovement();
 SkaterVerticalCollisionCheck();
-SkaterPlatformCollisions();
 SkaterLadderCollisions();
 
 // If the ground is gone, you fall

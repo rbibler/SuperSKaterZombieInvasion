@@ -15,16 +15,6 @@
             "m_owner": "3cb3d5e2-ff85-4c72-b2b7-c1c660d589b1"
         },
         {
-            "id": "1865b865-633e-48ad-a556-2b4674f69844",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "3cb3d5e2-ff85-4c72-b2b7-c1c660d589b1"
-        },
-        {
             "id": "2da7d656-69da-4bd2-b232-41bcc9e8f1dd",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -36,7 +26,16 @@
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
+    "overriddenProperties": [
+        {
+            "id": "c74cea16-7201-4afe-bba8-8fe3cf9ec620",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "de9ae66e-f636-4141-bf2f-815a0308cf01",
+            "propertyId": "746a4138-d01b-41a4-83ac-431b895df83e",
+            "value": "CollapseBlockVertCollisionScript"
+        }
+    ],
     "parentObjectId": "de9ae66e-f636-4141-bf2f-815a0308cf01",
     "persistent": false,
     "physicsAngularDamping": 0.1,

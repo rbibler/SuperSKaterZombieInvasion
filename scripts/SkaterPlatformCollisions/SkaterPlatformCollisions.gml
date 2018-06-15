@@ -5,15 +5,25 @@ if(ySpeed > 0) {
 } else if(ySpeed < 0) {
 	side = bbox_top - y;
 } 
-var obj = instance_place(x, y + ySpeed + side, obj_baseBlock);
+var extraY = 0;
+if(grounded and ySpeed == 0) {
+	extraY = 1;
+}
+var obj = instance_place(x, y + ySpeed + extraY, obj_baseBlock);
 if(obj != noone) {
-	while(!place_meeting(x, y + side + sign(ySpeed), obj_baseBlock)) {
+	while(!place_meeting(x, y + extraY + sign(ySpeed), obj_baseBlock)) {
 		y = y + sign(ySpeed);
+	}
+	if(!grounded and ySpeed > 0) {
+		grounded = true;
 	}
 	ySpeed = 0;
 	ySpeedFraction = 0;
 	show_debug_message("Vertical Platform Collision");
-	script_execute(obj.skaterVertCollisionScript);
+	with(obj) {
+		script_execute(skaterVertCollisionScript);
+	}
+	
 } 
 
 // Horiz collisions
@@ -23,16 +33,17 @@ if(xSpeed > 0) {
 } else if(xSpeed < 0) {
 	side = bbox_left - x;
 } 
-
-if(place_meeting(x + side + xSpeed, y, obj_baseBlock)) {
-	while(!place_meeting(x + side + sign(xSpeed), y, obj_baseBlock)) {
+var obj2 = instance_place(x + xSpeed, y, obj_baseBlock);
+if(obj != obj2) {
+if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
+	while(!place_meeting(x + sign(xSpeed), y, obj_baseBlock)) {
 		x = x + sign(xSpeed);
 	}
 	xSpeed = 0;
 	xSpeedFraction = 0;
 	show_debug_message("Horizontal Platform Collision");
 }
-
+}
 
 
 
