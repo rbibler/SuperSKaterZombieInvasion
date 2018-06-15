@@ -10,7 +10,7 @@ if(grounded and ySpeed == 0) {
 	extraY = 1;
 }
 var obj = instance_place(x, y + ySpeed + extraY, obj_baseBlock);
-if(obj != noone) {
+if(obj != noone and obj.isSolid) {
 	while(!place_meeting(x, y + extraY + sign(ySpeed), obj_baseBlock)) {
 		y = y + sign(ySpeed);
 	}
@@ -26,22 +26,17 @@ if(obj != noone) {
 	
 } 
 
-// Horiz collisions
-side = bbox_right - x;
-if(xSpeed > 0) {
-	side = bbox_right - x;
-} else if(xSpeed < 0) {
-	side = bbox_left - x;
-} 
 var obj2 = instance_place(x + xSpeed, y, obj_baseBlock);
-if(obj != obj2) {
+if(obj2 != noone and obj2.isSolid) {
 if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 	while(!place_meeting(x + sign(xSpeed), y, obj_baseBlock)) {
 		x = x + sign(xSpeed);
 	}
 	xSpeed = 0;
 	xSpeedFraction = 0;
-	show_debug_message("Horizontal Platform Collision");
+	with(obj2) {
+		script_execute(skaterHorizCollisionScript);
+	}
 }
 }
 

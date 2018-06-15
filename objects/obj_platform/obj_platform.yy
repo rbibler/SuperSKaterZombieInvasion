@@ -44,6 +44,14 @@
             "objectId": "de9ae66e-f636-4141-bf2f-815a0308cf01",
             "propertyId": "746a4138-d01b-41a4-83ac-431b895df83e",
             "value": "MovingPlatformVertCollisionScript"
+        },
+        {
+            "id": "3b714788-5031-4470-ba5f-dbdd5e922928",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "de9ae66e-f636-4141-bf2f-815a0308cf01",
+            "propertyId": "7a32a5e4-5880-4f8b-afd5-7f8cf79b42a0",
+            "value": "MovingPlatformVertCollisionScript"
         }
     ],
     "parentObjectId": "de9ae66e-f636-4141-bf2f-815a0308cf01",

@@ -64,6 +64,20 @@
             "value": "0",
             "varName": "skaterVertCollisionScript",
             "varType": 5
+        },
+        {
+            "id": "7a32a5e4-5880-4f8b-afd5-7f8cf79b42a0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "skaterHorizCollisionScript",
+            "varType": 5
         }
     ],
     "solid": false,

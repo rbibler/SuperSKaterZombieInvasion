@@ -5,7 +5,7 @@
 event_inherited();
 
 var xOffset = 8;
-var yOffset = -16;
+var yOffset = -8;
 image_xscale = 1;
 
 if(obj_skater.image_xscale == -1) {
