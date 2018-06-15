@@ -21,7 +21,7 @@ if(stateTimer <= 5) {
 	sprite_index = spr_slimeballJump;
 	image_index = 0;
 	stateVar[0] = 1;
-	ySpeed += -15;
+	ySpeed += -5;
 	grounded = false;
 }
 

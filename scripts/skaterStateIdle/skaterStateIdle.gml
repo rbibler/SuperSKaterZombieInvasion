@@ -20,7 +20,7 @@ if(stateNew) {
 
 // Check if we should fire a weapon
 if(currentWeapon != noone) {
-	var shootNow = currentWeapon.isAutomatic ? input[SHOOT] : (input[SHOOT] and !lastInput[SHOOT]);
+	var shootNow = script_execute(currentWeapon.shootSequenceScript); 
 	if(shootNow) {
 		script_execute(currentWeapon.fireScript, currentWeapon, false);
 	}
@@ -71,11 +71,13 @@ if(input[DOWN] and state != climbingState) {
 	stateSwitch("CROUCHING");
 } 
 
+// Do need to check platform collisions because those move
+SkaterPlatformCollisions();
 // Check for Vert collisions in case ground falls out underneath our feet
 // No need to check horiz collision 'cause you ain't moving
 SkaterVerticalCollisionCheck();
-// Do need to check platform collisions because those move
-SkaterPlatformCollisions();
+
+
 SkaterLadderCollisions();
 
 // If no directional input, slow the skater down until he stops

@@ -24,3 +24,11 @@ if(obj_persistent.gamepad != -1) {
 	input[JUMP] = keyboard_check(ord("S"));
 	
 }
+
+if(!input[SHOOT] and lastInput[SHOOT]) {
+	inputDownTime[SHOOT] = frameTimer - inputPressTime[SHOOT];
+}
+
+if(input[SHOOT] and !lastInput[SHOOT]) {
+	inputPressTime[SHOOT] = frameTimer;
+}

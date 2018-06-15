@@ -13,11 +13,12 @@
 if(stateNew) {
 	sprite_index = spr_SkaterSkate;
 	image_index = 0;
+	stateVar[0] = false;
 }
 
 // Check if we should fire a weapon
 if(currentWeapon != noone) {
-	var shootNow = currentWeapon.isAutomatic ? input[SHOOT] : (input[SHOOT] and !lastInput[SHOOT]);
+	var shootNow = script_execute(currentWeapon.shootSequenceScript); 
 	if(shootNow) {
 		script_execute(currentWeapon.fireScript, currentWeapon, false);
 	}
@@ -25,6 +26,19 @@ if(currentWeapon != noone) {
 
 SkaterBasicStateAnimation();
 
+if(((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0))) {
+	stateVar[0] = true;
+	stateVar[1] = stateTimer;
+}
+
+if(stateVar[0] == true) {
+	if(stateTimer - stateVar[1] < 10) {
+		sprite_index = spr_SkaterJump;
+	} else {
+		stateVar[0] = false;
+		sprite_index = spr_SkaterSkate;
+	}
+}
 
 // Crouch if the user presses down
 if(input[DOWN] and state != climbingState) {
@@ -39,9 +53,10 @@ SkaterMovementFractions();
 
 // Check all possible collisions
 SkaterHorizontalCollisionCheck();
+SkaterPlatformCollisions();
 SkaterHorizontalMovement();
 SkaterVerticalCollisionCheck();
-SkaterPlatformCollisions();
+
 SkaterLadderCollisions();
 
 

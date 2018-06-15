@@ -14,7 +14,7 @@ SkaterBasicStateAnimation();
 
 // Check if we should fire a weapon
 if(currentWeapon != noone) {
-	var shootNow = currentWeapon.isAutomatic ? input[SHOOT] : (input[SHOOT] and !lastInput[SHOOT]);
+	var shootNow = script_execute(currentWeapon.shootSequenceScript); 
 	if(shootNow) {
 		script_execute(currentWeapon.fireScript, currentWeapon, false);
 	}
@@ -47,9 +47,9 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 
 // Check all collisions
 SkaterHorizontalCollisionCheck();
+SkaterPlatformCollisions();
 SkaterHorizontalMovement();
 SkaterVerticalCollisionCheck();
-SkaterPlatformCollisions();
 SkaterLadderCollisions();
 
 // If we hit the ground, we're idle. Let the idle state take care of other checks

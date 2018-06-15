@@ -31,6 +31,7 @@ if(floorDist >= 0 and state != climbingState) {
 		y += ySpeed;
 		y -= (floorDist + 1);
 		ySpeed = 0;
+		ySpeedFraction = 0;
 		floorDist = -1;
 		//show_debug_message("Vertical Collision 2");
 	}
@@ -49,3 +50,4 @@ if(grounded and onSlope) {
 		}
 	}
 }
+

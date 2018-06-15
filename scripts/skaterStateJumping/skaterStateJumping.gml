@@ -20,7 +20,7 @@ SkaterBasicStateAnimation();
 
 // Check if we should fire a weapon
 if(currentWeapon != noone) {
-	var shootNow = currentWeapon.isAutomatic ? input[SHOOT] : (input[SHOOT] and !lastInput[SHOOT]);
+	var shootNow = script_execute(currentWeapon.shootSequenceScript); 
 	if(shootNow) {
 		script_execute(currentWeapon.fireScript, currentWeapon, false);
 	}
@@ -53,9 +53,9 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 
 // Check all possible collisions
 SkaterHorizontalCollisionCheck();
+SkaterPlatformCollisions();
 SkaterHorizontalMovement();
 SkaterVerticalCollisionCheck();
-SkaterPlatformCollisions();
 SkaterLadderCollisions();
 
 // If yspeed is greater than zero, we've reached our apogee so it's time to fall

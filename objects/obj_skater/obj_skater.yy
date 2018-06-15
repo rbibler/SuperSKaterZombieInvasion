@@ -35,26 +35,6 @@
             "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
         },
         {
-            "id": "ace57460-33c4-480c-bca1-f5b12e64197d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 7,
-            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
-        },
-        {
-            "id": "33ee2fa5-060e-4a7b-a9d2-25b331bb1a82",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 11,
-            "eventtype": 7,
-            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
-        },
-        {
             "id": "bbd10547-0296-4efa-85a1-eedbc36bc73b",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -65,16 +45,6 @@
             "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
         },
         {
-            "id": "9601a434-c347-46ce-bc7c-09b1fcad1dba",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
-        },
-        {
             "id": "7f43a254-152b-4b34-9ecf-a752122fc2ed",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -82,16 +52,6 @@
             "collisionObjectId": "8d984489-f452-4b78-aa63-d91d2b42d0a2",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
-        },
-        {
-            "id": "9e047b8e-66fd-456a-8253-25331c760bf6",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 32,
-            "eventtype": 10,
             "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
         }
     ],

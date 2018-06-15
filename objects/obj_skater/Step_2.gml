@@ -19,6 +19,6 @@ if(infected) {
 	}
 }
 
-
 stateUpdate();
 
+image_xscale = facing;

@@ -16,6 +16,8 @@ health = 100;
 // Is the skater infected?
 infected = false;
 
+facing = 1;
+
 // variable to hold a frame timer
 frameTimer = 0;
 
@@ -37,6 +39,17 @@ input[4] = SELECT;
 input[5] = START;
 input[6] = SHOOT;
 input[7] = JUMP;
+
+inputDownTime[UP] = 0;
+inputDownTime[DOWN] = 0;
+inputDownTime[LEFT] = 0;
+inputDownTime[RIGHT] = 0;
+inputDownTime[SELECT] = 0;
+inputDownTime[START] = 0;
+inputDownTime[SHOOT] = 0;
+inputDownTime[JUMP] = 0;
+
+inputPressTime[SHOOT] = 0;
 
 animIndex[IDLE] = 0;
 animIndex[SKATING] = 0;
@@ -67,7 +80,7 @@ verticalMovementRun = false;
 normalSpeedX = 1.7;
 
 // Skater's Sprint Speed
-sprintSpeedX = 2.7;
+sprintSpeedX = 3.5;
 
 // Keeps track of skater's direction. -1 is left 1 is right. Should never be zero.
 myDirection = 1;
@@ -83,6 +96,8 @@ climbSpeed = 2;
 
 // constant jump speed
 jumpSpeed = -7;
+bounceSpeed = - 15;
+bounceDirection = 0;
 
 // Set the initial gravity to whatever our gravity is
 myGravity = 0.5;
@@ -118,6 +133,7 @@ stateMachineInit();
 idleState = stateCreate("IDLE",SkaterStateIdle);
 skateState = stateCreate("SKATING", SkaterStateSkating);
 jumpState = stateCreate("JUMPING", SkaterStateJumping);
+bounceState = stateCreate("BOUNCING", SkaterStateBouncing);
 climbState = stateCreate("CLIMBING", SkaterStateClimbing);
 crouchState = stateCreate("CROUCHING", SkaterStateCrouching);
 fallState = stateCreate("FALLING", SkaterStateFalling);
