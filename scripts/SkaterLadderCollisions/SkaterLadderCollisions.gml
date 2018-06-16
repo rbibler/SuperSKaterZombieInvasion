@@ -42,9 +42,7 @@ if(climbing) {
 	show_debug_message("Switching to climb");
 	stateSwitch("CLIMBING");
 	myGravity = 0;
-	xSpeed = 0;
-	xSpeedFraction = 0;
-	ySpeed = 0;
-	ySpeedFraction = 0;
+	StopXMotion();
+	StopYMotion();
 	x = (xTile * 16) + 8;
 }

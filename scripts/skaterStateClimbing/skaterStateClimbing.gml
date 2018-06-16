@@ -36,8 +36,7 @@ if(ySpeed <= 0) {
 	p1 = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_top + ySpeed);
 	p2 = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_top + ySpeed);
 	if(p1 == 1 or p2 == 1) {
-		ySpeed = 0;
-		yFraction = 0;
+		StopYMotion();
 	}
 }
 

@@ -64,22 +64,26 @@ if(stateTimer mod (60 / 5) == 0) {
 
 
 
-SkaterCheckSlopeImpetus();
+
 
 // Crouch if the user presses down
 if(input[DOWN] and state != climbingState) {
 	stateSwitch("CROUCHING");
 } 
 
-// Do need to check platform collisions because those move
+// Check how fast the skater should be moving
+SkaterHorizontalImpetus();
+
+// Figure out the fractional movement so that we're always working with integers
+SkaterMovementFractions();
+
+// Check all possible collisions
+SkaterHorizontalCollisionCheck();
 SkaterPlatformCollisions();
-// Check for Vert collisions in case ground falls out underneath our feet
-// No need to check horiz collision 'cause you ain't moving
+SkaterHorizontalMovement();
 SkaterVerticalCollisionCheck();
 
-
 SkaterLadderCollisions();
-
 // If no directional input, slow the skater down until he stops
 if(abs(xSpeed) > 0 and grounded and state != rollingState and state != recoveringState) {
 	stateSwitch("ROLLING");
@@ -105,7 +109,6 @@ if(input[JUMP]) {
 
 // Probably don't need this, but it's here to make sure we slow down to a stop
 if(abs(xSpeed) < 0.15) {
-	xSpeed = 0;
-	xSpeedFraction = 0;
+	StopXMotion();
 }
 

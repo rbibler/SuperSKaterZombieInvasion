@@ -21,5 +21,5 @@ if(p1 == 1 or p2 == 1 or p3 == 1 and state != climbingState) {
 		x = x - (x mod 16) - (bbox_left - x);
 		show_debug_message("X Collision 2");
 	}
-	xSpeed = 0;
+	StopXMotion();
 }

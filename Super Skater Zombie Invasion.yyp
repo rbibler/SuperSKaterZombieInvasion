@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "64d436c0-e3ce-45ba-ae5f-b4add98ae7e7",
+            "Value": {
+                "id": "76b9f2ba-40f1-410b-8e81-f09ecb6eb7d8",
+                "resourcePath": "scripts\\StopXMotion\\StopXMotion.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6673222d-aa06-4fe5-b0bd-100c04b624f7",
             "Value": {
                 "id": "bc41bb88-36f9-4571-90a6-131839108ac0",
@@ -1319,6 +1327,14 @@
             }
         },
         {
+            "Key": "d7c5a7d0-463e-4734-a8c1-46b8d002b780",
+            "Value": {
+                "id": "ba2a2c52-1c2e-4daf-8f5b-23b1f7920d30",
+                "resourcePath": "scripts\\StopYMotion\\StopYMotion.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d86e95e1-37d4-4a5f-9d53-ccb5f96a456b",
             "Value": {
                 "id": "62aa203c-6128-464d-b441-8e51224b9eb0",
@@ -1618,6 +1634,8 @@
         "04b58e47-71cc-4791-b1cf-2d9eecf7194d",
         "a3b65c60-4c4f-4b1b-92e7-8d6c3f3801c2",
         "83d9c0e8-ad2e-4da0-8af6-0a8cbf93bf73",
+        "64d436c0-e3ce-45ba-ae5f-b4add98ae7e7",
+        "d7c5a7d0-463e-4734-a8c1-46b8d002b780",
         "05416d16-822a-4469-ae10-af8f2c717d01",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",

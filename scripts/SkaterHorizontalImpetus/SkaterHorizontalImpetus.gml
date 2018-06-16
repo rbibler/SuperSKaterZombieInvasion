@@ -19,7 +19,6 @@ if(input[LEFT]) {
 		myDirection = -1;
 		// If so, accelerate left until max speed is reached
 		if(xSpeed > -speedThisFrame) {
-			show_debug_message("Slope acceleration = " + string(-accel));
 			xSpeed -= accel;
 		} 
 	}
@@ -29,7 +28,6 @@ if(input[LEFT]) {
 		myDirection = 1;
 		// If so, accelerate right until max speed is reached
 		if(xSpeed < speedThisFrame) {
-			show_debug_message("Slope acceleration = " + string(accel));
 			xSpeed += accel;
 		} 
 	}

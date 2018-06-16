@@ -23,12 +23,12 @@ frameTimer = 0;
 
 // Skater's current xSpeed
 xSpeed = 0;
-xSpeedFrac = 0;
+xSpeedFraction = 0;
 lastXSpeed = 0;
 
 // Skater's current ySpeed
 ySpeed = 0;
-ySpeedFrac = 0;
+ySpeedFraction = 0;
 
 // Array to hold the user's input. 
 input[0] = UP;

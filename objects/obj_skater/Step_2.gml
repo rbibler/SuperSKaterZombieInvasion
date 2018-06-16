@@ -6,8 +6,7 @@ if(!verticalMovementRun) {
 	SkaterVerticalMovement();
 }
 if(abs(xSpeed + xSpeedFraction) < 0.15) {
-	xSpeed = 0;
-	xSpeedFraction = 0;
+	StopXMotion();
 }
 lastXSpeed = xSpeed;
 SaveInput();

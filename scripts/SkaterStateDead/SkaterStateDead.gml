@@ -8,9 +8,8 @@
 if(stateNew) {
 	sprite_index = spr_SkaterDeath;
 	image_index = 0;
-	xSpeed = 0;
-	ySpeed = 0;
-	xSpeedFraction = 0;
+	StopXMotion();
+	StopYMotion();
 	ySpeedFraction = 0;
 	myGravity = 0;
 }

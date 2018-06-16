@@ -17,8 +17,7 @@ if(obj != noone) {
 	if(!grounded and ySpeed > 0) {
 		grounded = true;
 	}
-	ySpeed = 0;
-	ySpeedFraction = 0;
+	StopYMotion();
 	show_debug_message("Vertical Platform Collision");
 	with(obj) {
 		script_execute(skaterVertCollisionScript);
@@ -39,8 +38,7 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 	while(!place_meeting(x + sign(xSpeed), y, obj_baseBlock)) {
 		x = x + sign(xSpeed);
 	}
-	xSpeed = 0;
-	xSpeedFraction = 0;
+	StopXMotion();
 	show_debug_message("Horizontal Platform Collision");
 }
 }
