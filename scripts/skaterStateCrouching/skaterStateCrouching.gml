@@ -34,7 +34,10 @@ if(sign(xSpeed) == sign(lastXSpeed)) {
 	StopXMotion();
 }
 
-// Check all the collisions
+// Figure out the fractional movement so that we're always working with integers
+SkaterMovementFractions();
+
+// Check all possible collisions
 SkaterHorizontalCollisionCheck();
 SkaterPlatformCollisions();
 SkaterHorizontalMovement();

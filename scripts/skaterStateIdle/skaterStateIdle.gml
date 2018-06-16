@@ -109,6 +109,6 @@ if(input[JUMP]) {
 
 // Probably don't need this, but it's here to make sure we slow down to a stop
 if(abs(xSpeed) < 0.15) {
-	StopXMotion();
+	//StopXMotion();
 }
 

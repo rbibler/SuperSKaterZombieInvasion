@@ -1,17 +1,18 @@
-// vert collisions
-var side = bbox_bottom - y;
-if(ySpeed > 0) {
-	side = bbox_bottom - y;
-} else if(ySpeed < 0) {
-	side = bbox_top - y;
-} 
-var extraY = 0;
-if(grounded and ySpeed == 0) {
-	extraY = 1;
+var obj2 = instance_place(x + xSpeed, y, obj_baseBlock);
+//if(obj != obj2) {
+if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
+	while(!place_meeting(x + sign(xSpeed), y, obj_baseBlock)) {
+		x = x + sign(xSpeed);
+	}
+	StopXMotion();
+	show_debug_message("Horizontal Platform Collision");
 }
-var obj = instance_place(x, y + ySpeed + extraY, obj_baseBlock);
-if(obj != noone) {
-	while(!place_meeting(x, y + extraY + sign(ySpeed), obj_baseBlock)) {
+
+
+
+var obj = instance_place(x, y + ySpeed, obj_baseBlock);
+if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
+	while(!place_meeting(x, y + sign(ySpeed), obj_baseBlock)) {
 		y = y + sign(ySpeed);
 	}
 	if(!grounded and ySpeed > 0) {
@@ -25,23 +26,9 @@ if(obj != noone) {
 	
 } 
 
-// Horiz collisions
-side = bbox_right - x;
-if(xSpeed > 0) {
-	side = bbox_right - x;
-} else if(xSpeed < 0) {
-	side = bbox_left - x;
-} 
-var obj2 = instance_place(x + xSpeed, y, obj_baseBlock);
-if(obj != obj2) {
-if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
-	while(!place_meeting(x + sign(xSpeed), y, obj_baseBlock)) {
-		x = x + sign(xSpeed);
-	}
-	StopXMotion();
-	show_debug_message("Horizontal Platform Collision");
-}
-}
+
+
+//}
 
 
 
