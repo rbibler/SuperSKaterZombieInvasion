@@ -25,6 +25,7 @@ frameTimer = 0;
 xSpeed = 0;
 xSpeedFraction = 0;
 lastXSpeed = 0;
+carrySpeed = 0;
 
 // Skater's current ySpeed
 ySpeed = 0;

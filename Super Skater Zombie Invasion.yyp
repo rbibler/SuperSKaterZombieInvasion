@@ -575,6 +575,14 @@
             }
         },
         {
+            "Key": "696b17c4-95a1-423b-a693-79fbfb89db3c",
+            "Value": {
+                "id": "f017bbad-7891-4ca9-833a-07d5b26e91bc",
+                "resourcePath": "scripts\\MovingPlatformStepEventScript\\MovingPlatformStepEventScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "698a235c-86fc-4d01-a1a1-e6d453d4612b",
             "Value": {
                 "id": "4fd43bad-12b8-41d0-9ecc-668ac54722f7",
@@ -1672,7 +1680,8 @@
         "50b97c71-a535-42cf-a2c2-1cb1c23ded59",
         "a1b15312-bde7-4ba3-b3bd-baf81f23164c",
         "c2c6bc53-bb0c-49dc-b15e-f0d6504157d8",
-        "7ea1c4a0-019a-486d-9e0a-80ab06041e47"
+        "7ea1c4a0-019a-486d-9e0a-80ab06041e47",
+        "696b17c4-95a1-423b-a693-79fbfb89db3c"
     ],
     "tutorial": ""
 }

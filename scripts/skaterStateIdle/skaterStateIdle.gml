@@ -82,7 +82,6 @@ SkaterHorizontalCollisionCheck();
 SkaterPlatformCollisions();
 SkaterHorizontalMovement();
 SkaterVerticalCollisionCheck();
-
 SkaterLadderCollisions();
 // If no directional input, slow the skater down until he stops
 if(abs(xSpeed) > 0 and grounded and state != rollingState and state != recoveringState) {
