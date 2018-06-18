@@ -1,10 +1,23 @@
 var obj2 = instance_place(x + xSpeed, y, obj_baseBlock);
 //if(obj != obj2) {
-if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
-	while(!place_meeting(x + sign(xSpeed), y, obj_baseBlock)) {
-		x = x + sign(xSpeed);
+if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {	
+	var testVert = instance_place(x, y + ySpeed, obj_baseBlock);
+	var shouldStop = true;
+	if(xSpeed > 0 and obj2.x < x) {
+		shouldStop = false;
+	} else if(xSpeed < 0 and obj2.x > x) {
+		shouldStop = false;
 	}
-	StopXMotion();
+	if(obj2 == testVert) {
+		shouldStop = false;
+	}
+	if(shouldStop) {
+		while(!place_meeting(x + sign(xSpeed), y, obj_baseBlock)) {
+			x = x + sign(xSpeed);
+		}
+		StopXMotion();
+	}
+	 
 }
 
 

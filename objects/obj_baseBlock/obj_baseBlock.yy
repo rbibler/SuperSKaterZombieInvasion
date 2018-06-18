@@ -64,6 +64,34 @@
             "value": "0",
             "varName": "skaterVertCollisionScript",
             "varType": 5
+        },
+        {
+            "id": "faf9871d-50f8-42ec-8196-941109ac800c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "xSpeedFraction",
+            "varType": 0
+        },
+        {
+            "id": "90a9d645-cb02-46de-bf12-2b8f2dbc8de3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "ySpeedFraction",
+            "varType": 0
         }
     ],
     "solid": false,
