@@ -16,10 +16,8 @@ if(tilemap_get_at_pixel(collisionTiles, x, bbox_bottom) > 3) {
 if(p1 == 1 or p2 == 1 or p3 == 1 and state != climbingState) {
 	if(xSpeed > 0) {
 		x = x - (x mod 16) + (15) - (bbox_right - x);
-		show_debug_message("X Collision 1");
 	} else {
 		x = x - (x mod 16) - (bbox_left - x);
-		show_debug_message("X Collision 2");
 	}
 	StopXMotion();
 }

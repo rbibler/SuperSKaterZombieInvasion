@@ -6,9 +6,9 @@ if(tileId > 5 and sign(xSpeed) == sign(lastXSpeed)) {
 
 
 var speedThisFrame = input[SHOOT] ? sprintSpeedX : normalSpeedX;
-var accel = 0.15;
+var accel = 0.25;
 if(input[SHOOT]) {
-	accel = 0.25;
+	accel = 0.35;
 } 
 if(onSlope and ((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0))) {
 	accel = 0.75;

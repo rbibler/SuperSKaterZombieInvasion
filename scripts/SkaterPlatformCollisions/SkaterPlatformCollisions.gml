@@ -5,7 +5,6 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 		x = x + sign(xSpeed);
 	}
 	StopXMotion();
-	show_debug_message("Horizontal Platform Collision");
 }
 
 
@@ -35,7 +34,5 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 			script_execute(skaterVertCollisionScript);
 		}
 	
-	} else {
-		show_debug_message("No Vertical Platform Collision");
 	}
 }

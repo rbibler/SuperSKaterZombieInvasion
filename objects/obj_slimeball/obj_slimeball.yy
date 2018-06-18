@@ -136,6 +136,14 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "be55e4ce-833a-48c4-bcd2-fcb6bc530e91",
             "value": "5"
+        },
+        {
+            "id": "87d47264-2bfe-4dcf-aa06-425e901669f0",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "39b0807b-5274-4c73-b946-44930360c2c2",
+            "value": "SlimeballHorizCollisionScript"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",

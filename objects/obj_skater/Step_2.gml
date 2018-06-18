@@ -8,9 +8,9 @@ if(!verticalMovementRun) {
 //if(abs(xSpeed + xSpeedFraction) < 0.15) {
 //	StopXMotion();
 //}
-show_debug_message("Carry speed " + string(carrySpeed));
 x += carrySpeed;
 carrySpeed = 0;
+
 lastXSpeed = xSpeed;
 SaveInput();
 

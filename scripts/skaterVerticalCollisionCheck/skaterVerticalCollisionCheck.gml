@@ -19,7 +19,6 @@ if(state != climbingState and ((p1 != 0 and p1 <= 4) or (p2 != 0 and p2 <= 4))) 
 		var bboxTile = floor((bbox_side + ySpeed) / 16);
 		bboxTile *= 16;
 		y = bboxTile - (bbox_bottom - y);
-		show_debug_message("Vertical Collision tile");
 	} 
 	StopYMotion();
 } 
@@ -33,7 +32,6 @@ if(floorDist >= 0 and state != climbingState) {
 		y -= (floorDist + 1);
 		StopYMotion();
 		floorDist = -1;
-		show_debug_message("Vertical Collision 2");
 	}
 }
 
@@ -46,7 +44,6 @@ if(grounded and onSlope) {
 		var tileIdDown = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + 1);
 		if(tileIdDown > 5) {
 			y += abs(SkaterInFloor(collisionTiles, x, bbox_bottom + 1));
-			show_debug_message("Vertical Collision 4");
 		}
 	}
 }

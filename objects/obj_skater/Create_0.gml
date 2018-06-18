@@ -30,6 +30,7 @@ carrySpeed = 0;
 // Skater's current ySpeed
 ySpeed = 0;
 ySpeedFraction = 0;
+carrySpeedY = 0;
 
 // Array to hold the user's input. 
 input[0] = UP;
@@ -78,7 +79,7 @@ verticalMovementRun = false;
 
 
 // Skater's Normal Speed
-normalSpeedX = 1.7;
+normalSpeedX = 2.25;
 
 // Skater's Sprint Speed
 sprintSpeedX = 3.5;
