@@ -1,0 +1,81 @@
+{
+    "id": "d767a960-dec6-4642-94ff-e8a721418d11",
+    "modelName": "GMObject",
+    "mvc": "1.0",
+    "name": "obj_conveyorBelt",
+    "eventList": [
+        {
+            "id": "a81ec4c8-f1f1-4873-8e81-0de50f2d3c24",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d767a960-dec6-4642-94ff-e8a721418d11"
+        }
+    ],
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "persistent": false,
+    "physicsAngularDamping": 0.1,
+    "physicsDensity": 0.5,
+    "physicsFriction": 0.2,
+    "physicsGroup": 0,
+    "physicsKinematic": false,
+    "physicsLinearDamping": 0.1,
+    "physicsObject": false,
+    "physicsRestitution": 0.1,
+    "physicsSensor": false,
+    "physicsShape": 1,
+    "physicsShapePoints": null,
+    "physicsStartAwake": true,
+    "properties": [
+        {
+            "id": "59a10d9c-f87d-4885-8bc1-b640b40e4084",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "conveyorDirection",
+            "varType": 0
+        },
+        {
+            "id": "1d4838ee-7769-4221-98aa-dd226949485f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "conveyorSpeed",
+            "varType": 0
+        },
+        {
+            "id": "c7a7605b-f0af-45f1-9917-406368e4d42f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "numBlocks",
+            "varType": 0
+        }
+    ],
+    "solid": false,
+    "spriteId": "7d867e50-87ff-4c48-8a17-adf0e46f0df9",
+    "visible": false
+}

@@ -12,7 +12,10 @@
         "ff38fc98-f544-44e6-8409-1ab5e21222b3",
         "93913292-f3d8-4379-8ff2-aaaf8536c227",
         "e094d7ad-6e5c-409c-96e4-2a45a3f2f8bf",
-        "efbfcb51-0bfa-4545-a41f-f6148183db31"
+        "efbfcb51-0bfa-4545-a41f-f6148183db31",
+        "a0c56fc4-72eb-4500-a0c6-d1fc981f438a",
+        "13353fca-3ece-4386-b4c3-599c8de430dc",
+        "d767a960-dec6-4642-94ff-e8a721418d11"
     ],
     "filterType": "GMObject",
     "folderName": "Blocks",
