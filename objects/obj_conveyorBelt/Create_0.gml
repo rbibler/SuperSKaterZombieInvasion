@@ -3,11 +3,12 @@
 var curX = xstart;
 var curY = ystart;
 
+
+
 var i = 0;
-var block = noone;
 for(i = 0; i < numBlocks; i++) {
-	block = instance_create_layer(curX, curY, "BLOCKS", obj_conveyorBlock);
-	block.conveyorDirection = conveyorDirection
-	block.conveyorSpeed = conveyorSpeed;
+	blocks[i] = instance_create_layer(curX, curY, "BLOCKS", obj_conveyorBlock);
+	blocks[i].conveyorDirection = conveyorDirection
+	blocks[i].conveyorSpeed = conveyorSpeed;
 	curX += 16;
 }

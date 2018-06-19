@@ -1,2 +1,12 @@
-script_execute(controlBlockActivateScript);
-image_index = 1;
+if(!on) {
+	on = true;
+	image_index = 1;
+	script_execute(controlBlockActivateScript);
+	isSolid = false;
+	if(springBack) {
+		if(state == 0) {
+			springBackStartTime = frameTimer;
+			state = 1;
+		}
+	}
+}

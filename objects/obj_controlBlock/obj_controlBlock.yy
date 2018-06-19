@@ -13,6 +13,36 @@
             "enumb": 0,
             "eventtype": 2,
             "m_owner": "13353fca-3ece-4386-b4c3-599c8de430dc"
+        },
+        {
+            "id": "641db602-2186-4c0b-a1a6-76f1cf80b0d7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "13353fca-3ece-4386-b4c3-599c8de430dc"
+        },
+        {
+            "id": "ee5ad554-b0b4-40ba-bb22-77ea387e9f28",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "13353fca-3ece-4386-b4c3-599c8de430dc"
+        },
+        {
+            "id": "26d10c19-8423-4d86-a998-32e0f9520d44",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 2,
+            "m_owner": "13353fca-3ece-4386-b4c3-599c8de430dc"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -68,6 +98,34 @@
             "value": "0",
             "varName": "controlBlockActivateScript",
             "varType": 5
+        },
+        {
+            "id": "21dda00f-06ad-4df6-8618-155595284cd5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "springBack",
+            "varType": 3
+        },
+        {
+            "id": "86cef00b-ed58-4dd9-a14e-ff172290d48f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "120",
+            "varName": "springBackTime",
+            "varType": 0
         }
     ],
     "solid": false,
