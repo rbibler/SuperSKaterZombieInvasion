@@ -23,12 +23,14 @@ frameTimer = 0;
 
 // Skater's current xSpeed
 xSpeed = 0;
-xSpeedFrac = 0;
+xSpeedFraction = 0;
 lastXSpeed = 0;
+carrySpeed = 0;
 
 // Skater's current ySpeed
 ySpeed = 0;
-ySpeedFrac = 0;
+ySpeedFraction = 0;
+carrySpeedY = 0;
 
 // Array to hold the user's input. 
 input[0] = UP;
@@ -77,7 +79,7 @@ verticalMovementRun = false;
 
 
 // Skater's Normal Speed
-normalSpeedX = 1.7;
+normalSpeedX = 2.25;
 
 // Skater's Sprint Speed
 sprintSpeedX = 3.5;

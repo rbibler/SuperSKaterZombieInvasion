@@ -45,12 +45,10 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 		xSpeed -= (airFriction * sign(xSpeed));
 		// If that last slow down has flipped the direction, stop the skater
 		if(sign(xSpeed) != sign(lastXSpeed)) {
-			xSpeed = 0;
-			xSpeedFraction = 0;
+			StopXMotion();
 		}
 	} else {
-		xSpeed = 0;
-		xSpeedFraction = 0;
+		StopXMotion();
 	}
 	
 }
@@ -67,8 +65,7 @@ if(jump == 1 and ySpeed > 0){
 	show_debug_message("FAlling in jump");
 	// Start falling. Can't set jump to zero, because that'll reset the can jump flag
 	jump = 2;
-	ySpeed = 0;
-	ySpeedFraction = 0;
+	StopYMotion();
 	stateSwitch("FALLING");
 }
 

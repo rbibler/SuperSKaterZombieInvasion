@@ -1,4 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-state = 1;
-isSolid = false;
+if(other.destructoCount > 0) {
+	state = 1;
+	isSolid = false;
+	other.destructoCount--;
+}

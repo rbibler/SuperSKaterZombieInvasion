@@ -11,7 +11,7 @@ var inFloorRight = SkaterInFloor(collisionTiles, bbox_right, bbox_bottom + 1);
 grounded = (inFloorCenter >= 0 or inFloorLeft >= 0 or inFloorRight >= 0);
 if(!grounded and ySpeed >= 0) {
 	// If the skater isn't grounded on a floor tile, check if he's on a platform
-	grounded = place_meeting(x, y + 1, obj_baseBlock);
+	grounded = place_meeting(x, y + 2, obj_baseBlock);
 }
 
 // Deal with the implications of groundedness
@@ -20,8 +20,7 @@ if(grounded) {
 	jump = 0;
 	canJump = 0;
 	// Skater isn't moving down 
-	ySpeed = 0;
-	ySpeedFraction = 0;
+	//StopYMotion();
 } else {
 	// If not grounded, increase jump affordance
 	canJump++;

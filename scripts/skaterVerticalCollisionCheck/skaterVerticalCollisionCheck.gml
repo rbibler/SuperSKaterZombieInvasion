@@ -16,11 +16,11 @@ p1 = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_side + ySpeed);
 p2 = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_side + ySpeed);
 if(state != climbingState and ((p1 != 0 and p1 <= 4) or (p2 != 0 and p2 <= 4))) {
 	if(ySpeed >= 0) {
-		y = y - (y mod 16) + 15 - (bbox_bottom - y);
-		//show_debug_message("Vertical Collision 1");
+		var bboxTile = floor((bbox_side + ySpeed) / 16);
+		bboxTile *= 16;
+		y = bboxTile - (bbox_bottom - y);
 	} 
-	ySpeed = 0;
-	yFraction = 0;
+	StopYMotion();
 } 
  
 
@@ -30,10 +30,8 @@ if(floorDist >= 0 and state != climbingState) {
 	if(tileId != 0 and tileId != 4 and tileId != 5) {
 		y += ySpeed;
 		y -= (floorDist + 1);
-		ySpeed = 0;
-		ySpeedFraction = 0;
+		StopYMotion();
 		floorDist = -1;
-		//show_debug_message("Vertical Collision 2");
 	}
 }
 
@@ -46,7 +44,6 @@ if(grounded and onSlope) {
 		var tileIdDown = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + 1);
 		if(tileIdDown > 5) {
 			y += abs(SkaterInFloor(collisionTiles, x, bbox_bottom + 1));
-			//show_debug_message("Vertical Collision 4");
 		}
 	}
 }

@@ -1,6 +1,8 @@
-xSpeed += xSpeedFrac;
-ySpeed += ySpeedFrac;
-xSpeedFrac = frac(xSpeed);
-ySpeedFrac = frac(ySpeed);
-xSpeed -= xSpeedFrac;
-ySpeed -= ySpeedFrac;
+
+xSpeed += xSpeedFraction;
+ySpeed += ySpeedFraction;
+
+xSpeedFraction = frac(xSpeed);
+ySpeedFraction = frac(ySpeed);
+xSpeed -= xSpeedFraction;
+ySpeed -= ySpeedFraction;

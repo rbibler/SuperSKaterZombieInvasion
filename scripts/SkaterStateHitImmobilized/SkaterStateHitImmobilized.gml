@@ -1,8 +1,7 @@
 if(stateNew) {
+	StopXMotion();
+	StopYMotion();
 	xSpeed = -1;
-	ySpeed = 0;
-	xSpeedFraction = 0;
-	ySpeedFraction = 0;
 	//myGravity = 0;
 }
 

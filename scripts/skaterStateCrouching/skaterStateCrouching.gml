@@ -28,15 +28,16 @@ if(sign(xSpeed) == sign(lastXSpeed)) {
 	xSpeed -= (groundFriction * sign(xSpeed));
 	// If that last slow down has flipped the direction, stop the skater
 	if(sign(xSpeed) != sign(lastXSpeed)) {
-		xSpeed = 0;
-		xSpeedFraction = 0;
+		StopXMotion();
 	}
 } else {
-	xSpeed = 0;
-	xSpeedFraction = 0;
+	StopXMotion();
 }
 
-// Check all the collisions
+// Figure out the fractional movement so that we're always working with integers
+SkaterMovementFractions();
+
+// Check all possible collisions
 SkaterHorizontalCollisionCheck();
 SkaterPlatformCollisions();
 SkaterHorizontalMovement();

@@ -56,11 +56,14 @@ if(abs(xSpeed) > 0) {
 			stateSwitch("IDLE");
 		}
 	}
-} else if(xSpeed == 0) {
+} else if(abs(xSpeed) <= 0.15) {
 	stateSwitch("IDLE");
 }
 
-// Check all the collisions
+// Figure out the fractional movement so that we're always working with integers
+SkaterMovementFractions();
+
+// Check all possible collisions
 SkaterHorizontalCollisionCheck();
 SkaterPlatformCollisions();
 SkaterHorizontalMovement();

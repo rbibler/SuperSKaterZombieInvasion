@@ -35,12 +35,10 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 		xSpeed -= (airFriction * sign(xSpeed));
 		// If that last slow down has flipped the direction, stop the skater
 		if(sign(xSpeed) != sign(lastXSpeed)) {
-			xSpeed = 0;
-			xSpeedFraction = 0;
+			StopXMotion();
 		}
 	} else {
-		xSpeed = 0;
-		xSpeedFraction = 0;
+		StopXMotion();
 	}
 	
 }
