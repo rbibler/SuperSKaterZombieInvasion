@@ -1,8 +1,8 @@
 {
-    "id": "ccdfea6a-60e9-4786-a201-39134d0bebb9",
+    "id": "03044a30-d928-4153-be9b-e918e0a3e503",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "MovingPlatformStepEventScript",
+    "name": "ConveyorBlockVertCollisionScript",
     "IsCompatibility": false,
     "IsDnD": false
 }

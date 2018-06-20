@@ -1,8 +1,8 @@
 {
-    "id": "ccdfea6a-60e9-4786-a201-39134d0bebb9",
+    "id": "6fff0a10-eef3-41e8-98a2-218e084732fd",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "MovingPlatformStepEventScript",
+    "name": "ControlBlockActivationScript",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,8 +1,8 @@
 {
-    "id": "ccdfea6a-60e9-4786-a201-39134d0bebb9",
+    "id": "f36eb160-4f09-4add-a592-8eeaf5d1bb68",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "MovingPlatformStepEventScript",
+    "name": "SwitchDirectionScript",
     "IsCompatibility": false,
     "IsDnD": false
 }
