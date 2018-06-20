@@ -12,7 +12,7 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		StopYMotion();
 		show_debug_message("Y collision");
 		with(obj) {
-			script_execute(skaterVertCollisionScript);
+			script_execute(skaterVertCollisionScript, other);
 		}
 	}
 } else if(grounded) {
@@ -24,7 +24,7 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 			StopYMotion();
 			show_debug_message("Y collision");
 			with(obj) {
-				script_execute(skaterVertCollisionScript);
+				script_execute(skaterVertCollisionScript, other);
 			}
 		}
 	}

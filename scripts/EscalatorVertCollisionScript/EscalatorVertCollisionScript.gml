@@ -1,7 +1,12 @@
-if(obj_skater.xSpeed == 0) {
-	obj_skater.carrySpeed = xSpeed;
+/// A script that helps the escalator escalate its friends
+/// @arg obj
+
+var obj = argument0;
+
+if(obj.xSpeed == 0) {
+	obj.carrySpeed = xSpeed;
 }
 if(!hitTop) {
-	obj_skater.y += ySpeed;
+	obj.y += ySpeed;
 
 }
