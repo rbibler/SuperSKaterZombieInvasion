@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Inherit the parent event
+event_inherited();
+
+/// @description Insert description here
+// You can write your code in this editor
+
 
 
 // Skater's state
@@ -16,21 +22,6 @@ health = 100;
 // Is the skater infected?
 infected = false;
 
-facing = 1;
-
-// variable to hold a frame timer
-frameTimer = 0;
-
-// Skater's current xSpeed
-xSpeed = 0;
-xSpeedFraction = 0;
-lastXSpeed = 0;
-carrySpeed = 0;
-
-// Skater's current ySpeed
-ySpeed = 0;
-ySpeedFraction = 0;
-carrySpeedY = 0;
 
 // Array to hold the user's input. 
 input[0] = UP;
@@ -74,46 +65,6 @@ for(var i = 0; i < 8; i++) {
 }
 
 
-onSlope = false;
-verticalMovementRun = false;
-
-
-// Skater's Normal Speed
-normalSpeedX = 2.25;
-
-// Skater's Sprint Speed
-sprintSpeedX = 3.5;
-
-// Keeps track of skater's direction. -1 is left 1 is right. Should never be zero.
-myDirection = 1;
-
-
-// Skater's jump status
-jump = 0;
-canJump = 0;
-jumpFramesAllowance = 12;
-
-// constant climb speed
-climbSpeed = 2;
-
-// constant jump speed
-jumpSpeed = -7;
-bounceSpeed = - 15;
-bounceDirection = 0;
-
-// Set the initial gravity to whatever our gravity is
-myGravity = 0.5;
-standardGravity = 0.5;
-maxYSpeed = 6;
-
-// Flag to indiciate that the skater is on the ground
-grounded = false;
-
-// Ground friction
-groundFriction = 0.25;
-slopeFriction = 0.075;
-airFriction = 0.075;
-
 // Reference to the weapon
 currentWeapon = noone;
 weaponAnimCounter = 0;
@@ -122,8 +73,6 @@ weaponInventorySize = array_length_1d(weaponInventory);
 
 PickupWeapon(obj_boardSwing);
 
-var layerId = layer_get_id("CollisionTiles");
-collisionTiles = layer_tilemap_get_id(layerId);
 
 // Reset the timer for the idle animation
 alarm[0] = 60 * 4;
@@ -139,9 +88,7 @@ bounceState = stateCreate("BOUNCING", SkaterStateBouncing);
 climbState = stateCreate("CLIMBING", SkaterStateClimbing);
 crouchState = stateCreate("CROUCHING", SkaterStateCrouching);
 fallState = stateCreate("FALLING", SkaterStateFalling);
-slamState = stateCreate("SLAMMING", SkaterStateSlam);
 deadState = stateCreate("DEAD", SkaterStateDead);
-recoveringState = stateCreate("RECOVERING", SkaterStateSlamRecovery);
 rollingState = stateCreate("ROLLING", SkaterStateRolling);
 climbingState = stateCreate("CLIMBING", SkaterStateClimbing);
 hitImmobilizedState = stateCreate("HIT_IMMOBILIZED", SkaterStateHitImmobilized);

@@ -49,13 +49,13 @@ if(input[DOWN] and state != climbingState) {
 SkaterHorizontalImpetus();
 
 // Figure out the fractional movement so that we're always working with integers
-SkaterMovementFractions();
+GeneralMovementFractions();
 
 // Check all possible collisions
-SkaterHorizontalCollisionCheck();
-SkaterPlatformCollisions();
-SkaterHorizontalMovement();
-SkaterVerticalCollisionCheck();
+GeneralHorizontalCollisionCheck();
+GeneralPlatformCollisions();
+GeneralHorizontalMovement();
+GeneralVerticalCollisionCheck();
 
 SkaterLadderCollisions();
 

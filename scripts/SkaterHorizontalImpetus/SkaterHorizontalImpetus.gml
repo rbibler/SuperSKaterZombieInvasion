@@ -34,12 +34,12 @@ if(input[LEFT]) {
 // Otherwise no horizontal impetus. Could still be rolling though
 } else {
 	// If no directional input, slow the skater down until he stops
-	if(abs(xSpeed) > 0 and grounded and state != rollingState and state != recoveringState) {
+	if(abs(xSpeed) > 0 and grounded and state != rollingState) {
 		stateSwitch("ROLLING");
 	}
 } 
 
-SkaterCheckSlopeImpetus();
+GeneralCheckSlopeImpetus();
 
 // Skater can only go so fast
 // Choose max speed based on situation: faster if on a slope

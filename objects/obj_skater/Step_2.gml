@@ -3,7 +3,7 @@
 
 //SkaterHorizontalMovement();
 if(!verticalMovementRun) {
-	SkaterVerticalMovement();
+	GeneralVerticalMovement();
 }
 //if(abs(xSpeed + xSpeedFraction) < 0.15) {
 //	StopXMotion();

@@ -1,8 +1,8 @@
 {
-    "id": "5e5d132a-f96d-426e-af2a-b8f973110a5a",
+    "id": "b7e0889c-f3f5-482a-86b9-28c41a4ac1c1",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "SkaterVerticalMovement",
+    "name": "GeneralVerticalMovement",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -35,7 +35,7 @@ if(floorDist >= 0) {
 	}
 }
 
-SkaterVerticalMovement();
+GeneralVerticalMovement();
 
 if(grounded and onSlope) {
 	y += abs(floorDist) - 1;
