@@ -1,5 +1,5 @@
 {
-    "id": "696b17c4-95a1-423b-a693-79fbfb89db3c",
+    "id": "ccdfea6a-60e9-4786-a201-39134d0bebb9",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "MovingPlatformStepEventScript",

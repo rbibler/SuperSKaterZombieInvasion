@@ -12,13 +12,16 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 
 if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 	var obj = instance_place(x, y + ySpeed, obj_baseBlock);
-		if(obj != noone and obj.isSolid) {
-		
+	if(obj != noone and obj.isSolid) {
+	
 		while(!place_meeting(x, y + sign(ySpeed), obj_baseBlock)) {
 			y = y + sign(ySpeed);
 		}
 		if(!grounded and ySpeed > 0) {
 			grounded = true;
+		}
+		if(bbox_bottom > obj.bbox_top and obj.object_index == obj_controlBlock) {
+			y = obj.bbox_top - (bbox_bottom - y) - 1;
 		}
 		StopYMotion();
 		show_debug_message("Y collision");

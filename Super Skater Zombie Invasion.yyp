@@ -655,14 +655,6 @@
             }
         },
         {
-            "Key": "696b17c4-95a1-423b-a693-79fbfb89db3c",
-            "Value": {
-                "id": "f017bbad-7891-4ca9-833a-07d5b26e91bc",
-                "resourcePath": "scripts\\MovingPlatformStepEventScript\\MovingPlatformStepEventScript.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "698a235c-86fc-4d01-a1a1-e6d453d4612b",
             "Value": {
                 "id": "4fd43bad-12b8-41d0-9ecc-668ac54722f7",
@@ -714,7 +706,7 @@
             "Key": "6fff0a10-eef3-41e8-98a2-218e084732fd",
             "Value": {
                 "id": "2463d325-b541-45f3-a040-7794b688ac1d",
-                "resourcePath": "scripts\\ControlBlockVertCollisionScript\\ControlBlockVertCollisionScript.yy",
+                "resourcePath": "scripts\\ControlBlockActivationScript\\ControlBlockActivationScript.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1463,6 +1455,14 @@
             }
         },
         {
+            "Key": "ccdfea6a-60e9-4786-a201-39134d0bebb9",
+            "Value": {
+                "id": "cfd26999-bf57-40c3-94ba-d12e39393ed1",
+                "resourcePath": "scripts\\MovingPlatformStepEventScript\\MovingPlatformStepEventScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cfb3529d-f4dd-4404-bde9-d79cf5309a12",
             "Value": {
                 "id": "2c9502b3-cdb0-4bcf-ae12-ea508f363403",
@@ -1868,9 +1868,9 @@
         "03044a30-d928-4153-be9b-e918e0a3e503",
         "90669bf8-93ca-49e3-a084-d3e064a2c3e0",
         "7ea1c4a0-019a-486d-9e0a-80ab06041e47",
-        "696b17c4-95a1-423b-a693-79fbfb89db3c",
         "6fff0a10-eef3-41e8-98a2-218e084732fd",
         "f36eb160-4f09-4add-a592-8eeaf5d1bb68",
+        "ccdfea6a-60e9-4786-a201-39134d0bebb9",
         "312cfb3a-5185-432f-9ecd-2c77b5166f4b",
         "530bc4ec-3ba7-4635-a2ba-7b135538f7d8",
         "0b593930-82eb-46c4-9d67-d1dd17777fce"
