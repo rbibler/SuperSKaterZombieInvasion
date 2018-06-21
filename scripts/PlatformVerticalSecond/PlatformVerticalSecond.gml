@@ -9,6 +9,8 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 
 }
 
+x += xSpeed;
+
 if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 	var obj = instance_place(x, y + ySpeed, obj_baseBlock);
 	while(!place_meeting(x, y + sign(ySpeed), obj_baseBlock)) {
@@ -38,6 +40,8 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 	}
 }
 
+y += ySpeed;
+/*
 if(place_meeting(x  + xSpeed, y + ySpeed, obj_baseBlock)) {	
 	var obj = instance_place(x + xSpeed, y + ySpeed, obj_baseBlock);
 	while(!place_meeting(x + sign(xSpeed), y + sign(ySpeed), obj_baseBlock)) {
@@ -47,6 +51,7 @@ if(place_meeting(x  + xSpeed, y + ySpeed, obj_baseBlock)) {
 	show_debug_message("X & Y collision");
 	//StopXMotion();
 }
+*/
 
 
 

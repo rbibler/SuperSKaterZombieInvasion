@@ -25,6 +25,8 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 	}
 }
 
+y += ySpeed;
+
 
 if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {	
 	var obj = instance_place(x + xSpeed, y, obj_baseBlock);
@@ -35,3 +37,5 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 	show_debug_message("X collision");
 
 }
+
+x += xSpeed;

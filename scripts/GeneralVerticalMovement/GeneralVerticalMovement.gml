@@ -3,7 +3,7 @@ if(ySpeed >= maxYSpeed) {
 	ySpeed = maxYSpeed;
 }
 
-y += ySpeed;
+//y += ySpeed;
 verticalMovementRun = true;
 
 

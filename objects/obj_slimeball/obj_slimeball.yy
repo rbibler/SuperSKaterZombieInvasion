@@ -98,38 +98,6 @@
             "value": "slimeballStateDeadScript"
         },
         {
-            "id": "95feacf5-0536-4853-a01a-ef4f849544ed",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "b1962d90-85dc-414c-8f16-3d05d4875ac3",
-            "value": "0.15"
-        },
-        {
-            "id": "7cbe3797-40d4-40d5-8b07-08bb7ca73fe5",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "2142747e-1c3b-48da-b250-e09a8410a508",
-            "value": "1"
-        },
-        {
-            "id": "03cefa59-d025-4679-802e-f68811947bdf",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "3fca1e43-2787-4133-b686-eeac17e12e0d",
-            "value": "2"
-        },
-        {
-            "id": "7ae210da-4b77-4b1d-87c6-3de6bd27e065",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "3a2286fe-992f-41b6-966e-8efdc748e661",
-            "value": "1"
-        },
-        {
             "id": "3a4c3ec7-41e9-4ae0-a319-44012f2684b4",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
