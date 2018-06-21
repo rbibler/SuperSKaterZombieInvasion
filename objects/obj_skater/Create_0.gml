@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-
+num = 0;
 /// @description Insert description here
 // You can write your code in this editor
 
