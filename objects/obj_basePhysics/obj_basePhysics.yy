@@ -171,6 +171,20 @@
             "value": "0.075",
             "varName": "airFriction",
             "varType": 0
+        },
+        {
+            "id": "7d8e0fec-70e6-41e1-81ad-64d33d679a8d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "horizCollisionScript",
+            "varType": 5
         }
     ],
     "solid": false,

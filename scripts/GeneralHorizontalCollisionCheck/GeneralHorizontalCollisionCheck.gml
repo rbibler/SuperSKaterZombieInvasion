@@ -20,4 +20,5 @@ if(p1 == 1 or p2 == 1 or p3 == 1 and state != climbingState) {
 		x = x - (x mod 16) - (bbox_left - x);
 	}
 	StopXMotion();
+	script_execute(horizCollisionScript);
 }

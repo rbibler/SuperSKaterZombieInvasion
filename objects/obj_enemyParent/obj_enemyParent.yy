@@ -149,20 +149,6 @@
             "value": "0",
             "varName": "hitPoints",
             "varType": 0
-        },
-        {
-            "id": "39b0807b-5274-4c73-b946-44930360c2c2",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "horizCollisionScript",
-            "varType": 5
         }
     ],
     "solid": false,

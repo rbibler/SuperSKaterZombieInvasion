@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "095be7d2-1f2c-4334-8aae-2a7edd6918f3",
+            "Value": {
+                "id": "a36de5ee-bde3-4c3e-898c-33ebed798a0e",
+                "resourcePath": "scripts\\zobmieSkaterStateDeadScript\\zobmieSkaterStateDeadScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0b593930-82eb-46c4-9d67-d1dd17777fce",
             "Value": {
                 "id": "0d28fc83-bab6-4c02-a71e-182054e48779",
@@ -455,6 +463,14 @@
             }
         },
         {
+            "Key": "4b560472-a95e-4044-888a-c3d2cd4e5dae",
+            "Value": {
+                "id": "1aa02ec0-723b-4924-ae3a-6e78fda8e415",
+                "resourcePath": "scripts\\zombieSkaterMovementAI\\zombieSkaterMovementAI.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4b664a73-b69c-498a-a0c9-36cf58a444c7",
             "Value": {
                 "id": "2fdf79db-ca71-4b17-8b4c-6d3660f49674",
@@ -516,6 +532,14 @@
                 "id": "52904b4e-97bc-40b8-9eab-7ef893100756",
                 "resourcePath": "views\\512c89d8-dbb2-4316-ae46-e8370e301b1f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "52f6dc8a-251f-4822-888f-9e6c07aa65a4",
+            "Value": {
+                "id": "9ee4d47a-fef7-4620-8105-eb285cd7ec13",
+                "resourcePath": "scripts\\zombieSkaterStateJumpScript\\zombieSkaterStateJumpScript.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -724,6 +748,14 @@
                 "id": "90d95709-5b0f-4cc6-ae95-d44758f01e32",
                 "resourcePath": "sprites\\spr_camera\\spr_camera.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "784e7b24-a8d6-41f7-8df3-211a21a88e2b",
+            "Value": {
+                "id": "c9ebe864-7517-4ccb-9e3b-51cb363286b0",
+                "resourcePath": "scripts\\zombieSkaterStateMovingScript\\zombieSkaterStateMovingScript.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1327,6 +1359,22 @@
             }
         },
         {
+            "Key": "bb7f0192-a298-475e-8860-592ab6a9ea53",
+            "Value": {
+                "id": "b305c452-917c-4efb-8e29-933af2908b97",
+                "resourcePath": "sprites\\spr_zombieSkater\\spr_zombieSkater.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bbffafe1-69dc-43a1-82b8-4dd0984ad656",
+            "Value": {
+                "id": "9fce0cea-1d1d-47db-82e7-576b593568a7",
+                "resourcePath": "scripts\\zombieSkaterStateHitScript\\zombieSkaterStateHitScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bc2a690b-4e34-4b88-85d5-b632045df073",
             "Value": {
                 "id": "1d6695ea-08b3-42bd-b20f-f067256ac6f6",
@@ -1412,6 +1460,14 @@
                 "id": "e84bbaaa-9465-437a-840e-703cd0dcae00",
                 "resourcePath": "sprites\\spr_collapseBlock\\spr_collapseBlock.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ca67fce5-fb0e-4e9f-89a6-d0dd4d28110a",
+            "Value": {
+                "id": "25f1e139-e97c-4e43-9100-b5edf301145f",
+                "resourcePath": "objects\\obj_zombieSkater\\obj_zombieSkater.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1535,6 +1591,14 @@
             }
         },
         {
+            "Key": "dfed6100-81a0-41ad-96d1-332558bacd41",
+            "Value": {
+                "id": "5935f62e-7ef7-427c-90de-e67bff0530de",
+                "resourcePath": "scripts\\zombieSkaterStateFallScript\\zombieSkaterStateFallScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e094d7ad-6e5c-409c-96e4-2a45a3f2f8bf",
             "Value": {
                 "id": "c53be89b-836e-464a-a2df-2b37a24b67f3",
@@ -1631,6 +1695,14 @@
             }
         },
         {
+            "Key": "f06e71f8-7da4-4886-b3b4-9b59a780a074",
+            "Value": {
+                "id": "246b3cdf-3230-4481-bd64-c8e88ee054cc",
+                "resourcePath": "scripts\\zombieSkaterStateIdleScript\\zombieSkaterStateIdleScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f08a32ba-0870-43ac-afc7-0980293fbe6f",
             "Value": {
                 "id": "e4612b7d-fa11-4025-bb76-db3b68ad05c9",
@@ -1671,6 +1743,14 @@
             }
         },
         {
+            "Key": "f6a55326-f197-4883-a746-254e10043fed",
+            "Value": {
+                "id": "a6386c07-05eb-40fb-b72b-5d8942e17157",
+                "resourcePath": "views\\f6a55326-f197-4883-a746-254e10043fed.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f8a9f84f-e463-4c3f-abd8-ec84eb4ba90d",
             "Value": {
                 "id": "7360f4e9-d013-4879-b352-34422d9cf08e",
@@ -1708,6 +1788,14 @@
                 "id": "cf6a22fb-99de-4d91-bf6f-f3ac964913ff",
                 "resourcePath": "views\\fb7ff1a4-6e92-49dd-b03c-8a0812103b62.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fba853fb-5f2d-4c4d-956a-c7884092fd15",
+            "Value": {
+                "id": "6c538002-96fa-4138-8b07-29c01549b9be",
+                "resourcePath": "scripts\\zombieSkaterHorizCollisionScript\\zombieSkaterHorizCollisionScript.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1801,6 +1889,14 @@
         "1c35ff7a-f96a-41db-9a78-5994b27b07c7",
         "c57bdf39-5436-4bf5-9932-d73d3eb70942",
         "a0a0f345-d037-4fe7-a6b8-3edde0b4f7f5",
+        "f06e71f8-7da4-4886-b3b4-9b59a780a074",
+        "784e7b24-a8d6-41f7-8df3-211a21a88e2b",
+        "52f6dc8a-251f-4822-888f-9e6c07aa65a4",
+        "bbffafe1-69dc-43a1-82b8-4dd0984ad656",
+        "dfed6100-81a0-41ad-96d1-332558bacd41",
+        "095be7d2-1f2c-4334-8aae-2a7edd6918f3",
+        "4b560472-a95e-4044-888a-c3d2cd4e5dae",
+        "fba853fb-5f2d-4c4d-956a-c7884092fd15",
         "05572da5-c758-480f-871b-ddfa284a19e0",
         "50b97c71-a535-42cf-a2c2-1cb1c23ded59",
         "a1b15312-bde7-4ba3-b3bd-baf81f23164c",

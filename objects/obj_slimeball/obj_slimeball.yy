@@ -106,14 +106,6 @@
             "value": "5"
         },
         {
-            "id": "87d47264-2bfe-4dcf-aa06-425e901669f0",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "39b0807b-5274-4c73-b946-44930360c2c2",
-            "value": "SlimeballHorizCollisionScript"
-        },
-        {
             "id": "e4cd53cf-446f-4762-b2bd-93da9bbd70ef",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -144,6 +136,14 @@
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
             "propertyId": "a869a8af-a993-4e2c-8f19-4cad0d4179e8",
             "value": "-8"
+        },
+        {
+            "id": "8de95469-8167-430f-a526-ed7485b534d1",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "7d8e0fec-70e6-41e1-81ad-64d33d679a8d",
+            "value": "SlimeballHorizCollisionScript"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",

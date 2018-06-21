@@ -35,6 +35,7 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 	}
 	StopXMotion(); 
 	show_debug_message("X collision");
+	script_execute(horizCollisionScript);
 
 }
 
