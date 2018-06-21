@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "060b7a68-fe71-45cf-9a92-8d03d06bf393",
+            "Value": {
+                "id": "9f238fce-c7c7-4c74-8491-448bc42e4337",
+                "resourcePath": "scripts\\SetSolid\\SetSolid.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "07077631-e50a-4c9b-9cd6-b9752b06a64d",
             "Value": {
                 "id": "27ad1a2b-d861-49bc-8fb2-ecb738d4add5",
@@ -668,6 +676,14 @@
                 "id": "79498584-c2ce-425c-8a04-55779913da01",
                 "resourcePath": "objects\\obj_zombieGun\\obj_zombieGun.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6cf1e1e6-d04f-4cdc-85fc-1c5c64a81d81",
+            "Value": {
+                "id": "f2f70556-f02e-4cc7-aa86-1fa80bc89e43",
+                "resourcePath": "sprites\\spr_empty\\spr_empty.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1759,6 +1775,14 @@
             }
         },
         {
+            "Key": "fb7ff1a4-6e92-49dd-b03c-8a0812103b62",
+            "Value": {
+                "id": "cf6a22fb-99de-4d91-bf6f-f3ac964913ff",
+                "resourcePath": "views\\fb7ff1a4-6e92-49dd-b03c-8a0812103b62.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "fbc154e2-d503-4fed-9477-3353c230c17f",
             "Value": {
                 "id": "593765a2-08ca-434b-99af-ee17f34ddc17",
@@ -1888,7 +1912,8 @@
         "35cfba20-7fc2-43a9-990c-e4ab189d84d9",
         "118672eb-6b39-494e-bbbb-ba1265d7c753",
         "530bc4ec-3ba7-4635-a2ba-7b135538f7d8",
-        "0b593930-82eb-46c4-9d67-d1dd17777fce"
+        "0b593930-82eb-46c4-9d67-d1dd17777fce",
+        "060b7a68-fe71-45cf-9a92-8d03d06bf393"
     ],
     "tutorial": ""
 }
