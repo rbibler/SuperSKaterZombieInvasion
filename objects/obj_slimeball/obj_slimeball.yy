@@ -144,6 +144,38 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "39b0807b-5274-4c73-b946-44930360c2c2",
             "value": "SlimeballHorizCollisionScript"
+        },
+        {
+            "id": "e4cd53cf-446f-4762-b2bd-93da9bbd70ef",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "fe5f28ae-a0bc-401f-9c51-9691484fdbde",
+            "value": "0.5"
+        },
+        {
+            "id": "540ef54e-0f12-44f7-8173-940d861be1d0",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "869d67b1-2cd3-4240-871c-7c2126ef5a73",
+            "value": "1.5"
+        },
+        {
+            "id": "8c5516e9-99f1-4237-9808-a3fff0777581",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "367e0b56-719a-4b47-ad4d-2571ee18528c",
+            "value": "12"
+        },
+        {
+            "id": "8cda8977-0e6a-42e0-a386-3bc4f4de730c",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "a869a8af-a993-4e2c-8f19-4cad0d4179e8",
+            "value": "-8"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",

@@ -9,14 +9,7 @@ SlimeballMovementAI();
 // Check how fast the skater should be moving
 EnemyHorizontalImpetus();
 
-// Figure out the fractional movement so that we're always working with integers
-EnemyMovementFractions();
-
-// Check all possible collisions
-EnemyHorizontalCollisionCheck();
-EnemyHorizontalMovement();
-EnemyVerticalCollisionCheck();
-EnemyPlatformCollisions();
+MoveAndCollide();
 
 // input[SHOOT] will be true if pursuing the sktater. If that's the case, animate faster
 if(input[SHOOT]) {

@@ -48,14 +48,7 @@ if(input[DOWN] and state != climbingState) {
 // Check how fast the skater should be moving
 SkaterHorizontalImpetus();
 
-// Figure out the fractional movement so that we're always working with integers
-GeneralMovementFractions();
-
-// Check all possible collisions
-GeneralHorizontalCollisionCheck();
-GeneralPlatformCollisions();
-GeneralHorizontalMovement();
-GeneralVerticalCollisionCheck();
+MoveAndCollide()
 
 SkaterLadderCollisions();
 

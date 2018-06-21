@@ -15,14 +15,7 @@ if(stateNew) {
 	stateVar[0] = 0;
 }
 
-// Figure out the fractional movement so that we're always working with integers
-EnemyMovementFractions();
-
-// Check all possible collisions
-EnemyHorizontalCollisionCheck();
-EnemyHorizontalMovement();
-EnemyVerticalCollisionCheck();
-EnemyPlatformCollisions();
+MoveAndCollide();
 
 // If we're back on the ground, we can switch back to moving state after a pause
 if(grounded) {

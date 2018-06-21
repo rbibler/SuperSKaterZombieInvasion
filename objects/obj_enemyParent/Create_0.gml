@@ -1,14 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Skater's current xSpeed
-xSpeed = 0;
-xSpeedFrac = 0;
-lastXSpeed = 0;
+// Inherit the parent event
+event_inherited();
 
-// Skater's current ySpeed
-ySpeed = 0;
-ySpeedFrac = 0;
+/// @description Insert description here
+// You can write your code in this editor
+
 
 // Array to hold the user's input. 
 input[0] = 0;
@@ -29,42 +27,10 @@ for(var i = 0; i < 8; i++) {
 }
 
 
-onSlope = false;
-verticalMovementRun = false;
-
-// Keeps track of skater's direction. -1 is left 1 is right. Should never be zero.
-myDirection = 1;
-
-
-// Skater's jump status
-jump = 0;
-canJump = 0;
-jumpFramesAllowance = 12;
-
-// constant climb speed
-climbSpeed = 2;
-
-// constant jump speed
-jumpSpeed = -7;
-
 // Set the initial gravity to whatever our gravity is
 
 maxYSpeed = 6;
-
-// Flag to indiciate that the skater is on the ground
-grounded = false;
-wasGrounded = false;
-
-groundedRight = false;
-wasGroundedRight = false;
-
-groundedLeft = false;
-wasGroundedLeft = false;
-
-// Ground friction
-groundFriction = 0.25;
-slopeFriction = 0.075;
-airFriction = 0.075;
+myGravity = .5;
 
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);

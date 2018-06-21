@@ -36,6 +36,11 @@ maxYSpeed = 6;
 
 // Flag to indiciate that the skater is on the ground
 grounded = false;
+groundedRight = false;
+groundedLeft = false;
+wasGrounded = false;
+wasGroundedRight = false;
+wasGroundedLeft = false;
 
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);

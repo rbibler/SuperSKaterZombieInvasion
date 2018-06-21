@@ -1,5 +1,5 @@
 {
-    "id": "a109af8b-1973-418b-98c9-9d49381b8bd5",
+    "id": "a0a0f345-d037-4fe7-a6b8-3edde0b4f7f5",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "EnemyHorizontalImpetus",

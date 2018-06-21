@@ -60,14 +60,7 @@ if(abs(xSpeed) > 0) {
 	stateSwitch("IDLE");
 }
 
-// Figure out the fractional movement so that we're always working with integers
-GeneralMovementFractions();
-
-// Check all possible collisions
-GeneralHorizontalCollisionCheck();
-GeneralPlatformCollisions();
-GeneralHorizontalMovement();
-GeneralVerticalCollisionCheck();
+MoveAndCollide();
 SkaterLadderCollisions();
 
 // If the ground is gone, you fall

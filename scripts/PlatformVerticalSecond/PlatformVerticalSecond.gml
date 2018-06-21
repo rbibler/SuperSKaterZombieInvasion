@@ -45,7 +45,7 @@ if(place_meeting(x  + xSpeed, y + ySpeed, obj_baseBlock)) {
 		y = y + sign(ySpeed);
 	}
 	show_debug_message("X & Y collision");
-	StopXMotion();
+	//StopXMotion();
 }
 
 

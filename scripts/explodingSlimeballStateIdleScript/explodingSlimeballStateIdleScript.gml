@@ -37,11 +37,7 @@ if(stateTimer mod (60 / 5) == 0) {
 	}
 }
 
-// Check for Vert collisions in case ground falls out underneath our feet
-// No need to check horiz collision 'cause you ain't moving
-EnemyVerticalCollisionCheck();
-// Do need to check platform collisions because those move
-EnemyPlatformCollisions();
+MoveAndCollide();
 
 
 var dist = abs(x - obj_skater.x);
