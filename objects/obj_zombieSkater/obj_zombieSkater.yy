@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "ca67fce5-fb0e-4e9f-89a6-d0dd4d28110a"
+        },
+        {
+            "id": "911f4cf5-90aa-40f2-9a0a-5a9de0000711",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 3,
+            "m_owner": "ca67fce5-fb0e-4e9f-89a6-d0dd4d28110a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -56,6 +66,14 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
             "value": "zobmieSkaterStateDeadScript"
+        },
+        {
+            "id": "c7eae8dd-a1ca-4167-be06-e90faf39c7d8",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "7d8e0fec-70e6-41e1-81ad-64d33d679a8d",
+            "value": "zombieSkaterHorizCollisionScript"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
@@ -72,7 +90,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "d9be0113-008c-45fa-9595-8e274dd8e7a9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "skateDirection",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "bb7f0192-a298-475e-8860-592ab6a9ea53",
     "visible": true

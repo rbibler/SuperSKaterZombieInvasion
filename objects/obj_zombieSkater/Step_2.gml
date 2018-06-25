@@ -4,7 +4,10 @@
 // Inherit the parent event
 event_inherited();
 
-moveDirOnRestart = RIGHT;
+if(input[RIGHT]) {
+	facing = 1;
+} else if(input[LEFT]) {
+	facing = -1;
+}
 
-canEat = true;
-
+image_xscale = -facing;

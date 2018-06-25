@@ -3,14 +3,17 @@ if(xSpeed > 0) {
 	if(!groundedRight and wasGroundedRight) {
 		input[RIGHT] = 0;
 		input[LEFT] = 1;
+
 	}
 } else if(xSpeed < 0) {
 	if(!groundedLeft and wasGroundedLeft) {
 		input[LEFT] = 0;
 		input[RIGHT] = 1;
+
 	}
 } else if(input[LEFT] == 0 and input[RIGHT] == 0) {
 	input[moveDirOnRestart] = 1;
+
 }
 
 var dist = x - obj_skater.x;

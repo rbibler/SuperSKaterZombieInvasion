@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "023cb9db-edfa-4990-ac54-3801261fbf89",
+            "Value": {
+                "id": "5e77c7a2-60c4-4d75-b145-27105ff272d4",
+                "resourcePath": "sprites\\spr_enemyGullIdle\\spr_enemyGullIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "02588c78-fb4a-4538-9e5c-9b63df8cde97",
             "Value": {
                 "id": "a1be895f-88e3-4bd3-a8cd-5398e1e35d31",
@@ -212,6 +220,14 @@
                 "id": "2db67f3f-f47c-42fa-baa5-91eb4dbfb63e",
                 "resourcePath": "objects\\obj_bouncyBlock\\obj_bouncyBlock.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1f867356-f94e-451a-a1b9-54941036c83e",
+            "Value": {
+                "id": "5b03bb4d-667f-41db-8c76-deaf71bffc6d",
+                "resourcePath": "sprites\\spr_enemyGullTakeoff\\spr_enemyGullTakeoff.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -548,6 +564,14 @@
                 "id": "68231292-3ff6-4de5-94bc-a39377e1e260",
                 "resourcePath": "scripts\\PlatformVerticalFirst\\PlatformVerticalFirst.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "54864bdb-3341-4085-9cba-aa36f59e7277",
+            "Value": {
+                "id": "654b7339-fba1-410f-9dfc-9d2da83749a3",
+                "resourcePath": "views\\54864bdb-3341-4085-9cba-aa36f59e7277.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1167,6 +1191,14 @@
             }
         },
         {
+            "Key": "a449974b-bbd2-40c2-9a31-9087bf20c7b8",
+            "Value": {
+                "id": "72fe355e-0bbf-4fff-9a6e-cbb857b2aa51",
+                "resourcePath": "sprites\\spr_enemyGull\\spr_enemyGull.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a4eb35a9-c129-494d-af0b-d3ab175b7913",
             "Value": {
                 "id": "4d29fef5-9f68-4aac-a30a-ed0e742e74c3",
@@ -1468,6 +1500,14 @@
                 "id": "25f1e139-e97c-4e43-9100-b5edf301145f",
                 "resourcePath": "objects\\obj_zombieSkater\\obj_zombieSkater.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ca8a0557-5e20-4454-b2db-a2f9716d6105",
+            "Value": {
+                "id": "014257e9-a9e3-4362-999d-3a61699e2297",
+                "resourcePath": "sprites\\spr_enemyGullDeath\\spr_enemyGullDeath.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

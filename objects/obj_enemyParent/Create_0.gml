@@ -44,7 +44,8 @@ stateCreate("MOVING", stateMovingScript);
 stateCreate("JUMPING", stateJumpScript);
 stateCreate("ATTACKING", stateAttackScript);
 stateCreate("FALLING", stateFallScript);
-deadState = stateCreate("DEAD", stateDeadScript);
+stateHit = stateCreate("HIT", stateHitScript);
+stateDead = stateCreate("DEAD", stateDeadScript);
 
 // Set the default state to IDLE
 stateInit("IDLE");

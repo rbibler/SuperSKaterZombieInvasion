@@ -144,6 +144,14 @@
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
             "propertyId": "7d8e0fec-70e6-41e1-81ad-64d33d679a8d",
             "value": "SlimeballHorizCollisionScript"
+        },
+        {
+            "id": "d2273404-6d7f-4565-97e0-b894c1b703a2",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
+            "value": "slimeballStateHitScript"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
@@ -161,20 +169,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "ca5d9d18-32c8-4c03-ae05-dabec9e62a28",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "slimeballStateHitScript",
-            "varName": "stateHitScript",
-            "varType": 5
-        }
+        
     ],
     "solid": false,
     "spriteId": "cfb3529d-f4dd-4404-bde9-d79cf5309a12",
