@@ -1,24 +1,21 @@
 if(stateNew) {
-	// set a timer up. We'll be dying for 30 frames
-	stateVar[0] = 30;
-	
-	// Can't move, we're dying
-	xSpeed = 0;
-	ySpeed = 0;
-	xSpeedFraction = 0;
-	ySpeedFraction = 0;
+	myGravity = standardGravity;
+	sprite_index = spr_enemyGullDeath;
 }
 
-// Every five frames, toggle the animation
-if(stateVar[0] mod 5 == 0) {
-	stateVar[1]++;
-	image_index = stateVar[1] mod 2;
+if(stateTimer mod (60 / 5) == 0) {
+	image_index++;
+	if(image_index >= image_number) {
+		image_index = image_number - 1;
+	}
 }
 
-// Decrement timer
-stateVar[0]--;
-
-// When it reaches zero... die
-if(stateVar[0] <= 0) {
+if(stateTimer >= 120 and grounded) {
 	instance_destroy();
+}
+
+MoveAndCollide();
+
+if(grounded) {
+	StopXMotion();
 }

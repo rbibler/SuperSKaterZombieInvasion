@@ -43,6 +43,16 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "3d7b2056-82b8-4245-adf2-020b7fa8bb32"
+        },
+        {
+            "id": "f79a1fdf-1143-410a-8907-49cf76007d18",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "3d7b2056-82b8-4245-adf2-020b7fa8bb32"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -172,6 +182,20 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "stateHitScript",
+            "varType": 5
+        },
+        {
+            "id": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "hitByAmmoScript",
             "varType": 5
         }
     ],

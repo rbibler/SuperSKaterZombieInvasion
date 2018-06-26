@@ -97,6 +97,20 @@
             "value": "0",
             "varName": "aliveTime",
             "varType": 0
+        },
+        {
+            "id": "bd3b7483-b253-40cf-829b-01973d231310",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "destroyThyself",
+            "varType": 5
         }
     ],
     "solid": false,

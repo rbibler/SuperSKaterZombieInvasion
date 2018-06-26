@@ -11,5 +11,13 @@ if(stateTimer mod(60 / 5) == 0) {
 		stateVar[0] = 1;
 	} else if(stateVar[0] == 1) {
 		sprite_index = spr_enemyGull;
+		
 	}
+}
+
+if(stateVar[0] == 1) {
+	xSpeed = flySpeedX * myDirection;
+	ySpeed = flySpeedY;
+	x += xSpeed;
+	y += ySpeed;
 }

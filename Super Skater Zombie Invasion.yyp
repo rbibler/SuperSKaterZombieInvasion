@@ -1559,6 +1559,14 @@
             }
         },
         {
+            "Key": "c738d239-f37d-4d87-96f0-e1c71109cce2",
+            "Value": {
+                "id": "59090c06-f9a6-44b9-8d07-8d07eac015e9",
+                "resourcePath": "scripts\\gullHitByAmmoScript\\gullHitByAmmoScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c8cf8c7b-2762-4fd9-a361-6865be5ff332",
             "Value": {
                 "id": "e84bbaaa-9465-437a-840e-703cd0dcae00",
@@ -1935,6 +1943,14 @@
             }
         },
         {
+            "Key": "fd3831c5-7d75-401d-94ad-b7aa637dd09d",
+            "Value": {
+                "id": "da12d75a-0ee7-4455-a665-3474e6014e65",
+                "resourcePath": "scripts\\SlingshotRockDestroyScript\\SlingshotRockDestroyScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fd3feea6-3e19-4a91-9ced-759334c65434",
             "Value": {
                 "id": "28b5ecf6-7ba6-4750-9b7c-efffbe16cc77",
@@ -1967,6 +1983,7 @@
         "074cd29b-6396-41f4-a6fb-9568319402f2",
         "1c1d0c2a-6461-45ca-bab7-0f58989937b9",
         "565a1870-9fa6-4740-ae55-f8647e7b7ad1",
+        "fd3831c5-7d75-401d-94ad-b7aa637dd09d",
         "f0aad53f-9c2e-45f9-820b-5d8e58cb54e1",
         "56aade88-259d-4fb7-8097-021b1bab6a74",
         "fd9dd186-7e7e-496f-846a-2fa7620db0f5",
@@ -2025,6 +2042,7 @@
         "440b564e-d20c-468d-adf7-3e76b958f643",
         "f68a02bf-279b-48c0-a34e-7b37b898420a",
         "c185be53-8571-49c4-83eb-cef7b499d395",
+        "c738d239-f37d-4d87-96f0-e1c71109cce2",
         "05572da5-c758-480f-871b-ddfa284a19e0",
         "50b97c71-a535-42cf-a2c2-1cb1c23ded59",
         "a1b15312-bde7-4ba3-b3bd-baf81f23164c",

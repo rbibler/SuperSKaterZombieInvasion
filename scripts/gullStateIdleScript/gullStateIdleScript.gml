@@ -49,8 +49,31 @@ if(stateTimer mod (60 / 5) == 0) {
 
 MoveAndCollide();
 
-var dist = abs(x - obj_skater.x);
 
+
+var i = 0;
+var numObjs = instance_number(obj_enemyParent);
+var dist = 100;
+for(i = 0; i < numObjs; i++) {
+	var enemy = instance_find(obj_enemyParent, i);
+	if(enemy != self) {
+		dist = abs(x - enemy.x);
+		if(dist <= 25) {
+			stateSwitch("MOVING");
+		}
+	}
+}
+
+numObjs = instance_number(obj_ammo);
+var dist = 100;
+for(i = 0; i < numObjs; i++) {
+	dist = abs(x - instance_find(obj_ammo, i).x);
+	if(dist <= 25) {
+		stateSwitch("MOVING");
+	}
+}
+
+dist = abs(x - obj_skater.x);
 if(dist <= 25) {
 	stateSwitch("MOVING");
 }

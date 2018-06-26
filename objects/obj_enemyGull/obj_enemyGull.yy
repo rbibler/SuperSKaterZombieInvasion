@@ -23,6 +23,16 @@
             "enumb": 2,
             "eventtype": 3,
             "m_owner": "ab534e9a-4f04-4bc2-ad56-bda342e896ee"
+        },
+        {
+            "id": "91fc6377-ad5a-4504-b3c5-817da3b906e6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "ab534e9a-4f04-4bc2-ad56-bda342e896ee"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -98,6 +108,14 @@
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
             "propertyId": "a869a8af-a993-4e2c-8f19-4cad0d4179e8",
             "value": "-3"
+        },
+        {
+            "id": "e885459e-3ea2-492e-b8dd-27c12e614dda",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
+            "value": "gullHitByAmmoScript"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
@@ -114,7 +132,36 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "eb3bdd0c-2104-42b6-93e8-95b7c77dcb9c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "flySpeedX",
+            "varType": 0
+        },
+        {
+            "id": "6f1cada4-ea16-4084-a3ce-9258a2f84260",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1.5",
+            "varName": "flySpeedY",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "023cb9db-edfa-4990-ac54-3801261fbf89",
     "visible": true

@@ -23,6 +23,14 @@
             "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
             "propertyId": "51495703-9d0c-42ff-a027-821d2b674406",
             "value": "6"
+        },
+        {
+            "id": "cd679a47-e516-4898-9baa-a10233cf7805",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
+            "propertyId": "bd3b7483-b253-40cf-829b-01973d231310",
+            "value": "SlingshotRockDestroyScript"
         }
     ],
     "parentObjectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
