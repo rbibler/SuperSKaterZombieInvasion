@@ -1,16 +1,35 @@
 if(stateNew) {
 	stateVar[0] = 0;
-	sprite_index = spr_enemyGullTakeoff;
 	image_index = 0;
-	xSpeed = 0.5;
 	ySpeed += jumpSpeed;
 	grounded = false;
 }
 
+if(grounded) {
+	if(stateVar[0] == 0) {
+		stateVar[0] = 1;
+		ySpeed = jumpSpeed;
+		grounded = false;
+	} else {
+		StopXMotion();
+		stateSwitch("IDLE");
+	}
+}
 
+xSpeed = 1 * myDirection;
+facing = -sign(xSpeed);
 MoveAndCollide();
 
+show_debug_message("XSpeed: " + string(xSpeed) + " YSpeed: " + string(ySpeed));
+
 if(grounded) {
-	stateSwitch("IDLE");
+	if(stateVar[0] == 0) {
+		stateVar[0] = 1;
+		ySpeed = jumpSpeed;
+		grounded = false;
+	} else {
+		StopXMotion();
+		stateSwitch("IDLE");
+	}
 }
 

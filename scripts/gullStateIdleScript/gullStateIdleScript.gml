@@ -26,6 +26,12 @@ if(stateTimer - stateVar[1] >= stateVar[0]) {
 }
 
 if(stateTimer >= stateVar[3]) {
+	var dir = floor(random(2));
+	if(dir < 1) {
+		myDirection = -1;
+	} else {
+		myDirection = 1;
+	}
 	stateSwitch("JUMPING");
 }
 	
@@ -43,3 +49,8 @@ if(stateTimer mod (60 / 5) == 0) {
 
 MoveAndCollide();
 
+var dist = abs(x - obj_skater.x);
+
+if(dist <= 25) {
+	stateSwitch("MOVING");
+}

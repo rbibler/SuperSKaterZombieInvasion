@@ -97,8 +97,8 @@ if(grounded) {
 	input[RIGHT] = 1;
 }
 
-var dist = abs(x - obj_skater.x);
-if(dist < 50) {
-	stateSwitch("ATTACKING");
-}
+//var dist = abs(x - obj_skater.x);
+//if(dist < 50) {
+//	stateSwitch("ATTACKING");
+//}
 

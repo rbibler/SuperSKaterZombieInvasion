@@ -8,7 +8,7 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		grounded = true;
 	}
 	StopYMotion();
-	show_debug_message("Y collision");
+	//show_debug_message("Y collision");
 	with(obj) {
 		script_execute(skaterVertCollisionScript, other);
 	}
@@ -18,7 +18,7 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		var obj = instance_place(x, y + 2, obj_baseBlock);	
 		y = obj.bbox_top - (bbox_bottom - y) - 1;
 		StopYMotion();
-		show_debug_message("Y collision");
+		//show_debug_message("Y collision");
 		with(obj) {
 			script_execute(skaterVertCollisionScript, other);
 		}
@@ -34,7 +34,7 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 		x = x + sign(xSpeed);
 	}
 	StopXMotion(); 
-	show_debug_message("X collision");
+	//show_debug_message("X collision");
 	script_execute(horizCollisionScript);
 
 }
