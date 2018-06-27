@@ -2,7 +2,6 @@ if(stateNew) {
 	StopXMotion();
 	StopYMotion();
 	xSpeed = -1;
-	//myGravity = 0;
 }
 
 if(stateTimer <= 5) {
@@ -19,8 +18,7 @@ if(stateTimer <= 5) {
 	}
 }
 
-x += xSpeed;
-y += ySpeed;
+MoveAndCollide();
 
 
 

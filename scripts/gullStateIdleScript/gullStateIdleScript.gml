@@ -56,7 +56,7 @@ var numObjs = instance_number(obj_enemyParent);
 var dist = 100;
 for(i = 0; i < numObjs; i++) {
 	var enemy = instance_find(obj_enemyParent, i);
-	if(enemy != self) {
+	if(enemy != self and enemy.object_index != obj_enemyGull) {
 		dist = abs(x - enemy.x);
 		if(dist <= 25) {
 			stateSwitch("MOVING");

@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "2c488e5f-a640-4cac-ab84-c2cc96a36521",
+            "Value": {
+                "id": "313a795e-c76a-4d00-a7b4-b5f1e69d5d1c",
+                "resourcePath": "scripts\\SlimeballHitByAmmoScript\\SlimeballHitByAmmoScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2d37b62b-5748-4ef7-8043-a564d059459b",
             "Value": {
                 "id": "722aa84c-f8e3-48d1-a9c8-1ecf1ab33095",
@@ -2020,6 +2028,7 @@
         "3a631d3e-72e4-4a6a-ac86-fd3dd5656ea4",
         "698a235c-86fc-4d01-a1a1-e6d453d4612b",
         "13a97aa4-6668-4b15-9536-7356ddc3e7a4",
+        "2c488e5f-a640-4cac-ab84-c2cc96a36521",
         "44a79e0d-decc-4b5d-8b34-ee69a800b7ad",
         "abc29598-b9f2-4e3a-90c6-a6e030095da2",
         "90bc2503-427f-47f2-842b-4253a628755d",

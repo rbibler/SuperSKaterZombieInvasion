@@ -20,8 +20,6 @@ xSpeed = 1 * myDirection;
 facing = -sign(xSpeed);
 MoveAndCollide();
 
-show_debug_message("XSpeed: " + string(xSpeed) + " YSpeed: " + string(ySpeed));
-
 if(grounded) {
 	if(stateVar[0] == 0) {
 		stateVar[0] = 1;

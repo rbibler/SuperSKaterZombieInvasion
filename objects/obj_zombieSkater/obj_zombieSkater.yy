@@ -74,6 +74,14 @@
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
             "propertyId": "7d8e0fec-70e6-41e1-81ad-64d33d679a8d",
             "value": "zombieSkaterHorizCollisionScript"
+        },
+        {
+            "id": "80922bdd-ebcc-4a6d-8a52-3ff8f519a4ec",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "80059692-e5a4-48ea-98e8-5f5590a562a8",
+            "value": "False"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-ySpeed += 1;
+ySpeed += 0.25;
 PowerUpCheckGrounded();
 if(grounded) {
 	ySpeed = 0;
