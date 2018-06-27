@@ -10,7 +10,7 @@
 
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	sprite_index = spr_slimeballMove;
+	sprite_index = spr_slimeballIdle;
 	image_index = 0;
 	//jump = 0;
 	stateVar[0] = random_range(60 * 1, 60 * 3); 
@@ -37,11 +37,8 @@ if(stateTimer mod (60 / 5) == 0) {
 	}
 }
 
-MoveAndCollide();
-
-
-var dist = abs(x - obj_skater.x);
-if(dist < 150) {
+var dist = point_distance(obj_skater.x, obj_skater.y, x, y);
+if(dist < menacementDistance and stateTimer >= 120) {
 	stateSwitch("ATTACKING");
 }
 

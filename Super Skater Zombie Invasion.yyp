@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "1fea07bc-b43a-49ab-b2d1-4521d6fcf38b",
+            "Value": {
+                "id": "0195b3e0-19b5-45b7-afac-e7f8fcce2b2a",
+                "resourcePath": "sprites\\spr_slimeballIdle\\spr_slimeballIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "204b67c3-03b0-472e-9953-9c204df9f9a0",
             "Value": {
                 "id": "45de69e6-f985-46b6-8854-a7cd91556315",

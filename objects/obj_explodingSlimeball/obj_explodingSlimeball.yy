@@ -69,6 +69,34 @@
             "value": "2.5",
             "varName": "projSpeed",
             "varType": 0
+        },
+        {
+            "id": "4cd958a8-d948-40b0-91d0-55940e512b66",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "150",
+            "varName": "menacementDistance",
+            "varType": 0
+        },
+        {
+            "id": "b55fd6b2-8d61-459e-9114-797d92e73d23",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "50",
+            "varName": "explodeDistance",
+            "varType": 0
         }
     ],
     "solid": false,
