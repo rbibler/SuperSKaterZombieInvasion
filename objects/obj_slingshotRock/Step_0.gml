@@ -4,5 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
-
-aliveCounter = 0;
+GeneralHorizontalCollisionCheck();
+GeneralPlatformCollisions();
