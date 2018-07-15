@@ -26,6 +26,14 @@ for(var i = 0; i < 8; i++) {
 	lastInput[i] = input[i];
 }
 
+stateVar[0] = 0;
+stateVar[1] = 0;
+stateVar[2] = 0;
+stateVar[3] = 0;
+stateVar[4] = 0;
+stateVar[5] = 0;
+
+
 
 // Set the initial gravity to whatever our gravity is
 
@@ -39,7 +47,7 @@ collisionTiles = layer_tilemap_get_id(layerId);
 stateMachineInit();
 
 // Define the skater's states
-stateCreate("IDLE", stateIdleScript);
+stateIdle = stateCreate("IDLE", stateIdleScript);
 stateCreate("MOVING", stateMovingScript);
 stateCreate("JUMPING", stateJumpScript);
 stateCreate("ATTACKING", stateAttackScript);

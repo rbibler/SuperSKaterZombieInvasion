@@ -31,7 +31,7 @@ canJump = 0;
 bounceDirection = 0;
 
 // Set the initial gravity to whatever our gravity is
-myGravity = 0.5;
+myGravity = standardGravity;
 maxYSpeed = 6;
 
 // Flag to indiciate that the skater is on the ground

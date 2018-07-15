@@ -1,11 +1,6 @@
 if(stateNew) {
-	// If slimeball is in the air, make him fly farther 
-	if(!grounded) {
-		ySpeed = -7;
-	} else {
-		ySpeed = -2;
-	}
 	// Push him away from player
+	ySpeed = -3;
 	xSpeed = 3 * (sign(x - obj_skater.x));
 	
 	// Not on the ground anymore
@@ -27,16 +22,6 @@ if(grounded) {
 		// Pause horizontal movement
 		xSpeed = 0;
 		xSpeedFraction = 0;
-	// If this isn't our first grounding, see if enough time has elapsed
-	} else if(stateTimer - stateVar[0] >= 30) {
-		// If so, switch to moving state and move away from the player
-		if(obj_skater.x < x) {
-			input[RIGHT] = 1;
-			input[LEFT] = 0;
-		} else {
-			input[LEFT] = 1;
-			input[RIGHT] = 0;
-		}
-		stateSwitch("MOVING");
+		stateSwitch("DEAD");
 	}
 }

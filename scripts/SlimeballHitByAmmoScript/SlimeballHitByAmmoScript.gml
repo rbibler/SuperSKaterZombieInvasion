@@ -8,12 +8,14 @@ if(state != stateDead) {
 	if(ammo.object_index == obj_slingshotRock) {
 		// Insta death!
 		stateSwitch("DEAD");
-		// Adding one more than the projectile's alivetime will cause it to be destoryed
-		// on its next step event
-		other.aliveCounter = other.aliveTime + 1;
+		
 		// Nice job player!
 		score += 10;
 	} else if(ammo.object_index == obj_board) {
 		stateSwitch("HIT");
 	}
 }
+
+// Adding one more than the projectile's alivetime will cause it to be destoryed
+// on its next step event
+other.aliveCounter = other.aliveTime + 1;

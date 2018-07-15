@@ -4,7 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-moveDirOnRestart = RIGHT;
-
-canEat = true;
-
+moveDirOnRestart = random(100) < 50 ? RIGHT : LEFT;

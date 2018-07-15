@@ -22,7 +22,7 @@ if(((p1 != 0 and p1 <= 4) or (p2 != 0 and p2 <= 4))) {
 	} 
 	StopYMotion();
 } 
- 
+
 
 var floorDist = GeneralInFloor(collisionTiles, x, bbox_bottom + ySpeed);
 if(floorDist >= 0) {

@@ -34,7 +34,3 @@ if(stateTimer >= stateVar[0]) {
 
 var dist = x - obj_skater.x;
 
-//if( ((dist < 0 and input[RIGHT]) or (dist > 0 and input[LEFT])) and abs(dist) <= menaceDistance and stateTimer > 60) {
-	//stateSwitch("MENACING");
-//}
-

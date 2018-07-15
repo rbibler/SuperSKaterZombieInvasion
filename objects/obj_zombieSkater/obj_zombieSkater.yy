@@ -82,6 +82,22 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "80059692-e5a4-48ea-98e8-5f5590a562a8",
             "value": "False"
+        },
+        {
+            "id": "97b65362-75f0-41bd-b173-3ed0486997bf",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
+            "value": "zombieSkaterHitByAmmoScript"
+        },
+        {
+            "id": "0ad89f97-f58b-4d25-aceb-f15a8a5b9255",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
+            "value": "zombieSkaterStateHitScript"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",

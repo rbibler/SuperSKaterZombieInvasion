@@ -5,16 +5,6 @@
     "name": "obj_slimeballProjectile",
     "eventList": [
         {
-            "id": "7ca78655-3e42-4d84-9887-d6a079fcef55",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "312d0ef5-a0f5-42a1-bccb-435dc6e027ae"
-        },
-        {
             "id": "b73eab75-4252-4336-b980-583e8c754eec",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -33,11 +23,30 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "312d0ef5-a0f5-42a1-bccb-435dc6e027ae"
+        },
+        {
+            "id": "c19d2979-4988-42f2-9c75-4ad3f4d0fdf6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "312d0ef5-a0f5-42a1-bccb-435dc6e027ae"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": [
+        {
+            "id": "2a14d175-a546-4fb0-a8ad-ea68254bcf9e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "26abc641-5803-47dd-828b-be5572c23118",
+            "value": "0.15"
+        }
+    ],
+    "parentObjectId": "ed14a131-953f-411a-8370-232b4492166c",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -64,6 +73,20 @@
             "resourceFilter": 1023,
             "value": "5",
             "varName": "hitPoints",
+            "varType": 0
+        },
+        {
+            "id": "99b18f30-ebd7-4c29-9483-3dd178f0785f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.5",
+            "varName": "yAccel",
             "varType": 0
         }
     ],
