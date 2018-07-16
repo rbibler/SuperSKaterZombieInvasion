@@ -37,13 +37,13 @@ if(abs(xSpeed) > 0) {
 		// If horiztonal direction is the same this frame as last, then need to slow down
 		if(sign(xSpeed) == sign(lastXSpeed)) {
 			xSpeed -= (groundFriction * sign(xSpeed));
-			show_debug_message("GROUND FRICTION!");
+			
 		} 
 	} else {
 		// If horiztonal direction is the same this frame as last, then need to slow down
 		if(sign(xSpeed) == sign(lastXSpeed)) {
 			xSpeed -= (slopeFriction * sign(xSpeed));
-			show_debug_message("SLOPE FRICTION!");
+		
 			// If that last slow down has flipped the direction, stop the skater
 			if(sign(xSpeed) != sign(lastXSpeed)) {
 				xSpeed = 0;
