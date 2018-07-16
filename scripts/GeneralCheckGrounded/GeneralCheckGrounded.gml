@@ -11,9 +11,11 @@ var inFloorRight = GeneralInFloor(collisionTiles, bbox_right, bbox_bottom + 1);
 grounded = (inFloorCenter >= 0 or inFloorLeft >= 0 or inFloorRight >= 0);
 groundedLeft = inFloorLeft >= 0;
 groundedRight = inFloorRight >= 0;
+platformGrounded = !grounded;
 if(!grounded and ySpeed >= 0) {
 	// If the skater isn't grounded on a floor tile, check if he's on a platform
 	grounded = place_meeting(x, y + 2, obj_baseBlock);
+	platformGrounded = grounded;
 }
 
 // Deal with the implications of groundedness

@@ -39,7 +39,7 @@ if(floorDist >= 0) {
 
 GeneralVerticalMovement();
 
-if(grounded) { //and onSlope) {
+if(grounded and !platformGrounded) {
 	y += abs(floorDist) - 1;
 	if((bbox_bottom mod 16) == 15) {
 		var tileIdDown = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + 1);
