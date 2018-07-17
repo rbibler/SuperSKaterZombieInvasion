@@ -6,6 +6,7 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 			x = x + sign(xSpeed);
 		}
 		StopXMotion(); 
+		script_execute(horizCollisionScript, obj);
 	}
 
 }

@@ -783,6 +783,14 @@
             }
         },
         {
+            "Key": "55e7af29-e879-4c84-9ebf-e34cf732fafb",
+            "Value": {
+                "id": "ff98cace-8b31-42a8-a745-cc3c1e31eb9a",
+                "resourcePath": "scripts\\fell_off_edge\\fell_off_edge.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "565a1870-9fa6-4740-ae55-f8647e7b7ad1",
             "Value": {
                 "id": "0e3f2812-7397-4d6b-80f0-0a3aa1d3bb69",
@@ -2344,7 +2352,8 @@
         "0b593930-82eb-46c4-9d67-d1dd17777fce",
         "060b7a68-fe71-45cf-9a92-8d03d06bf393",
         "f5411c22-a535-44e1-9a26-004b1e8816d0",
-        "25ce7d6b-e6b7-4b23-a540-adde31a9e0d7"
+        "25ce7d6b-e6b7-4b23-a540-adde31a9e0d7",
+        "55e7af29-e879-4c84-9ebf-e34cf732fafb"
     ],
     "tutorial": ""
 }
