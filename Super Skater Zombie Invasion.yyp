@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "19bf96ad-9122-4911-85af-b2b5917577ac",
+            "Value": {
+                "id": "75efc1ad-86ce-493a-9a70-b160892fd106",
+                "resourcePath": "objects\\obj_galacticDiamond\\obj_galacticDiamond.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1afd1f86-ae8c-48f5-a884-e4f20d8d1041",
             "Value": {
                 "id": "a8d26600-70ab-4527-9b61-8c173a0a5cbb",
@@ -402,7 +410,7 @@
             "Key": "2d37b62b-5748-4ef7-8043-a564d059459b",
             "Value": {
                 "id": "722aa84c-f8e3-48d1-a9c8-1ecf1ab33095",
-                "resourcePath": "sprites\\sprite39\\sprite39.yy",
+                "resourcePath": "sprites\\spr_powerupContainer\\spr_powerupContainer.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -963,6 +971,14 @@
             "Value": {
                 "id": "90d95709-5b0f-4cc6-ae95-d44758f01e32",
                 "resourcePath": "sprites\\spr_camera\\spr_camera.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "774b910d-b341-4e41-a8c8-074426529b7b",
+            "Value": {
+                "id": "45394863-b26f-451f-924e-fa12b34a2022",
+                "resourcePath": "sprites\\spr_galacticDiamond\\spr_galacticDiamond.yy",
                 "resourceType": "GMSprite"
             }
         },

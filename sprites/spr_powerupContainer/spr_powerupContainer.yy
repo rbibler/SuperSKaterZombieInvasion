@@ -2,7 +2,7 @@
     "id": "2d37b62b-5748-4ef7-8043-a564d059459b",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprite39",
+    "name": "spr_powerupContainer",
     "For3D": false,
     "HTile": false,
     "VTile": false,
