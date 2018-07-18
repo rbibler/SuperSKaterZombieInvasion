@@ -98,6 +98,14 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
             "value": "zombieSkaterStateHitScript"
+        },
+        {
+            "id": "8c94de77-1205-4736-8c67-7c890ae29128",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "fe5f28ae-a0bc-401f-9c51-9691484fdbde",
+            "value": "1.5"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
