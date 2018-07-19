@@ -45,7 +45,6 @@ active = dist <= activationRange;
 
 if(grounded and active) {
 	stateSwitch("MOVING");
-	input[RIGHT] = 1;
 }
 
 
