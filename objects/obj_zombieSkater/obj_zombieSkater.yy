@@ -5,16 +5,6 @@
     "name": "obj_zombieSkater",
     "eventList": [
         {
-            "id": "aa26dfff-bfb7-4502-936e-191b5d9023bc",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "ca67fce5-fb0e-4e9f-89a6-d0dd4d28110a"
-        },
-        {
             "id": "911f4cf5-90aa-40f2-9a0a-5a9de0000711",
             "modelName": "GMEvent",
             "mvc": "1.0",

@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "0ba27c20-32d7-458e-80f8-7421c6094026",
+            "Value": {
+                "id": "32bebfb0-4529-418c-a925-5dd408c14a13",
+                "resourcePath": "scripts\\SkaterStateHitFallBack\\SkaterStateHitFallBack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0bc24469-5665-4dbe-a397-214f5557607e",
             "Value": {
                 "id": "09b4f5b8-04fe-4136-9da5-de55ea8b11c8",
@@ -2338,6 +2346,7 @@
         "408038ce-d998-4ff4-afd5-d944162ad440",
         "dfa32e27-0393-4efa-96dc-e841bf5b0c14",
         "c468ffca-5429-4e1e-a3b9-01d1cb8bb0e5",
+        "0ba27c20-32d7-458e-80f8-7421c6094026",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "a151bcd0-7db8-45a0-96ba-f9cd50020bfb",

@@ -92,6 +92,7 @@ deadState = stateCreate("DEAD", SkaterStateDead);
 rollingState = stateCreate("ROLLING", SkaterStateRolling);
 climbingState = stateCreate("CLIMBING", SkaterStateClimbing);
 hitImmobilizedState = stateCreate("HIT_IMMOBILIZED", SkaterStateHitImmobilized);
+hitFallbackState = stateCreate("HIT FALLBACK", SkaterStateHitFallBack);
 // Set the default state to IDLE
 stateInit("IDLE");
 

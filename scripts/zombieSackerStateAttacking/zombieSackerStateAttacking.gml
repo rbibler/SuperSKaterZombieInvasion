@@ -8,10 +8,13 @@ if(stateNew) {
 // If the sacker is attacking, has at least one sack left, and 12 frames have passed since his last 
 // toss, toss another sack
 if(stateVar[1] == 1 and stateVar[3] > 0 and stateTimer mod (60 / 5) == 0) {
+	var tossDirection = sign(obj_skater.x - x);
+	var tossSpeedX = random_range(1, 2.5) * tossDirection;
+	var tossSpeedY = random_range(-4, -6);
 	var hackeySack = instance_create_layer(x, y, "Enemies", obj_slimeballProjectile);
 	with(hackeySack) {
-		xSpeed = -1;
-		ySpeed = -6;
+		xSpeed = tossSpeedX;
+		ySpeed = tossSpeedY;
 	}
 	stateVar[3]--;
 	if(stateVar[3] <= 0) {
@@ -24,4 +27,5 @@ if(stateVar[1] == 1 and stateVar[3] > 0 and stateTimer mod (60 / 5) == 0) {
 	stateVar[1] = 1;
 	stateVar[3] = floor(random_range(1, 4));
 }
+
 
