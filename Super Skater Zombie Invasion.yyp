@@ -1431,6 +1431,14 @@
             }
         },
         {
+            "Key": "9edf28dd-b8b6-45dc-9b57-d0ba35590081",
+            "Value": {
+                "id": "cbb849d2-28ab-4122-918c-0eae5fd12a1a",
+                "resourcePath": "views\\9edf28dd-b8b6-45dc-9b57-d0ba35590081.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a0090af2-0208-411a-baa6-af4b37877d5c",
             "Value": {
                 "id": "b194e39c-64f5-4d03-8bd5-48338cf2624b",
@@ -1484,6 +1492,14 @@
                 "id": "d968962f-adbc-421a-8bb4-09d13612054e",
                 "resourcePath": "scripts\\DisplayWeapons\\DisplayWeapons.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a3938c4f-dab6-41c6-8530-ac482537b7a5",
+            "Value": {
+                "id": "7a514405-b95e-43cf-87ab-6ed7d778b0f1",
+                "resourcePath": "objects\\obj_hackySack\\obj_hackySack.yy",
+                "resourceType": "GMObject"
             }
         },
         {
