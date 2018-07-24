@@ -51,6 +51,7 @@ stateIdle = stateCreate("IDLE", stateIdleScript);
 stateCreate("MOVING", stateMovingScript);
 stateCreate("JUMPING", stateJumpScript);
 stateCreate("ATTACKING", stateAttackScript);
+stateDefending = stateCreate("DEFENDING", stateDefendingScript);
 stateCreate("FALLING", stateFallScript);
 stateHit = stateCreate("HIT", stateHitScript);
 stateDead = stateCreate("DEAD", stateDeadScript);

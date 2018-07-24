@@ -235,6 +235,20 @@
             "value": "250",
             "varName": "activationRange",
             "varType": 0
+        },
+        {
+            "id": "b03e31f2-7d82-454a-bd6e-20ebd23fdeeb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "stateDefendingScript",
+            "varType": 5
         }
     ],
     "solid": false,
