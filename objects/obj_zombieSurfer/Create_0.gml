@@ -7,4 +7,6 @@ event_inherited();
 xMin = xstart - (xRange / 2);
 xMax = xstart + (xRange / 2);
 
+myShield = noone;
+
 stateSwitch("MOVING");

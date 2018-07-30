@@ -26,12 +26,13 @@ for(var i = 0; i < 8; i++) {
 	lastInput[i] = input[i];
 }
 
-stateVar[0] = 0;
-stateVar[1] = 0;
-stateVar[2] = 0;
-stateVar[3] = 0;
-stateVar[4] = 0;
-stateVar[5] = 0;
+//stateVar[0] = 0;
+//stateVar[1] = 0;
+//stateVar[2] = 0;
+//stateVar[3] = 0;
+//stateVar[4] = 0;
+//stateVar[5] = 0;
+//stateVar[6] = 0;
 
 
 
@@ -39,6 +40,8 @@ stateVar[5] = 0;
 
 maxYSpeed = 6;
 myGravity = .5;
+
+facing = -1;
 
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);

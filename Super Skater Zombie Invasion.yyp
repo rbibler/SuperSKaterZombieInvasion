@@ -663,6 +663,14 @@
             }
         },
         {
+            "Key": "454416b0-895c-40d9-b724-9ba95ca00491",
+            "Value": {
+                "id": "a1ec4856-b68d-4634-896b-7ef552118c81",
+                "resourcePath": "sprites\\spr_surfboard\\spr_surfboard.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "45d40686-618d-4d8d-b968-91a2004b52c1",
             "Value": {
                 "id": "21455ec6-4e87-47dd-a5a8-b4aa6d360f86",
@@ -1183,6 +1191,14 @@
             }
         },
         {
+            "Key": "846f21e8-42c4-4e99-a518-9208a7bad5db",
+            "Value": {
+                "id": "6d57a638-12e5-4243-96b3-03462e3d772b",
+                "resourcePath": "objects\\obj_surfboard\\obj_surfboard.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "862d6466-23bc-4dcf-8d2e-2d7b0e4f3e08",
             "Value": {
                 "id": "0b4ab91e-9a7a-41f6-b294-62fcd492ad16",
@@ -1204,6 +1220,14 @@
                 "id": "4579fcab-7495-4194-a9df-1346391c1835",
                 "resourcePath": "objects\\obj_slingshotPowerUp\\obj_slingshotPowerUp.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "87171e82-38f1-42a3-8ba3-ee3d5f042400",
+            "Value": {
+                "id": "7a4b5f10-7601-4a73-b7bc-f3507d4cd187",
+                "resourcePath": "scripts\\SkaterStateKnockedBack\\SkaterStateKnockedBack.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1660,6 +1684,14 @@
                 "id": "5abc8af7-2cb9-4bd2-b4f1-d4026f538065",
                 "resourcePath": "sprites\\spr_SkaterIdleSlingshot\\spr_SkaterIdleSlingshot.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b07d9619-8e6e-4c57-9f1e-8a6fb327e052",
+            "Value": {
+                "id": "ebc830d3-57ff-4a24-bbfc-b5c43c826aac",
+                "resourcePath": "views\\b07d9619-8e6e-4c57-9f1e-8a6fb327e052.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2443,6 +2475,7 @@
         "dfa32e27-0393-4efa-96dc-e841bf5b0c14",
         "c468ffca-5429-4e1e-a3b9-01d1cb8bb0e5",
         "0ba27c20-32d7-458e-80f8-7421c6094026",
+        "87171e82-38f1-42a3-8ba3-ee3d5f042400",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "a151bcd0-7db8-45a0-96ba-f9cd50020bfb",
