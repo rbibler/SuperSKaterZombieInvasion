@@ -9,8 +9,9 @@ if(state == stateHit or state == stateDead) {
 
 if(other.sprite_index != spr_SkaterBoardswing) {
 	with(other) {
-		if(state != hitImmobilizedState and !isImmune) {
-			stateSwitch("HIT_IMMOBILIZED");
+		if(state != knockedBackState and !isImmune) {
+			stateVar[0] = sign(x - other.x);
+			stateSwitch("KNOCKED BACK");
 			health -= other.hitPoints;
 			isImmune = true;
 			immuneStart = frameTimer;

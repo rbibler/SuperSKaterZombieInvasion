@@ -1,5 +1,5 @@
 if(stateNew) {
-	xSpeed = 2 * -sign(xSpeed);
+	xSpeed = 2 * stateVar[0];
 	ySpeed = -3;
 	grounded = false;
 }

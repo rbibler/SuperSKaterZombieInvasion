@@ -16,7 +16,9 @@ SaveInput();
 
 if(infected) {
 	if(frameTimer mod 360 == 0) {
-		stateSwitch("HIT_IMMOBILIZED");
+		//stateSwitch("HIT_IMMOBILIZED");
+		isImmune = true;
+		immuneStart = frameTimer;
 		health -= 5;
 	}
 }
