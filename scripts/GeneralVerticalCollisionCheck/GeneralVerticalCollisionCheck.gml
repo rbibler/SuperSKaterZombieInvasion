@@ -28,6 +28,7 @@ if(((p1 != 0 and p1 <= 4) or (p2 != 0 and p2 <= 4))) {
 		var bboxTile = floor((bbox_side + ySpeed) / 16);
 		bboxTile *= 16;
 		y = bboxTile - (bbox_bottom - y) - 1;
+		grounded = true;
 	} 
 	// Stop the object from moving anymore
 	StopYMotion();
@@ -49,6 +50,7 @@ if(floorDist >= 0) {
 		StopYMotion();
 		// And update the floor distance variable to reflect it's new y pos
 		floorDist = -1;
+		grounded = true;
 		show_debug_message("Vert check 2");
 	}
 }

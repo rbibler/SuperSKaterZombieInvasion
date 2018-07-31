@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-
+state = 0;
 size = 0;
 
 images[0] = spr_slimeballProjectileSmall;

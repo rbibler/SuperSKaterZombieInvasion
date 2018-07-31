@@ -1,17 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 ySpeed += myGravity;
+var myHeight = bbox_bottom - bbox_top;
+if(ySpeed >= myHeight) {
+	ySpeed = myHeight - 1;
+}
 
 MoveAndCollide();
-GeneralCheckGrounded();
 
 if(grounded) {
-	if(!place_meeting(x, y + 5, obj_enemyPuddle)) {
+	if(!place_meeting(x, y + 1, obj_enemyPuddle)) {
 		var puddle = instance_create_layer(x, y, "Enemies", obj_enemyPuddle);
-		var bboxTile = floor((bbox_bottom + ySpeed) / 16);
-		bboxTile *= 16;
 		with(puddle) {
-			y = bboxTile + 16;
+			var tileY = floor(y / 16) * 16;
+			y = (tileY + 16) + ((y - bbox_top));
 			currentImage = other.size;
 		}
 	} else {
@@ -21,6 +23,9 @@ if(grounded) {
 				currentImage--;
 			}
 			sprite_index = images[currentImage];
+			var tileY = floor(other.y / 16) * 16;
+			y = (tileY + 16) + ((y - bbox_top));
+
 		}
 	}
 	instance_destroy();

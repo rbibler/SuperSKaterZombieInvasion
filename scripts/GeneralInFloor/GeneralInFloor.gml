@@ -13,6 +13,7 @@ if(pos > 0) {
 		
 	} else if(pos > 5) {
 		var thefloor = obj_slopeController.slopeHeights[(xCheck mod 16) + pos * 16];
+		onSlope = true;
 		return ((yCheck mod 16) - thefloor);
 	}
 } else {

@@ -130,6 +130,14 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
             "value": "SlimeballHitByAmmoScript"
+        },
+        {
+            "id": "a1297a95-29d7-4d3c-b7ea-1482c7771da7",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "c367d758-becc-4f2e-94b3-bab459348c37",
+            "value": "True"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",

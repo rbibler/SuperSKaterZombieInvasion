@@ -249,6 +249,20 @@
             "value": "0",
             "varName": "stateDefendingScript",
             "varType": 5
+        },
+        {
+            "id": "c367d758-becc-4f2e-94b3-bab459348c37",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "infectious",
+            "varType": 3
         }
     ],
     "solid": false,

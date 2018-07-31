@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "312d0ef5-a0f5-42a1-bccb-435dc6e027ae"
+        },
+        {
+            "id": "0542a397-bf97-48c0-b8c2-fea710463115",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "312d0ef5-a0f5-42a1-bccb-435dc6e027ae"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -88,6 +98,20 @@
             "value": "0.5",
             "varName": "yAccel",
             "varType": 0
+        },
+        {
+            "id": "c8b514c8-80ee-4583-bb4c-895878876de6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "infectious",
+            "varType": 3
         }
     ],
     "solid": false,
