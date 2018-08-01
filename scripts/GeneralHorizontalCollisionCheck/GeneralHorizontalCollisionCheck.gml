@@ -26,7 +26,28 @@ if(p1 == 1 or p2 == 1 or p3 == 1 and state != climbingState) {
 	
 }
 
-//x += xSpeed;
+if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {	
+	var obj = instance_place(x + xSpeed, y, obj_baseBlock);	
+	var ignore = false;
+	if(obj != noone and obj.isSolid) {
+		if(obj.object_index == obj_escalatorBlock) {
+			if(abs(bbox_bottom - obj.bbox_top) < 5) {
+				ignore = true;
+			}
+		}
+		if(!ignore) {
+			while(!place_meeting(x + sign(xSpeed), y, obj_baseBlock)) {
+				x = x + sign(xSpeed);
+			}
+			StopXMotion(); 
+			script_execute(horizCollisionScript, obj);
+			show_debug_message("Here is a platform collision");
+		}
+	}
+
+}
+
+x += xSpeed;
 
 
 

@@ -3,6 +3,5 @@ GeneralMovementFractions();
 
 // Check all possible collisions
 GeneralHorizontalCollisionCheck();
-x += xSpeed;
 GeneralVerticalCollisionCheck();
-//GeneralPlatformCollisions();
+
