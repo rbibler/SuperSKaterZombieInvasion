@@ -8,4 +8,5 @@ switch(movementDirection) {
 	case 1:
 		y += ySpeed;
 	break;
+	hasMoved = true;
 }
