@@ -13,7 +13,7 @@ if(grounded) {
 		var puddle = instance_create_layer(x, y, "Enemies", obj_enemyPuddle);
 		with(puddle) {
 			var tileY = floor(y / 16) * 16;
-			//y = (tileY + 16) + ((y - bbox_top));
+			y = (tileY + 16) + ((y - bbox_top));
 			currentImage = other.size;
 		}
 	} else {
@@ -24,7 +24,7 @@ if(grounded) {
 			}
 			sprite_index = images[currentImage];
 			var tileY = floor(other.y / 16) * 16;
-			//y = (tileY + 16) + ((y - bbox_top));
+			y = (tileY + 16) + ((y - bbox_top));
 
 		}
 	}

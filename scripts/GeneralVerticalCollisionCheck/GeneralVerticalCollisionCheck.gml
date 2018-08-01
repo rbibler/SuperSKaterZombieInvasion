@@ -8,9 +8,6 @@ var bbox_side = 0;
 var p1 = 0;
 var p2 = 0;
 
-var vertCollision = false;
-
-
 // If moving down, then we check collisions with the bottom edge
 if(ySpeed >= 0) {
 	bbox_side = bbox_bottom;
@@ -36,7 +33,6 @@ if(((p1 != 0 and p1 <= 4) or (p2 != 0 and p2 <= 4))) {
 	// Stop the object from moving anymore
 	StopYMotion();
 	show_debug_message("Vert check 1");
-	vertCollision = true;
 } 
 
 // Find out how far above the ground the object is for slope collisions 
@@ -55,12 +51,12 @@ if(floorDist >= 0) {
 		// And update the floor distance variable to reflect it's new y pos
 		floorDist = -1;
 		grounded = true;
-		vertCollision = true;
-		//onSlope = true;
 		show_debug_message("Vert check 2");
 	}
 }
 
+
+GeneralVerticalMovement();
 
 // If the object was grounded at the start of the frame and is still grounded
 if(grounded and !platformGrounded) {
@@ -69,45 +65,8 @@ if(grounded and !platformGrounded) {
 		var tileIdDown = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + 1);
 		if(tileIdDown > 5) {
 			y += abs(GeneralInFloor(collisionTiles, x, bbox_bottom + 1));
-			vertCollision = true;
-			//onSlope = true;
 			show_debug_message("Vert Check 3");
 		}
 	}
 }
 
-// Check for object block collisions
-/*if(vertCollision == false) {
-	if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
-		var obj = instance_place(x, y + ySpeed, obj_baseBlock);
-		if(obj != noone and obj.isSolid) {
-			while(!place_meeting(x, y + sign(ySpeed), obj_baseBlock)) {
-				y = y + sign(ySpeed);
-			}
-		
-			if(!grounded and ySpeed > 0) {
-				grounded = true;
-			}
-			if(bbox_bottom > obj.bbox_top and obj.object_index == obj_controlBlock) {
-				y = obj.bbox_top - (bbox_bottom - y) - 1;
-			}
-			StopYMotion();
-			with(obj) {
-				script_execute(skaterVertCollisionScript, other);
-			}
-		}
-	} else if(grounded) {
-		if(place_meeting(x, y + 2, obj_baseBlock)) {
-			var obj = instance_place(x, y + 2, obj_baseBlock);
-				if(obj != noone and obj.isSolid) {
-				y = obj.bbox_top - (bbox_bottom - y) - 1;
-				StopYMotion();
-				with(obj) {
-					script_execute(skaterVertCollisionScript, other);
-				}
-			}
-		}
-	}
-}*/
-
-y += ySpeed;

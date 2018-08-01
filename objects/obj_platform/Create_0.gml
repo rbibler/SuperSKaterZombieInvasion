@@ -5,7 +5,6 @@ stepEventScript = MovingPlatformStepEventScript;
 width = (bbox_right - bbox_left);
 height = (bbox_bottom - bbox_top);
 
-hasMoved = false;
 switch(movementDirection) {
 	case 0:
 		xSpeed = initialDirection;
