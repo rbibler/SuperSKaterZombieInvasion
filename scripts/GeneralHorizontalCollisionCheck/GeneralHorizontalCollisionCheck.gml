@@ -26,5 +26,7 @@ if(p1 == 1 or p2 == 1 or p3 == 1 and state != climbingState) {
 	
 }
 
+//x += xSpeed;
+
 
 

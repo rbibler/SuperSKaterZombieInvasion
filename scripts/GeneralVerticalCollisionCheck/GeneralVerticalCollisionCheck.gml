@@ -8,6 +8,8 @@ var bbox_side = 0;
 var p1 = 0;
 var p2 = 0;
 
+
+var oldY = y;
 // If moving down, then we check collisions with the bottom edge
 if(ySpeed >= 0) {
 	bbox_side = bbox_bottom;
@@ -42,6 +44,7 @@ if(floorDist >= 0) {
 	var tileId = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + ySpeed);
 	// If it's a slope tile...
 	if(tileId != 0 and tileId != 4 and tileId != 5) {
+		onSlope = true;
 		// move it to where it wants to be
 		y += ySpeed;
 		// Then set it back to one pixel above the floor
@@ -60,7 +63,9 @@ GeneralVerticalMovement();
 
 // If the object was grounded at the start of the frame and is still grounded
 if(grounded and !platformGrounded) {
-	y += abs(floorDist) - 1;
+	if(onSlope) {
+		y += abs(floorDist) - 1;
+	}
 	if((bbox_bottom mod 16) == 15) {
 		var tileIdDown = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + 1);
 		if(tileIdDown > 5) {
@@ -70,3 +75,9 @@ if(grounded and !platformGrounded) {
 	}
 }
 
+
+
+
+y += ySpeed;
+
+show_debug_message("CHange: " + string(abs(oldY - y)));
