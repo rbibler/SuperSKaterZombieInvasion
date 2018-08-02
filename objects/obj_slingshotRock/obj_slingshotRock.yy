@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_slingshotRock",
     "eventList": [
-        
+        {
+            "id": "329124f4-a65d-45b2-81c3-632135b67640",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "90a4cb3e-65ea-4c43-9d7b-e9d7eb14314c"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
@@ -23,6 +32,22 @@
             "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
             "propertyId": "51495703-9d0c-42ff-a027-821d2b674406",
             "value": "6"
+        },
+        {
+            "id": "cd679a47-e516-4898-9baa-a10233cf7805",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
+            "propertyId": "bd3b7483-b253-40cf-829b-01973d231310",
+            "value": "SlingshotRockDestroyScript"
+        },
+        {
+            "id": "149e5ef6-6117-460a-a945-a2e28b0237ca",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
+            "propertyId": "7403be13-5f5b-4d80-a872-2b6782e9f55f",
+            "value": "SlingshotRockDestroyScript"
         }
     ],
     "parentObjectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",

@@ -29,7 +29,7 @@ if(ySpeed >= maxYSpeed) {
 	ySpeed = maxYSpeed;
 }
 
-SkaterCheckGrounded();
+GeneralCheckGrounded();
 
 // The real fun happens in the state machine
 stateExecute();

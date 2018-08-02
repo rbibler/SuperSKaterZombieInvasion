@@ -1,11 +1,15 @@
+/// A script that the moving platform calls when something collides with its top
+/// @arg the object that collided with it
+
+var obj = argument0;
+
 switch(movementDirection) {
 	case 0:
-		if(obj_skater.xSpeed == 0) {
-			obj_skater.carrySpeed = xSpeed;
-			show_debug_message("IN THE PLATFORM MOVING SCRIPT!");
+		if(obj.xSpeed == 0) {
+			obj.carrySpeed = xSpeed;
 		}
 	break;
 	case 1:
-		obj_skater.y += ySpeed;
+		obj.y += ySpeed;
 	break;
 }

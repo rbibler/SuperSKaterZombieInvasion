@@ -1,6 +1,7 @@
 if(stateNew) {
 	stateVar[0] = 0;
 	sprite_index = spr_slimeballMove;
+	StopXMotion();
 }
 
 
@@ -21,7 +22,7 @@ if(stateTimer <= 5) {
 	sprite_index = spr_slimeballJump;
 	image_index = 0;
 	stateVar[0] = 1;
-	ySpeed += -5;
+	ySpeed += jumpSpeed;
 	grounded = false;
 }
 
@@ -30,14 +31,7 @@ if(!grounded and ySpeed > 0) {
 	image_index = 1;
 }
 
-// Figure out the fractional movement so that we're always working with integers
-EnemyMovementFractions();
-
-// Check all possible collisions
-EnemyHorizontalCollisionCheck();
-//EnemyHorizontalMovement();
-EnemyVerticalCollisionCheck();
-EnemyPlatformCollisions();
+MoveAndCollide();
 
 if(grounded and stateVar[0]) {
 	stateSwitch("MOVING");

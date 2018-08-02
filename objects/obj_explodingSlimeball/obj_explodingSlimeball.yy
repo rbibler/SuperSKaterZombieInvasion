@@ -39,6 +39,22 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "d0382f87-f416-4c30-a2d4-4ade8290f50e",
             "value": "explodingSlimeballStateMenacingScript"
+        },
+        {
+            "id": "108bbeca-e99e-450e-bab5-1fc7ab420184",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
+            "value": "explodingSlimeballHitByAmmoScript"
+        },
+        {
+            "id": "a11f5751-f6a5-4309-a0cb-b162d35ad113",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "c367d758-becc-4f2e-94b3-bab459348c37",
+            "value": "True"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
@@ -68,6 +84,34 @@
             "resourceFilter": 1023,
             "value": "2.5",
             "varName": "projSpeed",
+            "varType": 0
+        },
+        {
+            "id": "4cd958a8-d948-40b0-91d0-55940e512b66",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "150",
+            "varName": "menacementDistance",
+            "varType": 0
+        },
+        {
+            "id": "b55fd6b2-8d61-459e-9114-797d92e73d23",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "50",
+            "varName": "explodeDistance",
             "varType": 0
         }
     ],

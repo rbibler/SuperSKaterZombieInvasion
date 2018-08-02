@@ -1,14 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Skater's current xSpeed
-xSpeed = 0;
-xSpeedFrac = 0;
-lastXSpeed = 0;
+// Inherit the parent event
+event_inherited();
 
-// Skater's current ySpeed
-ySpeed = 0;
-ySpeedFrac = 0;
+/// @description Insert description here
+// You can write your code in this editor
+
 
 // Array to hold the user's input. 
 input[0] = 0;
@@ -28,43 +26,22 @@ for(var i = 0; i < 8; i++) {
 	lastInput[i] = input[i];
 }
 
+//stateVar[0] = 0;
+//stateVar[1] = 0;
+//stateVar[2] = 0;
+//stateVar[3] = 0;
+//stateVar[4] = 0;
+//stateVar[5] = 0;
+//stateVar[6] = 0;
 
-onSlope = false;
-verticalMovementRun = false;
 
-// Keeps track of skater's direction. -1 is left 1 is right. Should never be zero.
-myDirection = 1;
-
-
-// Skater's jump status
-jump = 0;
-canJump = 0;
-jumpFramesAllowance = 12;
-
-// constant climb speed
-climbSpeed = 2;
-
-// constant jump speed
-jumpSpeed = -7;
 
 // Set the initial gravity to whatever our gravity is
 
 maxYSpeed = 6;
+myGravity = .5;
 
-// Flag to indiciate that the skater is on the ground
-grounded = false;
-wasGrounded = false;
-
-groundedRight = false;
-wasGroundedRight = false;
-
-groundedLeft = false;
-wasGroundedLeft = false;
-
-// Ground friction
-groundFriction = 0.25;
-slopeFriction = 0.075;
-airFriction = 0.075;
+facing = -1;
 
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);
@@ -73,12 +50,15 @@ collisionTiles = layer_tilemap_get_id(layerId);
 stateMachineInit();
 
 // Define the skater's states
-stateCreate("IDLE", stateIdleScript);
+stateIdle = stateCreate("IDLE", stateIdleScript);
 stateCreate("MOVING", stateMovingScript);
 stateCreate("JUMPING", stateJumpScript);
 stateCreate("ATTACKING", stateAttackScript);
+stateDefending = stateCreate("DEFENDING", stateDefendingScript);
 stateCreate("FALLING", stateFallScript);
-deadState = stateCreate("DEAD", stateDeadScript);
+stateHit = stateCreate("HIT", stateHitScript);
+stateDead = stateCreate("DEAD", stateDeadScript);
+climbingState = 0;
 
 // Set the default state to IDLE
 stateInit("IDLE");

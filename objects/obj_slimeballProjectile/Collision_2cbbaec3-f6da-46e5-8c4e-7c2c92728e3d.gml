@@ -2,12 +2,7 @@
 // You can write your code in this editor
 
 with(other) {
-	if(state != hitImmobilizedState and !isImmune) {
-		stateSwitch("HIT_IMMOBILIZED");
-		health -= other.hitPoints;
-		infected = true;
-	}
-	
+	SkaterHit(other);
 }
 
 instance_destroy();

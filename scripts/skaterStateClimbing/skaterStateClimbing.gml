@@ -28,7 +28,7 @@ if(input[JUMP] and !lastInput[JUMP]) {
 
 
 //SkaterVerticalCollisionCheck();
-SkaterPlatformCollisions();
+GeneralPlatformCollisions();
 
 var p1 = 0;
 var p2 = 0;

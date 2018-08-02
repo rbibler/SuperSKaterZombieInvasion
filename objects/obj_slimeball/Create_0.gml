@@ -4,10 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-// I'll probably move this to the parent level. Most enemies will need to react to hits
-stateHit = stateCreate("HIT", stateHitScript);
-stateDead = stateCreate("DEAD", stateDeadScript);
-moveDirOnRestart = RIGHT;
-
-canEat = true;
-
+moveDirOnRestart = random(100) < 50 ? RIGHT : LEFT;

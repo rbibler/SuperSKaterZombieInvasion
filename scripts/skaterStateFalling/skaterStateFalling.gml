@@ -24,7 +24,7 @@ if(currentWeapon != noone) {
 SkaterHorizontalImpetus();
 
 // Figure out the fractional movement so that we're always working with integers
-SkaterMovementFractions();
+GeneralMovementFractions();
 
 // If no directional input, slow the skater down until he stops
 if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
@@ -43,11 +43,7 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 	
 }
 
-// Check all collisions
-SkaterHorizontalCollisionCheck();
-SkaterPlatformCollisions();
-SkaterHorizontalMovement();
-SkaterVerticalCollisionCheck();
+MoveAndCollide();
 SkaterLadderCollisions();
 
 // If we hit the ground, we're idle. Let the idle state take care of other checks

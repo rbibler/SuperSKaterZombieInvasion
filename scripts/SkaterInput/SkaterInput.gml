@@ -1,6 +1,12 @@
 /// Checks for user input and stores in the skater's input array.
 
 // Check to see if a gamepad is connected and use that
+
+if(state == knockedBackState) {
+	input[LEFT] = 0;
+	input[RIGHT] = 0;
+	return;
+}
 if(obj_persistent.gamepad != -1) {
 	with(obj_persistent) {
 		other.input[LEFT] = gamepad_button_check(gamepad, gp_padl);

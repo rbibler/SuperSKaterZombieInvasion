@@ -73,18 +73,10 @@ if(input[DOWN] and state != climbingState) {
 
 // Check how fast the skater should be moving
 SkaterHorizontalImpetus();
-
-// Figure out the fractional movement so that we're always working with integers
-SkaterMovementFractions();
-
-// Check all possible collisions
-SkaterHorizontalCollisionCheck();
-SkaterPlatformCollisions();
-SkaterHorizontalMovement();
-SkaterVerticalCollisionCheck();
+MoveAndCollide();
 SkaterLadderCollisions();
 // If no directional input, slow the skater down until he stops
-if(abs(xSpeed) > 0 and grounded and state != rollingState and state != recoveringState) {
+if(abs(xSpeed) > 0 and grounded and state != rollingState) {
 	stateSwitch("ROLLING");
 }
 

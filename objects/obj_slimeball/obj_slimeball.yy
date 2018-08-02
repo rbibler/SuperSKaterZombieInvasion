@@ -23,36 +23,6 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "a853cf1c-bc94-43d7-ae90-77f690ea4b46"
-        },
-        {
-            "id": "41cebd1a-4ffa-445c-b104-956d9cce6b18",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "90a4cb3e-65ea-4c43-9d7b-e9d7eb14314c",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "a853cf1c-bc94-43d7-ae90-77f690ea4b46"
-        },
-        {
-            "id": "8812576a-9531-4ed6-bfb0-31193815765e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "a853cf1c-bc94-43d7-ae90-77f690ea4b46"
-        },
-        {
-            "id": "5e6f54a5-5dc9-4c6c-b144-968e03a3b595",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "9b98fa49-796d-487f-b7f2-6dc6d3034b7d",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "a853cf1c-bc94-43d7-ae90-77f690ea4b46"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -98,38 +68,6 @@
             "value": "slimeballStateDeadScript"
         },
         {
-            "id": "95feacf5-0536-4853-a01a-ef4f849544ed",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "b1962d90-85dc-414c-8f16-3d05d4875ac3",
-            "value": "0.15"
-        },
-        {
-            "id": "7cbe3797-40d4-40d5-8b07-08bb7ca73fe5",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "2142747e-1c3b-48da-b250-e09a8410a508",
-            "value": "1"
-        },
-        {
-            "id": "03cefa59-d025-4679-802e-f68811947bdf",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "3fca1e43-2787-4133-b686-eeac17e12e0d",
-            "value": "2"
-        },
-        {
-            "id": "7ae210da-4b77-4b1d-87c6-3de6bd27e065",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "3a2286fe-992f-41b6-966e-8efdc748e661",
-            "value": "1"
-        },
-        {
             "id": "3a4c3ec7-41e9-4ae0-a319-44012f2684b4",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -138,12 +76,68 @@
             "value": "5"
         },
         {
-            "id": "87d47264-2bfe-4dcf-aa06-425e901669f0",
+            "id": "e4cd53cf-446f-4762-b2bd-93da9bbd70ef",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "fe5f28ae-a0bc-401f-9c51-9691484fdbde",
+            "value": "0.5"
+        },
+        {
+            "id": "540ef54e-0f12-44f7-8173-940d861be1d0",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "869d67b1-2cd3-4240-871c-7c2126ef5a73",
+            "value": "1.5"
+        },
+        {
+            "id": "8c5516e9-99f1-4237-9808-a3fff0777581",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "367e0b56-719a-4b47-ad4d-2571ee18528c",
+            "value": "12"
+        },
+        {
+            "id": "8cda8977-0e6a-42e0-a386-3bc4f4de730c",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "a869a8af-a993-4e2c-8f19-4cad0d4179e8",
+            "value": "-8"
+        },
+        {
+            "id": "8de95469-8167-430f-a526-ed7485b534d1",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "7d8e0fec-70e6-41e1-81ad-64d33d679a8d",
+            "value": "SlimeballHorizCollisionScript"
+        },
+        {
+            "id": "d2273404-6d7f-4565-97e0-b894c1b703a2",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "39b0807b-5274-4c73-b946-44930360c2c2",
-            "value": "SlimeballHorizCollisionScript"
+            "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
+            "value": "slimeballStateHitScript"
+        },
+        {
+            "id": "43fa1b42-f748-479e-afc9-f832364c4fac",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
+            "value": "SlimeballHitByAmmoScript"
+        },
+        {
+            "id": "a1297a95-29d7-4d3c-b7ea-1482c7771da7",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "c367d758-becc-4f2e-94b3-bab459348c37",
+            "value": "True"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
@@ -161,20 +155,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "ca5d9d18-32c8-4c03-ae05-dabec9e62a28",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "slimeballStateHitScript",
-            "varName": "stateHitScript",
-            "varType": 5
-        }
+        
     ],
     "solid": false,
     "spriteId": "cfb3529d-f4dd-4404-bde9-d79cf5309a12",

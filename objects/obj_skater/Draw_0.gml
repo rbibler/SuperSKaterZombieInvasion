@@ -19,4 +19,5 @@ if(drawToggle) {
 
 var xStart = tileColliderX * 16;
 var yStart = tileColliderY * 16;
-draw_rectangle(xStart, yStart, xStart + 16, yStart + 16, c_red);
+draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red);
+

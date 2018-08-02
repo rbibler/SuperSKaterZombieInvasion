@@ -3,14 +3,13 @@
 
 // Inherit the parent event
 
-
 // Impart gravity and limit the skater's terminal velocity
 ySpeed += myGravity;
 if(ySpeed >= maxYSpeed) {
 	ySpeed = maxYSpeed;
 }
 
-EnemyCheckGrounded();
+GeneralCheckGrounded();
 
 event_inherited();
 

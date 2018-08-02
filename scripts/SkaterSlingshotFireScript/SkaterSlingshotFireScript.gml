@@ -32,7 +32,7 @@ with(weapon) {
 			xOffset += other.x;
 			yOffset += other.y;
 			var ammo = instance_create_layer(xOffset, yOffset, "AMMO", ammoType);
-			ammo.ammoDirection = other.myDirection;
+			ammo.ammoDirection = other.facing;
 			other.weaponAnimCounter = weaponAnimCount;
 		}
 	}

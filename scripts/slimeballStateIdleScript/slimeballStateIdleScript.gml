@@ -37,19 +37,68 @@ if(stateTimer mod (60 / 5) == 0) {
 	}
 }
 
-// Check for Vert collisions in case ground falls out underneath our feet
-// No need to check horiz collision 'cause you ain't moving
-EnemyVerticalCollisionCheck();
-// Do need to check platform collisions because those move
-EnemyPlatformCollisions();
+// Determine if skater is sprinting or not
+var speedThisFrame = input[SHOOT] ? sprintSpeedX : normalSpeedX;
+
+if(input[LEFT]) {
+	if(!input[RIGHT] and !input[DOWN]) {
+		myDirection = -1;
+		// If so, accelerate left until max speed is reached
+		if(xSpeed > -speedThisFrame) {
+			xSpeed -= 0.75;
+		} 
+	}
+// If not moving left, check to see if moving right
+} else if(input[RIGHT]) {
+	if(!input[LEFT] and !input[DOWN]) {
+		myDirection = 1;
+		// If so, accelerate right until max speed is reached
+		if(xSpeed < speedThisFrame) {
+			xSpeed += 0.75;
+		} 
+	}
+// Otherwise no horizontal impetus. Could still be rolling though
+} else {
+	// If no directional input, slow the skater down until he stops
+	if(abs(xSpeed) > 0 and grounded) {
+		//stateSwitch("ROLLING");
+	}
+} 
+
+GeneralCheckSlopeImpetus();
+
+MoveAndCollide();
+
+// Skater can only go so fast
+// Choose max speed based on situation: faster if on a slope
+var maxSpeed = speedThisFrame;
+if(onSlope) {
+	if(input[LEFT] or input[RIGHT]) {
+		if(input[SHOOT]) {
+			maxSpeed = sprintSpeedX;
+		} else {
+			maxSpeed = normalSpeedX;
+		}
+	} else {
+		maxSpeed = normalSpeedX;
+	}
+}
+
+// If the skater is skating too quickly, slow him down gradually until he reaches max speed
+// Don't to just set to max speed, or the transition will feel weird
+if(abs(xSpeed) >= maxSpeed) {
+	xSpeed -= sign(xSpeed) * 0.15;
+}
+
+
 
 if(grounded) {
 	stateSwitch("MOVING");
 	input[RIGHT] = 1;
 }
 
-var dist = abs(x - obj_skater.x);
-if(dist < 50) {
-	stateSwitch("ATTACKING");
-}
+//var dist = abs(x - obj_skater.x);
+//if(dist < 50) {
+//	stateSwitch("ATTACKING");
+//}
 

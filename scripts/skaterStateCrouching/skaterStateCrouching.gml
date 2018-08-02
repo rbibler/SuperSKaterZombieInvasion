@@ -21,7 +21,7 @@ if(currentWeapon != noone) {
 	}
 }
 
-SkaterCheckSlopeImpetus();
+GeneralCheckSlopeImpetus();
 
 // If the skater crouches, he can't skate so slow him down till he stops
 if(sign(xSpeed) == sign(lastXSpeed)) {
@@ -34,14 +34,7 @@ if(sign(xSpeed) == sign(lastXSpeed)) {
 	StopXMotion();
 }
 
-// Figure out the fractional movement so that we're always working with integers
-SkaterMovementFractions();
-
-// Check all possible collisions
-SkaterHorizontalCollisionCheck();
-SkaterPlatformCollisions();
-SkaterHorizontalMovement();
-SkaterVerticalCollisionCheck();
+MoveAndCollide();
 
 
 

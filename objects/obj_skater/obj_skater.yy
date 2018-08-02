@@ -5,16 +5,6 @@
     "name": "obj_skater",
     "eventList": [
         {
-            "id": "d59dfb45-f6cb-49e7-8b5b-d88794f0bc9e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
-        },
-        {
             "id": "3a5b521e-fee2-4544-bb2f-53a308dc3b78",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -53,11 +43,30 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
+        },
+        {
+            "id": "e917dfd8-2023-4bc0-83d5-d3fa1637c280",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": [
+        {
+            "id": "46fbbf0f-d743-4c3c-9bfd-2f774ba7718f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "367e0b56-719a-4b47-ad4d-2571ee18528c",
+            "value": "7"
+        }
+    ],
+    "parentObjectId": "ed14a131-953f-411a-8370-232b4492166c",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
