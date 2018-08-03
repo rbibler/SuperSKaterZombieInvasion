@@ -12,6 +12,7 @@ if(stateNew) {
 	StopYMotion();
 	ySpeedFraction = 0;
 	myGravity = 0;
+	lives--;
 }
 
 if(stateTimer < 60) {

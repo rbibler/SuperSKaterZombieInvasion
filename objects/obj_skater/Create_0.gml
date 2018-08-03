@@ -19,6 +19,7 @@ num = 0;
 
 
 health = 100;
+
 // Is the skater infected?
 infected = false;
 

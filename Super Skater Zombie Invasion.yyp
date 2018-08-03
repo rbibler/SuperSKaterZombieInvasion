@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "219d85f6-df93-4624-bd83-e3b76a318224",
+            "Value": {
+                "id": "70ee3ae5-31fb-4b5d-8913-65419055ab7e",
+                "resourcePath": "sprites\\spr_numbersSmall\\spr_numbersSmall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "21a90b2b-191d-4e8c-8cb3-de5fc3e5ca8b",
             "Value": {
                 "id": "b407f41e-8931-4add-9360-8644191d3314",
@@ -807,6 +815,14 @@
             }
         },
         {
+            "Key": "531373e6-4946-4241-89a3-36a6ead1c75b",
+            "Value": {
+                "id": "f6007ddc-992a-44c4-aad0-2c0343be6d09",
+                "resourcePath": "scripts\\DisplayDiamondCount\\DisplayDiamondCount.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "53823070-7633-4f87-b37b-f6f296fddcfc",
             "Value": {
                 "id": "283a9788-226f-4a23-a628-9dc3f5feeecf",
@@ -1175,6 +1191,14 @@
             }
         },
         {
+            "Key": "82f6c3fe-8f50-4337-b1ea-db72ffc54cf8",
+            "Value": {
+                "id": "5564f446-cb67-4f34-82de-bc6e1cca749a",
+                "resourcePath": "scripts\\DisplayLives\\DisplayLives.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8348a8e3-7a40-4402-b163-fdf037aa909d",
             "Value": {
                 "id": "20232f09-4458-4872-8ee6-34844af5a47e",
@@ -1455,6 +1479,14 @@
             }
         },
         {
+            "Key": "984862ff-d540-41e6-9761-f13947ad303a",
+            "Value": {
+                "id": "d4a44732-9108-46cc-90c4-6c8c00ad6c24",
+                "resourcePath": "sprites\\spr_numbersBig\\spr_numbersBig.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9b98fa49-796d-487f-b7f2-6dc6d3034b7d",
             "Value": {
                 "id": "d6d350cc-122a-4d4a-9d35-99a1a47b9311",
@@ -1548,6 +1580,14 @@
                 "id": "d968962f-adbc-421a-8bb4-09d13612054e",
                 "resourcePath": "scripts\\DisplayWeapons\\DisplayWeapons.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a33ab268-95e7-42d3-a75f-1e8dfff87a46",
+            "Value": {
+                "id": "3b073249-dd47-4161-ad2e-3306c900cea7",
+                "resourcePath": "sprites\\spr_skaterHead\\spr_skaterHead.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2541,6 +2581,8 @@
         "05572da5-c758-480f-871b-ddfa284a19e0",
         "50b97c71-a535-42cf-a2c2-1cb1c23ded59",
         "a1b15312-bde7-4ba3-b3bd-baf81f23164c",
+        "531373e6-4946-4241-89a3-36a6ead1c75b",
+        "82f6c3fe-8f50-4337-b1ea-db72ffc54cf8",
         "c2c6bc53-bb0c-49dc-b15e-f0d6504157d8",
         "03044a30-d928-4153-be9b-e918e0a3e503",
         "90669bf8-93ca-49e3-a084-d3e064a2c3e0",

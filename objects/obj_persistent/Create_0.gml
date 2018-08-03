@@ -19,3 +19,6 @@ slopeTiles[14] = 13;
 slopeTiles[15] = 14;
 
 gamepad = -1;
+
+lives = 3;
+global.diamondCount = 0;
