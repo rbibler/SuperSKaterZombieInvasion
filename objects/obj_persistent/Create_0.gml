@@ -22,3 +22,20 @@ gamepad = -1;
 
 lives = 3;
 global.diamondCount = 0;
+
+application_surface_draw_enable(false);
+
+global.MonitorW = display_get_width();
+global.MonitorH = display_get_height();
+
+global.Xoffset = 0;
+global.Yoffset = 0;
+
+global.scaleW = 2;
+global.scaleH = 2;
+
+global.gridX = 8;
+global.gridY = 8;
+
+ScaleGame(4, 4);
+

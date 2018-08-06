@@ -19,7 +19,7 @@ if(infected) {
 		//stateSwitch("HIT_IMMOBILIZED");
 		isImmune = true;
 		immuneStart = frameTimer;
-		health -= 5;
+		health -= 15;
 	}
 }
 

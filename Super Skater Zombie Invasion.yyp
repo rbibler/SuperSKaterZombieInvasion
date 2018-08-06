@@ -1335,6 +1335,14 @@
             }
         },
         {
+            "Key": "8ceb6a61-7ee2-497b-9dc4-73dbbd6d37ed",
+            "Value": {
+                "id": "de8a540e-96d5-45ba-a39a-fa487ff2cd71",
+                "resourcePath": "scripts\\ScaleGame\\ScaleGame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8d984489-f452-4b78-aa63-d91d2b42d0a2",
             "Value": {
                 "id": "54c2e228-4a9b-4db6-a6b5-1fb7043b1b3b",
@@ -2610,7 +2618,8 @@
         "060b7a68-fe71-45cf-9a92-8d03d06bf393",
         "f5411c22-a535-44e1-9a26-004b1e8816d0",
         "25ce7d6b-e6b7-4b23-a540-adde31a9e0d7",
-        "55e7af29-e879-4c84-9ebf-e34cf732fafb"
+        "55e7af29-e879-4c84-9ebf-e34cf732fafb",
+        "8ceb6a61-7ee2-497b-9dc4-73dbbd6d37ed"
     ],
     "tutorial": ""
 }

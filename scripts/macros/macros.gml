@@ -19,3 +19,8 @@
 #macro FALLING		8
 #macro ROLLING		9
 
+#macro RES_W	512
+#macro RES_H	240
+
+
+
