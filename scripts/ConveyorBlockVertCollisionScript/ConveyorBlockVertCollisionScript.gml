@@ -3,5 +3,5 @@
 
 var obj = argument0;
 
-obj.carrySpeed = xSpeed;
+//obj.carrySpeed = xSpeed;
 

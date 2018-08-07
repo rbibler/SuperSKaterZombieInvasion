@@ -8,10 +8,16 @@ var bbox_side = 0;
 var p1 = 0;
 var p2 = 0;
 
-
+var ySpeedFinal = ySpeed + yCarry;
+if(self.object_index == obj_skater) {
+	show_debug_message("ySpeed: " + string(ySpeed));
+	show_debug_message("yCarry: " + string(yCarry));
+	show_debug_message("ySpeedFinal: " + string(ySpeedFinal));
+}
+yCarry = 0;
 var oldY = y;
 // If moving down, then we check collisions with the bottom edge
-if(ySpeed >= 0) {
+if(ySpeedFinal >= 0) {
 	bbox_side = bbox_bottom;
 } else {
 	// when moving up we check the top edge
@@ -19,38 +25,40 @@ if(ySpeed >= 0) {
 }
 // Find tile id for tiles at the bottom or top corners of where the object's bbox will be when 
 // yspeed is added
-p1 = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_side + ySpeed);
-p2 = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_side + ySpeed);
+p1 = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_side + ySpeedFinal);
+p2 = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_side + ySpeedFinal);
 // if either of the corner tiles is between 1 and 4 (inclusive) it's a solid tile
 if(((p1 != 0 and p1 <= 4) or (p2 != 0 and p2 <= 4))) {
 	// if moving down, it's a collision with the floor
 	// so set the object's y value to the top of that tile (taking into account the distance
 	// between the object's origin and its bbox
-	if(ySpeed > 0) {
-		var bboxTile = floor((bbox_side + ySpeed) / 16);
+	if(ySpeedFinal > 0) {
+		var bboxTile = floor((bbox_side + ySpeedFinal) / 16);
 		bboxTile *= 16;
 		y = bboxTile - (bbox_bottom - y) - 1;
 		grounded = true;
 	} 
 	// Stop the object from moving anymore
 	StopYMotion();
+	ySpeedFinal = 0;
 	show_debug_message("Vert check 1");
 } 
 
 // Find out how far above the ground the object is for slope collisions 
-var floorDist = GeneralInFloor(collisionTiles, x, bbox_bottom + ySpeed);
+var floorDist = GeneralInFloor(collisionTiles, x, bbox_bottom + ySpeedFinal);
 if(floorDist >= 0) {
 	// if the object is "in" the floor, find out what kind of floor it's in
-	var tileId = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + ySpeed);
+	var tileId = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + ySpeedFinal);
 	// If it's a slope tile...
 	if(tileId != 0 and tileId != 4 and tileId != 5) {
 		onSlope = true;
 		// move it to where it wants to be
-		y += ySpeed;
+		y += ySpeedFinal;
 		// Then set it back to one pixel above the floor
 		y -= (floorDist + 1);
 		// Stop its y motion
 		StopYMotion();
+		ySpeedFinal = 0;
 		// And update the floor distance variable to reflect it's new y pos
 		floorDist = -1;
 		grounded = true;
@@ -79,20 +87,21 @@ if(grounded and !platformGrounded) {
 
 
 
-if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
-	var obj = instance_place(x, y + ySpeed, obj_baseBlock);
+if(place_meeting(x, y + ySpeedFinal, obj_baseBlock)) {
+	var obj = instance_place(x, y + ySpeedFinal, obj_baseBlock);
 	if(obj != noone and obj.isSolid) {
-		while(!place_meeting(x, y + sign(ySpeed), obj_baseBlock)) {
-			y = y + sign(ySpeed);
+		while(!place_meeting(x, y + sign(ySpeedFinal), obj_baseBlock)) {
+			y = y + sign(ySpeedFinal);
 		}
 		
-		if(!grounded and ySpeed > 0) {
+		if(!grounded and ySpeedFinal > 0) {
 			grounded = true;
 		}
 		if(bbox_bottom > obj.bbox_top and obj.object_index == obj_controlBlock) {
 			y = obj.bbox_top - (bbox_bottom - y) - 1;
 		}
 		StopYMotion();
+		ySpeedFinal = 0;
 		with(obj) {
 			script_execute(skaterVertCollisionScript, other);
 		}
@@ -103,6 +112,7 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 			if(obj != noone and obj.isSolid) {
 			y = obj.bbox_top - (bbox_bottom - y) - 1;
 			StopYMotion();
+			ySpeedFinal = 0;
 			with(obj) {
 				script_execute(skaterVertCollisionScript, other);
 			}
@@ -110,4 +120,4 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 	}
 }
 
-y += ySpeed;
+y += ySpeedFinal;

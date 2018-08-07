@@ -22,5 +22,8 @@
 #macro RES_W	512
 #macro RES_H	240
 
+#macro GRID_X	8
+#macro GRID_Y	8
+
 
 

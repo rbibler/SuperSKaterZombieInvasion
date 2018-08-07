@@ -3,10 +3,10 @@
 
 var obj = argument0;
 
-if(obj.xSpeed == 0) {
+/*if(obj.xSpeed == 0) {
 	obj.carrySpeed = xSpeed;
 }
 if(!hitTop) {
 	obj.y += ySpeed;
 
-}
+}*/

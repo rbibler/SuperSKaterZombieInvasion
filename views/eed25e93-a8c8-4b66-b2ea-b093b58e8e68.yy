@@ -8,7 +8,8 @@
         "50b97c71-a535-42cf-a2c2-1cb1c23ded59",
         "a1b15312-bde7-4ba3-b3bd-baf81f23164c",
         "531373e6-4946-4241-89a3-36a6ead1c75b",
-        "82f6c3fe-8f50-4337-b1ea-db72ffc54cf8"
+        "82f6c3fe-8f50-4337-b1ea-db72ffc54cf8",
+        "1c1c0f2d-d565-48dd-bea1-7ffadb93ba0c"
     ],
     "filterType": "GMScript",
     "folderName": "HudScripts",

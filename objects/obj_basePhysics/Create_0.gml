@@ -8,13 +8,17 @@ frameTimer = 0;
 
 // current xSpeed
 xSpeed = 0;
+xSpeedFinal = 0;
+xCarry = 0;
 xSpeedFraction = 0;
 lastXSpeed = 0;
 carrySpeed = 0;
 
 // current ySpeed
 ySpeed = 0;
-ySpeedFraction = 0;
+ySpeedFraction = 0
+yCarry = 0;
+ySpeedFinal = 0;
 carrySpeedY = 0;
 
 onSlope = false;

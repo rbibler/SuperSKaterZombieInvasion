@@ -1,4 +1,10 @@
 /// This is a script that helps display the skater's currently held weapons in the hud
+/// @arg xPos
+/// @arg yPos
+
+var xPos = argument0;
+var yPos = argument1;
+
 var weapon = noone;
 var xGrid = 42;
 var yGrid = 1;
@@ -8,7 +14,7 @@ var tens = 0;
 var ones = 0;
 var showAmmoCount = true;
 
-DrawRectangleAtGrid(40, 0, 54, 5, c_black);
+DrawRectangleAtGrid(40, 0, 54, 4, c_black, xPos, yPos);
 
 
 for(var i = 0; i < 4; i++) {
@@ -29,15 +35,15 @@ for(var i = 0; i < 4; i++) {
 		}
 		if(spriteIndex != 0) {
 			if(i == obj_skater.currentWeaponIndex) {
-				DrawRectangleAtGrid(xGrid, yGrid, xGrid + 2, yGrid + 2, c_green);
+				DrawRectangleAtGrid(xGrid, yGrid, xGrid + 2, yGrid + 2, c_green, xPos, yPos);
 			}
-			DisplaySpriteAtGrid(spriteIndex, 0, xGrid, yGrid, 1, 1);
+			DisplaySpriteAtGrid(spriteIndex, 0, xGrid, yGrid, 1, 1, xPos, yPos);
 			if(showAmmoCount == true) {
 				//DisplaySpriteAtGrid(spr_numbersSmall, tens, xGrid + 0.5, yGrid + 2, 1, 1);
 				//DisplaySpriteAtGrid(spr_numbersSmall, ones, xGrid + 0.75, yGrid + 2, 1, 1);
 				
-				DisplaySpriteAtGrid(spr_numbersBig, tens, xGrid, yGrid + 2, 1, 1);
-				DisplaySpriteAtGrid(spr_numbersBig, ones, xGrid + 1, yGrid + 2, 1, 1);
+				DisplaySpriteAtGrid(spr_numbersBig, tens, xGrid, yGrid + 2, 1, 1, xPos, yPos);
+				DisplaySpriteAtGrid(spr_numbersBig, ones, xGrid + 1, yGrid + 2, 1, 1, xPos, yPos);
 			}
 		}
 	}

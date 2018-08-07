@@ -3,7 +3,7 @@
 
 var obj = argument0;
 
-switch(movementDirection) {
+/*switch(movementDirection) {
 	case 0:
 		if(obj.xSpeed == 0) {
 			obj.carrySpeed = xSpeed;
@@ -12,4 +12,4 @@ switch(movementDirection) {
 	case 1:
 		obj.y += ySpeed;
 	break;
-}
+}*/

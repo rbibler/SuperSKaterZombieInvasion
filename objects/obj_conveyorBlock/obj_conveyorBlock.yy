@@ -5,7 +5,7 @@
     "name": "obj_conveyorBlock",
     "eventList": [
         {
-            "id": "701bba7f-c60c-48e0-a43b-5b5641e48394",
+            "id": "0c1058d4-2391-4930-9fda-cb9b6c6910fc",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -34,7 +34,7 @@
             "value": "ConveyorBlockVertCollisionScript"
         }
     ],
-    "parentObjectId": "de9ae66e-f636-4141-bf2f-815a0308cf01",
+    "parentObjectId": "c63f57e4-0a7a-458f-9836-de71bde03190",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

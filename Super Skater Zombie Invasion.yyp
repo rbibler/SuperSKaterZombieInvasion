@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "1c1c0f2d-d565-48dd-bea1-7ffadb93ba0c",
+            "Value": {
+                "id": "442afc12-e20b-4186-a67b-55aa981b47da",
+                "resourcePath": "scripts\\DisplayHealthBar\\DisplayHealthBar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1c1d0c2a-6461-45ca-bab7-0f58989937b9",
             "Value": {
                 "id": "e2df6901-6da1-4a08-82d2-3f4d49e64300",
@@ -1999,6 +2007,14 @@
             }
         },
         {
+            "Key": "c63f57e4-0a7a-458f-9836-de71bde03190",
+            "Value": {
+                "id": "a016ce4f-e167-42f8-a55c-184ab39a6575",
+                "resourcePath": "objects\\obj_movingPlatform\\obj_movingPlatform.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c738d239-f37d-4d87-96f0-e1c71109cce2",
             "Value": {
                 "id": "59090c06-f9a6-44b9-8d07-8d07eac015e9",
@@ -2591,6 +2607,7 @@
         "a1b15312-bde7-4ba3-b3bd-baf81f23164c",
         "531373e6-4946-4241-89a3-36a6ead1c75b",
         "82f6c3fe-8f50-4337-b1ea-db72ffc54cf8",
+        "1c1c0f2d-d565-48dd-bea1-7ffadb93ba0c",
         "c2c6bc53-bb0c-49dc-b15e-f0d6504157d8",
         "03044a30-d928-4153-be9b-e918e0a3e503",
         "90669bf8-93ca-49e3-a084-d3e064a2c3e0",
