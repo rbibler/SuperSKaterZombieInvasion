@@ -3,13 +3,13 @@
 
 var obj = argument0;
 
-/*switch(movementDirection) {
+switch(movementDirection) {
 	case 0:
-		if(obj.xSpeed == 0) {
+		if(obj.xSpeed == 0 and obj.platformGrounded == true) {
 			obj.carrySpeed = xSpeed;
 		}
 	break;
 	case 1:
 		obj.y += ySpeed;
 	break;
-}*/
+}

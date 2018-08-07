@@ -8,8 +8,8 @@ if(!verticalMovementRun) {
 //if(abs(xSpeed + xSpeedFraction) < 0.15) {
 //	StopXMotion();
 //}
-//x += carrySpeed;
-//carrySpeed = 0;
+x += carrySpeed;
+carrySpeed = 0;
 
 lastXSpeed = xSpeed;
 SaveInput();

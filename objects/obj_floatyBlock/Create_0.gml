@@ -4,4 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-GeneralHorizontalCollisionCheck();
+moving = false;
+alarm[0] = irandom_range(60, 480);
+alarm[1] = irandom_range(60, 480);
+

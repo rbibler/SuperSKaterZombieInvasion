@@ -37,5 +37,5 @@ global.scaleH = 2;
 global.gridX = 8;
 global.gridY = 8;
 
-ScaleGame(4, 4);
+ScaleGame(2, 2);
 

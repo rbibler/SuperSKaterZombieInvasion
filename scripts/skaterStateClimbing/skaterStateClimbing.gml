@@ -28,8 +28,6 @@ if(input[JUMP] and !lastInput[JUMP]) {
 
 
 //SkaterVerticalCollisionCheck();
-GeneralPlatformCollisions();
-
 var p1 = 0;
 var p2 = 0;
 if(ySpeed <= 0) {
