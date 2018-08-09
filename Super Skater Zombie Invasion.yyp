@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "180c89d0-0108-43c2-bd51-de0725d3ee27",
+            "Value": {
+                "id": "004dcaee-eadc-4d93-8906-3809150cb103",
+                "resourcePath": "scripts\\SkaterStateFloating\\SkaterStateFloating.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "18fc1b05-4ba3-44a3-ab6d-e998a78e441c",
             "Value": {
                 "id": "57b0bc50-d4a9-4c17-8aa0-b936ad5ddce0",
@@ -2498,6 +2506,7 @@
         "408038ce-d998-4ff4-afd5-d944162ad440",
         "dfa32e27-0393-4efa-96dc-e841bf5b0c14",
         "87171e82-38f1-42a3-8ba3-ee3d5f042400",
+        "180c89d0-0108-43c2-bd51-de0725d3ee27",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "a151bcd0-7db8-45a0-96ba-f9cd50020bfb",

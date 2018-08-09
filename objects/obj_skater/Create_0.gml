@@ -71,9 +71,12 @@ currentWeapon = noone;
 weaponAnimCounter = 0;
 currentWeaponIndex = 0;
 weaponInventorySize = array_length_1d(weaponInventory);
-
+canFloat = true;
 PickupWeapon(obj_boardSwing);
 
+floatSpeed = -1;
+ySpeedMin = -5;
+floatyFuel = 100;
 
 // Reset the timer for the idle animation
 alarm[0] = 60 * 4;
@@ -93,6 +96,7 @@ deadState = stateCreate("DEAD", SkaterStateDead);
 rollingState = stateCreate("ROLLING", SkaterStateRolling);
 climbingState = stateCreate("CLIMBING", SkaterStateClimbing);
 knockedBackState = stateCreate("KNOCKED BACK", SkaterStateKnockedBack);
+floatingState = stateCreate("FLOATING", SkaterStateFloating);
 // Set the default state to IDLE
 stateInit("IDLE");
 

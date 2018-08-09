@@ -34,7 +34,6 @@ if(((p1 != 0 and p1 <= 4) or (p2 != 0 and p2 <= 4))) {
 	} 
 	// Stop the object from moving anymore
 	StopYMotion();
-	show_debug_message("Vert check 1");
 } 
 
 // Find out how far above the ground the object is for slope collisions 
@@ -54,7 +53,6 @@ if(floorDist >= 0) {
 		// And update the floor distance variable to reflect it's new y pos
 		floorDist = -1;
 		grounded = true;
-		show_debug_message("Vert check 2");
 	}
 }
 
@@ -70,7 +68,6 @@ if(grounded and !platformGrounded) {
 		var tileIdDown = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + 1);
 		if(tileIdDown > 5) {
 			y += abs(GeneralInFloor(collisionTiles, x, bbox_bottom + 1));
-			show_debug_message("Vert Check 3");
 		}
 	}
 }
