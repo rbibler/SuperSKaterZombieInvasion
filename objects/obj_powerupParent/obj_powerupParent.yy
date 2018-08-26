@@ -1,0 +1,91 @@
+{
+    "id": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
+    "modelName": "GMObject",
+    "mvc": "1.0",
+    "name": "obj_powerupParent",
+    "eventList": [
+        {
+            "id": "f607c620-c3af-4995-bae6-239198610f71",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec"
+        },
+        {
+            "id": "971156d3-9df8-41f2-b9c9-18dc507d3f57",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec"
+        }
+    ],
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "persistent": false,
+    "physicsAngularDamping": 0.1,
+    "physicsDensity": 0.5,
+    "physicsFriction": 0.2,
+    "physicsGroup": 0,
+    "physicsKinematic": false,
+    "physicsLinearDamping": 0.1,
+    "physicsObject": false,
+    "physicsRestitution": 0.1,
+    "physicsSensor": false,
+    "physicsShape": 1,
+    "physicsShapePoints": null,
+    "physicsStartAwake": true,
+    "properties": [
+        {
+            "id": "a8e1cf33-1f14-453a-931c-c26233158217",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "refuelTime",
+            "varType": 0
+        },
+        {
+            "id": "bdf31fca-9088-44e4-9521-141093acf22b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "refuelAmount",
+            "varType": 0
+        },
+        {
+            "id": "a53507f6-97b3-48f8-8d12-8ab054b891f3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "maxFuel",
+            "varType": 0
+        }
+    ],
+    "solid": false,
+    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "visible": true
+}

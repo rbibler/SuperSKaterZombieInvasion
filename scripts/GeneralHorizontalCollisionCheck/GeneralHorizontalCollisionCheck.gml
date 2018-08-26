@@ -35,7 +35,7 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 				ignore = true;
 			}
 		} 
-		if( (obj.x > x and input[LEFT] == 1) or (obj.x < x and input[RIGHT] == 1)) {
+		if(variable_instance_exists(obj, "input") and (obj.x > x and input[LEFT] == 1) or (obj.x < x and input[RIGHT] == 1)) {
 			ignore = true;
 		}
 		if(!ignore) {

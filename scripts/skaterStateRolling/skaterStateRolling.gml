@@ -17,12 +17,13 @@ if(stateNew) {
 SkaterBasicStateAnimation();
 
 // Check if we should fire a weapon
-if(currentWeapon != noone) {
+if(currentWeapon != noone and script_exists(currentWeapon.shootSequenceScript)) {
 	var shootNow = script_execute(currentWeapon.shootSequenceScript); 
 	if(shootNow) {
 		script_execute(currentWeapon.fireScript, currentWeapon, false);
 	}
 }
+
 
 // Check how fast the skater should be moving
 SkaterHorizontalImpetus();

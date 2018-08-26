@@ -19,10 +19,6 @@ if(input[RIGHT]) {
 	facing = -1;
 }
 
-if(input[SELECT] and !lastInput[SELECT]) {
-	SkaterCycleWeapon();
-}
-
 // Impart gravity and limit the skater's terminal velocity
 ySpeed += myGravity;
 if(ySpeed >= maxYSpeed) {

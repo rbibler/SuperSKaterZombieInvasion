@@ -17,27 +17,26 @@ if(stateNew) {
 	grounded = false;
 }
 
-ySpeed += floatSpeed;
-floatyFuel--;
-if(ySpeed <= ySpeedMin) {
-	ySpeed = ySpeedMin;
-}
+ySpeed += currentPowerup.floatSpeed;
+currentPowerup.fuelRemaining--;
 
+if(ySpeed <= currentPowerup.ySpeedMin) {
+	ySpeed = currentPowerup.ySpeedMin;
+}
 
 SkaterBasicStateAnimation();
 
 // Check if we should fire a weapon
-if(currentWeapon != noone) {
+if(currentWeapon != noone and script_exists(currentWeapon.shootSequenceScript)) {
 	var shootNow = script_execute(currentWeapon.shootSequenceScript); 
 	if(shootNow) {
 		script_execute(currentWeapon.fireScript, currentWeapon, false);
 	}
 }
 
+
 // Check how fast the skater should be moving
 SkaterHorizontalImpetus();
-
-
 
 // If no directional input, slow the skater down until he stops
 if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
@@ -59,10 +58,7 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 MoveAndCollide();
 SkaterLadderCollisions();
 
-show_debug_message("Input jump?: " + string(input[JUMP]));
-
-if(stateTimer >= 30 or !input[JUMP] or floatyFuel <= 0) {
-	show_debug_message("I SWITCH TO FALL!!");
+if(stateTimer >= 30 or !input[JUMP] or currentPowerup.fuelRemaining <= 0) {
 	StopYMotion();
 	stateSwitch("FALLING");
 }

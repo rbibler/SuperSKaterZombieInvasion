@@ -34,6 +34,11 @@ with(weapon) {
 			var ammo = instance_create_layer(xOffset, yOffset, "AMMO", ammoType);
 			ammo.ammoDirection = other.facing;
 			other.weaponAnimCounter = weaponAnimCount;
+			
+		} else if(ammoCount == 0) {
+			with(obj_skater) {
+				PickupWeapon(obj_boardSwing);
+			}
 		}
 	}
 }

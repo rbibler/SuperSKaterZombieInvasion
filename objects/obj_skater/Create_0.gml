@@ -51,15 +51,6 @@ animIndex[SKATING] = 0;
 tileColliderX = 0;
 tileColliderY = 0;
 
-weaponInventory[0] = noone;
-weaponInventory[1] = noone;
-weaponInventory[2] = noone;
-weaponInventory[3] = noone;
-weaponInventory[4] = noone;
-weaponInventory[5] = noone;
-weaponInventory[6] = noone;
-weaponInventroy[7] = noone;
-
 // Initialize an array to hold the input from the last frame
 for(var i = 0; i < 8; i++) {
 	lastInput[i] = input[i];
@@ -68,15 +59,9 @@ for(var i = 0; i < 8; i++) {
 
 // Reference to the weapon
 currentWeapon = noone;
+currentPowerup = noone;
 weaponAnimCounter = 0;
-currentWeaponIndex = 0;
-weaponInventorySize = array_length_1d(weaponInventory);
-canFloat = true;
 PickupWeapon(obj_boardSwing);
-
-floatSpeed = -1;
-ySpeedMin = -5;
-floatyFuel = 100;
 
 // Reset the timer for the idle animation
 alarm[0] = 60 * 4;
