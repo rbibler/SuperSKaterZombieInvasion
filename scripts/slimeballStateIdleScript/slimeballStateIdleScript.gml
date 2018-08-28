@@ -94,7 +94,9 @@ if(abs(xSpeed) >= maxSpeed) {
 
 if(grounded) {
 	stateSwitch("MOVING");
-	input[RIGHT] = 1;
+	input[RIGHT] = 0;
+	input[LEFT] = 0;
+	input[moveDirOnRestart] = 1;
 }
 
 //var dist = abs(x - obj_skater.x);
