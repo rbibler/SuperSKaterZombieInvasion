@@ -607,6 +607,14 @@
             }
         },
         {
+            "Key": "3cc45a08-ede0-4f39-afab-0619ed030afa",
+            "Value": {
+                "id": "d670fad0-1351-4c99-ac76-f2e280db837d",
+                "resourcePath": "sprites\\spr_ocean\\spr_ocean.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3d25c3d6-f74b-4126-b661-f51583543d8d",
             "Value": {
                 "id": "744a53a8-bfc2-4600-aa39-5a3effb550e6",
