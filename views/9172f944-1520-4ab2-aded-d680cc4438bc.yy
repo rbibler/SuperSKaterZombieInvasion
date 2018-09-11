@@ -11,7 +11,8 @@
         "7778930c-cd1f-4a79-bf60-cb3b5fc35c3d",
         "24a6aa78-022f-46c5-b034-fdd2f018b4ab",
         "caca63bc-e89c-41de-a1a0-4f627364e5d7",
-        "f53fb2a4-9a68-4afc-b704-6c62660e7e1e"
+        "f53fb2a4-9a68-4afc-b704-6c62660e7e1e",
+        "5192cb27-cf7f-47d2-891c-9a44554fac03"
     ],
     "filterType": "GMScript",
     "folderName": "EnemyScripts",
