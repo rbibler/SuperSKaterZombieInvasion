@@ -45,8 +45,8 @@ inputDownTime[JUMP] = 0;
 
 inputPressTime[SHOOT] = 0;
 
-animIndex[IDLE] = 0;
-animIndex[SKATING] = 0;
+//animIndex[IDLE] = 0;
+//animIndex[SKATING] = 0;
 
 tileColliderX = 0;
 tileColliderY = 0;
@@ -70,20 +70,20 @@ alarm[0] = 60 * 4;
 stateMachineInit();
 
 // Define the skater's states
-idleState = stateCreate("IDLE",SkaterStateIdle);
-skateState = stateCreate("SKATING", SkaterStateSkating);
-jumpState = stateCreate("JUMPING", SkaterStateJumping);
-bounceState = stateCreate("BOUNCING", SkaterStateBouncing);
-climbState = stateCreate("CLIMBING", SkaterStateClimbing);
-crouchState = stateCreate("CROUCHING", SkaterStateCrouching);
-fallState = stateCreate("FALLING", SkaterStateFalling);
-deadState = stateCreate("DEAD", SkaterStateDead);
-rollingState = stateCreate("ROLLING", SkaterStateRolling);
-climbingState = stateCreate("CLIMBING", SkaterStateClimbing);
-knockedBackState = stateCreate("KNOCKED BACK", SkaterStateKnockedBack);
-floatingState = stateCreate("FLOATING", SkaterStateFloating);
+idleState = stateCreate(s_IDLE,SkaterStateIdle);
+skateState = stateCreate(s_MOVING, SkaterStateSkating);
+jumpState = stateCreate(s_JUMPING, SkaterStateJumping);
+bounceState = stateCreate(s_BOUNCING, SkaterStateBouncing);
+climbState = stateCreate(s_CLIMBING, SkaterStateClimbing);
+crouchState = stateCreate(s_CROUCHING, SkaterStateCrouching);
+fallState = stateCreate(s_FALLING, SkaterStateFalling);
+deadState = stateCreate(s_DEAD, SkaterStateDead);
+rollingState = stateCreate(s_ROLLING, SkaterStateRolling);
+climbingState = stateCreate(s_CLIMBING, SkaterStateClimbing);
+knockedBackState = stateCreate(s_KNOCKED_BACK, SkaterStateKnockedBack);
+floatingState = stateCreate(s_FLOATING, SkaterStateFloating);
 // Set the default state to IDLE
-stateInit("IDLE");
+stateInit(s_IDLE);
 
 isImmune = false;
 immuneStart = 0;

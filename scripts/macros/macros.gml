@@ -8,16 +8,22 @@
 #macro	JUMP	7
 
 
-#macro IDLE			0
-#macro SKATING		1
-#macro CROUCHING	2
-#macro JUMPING		3
-#macro SLAMMING		4
-#macro RECOVERING	5
-#macro HIT			6
-#macro CLIMBING		7
-#macro FALLING		8
-#macro ROLLING		9
+#macro s_IDLE			"IDLE"
+#macro s_MOVING			"MOVING"
+#macro s_CROUCHING		"CROUCHING"
+#macro s_JUMPING		"JUMPING"
+#macro s_SLAMMING		"SLAMMING"
+#macro s_RECOVERING		"RECOVERING"
+#macro s_HIT			"HIT"
+#macro s_CLIMBING		"CLIMBING"
+#macro s_FALLING		"DYING"
+#macro s_ROLLING		"ROLLING"
+#macro s_DEAD			"DEAD"
+#macro s_BOUNCING		"BOUNCING"
+#macro s_KNOCKED_BACK	"KNOCKED BACK"
+#macro s_FLOATING		"FLOATING"
+#macro s_ATTACKING		"ATTACKING"
+#macro s_DEFENDING		"DEFENDING"
 
 #macro RES_W	512
 #macro RES_H	240

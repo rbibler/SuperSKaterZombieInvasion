@@ -7,7 +7,7 @@ if(stateNew) {
 zombieSkaterMovementAI();
 
 // Check how fast the skater should be moving
-EnemyHorizontalImpetus();
+scr_EnemyHorizontalImpetus();
 
 MoveAndCollide();
 

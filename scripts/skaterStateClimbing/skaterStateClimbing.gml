@@ -22,7 +22,7 @@ if(input[UP] and !input[DOWN]) {
 }
 
 if(input[JUMP] and !lastInput[JUMP]) {
-	stateSwitch("JUMPING");
+	stateSwitch(s_JUMPING);
 	myGravity = standardGravity;
 }
 
@@ -49,6 +49,6 @@ if(tileTopLeft != 5 and tileTopRight != 5 and tileBottomRight != 5 and tileBotto
 	and tileTopLeft != 4 and tileTopRight != 4 and tileBottomRight != 4 and tileBottomLeft != 4
 	and tileBottomRightPlusOne != 5 and tileBottomRightPlusOne != 4 
 	and tileBottomLeftPlusOne != 5 and tileBottomLeftPlusOne != 4) {
-	stateSwitch("IDLE");
+	stateSwitch(s_IDLE);
 	myGravity = standardGravity;
 } 

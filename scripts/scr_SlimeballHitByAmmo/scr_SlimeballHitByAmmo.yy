@@ -1,8 +1,8 @@
 {
-    "id": "588c576d-10dd-4fca-991f-516d815a1bda",
+    "id": "2c488e5f-a640-4cac-ab84-c2cc96a36521",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "slimeballStateJumpScript",
+    "name": "scr_SlimeballHitByAmmo",
     "IsCompatibility": false,
     "IsDnD": false
 }

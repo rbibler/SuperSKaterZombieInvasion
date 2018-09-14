@@ -1,8 +1,8 @@
 {
-    "id": "b5129a36-8ee4-4414-bf2c-7f9dc90d60b8",
+    "id": "73f289cf-3c7a-4a54-b8b2-178031b69eb0",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "slimeballStateHitScript",
+    "name": "scr_SlimeballSetupNewState",
     "IsCompatibility": false,
     "IsDnD": false
 }

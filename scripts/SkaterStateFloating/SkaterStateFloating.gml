@@ -60,11 +60,11 @@ SkaterLadderCollisions();
 
 if(stateTimer >= 30 or !input[JUMP] or currentPowerup.fuelRemaining <= 0) {
 	StopYMotion();
-	stateSwitch("FALLING");
+	stateSwitch(s_FALLING);
 }
 
 // If we hit the ground somehow (not likely) we should be idle. Let idle state take care of
 // skating check
 if(grounded) {
-	stateSwitch("IDLE");
+	stateSwitch(s_IDLE);
 }

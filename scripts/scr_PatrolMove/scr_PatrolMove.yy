@@ -1,8 +1,8 @@
 {
-    "id": "13a97aa4-6668-4b15-9536-7356ddc3e7a4",
+    "id": "698a235c-86fc-4d01-a1a1-e6d453d4612b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "SlimeballHorizCollisionScript",
+    "name": "scr_PatrolMove",
     "IsCompatibility": false,
     "IsDnD": false
 }

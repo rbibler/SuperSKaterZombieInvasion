@@ -7,5 +7,5 @@ if(stateNew) {
 MoveAndCollide();
 
 if(grounded) {
-	stateSwitch("IDLE");
+	stateSwitch(s_IDLE);
 }

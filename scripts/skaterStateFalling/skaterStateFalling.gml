@@ -50,17 +50,17 @@ SkaterLadderCollisions();
 // If we hit the ground, we're idle. Let the idle state take care of other checks
 if(grounded) {
 	if(input[LEFT] or input[RIGHT]) {
-		stateSwitch("SKATING");
+		stateSwitch(s_MOVING);
 	} else {
-		stateSwitch("IDLE");
+		stateSwitch(s_IDLE);
 	}
 }
 
 // Skater can jump if jump is pressed fresh on this frame and skater isn't already jumping
 if(input[JUMP]) {
 	if((jump == 0 and !lastInput[JUMP] and canJump < jumpFramesAllowance)) {
-		stateSwitch("JUMPING");
+		stateSwitch(s_JUMPING);
 	} else if(CanFloat()) {
-		stateSwitch("FLOATING");
+		stateSwitch(s_FLOATING);
 	}
 } 

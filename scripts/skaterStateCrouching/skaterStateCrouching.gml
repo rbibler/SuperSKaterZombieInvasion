@@ -41,10 +41,10 @@ MoveAndCollide();
 
 // Can't crouch unless down is pressed
 if(!input[DOWN]) {
-	stateSwitch("IDLE");
+	stateSwitch(s_IDLE);
 }
 
 // If the ground disappears, fall. 
 if(!grounded) {
-	stateSwitch("FALLING");
+	stateSwitch(s_FALLING);
 }

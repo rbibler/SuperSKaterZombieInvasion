@@ -60,11 +60,11 @@ if(jump == 1 and (ySpeed > 0 or !input[JUMP])){
 	// Start falling. Can't set jump to zero, because that'll reset the can jump flag
 	jump = 2;
 	StopYMotion();
-	stateSwitch("FALLING");
+	stateSwitch(s_FALLING);
 }
 
 // If we hit the ground somehow (not likely) we should be idle. Let idle state take care of
 // skating check
 if(grounded) {
-	stateSwitch("IDLE");
+	stateSwitch(s_IDLE);
 }

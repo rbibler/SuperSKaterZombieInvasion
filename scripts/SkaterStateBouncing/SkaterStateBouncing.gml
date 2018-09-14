@@ -62,7 +62,7 @@ if(jump == 1 and ySpeed > 0){
 	// Start falling. Can't set jump to zero, because that'll reset the can jump flag
 	jump = 2;
 	StopYMotion();
-	stateSwitch("FALLING");
+	stateSwitch(s_FALLING);
 }
 
 // If we hit the ground somehow (not likely) we should be idle. Let idle state take care of

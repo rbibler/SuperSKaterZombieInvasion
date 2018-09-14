@@ -68,7 +68,7 @@ if(stateTimer mod (60 / 5) == 0) {
 
 // Crouch if the user presses down
 if(input[DOWN] and state != climbingState) {
-	stateSwitch("CROUCHING");
+	stateSwitch(s_CROUCHING);
 } 
 
 // Check how fast the skater should be moving
@@ -77,24 +77,24 @@ MoveAndCollide();
 SkaterLadderCollisions();
 // If no directional input, slow the skater down until he stops
 if(abs(xSpeed) > 0 and grounded and state != rollingState) {
-	stateSwitch("ROLLING");
+	stateSwitch(s_ROLLING);
 }
 
 // Switch to Skating if horizontal movement. Can only be idle if grounded, so no need to check ground flag
 if(input[LEFT] or input[RIGHT]) {
-	stateSwitch("SKATING");
+	stateSwitch(s_MOVING);
 } 
 
 
 // If you aren't on the ground anymore, you're falling
 if(!grounded) {
-	stateSwitch("FALLING");
+	stateSwitch(s_FALLING);
 }
 
 // Skater can jump if jump is pressed fresh on this frame and skater isn't already jumping
 if(input[JUMP]) {
 	if(jump == 0 and !lastInput[JUMP] and canJump < jumpFramesAllowance) {
-		stateSwitch("JUMPING");
+		stateSwitch(s_JUMPING);
 	}
 } 
 

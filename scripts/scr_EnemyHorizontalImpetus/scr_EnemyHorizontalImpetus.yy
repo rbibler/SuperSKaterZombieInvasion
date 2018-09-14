@@ -1,8 +1,8 @@
 {
-    "id": "2c488e5f-a640-4cac-ab84-c2cc96a36521",
+    "id": "a0a0f345-d037-4fe7-a6b8-3edde0b4f7f5",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "SlimeballHitByAmmoScript",
+    "name": "scr_EnemyHorizontalImpetus",
     "IsCompatibility": false,
     "IsDnD": false
 }

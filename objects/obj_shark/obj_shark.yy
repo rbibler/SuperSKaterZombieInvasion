@@ -62,14 +62,6 @@
             "value": "sharkStateFallScript"
         },
         {
-            "id": "6d664b21-52d1-49f9-86a2-d6d43bf1e31a",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
-            "value": "slimeballStateDeadScript"
-        },
-        {
             "id": "427715a9-0dda-4635-a24e-6d90569188a1",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -108,14 +100,6 @@
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
             "propertyId": "a869a8af-a993-4e2c-8f19-4cad0d4179e8",
             "value": "-8"
-        },
-        {
-            "id": "927197ae-3038-4305-b98d-86dd08cbd451",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "7d8e0fec-70e6-41e1-81ad-64d33d679a8d",
-            "value": "SlimeballHorizCollisionScript"
         },
         {
             "id": "e990c755-3d00-4093-b244-906b01a89473",

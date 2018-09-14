@@ -8,7 +8,7 @@ if(stateTimer mod (60 / 5)  == 0) {
 	if(image_index == 3) {
 		var slimeball = instance_create_layer(x, y + 24, "Enemies", obj_slimeball);
 		with(slimeball) {
-			stateSwitch("FALLING");
+			stateSwitch(s_FALLING);
 			sprite_index = spr_slimeballJump;
 			image_index = 1;
 			myGravity = 0.5;

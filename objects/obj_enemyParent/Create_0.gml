@@ -50,15 +50,15 @@ collisionTiles = layer_tilemap_get_id(layerId);
 stateMachineInit();
 
 // Define the skater's states
-stateIdle = stateCreate("IDLE", stateIdleScript);
-stateCreate("MOVING", stateMovingScript);
-stateCreate("JUMPING", stateJumpScript);
-stateCreate("ATTACKING", stateAttackScript);
-stateDefending = stateCreate("DEFENDING", stateDefendingScript);
-stateCreate("FALLING", stateFallScript);
-stateHit = stateCreate("HIT", stateHitScript);
-stateDead = stateCreate("DEAD", stateDeadScript);
+stateIdle = stateCreate(s_IDLE, stateIdleScript);
+stateMoving = stateCreate(s_MOVING, stateMovingScript);
+stateJumping = stateCreate(s_JUMPING, stateJumpScript);
+stateAttacking = stateCreate(s_ATTACKING, stateAttackScript);
+stateDefending = stateCreate(s_DEFENDING, stateDefendingScript);
+stateFalling = stateCreate(s_FALLING, stateFallScript);
+stateHit = stateCreate(s_HIT, stateHitScript);
+stateDead = stateCreate(s_DEAD, stateDeadScript);
 climbingState = 0;
 
 // Set the default state to IDLE
-stateInit("IDLE");
+stateInit(initialState);
