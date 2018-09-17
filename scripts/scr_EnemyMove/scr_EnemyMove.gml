@@ -4,7 +4,6 @@ if(stateNew) {
 	script_execute(setupNewState, stateName);
 }
 
-// TODO: Can we make this a variable in order to make this Move state more generic for all Patrol types? 
 script_execute(move); 
 
 // Check how fast the skater should be moving

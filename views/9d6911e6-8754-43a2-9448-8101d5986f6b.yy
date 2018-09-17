@@ -8,7 +8,7 @@
         "13a97aa4-6668-4b15-9536-7356ddc3e7a4"
     ],
     "filterType": "GMScript",
-    "folderName": "PatrollerScripts",
+    "folderName": "PatrollerParentScripts",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

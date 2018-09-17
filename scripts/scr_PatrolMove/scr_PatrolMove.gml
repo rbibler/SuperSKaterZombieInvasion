@@ -20,7 +20,7 @@ var dist = x - obj_skater.x;
 
 
 
-// If slimeball is to the right of the player and moving left (can see him)
+// If patroller is to the right of the player and moving left (can see him)
 if(dist > 0 and input[LEFT]) {
 	input[SHOOT] = (abs(dist) < 150 and stateTimer > 60); 
 	if(!groundedLeft and stateVar[2] == false) {

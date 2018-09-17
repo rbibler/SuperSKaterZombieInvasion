@@ -2,9 +2,18 @@
     "id": "3d722df8-120e-43a7-abff-d5e21430611a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_enemyPatroller",
+    "name": "obj_PatrollerParent",
     "eventList": [
-        
+        {
+            "id": "a1031a53-7fc0-4c7a-9112-0f31e4e607c1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "3d722df8-120e-43a7-abff-d5e21430611a"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
@@ -55,6 +64,14 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "29b75946-cc68-425e-98df-81aab9e40d89",
             "value": "scr_PatrolMove"
+        },
+        {
+            "id": "b2b3babb-00d6-4b6e-bf88-471a61ebed6a",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
+            "value": "scr_EnemyHit"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
@@ -82,7 +99,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "RIGHT",
             "varName": "moveDirOnRestart",
             "varType": 0
         }
