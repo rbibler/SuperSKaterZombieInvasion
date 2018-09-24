@@ -38,30 +38,6 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "d68a2f5c-365a-44b2-a26f-66bcdef62475",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "bd3fe793-2816-4b49-94e6-b3e0644b239e",
-            "value": "sharkStateIdleScript"
-        },
-        {
-            "id": "dcba3930-9729-484d-8cd0-3cf8f59cd812",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "440516e8-a7b3-4e61-996a-7eebecb8ff41",
-            "value": "sharkStateJumpScript"
-        },
-        {
-            "id": "ffc862ef-5dc9-4256-90b4-d1bba2e7d71d",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "baf13921-fcd0-4557-98e6-03296607539b",
-            "value": "sharkStateFallScript"
-        },
-        {
             "id": "427715a9-0dda-4635-a24e-6d90569188a1",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -108,9 +84,41 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "c367d758-becc-4f2e-94b3-bab459348c37",
             "value": "False"
+        },
+        {
+            "id": "67e44b3d-37cd-4c3d-8c83-4781b9fc7150",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
+            "value": "scr_SharkHitByAmmo"
+        },
+        {
+            "id": "2a5cddb1-4519-42be-b09e-53d81a8a7556",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "405731c1-f231-47e3-b413-81e74de01247",
+            "value": "scr_SharkSetupNewState"
+        },
+        {
+            "id": "6b85d411-63e6-49d0-825b-2ad3f39d87ee",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "6437486c-70ed-475a-a901-6d6545a33095",
+            "value": "scr_SharkAnimate"
+        },
+        {
+            "id": "3dcea9ab-e4e7-49c3-a17a-2a6a0696691d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "39b3545d-1cc5-44df-89ae-2d8e8c1eb118",
+            "value": "scr_SharkCheckStateChange"
         }
     ],
-    "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+    "parentObjectId": "a86d99fd-1017-4e75-9638-094c898c181b",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -125,20 +133,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "d9faa262-d42b-4b69-add9-815567da3ba4",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "LEFT",
-            "varName": "moveDirOnRestart",
-            "varType": 0
-        }
+        
     ],
     "solid": false,
     "spriteId": "b4dc4710-4f8d-409b-b3be-d80b60e2817a",

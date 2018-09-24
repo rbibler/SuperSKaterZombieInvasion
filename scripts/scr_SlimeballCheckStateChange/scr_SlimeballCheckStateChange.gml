@@ -10,6 +10,7 @@ switch(currentState)
 		// If not, jump, otherwise reset timer
 		if(stateTimer >= stateVar[0]) {
 			if(!input[SHOOT]) {
+				moveDirOnRestart = input[LEFT] ? LEFT : RIGHT;
 				stateSwitch(s_JUMPING);
 			} else {
 				stateVar[0] = random_range(1 * 60, 7 * 60);

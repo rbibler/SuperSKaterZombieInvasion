@@ -22,7 +22,7 @@ if(ySpeed >= 0) {
 p1 = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_side + ySpeed);
 p2 = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_side + ySpeed);
 // if either of the corner tiles is between 1 and 4 (inclusive) it's a solid tile
-if(((p1 != 0 and p1 <= 4) or (p2 != 0 and p2 <= 4))) {
+if(((p1 != 0 and p1 <= 4 and p1 > 0) or (p2 != 0 and p2 <= 4 and p2 > 0))) {
 	// if moving down, it's a collision with the floor
 	// so set the object's y value to the top of that tile (taking into account the distance
 	// between the object's origin and its bbox
@@ -31,6 +31,7 @@ if(((p1 != 0 and p1 <= 4) or (p2 != 0 and p2 <= 4))) {
 		bboxTile *= 16;
 		y = bboxTile - (bbox_bottom - y) - 1;
 		grounded = true;
+
 	} 
 	// Stop the object from moving anymore
 	StopYMotion();
@@ -53,6 +54,7 @@ if(floorDist >= 0) {
 		// And update the floor distance variable to reflect it's new y pos
 		floorDist = -1;
 		grounded = true;
+		
 	}
 }
 
@@ -73,9 +75,6 @@ if(grounded and !platformGrounded) {
 }
 
 
-
-
-
 if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 	var obj = instance_place(x, y + ySpeed, obj_baseBlock);
 	if(obj != noone and obj.isSolid) {
@@ -85,6 +84,7 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		
 		if(!grounded and ySpeed > 0) {
 			grounded = true;
+			
 		}
 		if(bbox_bottom > obj.bbox_top and obj.object_index == obj_controlBlock) {
 			y = obj.bbox_top - (bbox_bottom - y) - 1;

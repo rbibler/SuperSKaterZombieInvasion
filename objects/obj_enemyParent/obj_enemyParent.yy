@@ -162,7 +162,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
+            "value": "scr_EnemyIdle",
             "varName": "stateIdleScript",
             "varType": 5
         },
@@ -176,7 +176,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
+            "value": "scr_EnemyMove",
             "varName": "stateMovingScript",
             "varType": 5
         },
@@ -190,7 +190,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
+            "value": "scr_EnemyJump",
             "varName": "stateJumpScript",
             "varType": 5
         },
@@ -204,7 +204,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
+            "value": "scr_EnemyFall",
             "varName": "stateFallScript",
             "varType": 5
         },
@@ -218,7 +218,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
+            "value": "scr_EnemyAttack",
             "varName": "stateAttackScript",
             "varType": 5
         },
@@ -232,7 +232,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
+            "value": "scr_EnemyDead",
             "varName": "stateDeadScript",
             "varType": 5
         },
@@ -246,7 +246,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
+            "value": "scr_EnemyHit",
             "varName": "stateHitScript",
             "varType": 5
         },
@@ -260,7 +260,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
+            "value": "scr_EnemyDefend",
             "varName": "stateDefendingScript",
             "varType": 5
         },

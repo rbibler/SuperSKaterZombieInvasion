@@ -11,17 +11,14 @@ if(xSpeed > 0) {
 		input[RIGHT] = 1;
 
 	}
-} else if(input[LEFT] == 0 and input[RIGHT] == 0) {
-	input[moveDirOnRestart] = 1;
-
 }
 
 var dist = x - obj_skater.x;
 
 
-
 // If patroller is to the right of the player and moving left (can see him)
 if(dist > 0 and input[LEFT]) {
+	// Don't want to immediately sprint after the player if the patroller just entered the move state
 	input[SHOOT] = (abs(dist) < 150 and stateTimer > 60); 
 	if(!groundedLeft and stateVar[2] == false) {
 		stateVar[1] = stateTimer;

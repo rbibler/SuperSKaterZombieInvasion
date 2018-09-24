@@ -11,7 +11,8 @@
         "8ceb6a61-7ee2-497b-9dc4-73dbbd6d37ed",
         "cea7167f-e163-492a-ba85-e62e5acd0714",
         "56eb3467-2fe0-49cf-9425-fbaf74386c6b",
-        "3d25c3d6-f74b-4126-b661-f51583543d8d"
+        "3d25c3d6-f74b-4126-b661-f51583543d8d",
+        "75db0baa-a778-480d-b74d-de4b426a3940"
     ],
     "filterType": "GMScript",
     "folderName": "UtilityScripts",

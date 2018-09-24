@@ -9,6 +9,7 @@ switch(currentState) {
 		stateVar[0] = random_range(1 * 60, 7 * 60);
 		sprite_index = spr_slimeballMove;
 		image_index = 0;
+		input[moveDirOnRestart] = 1;
 	break;
 	
 	case s_JUMPING:
@@ -37,6 +38,8 @@ switch(currentState) {
 	case s_FALLING:
 		sprite_index = spr_slimeballJump;
 		image_index = 0;
+		StopXMotion();
+		ZeroInputs();
 	break;
 	
 	case s_DEAD:
