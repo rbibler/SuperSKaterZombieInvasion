@@ -3,4 +3,5 @@ if(stateNew) {
 }
 
 script_execute(animate, stateName);
+script_execute(checkStateChange, stateName);
 

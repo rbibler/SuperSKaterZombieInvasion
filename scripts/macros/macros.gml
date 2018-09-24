@@ -5,6 +5,7 @@
 #macro	SELECT	4
 #macro	START	5
 #macro	SHOOT	6
+#macro	SPRINT	6
 #macro	JUMP	7
 
 

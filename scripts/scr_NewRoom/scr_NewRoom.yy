@@ -1,8 +1,8 @@
 {
-    "id": "a0a0f345-d037-4fe7-a6b8-3edde0b4f7f5",
+    "id": "379fe01b-29b2-4f77-a7be-6148b9f501bf",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_EnemyHorizontalImpetus",
+    "name": "scr_NewRoom",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -7,8 +7,9 @@ if(stateNew) {
 script_execute(move); 
 
 // Check how fast the skater should be moving
-scr_EnemyHorizontalImpetus();
+//scr_EnemyHorizontalImpetus();
 
+scr_EnemyMovement();
 MoveAndCollide();
 
 script_execute(animate, stateName);

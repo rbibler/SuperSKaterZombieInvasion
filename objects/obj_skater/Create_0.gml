@@ -4,6 +4,7 @@
 // Inherit the parent event
 event_inherited();
 num = 0;
+newRoom = false;
 /// @description Insert description here
 // You can write your code in this editor
 
@@ -20,6 +21,7 @@ num = 0;
 
 health = 100;
 
+exitKey = 0;
 // Is the skater infected?
 infected = false;
 
@@ -88,6 +90,7 @@ stateInit(s_IDLE);
 isImmune = false;
 immuneStart = 0;
 drawToggle = true;
+
 
 
 

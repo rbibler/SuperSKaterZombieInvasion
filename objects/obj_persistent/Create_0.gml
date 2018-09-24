@@ -37,7 +37,8 @@ global.scaleH = 2;
 global.gridX = 8;
 global.gridY = 8;
 
-global.debug = true;
+global.debug = false;
 
 ScaleGame(2, 2);
+room_goto_next();
 

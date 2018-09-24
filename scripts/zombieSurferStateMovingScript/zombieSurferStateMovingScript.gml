@@ -67,7 +67,7 @@ if(stateVar[2] == 1) {
 	stateVar[4] = x;
 }
 
-scr_EnemyHorizontalImpetus();
+scr_EnemyMovement();
 
 MoveAndCollide();
 

@@ -26,7 +26,7 @@ break;
 
 	case s_DEAD:
 		// Every five frames, toggle the animation
-		if(stateVar[0] mod 5 == 0) {
+		if(stateVar[0] mod (60 / 5) == 0) {
 			stateVar[1]++;
 			image_index = stateVar[1] mod 2;
 		}

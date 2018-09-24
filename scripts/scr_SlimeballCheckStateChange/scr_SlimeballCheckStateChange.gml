@@ -15,6 +15,16 @@ switch(currentState)
 			} else {
 				stateVar[0] = random_range(1 * 60, 7 * 60);
 			}
+		} else if(scr_ShouldChaseSkater(true)) {
+			stateSwitch(s_ATTACKING);
+		}
+	break;
+	
+	case s_ATTACKING:
+		if(!scr_ShouldChaseSkater(false)) {
+			input[SPRINT] = 0;
+			moveDirOnRestart = input[RIGHT] == 1 ? RIGHT : LEFT;
+			stateSwitch(s_MOVING);
 		}
 	break;
 	

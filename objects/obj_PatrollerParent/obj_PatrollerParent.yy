@@ -102,6 +102,34 @@
             "value": "RIGHT",
             "varName": "moveDirOnRestart",
             "varType": 0
+        },
+        {
+            "id": "8aa1fa76-683a-4d70-834f-e0b5b741f8d9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "60",
+            "varName": "minAttackInterval",
+            "varType": 0
+        },
+        {
+            "id": "44a46f26-3d83-4d65-b410-0a4f40cd6fc4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "150",
+            "varName": "attackDistance",
+            "varType": 0
         }
     ],
     "solid": false,

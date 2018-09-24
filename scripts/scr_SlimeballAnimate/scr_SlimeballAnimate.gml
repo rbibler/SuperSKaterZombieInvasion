@@ -5,16 +5,15 @@ var currentState = argument0;
 
 switch(currentState) {
 	case s_MOVING:
-		// input[SHOOT] will be true if pursuing the sktater. If that's the case, animate faster
-		if(input[SHOOT]) {
-			if(stateTimer mod 10 == 0) {
-				image_index ^= 1;
-			}
-		} else {
-			if(stateTimer mod 20 == 0) {
-				image_index ^= 1;
-			}
-	}
+		if(stateTimer mod 20 == 0) {
+			image_index ^= 1;
+		}
+	break;
+	
+	case s_ATTACKING:
+		if(stateTimer mod 10 == 0) {
+			image_index ^= 1;
+		}
 	break;
 	
 	case s_JUMPING:

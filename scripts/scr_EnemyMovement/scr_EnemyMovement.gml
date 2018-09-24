@@ -37,7 +37,7 @@ if(onSlope) {
 	}
 }
 
-// If the skater is skating too quickly, slow him down gradually until he reaches max speed
+// If the object is moving too quickly, slow it down gradually until he reaches max speed
 // Don't to just set to max speed, or the transition will feel weird
 if(abs(xSpeed) >= maxSpeed) {
 	xSpeed -= sign(xSpeed) * 0.15;

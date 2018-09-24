@@ -45,8 +45,7 @@ wasGrounded = false;
 wasGroundedRight = false;
 wasGroundedLeft = false;
 
-var layerId = layer_get_id("CollisionTiles");
-collisionTiles = layer_tilemap_get_id(layerId);
+scr_GetCollisionTiles();
 
 collisionY = 0;
 collisionX = 0;

@@ -42,6 +42,10 @@ switch(currentState) {
 		ZeroInputs();
 	break;
 	
+	case s_ATTACKING:
+		input[SPRINT] = 1;
+	break;
+	
 	case s_DEAD:
 		// set a timer up. We'll be dying for 30 frames
 		stateVar[0] = 30;

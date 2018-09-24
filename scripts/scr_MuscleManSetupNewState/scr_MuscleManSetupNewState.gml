@@ -7,6 +7,7 @@ switch(currentState) {
 	case s_MOVING:
 		sprite_index = spr_MuscleMan;
 		image_index = 0;
+		input[moveDirOnRestart] = 1;
 	break;
 
 	case s_HIT:

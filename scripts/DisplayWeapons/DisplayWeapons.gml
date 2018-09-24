@@ -16,6 +16,12 @@ var startY = GRID_Y * yGrid;
 var endX = GRID_X * (xGrid + 2);
 var endY = GRID_Y * (yGrid + 2);
 
+if(!instance_exists(obj_skater))
+{
+	return;
+}
+
+
 weapon = obj_skater.currentWeapon;
 if(weapon != noone) {
 	

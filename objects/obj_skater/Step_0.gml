@@ -3,6 +3,9 @@
 
 
 // Clear the vertical movement flag to ensure we don't update the skater's y position more than once
+if(newRoom) {
+	scr_NewRoom();
+}
 verticalMovementRun = false;
 frameTimer++;
 

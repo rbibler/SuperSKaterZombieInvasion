@@ -551,6 +551,14 @@
             }
         },
         {
+            "Key": "2aa7644a-42e0-4a8d-9834-dce36f7f16d5",
+            "Value": {
+                "id": "9f20ca9a-9967-46a6-a27c-ae11625d3197",
+                "resourcePath": "scripts\\scr_ShouldChaseSkater\\scr_ShouldChaseSkater.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2b3f7dcb-da90-4fed-9d22-f164f5ecf091",
             "Value": {
                 "id": "fa40423b-1d26-4074-8747-30c7c2045cb8",
@@ -660,6 +668,14 @@
                 "id": "64b7d91d-cc61-48b9-847c-3f7107ec739b",
                 "resourcePath": "objects\\obj_zombieSacker\\obj_zombieSacker.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "379fe01b-29b2-4f77-a7be-6148b9f501bf",
+            "Value": {
+                "id": "bd656c37-1954-4ca5-9875-4a05430f2280",
+                "resourcePath": "scripts\\scr_NewRoom\\scr_NewRoom.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1311,6 +1327,14 @@
             }
         },
         {
+            "Key": "77f73049-2bf5-4636-818c-8694922c7c8f",
+            "Value": {
+                "id": "576c068a-7c07-4165-968a-64e3e5541b19",
+                "resourcePath": "scripts\\scr_GetCollisionTiles\\scr_GetCollisionTiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "78b53363-b329-4c95-8fbe-e47b85d82116",
             "Value": {
                 "id": "20e4a6b0-1efc-45ba-84e9-0bcd73f175ca",
@@ -1543,6 +1567,14 @@
             }
         },
         {
+            "Key": "8a8953cc-f30b-4b36-afc3-0b3385f93c47",
+            "Value": {
+                "id": "66e64c53-cc13-49f9-a33f-c2794ad26adf",
+                "resourcePath": "sprites\\spr_SkaterSpawnPoint\\spr_SkaterSpawnPoint.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8b2664bb-7445-4618-b912-b0d5a1c15985",
             "Value": {
                 "id": "f7e54a79-ed89-4282-91e3-cf70989baecb",
@@ -1719,6 +1751,14 @@
             }
         },
         {
+            "Key": "96ac1ae0-3356-4059-96cb-cea4979f1946",
+            "Value": {
+                "id": "3e6e661f-b504-43f4-8b31-a7f639ab3502",
+                "resourcePath": "rooms\\rm_init\\rm_init.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "96d4bd6c-5188-462f-98d3-9448e146a319",
             "Value": {
                 "id": "e0cf7a15-b937-4136-9cde-293ccd163cb4",
@@ -1802,7 +1842,7 @@
             "Key": "a0a0f345-d037-4fe7-a6b8-3edde0b4f7f5",
             "Value": {
                 "id": "107abbc7-6238-4eb9-a26e-996a89a43254",
-                "resourcePath": "scripts\\scr_EnemyHorizontalImpetus\\scr_EnemyHorizontalImpetus.yy",
+                "resourcePath": "scripts\\scr_EnemyMovement\\scr_EnemyMovement.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1898,7 +1938,7 @@
             "Key": "a5cb3d2b-fa5a-48ba-bc09-e400876cbaee",
             "Value": {
                 "id": "b976c800-ff22-45c3-b701-0d66866668b7",
-                "resourcePath": "rooms\\rm_world1_level1\\rm_world1_level1.yy",
+                "resourcePath": "rooms\\rm_world1_level1a\\rm_world1_level1a.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -2439,6 +2479,14 @@
             }
         },
         {
+            "Key": "cc046e67-48a4-4615-a641-e34d74b040a4",
+            "Value": {
+                "id": "5eb2badf-48c2-4ba5-b74e-aab5779f3f8e",
+                "resourcePath": "objects\\obj_skaterSpawn\\obj_skaterSpawn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "2f973524-e277-489e-aa12-3777e1225f00",
@@ -2575,6 +2623,22 @@
             }
         },
         {
+            "Key": "dc2643fc-c1bb-4ced-afcf-161cd1b690e1",
+            "Value": {
+                "id": "27503fca-d803-4951-852f-964102d02519",
+                "resourcePath": "objects\\obj_RoomTransistion\\obj_RoomTransistion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dc48e41c-6a31-4b95-ab9a-9fdb07ee52bd",
+            "Value": {
+                "id": "3bed8572-7dd4-4cba-b6e2-8d75eb1bcc7e",
+                "resourcePath": "rooms\\rm_world1_level1b\\rm_world1_level1b.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "dc828dcf-d28e-4570-b55a-2a178d1d4cb7",
             "Value": {
                 "id": "5a0abe9d-25d2-428b-8c22-5c6eca169dff",
@@ -2603,6 +2667,14 @@
             "Value": {
                 "id": "448245e4-3d35-4aca-95f6-d695c3e379ec",
                 "resourcePath": "scripts\\SkaterStateDead\\SkaterStateDead.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e00b7624-8567-46c6-87e3-d17680a49566",
+            "Value": {
+                "id": "1fe67468-8232-40ef-9505-da7844861b7d",
+                "resourcePath": "scripts\\scr_NextRoom\\scr_NextRoom.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2982,6 +3054,7 @@
         "2b3f7dcb-da90-4fed-9d22-f164f5ecf091",
         "2386e240-ad8a-4091-9d25-edcf06644b62",
         "a58ceede-3984-414c-ad51-6b0b8629bf8b",
+        "379fe01b-29b2-4f77-a7be-6148b9f501bf",
         "05416d16-822a-4469-ae10-af8f2c717d01",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
@@ -3006,6 +3079,7 @@
         "2a5a57dc-bd28-4910-b999-debf332897d2",
         "023ca213-0a62-4607-8da7-07e9566ca2be",
         "73f289cf-3c7a-4a54-b8b2-178031b69eb0",
+        "2aa7644a-42e0-4a8d-9834-dce36f7f16d5",
         "b936d745-8572-4971-be7a-681239abfba1",
         "8e3c750a-425d-4f17-a320-b959a0a58294",
         "c1205fd3-60e1-42a4-b3ef-8a364297fa66",
@@ -3091,7 +3165,9 @@
         "cea7167f-e163-492a-ba85-e62e5acd0714",
         "56eb3467-2fe0-49cf-9425-fbaf74386c6b",
         "3d25c3d6-f74b-4126-b661-f51583543d8d",
-        "75db0baa-a778-480d-b74d-de4b426a3940"
+        "75db0baa-a778-480d-b74d-de4b426a3940",
+        "e00b7624-8567-46c6-87e3-d17680a49566",
+        "77f73049-2bf5-4636-818c-8694922c7c8f"
     ],
     "tutorial": ""
 }

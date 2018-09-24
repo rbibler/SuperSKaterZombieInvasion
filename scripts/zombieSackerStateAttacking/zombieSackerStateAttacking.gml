@@ -75,6 +75,6 @@ switch(stateVar[1]) {
 	break;
 }
 
-scr_EnemyHorizontalImpetus();
+scr_EnemyMovement();
 MoveAndCollide();
 

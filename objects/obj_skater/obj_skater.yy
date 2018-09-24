@@ -83,7 +83,7 @@
         }
     ],
     "parentObjectId": "ed14a131-953f-411a-8370-232b4492166c",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
