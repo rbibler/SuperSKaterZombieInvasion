@@ -1,8 +1,8 @@
 {
-    "id": "1271fe5c-3e0f-4bf1-8b90-be1263f0c213",
+    "id": "6f7dc870-6862-4328-93cc-448c040e0f5d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "explodeblockStateExplodingScript",
+    "name": "scr_ExplodingBlockNewState",
     "IsCompatibility": false,
     "IsDnD": false
 }

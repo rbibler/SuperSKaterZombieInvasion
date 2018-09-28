@@ -47,6 +47,8 @@ inputDownTime[JUMP] = 0;
 
 inputPressTime[SHOOT] = 0;
 
+rampBoostY = 3;
+rampBoostX = 1.5;
 //animIndex[IDLE] = 0;
 //animIndex[SKATING] = 0;
 

@@ -32,5 +32,10 @@
 #macro GRID_X	8
 #macro GRID_Y	8
 
+enum ANIMATION {
+
+	NORMAL = 60 / 5
+}
+
 
 

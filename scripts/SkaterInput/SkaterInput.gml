@@ -28,7 +28,6 @@ if(obj_persistent.gamepad != -1) {
 	input[START] = keyboard_check(vk_enter);
 	input[SHOOT] = keyboard_check(ord("A"));
 	input[JUMP] = keyboard_check(ord("S"));
-	show_debug_message("CHECKING Input jump?: " + string(input[JUMP]));
 	
 }
 

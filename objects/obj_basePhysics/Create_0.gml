@@ -18,6 +18,8 @@ ySpeed = 0;
 ySpeedFraction = 0
 ySpeedFinal = 0;
 carrySpeedY = 0;
+yMomentum = 0;
+lastY = ystart;
 
 onSlope = false;
 verticalMovementRun = false;
@@ -44,6 +46,10 @@ groundedLeft = false;
 wasGrounded = false;
 wasGroundedRight = false;
 wasGroundedLeft = false;
+
+inFloorCenter = 0;
+inFloorLeft = 0;
+inFloorRight = 0;
 
 scr_GetCollisionTiles();
 

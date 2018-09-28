@@ -11,6 +11,10 @@ if(stateNew) {
 	sprite_index = spr_SkaterJump;
 
 	ySpeed = jumpSpeed;
+	if(scr_IsOnRampBoostTile()) {
+		ySpeed -= rampBoostY;
+		xSpeed += (rampBoostX * sign(myDirection));
+	}
 	ySpeedFraction = 0;
 	// Set flag so we know the skater is jumping
 	jump = 1;

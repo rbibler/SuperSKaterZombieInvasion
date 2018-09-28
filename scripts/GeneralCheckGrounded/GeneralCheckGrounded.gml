@@ -2,9 +2,9 @@
 onSlope = false;
 
 // Check to see if the player is grounded at the start of the frame
-var inFloorCenter = GeneralInFloor(collisionTiles, x, bbox_bottom + 1);
-var inFloorLeft = GeneralInFloor(collisionTiles, bbox_left, bbox_bottom + 1);
-var inFloorRight = GeneralInFloor(collisionTiles, bbox_right, bbox_bottom + 1);
+inFloorCenter = GeneralInFloor(collisionTiles, x, bbox_bottom + 1);
+inFloorLeft = GeneralInFloor(collisionTiles, bbox_left, bbox_bottom + 1);
+inFloorRight = GeneralInFloor(collisionTiles, bbox_right, bbox_bottom + 1);
 
 // Player is grounded if bottom or bottom corner points are touching or more than one pixel 
 // into the ground

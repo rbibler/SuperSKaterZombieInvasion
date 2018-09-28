@@ -1,7 +1,9 @@
 // Figure out the fractional movement so that we're always working with integers
 GeneralMovementFractions();
 
-// Check all possible collisions
-GeneralHorizontalCollisionCheck();
-GeneralVerticalCollisionCheck();
+if(noCollisions == false) {
+	// Check all possible collisions
+	GeneralHorizontalCollisionCheck();
+	GeneralVerticalCollisionCheck();
+}
 

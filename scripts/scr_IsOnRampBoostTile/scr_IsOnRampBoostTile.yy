@@ -1,8 +1,8 @@
 {
-    "id": "4fdb39db-88c3-458e-816f-ab7fa5a38400",
+    "id": "a27feaff-44f9-44fb-bbbd-18d5a4fa0795",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "explodingBlockStateIdleScript",
+    "name": "scr_IsOnRampBoostTile",
     "IsCompatibility": false,
     "IsDnD": false
 }

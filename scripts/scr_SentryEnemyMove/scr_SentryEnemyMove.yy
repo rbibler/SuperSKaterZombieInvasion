@@ -1,8 +1,8 @@
 {
-    "id": "8c478a3d-598f-47e1-9ace-a11595831016",
+    "id": "96165f85-66d3-457d-90df-c49ef55eb43d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "explodeblockStateIdleScript",
+    "name": "scr_SentryEnemyMove",
     "IsCompatibility": false,
     "IsDnD": false
 }

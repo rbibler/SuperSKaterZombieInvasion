@@ -81,31 +81,47 @@
             "value": "0"
         },
         {
-            "id": "afc12b82-9388-4578-ab02-b9897855317c",
+            "id": "976a442d-b71b-46e8-ad22-41fc9228b798",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "bd3fe793-2816-4b49-94e6-b3e0644b239e",
-            "value": "explodeblockStateIdleScript"
+            "propertyId": "405731c1-f231-47e3-b413-81e74de01247",
+            "value": "scr_ExplodingBlockNewState"
         },
         {
-            "id": "58c71bfa-bdf2-4114-8df3-a4173955fb15",
+            "id": "30da1cc0-076b-4466-bb54-bf50e99f77c3",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "d0382f87-f416-4c30-a2d4-4ade8290f50e",
-            "value": "explodeblockStateExplodingScript"
+            "propertyId": "6437486c-70ed-475a-a901-6d6545a33095",
+            "value": "scr_ExplodingBlockAnimate"
         },
         {
-            "id": "24739adb-c283-4f71-a808-f556d27823f2",
+            "id": "64dbb809-7676-4ac7-9f10-6f218a73ab8b",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
-            "value": "explodeBlockStateDrippingScript"
+            "propertyId": "39b3545d-1cc5-44df-89ae-2d8e8c1eb118",
+            "value": "scr_ExplodingBlockCheckStateChange"
+        },
+        {
+            "id": "bdb0521b-d18a-4550-b88b-e7ba97f78ec1",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "138ccacc-953b-4564-9ce4-6ba18358b2e7",
+            "value": "True"
+        },
+        {
+            "id": "d3fbb3e3-d411-4da3-bef6-071cec379492",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "d890f8ba-bb49-4d71-9adc-6e7acf028b47",
+            "value": "250"
         }
     ],
-    "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+    "parentObjectId": "29f06f95-3599-467a-8c1b-0011227dfc7d",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
