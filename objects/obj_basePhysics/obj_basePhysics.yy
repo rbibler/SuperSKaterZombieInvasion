@@ -199,6 +199,20 @@
             "value": "False",
             "varName": "noCollisions",
             "varType": 3
+        },
+        {
+            "id": "a3a9b21a-607a-4c3b-9eaf-d1d147524e2a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3.5",
+            "varName": "maxSpeedX",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_ramp",
     "eventList": [
-        
+        {
+            "id": "824a5ad8-188a-44ba-9387-33f2b03ce42e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "73071507-fcfd-4835-a0cf-5156b30ac767"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -22,7 +31,50 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "ab3b0912-a6c7-4183-a0ba-04fbb4a27070",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "RIGHT",
+            "varName": "rampDirection",
+            "varType": 0
+        },
+        {
+            "id": "b1af1f8d-eb02-4236-b12f-d553244f58bf",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1.5",
+            "varName": "rampImpulseX",
+            "varType": 0
+        },
+        {
+            "id": "283bf069-86f8-485a-92d0-ca16dfaab3c0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3",
+            "varName": "rampImpulseY",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "dbaae390-1329-43a5-8f7f-2d3c8db947d0",
     "visible": false
