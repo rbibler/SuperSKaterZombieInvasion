@@ -35,6 +35,7 @@ switch(currentState)
 		
 		// Reset this flag
 		stateVar[0] = 0;
+		ZeroInputs();
 	break;
 
 	case s_DEAD:
@@ -42,9 +43,8 @@ switch(currentState)
 		stateVar[0] = 30;
 		
 		// Can't move, we're dying
-		xSpeed = 0;
-		ySpeed = 0;
-		xSpeedFraction = 0;
-		ySpeedFraction = 0;
+		StopXMotion();
+		StopYMotion();
+		ZeroInputs();
 	break;
 }

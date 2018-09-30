@@ -265,6 +265,20 @@
             "varType": 5
         },
         {
+            "id": "3d2d4671-9b58-4530-bcbf-d483952e5d7c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "scr_EnemyMenacing",
+            "varName": "stateMenacingScript",
+            "varType": 5
+        },
+        {
             "id": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

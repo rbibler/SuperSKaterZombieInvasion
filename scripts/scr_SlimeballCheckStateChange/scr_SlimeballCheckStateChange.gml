@@ -29,9 +29,9 @@ switch(currentState)
 	break;
 	
 	case s_JUMPING:
-		if(grounded and stateVar[0]) {
-			stateSwitch(s_MOVING);
-		}	
+		if(ySpeed > 0) {
+			stateSwitch(s_FALLING);
+		}
 	break;
 	case s_HIT:
 		// If we're back on the ground, we can switch back to moving state after a pause

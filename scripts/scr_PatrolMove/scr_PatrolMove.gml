@@ -1,4 +1,7 @@
 // Super simple movement script. If you hit an edge, turn around
+if(stateName == s_JUMPING) {
+	return;
+}
 if(input[RIGHT]) {
 	if(!groundedRight and wasGroundedRight and !onSlope) {
 		input[RIGHT] = 0;
