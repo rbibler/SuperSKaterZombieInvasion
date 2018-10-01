@@ -26,7 +26,7 @@ weapon = obj_skater.currentWeapon;
 if(weapon != noone) {
 	
 	switch(weapon.object_index) {
-		case obj_slingshot:
+		case obj_Slingshot:
 			spriteIndex = spr_hud_slingshot;
 			break;
 	}

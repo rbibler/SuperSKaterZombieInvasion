@@ -351,14 +351,6 @@
             }
         },
         {
-            "Key": "1c1d0c2a-6461-45ca-bab7-0f58989937b9",
-            "Value": {
-                "id": "e2df6901-6da1-4a08-82d2-3f4d49e64300",
-                "resourcePath": "scripts\\SlingshotShootSequenceScript\\SlingshotShootSequenceScript.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "1c35ff7a-f96a-41db-9a78-5994b27b07c7",
             "Value": {
                 "id": "f5e475b3-cbe7-4b50-ab9d-318500ad29be",
@@ -596,6 +588,14 @@
                 "id": "b17f6ac1-7cd7-4622-b03a-df2cccc7d86e",
                 "resourcePath": "scripts\\GeneralHorizontalMovement\\GeneralHorizontalMovement.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2dfad59e-afea-40a8-b8d1-d58564acfe0b",
+            "Value": {
+                "id": "ca23a110-45e4-47e4-ba9c-c7ae2c0c09b2",
+                "resourcePath": "sprites\\spr_boardHigh\\spr_boardHigh.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1066,7 +1066,7 @@
             "Key": "565a1870-9fa6-4740-ae55-f8647e7b7ad1",
             "Value": {
                 "id": "0e3f2812-7397-4d6b-80f0-0a3aa1d3bb69",
-                "resourcePath": "scripts\\BoardswingShootSequenceScript\\BoardswingShootSequenceScript.yy",
+                "resourcePath": "scripts\\scr_CanShootWeapon\\scr_CanShootWeapon.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1108,6 +1108,14 @@
                 "id": "5ead8048-7808-4a38-a7ef-fc0a08dc974a",
                 "resourcePath": "views\\5ab0467a-5db7-4a50-9b92-5f4b74aed0a4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5b28402d-6340-4fc0-ab17-ab018cc81a62",
+            "Value": {
+                "id": "ad89df6f-75ad-4446-ac65-cc36693fdafe",
+                "resourcePath": "sprites\\spr_SkaterIdlePowerPush\\spr_SkaterIdlePowerPush.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1215,6 +1223,14 @@
             }
         },
         {
+            "Key": "6aab2f68-a6d9-4e57-ad58-7f108146993e",
+            "Value": {
+                "id": "877adcc7-1b8b-4fb1-99a7-47e029320df9",
+                "resourcePath": "scripts\\scr_SkaterWeaponFire\\scr_SkaterWeaponFire.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6b572943-7483-43c2-acc3-5013d63bb52f",
             "Value": {
                 "id": "79498584-c2ce-425c-8a04-55779913da01",
@@ -1242,7 +1258,7 @@
             "Key": "6e59ce6e-6bb6-4bf2-9161-fa33e3c6b9e9",
             "Value": {
                 "id": "77228c7a-c8f7-4d13-acff-79da6c7126cc",
-                "resourcePath": "sprites\\spr_board\\spr_board.yy",
+                "resourcePath": "sprites\\spr_boardLow\\spr_boardLow.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1372,6 +1388,14 @@
                 "id": "e47e4f2a-0213-470e-ad03-8f080223ee7e",
                 "resourcePath": "scripts\\zombieSackerStateMovingScript\\zombieSackerStateMovingScript.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7afe6fe4-8748-42f9-80a3-dd5015e053f9",
+            "Value": {
+                "id": "52b51714-a54f-4d04-8781-23c944e4e4c9",
+                "resourcePath": "sprites\\spr_PowerPushPulse\\spr_PowerPushPulse.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1554,7 +1578,7 @@
             "Key": "87dffe7f-4cfc-4081-91e6-876387b29fb9",
             "Value": {
                 "id": "3c0f5668-965d-44bd-b822-ac110b232580",
-                "resourcePath": "objects\\obj_boardSwing\\obj_boardSwing.yy",
+                "resourcePath": "objects\\obj_BoardPowerPush\\obj_BoardPowerPush.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1602,7 +1626,7 @@
             "Key": "8b2664bb-7445-4618-b912-b0d5a1c15985",
             "Value": {
                 "id": "f7e54a79-ed89-4282-91e3-cf70989baecb",
-                "resourcePath": "objects\\obj_slingshot\\obj_slingshot.yy",
+                "resourcePath": "objects\\obj_Slingshot\\obj_Slingshot.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1943,19 +1967,19 @@
             }
         },
         {
-            "Key": "a3ddc4af-3851-43fc-a526-6a154e47dd54",
-            "Value": {
-                "id": "801b624f-3e20-4648-8ae4-0ed86edbad17",
-                "resourcePath": "sprites\\spr_SkaterBoardswing\\spr_SkaterBoardswing.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "a449974b-bbd2-40c2-9a31-9087bf20c7b8",
             "Value": {
                 "id": "72fe355e-0bbf-4fff-9a6e-cbb857b2aa51",
                 "resourcePath": "sprites\\spr_enemyGull\\spr_enemyGull.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a49623f1-8be0-43e7-8211-537a19a61242",
+            "Value": {
+                "id": "481cb90b-04c6-44cf-909c-712d1b42237e",
+                "resourcePath": "scripts\\scr_BoardPowerPushFire\\scr_BoardPowerPushFire.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2903,6 +2927,14 @@
             }
         },
         {
+            "Key": "f368a66e-256e-479f-8a83-638b9faa6ccf",
+            "Value": {
+                "id": "eaa631ff-7414-42be-a0ab-a89844d3f102",
+                "resourcePath": "sprites\\spr_SkaterSkatePowerPush\\spr_SkaterSkatePowerPush.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f36eb160-4f09-4add-a592-8eeaf5d1bb68",
             "Value": {
                 "id": "d2d9901f-f6af-4477-97fe-5fc8eb5af85e",
@@ -3076,9 +3108,9 @@
         "968056c2-5455-459d-96e8-e424336b6087",
         "624705c6-2dea-495d-bdfd-c500759ede72",
         "074cd29b-6396-41f4-a6fb-9568319402f2",
-        "1c1d0c2a-6461-45ca-bab7-0f58989937b9",
         "565a1870-9fa6-4740-ae55-f8647e7b7ad1",
         "fd3831c5-7d75-401d-94ad-b7aa637dd09d",
+        "a49623f1-8be0-43e7-8211-537a19a61242",
         "f0aad53f-9c2e-45f9-820b-5d8e58cb54e1",
         "56aade88-259d-4fb7-8097-021b1bab6a74",
         "fd9dd186-7e7e-496f-846a-2fa7620db0f5",
@@ -3104,6 +3136,7 @@
         "a58ceede-3984-414c-ad51-6b0b8629bf8b",
         "379fe01b-29b2-4f77-a7be-6148b9f501bf",
         "a27feaff-44f9-44fb-bbbd-18d5a4fa0795",
+        "6aab2f68-a6d9-4e57-ad58-7f108146993e",
         "05416d16-822a-4469-ae10-af8f2c717d01",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",

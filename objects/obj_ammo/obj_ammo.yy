@@ -66,7 +66,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "obj_slingshot",
+            "value": "obj_Slingshot",
             "varName": "ammoParent",
             "varType": 5
         },

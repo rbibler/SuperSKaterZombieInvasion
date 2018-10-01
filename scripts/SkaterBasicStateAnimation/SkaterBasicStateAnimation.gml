@@ -5,7 +5,7 @@ if(weaponAnimCounter > 0) {
 	var weaponSprite = SkaterGetWeaponSprite(state, currentWeapon);
 	if(sprite_index != weaponSprite) {
 		sprite_index = weaponSprite;
-		image_index = 0;
+		//image_index = 0;
 	}
 }
 

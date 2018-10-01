@@ -2,7 +2,7 @@
     "id": "8b2664bb-7445-4618-b912-b0d5a1c15985",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_slingshot",
+    "name": "obj_Slingshot",
     "eventList": [
         {
             "id": "66438330-0416-4a3c-b322-384f98a68408",

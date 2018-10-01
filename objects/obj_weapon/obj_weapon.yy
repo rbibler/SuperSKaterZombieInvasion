@@ -251,20 +251,6 @@
             "value": "False",
             "varName": "freezeSkater",
             "varType": 3
-        },
-        {
-            "id": "3b570c7d-3c11-4daa-bd7c-2ce1db627e43",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "shootSequenceScript",
-            "varType": 5
         }
     ],
     "solid": false,

@@ -37,7 +37,7 @@ with(weapon) {
 			
 		} else if(ammoCount == 0) {
 			with(obj_skater) {
-				PickupWeapon(obj_boardSwing);
+				PickupWeapon(obj_BoardPowerPush);
 			}
 		}
 	}

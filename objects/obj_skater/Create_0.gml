@@ -47,10 +47,6 @@ inputDownTime[JUMP] = 0;
 
 inputPressTime[SHOOT] = 0;
 
-rampBoostY = 3;
-rampBoostX = 1.5;
-//animIndex[IDLE] = 0;
-//animIndex[SKATING] = 0;
 
 tileColliderX = 0;
 tileColliderY = 0;
@@ -65,7 +61,7 @@ for(var i = 0; i < 8; i++) {
 currentWeapon = noone;
 currentPowerup = noone;
 weaponAnimCounter = 0;
-PickupWeapon(obj_boardSwing);
+PickupWeapon(obj_BoardPowerPush);
 
 // Reset the timer for the idle animation
 alarm[0] = 60 * 4;

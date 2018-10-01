@@ -7,7 +7,7 @@ if(state == stateHit or state == stateDead) {
 	return;
 }
 
-if(other.sprite_index != spr_SkaterBoardswing) {
+if(other.sprite_index != spr_SkaterSkatePowerPush) {
 	with(other) {
 		SkaterHit(other);
 	}

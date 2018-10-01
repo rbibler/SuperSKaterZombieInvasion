@@ -18,13 +18,7 @@ if(stateNew) {
 	stateVar[2] = false;
 }
 
-// Check if we should fire a weapon
-if(currentWeapon != noone and script_exists(currentWeapon.shootSequenceScript)) {
-	var shootNow = script_execute(currentWeapon.shootSequenceScript); 
-	if(shootNow) {
-		script_execute(currentWeapon.fireScript, currentWeapon, false);
-	}
-}
+scr_SkaterWeaponFire();
 
 // If enough time has passed to start the animation idle thing do it.
 // stateVar[0] = time in steps between idle animation cycles
