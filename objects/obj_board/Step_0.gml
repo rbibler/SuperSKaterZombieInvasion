@@ -16,5 +16,6 @@ if(image_index >= image_number) {
 		ammoOnScreen--;
 	}
 	instance_destroy();
+	obj_skater.ignoreInput = false;
 }
 

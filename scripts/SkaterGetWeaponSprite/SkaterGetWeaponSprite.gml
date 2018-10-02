@@ -11,7 +11,7 @@ switch(state) {
 			case obj_Slingshot:
 				return spr_SkaterIdleSlingshot;
 			case obj_BoardPowerPush:
-				return spr_SkaterIdlePowerPush;	
+				return spr_SkaterPowerPush;	
 		}
 	break;
 	case skateState:
@@ -19,7 +19,7 @@ switch(state) {
 			case obj_Slingshot:
 				return spr_SkaterSkateSlingshot;
 			case obj_BoardPowerPush:
-				return spr_SkaterSkatePowerPush;
+				return spr_SkaterPowerPush;	
 		}
 	break;
 	case jumpState:
@@ -27,7 +27,7 @@ switch(state) {
 			case obj_Slingshot:
 				return spr_SkaterJumpSlingshot;
 			case obj_BoardPowerPush:
-				return spr_SkaterBoardswing;	
+				return spr_SkaterPowerPush;		
 		}
 	break;
 	case bounceState:
@@ -35,7 +35,7 @@ switch(state) {
 			case obj_Slingshot:
 				return spr_SkaterJumpSlingshot;
 			case obj_BoardPowerPush:
-				return spr_SkaterBoardswing;	
+				return spr_SkaterPowerPush;	
 		}
 	break;
 	case crouchState:
@@ -57,7 +57,7 @@ switch(state) {
 			case obj_Slingshot:
 				return spr_SkaterJumpSlingshot;
 			case obj_BoardPowerPush:
-				return spr_SkaterBoardswing;	
+				return spr_SkaterPowerPush;		
 		}
 	break;
 	case rollingState:
@@ -65,7 +65,7 @@ switch(state) {
 			case obj_Slingshot:
 				return spr_SkaterIdleSlingshot;
 			case obj_BoardPowerPush:
-				return spr_SkaterBoardswing;
+				return spr_SkaterPowerPush;	
 		}
 	break;
 }

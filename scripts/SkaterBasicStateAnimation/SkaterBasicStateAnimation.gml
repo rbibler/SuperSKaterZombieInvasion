@@ -15,6 +15,7 @@ if(stateTimer mod (60 / 5) == 0) {
 		image_index++;
 		weaponAnimCounter--;
 		if(weaponAnimCounter <= 0) {
+			ignoreInput = false;
 			switch(state) {
 				case skateState:
 					sprite_index = spr_SkaterSkate;

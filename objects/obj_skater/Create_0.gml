@@ -3,6 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
+ignoreInput = false;
 num = 0;
 newRoom = false;
 /// @description Insert description here

@@ -1114,7 +1114,7 @@
             "Key": "5b28402d-6340-4fc0-ab17-ab018cc81a62",
             "Value": {
                 "id": "ad89df6f-75ad-4446-ac65-cc36693fdafe",
-                "resourcePath": "sprites\\spr_SkaterIdlePowerPush\\spr_SkaterIdlePowerPush.yy",
+                "resourcePath": "sprites\\spr_SkaterPowerPush\\spr_SkaterPowerPush.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2924,14 +2924,6 @@
                 "id": "26e6110d-ff9a-4b3b-9e3a-5911cbe85e46",
                 "resourcePath": "views\\f2650efe-2817-4182-8ffc-6352b78db421.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "f368a66e-256e-479f-8a83-638b9faa6ccf",
-            "Value": {
-                "id": "eaa631ff-7414-42be-a0ab-a89844d3f102",
-                "resourcePath": "sprites\\spr_SkaterSkatePowerPush\\spr_SkaterSkatePowerPush.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

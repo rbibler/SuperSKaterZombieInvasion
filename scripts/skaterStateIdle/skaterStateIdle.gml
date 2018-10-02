@@ -31,15 +31,16 @@ if(weaponAnimCounter > 0) {
 	var weaponSprite = SkaterGetWeaponSprite(state, currentWeapon);
 	if(sprite_index != weaponSprite) {
 		sprite_index = weaponSprite;
-		image_index = 0;
+		//image_index = 0;
 	}
 }
 	
-if(stateTimer mod (60 / 5) == 0) {
+if(stateTimer > 0 and stateTimer mod (60 / 5) == 0) {
 	if(weaponAnimCounter > 0) {
 		image_index++;
 		weaponAnimCounter--;
 		if(weaponAnimCounter <= 0) {
+			ignoreInput = false;
 			sprite_index = spr_SkaterIdle;
 			image_index = 0;
 		}

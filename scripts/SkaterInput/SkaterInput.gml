@@ -2,7 +2,7 @@
 
 // Check to see if a gamepad is connected and use that
 
-if(state == knockedBackState) {
+if(state == knockedBackState or ignoreInput == true) {
 	input[LEFT] = 0;
 	input[RIGHT] = 0;
 	return;
