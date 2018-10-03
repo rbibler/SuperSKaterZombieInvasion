@@ -7,7 +7,7 @@ if(state == stateHit or state == stateDead) {
 	return;
 }
 
-if(other.sprite_index != spr_SkaterSkatePowerPush) {
+if(other.hasWeaponImmunity == false) {
 	with(other) {
 		SkaterHit(other);
 	}

@@ -16,20 +16,12 @@ with(weapon) {
 			ammo.weaponParent = weapon;
 			other.weaponAnimCounter = weaponAnimCount;
 			didFire = true;
-			//if(crouchingFlag) {
-				//ammo.sprite_index = spr_boardLow;
-			//} else {
-			//	ammo.sprite_index = spr_boardHigh;
-			//}
 		} 
 	}
 }
 
 if(didFire) {
-	ignoreInput = true;
 	image_index = 0;
 	stateTimer = 0;
-	if(grounded) {
-		StopXMotion();
-	}
+	hasWeaponImmunity = true;
 }
