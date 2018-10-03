@@ -43,21 +43,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "2.5",
-            "varName": "normalSpeedX",
-            "varType": 0
-        },
-        {
-            "id": "869d67b1-2cd3-4240-871c-7c2126ef5a73",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "3.5",
-            "varName": "sprintSpeedX",
+            "varName": "speedX",
             "varType": 0
         },
         {

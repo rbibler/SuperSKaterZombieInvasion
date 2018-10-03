@@ -1,5 +1,5 @@
 // Determine if skater is sprinting or not
-var speedThisFrame = input[SHOOT] ? sprintSpeedX : normalSpeedX
+var speedThisFrame = speedX
 
 if(input[LEFT]) {
 	if(!input[RIGHT] and !input[DOWN]) {
@@ -27,13 +27,9 @@ GeneralCheckSlopeImpetus();
 var maxSpeed = speedThisFrame;
 if(onSlope) {
 	if(input[LEFT] or input[RIGHT]) {
-		if(input[SHOOT]) {
-			maxSpeed = sprintSpeedX;
-		} else {
-			maxSpeed = normalSpeedX;
-		}
+		maxSpeed = speedX;
 	} else {
-		maxSpeed = normalSpeedX;
+		maxSpeed = speedX;
 	}
 }
 

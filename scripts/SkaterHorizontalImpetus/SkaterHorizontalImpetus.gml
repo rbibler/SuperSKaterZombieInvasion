@@ -5,11 +5,8 @@ if(tileId > 5 and sign(xSpeed) == sign(lastXSpeed)) {
 }
 
 
-var speedThisFrame = input[SHOOT] ? sprintSpeedX : normalSpeedX;
+var speedThisFrame = speedX;
 var accel = 0.25;
-if(input[SHOOT]) {
-	accel = 0.35;
-} 
 if(onSlope and ((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0))) {
 	accel = 0.75;
 }
@@ -46,11 +43,7 @@ GeneralCheckSlopeImpetus();
 var maxSpeed = speedThisFrame;
 if(onSlope) {
 	if(input[LEFT] or input[RIGHT]) {
-		if(input[SHOOT]) {
-			maxSpeed = 6;
-		} else {
-			maxSpeed = 5;
-		}
+		maxSpeed = 5;
 	} else {
 		maxSpeed = 4;
 	}
