@@ -76,14 +76,6 @@
             "value": "0.5"
         },
         {
-            "id": "8cda8977-0e6a-42e0-a386-3bc4f4de730c",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "a869a8af-a993-4e2c-8f19-4cad0d4179e8",
-            "value": "-8"
-        },
-        {
             "id": "d2273404-6d7f-4565-97e0-b894c1b703a2",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -138,14 +130,6 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "6f8ebc97-0ffa-41f3-a633-c5360e58cc06",
             "value": "MOVING"
-        },
-        {
-            "id": "3fc0f391-cdc7-43c2-af93-d09b8f09bc90",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "367e0b56-719a-4b47-ad4d-2571ee18528c",
-            "value": "100"
         },
         {
             "id": "f37911ef-0b46-4b84-92fe-04576edf8062",

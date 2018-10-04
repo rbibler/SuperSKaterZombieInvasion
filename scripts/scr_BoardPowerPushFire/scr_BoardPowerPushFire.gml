@@ -15,6 +15,7 @@ with(weapon) {
 			var ammo = instance_create_layer(obj_skater.x, obj_skater.y, "AMMO", obj_PowerPushBall);
 			ammo.weaponParent = weapon;
 			ammo.ammoDirection = other.myDirection;
+			ammo.image_xscale = ammo.ammoDirection;
 			other.weaponAnimCounter = weaponAnimCount;
 			didFire = true;
 		} 

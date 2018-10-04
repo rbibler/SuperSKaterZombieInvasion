@@ -54,22 +54,6 @@
             "value": "0.5"
         },
         {
-            "id": "6a117c6e-90ea-45f8-a7b3-b0c8a543de3a",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "367e0b56-719a-4b47-ad4d-2571ee18528c",
-            "value": "12"
-        },
-        {
-            "id": "4e06077f-21d7-4dc5-8bc4-71ee07e0cd93",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "a869a8af-a993-4e2c-8f19-4cad0d4179e8",
-            "value": "-8"
-        },
-        {
             "id": "e990c755-3d00-4093-b244-906b01a89473",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
