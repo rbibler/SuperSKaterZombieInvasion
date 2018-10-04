@@ -2943,6 +2943,14 @@
             }
         },
         {
+            "Key": "f4f938a8-3b4f-43c5-ab9d-c3e931d89cab",
+            "Value": {
+                "id": "b0189a8b-e35e-4cff-9f66-e11a74e27983",
+                "resourcePath": "sprites\\spr_SkaterPowerPushJumping\\spr_SkaterPowerPushJumping.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f53fb2a4-9a68-4afc-b704-6c62660e7e1e",
             "Value": {
                 "id": "800d8c89-7797-42f2-b20d-a7fb0402bed6",

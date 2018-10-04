@@ -12,7 +12,7 @@ if(state != stateDead) {
 		// Nice job player!
 		score += 10;
 	} else if(ammo.object_index == obj_board) {
-		stateSwitch("HIT");
+		stateSwitch("DEAD");
 	}
 }
 
