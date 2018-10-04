@@ -12,8 +12,9 @@ with(weapon) {
 			// Fire the weapon
 			currentCooldownCount = cooldownTime;
 			ammoOnScreen++;
-			var ammo = instance_create_layer(obj_skater.x, obj_skater.y, "AMMO", obj_board);
+			var ammo = instance_create_layer(obj_skater.x, obj_skater.y, "AMMO", obj_PowerPushBall);
 			ammo.weaponParent = weapon;
+			ammo.ammoDirection = other.myDirection;
 			other.weaponAnimCounter = weaponAnimCount;
 			didFire = true;
 		} 

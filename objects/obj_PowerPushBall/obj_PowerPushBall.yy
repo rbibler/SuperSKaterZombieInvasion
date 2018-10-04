@@ -1,24 +1,32 @@
 {
-    "id": "90a4cb3e-65ea-4c43-9d7b-e9d7eb14314c",
+    "id": "442f2bb1-71f2-446e-9d9f-40311f665c78",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_slingshotRock",
+    "name": "obj_PowerPushBall",
     "eventList": [
         {
-            "id": "329124f4-a65d-45b2-81c3-632135b67640",
+            "id": "e723196d-cae7-4518-9847-4ef254530a8d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "90a4cb3e-65ea-4c43-9d7b-e9d7eb14314c"
+            "m_owner": "442f2bb1-71f2-446e-9d9f-40311f665c78"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "a5499ad8-5b06-49d8-ab56-074d80ffb003",
+            "id": "e024b4e5-bb03-4d6b-a1d9-3cbb4933f377",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
+            "propertyId": "41ae2fc1-a00b-4191-9cad-e820d4ddb496",
+            "value": "obj_BoardPowerPush"
+        },
+        {
+            "id": "6d5eff55-f938-42ec-8470-7da6eda2c939",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
@@ -26,15 +34,15 @@
             "value": "120"
         },
         {
-            "id": "38ac0d51-08ff-41ce-81ea-f1dd04019715",
+            "id": "3c150faf-0ade-4654-9d96-b839a25a1d52",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
-            "propertyId": "51495703-9d0c-42ff-a027-821d2b674406",
-            "value": "6"
+            "propertyId": "7403be13-5f5b-4d80-a872-2b6782e9f55f",
+            "value": "scr_ProjectileDestroyScript"
         },
         {
-            "id": "cd679a47-e516-4898-9baa-a10233cf7805",
+            "id": "6890bbb1-5991-43c4-bed2-ba94813f1e9b",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
@@ -42,12 +50,12 @@
             "value": "scr_ProjectileDestroyScript"
         },
         {
-            "id": "149e5ef6-6117-460a-a945-a2e28b0237ca",
+            "id": "4ad0b981-31fd-4fab-9ee5-f52bbfcfa1b8",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
-            "propertyId": "7403be13-5f5b-4d80-a872-2b6782e9f55f",
-            "value": "scr_ProjectileDestroyScript"
+            "propertyId": "51495703-9d0c-42ff-a027-821d2b674406",
+            "value": "6"
         }
     ],
     "parentObjectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
@@ -66,6 +74,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "c03690fb-d377-4567-9aca-17743df96282",
+    "spriteId": "67e0f10a-8061-43a0-8e31-c453f669d198",
     "visible": true
 }

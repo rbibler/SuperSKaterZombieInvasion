@@ -1,23 +1,23 @@
 {
-    "id": "ed14a131-953f-411a-8370-232b4492166c",
+    "id": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_BasePhysics",
+    "name": "obj_CharacterPhysics",
     "eventList": [
         {
-            "id": "f950c472-ffe9-4c1f-b9e2-03005687a3fd",
+            "id": "b9d43938-07da-4547-b9f4-20794685146c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "ed14a131-953f-411a-8370-232b4492166c"
+            "m_owner": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "ed14a131-953f-411a-8370-232b4492166c",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,7 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "fe5f28ae-a0bc-401f-9c51-9691484fdbde",
+            "id": "dead12e9-df50-4b13-b85f-054b78f2cf1f",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -42,12 +42,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2.5",
-            "varName": "speedX",
+            "value": "0",
+            "varName": "jumpFramesAllowance",
             "varType": 0
         },
         {
-            "id": "26abc641-5803-47dd-828b-be5572c23118",
+            "id": "dd9b7051-4f77-4af4-9951-ded320c620b9",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -56,12 +56,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.5",
-            "varName": "standardGravity",
+            "value": "2",
+            "varName": "climbSpeed",
             "varType": 0
         },
         {
-            "id": "df8e548c-8a57-4fb4-9019-4a59a192e20b",
+            "id": "d2076d68-0b30-401c-af69-e1e7331b0585",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -70,12 +70,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.25",
-            "varName": "groundFriction",
+            "value": "-7",
+            "varName": "jumpSpeed",
             "varType": 0
         },
         {
-            "id": "9fac1221-b7dc-4333-a5b1-5259307c4e47",
+            "id": "b4f804ef-faa0-49c8-ada0-387f2682ed8c",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -84,12 +84,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.075",
-            "varName": "slopeFriction",
+            "value": "-15",
+            "varName": "bounceSpeed",
             "varType": 0
         },
         {
-            "id": "e621ea79-5c5f-4c1f-a165-7a3edb236e10",
+            "id": "6f99264f-8f71-492f-bf4d-fe100af69405",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -98,12 +98,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.075",
-            "varName": "airFriction",
-            "varType": 0
+            "value": "noone",
+            "varName": "horizCollisionScript",
+            "varType": 5
         },
         {
-            "id": "a3a9b21a-607a-4c3b-9eaf-d1d147524e2a",
+            "id": "8fdf5ec6-eb3b-4f20-94e7-07fe396ccc99",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -112,9 +112,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "3.5",
-            "varName": "maxSpeedX",
-            "varType": 0
+            "value": "False",
+            "varName": "noCollisions",
+            "varType": 3
         }
     ],
     "solid": false,

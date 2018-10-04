@@ -1,8 +1,8 @@
 {
-    "id": "fd3831c5-7d75-401d-94ad-b7aa637dd09d",
+    "id": "4f3db20f-3a7e-43c1-9ece-439b1943c236",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "SlingshotRockDestroyScript",
+    "name": "scr_ProjectileDestroyScript",
     "IsCompatibility": false,
     "IsDnD": false
 }

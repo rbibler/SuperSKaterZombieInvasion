@@ -607,6 +607,14 @@
             }
         },
         {
+            "Key": "2e7ef3f7-7101-429c-817d-c8924388c76d",
+            "Value": {
+                "id": "1dcf9ceb-c7a6-43d8-bf02-8a44d871f058",
+                "resourcePath": "views\\2e7ef3f7-7101-429c-817d-c8924388c76d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2f5bbd6f-4328-4674-bc5c-10f499e96ec0",
             "Value": {
                 "id": "91cf3d31-ff1f-49b6-ac32-742a6afd8b34",
@@ -823,6 +831,14 @@
             }
         },
         {
+            "Key": "442f2bb1-71f2-446e-9d9f-40311f665c78",
+            "Value": {
+                "id": "40665075-5500-40dc-b836-e0c433e87584",
+                "resourcePath": "objects\\obj_PowerPushBall\\obj_PowerPushBall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "445edee0-4f39-4414-b6a9-c05092520ff4",
             "Value": {
                 "id": "6edacabe-2bf6-4328-a887-7e5c996ec26f",
@@ -951,6 +967,14 @@
             }
         },
         {
+            "Key": "4f3db20f-3a7e-43c1-9ece-439b1943c236",
+            "Value": {
+                "id": "876bd36a-a99a-42da-bab5-a7c44fa635ef",
+                "resourcePath": "scripts\\scr_ProjectileDestroyScript\\scr_ProjectileDestroyScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "50b97c71-a535-42cf-a2c2-1cb1c23ded59",
             "Value": {
                 "id": "3607a121-adec-4532-9082-3a4c8a7998ba",
@@ -1011,6 +1035,14 @@
             "Value": {
                 "id": "862bbe87-73ab-48c6-907b-af6bcf7ab521",
                 "resourcePath": "sprites\\spr_explodingSlimeballIdle\\spr_explodingSlimeballIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "54795a72-c207-45c1-85a1-74622315acc3",
+            "Value": {
+                "id": "b7474dcd-e52e-456c-9dc6-fbea3f451dac",
+                "resourcePath": "sprites\\spr_PowerPushBallStrike\\spr_PowerPushBallStrike.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1127,6 +1159,14 @@
             }
         },
         {
+            "Key": "5bf925c9-f9a5-4eac-804f-ff41f3f75d23",
+            "Value": {
+                "id": "24594515-951a-4486-bb1c-85222ea6718b",
+                "resourcePath": "views\\5bf925c9-f9a5-4eac-804f-ff41f3f75d23.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5ca2ebe4-ff9a-4af3-b108-d406476ca53f",
             "Value": {
                 "id": "1ed1277f-88dd-4f72-83dd-be37cf761552",
@@ -1183,6 +1223,14 @@
             }
         },
         {
+            "Key": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
+            "Value": {
+                "id": "d92f4194-aa4c-4cf1-9da6-a1f7a1dde310",
+                "resourcePath": "objects\\obj_CharacterPhysics\\obj_CharacterPhysics.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "64cd7fcf-cc42-4d51-9ec0-2eb8c6c9ab3d",
             "Value": {
                 "id": "4b03de02-9154-458e-93db-f9e54a7ba422",
@@ -1204,6 +1252,14 @@
                 "id": "f195bc46-9a4d-45c1-8a46-217fd4dc5193",
                 "resourcePath": "objects\\obj_ammo\\obj_ammo.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "67e0f10a-8061-43a0-8e31-c453f669d198",
+            "Value": {
+                "id": "53cfc175-729d-429d-81a3-8fd03da64256",
+                "resourcePath": "sprites\\spr_PowerPushBall\\spr_PowerPushBall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2850,7 +2906,7 @@
             "Key": "ed14a131-953f-411a-8370-232b4492166c",
             "Value": {
                 "id": "11a11e75-8f7f-4540-bab5-f34aba3ade21",
-                "resourcePath": "objects\\obj_basePhysics\\obj_basePhysics.yy",
+                "resourcePath": "objects\\obj_BasePhysics\\obj_BasePhysics.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3063,14 +3119,6 @@
             }
         },
         {
-            "Key": "fd3831c5-7d75-401d-94ad-b7aa637dd09d",
-            "Value": {
-                "id": "da12d75a-0ee7-4455-a665-3474e6014e65",
-                "resourcePath": "scripts\\SlingshotRockDestroyScript\\SlingshotRockDestroyScript.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "fd3feea6-3e19-4a91-9ced-759334c65434",
             "Value": {
                 "id": "28b5ecf6-7ba6-4750-9b7c-efffbe16cc77",
@@ -3109,8 +3157,8 @@
         "624705c6-2dea-495d-bdfd-c500759ede72",
         "074cd29b-6396-41f4-a6fb-9568319402f2",
         "565a1870-9fa6-4740-ae55-f8647e7b7ad1",
-        "fd3831c5-7d75-401d-94ad-b7aa637dd09d",
         "a49623f1-8be0-43e7-8211-537a19a61242",
+        "4f3db20f-3a7e-43c1-9ece-439b1943c236",
         "f0aad53f-9c2e-45f9-820b-5d8e58cb54e1",
         "56aade88-259d-4fb7-8097-021b1bab6a74",
         "fd9dd186-7e7e-496f-846a-2fa7620db0f5",
