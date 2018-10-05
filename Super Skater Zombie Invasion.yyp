@@ -47,14 +47,6 @@
             }
         },
         {
-            "Key": "02508339-f4d0-4af4-8307-0ae44caba766",
-            "Value": {
-                "id": "385b680a-ce93-4580-bd1a-7ae2e5b86bcf",
-                "resourcePath": "scripts\\scr_AnimationSystemInit\\scr_AnimationSystemInit.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "02588c78-fb4a-4538-9e5c-9b63df8cde97",
             "Value": {
                 "id": "a1be895f-88e3-4bd3-a8cd-5398e1e35d31",
@@ -1211,6 +1203,14 @@
             "Value": {
                 "id": "f4d73d12-6cba-4db2-ab9d-81b14fb8bf8d",
                 "resourcePath": "sprites\\spr_hud_slingshot\\spr_hud_slingshot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5ed5afac-37f3-4431-aa93-364700ffe6e3",
+            "Value": {
+                "id": "9e60218d-74b7-4be8-8325-49b22668f40a",
+                "resourcePath": "sprites\\spr_SkaterPowerPushDiag\\spr_SkaterPowerPushDiag.yy",
                 "resourceType": "GMSprite"
             }
         },
