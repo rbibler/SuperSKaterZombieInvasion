@@ -87,6 +87,17 @@ floatingState = stateCreate(s_FLOATING, SkaterStateFloating);
 // Set the default state to IDLE
 stateInit(s_IDLE);
 
+scr_AnimSystemInit();
+idleAnim = scr_RegisterAnimation(spr_SkaterIdle, NORMAL_ANIM_SPEED, true, noone);
+skateAnim = scr_RegisterAnimation(spr_SkaterSkate, NORMAL_ANIM_SPEED, true, noone);
+jumpAnim = scr_RegisterAnimation(spr_SkaterJump, NORMAL_ANIM_SPEED, true, noone);
+crouchAnim = scr_RegisterAnimation(spr_SkaterCrouch, NORMAL_ANIM_SPEED, true, noone);
+powerPushAnimIdle = scr_RegisterAnimation(spr_SkaterPowerPush, NORMAL_ANIM_SPEED, false, scr_RestorePreviousAnimation);
+
+
+currentAnim = idleAnim;
+
+
 isImmune = false;
 immuneStart = 0;
 drawToggle = true;

@@ -11,16 +11,17 @@
 
 // Reset the animation when entering the state
 if(stateNew) {
-	sprite_index = spr_SkaterSkate;
-	image_index = 0;
+	//sprite_index = spr_SkaterSkate;
+	//image_index = 0;
 	stateVar[0] = false;
+	scr_SetCurrentAnimation(skateAnim);
 }
 
 // Check if we should fire a weapon
 scr_SkaterWeaponFire();
 
 
-SkaterBasicStateAnimation();
+//SkaterBasicStateAnimation();
 
 if(((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0))) {
 	stateVar[0] = true;
@@ -29,10 +30,10 @@ if(((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0))) {
 
 if(stateVar[0] == true) {
 	if(stateTimer - stateVar[1] < 10) {
-		sprite_index = spr_SkaterJump;
+		scr_SetCurrentAnimation(jumpAnim);
 	} else {
 		stateVar[0] = false;
-		sprite_index = spr_SkaterSkate;
+		scr_SetCurrentAnimation(skateAnim);
 	}
 }
 

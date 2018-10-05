@@ -6,11 +6,12 @@
 
 // Reset animation when entering state
 if(stateNew) {
-	sprite_index = spr_SkaterJump;
-	image_index = 0;
+	//sprite_index = spr_SkaterJump;
+	//image_index = 0;
+	scr_SetCurrentAnimation(jumpAnim);
 }
 
-SkaterBasicStateAnimation();
+//SkaterBasicStateAnimation();
 
 // Check if we should fire a weapon
 scr_SkaterWeaponFire();

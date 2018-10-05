@@ -8,7 +8,8 @@
 // Reset animation and grounded flags when entering state
 // Also add jump impetus to yspeed to make the skater jump
 if(stateNew) {
-	sprite_index = spr_SkaterJump;
+	//sprite_index = spr_SkaterJump;
+	scr_SetCurrentAnimation(jumpAnim);
 	if(bounceDirection == 0) {
 		ySpeed = bounceSpeed;
 		jump = 1;
@@ -20,7 +21,7 @@ if(stateNew) {
 	grounded = false;
 }
 
-SkaterBasicStateAnimation();
+//SkaterBasicStateAnimation();
 
 // Check if we should fire a weapon
 scr_SkaterWeaponFire();

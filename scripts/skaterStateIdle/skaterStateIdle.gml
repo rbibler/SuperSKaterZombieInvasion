@@ -10,8 +10,9 @@
 
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	sprite_index = spr_SkaterIdle;
-	image_index = 0;
+	//sprite_index = spr_SkaterIdle;
+	//image_index = 0;
+	scr_SetCurrentAnimation(idleAnim);
 	//jump = 0;
 	stateVar[0] = random_range(60 * 3, 60 * 6); 
 	stateVar[1] = 0;
@@ -27,35 +28,35 @@ if(stateTimer - stateVar[1] >= stateVar[0]) {
 	stateVar[2] = true;
 }
 
-if(weaponAnimCounter > 0) {
-	var weaponSprite = SkaterGetWeaponSprite(state, currentWeapon);
-	if(sprite_index != weaponSprite) {
-		sprite_index = weaponSprite;
-		//image_index = 0;
-	}
-}
+//if(weaponAnimCounter > 0) {
+//	var weaponSprite = SkaterGetWeaponSprite(state, currentWeapon);
+//	if(sprite_index != weaponSprite) {
+//		sprite_index = weaponSprite;
+//		//image_index = 0;
+//	}
+//}
 	
-if(stateTimer > 0 and stateTimer mod (60 / 5) == 0) {
-	if(weaponAnimCounter > 0) {
-		image_index++;
-		weaponAnimCounter--;
-		if(weaponAnimCounter <= 0) {
-			ignoreInput = false;
-			sprite_index = spr_SkaterIdle;
-			image_index = 0;
-		}
-	} else {
-		if(stateVar[2] == true) {
-			image_index++;
-			if(image_index >= image_number) {
-				stateVar[1] = stateTimer;
-				stateVar[0] = random_range(60 * 3, 60 * 6);
-				image_index = 0;
-				stateVar[2] = false;
-			}
-		}
-	}
-}
+//if(stateTimer > 0 and stateTimer mod (60 / 5) == 0) {
+//	if(weaponAnimCounter > 0) {
+//		image_index++;
+//		weaponAnimCounter--;
+//		if(weaponAnimCounter <= 0) {
+//			ignoreInput = false;
+//			sprite_index = spr_SkaterIdle;
+//			image_index = 0;
+//		}
+//	} else {
+//		if(stateVar[2] == true) {
+//			image_index++;
+//			if(image_index >= image_number) {
+//				stateVar[1] = stateTimer;
+//				stateVar[0] = random_range(60 * 3, 60 * 6);
+//				image_index = 0;
+//				stateVar[2] = false;
+//			}
+//		}
+//	}
+//}
 
 
 

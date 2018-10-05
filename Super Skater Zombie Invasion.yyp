@@ -1319,6 +1319,14 @@
             }
         },
         {
+            "Key": "6b4c0083-32d2-40fb-ae40-7f7752af7cd0",
+            "Value": {
+                "id": "6565f0db-1ecb-43dd-89fd-208a2fa02d67",
+                "resourcePath": "scripts\\scr_SetCurrentAnimation\\scr_SetCurrentAnimation.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6b572943-7483-43c2-acc3-5013d63bb52f",
             "Value": {
                 "id": "79498584-c2ce-425c-8a04-55779913da01",
@@ -2220,6 +2228,14 @@
                 "id": "5abc8af7-2cb9-4bd2-b4f1-d4026f538065",
                 "resourcePath": "sprites\\spr_SkaterIdleSlingshot\\spr_SkaterIdleSlingshot.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "af191699-7cb3-4dc6-b75a-525cd41d66de",
+            "Value": {
+                "id": "ca76c3d3-5503-4af5-9cd1-4e9beee17c65",
+                "resourcePath": "scripts\\scr_RestorePreviousAnimation\\scr_RestorePreviousAnimation.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3360,7 +3376,9 @@
         "ec36ac46-1c26-4651-b1ff-5825ecf24920",
         "4c39cd0f-8023-4b40-b128-976ecd31044b",
         "6f600f77-8cb9-481d-aa3b-a3595dd988bf",
-        "9708becd-2408-4a23-ba6f-9aae841e0875"
+        "9708becd-2408-4a23-ba6f-9aae841e0875",
+        "af191699-7cb3-4dc6-b75a-525cd41d66de",
+        "6b4c0083-32d2-40fb-ae40-7f7752af7cd0"
     ],
     "tutorial": ""
 }

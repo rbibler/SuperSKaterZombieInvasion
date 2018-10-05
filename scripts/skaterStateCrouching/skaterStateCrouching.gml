@@ -7,11 +7,12 @@
 
 // Reset the animation when entering the state
 if(stateNew) {
-	sprite_index = spr_SkaterCrouch;
-	image_index = 0;
+	//sprite_index = spr_SkaterCrouch;
+	//image_index = 0;
+	scr_SetCurrentAnimation(crouchAnim);
 }
 
-SkaterBasicStateAnimation();
+//SkaterBasicStateAnimation();
 
 // Check if we should fire a weapon
 scr_SkaterWeaponFire();

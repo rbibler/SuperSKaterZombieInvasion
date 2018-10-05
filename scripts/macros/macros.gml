@@ -32,9 +32,12 @@
 #macro GRID_X	8
 #macro GRID_Y	8
 
+#macro NORMAL_ANIM_SPEED	5 / 60
+
 enum ANIMATION {
 
-	NORMAL = 60 / 5
+	NORMAL = 60 / 5,
+	NORMALDECIMAL = 0.0833333
 }
 
 

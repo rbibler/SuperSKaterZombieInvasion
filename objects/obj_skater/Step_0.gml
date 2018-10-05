@@ -32,6 +32,7 @@ GeneralCheckGrounded();
 
 // The real fun happens in the state machine
 stateExecute();
+scr_UpdateAnimation(currentAnim);
 
 // We don't want the camera to follow us in certain places, so check for them!
 if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_cameraFollowTrigger, false, false)) {

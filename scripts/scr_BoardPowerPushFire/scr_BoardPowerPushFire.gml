@@ -26,4 +26,5 @@ if(didFire) {
 	image_index = 0;
 	stateTimer = 0;
 	hasWeaponImmunity = true;
+	scr_SetCurrentAnimation(powerPushAnimIdle);
 }
