@@ -1911,6 +1911,14 @@
             }
         },
         {
+            "Key": "9708becd-2408-4a23-ba6f-9aae841e0875",
+            "Value": {
+                "id": "da57f194-e0e9-4e17-8c5a-7beeb1ac0643",
+                "resourcePath": "scripts\\scr_AnimSystemInit\\scr_AnimSystemInit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "98427d9f-ed4e-407d-ba68-4a9cfa1c4ffb",
             "Value": {
                 "id": "945eb787-e615-4148-9d05-9324654a65ba",
@@ -3352,7 +3360,7 @@
         "ec36ac46-1c26-4651-b1ff-5825ecf24920",
         "4c39cd0f-8023-4b40-b128-976ecd31044b",
         "6f600f77-8cb9-481d-aa3b-a3595dd988bf",
-        "02508339-f4d0-4af4-8307-0ae44caba766"
+        "9708becd-2408-4a23-ba6f-9aae841e0875"
     ],
     "tutorial": ""
 }
