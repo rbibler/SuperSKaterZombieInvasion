@@ -84,11 +84,11 @@
             "value": "scr_ZombieSkaterCheckStateChange"
         },
         {
-            "id": "c2074e51-b77e-496d-b7ae-8e17b3e07f9d",
+            "id": "30861e79-482d-42e7-81dd-ba37f06822ba",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "a869a8af-a993-4e2c-8f19-4cad0d4179e8",
+            "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
+            "propertyId": "d2076d68-0b30-401c-af69-e1e7331b0585",
             "value": "-8"
         }
     ],

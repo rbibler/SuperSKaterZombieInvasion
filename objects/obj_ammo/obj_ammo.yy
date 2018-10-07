@@ -125,6 +125,20 @@
             "value": "noone",
             "varName": "horizCollisionScript",
             "varType": 5
+        },
+        {
+            "id": "843f7067-469a-4098-a8df-d2b3be05595e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "strikeEffectObject",
+            "varType": 5
         }
     ],
     "solid": false,

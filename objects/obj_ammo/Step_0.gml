@@ -3,7 +3,8 @@
 aliveCounter++;
 if(aliveCounter >= aliveTime) {
 	ammoParent.ammoOnScreen--;
-	instance_destroy();
+	scr_ProjectileDestroyScript();
 }
-
-x += ammoSpeed * ammoDirection;
+xSpeed = ammoSpeed * ammoDirection;
+x += xSpeed;
+y += ySpeed;

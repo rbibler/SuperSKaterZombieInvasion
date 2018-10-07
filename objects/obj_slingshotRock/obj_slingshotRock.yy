@@ -39,7 +39,7 @@
             "mvc": "1.0",
             "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
             "propertyId": "bd3b7483-b253-40cf-829b-01973d231310",
-            "value": "SlingshotRockDestroyScript"
+            "value": "scr_ProjectileDestroyScript"
         },
         {
             "id": "149e5ef6-6117-460a-a945-a2e28b0237ca",
@@ -47,7 +47,7 @@
             "mvc": "1.0",
             "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
             "propertyId": "7403be13-5f5b-4d80-a872-2b6782e9f55f",
-            "value": "SlingshotRockDestroyScript"
+            "value": "scr_ProjectileDestroyScript"
         }
     ],
     "parentObjectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",

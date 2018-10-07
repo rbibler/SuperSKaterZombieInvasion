@@ -10,11 +10,12 @@
 
 // Reset the animations when entering the state
 if(stateNew) {
-	sprite_index = spr_SkaterIdle;
-	image_index = 0;
+	//sprite_index = spr_SkaterIdle;
+	//image_index = 0;
+	scr_SetCurrentAnimation(idleAnim);
 }
 
-SkaterBasicStateAnimation();
+//SkaterBasicStateAnimation();
 
 // Check if we should fire a weapon
 scr_SkaterWeaponFire();
