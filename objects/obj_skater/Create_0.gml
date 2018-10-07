@@ -93,8 +93,8 @@ skateAnim = scr_RegisterAnimation(spr_SkaterSkate, NORMAL_ANIM_SPEED, true, noon
 jumpAnim = scr_RegisterAnimation(spr_SkaterJump, NORMAL_ANIM_SPEED, true, noone);
 crouchAnim = scr_RegisterAnimation(spr_SkaterCrouch, NORMAL_ANIM_SPEED, true, noone);
 powerPushAnimIdle = scr_RegisterAnimation(spr_SkaterPowerPush, NORMAL_ANIM_SPEED, false, scr_RestorePreviousAnimation);
-
-
+powerPushAnimDiagonal = scr_RegisterAnimation(spr_SkaterPowerPushDiag, NORMAL_ANIM_SPEED, false, scr_RestorePreviousAnimation);
+powerPushAnimBackFoot = scr_RegisterAnimation(spr_SkaterPowerPushBackFoot, NORMAL_ANIM_SPEED, false, scr_RestorePreviousAnimation);
 currentAnim = idleAnim;
 
 

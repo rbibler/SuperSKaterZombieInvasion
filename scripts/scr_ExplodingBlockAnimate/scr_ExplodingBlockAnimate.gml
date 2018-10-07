@@ -7,7 +7,6 @@ switch(currentState) {
 	case s_ATTACKING:
 		if(stateTimer mod (ANIMATION.NORMAL) == 0) {
 			image_index = image_index + 1;
-			show_debug_message("Image index = " + string(image_index));
 			if(image_index >= image_number) {
 				stateSwitch(s_HIT);
 			}

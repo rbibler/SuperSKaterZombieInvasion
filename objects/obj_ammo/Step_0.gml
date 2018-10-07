@@ -7,3 +7,4 @@ if(aliveCounter >= aliveTime) {
 }
 xSpeed = ammoSpeed * ammoDirection;
 x += xSpeed;
+y += ySpeed;

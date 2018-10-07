@@ -13,6 +13,7 @@
 if(stateNew) {
 	//sprite_index = spr_SkaterSkate;
 	//image_index = 0;
+	show_debug_message("Now Skating!");
 	stateVar[0] = false;
 	scr_SetCurrentAnimation(skateAnim);
 }
