@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 aliveCounter++;
-if(aliveCounter >= aliveTime) {
+if(!IsOnScreen() or aliveCounter >= aliveTime) {
 	ammoParent.ammoOnScreen--;
 	scr_ProjectileDestroyScript();
 }

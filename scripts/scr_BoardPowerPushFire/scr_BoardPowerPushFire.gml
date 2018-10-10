@@ -26,12 +26,14 @@ with(weapon) {
 }
 
 if(didFire) {
+	canShoot = false;
 	image_index = 0;
 	stateTimer = 0;
 	hasWeaponImmunity = true;
 	if(stateName = s_IDLE) {
-		scr_SetCurrentAnimation(diag ? powerPushAnimDiagonal : powerPushAnimIdle);
+		//scr_SetCurrentAnimation(diag ? powerPushAnimDiagonal : powerPushAnimIdle,);
+		scr_TransitionToShootingPowerPush();
 	} else if(stateName = s_MOVING) {
-		scr_SetCurrentAnimation(powerPushAnimBackFoot);
+		scr_TransitionToShootingPowerPush();
 	}
 }

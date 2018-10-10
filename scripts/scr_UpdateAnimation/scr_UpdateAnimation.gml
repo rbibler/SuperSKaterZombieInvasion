@@ -1,26 +1,36 @@
 /// This is a utility that helps an object update its animation each step
 /// @arg animToUpdate
 
-var animToUpdate = argument0;
-var sprite = Animations[animToUpdate, 0];
-var animSpeed = Animations[animToUpdate, 1];
-var loop = Animations[animToUpdate, 2];
-var endScript = Animations[animToUpdate, 3];
+var anim = argument0;
+var sprite = anim.sprite_index;
+var loop = anim.loop;
+var endScript = anim.endOfAnimScript;
 
 if(sprite_index != sprite) {
 	sprite_index = sprite;
-	image_index = 0;
-	if(object_index == obj_skater) {
-		show_debug_message("New sprite! " + string(sprite_index));
+	anim.currentIndex = 0;
+}
+var oldIndex = floor(anim.currentIndex);
+anim.currentIndex += anim.animSpeed;
+
+
+
+if(floor(anim.currentIndex) != oldIndex) {
+	show_debug_message("New frame: " + anim.animName + " " + string(anim.currentIndex));
+	var frameScript = anim.scripts[anim.currentIndex];
+	if(frameScript != noone) {
+		script_execute(frameScript);
 	}
 }
 
-image_index += animSpeed;
-show_debug_message("Image_index: " + string(image_index));
-if(image_index >= image_number) {
+if(anim.currentIndex >= anim.image_number) {
 	if(loop) {
-		image_index = 0;
+		anim.currentIndex = 0;
 	} else {
+		anim.currentIndex = anim.image_number - 1;
 		script_execute(endScript);
 	}
 }
+
+image_index = anim.currentIndex;
+

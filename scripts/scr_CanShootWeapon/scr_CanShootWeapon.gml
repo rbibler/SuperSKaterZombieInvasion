@@ -3,9 +3,10 @@
 
 var weaponToShoot = argument0;
 
+
 switch(weaponToShoot.object_index) {
 	case obj_BoardPowerPush:
-		return input[SHOOT] and !lastInput[SHOOT];
+		return input[SHOOT] and !lastInput[SHOOT] and canShoot;
 	break;
 	
 	case obj_Slingshot:

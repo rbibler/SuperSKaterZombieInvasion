@@ -1,5 +1,4 @@
 var currentState = argument0;
-show_debug_message("Explode block animate! State is: " + currentState);
 switch(currentState) {
 	case s_IDLE:
 	break;

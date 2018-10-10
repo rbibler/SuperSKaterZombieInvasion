@@ -87,21 +87,36 @@ floatingState = stateCreate(s_FLOATING, SkaterStateFloating);
 // Set the default state to IDLE
 stateInit(s_IDLE);
 
-scr_AnimSystemInit();
-idleAnim = scr_RegisterAnimation(spr_SkaterIdle, NORMAL_ANIM_SPEED, true, noone);
-skateAnim = scr_RegisterAnimation(spr_SkaterSkate, NORMAL_ANIM_SPEED, true, noone);
-jumpAnim = scr_RegisterAnimation(spr_SkaterJump, NORMAL_ANIM_SPEED, true, noone);
-crouchAnim = scr_RegisterAnimation(spr_SkaterCrouch, NORMAL_ANIM_SPEED, true, noone);
-powerPushAnimIdle = scr_RegisterAnimation(spr_SkaterPowerPush, NORMAL_ANIM_SPEED, false, scr_RestorePreviousAnimation);
-powerPushAnimDiagonal = scr_RegisterAnimation(spr_SkaterPowerPushDiag, NORMAL_ANIM_SPEED, false, scr_RestorePreviousAnimation);
-powerPushAnimBackFoot = scr_RegisterAnimation(spr_SkaterPowerPushBackFoot, NORMAL_ANIM_SPEED, false, scr_RestorePreviousAnimation);
+
+
+idleAnim = scr_RegisterAnimation(spr_SkaterIdle, NORMAL_ANIM_SPEED, true, noone, "Idle");
+skateAnim = scr_RegisterAnimation(spr_SkaterSkate, NORMAL_ANIM_SPEED, true, noone, "Skate");
+jumpAnim = scr_RegisterAnimation(spr_SkaterJump, NORMAL_ANIM_SPEED, true, noone, "Jump");
+crouchAnim = scr_RegisterAnimation(spr_SkaterCrouch, NORMAL_ANIM_SPEED, true, noone, "Crouch");
+powerPushAnimIdle = scr_RegisterAnimation(spr_SkaterPowerPush, NORMAL_ANIM_SPEED, false, scr_DetermineAnimFromState, "Power Push Idle");
+powerPushAnimDiagonal = scr_RegisterAnimation(spr_SkaterPowerPushDiag, NORMAL_ANIM_SPEED, false, scr_DetermineAnimFromState, "Power Push Diag");
+powerPushAnimBackFoot = scr_RegisterAnimation(spr_SkaterPowerPushBackFoot, NORMAL_ANIM_SPEED, false, scr_DetermineAnimFromState, "Power Push Back Foot");
+powerPushAnimFrontFoot = scr_RegisterAnimation(spr_SkaterPowerPushFrontFoot, NORMAL_ANIM_SPEED, false, scr_DetermineAnimFromState, "Power Push Front Foot");
+powerPushAnimBackFootIdle = scr_RegisterAnimation(spr_SkaterPowerPushBackFootIdle, NORMAL_ANIM_SPEED, false, scr_DetermineAnimFromState, "Power Push Back Foot Idle");
+powerPushAnimFrontFootIdle = scr_RegisterAnimation(spr_SkaterPowerPushFrontFootIdle, NORMAL_ANIM_SPEED, false, scr_DetermineAnimFromState, "Power Push Front Foot Idle");
+
+scr_AddScriptToAnim(powerPushAnimIdle, 2, scr_LetSkaterShoot);
+scr_AddScriptToAnim(powerPushAnimDiagonal, 2, scr_LetSkaterShoot);
+scr_AddScriptToAnim(powerPushAnimBackFoot, 2, scr_LetSkaterShoot);
+scr_AddScriptToAnim(powerPushAnimFrontFoot, 2, scr_LetSkaterShoot);
+scr_AddScriptToAnim(powerPushAnimBackFootIdle, 2, scr_LetSkaterShoot);
+scr_AddScriptToAnim(powerPushAnimFrontFootIdle, 2, scr_LetSkaterShoot);
+
+
+
+
 currentAnim = idleAnim;
 
 
 isImmune = false;
 immuneStart = 0;
 drawToggle = true;
-
+canShoot = true;
 
 
 
