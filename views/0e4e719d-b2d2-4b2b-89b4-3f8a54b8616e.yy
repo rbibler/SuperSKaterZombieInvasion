@@ -9,7 +9,8 @@
         "02508339-f4d0-4af4-8307-0ae44caba766",
         "af191699-7cb3-4dc6-b75a-525cd41d66de",
         "6b4c0083-32d2-40fb-ae40-7f7752af7cd0",
-        "2ac690ff-f837-4881-9b51-823320b833ec"
+        "2ac690ff-f837-4881-9b51-823320b833ec",
+        "bafb6114-6955-4ba7-9b57-6f5183c4b531"
     ],
     "filterType": "GMScript",
     "folderName": "AnimationUtilities",

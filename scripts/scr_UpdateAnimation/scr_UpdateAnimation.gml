@@ -24,6 +24,9 @@ with(anim) {
 	}
 	
 	if(chooseAlternate) {
+		if(sprite_index != alternateSprite) {
+			sprite_index = alternateSprite;
+		}
 		if(currentFrame < alternateEndFrame) {
 			currentIndex = alternateFrames[currentFrame];
 		} else {

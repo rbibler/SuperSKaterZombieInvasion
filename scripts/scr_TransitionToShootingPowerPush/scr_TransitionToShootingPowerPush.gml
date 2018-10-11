@@ -10,16 +10,16 @@ switch(currentAnim) {
 		
 		switch(curIndex) {
 			case 0:
-				scr_SetCurrentAnimation(powerPushAnimBackFoot);
-			break;
-			case 1:
-				scr_SetCurrentAnimation(powerPushAnimFrontFootIdle);
-			break;
-			case 2:
-				scr_SetCurrentAnimation(powerPushAnimFrontFoot);
-			break; 
-			case 3:
-				scr_SetCurrentAnimation(powerPushAnimBackFootIdle);
+				scr_SetAlternateAnimation(powerPushAnimBackFoot, 2);
+			break;	   
+			case 1:	   
+				scr_SetAlternateAnimation(powerPushAnimFrontFootIdle, 2);
+			break;	   
+			case 2:	   
+				scr_SetAlternateAnimation(powerPushAnimFrontFoot, 2);
+			break; 	   
+			case 3:	   
+				scr_SetAlternateAnimation(powerPushAnimBackFootIdle, 2);
 			break;
 			
 		}
