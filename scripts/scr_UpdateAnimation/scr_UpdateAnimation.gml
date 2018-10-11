@@ -6,37 +6,28 @@ var sprite = anim.sprite_index;
 var loop = anim.loop;
 var endScript = anim.endOfAnimScript;
 
+if(anim == noone) {
+	return;
+}
+
 with(anim) {
-	if(other.sprite_index != sprite) {
+	if(isHitBox and other.sprite_index != sprite) {
 		other.sprite_index = sprite;
-		currentFrame = 0;
+		currentIndex = 0;
 	}
 
-	currentFrame += animSpeed;
+	currentIndex += animSpeed;
 
-	if(currentFrame >= image_number) {
+	if(currentIndex >= image_number) {
 		if(loop) {
-			currentFrmae = 0;
+			currentIndex = 0;
 		} else {
-			currentFrame = image_number - 1;
+			currentIndex = image_number - 1;
 			script_execute(endScript);
 		}
 	}
-	
-	if(chooseAlternate) {
-		if(sprite_index != alternateSprite) {
-			sprite_index = alternateSprite;
-		}
-		if(currentFrame < alternateEndFrame) {
-			currentIndex = alternateFrames[currentFrame];
-		} else {
-			chooseAlternate = false;
-			currentIndex = frames[currentFrame];
-		}
-	} else {
-		currentIndex = frames[currentFrame];
+	if(isHitBox) {
+		other.image_index = currentIndex;
 	}
-
 }
-image_index = anim.currentIndex;
 

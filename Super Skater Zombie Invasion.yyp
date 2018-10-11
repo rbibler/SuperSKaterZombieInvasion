@@ -727,6 +727,14 @@
             }
         },
         {
+            "Key": "37aa9656-11eb-47f1-bbd2-74084441fc97",
+            "Value": {
+                "id": "d953f57f-b199-4ff2-bc38-6dc4c5f0665b",
+                "resourcePath": "sprites\\spr_SkaterSkateLegs\\spr_SkaterSkateLegs.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "37bade44-ac9e-45b5-b8ed-138fda7cbb9b",
             "Value": {
                 "id": "a692bf02-bdf3-45e6-ae5d-56ec201f7f72",
@@ -1279,6 +1287,14 @@
             }
         },
         {
+            "Key": "60a67d1c-f308-43f1-9116-38fdf37cc35e",
+            "Value": {
+                "id": "37e4114e-48d0-4494-bf07-12bfae16322e",
+                "resourcePath": "sprites\\spr_SkaterIdleLegs\\spr_SkaterIdleLegs.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "624705c6-2dea-495d-bdfd-c500759ede72",
             "Value": {
                 "id": "49b92ae3-346b-4cf2-a44a-76dca932f770",
@@ -1540,6 +1556,14 @@
                 "id": "dc50fd13-9392-40cb-8305-8d41033452a9",
                 "resourcePath": "scripts\\stateSwitchPrevious\\stateSwitchPrevious.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "78cda2ab-4ac6-4c2f-aa60-084d526953cb",
+            "Value": {
+                "id": "244b23aa-c1aa-43d8-9802-b13e4622eb32",
+                "resourcePath": "sprites\\spr_SkaterSkateArms\\spr_SkaterSkateArms.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2271,6 +2295,14 @@
             }
         },
         {
+            "Key": "ab55dee5-effd-4e11-98ad-6ac1bb772f52",
+            "Value": {
+                "id": "ee0e8067-71d9-49bb-a7d9-a7b043365909",
+                "resourcePath": "views\\ab55dee5-effd-4e11-98ad-6ac1bb772f52.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "abc29598-b9f2-4e3a-90c6-a6e030095da2",
             "Value": {
                 "id": "d797b6b1-a4a8-4647-ba70-e6b1fb8a1d21",
@@ -2799,6 +2831,14 @@
             }
         },
         {
+            "Key": "d5689ffb-c5b1-4e23-8605-dc494a651662",
+            "Value": {
+                "id": "7dc84121-84a5-4c7e-ac26-f1f2a0ccb5a4",
+                "resourcePath": "sprites\\spr_SkaterIdleArms\\spr_SkaterIdleArms.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d5bdbb33-c8fb-4884-9513-18b0d115b379",
             "Value": {
                 "id": "da5c8423-93b5-4a89-8ba9-7fc900b59b3a",
@@ -2996,6 +3036,14 @@
                 "id": "3e579690-2ba7-499b-939c-056ad34bdb3a",
                 "resourcePath": "objects\\obj_slopeController\\obj_slopeController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e8f44a3e-dca0-4db2-87b5-127c721c6327",
+            "Value": {
+                "id": "79f6b26e-e5b4-4edc-aadf-7404c53d92b2",
+                "resourcePath": "views\\e8f44a3e-dca0-4db2-87b5-127c721c6327.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

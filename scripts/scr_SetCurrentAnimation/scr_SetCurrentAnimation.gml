@@ -1,5 +1,10 @@
 /// This is a script that helps an object set its current animation. It also keeps tracking of the previous animation.
-/// @arg animToSet
+/// @arg legsAnim
+/// @arg armsAnim
 
-previousAnim = currentAnim;
-currentAnim = argument0;
+previousLegsAnim = currentLegsAnim;
+currentLegsAnim = argument0;
+
+previousArmsAnim = currentArmsAnim;
+currentArmsAnim = argument1;
+

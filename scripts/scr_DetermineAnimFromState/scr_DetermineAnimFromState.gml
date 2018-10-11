@@ -1,6 +1,6 @@
 /// This is a script that helps the skater determine which animation he should use based on his state
 
-switch(stateName) {
+/*switch(stateName) {
 	case s_IDLE:
 		scr_SetCurrentAnimation(idleAnim);
 	break;
@@ -20,4 +20,4 @@ switch(stateName) {
 	default:
 		scr_SetCurrentAnimation(idleAnim);
 	break;
-}
+}*/

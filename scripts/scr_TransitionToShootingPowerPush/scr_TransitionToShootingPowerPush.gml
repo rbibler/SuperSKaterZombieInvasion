@@ -1,7 +1,7 @@
 var curIndex = floor(currentAnim.currentIndex);
 show_debug_message("current Animation: " + currentAnim.animName + " current index " + string(curIndex));
 
-switch(currentAnim) {
+/*switch(currentAnim) {
 	
 	case idleAnim:
 		scr_SetCurrentAnimation(powerPushAnimIdle);
@@ -99,4 +99,4 @@ switch(currentAnim) {
 	
 	case crouchAnim:
 	break;
-}
+}*/

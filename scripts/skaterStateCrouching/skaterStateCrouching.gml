@@ -9,7 +9,7 @@
 if(stateNew) {
 	//sprite_index = spr_SkaterCrouch;
 	//image_index = 0;
-	scr_SetCurrentAnimation(crouchAnim);
+	scr_SetCurrentAnimation(crouchAnimLegs, crouchAnimLegs);
 }
 
 //SkaterBasicStateAnimation();
