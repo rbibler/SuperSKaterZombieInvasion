@@ -13,7 +13,6 @@ if(anim == noone) {
 with(anim) {
 	if(isHitBox and other.sprite_index != sprite) {
 		other.sprite_index = sprite;
-		currentIndex = 0;
 	}
 
 	currentIndex += animSpeed;

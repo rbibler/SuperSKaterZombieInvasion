@@ -19,7 +19,8 @@
         "6aab2f68-a6d9-4e57-ad58-7f108146993e",
         "3b1a41b5-c577-4a26-bdd8-9370c4185115",
         "0cf6c893-c66d-47e6-a891-afae30cf8c68",
-        "6a3790d5-12f5-4db8-8b85-b6098e408641"
+        "6a3790d5-12f5-4db8-8b85-b6098e408641",
+        "940033ec-c2e3-4ed4-a4ed-09118a3a769f"
     ],
     "filterType": "GMScript",
     "folderName": "SkaterUtilityScripts",

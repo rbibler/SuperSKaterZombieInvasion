@@ -1959,6 +1959,14 @@
             }
         },
         {
+            "Key": "940033ec-c2e3-4ed4-a4ed-09118a3a769f",
+            "Value": {
+                "id": "17f2e6b5-0bf7-4e17-af8e-dc2a612c1485",
+                "resourcePath": "scripts\\scr_SynchArmsAndLegs\\scr_SynchArmsAndLegs.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af",
             "Value": {
                 "id": "7aacc71a-e464-46df-b04e-25c92cd729ed",
@@ -3343,6 +3351,14 @@
             }
         },
         {
+            "Key": "ff0c5ae9-6245-401e-9b34-490ae252e6da",
+            "Value": {
+                "id": "c5130f93-7025-40a9-adc2-b00bd26731e2",
+                "resourcePath": "scripts\\scr_SetCurrentArmsAnim\\scr_SetCurrentArmsAnim.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ff38fc98-f544-44e6-8409-1ab5e21222b3",
             "Value": {
                 "id": "1bd312f3-e5a3-4736-a46c-b270d5b75fce",
@@ -3396,6 +3412,7 @@
         "3b1a41b5-c577-4a26-bdd8-9370c4185115",
         "0cf6c893-c66d-47e6-a891-afae30cf8c68",
         "6a3790d5-12f5-4db8-8b85-b6098e408641",
+        "940033ec-c2e3-4ed4-a4ed-09118a3a769f",
         "05416d16-822a-4469-ae10-af8f2c717d01",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
@@ -3518,7 +3535,8 @@
         "af191699-7cb3-4dc6-b75a-525cd41d66de",
         "6b4c0083-32d2-40fb-ae40-7f7752af7cd0",
         "2ac690ff-f837-4881-9b51-823320b833ec",
-        "bafb6114-6955-4ba7-9b57-6f5183c4b531"
+        "bafb6114-6955-4ba7-9b57-6f5183c4b531",
+        "ff0c5ae9-6245-401e-9b34-490ae252e6da"
     ],
     "tutorial": ""
 }

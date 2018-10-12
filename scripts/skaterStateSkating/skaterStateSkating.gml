@@ -15,7 +15,7 @@ if(stateNew) {
 	//image_index = 0;
 	show_debug_message("Now Skating!");
 	stateVar[0] = false;
-	scr_SetCurrentAnimation(skateAnimLegs, skateAnimArms);
+	scr_SetCurrentAnimation(skateAnimLegs, skateAnimArms, 0, 0);
 }
 
 // Check if we should fire a weapon
@@ -31,10 +31,10 @@ if(((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0))) {
 
 if(stateVar[0] == true) {
 	if(stateTimer - stateVar[1] < 10) {
-		scr_SetCurrentAnimation(jumpAnimLegs, jumpAnimLegs);
+		scr_SetCurrentAnimation(jumpAnimLegs, jumpAnimLegs, 0, 0);
 	} else {
 		stateVar[0] = false;
-		scr_SetCurrentAnimation(skateAnimLegs, skateAnimArms);
+		scr_SetCurrentAnimation(skateAnimLegs, skateAnimArms, 0, 0);
 	}
 }
 

@@ -12,7 +12,7 @@
 if(stateNew) {
 	//sprite_index = spr_SkaterIdle;
 	//image_index = 0;
-	scr_SetCurrentAnimation(idleAnimLegs, idleAnimArms);
+	scr_SetCurrentAnimation(idleAnimLegs, idleAnimArms, 0, 0);
 }
 
 //SkaterBasicStateAnimation();

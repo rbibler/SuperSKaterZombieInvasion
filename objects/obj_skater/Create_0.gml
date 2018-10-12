@@ -97,6 +97,7 @@ crouchAnimLegs = scr_RegisterAnimation(spr_SkaterCrouch, NORMAL_ANIM_SPEED, true
 idleAnimArms = scr_RegisterAnimation(spr_SkaterIdleArms, NORMAL_ANIM_SPEED, true, noone, "Idle", false);
 skateAnimArms = scr_RegisterAnimation(spr_SkaterSkateArms, NORMAL_ANIM_SPEED, true, noone, "Skate", false);
 
+powerPushAnimLevel = scr_RegisterAnimation(spr_SkaterPowerPushLevel, NORMAL_ANIM_SPEED, false, scr_SyncArmsAndLegs, "Power Push Level", false);
 
 currentLegsAnim = idleAnimLegs;
 currentArmsAnim = idleAnimArms;

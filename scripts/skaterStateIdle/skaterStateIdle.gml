@@ -12,7 +12,7 @@
 if(stateNew) {
 	//sprite_index = spr_SkaterIdle;
 	//image_index = 0;
-	scr_SetCurrentAnimation(idleAnimLegs, idleAnimArms);
+	scr_SetCurrentAnimation(idleAnimLegs, idleAnimArms, 0, 0);
 	//jump = 0;
 	stateVar[0] = random_range(60 * 3, 60 * 6); 
 	stateVar[1] = 0;
