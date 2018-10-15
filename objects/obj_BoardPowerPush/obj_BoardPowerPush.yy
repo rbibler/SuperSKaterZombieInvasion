@@ -88,6 +88,30 @@
             "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
             "propertyId": "08e4c603-2948-4bc3-9677-33a965b5a04e",
             "value": "True"
+        },
+        {
+            "id": "4086b1e7-2bcb-4c30-a3bb-1e9c24d3958e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
+            "propertyId": "368e6ca9-bab5-4dc3-9a62-c277a481ce04",
+            "value": "11"
+        },
+        {
+            "id": "551060b7-3758-4a15-9e5c-41617887e462",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
+            "propertyId": "198711b7-470a-460b-9d79-c4600a025d23",
+            "value": "-1"
+        },
+        {
+            "id": "32d7e25f-69cd-4477-9d76-077f9c387ad3",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
+            "propertyId": "8a1a0dc7-99dc-44c2-be25-75afc1791c11",
+            "value": "obj_PowerPushEffect"
         }
     ],
     "parentObjectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",

@@ -165,7 +165,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "projOffsetStandingX",
+            "varName": "ammoOffsetX",
             "varType": 0
         },
         {
@@ -179,7 +179,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "projOffsetStandingY",
+            "varName": "ammoOffsetY",
             "varType": 0
         },
         {
@@ -251,6 +251,20 @@
             "value": "False",
             "varName": "freezeSkater",
             "varType": 3
+        },
+        {
+            "id": "8a1a0dc7-99dc-44c2-be25-75afc1791c11",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "weaponEffect",
+            "varType": 5
         }
     ],
     "solid": false,

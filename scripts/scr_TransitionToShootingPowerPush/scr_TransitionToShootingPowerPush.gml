@@ -1,1 +1,1 @@
-scr_SetCurrentArmsAnim(powerPushAnimLevel, 0);
+currentAnimation.currentSubstate = 1;

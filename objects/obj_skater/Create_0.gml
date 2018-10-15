@@ -89,21 +89,36 @@ stateInit(s_IDLE);
 
 
 
-idleAnimLegs = scr_RegisterAnimation(spr_SkaterIdleLegs, NORMAL_ANIM_SPEED, true, noone, "Idle", true);
-skateAnimLegs = scr_RegisterAnimation(spr_SkaterSkateLegs, NORMAL_ANIM_SPEED, true, noone, "Skate", true);
-jumpAnimLegs = scr_RegisterAnimation(spr_SkaterJump, NORMAL_ANIM_SPEED, true, noone, "Jump", true);
-crouchAnimLegs = scr_RegisterAnimation(spr_SkaterCrouch, NORMAL_ANIM_SPEED, true, noone, "Crouch", true);
+idleAnim = scr_RegisterStateAnimation(spr_SkaterIdle, NORMAL_ANIM_SPEED, true, noone, "Idle", 1);
+skateAnim = scr_RegisterStateAnimation(spr_SkaterSkate, NORMAL_ANIM_SPEED, true, noone, "Skate", 4);
+jumpAnim = scr_RegisterStateAnimation(spr_SkaterJump, NORMAL_ANIM_SPEED, true, noone, "Jump", 1);
+crouchAnim = scr_RegisterStateAnimation(spr_SkaterCrouch, NORMAL_ANIM_SPEED, true, noone, "Crouch", 1);
 
-idleAnimArms = scr_RegisterAnimation(spr_SkaterIdleArms, NORMAL_ANIM_SPEED, true, noone, "Idle", false);
-skateAnimArms = scr_RegisterAnimation(spr_SkaterSkateArms, NORMAL_ANIM_SPEED, true, noone, "Skate", false);
+idleAnim.persistent = true;
+skateAnim.persistent = true;
+jumpAnim.persistent = true;
+crouchAnim.persistent = true;
 
-powerPushAnimLevel = scr_RegisterAnimation(spr_SkaterPowerPushLevel, NORMAL_ANIM_SPEED, false, scr_SyncArmsAndLegs, "Power Push Level", false);
+powerPushIdle = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
+scr_AddSpriteToSubstateAnimation(powerPushIdle, spr_SkaterPowerPushIdleOne, 0);
+scr_AddSpriteToSubstateAnimation(powerPushIdle, spr_SkaterPowerPushIdleTwo, 1);
+idleAnim.substateAnimations[1] = powerPushIdle;
+powerPushIdle.persistent = true;
 
-currentLegsAnim = idleAnimLegs;
-currentArmsAnim = idleAnimArms;
+powerPushSkate = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
+scr_AddSpriteToSubstateAnimation(powerPushSkate, spr_SkaterPowerPushOne, 0);
+scr_AddSpriteToSubstateAnimation(powerPushSkate, spr_SkaterPowerPushTwo, 1);
+skateAnim.substateAnimations[1] = powerPushSkate;
+powerPushSkate.persistent = true;
 
-previousLegsAnim = idleAnimLegs;
-previousArmsAnim = idleAnimArms;
+powerPushJump = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
+scr_AddSpriteToSubstateAnimation(powerPushJump, spr_SkaterPowerPushJumpingOne, 0);
+scr_AddSpriteToSubstateAnimation(powerPushJump, spr_SkaterPowerPushJumpingTwo, 1);
+jumpAnim.substateAnimations[1] = powerPushJump;
+powerPushJump.persistent = true;
+
+currentAnimation = idleAnim;
+
 
 isImmune = false;
 immuneStart = 0;

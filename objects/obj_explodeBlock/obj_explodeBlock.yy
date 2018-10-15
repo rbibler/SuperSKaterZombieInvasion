@@ -41,30 +41,6 @@
             "value": "0"
         },
         {
-            "id": "bc7023d5-09ee-46e6-8f35-fac26dbf02cd",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "bd03d933-5ad3-4c06-b917-d8324839875d",
-            "value": "0"
-        },
-        {
-            "id": "371aff6b-7624-4d0f-b5b4-6c27dd1b4689",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "a869a8af-a993-4e2c-8f19-4cad0d4179e8",
-            "value": "0"
-        },
-        {
-            "id": "afc93c65-0035-4321-a6c8-d2c6e5b36646",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "de2bec41-2131-47de-9fad-6fead8948c80",
-            "value": "0"
-        },
-        {
             "id": "f02bd1cc-fdce-479f-897b-12808d9a0620",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -97,20 +73,20 @@
             "value": "scr_ExplodingBlockCheckStateChange"
         },
         {
-            "id": "bdb0521b-d18a-4550-b88b-e7ba97f78ec1",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "138ccacc-953b-4564-9ce4-6ba18358b2e7",
-            "value": "True"
-        },
-        {
             "id": "d3fbb3e3-d411-4da3-bef6-071cec379492",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "d890f8ba-bb49-4d71-9adc-6e7acf028b47",
             "value": "250"
+        },
+        {
+            "id": "d310b16d-0f26-42af-8671-2aeed7af91c9",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
+            "propertyId": "8fdf5ec6-eb3b-4f20-94e7-07fe396ccc99",
+            "value": "True"
         }
     ],
     "parentObjectId": "29f06f95-3599-467a-8c1b-0011227dfc7d",

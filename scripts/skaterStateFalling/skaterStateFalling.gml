@@ -8,7 +8,7 @@
 if(stateNew) {
 	//sprite_index = spr_SkaterJump;
 	//image_index = 0;
-	scr_SetCurrentAnimation(jumpAnimLegs, jumpAnimLegs, 0, 0);
+	scr_SetCurrentAnimation(jumpAnim);
 }
 
 //SkaterBasicStateAnimation();

@@ -9,7 +9,7 @@
 // Also add jump impetus to yspeed to make the skater jump
 if(stateNew) {
 	//sprite_index = spr_SkaterJump;
-	scr_SetCurrentAnimation(jumpAnimLegs, jumpAnimLegs, 0, 0);
+	scr_SetCurrentAnimation(jumpAnim);
 	if(bounceDirection == 0) {
 		ySpeed = bounceSpeed;
 		jump = 1;

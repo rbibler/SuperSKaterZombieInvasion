@@ -15,11 +15,6 @@ if(isImmune) {
 
 if(drawToggle) {
 	draw_self();
-	if(currentArmsAnim != noone) {
-		if(currentArmsAnim.sprite_index != noone) {
-			draw_sprite_ext(currentArmsAnim.sprite_index, currentArmsAnim.currentIndex, x, y, image_xscale, image_yscale, 1, c_white, 1);
-		}
-	}
 }
 
 if(global.debug == true) {

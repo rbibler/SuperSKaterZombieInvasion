@@ -12,7 +12,9 @@ with(weapon) {
 			// Fire the weapon
 			currentCooldownCount = cooldownTime;
 			ammoOnScreen++;
-			var ammo = instance_create_layer(obj_skater.x, obj_skater.y, "AMMO", obj_PowerPushBall);
+			var ammoOffsetX = weapon.ammoOffsetX * sign(other.myDirection);
+			var ammoOffsetY = weapon.ammoOffsetY;
+			var ammo = instance_create_layer(obj_skater.x + ammoOffsetX, obj_skater.y + ammoOffsetY, "AMMO", obj_PowerPushBall);
 			ammo.weaponParent = weapon;
 			ammo.ammoDirection = other.myDirection;
 			ammo.image_xscale = ammo.ammoDirection;
@@ -21,6 +23,8 @@ with(weapon) {
 			if(diag) {
 				ammo.ySpeed = -ammo.ammoSpeed;
 			}
+			var effect = instance_create_layer(obj_skater.x, obj_skater.y, "ANIMS", weapon.attackEffectAnimation);
+			effect.running = true;
 		} 
 	}
 }
@@ -30,10 +34,5 @@ if(didFire) {
 	image_index = 0;
 	stateTimer = 0;
 	hasWeaponImmunity = true;
-	if(stateName = s_IDLE) {
-		//scr_SetCurrentAnimation(diag ? powerPushAnimDiagonal : powerPushAnimIdle,);
-		scr_TransitionToShootingPowerPush();
-	} else if(stateName = s_MOVING) {
-		scr_TransitionToShootingPowerPush();
-	}
+	scr_TransitionToShootingPowerPush();
 }
