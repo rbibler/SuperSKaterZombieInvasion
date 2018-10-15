@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "87dffe7f-4cfc-4081-91e6-876387b29fb9"
+        },
+        {
+            "id": "1f320e70-67a0-4c54-b6a4-08816915f682",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "87dffe7f-4cfc-4081-91e6-876387b29fb9"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -106,12 +116,12 @@
             "value": "-1"
         },
         {
-            "id": "32d7e25f-69cd-4477-9d76-077f9c387ad3",
+            "id": "cc29a5df-b04c-4810-ad9a-6d31900a9bec",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
-            "propertyId": "8a1a0dc7-99dc-44c2-be25-75afc1791c11",
-            "value": "obj_PowerPushEffect"
+            "propertyId": "58a4034b-8b95-4008-b5d8-d803b88262df",
+            "value": "spr_PowerPushEffect"
         }
     ],
     "parentObjectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",

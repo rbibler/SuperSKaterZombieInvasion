@@ -33,11 +33,17 @@
 #macro GRID_Y	8
 
 #macro NORMAL_ANIM_SPEED	5 / 60
+#macro FAST_ANIM_SPEED  10 / 60
 
 enum ANIMATION {
 
 	NORMAL = 60 / 5,
 	NORMALDECIMAL = 0.0833333
+}
+
+enum WEAPONSTATES {
+	IDLE = 1,
+	FIRING = 2
 }
 
 

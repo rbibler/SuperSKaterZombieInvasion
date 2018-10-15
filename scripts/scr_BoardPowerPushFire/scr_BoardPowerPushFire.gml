@@ -23,8 +23,10 @@ with(weapon) {
 			if(diag) {
 				ammo.ySpeed = -ammo.ammoSpeed;
 			}
-			var effect = instance_create_layer(obj_skater.x, obj_skater.y, "ANIMS", weapon.attackEffectAnimation);
-			effect.running = true;
+			weapon.state = WEAPONSTATES.FIRING;
+			weapon.x = obj_skater.x;
+			weapon.y = obj_skater.y;
+			weapon.image_xscale = sign(obj_skater.myDirection);
 		} 
 	}
 }

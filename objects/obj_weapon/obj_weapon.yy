@@ -253,7 +253,7 @@
             "varType": 3
         },
         {
-            "id": "8a1a0dc7-99dc-44c2-be25-75afc1791c11",
+            "id": "58a4034b-8b95-4008-b5d8-d803b88262df",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -263,7 +263,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "weaponEffect",
+            "varName": "sprite",
             "varType": 5
         }
     ],

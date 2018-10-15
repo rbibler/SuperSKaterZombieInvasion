@@ -655,14 +655,6 @@
             }
         },
         {
-            "Key": "2d77290a-f6d2-4a61-90f4-aa9c66a189af",
-            "Value": {
-                "id": "6eebb63d-f6fd-476f-b339-844c368799eb",
-                "resourcePath": "objects\\obj_PowerPushEffect\\obj_PowerPushEffect.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2dfad59e-afea-40a8-b8d1-d58564acfe0b",
             "Value": {
                 "id": "ca23a110-45e4-47e4-ba9c-c7ae2c0c09b2",
@@ -1671,14 +1663,6 @@
             }
         },
         {
-            "Key": "7c4fda37-16c6-410c-b776-dbf2c452df43",
-            "Value": {
-                "id": "67002586-e33d-4831-8861-6035d14d0fdb",
-                "resourcePath": "objects\\obj_WeaponEffect\\obj_WeaponEffect.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7c6f63d5-ad21-46e6-8413-5bfa0ed794eb",
             "Value": {
                 "id": "809ee7d1-df37-4c65-b447-07b59e4848f7",
@@ -2252,14 +2236,6 @@
                 "id": "62e11d65-b254-404c-af21-154580b930e9",
                 "resourcePath": "scripts\\DestoryAllThesePowerups\\DestoryAllThesePowerups.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "a58cf918-1af2-4bb0-a1cd-e84c30c83696",
-            "Value": {
-                "id": "33e9583e-4bf5-4286-b4c2-a9a80e8dcf8e",
-                "resourcePath": "views\\a58cf918-1af2-4bb0-a1cd-e84c30c83696.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
