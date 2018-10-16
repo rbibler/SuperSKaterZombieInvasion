@@ -20,7 +20,7 @@ if(input[LEFT]) {
 	}
 } 
 
-GeneralCheckSlopeImpetus();
+scr_GeneralCheckSlopeImpetus();
 
 // Can only go so fast
 // Choose max speed based on situation: faster if on a slope

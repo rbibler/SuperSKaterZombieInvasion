@@ -4,7 +4,7 @@ switch(currentState) {
 	case s_IDLE:
 		var dist = abs(x - obj_skater.x);
 		if(dist <= activationRange) {
-			stateSwitch(s_ATTACKING);
+			scr_StateSwitch(s_ATTACKING);
 		}
 	break;
 	

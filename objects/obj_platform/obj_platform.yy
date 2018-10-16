@@ -43,7 +43,7 @@
             "mvc": "1.0",
             "objectId": "de9ae66e-f636-4141-bf2f-815a0308cf01",
             "propertyId": "746a4138-d01b-41a4-83ac-431b895df83e",
-            "value": "MovingPlatformVertCollisionScript"
+            "value": "scr_MovingPlatformVertCollision"
         }
     ],
     "parentObjectId": "c63f57e4-0a7a-458f-9836-de71bde03190",

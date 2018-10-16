@@ -4,7 +4,7 @@
 
 // Only want to switch states if this is the first hit
 if(state != stateDead and state != stateHit) {
-	stateSwitch("HIT");
+	scr_StateSwitch("HIT");
 	
 }
 

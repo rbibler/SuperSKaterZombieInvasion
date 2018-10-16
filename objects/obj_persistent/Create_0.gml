@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-macros();
+scr_Macros();
 slopeTiles[0] = 0;
 slopeTiles[1] = 0;
 slopeTiles[2] = 1;
@@ -39,6 +39,6 @@ global.gridY = 8;
 
 global.debug = false;
 
-ScaleGame(2, 2);
+scr_ScaleGame(2, 2);
 room_goto_next();
 

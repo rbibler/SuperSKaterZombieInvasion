@@ -11,12 +11,12 @@ switch(currentState)
 		if(stateTimer >= stateVar[0]) {
 			if(!input[SHOOT]) {
 				moveDirOnRestart = input[LEFT] ? LEFT : RIGHT;
-				stateSwitch(s_JUMPING);
+				scr_StateSwitch(s_JUMPING);
 			} else {
 				stateVar[0] = random_range(1 * 60, 7 * 60);
 			}
 		} else if(scr_ShouldChaseSkater(true)) {
-			stateSwitch(s_ATTACKING);
+			scr_StateSwitch(s_ATTACKING);
 		}
 	break;
 	
@@ -24,13 +24,13 @@ switch(currentState)
 		if(!scr_ShouldChaseSkater(false)) {
 			input[SPRINT] = 0;
 			moveDirOnRestart = input[RIGHT] == 1 ? RIGHT : LEFT;
-			stateSwitch(s_MOVING);
+			scr_StateSwitch(s_MOVING);
 		}
 	break;
 	
 	case s_JUMPING:
 		if(ySpeed > 0) {
-			stateSwitch(s_FALLING);
+			scr_StateSwitch(s_FALLING);
 		}
 	break;
 	case s_HIT:
@@ -53,14 +53,14 @@ switch(currentState)
 					input[LEFT] = 1;
 					input[RIGHT] = 0;
 				}
-				stateSwitch(s_MOVING);
+				scr_StateSwitch(s_MOVING);
 			}
 		}
 	break;
 	
 	case s_FALLING:
 		if(grounded) {
-			stateSwitch(s_MOVING);
+			scr_StateSwitch(s_MOVING);
 		}
 	break;
 }

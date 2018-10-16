@@ -33,6 +33,6 @@ if(stateTimer - stateVar[1] >= stateVar[0]) {
 
 var dist = point_distance(obj_skater.x, obj_skater.y, x, y);
 if(dist < menacementDistance and stateTimer >= 120) {
-	stateSwitch("ATTACKING");
+	scr_StateSwitch("ATTACKING");
 }
 

@@ -4,5 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
-GeneralHorizontalCollisionCheck();
+scr_GeneralHorizontalCollisionCheck();
 

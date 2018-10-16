@@ -30,7 +30,7 @@ scr_SkaterWeaponFire();
 scr_SkaterHorizontalImpetus();
 
 // Figure out the fractional movement so that we're always working with integers
-GeneralMovementFractions();
+scr_GeneralMovementFractions();
 
 // If no directional input, slow the skater down until he stops
 if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
@@ -49,7 +49,7 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 	
 }
 
-MoveAndCollide();
+scr_MoveAndCollide();
 scr_SkaterLadderCollisions();
 
 // If yspeed is greater than zero, we've reached our apogee so it's time to fall
@@ -58,11 +58,11 @@ if(jump == 1 and ySpeed > 0){
 	// Start falling. Can't set jump to zero, because that'll reset the can jump flag
 	jump = 2;
 	scr_StopYMotion();
-	stateSwitch(s_FALLING);
+	scr_StateSwitch(s_FALLING);
 }
 
 // If we hit the ground somehow (not likely) we should be idle. Let idle state take care of
 // skating check
 if(grounded) {
-	stateSwitch("IDLE");
+	scr_StateSwitch("IDLE");
 }

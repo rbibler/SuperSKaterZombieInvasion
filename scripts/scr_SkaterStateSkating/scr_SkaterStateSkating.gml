@@ -39,26 +39,26 @@ if(stateVar[0] == true) {
 }
 
 // Crouch if the user presses down
-if(input[DOWN] and state != climbingState) {
-	stateSwitch(s_CROUCHING);
+if(input[DOWN] and state != climbState) {
+	scr_StateSwitch(s_CROUCHING);
 } 
 
 // Check how fast the skater should be moving
 scr_SkaterHorizontalImpetus();
 
-MoveAndCollide()
+scr_MoveAndCollide()
 
 scr_SkaterLadderCollisions();
 
 
 // If we're not moving and there's no input, then we're idle
 if(xSpeed == 0 and !input[RIGHT] and !input[LEFT]) {
-	stateSwitch(s_IDLE);
+	scr_StateSwitch(s_IDLE);
 }
 
 // If the ground has disappeared we're falling
 if(!grounded) {
-	stateSwitch(s_FALLING);
+	scr_StateSwitch(s_FALLING);
 }
 
 
@@ -66,7 +66,7 @@ if(!grounded) {
 if(input[JUMP]) {
 	show_debug_message("JumpFrames: " + string(canJump));
 	if(jump == 0 and !lastInput[JUMP] and canJump < jumpFramesAllowance) {
-		stateSwitch(s_JUMPING);
+		scr_StateSwitch(s_JUMPING);
 	}
 } 
 

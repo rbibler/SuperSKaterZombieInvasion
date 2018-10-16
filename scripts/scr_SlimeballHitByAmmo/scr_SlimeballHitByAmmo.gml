@@ -7,12 +7,12 @@ var ammo = argument0;
 if(state != stateDead) {
 	if(ammo.object_index == obj_slingshotRock) {
 		// Insta death!
-		stateSwitch("DEAD");
+		scr_StateSwitch("DEAD");
 		
 		// Nice job player!
 		score += 10;
 	} else if(ammo.object_index == obj_board) {
-		stateSwitch("DEAD");
+		scr_StateSwitch("DEAD");
 	}
 }
 

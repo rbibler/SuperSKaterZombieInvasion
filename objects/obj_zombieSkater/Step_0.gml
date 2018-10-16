@@ -8,6 +8,6 @@ if(ySpeed >= maxYSpeed) {
 	ySpeed = maxYSpeed;
 }
 
-GeneralCheckGrounded();
+scr_GeneralCheckGrounded();
 event_inherited();
 

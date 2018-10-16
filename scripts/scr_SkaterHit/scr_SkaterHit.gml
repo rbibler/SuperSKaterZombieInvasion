@@ -5,12 +5,12 @@ var enemy = argument0;
 
 if(state != knockedBackState and !isImmune) {
 	stateVar[0] = sign(x - other.x);
-	stateSwitch("KNOCKED BACK");
+	scr_StateSwitch("KNOCKED BACK");
 	health -= enemy.hitPoints;
 	infected = enemy.infectious;
 	isImmune = true;
 	immuneStart = frameTimer;
 	if(health <= 0) {
-		stateSwitch("DEAD");
+		scr_StateSwitch("DEAD");
 	}
 }

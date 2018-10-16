@@ -43,7 +43,7 @@
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "bd3fe793-2816-4b49-94e6-b3e0644b239e",
-            "value": "gullStateIdleScript"
+            "value": "scr_GullStateIdle"
         },
         {
             "id": "5056b8c6-c91e-44c0-a0b3-a0712f79911a",
@@ -92,22 +92,6 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
             "value": "gullStateHitScript"
-        },
-        {
-            "id": "5dcc4d75-527d-4c51-8184-ad04d42af99d",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "367e0b56-719a-4b47-ad4d-2571ee18528c",
-            "value": "12"
-        },
-        {
-            "id": "266faf50-2790-4a72-9428-c93fcdc12b60",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "a869a8af-a993-4e2c-8f19-4cad0d4179e8",
-            "value": "-3"
         },
         {
             "id": "e885459e-3ea2-492e-b8dd-27c12e614dda",

@@ -16,7 +16,7 @@ switch(currentState) {
 		stateVar[0] = 0;
 		sprite_index = spr_slimeballMove;
 		scr_StopXMotion();
-		ZeroInputs();
+		scr_ZeroInputs();
 	break;
 	
 	case s_HIT:
@@ -34,14 +34,14 @@ switch(currentState) {
 		
 		// Reset this flag
 		stateVar[0] = 0;
-		ZeroInputs();
+		scr_ZeroInputs();
 	break;
 	
 	case s_FALLING:
 		sprite_index = spr_slimeballJump;
 		image_index = 0;
 		scr_StopXMotion();
-		ZeroInputs();
+		scr_ZeroInputs();
 	break;
 	
 	case s_ATTACKING:
@@ -55,6 +55,6 @@ switch(currentState) {
 		// Can't move, we're dying
 		scr_StopXMotion();
 		scr_StopYMotion();
-		ZeroInputs();
+		scr_ZeroInputs();
 	break;
 }

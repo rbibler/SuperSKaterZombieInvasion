@@ -7,7 +7,7 @@ if(stateNew) {
 
 var dist = point_distance(x, y, obj_skater.x, obj_skater.y);
 if(dist >= activationRange or stateTimer >= 120) {
-	stateSwitch("MOVING");
+	scr_StateSwitch("MOVING");
 	with(obj_surfboard) {
 		instance_destroy();
 	}

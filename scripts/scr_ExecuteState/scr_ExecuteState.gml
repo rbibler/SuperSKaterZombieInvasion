@@ -10,7 +10,7 @@ script_execute(move);
 //scr_EnemyHorizontalImpetus();
 
 scr_EnemyMovement();
-MoveAndCollide();
+scr_MoveAndCollide();
 
 script_execute(animate, stateName);
 script_execute(checkStateChange, stateName);

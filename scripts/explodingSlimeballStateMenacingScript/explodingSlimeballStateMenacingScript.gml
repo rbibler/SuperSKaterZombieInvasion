@@ -38,8 +38,8 @@ if(dist <= explodeDistance) {
 
 if(stateVar[2] == true and stateTimer - stateVar[3] >= 30) {
 	if(stateVar[0] == true) {
-		stateSwitch("DEAD");
+		scr_StateSwitch("DEAD");
 	} else {
-		stateSwitch("IDLE");
+		scr_StateSwitch("IDLE");
 	}
 } 

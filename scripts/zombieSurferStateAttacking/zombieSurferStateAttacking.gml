@@ -8,6 +8,6 @@ if(stateNew) {
 // toss, toss another sack
 
 if(stateTimer >= 60) {
-	stateSwitch("MOVING");
+	scr_StateSwitch("MOVING");
 }
 

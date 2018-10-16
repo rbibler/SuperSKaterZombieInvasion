@@ -50,16 +50,16 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 	
 }
 
-MoveAndCollide();
+scr_MoveAndCollide();
 scr_SkaterLadderCollisions();
 
 if(stateTimer >= 30 or !input[JUMP] or currentPowerup.fuelRemaining <= 0) {
 	scr_StopYMotion();
-	stateSwitch(s_FALLING);
+	scr_StateSwitch(s_FALLING);
 }
 
 // If we hit the ground somehow (not likely) we should be idle. Let idle state take care of
 // skating check
 if(grounded) {
-	stateSwitch(s_IDLE);
+	scr_StateSwitch(s_IDLE);
 }

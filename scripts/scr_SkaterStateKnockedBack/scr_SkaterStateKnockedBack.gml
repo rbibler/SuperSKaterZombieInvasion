@@ -4,8 +4,8 @@ if(stateNew) {
 	grounded = false;
 }
 
-MoveAndCollide();
+scr_MoveAndCollide();
 
 if(grounded) {
-	stateSwitch(s_IDLE);
+	scr_StateSwitch(s_IDLE);
 }

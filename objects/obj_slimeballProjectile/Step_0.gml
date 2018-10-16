@@ -6,7 +6,7 @@ if(ySpeed >= myHeight) {
 	ySpeed = myHeight - 1;
 }
 
-MoveAndCollide();
+scr_MoveAndCollide();
 
 if(grounded) {
 	if(!place_meeting(x, y + 1, obj_enemyPuddle)) {

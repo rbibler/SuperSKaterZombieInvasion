@@ -1,8 +1,8 @@
 /// This is a script that helps the zombie skater enemy determine how to move. 
 //Basically, he skates in a pre-determined unless he sees a wall or hits an edge, in which case he jumps
 
-if(fell_off_edge()) {
-	stateSwitch("JUMPING");
+if(scr_FellOffEdge()) {
+	scr_StateSwitch("JUMPING");
 }
 
 var bbox_side = bbox_right;
@@ -14,6 +14,6 @@ var colPoint = tilemap_get_at_pixel(collisionTiles, bbox_side + checkAhead, bbox
 if(colPoint == 1 and grounded) {
 	colPoint = tilemap_get_at_pixel(collisionTiles, bbox_side + checkAhead - (16 * sign(xSpeed)), bbox_bottom - ((bbox_bottom - bbox_top) / 2));
 	if(colPoint < 5) {
-		stateSwitch("JUMPING");
+		scr_StateSwitch("JUMPING");
 	}
 }

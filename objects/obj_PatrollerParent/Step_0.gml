@@ -3,9 +3,9 @@
 
 // Inherit the parent event
 
-GeneralApplyGravity();
+scr_GeneralApplyGravity();
 
-GeneralCheckGrounded();
+scr_GeneralCheckGrounded();
 
 event_inherited();
 

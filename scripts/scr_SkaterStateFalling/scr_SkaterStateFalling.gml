@@ -21,7 +21,7 @@ scr_SkaterWeaponFire();
 scr_SkaterHorizontalImpetus();
 
 // Figure out the fractional movement so that we're always working with integers
-GeneralMovementFractions();
+scr_GeneralMovementFractions();
 
 // If no directional input, slow the skater down until he stops
 if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
@@ -40,23 +40,23 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 	
 }
 
-MoveAndCollide();
+scr_MoveAndCollide();
 scr_SkaterLadderCollisions();
 
 // If we hit the ground, we're idle. Let the idle state take care of other checks
 if(grounded) {
 	if(input[LEFT] or input[RIGHT]) {
-		stateSwitch(s_MOVING);
+		scr_StateSwitch(s_MOVING);
 	} else {
-		stateSwitch(s_IDLE);
+		scr_StateSwitch(s_IDLE);
 	}
 }
 
 // Skater can jump if jump is pressed fresh on this frame and skater isn't already jumping
 if(input[JUMP]) {
 	if((jump == 0 and !lastInput[JUMP] and canJump < jumpFramesAllowance)) {
-		stateSwitch(s_JUMPING);
+		scr_StateSwitch(s_JUMPING);
 	} else if(scr_CanFloat()) {
-		stateSwitch(s_FLOATING);
+		scr_StateSwitch(s_FLOATING);
 	}
 } 

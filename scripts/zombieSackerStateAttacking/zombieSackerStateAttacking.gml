@@ -76,5 +76,5 @@ switch(stateVar[1]) {
 }
 
 scr_EnemyMovement();
-MoveAndCollide();
+scr_MoveAndCollide();
 

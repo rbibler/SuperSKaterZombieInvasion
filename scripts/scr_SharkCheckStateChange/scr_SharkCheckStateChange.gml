@@ -4,20 +4,20 @@ switch(currentState) {
 	case s_IDLE:
 		var dist = abs(x - obj_skater.x);
 		if(dist < 50 and stateTimer >= idleWaitTime) {
-			stateSwitch(s_JUMPING);
+			scr_StateSwitch(s_JUMPING);
 		}
 	break;
 
 	case s_JUMPING:
 		if(ySpeed > 0) {
-			stateSwitch(s_FALLING);
+			scr_StateSwitch(s_FALLING);
 		}
 	break;
 	
 	case s_FALLING:
 		if(y >= room_height + sprite_height) {
 			
-			stateSwitch(s_IDLE);
+			scr_StateSwitch(s_IDLE);
 		}
 	break;
 

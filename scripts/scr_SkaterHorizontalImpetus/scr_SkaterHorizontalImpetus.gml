@@ -32,11 +32,11 @@ if(input[LEFT]) {
 } else {
 	// If no directional input, slow the skater down until he stops
 	if(abs(xSpeed) > 0 and grounded and state != rollState) {
-		stateSwitch("ROLLING");
+		scr_StateSwitch("ROLLING");
 	}
 } 
 
-GeneralCheckSlopeImpetus();
+scr_GeneralCheckSlopeImpetus();
 
 // Skater can only go so fast
 // Choose max speed based on situation: faster if on a slope

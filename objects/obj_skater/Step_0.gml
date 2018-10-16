@@ -28,10 +28,10 @@ if(ySpeed >= maxYSpeed) {
 	ySpeed = maxYSpeed;
 }
 
-GeneralCheckGrounded();
+scr_GeneralCheckGrounded();
 
 // The real fun happens in the state machine
-stateExecute();
+scr_StateExecute();
 scr_UpdateStateAnimation(currentAnimation);
 
 // We don't want the camera to follow us in certain places, so check for them!

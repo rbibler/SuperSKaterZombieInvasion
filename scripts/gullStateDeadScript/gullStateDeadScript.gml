@@ -14,7 +14,7 @@ if(stateTimer >= 120 and grounded) {
 	instance_destroy();
 }
 
-MoveAndCollide();
+scr_MoveAndCollide();
 
 if(grounded) {
 	scr_StopXMotion();

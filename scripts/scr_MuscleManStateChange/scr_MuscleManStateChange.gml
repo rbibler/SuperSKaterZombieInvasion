@@ -29,7 +29,7 @@ switch(currentState)
 					input[LEFT] = 1;
 					input[RIGHT] = 0;
 				}
-				stateSwitch(s_MOVING);
+				scr_StateSwitch(s_MOVING);
 			}
 		}
 	break;

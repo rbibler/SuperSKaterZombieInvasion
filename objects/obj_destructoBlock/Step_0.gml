@@ -7,7 +7,7 @@ if(state == 1) {
 		image_index = 1;
 	} else if(destructoTimer <= 30) {
 		image_index = 2;
-		SetSolid(false);
+		scr_SetSolid(false);
 	} else {
 		instance_destroy();
 	}

@@ -8,7 +8,7 @@ switch(currentState)
 		
 		if(grounded and active) {
 			input[initialDirection] = true;
-			stateSwitch("MOVING");
+			scr_StateSwitch("MOVING");
 		}
 	break;
 
@@ -18,7 +18,7 @@ switch(currentState)
 	
 	case s_JUMPING:
 		if(grounded) {
-			stateSwitch("MOVING");
+			scr_StateSwitch("MOVING");
 		}
 	break;
 	
@@ -33,7 +33,7 @@ switch(currentState)
 				// Pause horizontal movement
 				xSpeed = 0;
 				xSpeedFraction = 0;
-				stateSwitch("DEAD");
+				scr_StateSwitch("DEAD");
 			}
 		}
 	break;
