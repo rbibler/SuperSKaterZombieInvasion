@@ -7,8 +7,6 @@ if(state == stateHit or state == stateDead) {
 	return;
 }
 
-if(other.hasWeaponImmunity == false) {
-	with(other) {
-		SkaterHit(other);
-	}
+with(other) {
+	scr_SkaterHit(other);
 }

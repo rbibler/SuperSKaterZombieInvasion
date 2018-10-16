@@ -63,7 +63,7 @@ for(var i = 0; i < 8; i++) {
 currentWeapon = noone;
 currentPowerup = noone;
 weaponAnimCounter = 0;
-PickupWeapon(obj_BoardPowerPush);
+scr_PickupWeapon(obj_BoardPowerPush);
 
 // Reset the timer for the idle animation
 alarm[0] = 60 * 4;
@@ -72,18 +72,17 @@ alarm[0] = 60 * 4;
 stateMachineInit();
 
 // Define the skater's states
-idleState = stateCreate(s_IDLE,SkaterStateIdle);
-skateState = stateCreate(s_MOVING, SkaterStateSkating);
-jumpState = stateCreate(s_JUMPING, SkaterStateJumping);
-bounceState = stateCreate(s_BOUNCING, SkaterStateBouncing);
-climbState = stateCreate(s_CLIMBING, SkaterStateClimbing);
-crouchState = stateCreate(s_CROUCHING, SkaterStateCrouching);
-fallState = stateCreate(s_FALLING, SkaterStateFalling);
-deadState = stateCreate(s_DEAD, SkaterStateDead);
-rollingState = stateCreate(s_ROLLING, SkaterStateRolling);
-climbingState = stateCreate(s_CLIMBING, SkaterStateClimbing);
-knockedBackState = stateCreate(s_KNOCKED_BACK, SkaterStateKnockedBack);
-floatingState = stateCreate(s_FLOATING, SkaterStateFloating);
+idleState = stateCreate(s_IDLE, scr_SkaterStateIdle);
+skateState = stateCreate(s_MOVING, scr_SkaterStateSkating);
+jumpState = stateCreate(s_JUMPING, scr_SkaterStateJumping);
+bounceState = stateCreate(s_BOUNCING, scr_SkaterStateBouncing);
+climbState = stateCreate(s_CLIMBING, scr_SkaterStateClimbing);
+crouchState = stateCreate(s_CROUCHING, scr_SkaterStateCrouching);
+fallState = stateCreate(s_FALLING, scr_SkaterStateFalling);
+deadState = stateCreate(s_DEAD, scr_SkaterStateDead);
+rollState = stateCreate(s_ROLLING, scr_SkaterStateRolling);
+knockedBackState = stateCreate(s_KNOCKED_BACK, scr_SkaterStateKnockedBack);
+floatState = stateCreate(s_FLOATING, scr_SkaterStateFloating);
 // Set the default state to IDLE
 stateInit(s_IDLE);
 

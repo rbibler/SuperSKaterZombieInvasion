@@ -33,7 +33,7 @@ switch(currentState) {
 		stateVar[0] = 30;
 	
 		// Can't move, we're dying
-		StopXMotion();
-		StopYMotion();
+		scr_StopXMotion();
+		scr_StopYMotion();
 	break;
 }

@@ -5,13 +5,13 @@ switch(currentState) {
 		sprite_index = spr_shark;
 		image_index = 0;
 		gravityOn = false;
-		StopYMotion();
+		scr_StopYMotion();
 	break;
 
 	case s_JUMPING:
 		stateVar[0] = 0;
 		sprite_index = spr_shark;
-		StopXMotion();
+		scr_StopXMotion();
 		ySpeed = jumpSpeed;
 		gravityOn = true;
 	break;
@@ -19,7 +19,7 @@ switch(currentState) {
 	case s_FALLING:
 		sprite_index = spr_shark
 		image_index = 3;
-		StopYMotion();
+		scr_StopYMotion();
 		gravityOn = false;
 	break;
 

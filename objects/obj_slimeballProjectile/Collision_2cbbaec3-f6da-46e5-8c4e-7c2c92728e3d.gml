@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 with(other) {
-	SkaterHit(other);
+	scr_SkaterHit(other);
 }
 
 instance_destroy();

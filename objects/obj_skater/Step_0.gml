@@ -15,7 +15,7 @@ if(isImmune) {
 	}
 }
 // Get the user's input. 
-SkaterInput();
+scr_SkaterInput();
 if(input[RIGHT]) {
 	facing = 1;
 } else if(input[LEFT]) {

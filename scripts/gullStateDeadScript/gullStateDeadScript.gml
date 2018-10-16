@@ -17,5 +17,5 @@ if(stateTimer >= 120 and grounded) {
 MoveAndCollide();
 
 if(grounded) {
-	StopXMotion();
+	scr_StopXMotion();
 }

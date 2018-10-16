@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(grounded) {
 	with(other) {
-		PickupPowerup(obj_rocketBoard);	
+		scr_PickupPowerup(obj_rocketBoard);	
 	}
 	instance_destroy();
 }

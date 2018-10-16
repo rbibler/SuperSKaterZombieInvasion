@@ -18,7 +18,7 @@ switch(currentState)
 				stateVar[0] = stateTimer;
 		
 				// Pause horizontal movement
-				StopXMotion();
+				scr_StopXMotion();
 			// If this isn't our first grounding, see if enough time has elapsed
 			} else if(stateTimer - stateVar[0] >= 30) {
 				// If so, switch to moving state and move away from the player

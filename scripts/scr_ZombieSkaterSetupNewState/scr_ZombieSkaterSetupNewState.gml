@@ -9,7 +9,7 @@ switch(currentState)
 		stateVar[0] = random_range(60 * 1, 60 * 3); 
 		stateVar[1] = 0;
 		stateVar[2] = false;
-		StopXMotion();
+		scr_StopXMotion();
 	break;
 	
 	case s_MOVING:
@@ -43,8 +43,8 @@ switch(currentState)
 		stateVar[0] = 30;
 		
 		// Can't move, we're dying
-		StopXMotion();
-		StopYMotion();
+		scr_StopXMotion();
+		scr_StopYMotion();
 		ZeroInputs();
 	break;
 }

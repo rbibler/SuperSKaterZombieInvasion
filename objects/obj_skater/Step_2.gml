@@ -12,7 +12,7 @@ x += carrySpeed;
 carrySpeed = 0;
 
 lastXSpeed = xSpeed;
-SaveInput();
+scr_SaveInput();
 
 if(infected) {
 	if(frameTimer mod 360 == 0) {

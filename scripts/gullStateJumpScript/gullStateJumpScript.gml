@@ -11,7 +11,7 @@ if(grounded) {
 		ySpeed = jumpSpeed;
 		grounded = false;
 	} else {
-		StopXMotion();
+		scr_StopXMotion();
 		stateSwitch("IDLE");
 	}
 }
@@ -26,7 +26,7 @@ if(grounded) {
 		ySpeed = jumpSpeed;
 		grounded = false;
 	} else {
-		StopXMotion();
+		scr_StopXMotion();
 		stateSwitch("IDLE");
 	}
 }

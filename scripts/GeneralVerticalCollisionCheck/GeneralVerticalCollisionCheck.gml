@@ -34,7 +34,7 @@ if(((p1 != 0 and p1 <= 4 and p1 > 0) or (p2 != 0 and p2 <= 4 and p2 > 0))) {
 
 	} 
 	// Stop the object from moving anymore
-	StopYMotion();
+	scr_StopYMotion();
 } 
 
 // Find out how far above the ground the object is for slope collisions 
@@ -50,7 +50,7 @@ if(floorDist >= 0) {
 		// Then set it back to one pixel above the floor
 		y -= (floorDist + 1);
 		// Stop its y motion
-		StopYMotion();
+		scr_StopYMotion();
 		// And update the floor distance variable to reflect it's new y pos
 		floorDist = -1;
 		grounded = true;
@@ -89,7 +89,7 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		if(bbox_bottom > obj.bbox_top and obj.object_index == obj_controlBlock) {
 			y = obj.bbox_top - (bbox_bottom - y) - 1;
 		}
-		StopYMotion();
+		scr_StopYMotion();
 		with(obj) {
 			script_execute(skaterVertCollisionScript, other);
 		}
@@ -99,7 +99,7 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		var obj = instance_place(x, y + 2, obj_baseBlock);
 			if(obj != noone and obj.isSolid) {
 			y = obj.bbox_top - (bbox_bottom - y) - 1;
-			StopYMotion();
+			scr_StopYMotion();
 			with(obj) {
 				script_execute(skaterVertCollisionScript, other);
 			}

@@ -19,7 +19,7 @@ if(p1 == 1 or p2 == 1 or p3 == 1 and (self.object_index == obj_skater and state 
 	} else {
 		x = x - (x mod 16) - (bbox_left - x);
 	}
-	StopXMotion();
+	scr_StopXMotion();
 	if(script_exists(horizCollisionScript)) {
 		script_execute(horizCollisionScript);
 	}
@@ -51,7 +51,7 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 			else while(!place_meeting(x + sign(xSpeed), y, obj_baseBlock)) {
 				x = x + sign(xSpeed);
 			}
-			StopXMotion(); 
+			scr_StopXMotion(); 
 			script_execute(horizCollisionScript, obj);
 			show_debug_message("Here is a platform collision");
 		}

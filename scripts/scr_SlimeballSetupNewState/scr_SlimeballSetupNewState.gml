@@ -15,7 +15,7 @@ switch(currentState) {
 	case s_JUMPING:
 		stateVar[0] = 0;
 		sprite_index = spr_slimeballMove;
-		StopXMotion();
+		scr_StopXMotion();
 		ZeroInputs();
 	break;
 	
@@ -40,7 +40,7 @@ switch(currentState) {
 	case s_FALLING:
 		sprite_index = spr_slimeballJump;
 		image_index = 0;
-		StopXMotion();
+		scr_StopXMotion();
 		ZeroInputs();
 	break;
 	
@@ -53,8 +53,8 @@ switch(currentState) {
 		stateVar[0] = 30;
 	
 		// Can't move, we're dying
-		StopXMotion();
-		StopYMotion();
+		scr_StopXMotion();
+		scr_StopYMotion();
 		ZeroInputs();
 	break;
 }
