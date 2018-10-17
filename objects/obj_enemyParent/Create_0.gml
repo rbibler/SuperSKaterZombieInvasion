@@ -26,16 +26,6 @@ for(var i = 0; i < 8; i++) {
 	lastInput[i] = input[i];
 }
 
-//stateVar[0] = 0;
-//stateVar[1] = 0;
-//stateVar[2] = 0;
-//stateVar[3] = 0;
-//stateVar[4] = 0;
-//stateVar[5] = 0;
-//stateVar[6] = 0;
-
-
-
 // Set the initial gravity to whatever our gravity is
 
 maxYSpeed = 6;
@@ -62,3 +52,5 @@ climbState = 0;
 
 // Set the default state to IDLE
 scr_StateInit(initialState);
+
+currentAnim = noone;
