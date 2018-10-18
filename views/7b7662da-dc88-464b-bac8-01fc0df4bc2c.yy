@@ -4,10 +4,10 @@
     "mvc": "1.1",
     "name": "7b7662da-dc88-464b-bac8-01fc0df4bc2c",
     "children": [
-        "545c4242-023d-45b1-8501-9cc735561916",
-        "f4c40ab5-7a18-4ba0-ae93-25632e54888b",
-        "02588c78-fb4a-4538-9e5c-9b63df8cde97",
-        "03df1e46-6e61-4304-b6c4-23cc8544c736"
+        "03df1e46-6e61-4304-b6c4-23cc8544c736",
+        "9b847b33-8b20-41ef-ad5f-674c2cd53318",
+        "7c1a905a-b4f9-415e-9a10-530eeb00bd85",
+        "5b22de09-8842-4d25-8846-4e2288e9ade5"
     ],
     "filterType": "GMSprite",
     "folderName": "ExplodingSlimeballSprites",
