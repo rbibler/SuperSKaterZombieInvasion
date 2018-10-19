@@ -18,6 +18,7 @@ with(anim) {
 	}
 	currentIndex += animSpeed;
 	if(currentIndex >= animLength) {
+		isDone = true;
 		if(loop) {
 			currentIndex = 0;
 		} else {
@@ -25,7 +26,6 @@ with(anim) {
 			if(endScript != noone) {
 				script_execute(endScript);
 			}
-			isDone = true;
 		}
 	}
 	other.image_index = currentIndex;

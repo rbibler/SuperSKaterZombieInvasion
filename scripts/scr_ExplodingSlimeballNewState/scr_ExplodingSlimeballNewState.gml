@@ -6,6 +6,9 @@ var currentState = argument0;
 switch(currentState) {
 	case s_IDLE:
 		scr_SetCurrentAnimation(idleAnim);
+		stateVar[0] = false;
+		stateVar[1] = stateTimer;
+		stateVar[2] = random_range(180, 7 * 60);
 	break;
 	
 	case s_ATTACKING:
