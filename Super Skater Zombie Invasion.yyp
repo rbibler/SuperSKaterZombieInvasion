@@ -1311,14 +1311,6 @@
             }
         },
         {
-            "Key": "60a67d1c-f308-43f1-9116-38fdf37cc35e",
-            "Value": {
-                "id": "37e4114e-48d0-4494-bf07-12bfae16322e",
-                "resourcePath": "sprites\\spr_SkaterIdleLegs\\spr_SkaterIdleLegs.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "624705c6-2dea-495d-bdfd-c500759ede72",
             "Value": {
                 "id": "49b92ae3-346b-4cf2-a44a-76dca932f770",
@@ -2327,14 +2319,6 @@
             }
         },
         {
-            "Key": "ab55dee5-effd-4e11-98ad-6ac1bb772f52",
-            "Value": {
-                "id": "ee0e8067-71d9-49bb-a7d9-a7b043365909",
-                "resourcePath": "views\\ab55dee5-effd-4e11-98ad-6ac1bb772f52.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "ac20fad2-d0ac-4f8d-a61a-55071a528e44",
             "Value": {
                 "id": "6a8fa5ce-e59f-437c-bc7c-5d0e39fb4947",
@@ -2876,14 +2860,6 @@
                 "id": "25e2a18e-2af3-4cf9-8995-3e61053986dc",
                 "resourcePath": "scripts\\zombieSackerStateAttacking\\zombieSackerStateAttacking.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d5689ffb-c5b1-4e23-8605-dc494a651662",
-            "Value": {
-                "id": "7dc84121-84a5-4c7e-ac26-f1f2a0ccb5a4",
-                "resourcePath": "sprites\\spr_SkaterIdleArms\\spr_SkaterIdleArms.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

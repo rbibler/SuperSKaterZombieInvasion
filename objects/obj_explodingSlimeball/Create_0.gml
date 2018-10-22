@@ -13,7 +13,7 @@ idleAnim = scr_RegisterStateAnimation(
 	);
 attackAnim = scr_RegisterStateAnimation(
 		spr_ExplodingSlimeballExplosion, 
-		NORMAL_ANIM_SPEED, 
+		8/60, 
 		false, 
 		noone, 
 		"", 
@@ -29,11 +29,21 @@ jumpAnim = scr_RegisterStateAnimation(
 	);
 menaceAnim = scr_RegisterStateAnimation(
 		spr_ExplodingSlimeballMenacing, 
-		NORMAL_ANIM_SPEED, 
+		8/60, 
 		false, 
 		noone, 
 		"", 
 		sprite_get_number(spr_ExplodingSlimeballMenacing)
 	);
+	
+deadAnim = scr_RegisterStateAnimation(
+		spr_ExplodingSlimeballExplosion,
+		8/60,
+		false,
+		noone,
+		"",
+		sprite_get_number(spr_ExplodingSlimeballExplosion)
+	);
 
 currentAnimation = idleAnim;
+isImmune = true;

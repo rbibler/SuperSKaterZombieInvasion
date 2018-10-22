@@ -117,7 +117,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2.5",
+            "value": "6",
             "varName": "projSpeed",
             "varType": 0
         }

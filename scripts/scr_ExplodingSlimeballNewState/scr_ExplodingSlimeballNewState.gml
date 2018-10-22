@@ -30,5 +30,9 @@ switch(currentState) {
 	
 	case s_DEAD:
 		scr_SetCurrentAnimation(deadAnim);
+		myGravity = 0;
+		if(ySpeed < 0) {
+			ySpeed = -3;
+		}
 	break;
 }

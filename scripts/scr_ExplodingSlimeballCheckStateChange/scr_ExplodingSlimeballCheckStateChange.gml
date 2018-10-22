@@ -30,5 +30,8 @@ switch(currentState) {
 	break;
 	
 	case s_DEAD:
+		if(currentAnimation.isDone) {
+			instance_destroy();
+		}
 	break;
 }
