@@ -12,3 +12,4 @@ currentAnimation = animation;
 
 currentAnimation.currentSubstate = 0;
 currentAnimation.currentIndex = 0;
+currentAnimation.isDone = false;

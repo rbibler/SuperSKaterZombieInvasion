@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "79137575-6a47-40d5-93a5-b386fb73b89e"
+        },
+        {
+            "id": "59213869-2ad5-462b-81f7-02024bc9e325",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "79137575-6a47-40d5-93a5-b386fb73b89e"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -72,6 +82,14 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "29b75946-cc68-425e-98df-81aab9e40d89",
             "value": "scr_EmptyAssScript"
+        },
+        {
+            "id": "5b787a05-9ea2-44e4-8e4f-1ae2d41bc765",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "54427283-bc64-40b4-bcef-3427097bb49b",
+            "value": "250"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
@@ -101,34 +119,6 @@
             "resourceFilter": 1023,
             "value": "2.5",
             "varName": "projSpeed",
-            "varType": 0
-        },
-        {
-            "id": "4cd958a8-d948-40b0-91d0-55940e512b66",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "150",
-            "varName": "menacementDistance",
-            "varType": 0
-        },
-        {
-            "id": "b55fd6b2-8d61-459e-9114-797d92e73d23",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "50",
-            "varName": "explodeDistance",
             "varType": 0
         }
     ],

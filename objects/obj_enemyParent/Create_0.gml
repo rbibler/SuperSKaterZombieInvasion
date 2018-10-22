@@ -45,6 +45,7 @@ stateMoving = scr_StateCreate(s_MOVING, stateMovingScript);
 stateJumping = scr_StateCreate(s_JUMPING, stateJumpScript);
 stateAttacking = scr_StateCreate(s_ATTACKING, stateAttackScript);
 stateDefending = scr_StateCreate(s_DEFENDING, stateDefendingScript);
+stateMenacing = scr_StateCreate(s_MENACING, stateMenacingScript);
 stateFalling = scr_StateCreate(s_FALLING, stateFallScript);
 stateHit = scr_StateCreate(s_HIT, stateHitScript);
 stateDead = scr_StateCreate(s_DEAD, stateDeadScript);

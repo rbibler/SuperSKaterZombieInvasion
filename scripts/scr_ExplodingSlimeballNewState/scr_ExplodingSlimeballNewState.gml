@@ -6,21 +6,22 @@ var currentState = argument0;
 switch(currentState) {
 	case s_IDLE:
 		scr_SetCurrentAnimation(idleAnim);
-		stateVar[0] = false;
-		stateVar[1] = stateTimer;
-		stateVar[2] = random_range(180, 7 * 60);
 	break;
 	
 	case s_ATTACKING:
 		scr_SetCurrentAnimation(attackAnim);
+		scr_ExplodingSlimeballSpawnProjectile();
+		myGravity = 0;
 	break;
 	
 	case s_JUMPING:
 		scr_SetCurrentAnimation(jumpAnim);
+		ySpeed = -7;
+		grounded = false;
 	break;
 	
-	case s_DEFENDING:
-		scr_SetCurrentAnimation(defendAnim);
+	case s_MENACING:
+		scr_SetCurrentAnimation(menaceAnim);
 	break;
 	
 	case s_HIT:

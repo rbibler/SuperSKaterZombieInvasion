@@ -455,6 +455,20 @@
             "value": "noone",
             "varName": "deadAnim",
             "varType": 5
+        },
+        {
+            "id": "54427283-bc64-40b4-bcef-3427097bb49b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "attackThreshold",
+            "varType": 0
         }
     ],
     "solid": false,

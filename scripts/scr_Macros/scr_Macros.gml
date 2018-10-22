@@ -25,6 +25,7 @@
 #macro s_FLOATING		"FLOATING"
 #macro s_ATTACKING		"ATTACKING"
 #macro s_DEFENDING		"DEFENDING"
+#macro s_MENACING		"MENACING"
 
 #macro RES_W	512
 #macro RES_H	240
