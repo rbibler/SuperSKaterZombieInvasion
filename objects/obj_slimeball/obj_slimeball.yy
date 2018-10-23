@@ -28,38 +28,6 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "e45ff97e-5fe2-49b4-9c3b-a27f6cfbcf68",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "f880f527-c761-4432-993f-9f0800e1b2ba",
-            "value": "scr_EnemyMove"
-        },
-        {
-            "id": "4df471e1-ef58-443a-84b0-15317ce7867f",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "440516e8-a7b3-4e61-996a-7eebecb8ff41",
-            "value": "scr_EnemyJump"
-        },
-        {
-            "id": "86d03094-7870-41e9-b5fe-a10ef9c79a3e",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "baf13921-fcd0-4557-98e6-03296607539b",
-            "value": "scr_EnemyFall"
-        },
-        {
-            "id": "be898705-e746-4f02-be8b-bcc64e2f32c0",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
-            "value": "scr_EnemyDead"
-        },
-        {
             "id": "3a4c3ec7-41e9-4ae0-a319-44012f2684b4",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -74,14 +42,6 @@
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
             "propertyId": "fe5f28ae-a0bc-401f-9c51-9691484fdbde",
             "value": "0.5"
-        },
-        {
-            "id": "d2273404-6d7f-4565-97e0-b894c1b703a2",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
-            "value": "scr_EnemyHit"
         },
         {
             "id": "43fa1b42-f748-479e-afc9-f832364c4fac",

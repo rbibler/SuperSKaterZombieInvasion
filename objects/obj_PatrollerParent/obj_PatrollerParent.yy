@@ -18,46 +18,6 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "721cd286-0d9e-4d6f-85aa-8cdae0cebc5b",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "7d8e0fec-70e6-41e1-81ad-64d33d679a8d",
-            "value": "scr_PatrolHorizCollision"
-        },
-        {
-            "id": "e8c23b3f-d4f1-44cb-bc56-8ae633a4e180",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "f880f527-c761-4432-993f-9f0800e1b2ba",
-            "value": "scr_EnemyMove"
-        },
-        {
-            "id": "3f692a2f-2ec3-4019-ad00-81b600dd69c8",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "440516e8-a7b3-4e61-996a-7eebecb8ff41",
-            "value": "scr_EnemyJump"
-        },
-        {
-            "id": "1200f8fd-7d9a-4ca7-9ab9-4a2d1a08fd33",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "baf13921-fcd0-4557-98e6-03296607539b",
-            "value": "scr_EnemyFall"
-        },
-        {
-            "id": "aa1033bb-8241-4e30-afcd-621efc49234a",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
-            "value": "scr_EnemyDead"
-        },
-        {
             "id": "66af4338-78d7-4581-bfb3-35c8c18381e0",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -66,12 +26,12 @@
             "value": "scr_PatrolMove"
         },
         {
-            "id": "b2b3babb-00d6-4b6e-bf88-471a61ebed6a",
+            "id": "e6c4e7e8-0b8a-40b9-b6d8-2a8b2ed7f31f",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
-            "value": "scr_EnemyHit"
+            "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
+            "propertyId": "6f99264f-8f71-492f-bf4d-fe100af69405",
+            "value": "scr_PatrolHorizCollision"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
