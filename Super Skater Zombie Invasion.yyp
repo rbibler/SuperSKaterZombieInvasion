@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "1c6656df-ce41-4b00-b2d0-d4a0105a09ae",
+            "Value": {
+                "id": "c773ed85-bbee-48c5-a498-cdb09d859e51",
+                "resourcePath": "sprites\\spr_SkaterPowerPushCrouchOne\\spr_SkaterPowerPushCrouchOne.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1cb4ff59-edba-445f-ba36-891b27d5e0df",
             "Value": {
                 "id": "c9692cf6-95bc-45ac-b22b-ce90c72443b4",
@@ -1375,6 +1383,14 @@
             }
         },
         {
+            "Key": "686e9dd2-940c-487e-ab6b-3deb549062ca",
+            "Value": {
+                "id": "e2e0097f-d735-4bf6-a444-5055d2175e3f",
+                "resourcePath": "sprites\\spr_SkaterPowerPushCrouchTwo\\spr_SkaterPowerPushCrouchTwo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "698a235c-86fc-4d01-a1a1-e6d453d4612b",
             "Value": {
                 "id": "4fd43bad-12b8-41d0-9ecc-668ac54722f7",
@@ -1748,6 +1764,14 @@
                 "id": "1d39e6a7-d8cb-4958-9d99-e23ce0a052ef",
                 "resourcePath": "sprites\\spr_puddle00\\spr_puddle00.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8673f088-737d-4c2c-8f8c-0b7908389cb4",
+            "Value": {
+                "id": "fd1857d2-be66-47ba-bc74-f6fd4da51e91",
+                "resourcePath": "views\\8673f088-737d-4c2c-8f8c-0b7908389cb4.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

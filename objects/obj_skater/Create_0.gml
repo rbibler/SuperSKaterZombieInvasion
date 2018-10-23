@@ -116,6 +116,12 @@ scr_AddSpriteToSubstateAnimation(powerPushJump, spr_SkaterPowerPushJumpingTwo, 1
 jumpAnim.substateAnimations[1] = powerPushJump;
 powerPushJump.persistent = true;
 
+powerPushCrouch = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
+scr_AddSpriteToSubstateAnimation(powerPushCrouch, spr_SkaterPowerPushCrouchOne, 0);
+scr_AddSpriteToSubstateAnimation(powerPushCrouch, spr_SkaterPowerPushCrouchTwo, 1);
+crouchAnim.substateAnimations[1] = powerPushCrouch;
+powerPushCrouch.persistent = true;
+
 currentAnimation = idleAnim;
 
 

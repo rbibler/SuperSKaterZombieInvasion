@@ -1,1 +1,4 @@
-currentAnimation.currentSubstate = 1;
+with(currentAnimation) {
+	currentSubstate = 1;
+	substateAnimations[currentSubstate].currentIndex = 0;
+}

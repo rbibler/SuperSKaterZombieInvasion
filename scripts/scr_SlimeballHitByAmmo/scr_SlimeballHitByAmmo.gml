@@ -5,15 +5,7 @@ var ammo = argument0;
 
 // Only want to switch states if this is the first hit
 if(state != stateDead) {
-	if(ammo.object_index == obj_slingshotRock) {
-		// Insta death!
-		scr_StateSwitch("DEAD");
-		
-		// Nice job player!
-		score += 10;
-	} else if(ammo.object_index == obj_board) {
-		scr_StateSwitch("DEAD");
-	}
+	scr_StateSwitch(s_DEAD);
 }
 
 // Adding one more than the projectile's alivetime will cause it to be destoryed
