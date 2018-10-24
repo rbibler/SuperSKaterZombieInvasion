@@ -11,6 +11,6 @@ if(state != knockedBackState and !isImmune) {
 	isImmune = true;
 	immuneStart = frameTimer;
 	if(health <= 0) {
-		scr_StateSwitch("DEAD");
+		scr_StateSwitch(s_DEAD);
 	}
 }

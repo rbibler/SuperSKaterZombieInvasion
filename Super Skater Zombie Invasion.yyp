@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "218b2801-c8ce-423d-b658-f3d0d931286a",
+            "Value": {
+                "id": "bab47f7b-b69e-4cd4-8967-e9acf5c52a75",
+                "resourcePath": "scripts\\scr_StartAtCheckpoint\\scr_StartAtCheckpoint.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "219d85f6-df93-4624-bd83-e3b76a318224",
             "Value": {
                 "id": "70ee3ae5-31fb-4b5d-8913-65419055ab7e",
@@ -1212,6 +1220,14 @@
                 "id": "c585e4c9-ec14-431e-9a29-482f68726ca4",
                 "resourcePath": "scripts\\scr_EnemyJump\\scr_EnemyJump.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5a26bff5-24e4-49ab-aaec-151cc1407635",
+            "Value": {
+                "id": "f017b5f8-770b-416b-8d9a-3d2ca58a9d90",
+                "resourcePath": "objects\\obj_Checkpoint\\obj_Checkpoint.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3538,6 +3554,7 @@
         "0c0fb9c8-31a7-44b5-b1ac-41ae19ed19b1",
         "64d436c0-e3ce-45ba-ae5f-b4add98ae7e7",
         "d7c5a7d0-463e-4734-a8c1-46b8d002b780",
+        "218b2801-c8ce-423d-b658-f3d0d931286a",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",

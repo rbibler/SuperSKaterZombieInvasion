@@ -132,6 +132,7 @@ immuneStart = 0;
 drawToggle = true;
 canShoot = true;
 
+resetFromDeath = false;
 
 
 

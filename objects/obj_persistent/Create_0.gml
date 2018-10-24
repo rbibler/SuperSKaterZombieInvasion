@@ -38,6 +38,7 @@ global.gridX = 8;
 global.gridY = 8;
 
 global.debug = false;
+global.lastCheckpoint = noone;
 
 scr_ScaleGame(2, 2);
 room_goto_next();

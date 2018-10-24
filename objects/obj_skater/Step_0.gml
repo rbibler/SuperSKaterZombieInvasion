@@ -6,6 +6,10 @@
 if(newRoom) {
 	scr_NewRoom();
 }
+if(resetFromDeath) {
+	resetFromDeath = false;
+	scr_StateSwitch(s_IDLE);
+}
 verticalMovementRun = false;
 frameTimer++;
 
