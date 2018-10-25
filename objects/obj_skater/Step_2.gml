@@ -22,7 +22,10 @@ if(infected) {
 		health -= 15;
 	}
 }
-
+if(isDead) {
+	scr_StartAtCheckpoint();
+	isDead = false;
+}
 scr_StateUpdate();
 image_xscale = facing;
 yMomentum += (y - lastY);

@@ -10,14 +10,14 @@ if(stateNew) {
 	scr_StopXMotion();
 	scr_StopYMotion();
 	ySpeedFraction = 0;
-	myGravity = 0;
+	//myGravity = 0;
 	lives--;
 }
 
 
 if(stateTimer >= 120) {
 	// After 60 frames, reset the game
-	scr_StartAtCheckpoint();
+	isDead = true;
 }
 
 

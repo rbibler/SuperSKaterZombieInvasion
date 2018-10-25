@@ -1,6 +1,6 @@
 with(obj_skater) {
-	x = global.lastCheckpoint.x;
-	y = global.lastCheckpoint.y;
+	x = global.lastCheckpoint.skaterX;
+	y = global.lastCheckpoint.skaterY;
 	scr_StateSwitch(s_IDLE);
 	
 }

@@ -133,6 +133,7 @@ drawToggle = true;
 canShoot = true;
 
 resetFromDeath = false;
+isDead = false;
 
 
 
