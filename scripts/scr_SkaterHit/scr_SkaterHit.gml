@@ -19,4 +19,5 @@ if(state != knockedBackState and !isImmune) {
 	if(health <= 0) {
 		scr_StateSwitch(s_DEAD);
 	}
+	ignoreSwitch = true;
 }

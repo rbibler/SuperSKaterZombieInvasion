@@ -12,3 +12,5 @@ if(stateNext != state) {
   stateNew = false;
 }
 
+ignoreSwitch = false;
+

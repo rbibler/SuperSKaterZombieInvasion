@@ -12,7 +12,10 @@ var _push = true;
 if (argument_count>1) {
   _push = argument[1];
 }
-  
+
+if(ignoreSwitch) {
+	return;
+}
   
 if (is_real(argument[0])) { 
 //you passed a specific script, set it as our next state.

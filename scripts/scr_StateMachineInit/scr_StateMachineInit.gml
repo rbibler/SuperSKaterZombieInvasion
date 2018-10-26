@@ -8,6 +8,7 @@ Adapted from PixealatedPope's tutorial:
 */
 state = noone;
 stateNext = state;
+ignoreSwitch = false;
 stateName = "Unknown";
 stateTimer = 0;
 stateMap = ds_map_create();

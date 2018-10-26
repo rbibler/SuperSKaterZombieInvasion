@@ -38,6 +38,11 @@ if(input[LEFT]) {
 
 scr_GeneralCheckSlopeImpetus();
 
+if(stateName == s_MOVING) {
+	if(currentAnimation.currentIndex >= 3) {
+		xSpeed += 0.25 * sign(xSpeed);
+	}
+}
 // Skater can only go so fast
 // Choose max speed based on situation: faster if on a slope
 var maxSpeed = speedThisFrame;
