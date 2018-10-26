@@ -8,5 +8,5 @@ if(state == stateHit or state == stateDead) {
 }
 
 with(other) {
-	scr_SkaterHit(other);
+	scr_SkaterHit(other, 0);
 }

@@ -1879,6 +1879,14 @@
             }
         },
         {
+            "Key": "8b4a7edd-2feb-452f-8275-22bcaf0aa56b",
+            "Value": {
+                "id": "0b8eeee5-6403-464e-9e0b-13d317dbb345",
+                "resourcePath": "sprites\\spr_SkaterDead\\spr_SkaterDead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8b9f0bd1-fd06-444b-bb2d-5911a1f0c939",
             "Value": {
                 "id": "cc24823a-5a1c-4187-906e-4933d0766c05",

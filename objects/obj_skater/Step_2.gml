@@ -16,10 +16,7 @@ scr_SaveInput();
 
 if(infected) {
 	if(frameTimer mod 360 == 0) {
-		//scr_StateSwitch("HIT_IMMOBILIZED");
-		isImmune = true;
-		immuneStart = frameTimer;
-		health -= 15;
+		//scr_SkaterHit(noone, 15);
 	}
 }
 if(isDead) {
@@ -30,3 +27,7 @@ scr_StateUpdate();
 image_xscale = facing;
 yMomentum += (y - lastY);
 lastY = y;
+
+wasGrounded = grounded;
+wasGroundedRight = groundedRight;
+wasGroundedLeft = groundedLeft;
