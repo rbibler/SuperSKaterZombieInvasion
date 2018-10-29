@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "26e1c0fd-c0da-429b-a0a1-993df1aa10cb",
+            "Value": {
+                "id": "54638838-537d-44ca-bbd3-f04f098bae3c",
+                "resourcePath": "objects\\obj_ZombieDrip\\obj_ZombieDrip.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "280d69e1-5284-4123-9605-ddc489a7926e",
             "Value": {
                 "id": "556c9440-29b3-4a76-a6b6-c8cc8e73f9af",
@@ -2783,6 +2791,14 @@
             }
         },
         {
+            "Key": "c8edf0b8-91d9-437e-bee8-9de9b419cc5f",
+            "Value": {
+                "id": "838db317-9be9-460a-9b63-c1668b568c27",
+                "resourcePath": "sprites\\spr_ZombieDrip\\spr_ZombieDrip.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c9995271-593e-4ac8-9573-d35a21d7ee3e",
             "Value": {
                 "id": "ab095919-e2fc-4af7-b260-a521a0200344",
@@ -2844,6 +2860,14 @@
                 "id": "243127d6-264b-4013-99c8-bdacd6b97591",
                 "resourcePath": "scripts\\scr_StateUpdate\\scr_StateUpdate.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cbf0dd58-1137-4bfd-9b16-6a594080b4cd",
+            "Value": {
+                "id": "f89732e7-619f-4e6d-a66f-2d01647f56f9",
+                "resourcePath": "views\\cbf0dd58-1137-4bfd-9b16-6a594080b4cd.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

@@ -23,6 +23,9 @@ with(weapon) {
 			if(diag) {
 				ammo.ySpeed = -ammo.ammoSpeed;
 			}
+			if(other.stateName == s_CROUCHING) {
+				ammo.y += 6;
+			}
 			weapon.state = WEAPONSTATES.FIRING;
 			weapon.x = obj_skater.x;
 			weapon.y = obj_skater.y;
