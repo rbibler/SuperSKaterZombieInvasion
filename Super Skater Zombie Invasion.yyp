@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "4a6b897a-68b4-459e-bb34-4c7f4c8116a6",
+            "Value": {
+                "id": "f10fea87-e036-46bb-88cd-97de3268a375",
+                "resourcePath": "sprites\\spr_ForegroundWaves\\spr_ForegroundWaves.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4b664a73-b69c-498a-a0c9-36cf58a444c7",
             "Value": {
                 "id": "2fdf79db-ca71-4b17-8b4c-6d3660f49674",
