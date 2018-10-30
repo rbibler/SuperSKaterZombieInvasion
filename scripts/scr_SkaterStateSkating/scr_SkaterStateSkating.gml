@@ -62,11 +62,5 @@ if(!grounded) {
 }
 
 
-// Skater can jump if jump is pressed fresh on this frame and skater isn't already jumping
-if(input[JUMP]) {
-	show_debug_message("JumpFrames: " + string(canJump));
-	if(jump == 0 and !lastInput[JUMP] and canJump < jumpFramesAllowance) {
-		scr_StateSwitch(s_JUMPING);
-	}
-} 
+scr_SkaterCheckJump();
 

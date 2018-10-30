@@ -9,6 +9,7 @@ if(newRoom) {
 
 verticalMovementRun = false;
 frameTimer++;
+jumpInputBuffer--;
 
 if(isImmune) {
 	if(frameTimer - immuneStart >= 60) {
@@ -23,6 +24,7 @@ if(input[RIGHT]) {
 	facing = -1;
 }
 
+
 // Impart gravity and limit the skater's terminal velocity
 ySpeed += myGravity;
 if(ySpeed >= maxYSpeed) {
@@ -30,6 +32,9 @@ if(ySpeed >= maxYSpeed) {
 }
 
 scr_GeneralCheckGrounded();
+if(input[JUMP] and !lastInput[JUMP] and !grounded) {
+	jumpInputBuffer = 10;
+}
 
 // The real fun happens in the state machine
 scr_StateExecute();

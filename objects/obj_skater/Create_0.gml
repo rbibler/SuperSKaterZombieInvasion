@@ -133,6 +133,7 @@ isImmune = false;
 immuneStart = 0;
 drawToggle = true;
 canShoot = true;
+jumpInputBuffer = 0;
 
 resetFromDeath = false;
 isDead = false;

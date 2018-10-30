@@ -54,12 +54,7 @@ if(!grounded) {
 	scr_StateSwitch(s_FALLING);
 }
 
-// Skater can jump if jump is pressed fresh on this frame and skater isn't already jumping
-if(input[JUMP]) {
-	if(jump == 0 and !lastInput[JUMP] and canJump < jumpFramesAllowance) {
-		scr_StateSwitch(s_JUMPING);
-	}
-} 
+scr_SkaterCheckJump();
 
 // Probably don't need this, but it's here to make sure we slow down to a stop
 if(abs(xSpeed) < 0.15) {
