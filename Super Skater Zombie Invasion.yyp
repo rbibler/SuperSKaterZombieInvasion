@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "1f90dd5c-fd1b-4a5e-89a5-7f75e5f23af0",
+            "Value": {
+                "id": "9063c3ed-5d9c-4061-ab78-0f46c79f2d75",
+                "resourcePath": "sprites\\spr_ForegroundWaveTile\\spr_ForegroundWaveTile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f925125-9f30-4850-a624-ec92d45400fc",
             "Value": {
                 "id": "78bd11f0-98a0-457c-8a63-e488b588bd23",
@@ -995,14 +1003,6 @@
             "Value": {
                 "id": "e894a7bd-fe9c-4b75-bcec-023189d769ab",
                 "resourcePath": "sprites\\spr_slimeballJump\\spr_slimeballJump.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "4a6b897a-68b4-459e-bb34-4c7f4c8116a6",
-            "Value": {
-                "id": "f10fea87-e036-46bb-88cd-97de3268a375",
-                "resourcePath": "sprites\\spr_ForegroundWaves\\spr_ForegroundWaves.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1780,6 +1780,14 @@
                 "id": "6d57a638-12e5-4243-96b3-03462e3d772b",
                 "resourcePath": "objects\\obj_surfboard\\obj_surfboard.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "85dacd3d-5263-4ce1-a749-aec71112666c",
+            "Value": {
+                "id": "9d9f0217-6664-4d4d-8e8f-1b0feefcda68",
+                "resourcePath": "views\\85dacd3d-5263-4ce1-a749-aec71112666c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2916,6 +2924,14 @@
                 "id": "2c9502b3-cdb0-4bcf-ae12-ea508f363403",
                 "resourcePath": "sprites\\spr_slimeballMove\\spr_slimeballMove.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d0899fbb-440e-4a3f-b4d0-9e385206af16",
+            "Value": {
+                "id": "46cc10f6-a957-42fc-901a-f80d3a53a411",
+                "resourcePath": "objects\\obj_ForegroundWave\\obj_ForegroundWave.yy",
+                "resourceType": "GMObject"
             }
         },
         {
