@@ -80,6 +80,7 @@ climbState = scr_StateCreate(s_CLIMBING, scr_SkaterStateClimbing);
 crouchState = scr_StateCreate(s_CROUCHING, scr_SkaterStateCrouching);
 fallState = scr_StateCreate(s_FALLING, scr_SkaterStateFalling);
 deadState = scr_StateCreate(s_DEAD, scr_SkaterStateDead);
+drownedState = scr_StateCreate(s_DROWNED, scr_SkaterStateDrowned);
 rollState = scr_StateCreate(s_ROLLING, scr_SkaterStateRolling);
 knockedBackState = scr_StateCreate(s_KNOCKED_BACK, scr_SkaterStateKnockedBack);
 floatState = scr_StateCreate(s_FLOATING, scr_SkaterStateFloating);
@@ -94,6 +95,7 @@ jumpAnim = scr_RegisterStateAnimation(spr_SkaterJump, NORMAL_ANIM_SPEED, true, n
 crouchAnim = scr_RegisterStateAnimation(spr_SkaterCrouch, NORMAL_ANIM_SPEED, true, noone, "Crouch", 1);
 hurtAnim = scr_RegisterStateAnimation(spr_SkaterTakeHit, NORMAL_ANIM_SPEED, true, noone, "HURT", 1);
 deadAnim = scr_RegisterStateAnimation(spr_SkaterDead, NORMAL_ANIM_SPEED, false, noone, "DEAD", sprite_get_number(spr_SkaterDead));
+drownAnim = scr_RegisterStateAnimation(spr_SkaterDrowned, NORMAL_ANIM_SPEED, false, noone, "DROWNED", sprite_get_number(spr_SkaterDrowned));
 
 idleAnim.persistent = true;
 skateAnim.persistent = true;
@@ -101,6 +103,7 @@ jumpAnim.persistent = true;
 crouchAnim.persistent = true;
 hurtAnim.persistent = true;
 deadAnim.persistent = true;
+drownAnim.persistent = true;
 
 powerPushIdle = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
 scr_AddSpriteToSubstateAnimation(powerPushIdle, spr_SkaterPowerPushIdleOne, 0);

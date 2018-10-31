@@ -21,6 +21,7 @@ switch(currentState) {
 		image_index = 3;
 		scr_StopYMotion();
 		gravityOn = false;
+		canSplash = true;
 	break;
 
 case s_HIT:

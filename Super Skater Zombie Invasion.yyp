@@ -2607,6 +2607,14 @@
             }
         },
         {
+            "Key": "b878156b-251c-40e5-8cf4-b66942a5d691",
+            "Value": {
+                "id": "a16f5f26-5475-4059-b01d-f8e718693eae",
+                "resourcePath": "scripts\\scr_SkaterStateDrowned\\scr_SkaterStateDrowned.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b87a8f5b-7bab-4235-8a24-54d151678052",
             "Value": {
                 "id": "7c5310cd-c025-4667-b420-117d25f01d3f",
@@ -2799,6 +2807,14 @@
             }
         },
         {
+            "Key": "c7da6dd9-1612-4f3e-bade-b3e673f2e776",
+            "Value": {
+                "id": "21bdb6b7-aad4-4a6f-84c4-82b0a9a1be0f",
+                "resourcePath": "scripts\\scr_FindCenterX\\scr_FindCenterX.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c89e2c87-907a-434c-952e-bc59f6eb4851",
             "Value": {
                 "id": "2b1c6562-aba1-4613-98c6-458036b99d4f",
@@ -2980,6 +2996,14 @@
                 "id": "25e2a18e-2af3-4cf9-8995-3e61053986dc",
                 "resourcePath": "scripts\\zombieSackerStateAttacking\\zombieSackerStateAttacking.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d4c7470c-c8fa-4adb-b999-79ff17c28fc3",
+            "Value": {
+                "id": "6cd6e4a4-3554-460e-9b5f-aed1c71fa63d",
+                "resourcePath": "sprites\\spr_SkaterDrowned\\spr_SkaterDrowned.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3522,6 +3546,7 @@
         "dfa32e27-0393-4efa-96dc-e841bf5b0c14",
         "87171e82-38f1-42a3-8ba3-ee3d5f042400",
         "180c89d0-0108-43c2-bd51-de0725d3ee27",
+        "b878156b-251c-40e5-8cf4-b66942a5d691",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "a151bcd0-7db8-45a0-96ba-f9cd50020bfb",
@@ -3652,6 +3677,7 @@
         "64d436c0-e3ce-45ba-ae5f-b4add98ae7e7",
         "d7c5a7d0-463e-4734-a8c1-46b8d002b780",
         "218b2801-c8ce-423d-b658-f3d0d931286a",
+        "c7da6dd9-1612-4f3e-bade-b3e673f2e776",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",

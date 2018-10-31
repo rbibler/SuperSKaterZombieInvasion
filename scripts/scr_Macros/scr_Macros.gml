@@ -20,6 +20,7 @@
 #macro s_FALLING		"DYING"
 #macro s_ROLLING		"ROLLING"
 #macro s_DEAD			"DEAD"
+#macro s_DROWNED		"DROWNED"
 #macro s_BOUNCING		"BOUNCING"
 #macro s_KNOCKED_BACK	"KNOCKED BACK"
 #macro s_FLOATING		"FLOATING"

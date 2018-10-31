@@ -115,6 +115,20 @@
             "value": "False",
             "varName": "noCollisions",
             "varType": 3
+        },
+        {
+            "id": "17cf3821-cfbd-4df1-af71-633e3e35c868",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "splashes",
+            "varType": 3
         }
     ],
     "solid": false,

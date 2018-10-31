@@ -55,6 +55,7 @@ scr_GetCollisionTiles();
 
 collisionY = 0;
 collisionX = 0;
+canSplash = true;
 
 
 
