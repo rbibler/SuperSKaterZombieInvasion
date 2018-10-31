@@ -45,15 +45,10 @@ switch(currentState) {
 	
 	case s_DEAD:
 		// Every five frames, toggle the animation
-		if(stateVar[0] mod 5 == 0) {
-			stateVar[1]++;
-			image_index = stateVar[1] mod 2;
+		if(stateTimer mod (60 / 5) == 0) {
+			image_index++;
 		}
-	
-		// Decrement timer
-		stateVar[0]--;
-		// When it reaches zero... die
-		if(stateVar[0] <= 0) {
+		if(image_index >= image_number) {
 			instance_destroy();
 		}
 	break;

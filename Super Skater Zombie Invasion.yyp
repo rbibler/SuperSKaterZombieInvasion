@@ -1591,6 +1591,14 @@
             }
         },
         {
+            "Key": "750d0d9c-96b1-43b4-802c-399a082c793e",
+            "Value": {
+                "id": "b81faab1-755d-4715-9711-4cb9d9d0f12d",
+                "resourcePath": "sprites\\spr_SlimeballHit\\spr_SlimeballHit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "75db0baa-a778-480d-b74d-de4b426a3940",
             "Value": {
                 "id": "4200aa39-2253-43a8-bd1a-9c347570f479",

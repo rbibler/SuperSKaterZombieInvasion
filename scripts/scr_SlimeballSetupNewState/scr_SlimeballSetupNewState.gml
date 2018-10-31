@@ -51,7 +51,7 @@ switch(currentState) {
 	case s_DEAD:
 		// set a timer up. We'll be dying for 30 frames
 		stateVar[0] = 30;
-	
+		sprite_index = spr_SlimeballHit;
 		// Can't move, we're dying
 		scr_StopXMotion();
 		scr_StopYMotion();
