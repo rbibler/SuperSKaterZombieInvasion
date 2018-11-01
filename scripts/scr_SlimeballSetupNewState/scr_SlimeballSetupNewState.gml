@@ -53,6 +53,7 @@ switch(currentState) {
 		stateVar[0] = 30;
 		sprite_index = spr_SlimeballHit;
 		// Can't move, we're dying
+		shouldMove = false;
 		scr_StopXMotion();
 		scr_StopYMotion();
 		scr_ZeroInputs();

@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "08f72fb4-1631-4c94-bdb4-aa9e01cc36b0",
+            "Value": {
+                "id": "4199fc83-1e62-4fcb-a6c1-f9aea1d911f5",
+                "resourcePath": "sprites\\spr_SlimePuddle\\spr_SlimePuddle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0a8339a7-4450-4bb6-980d-75d1ef161641",
             "Value": {
                 "id": "5d62e53d-742e-49a8-bd83-a79000b6c70e",
@@ -972,6 +980,14 @@
                 "id": "21455ec6-4e87-47dd-a5a8-b4aa6d360f86",
                 "resourcePath": "views\\45d40686-618d-4d8d-b968-91a2004b52c1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "45e38e1d-68ef-48d9-9df9-b1a3148186f8",
+            "Value": {
+                "id": "eab74562-2304-4b5e-8000-fb6829a6f374",
+                "resourcePath": "scripts\\scr_OnSlopeTile\\scr_OnSlopeTile.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1980,6 +1996,14 @@
                 "id": "7ade2779-45af-4d9e-9db6-b3449a376c5f",
                 "resourcePath": "scripts\\gullStateMovingScript\\gullStateMovingScript.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8ee9612b-9e38-4ea7-ba22-5c351db51aca",
+            "Value": {
+                "id": "2a349c15-956f-4c18-9a2a-6cc7defaebf7",
+                "resourcePath": "objects\\obj_SlimePuddle\\obj_SlimePuddle.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3686,6 +3710,7 @@
         "d7c5a7d0-463e-4734-a8c1-46b8d002b780",
         "218b2801-c8ce-423d-b658-f3d0d931286a",
         "c7da6dd9-1612-4f3e-bade-b3e673f2e776",
+        "45e38e1d-68ef-48d9-9df9-b1a3148186f8",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",

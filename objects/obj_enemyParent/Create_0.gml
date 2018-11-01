@@ -55,3 +55,5 @@ climbState = 0;
 scr_StateInit(initialState);
 
 currentAnim = noone;
+
+shouldMove = true;
