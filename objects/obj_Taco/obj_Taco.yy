@@ -1,8 +1,8 @@
 {
-    "id": "8704d004-980a-46fb-8023-ba46a22c6ec1",
+    "id": "ee739ebb-4e82-40b1-84bc-78632f40f7b9",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_slingshotPowerUp",
+    "name": "obj_Taco",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "b0a263d5-f493-41f9-864a-831ba68884e9",
+    "spriteId": "67b8cf40-9e52-4b86-a534-54f4f1f86487",
     "visible": true
 }

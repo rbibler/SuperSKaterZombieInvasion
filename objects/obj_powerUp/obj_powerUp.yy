@@ -5,11 +5,11 @@
     "name": "obj_powerUp",
     "eventList": [
         {
-            "id": "1506f2ab-1ce8-4f3f-add2-ea8f1f02ad56",
+            "id": "cea1130a-4914-413f-8fef-08e37327abd5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "9b98fa49-796d-487f-b7f2-6dc6d3034b7d",
+            "collisionObjectId": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af",
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "42506447-429e-4655-bc4d-bd31e05c64a1"

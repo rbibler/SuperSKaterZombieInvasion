@@ -1415,6 +1415,14 @@
             }
         },
         {
+            "Key": "67b8cf40-9e52-4b86-a534-54f4f1f86487",
+            "Value": {
+                "id": "e5f85c46-e162-4fcc-b6de-5fc20bc39ded",
+                "resourcePath": "sprites\\spr_Taco\\spr_Taco.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "67e0f10a-8061-43a0-8e31-c453f669d198",
             "Value": {
                 "id": "53cfc175-729d-429d-81a3-8fd03da64256",
@@ -1676,6 +1684,14 @@
                 "id": "e47e4f2a-0213-470e-ad03-8f080223ee7e",
                 "resourcePath": "scripts\\zombieSackerStateMovingScript\\zombieSackerStateMovingScript.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7ae533df-b0ea-468b-9b49-29783cca40c7",
+            "Value": {
+                "id": "ebae140f-46b2-40f2-b6d2-6211aee72454",
+                "resourcePath": "views\\7ae533df-b0ea-468b-9b49-29783cca40c7.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2503,6 +2519,14 @@
             }
         },
         {
+            "Key": "b21727b2-4f34-494b-9a05-1be02bc6fda5",
+            "Value": {
+                "id": "f9f7830e-7102-474e-9d95-667d37923793",
+                "resourcePath": "views\\b21727b2-4f34-494b-9a05-1be02bc6fda5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b2290983-dfa5-4e99-ab42-a6296f5707ef",
             "Value": {
                 "id": "3c66ecca-4bfb-4ba8-81d7-bb2b002444c6",
@@ -3324,6 +3348,14 @@
                 "id": "40a68c1c-3097-4a2c-9bb6-61676d3a1064",
                 "resourcePath": "sprites\\spr_fuelbar\\spr_fuelbar.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ee739ebb-4e82-40b1-84bc-78632f40f7b9",
+            "Value": {
+                "id": "29cba0d5-16cd-4dc8-8aaa-a3da36e505c6",
+                "resourcePath": "objects\\obj_Taco\\obj_Taco.yy",
+                "resourceType": "GMObject"
             }
         },
         {
