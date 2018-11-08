@@ -1,15 +1,15 @@
 {
-    "id": "ee739ebb-4e82-40b1-84bc-78632f40f7b9",
+    "id": "1f0e8cb9-c0d1-44d0-9fc8-50311ae80212",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_Taco",
+    "name": "obj_Nachos",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "e9110d8f-9f7a-4633-98eb-3e3b256e85e3",
+            "id": "f87021e7-e06e-433a-a0a1-7a4b62136bd5",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
@@ -17,23 +17,23 @@
             "value": "HEALTH"
         },
         {
-            "id": "944b942d-705d-48c9-8726-e055f8933c09",
+            "id": "f1cd19bd-7b13-4f91-84e0-81d3c2c1d56d",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
             "propertyId": "1f98fd3b-9571-4c77-a35d-7271fe57c155",
-            "value": "50"
+            "value": "100"
         },
         {
-            "id": "0e76c929-966c-4adc-a7b0-20b4b68123b1",
+            "id": "af4afab8-033a-408e-ae62-76b226abc472",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
             "propertyId": "303a1431-2088-40e1-91ca-b24f6548c38c",
-            "value": "50"
+            "value": "100"
         },
         {
-            "id": "f6b8a6e6-86c3-4157-9671-7a95f0395547",
+            "id": "31f985fd-30d7-41d5-8dbe-e8586f3c981e",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
@@ -57,6 +57,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "67b8cf40-9e52-4b86-a534-54f4f1f86487",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

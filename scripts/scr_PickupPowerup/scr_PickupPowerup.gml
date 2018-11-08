@@ -3,6 +3,18 @@
 
 var powerUp = argument0;
 
-scr_DestoryAllThesePowerups(powerUp);
-
-currentPowerup = instance_create_layer(0, 0, "POWERUPS", powerUp);
+switch(powerUp.powerUpType) {
+	case HEALTH:
+		health += powerUp.powerUpHealthBenefit;
+		if(powerUp.powerUpInfectionCure) {
+			infected = false;
+		}
+		if(infected) {
+			infectionRate += powerUp.powerUpInfectionDecrease;
+		}
+		if(powerUp.powerUpCausesInfection) {
+			infected = true;
+		}
+		score += powerUp.powerUpPoints;
+	break;
+}

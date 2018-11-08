@@ -37,6 +37,8 @@
 #macro NORMAL_ANIM_SPEED	5 / 60
 #macro FAST_ANIM_SPEED  10 / 60
 
+#macro HEALTH	1
+
 enum ANIMATION {
 
 	NORMAL = 60 / 5,

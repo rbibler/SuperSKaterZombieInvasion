@@ -1,15 +1,15 @@
 {
-    "id": "ee739ebb-4e82-40b1-84bc-78632f40f7b9",
+    "id": "35b35670-7fe0-4533-b226-84ccbeab0cfb",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_Taco",
+    "name": "obj_Pizza",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "e9110d8f-9f7a-4633-98eb-3e3b256e85e3",
+            "id": "5afe181f-7f36-4be7-8949-0f6a93691a90",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
@@ -17,15 +17,15 @@
             "value": "HEALTH"
         },
         {
-            "id": "944b942d-705d-48c9-8726-e055f8933c09",
+            "id": "43055b31-b54a-4cfe-86cf-498eaf45528c",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
             "propertyId": "1f98fd3b-9571-4c77-a35d-7271fe57c155",
-            "value": "50"
+            "value": "25"
         },
         {
-            "id": "0e76c929-966c-4adc-a7b0-20b4b68123b1",
+            "id": "a3db0d7c-4fed-45cc-b51b-22c7871cfebd",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
@@ -33,12 +33,12 @@
             "value": "50"
         },
         {
-            "id": "f6b8a6e6-86c3-4157-9671-7a95f0395547",
+            "id": "44ba302d-eb36-45b6-828a-26c39a68acbd",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
-            "propertyId": "a13f5328-0634-4252-9b0f-1f6d6b2d667c",
-            "value": "True"
+            "propertyId": "b21f3b4f-aacb-4cc8-b3e3-265635cdf641",
+            "value": "-1"
         }
     ],
     "parentObjectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
@@ -57,6 +57,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "67b8cf40-9e52-4b86-a534-54f4f1f86487",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

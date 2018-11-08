@@ -4,26 +4,7 @@
     "mvc": "1.0",
     "name": "obj_powerupParent",
     "eventList": [
-        {
-            "id": "f607c620-c3af-4995-bae6-239198610f71",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec"
-        },
-        {
-            "id": "971156d3-9df8-41f2-b9c9-18dc507d3f57",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -43,7 +24,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "a8e1cf33-1f14-453a-931c-c26233158217",
+            "id": "bf9be6e3-975f-43e9-8b62-96cc9482789b",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -53,11 +34,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "refuelTime",
+            "varName": "powerUpType",
             "varType": 0
         },
         {
-            "id": "bdf31fca-9088-44e4-9521-141093acf22b",
+            "id": "1f98fd3b-9571-4c77-a35d-7271fe57c155",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -67,11 +48,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "refuelAmount",
+            "varName": "powerUpHealthBenefit",
             "varType": 0
         },
         {
-            "id": "a53507f6-97b3-48f8-8d12-8ab054b891f3",
+            "id": "303a1431-2088-40e1-91ca-b24f6548c38c",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -81,8 +62,50 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "maxFuel",
+            "varName": "powerUpPoints",
             "varType": 0
+        },
+        {
+            "id": "a13f5328-0634-4252-9b0f-1f6d6b2d667c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "powerUpInfectionCure",
+            "varType": 3
+        },
+        {
+            "id": "b21f3b4f-aacb-4cc8-b3e3-265635cdf641",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "powerUpInfectionDecrease",
+            "varType": 0
+        },
+        {
+            "id": "47650468-f7d7-4dd2-a87d-aeffe19881bb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "powerUpCausesInfection",
+            "varType": 3
         }
     ],
     "solid": false,

@@ -1,15 +1,15 @@
 {
-    "id": "ee739ebb-4e82-40b1-84bc-78632f40f7b9",
+    "id": "6dc83673-31cf-4e93-8868-77b845a133e8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_Taco",
+    "name": "obj_ZombieTaco",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "e9110d8f-9f7a-4633-98eb-3e3b256e85e3",
+            "id": "4424f14b-1fed-4ba9-8f3f-4e9026ca072c",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
@@ -17,27 +17,27 @@
             "value": "HEALTH"
         },
         {
-            "id": "944b942d-705d-48c9-8726-e055f8933c09",
+            "id": "8f94125d-e323-4f3d-a323-6719522a8c17",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
             "propertyId": "1f98fd3b-9571-4c77-a35d-7271fe57c155",
-            "value": "50"
+            "value": "-10"
         },
         {
-            "id": "0e76c929-966c-4adc-a7b0-20b4b68123b1",
+            "id": "cf979bcd-5ab1-4956-a50f-abed38f77eba",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
             "propertyId": "303a1431-2088-40e1-91ca-b24f6548c38c",
-            "value": "50"
+            "value": "-100"
         },
         {
-            "id": "f6b8a6e6-86c3-4157-9671-7a95f0395547",
+            "id": "0f1125b8-fba5-4c53-80ea-5c0a8be7be52",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3ef90f80-05af-4b6d-857a-3bd3d7cb25ec",
-            "propertyId": "a13f5328-0634-4252-9b0f-1f6d6b2d667c",
+            "propertyId": "47650468-f7d7-4dd2-a87d-aeffe19881bb",
             "value": "True"
         }
     ],
@@ -55,8 +55,10 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        
+    ],
     "solid": false,
-    "spriteId": "67b8cf40-9e52-4b86-a534-54f4f1f86487",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
