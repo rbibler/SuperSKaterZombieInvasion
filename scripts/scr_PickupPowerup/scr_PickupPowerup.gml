@@ -6,7 +6,7 @@ var powerUp = argument0;
 
 switch(powerUp.powerUpType) {
 	case HEALTH:
-		health += powerUp.powerUpHealthBenefit;
+		scr_HealthPlease(powerUp.powerUpHealthBenefit);
 		if(powerUp.powerUpInfectionCure) {
 			infected = false;
 		}
