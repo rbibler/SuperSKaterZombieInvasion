@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_Taco",
     "eventList": [
-        
+        {
+            "id": "3516ecc2-9090-4997-9534-3c5e5042846b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 7,
+            "eventtype": 7,
+            "m_owner": "ee739ebb-4e82-40b1-84bc-78632f40f7b9"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
