@@ -8,7 +8,7 @@ switch(currentState)
 		
 		if(grounded and active) {
 			input[initialDirection] = true;
-			scr_StateSwitch("MOVING");
+			scr_StateSwitch(s_MOVING);
 		}
 	break;
 
@@ -18,32 +18,21 @@ switch(currentState)
 	
 	case s_JUMPING:
 		if(grounded) {
-			scr_StateSwitch("MOVING");
+			scr_StateSwitch(s_MOVING);
 		}
 	break;
 	
 	case s_HIT:
 		// If we're back on the ground, we can switch back to moving state after a pause
-		if(grounded) {
-			// Check to make sure this is our initial grounding
-			if(stateVar[0] == 0) {
-				// Save current timer as a reference
-				stateVar[0] = stateTimer;
-				
-				// Pause horizontal movement
-				xSpeed = 0;
-				xSpeedFraction = 0;
-				scr_StateSwitch("DEAD");
-			}
+		if(currentAnimation.isDone) {
+			instance_destroy();
+		} else if(grounded) {
+			scr_StateSwitch(s_DEAD);
 		}
 	break;
 	
 	case s_DEAD:
-		// Decrement timer
-		stateVar[0]--;
-
-		// When it reaches zero... die
-		if(stateVar[0] <= 0) {
+		if(currentAnimation.isDone) {
 			instance_destroy();
 		}
 	break;

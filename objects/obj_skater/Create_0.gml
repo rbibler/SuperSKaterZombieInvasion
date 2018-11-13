@@ -63,7 +63,7 @@ for(var i = 0; i < 8; i++) {
 currentWeapon = noone;
 currentPowerup = noone;
 weaponAnimCounter = 0;
-scr_PickupWeapon(obj_BoardPowerPush);
+//scr_PickupWeapon(obj_BoardPowerPush);
 
 // Reset the timer for the idle animation
 alarm[0] = 60 * 4;
