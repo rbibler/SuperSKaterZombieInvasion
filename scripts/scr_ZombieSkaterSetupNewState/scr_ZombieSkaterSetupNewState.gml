@@ -20,12 +20,13 @@ switch(currentState)
 	
 	case s_JUMPING:
 		stateVar[0] = 0;
-		sprite_index = spr_zombieSkater;
+		sprite_index = spr_ZombieSkaterJumping
 		ySpeed += jumpSpeed;
 		grounded = false;
 	break;
 	
 	case s_HIT:
+		sprite_index = spr_ZombieSkaterDying;
 		// Push him away from player
 		ySpeed = -3;
 		xSpeed = 3 * (sign(x - obj_skater.x));

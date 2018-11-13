@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "2134e59c-4399-427c-a45f-539dd762d38d",
+            "Value": {
+                "id": "d872eb74-dd56-499c-b584-bc7fd037c3f7",
+                "resourcePath": "sprites\\spr_ZombieSkaterJumping\\spr_ZombieSkaterJumping.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "218b2801-c8ce-423d-b658-f3d0d931286a",
             "Value": {
                 "id": "bab47f7b-b69e-4cd4-8967-e9acf5c52a75",
@@ -1831,6 +1839,14 @@
             }
         },
         {
+            "Key": "80b5ccd1-f5d9-4a46-8c26-6301bba31aa3",
+            "Value": {
+                "id": "304ee6e6-76c1-4cb8-af10-38e60307dbc7",
+                "resourcePath": "objects\\obj_SparkleEffect\\obj_SparkleEffect.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "810a41d1-e072-40f7-81c1-bc01e2224bbd",
             "Value": {
                 "id": "c05eb7e5-af7d-4e7a-8cca-eccd4e223052",
@@ -2012,6 +2028,14 @@
                 "id": "cc24823a-5a1c-4187-906e-4933d0766c05",
                 "resourcePath": "scripts\\scr_StateExecute\\scr_StateExecute.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8bed2e2b-ce2b-4d20-ad84-dd7305a48891",
+            "Value": {
+                "id": "528007ef-84aa-44b1-b8ca-97b6ffe906d2",
+                "resourcePath": "sprites\\spr_Sparkle\\spr_Sparkle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2708,6 +2732,14 @@
                 "id": "7c5310cd-c025-4667-b420-117d25f01d3f",
                 "resourcePath": "scripts\\gullStateHitScript\\gullStateHitScript.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b92e91bc-ae6c-412b-8a9d-0578bdab9796",
+            "Value": {
+                "id": "4e5ce689-7dcf-4ddd-9b9e-3e9ffa6cef1f",
+                "resourcePath": "sprites\\spr_ZombieSkaterDying\\spr_ZombieSkaterDying.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

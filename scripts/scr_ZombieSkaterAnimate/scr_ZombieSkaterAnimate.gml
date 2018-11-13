@@ -25,23 +25,23 @@ switch(currentState)
 	
 	case s_MOVING:
 		// input[SHOOT] will be true if pursuing the sktater. If that's the case, animate faster
-		if(stateTimer  mod (60 / 5)  == 0) {
+		if(stateTimer  mod (60 / 2.5)  == 0) {
 			image_index ^= 1;
 		}
 	break;
 	
 	case s_JUMPING:
 		if(!grounded and ySpeed > 0) {
-			sprite_index = spr_zombieSkater;
+			sprite_index = spr_ZombieSkaterJumping;
 			image_index = 1;
 		}
 	break;
 	
 	case s_DEAD:
 		// Every five frames, toggle the animation
-		if(stateVar[0] mod 5 == 0) {
-			stateVar[1]++;
-			image_index = stateVar[1] mod 2;
-		}
+		//if(stateVar[0] mod 5 == 0) {
+			//stateVar[1]++;
+			//image_index = stateVar[1] mod 2;
+	//	}
 	break;
 }
