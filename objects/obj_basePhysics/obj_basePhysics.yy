@@ -115,6 +115,34 @@
             "value": "3.5",
             "varName": "maxSpeedX",
             "varType": 0
+        },
+        {
+            "id": "c6855c49-c015-4e3e-ae8f-1a2c679b993d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "4",
+            "varName": "maxSpeedXFlatland",
+            "varType": 0
+        },
+        {
+            "id": "89d5b467-3727-42f6-9919-4e441b3b9d6f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "8",
+            "varName": "maxSpeedXDownhill",
+            "varType": 0
         }
     ],
     "solid": false,

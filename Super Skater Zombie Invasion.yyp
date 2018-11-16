@@ -2895,6 +2895,14 @@
             }
         },
         {
+            "Key": "c15d28b3-fc34-4f9c-8603-7b38f53f1cf4",
+            "Value": {
+                "id": "b163c233-1290-49a1-98d8-dc0bedb35e98",
+                "resourcePath": "scripts\\scr_IsOnSlope\\scr_IsOnSlope.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c185be53-8571-49c4-83eb-cef7b499d395",
             "Value": {
                 "id": "56740d7c-373a-4e21-b712-93ef4e477662",
@@ -3816,6 +3824,7 @@
         "218b2801-c8ce-423d-b658-f3d0d931286a",
         "c7da6dd9-1612-4f3e-bade-b3e673f2e776",
         "45e38e1d-68ef-48d9-9df9-b1a3148186f8",
+        "c15d28b3-fc34-4f9c-8603-7b38f53f1cf4",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",
