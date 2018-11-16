@@ -28,6 +28,8 @@ image_xscale = facing;
 yMomentum += (y - lastY);
 lastY = y;
 
+slopeTouchTimer--;
+
 wasGrounded = grounded;
 wasGroundedRight = groundedRight;
 wasGroundedLeft = groundedLeft;

@@ -58,6 +58,9 @@ if(xSpeed == 0 and !input[RIGHT] and !input[LEFT]) {
 
 // If the ground has disappeared we're falling
 if(!grounded) {
+	if(slopeTouchTimer > 0) {
+		scr_StateSwitch(s_JUMPING);
+	}
 	scr_StateSwitch(s_FALLING);
 }
 

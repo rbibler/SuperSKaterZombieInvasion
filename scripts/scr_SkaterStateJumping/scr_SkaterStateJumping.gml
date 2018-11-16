@@ -11,11 +11,18 @@ if(stateNew) {
 	//sprite_index = spr_SkaterJump;
 	scr_SetCurrentAnimation(jumpAnim);
 	ySpeed = jumpSpeed;
-	var rampObj = scr_IsOnRampBoostTile();
-	if(rampObj != noone) {
-		var howMuch = (xSpeed / maxSpeedX);
-		ySpeed -= rampObj.rampImpulseY * howMuch;
-		xSpeed += (rampObj.rampImpulseX * howMuch * sign(myDirection));
+	//var rampObj = scr_IsOnRampBoostTile();
+	//if(rampObj != noone) {
+		//var howMuch = (xSpeed / maxSpeedX);
+		//ySpeed -= rampObj.rampImpulseY * howMuch;
+		//xSpeed += (rampObj.rampImpulseX * howMuch * sign(myDirection));
+	//}
+	if(slopeTouchTimer > 0) {
+		if(input[JUMP]) {
+			ySpeed = jumpSpeed + lastSlopeImpetus;
+		} else {
+			ySpeed = lastSlopeImpetus;
+		}
 	}
 	ySpeedFraction = 0;
 	// Set flag so we know the skater is jumping

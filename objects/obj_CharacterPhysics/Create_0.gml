@@ -32,6 +32,9 @@ myDirection = 1;
 jump = 0;
 canJump = 0;
 
+lastSlopeImpetus = 0;
+slopeTouchTimer = 0;
+
 bounceDirection = 0;
 
 // Set the initial gravity to whatever our gravity is

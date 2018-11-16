@@ -129,6 +129,20 @@
             "value": "True",
             "varName": "splashes",
             "varType": 3
+        },
+        {
+            "id": "dba98411-44e0-427f-a1ff-08eed8b5dec6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "rampAllowance",
+            "varType": 0
         }
     ],
     "solid": false,
