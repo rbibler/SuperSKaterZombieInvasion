@@ -40,7 +40,7 @@ scr_GeneralCheckSlopeImpetus();
 // Give the //skater a boost every time he pushes off with is drive foot
 if(stateName == s_MOVING and currentAnimation == skateAnim) {
 	if(currentAnimation.currentIndex >= 3) {
-		xSpeed += 0.2 * sign(xSpeed);
+		xSpeed += 0.225 * sign(xSpeed);
 	}
 }
 

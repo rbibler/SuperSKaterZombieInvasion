@@ -53,7 +53,6 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 			}
 			scr_StopXMotion(); 
 			script_execute(horizCollisionScript, obj);
-			show_debug_message("Here is a platform collision");
 		}
 	}
 

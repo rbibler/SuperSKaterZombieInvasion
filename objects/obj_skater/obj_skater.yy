@@ -104,7 +104,50 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "40646219-5ce2-44f0-b685-493871890193",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "minRampSpeed",
+            "varType": 0
+        },
+        {
+            "id": "6f12838a-bb1f-460b-803c-0463ca7073fc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "speedXRun",
+            "varType": 0
+        },
+        {
+            "id": "0fd607f6-d259-4469-b5c2-7f0eaf6b86e5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-6",
+            "varName": "onFootJumpSpeed",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "5ca2ebe4-ff9a-4af3-b108-d406476ca53f",
     "visible": true

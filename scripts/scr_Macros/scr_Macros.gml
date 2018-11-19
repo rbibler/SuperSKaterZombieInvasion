@@ -7,6 +7,7 @@
 #macro	SHOOT	6
 #macro	SPRINT	6
 #macro	JUMP	7
+#macro	SWITCH	8
 
 
 #macro s_IDLE			"IDLE"
@@ -27,6 +28,15 @@
 #macro s_ATTACKING		"ATTACKING"
 #macro s_DEFENDING		"DEFENDING"
 #macro s_MENACING		"MENACING"
+#macro s_ON_FOOT_IDLE	"ON_FOOT_IDLE"
+#macro s_RUNNING		"RUNNING"
+#macro s_ON_FOOT_JUMPING	"ON_FOOT_JUMPING"
+#macro s_ON_FOOT_FALLING	"ON_FOOT_FALLING"
+#macro s_ON_FOOT_CROUCHING	"ON_FOOT_CROUCHING"
+#macro s_FOOT_TO_SKATE		"FOOT_TO_SKATE"
+#macro s_SKATE_TO_FOOT		"SKATE_TO_FOOT"
+#macro s_ON_FOOT_STOP		"ON_FOOT_STOP"
+
 
 #macro RES_W	512
 #macro RES_H	240

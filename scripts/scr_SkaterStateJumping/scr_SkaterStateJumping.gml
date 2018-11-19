@@ -8,22 +8,22 @@
 // Reset animation and grounded flags when entering state
 // Also add jump impetus to yspeed to make the skater jump
 if(stateNew) {
-	//sprite_index = spr_SkaterJump;
 	scr_SetCurrentAnimation(jumpAnim);
-	ySpeed = jumpSpeed;
-	//var rampObj = scr_IsOnRampBoostTile();
-	//if(rampObj != noone) {
-		//var howMuch = (xSpeed / maxSpeedX);
-		//ySpeed -= rampObj.rampImpulseY * howMuch;
-		//xSpeed += (rampObj.rampImpulseX * howMuch * sign(myDirection));
-	//}
-	if(slopeTouchTimer > 0) {
-		if(input[JUMP]) {
-			ySpeed = jumpSpeed + lastSlopeImpetus;
-		} else {
-			ySpeed = lastSlopeImpetus;
+	if(!getAir) {
+		ySpeed = jumpSpeed;
+	} else {
+		ySpeed = minRampSpeed;
+	}
+	var rampObj = scr_IsOnRampBoostTile();
+	if(rampObj != noone) {
+		show_debug_message("Ramp!");
+		var howMuch = (xSpeed / maxSpeedX);
+		ySpeed -= rampObj.rampImpulseY * howMuch;
+		if(!getAir) {
+			xSpeed += (rampObj.rampImpulseX * howMuch * sign(myDirection));
 		}
 	}
+	show_debug_message("Jumping: " + string(ySpeed));
 	ySpeedFraction = 0;
 	// Set flag so we know the skater is jumping
 	jump = 1;
@@ -39,7 +39,6 @@ scr_SkaterWeaponFire();
 
 // Check how fast the skater should be moving
 scr_SkaterHorizontalImpetus();
-
 
 
 // If no directional input, slow the skater down until he stops
@@ -63,10 +62,10 @@ scr_MoveAndCollide();
 scr_SkaterLadderCollisions();
 
 // If yspeed is greater than zero, we've reached our apogee so it's time to fall
-if(jump == 1 and (ySpeed > 0 or !input[JUMP])){
-	show_debug_message("FAlling in jump");
+if(jump == 1 and (ySpeed > 0 or (!getAir and !input[JUMP]))){
 	// Start falling. Can't set jump to zero, because that'll reset the can jump flag
 	jump = 2;
+	getAir = false;
 	scr_StopYMotion();
 	scr_StateSwitch(s_FALLING);
 }
@@ -75,4 +74,9 @@ if(jump == 1 and (ySpeed > 0 or !input[JUMP])){
 // skating check
 if(grounded) {
 	scr_StateSwitch(s_IDLE);
+}
+
+if(input[SWITCH] and !lastInput[SWITCH]) {
+	scr_StateSwitch(s_SKATE_TO_FOOT);
+	return;
 }

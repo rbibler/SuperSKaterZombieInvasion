@@ -61,3 +61,8 @@ if(input[JUMP]) {
 		scr_StateSwitch(s_FLOATING);
 	}
 } 
+
+if(input[SWITCH] and !lastInput[SWITCH]) {
+	scr_StateSwitch(s_SKATE_TO_FOOT);
+	return;
+}

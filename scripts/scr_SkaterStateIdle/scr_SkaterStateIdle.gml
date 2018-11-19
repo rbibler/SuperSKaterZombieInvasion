@@ -48,13 +48,21 @@ if(input[LEFT] or input[RIGHT]) {
 	scr_StateSwitch(s_MOVING);
 } 
 
-
-// If you aren't on the ground anymore, you're falling
-if(!grounded) {
-	scr_StateSwitch(s_FALLING);
+if(input[SWITCH] and !lastInput[SWITCH]) {
+	scr_StateSwitch(s_SKATE_TO_FOOT);
+	return;
 }
 
-scr_SkaterCheckJump();
+if(scr_SkaterCheckJump()) {
+	scr_StateSwitch(s_JUMPING);
+} else {
+	// If you aren't on the ground anymore, you're falling
+	if(!grounded) {
+		scr_StateSwitch(s_FALLING);
+	}
+}
+
+
 
 // Probably don't need this, but it's here to make sure we slow down to a stop
 if(abs(xSpeed) < 0.15) {

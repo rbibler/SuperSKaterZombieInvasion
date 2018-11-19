@@ -17,12 +17,13 @@ input[4] = 0;
 input[5] = 0;
 input[6] = 0;
 input[7] = 0;
+input[8] = 0;
 
 tileColliderX = 0;
 tileColliderY = 0;
 
 // Initialize an array to hold the input from the last frame
-for(var i = 0; i < 8; i++) {
+for(var i = 0; i < 9; i++) {
 	lastInput[i] = input[i];
 }
 

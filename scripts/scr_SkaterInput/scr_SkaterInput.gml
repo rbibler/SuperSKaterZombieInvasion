@@ -28,6 +28,7 @@ if(obj_persistent.gamepad != -1) {
 	input[START] = keyboard_check(vk_enter);
 	input[SHOOT] = keyboard_check(ord("A"));
 	input[JUMP] = keyboard_check(ord("S"));
+	input[SWITCH] = keyboard_check(ord("F"));
 	
 }
 

@@ -22,6 +22,8 @@ yMomentum = 0;
 lastY = ystart;
 
 onSlope = false;
+wasOnSlopeTile = false;
+getAir = false;
 verticalMovementRun = false;
 
 

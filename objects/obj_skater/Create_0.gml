@@ -37,6 +37,7 @@ input[4] = SELECT;
 input[5] = START;
 input[6] = SHOOT;
 input[7] = JUMP;
+input[8] = SWITCH;
 
 inputDownTime[UP] = 0;
 inputDownTime[DOWN] = 0;
@@ -54,7 +55,7 @@ tileColliderX = 0;
 tileColliderY = 0;
 
 // Initialize an array to hold the input from the last frame
-for(var i = 0; i < 8; i++) {
+for(var i = 0; i < 9; i++) {
 	lastInput[i] = input[i];
 }
 
@@ -84,9 +85,17 @@ drownedState = scr_StateCreate(s_DROWNED, scr_SkaterStateDrowned);
 rollState = scr_StateCreate(s_ROLLING, scr_SkaterStateRolling);
 knockedBackState = scr_StateCreate(s_KNOCKED_BACK, scr_SkaterStateKnockedBack);
 floatState = scr_StateCreate(s_FLOATING, scr_SkaterStateFloating);
+
+onFootIdleState = scr_StateCreate(s_ON_FOOT_IDLE, scr_SkaterStateOnFootIdle);
+onFootStopState = scr_StateCreate(s_ON_FOOT_STOP, scr_SkaterStateOnFootStop);
+runningState = scr_StateCreate(s_RUNNING, scr_SkaterStateRunning);
+onFootJumpState = scr_StateCreate(s_ON_FOOT_JUMPING, scr_SkaterStateOnFootJumping);
+onFootFallState = scr_StateCreate(s_ON_FOOT_FALLING, scr_SkaterStateOnFootFalling);
+footToSkateState = scr_StateCreate(s_FOOT_TO_SKATE, scr_SkaterStateFootToSkate);
+skateToFootState = scr_StateCreate(s_SKATE_TO_FOOT, scr_SkaterStateSkateToFoot);
+
 // Set the default state to IDLE
 scr_StateInit(s_IDLE);
-
 
 
 idleAnim = scr_RegisterStateAnimation(spr_SkaterIdle, NORMAL_ANIM_SPEED, true, noone, "Idle", 1);
@@ -97,6 +106,11 @@ hurtAnim = scr_RegisterStateAnimation(spr_SkaterTakeHit, NORMAL_ANIM_SPEED, true
 deadAnim = scr_RegisterStateAnimation(spr_SkaterDead, NORMAL_ANIM_SPEED, false, noone, "DEAD", sprite_get_number(spr_SkaterDead));
 drownAnim = scr_RegisterStateAnimation(spr_SkaterDrowned, NORMAL_ANIM_SPEED, false, noone, "DROWNED", sprite_get_number(spr_SkaterDrowned));
 
+runAnim = scr_RegisterStateAnimation(spr_SkaterRunning, NORMAL_ANIM_SPEED, true, noone, "RUNNING", sprite_get_number(spr_SkaterRunning));
+onFootIdleAnim = scr_RegisterStateAnimation(spr_SkaterOnFootIdle, NORMAL_ANIM_SPEED, true, noone, "OnFootIdle", sprite_get_number(spr_SkaterOnFootIdle));
+footToSkateAnim = scr_RegisterStateAnimation(spr_SkaterTransition, FAST_ANIM_SPEED, false, noone, "FootToSkate", 1);
+onFootJumpAnim = scr_RegisterStateAnimation(spr_SkaterOnFootJump, NORMAL_ANIM_SPEED, true, noone, "OnFootJump", sprite_get_number(spr_SkaterOnFootJump));
+
 idleAnim.persistent = true;
 skateAnim.persistent = true;
 jumpAnim.persistent = true;
@@ -104,6 +118,7 @@ crouchAnim.persistent = true;
 hurtAnim.persistent = true;
 deadAnim.persistent = true;
 drownAnim.persistent = true;
+runAnim.persistent = true;
 
 powerPushIdle = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
 scr_AddSpriteToSubstateAnimation(powerPushIdle, spr_SkaterPowerPushIdleOne, 0);

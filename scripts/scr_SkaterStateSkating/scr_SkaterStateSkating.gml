@@ -13,7 +13,6 @@
 if(stateNew) {
 	//sprite_index = spr_SkaterSkate;
 	//image_index = 0;
-	show_debug_message("Now Skating!");
 	stateVar[0] = false;
 	scr_SetCurrentAnimation(skateAnim);
 }
@@ -43,6 +42,7 @@ if(input[DOWN] and state != climbState) {
 	scr_StateSwitch(s_CROUCHING);
 } 
 
+
 // Check how fast the skater should be moving
 scr_SkaterHorizontalImpetus();
 
@@ -56,14 +56,26 @@ if(xSpeed == 0 and !input[RIGHT] and !input[LEFT]) {
 	scr_StateSwitch(s_IDLE);
 }
 
+
+if(input[SWITCH] and !lastInput[SWITCH]) {
+	scr_StateSwitch(s_SKATE_TO_FOOT);
+	return;
+}
+
+if(scr_SkaterCheckJump()) {
+	scr_StateSwitch(s_JUMPING);
+} else {
 // If the ground has disappeared we're falling
-if(!grounded) {
-	if(slopeTouchTimer > 0) {
-		scr_StateSwitch(s_JUMPING);
+	if(!grounded) {
+		scr_StateSwitch(s_FALLING);
+	} else {
+		if(scr_CheckForRamp()) {
+			getAir = true;
+			scr_StateSwitch(s_JUMPING);
+		}
 	}
-	scr_StateSwitch(s_FALLING);
 }
 
 
-scr_SkaterCheckJump();
+
 

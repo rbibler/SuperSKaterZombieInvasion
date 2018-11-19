@@ -39,7 +39,6 @@ if(grounded) {
 }
 
 if(climbing) {
-	show_debug_message("Switching to climb");
 	scr_StateSwitch("CLIMBING");
 	myGravity = 0;
 	scr_StopXMotion();

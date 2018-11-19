@@ -60,9 +60,13 @@ if(abs(xSpeed) > 0) {
 scr_MoveAndCollide();
 scr_SkaterLadderCollisions();
 
-// If the ground is gone, you fall
-if(!grounded) {
-	scr_StateSwitch(s_FALLING);
+if(scr_SkaterCheckJump()) {
+	scr_StateSwitch(s_JUMPING);
+} else {
+	// If the ground is gone, you fall
+	if(!grounded) {
+		scr_StateSwitch(s_FALLING);
+	}
 }
 
 // If the player presses left or right, you skate
@@ -70,7 +74,7 @@ if(input[LEFT] or input[RIGHT]) {
 	scr_StateSwitch(s_MOVING);
 }
 
-scr_SkaterCheckJump();
+
 
 if(abs(xSpeed + xSpeedFraction) < 0.15) {
 	xSpeed = 0;

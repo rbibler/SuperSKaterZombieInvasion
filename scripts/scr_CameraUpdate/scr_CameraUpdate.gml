@@ -59,7 +59,6 @@ if(camFinalX > (room_width - viewW)) {
 	x = camFinalX + boundBoxOffsetX
 }
 camFinalX = round(camFinalX);
-show_debug_message("FINAL X: " + string(camFinalX));
 
 camera_set_view_pos(cam, camFinalX, round(camFinalY));
 
