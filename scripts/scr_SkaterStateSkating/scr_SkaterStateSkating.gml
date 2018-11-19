@@ -23,7 +23,7 @@ scr_SkaterWeaponFire();
 
 //SkaterBasicStateAnimation();
 
-if(((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0))) {
+if(((input[LEFT] and !input[RIGHT] and xSpeed > 0) or (input[RIGHT] and !input[LEFT] and xSpeed < 0))) {
 	stateVar[0] = true;
 	stateVar[1] = stateTimer;
 }

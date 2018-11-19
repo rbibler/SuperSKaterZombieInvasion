@@ -43,13 +43,11 @@ if(abs(xSpeed) > 0) {
 		
 			// If that last slow down has flipped the direction, stop the skater
 			if(sign(xSpeed) != sign(lastXSpeed)) {
-				xSpeed = 0;
-				xSpeedFraction = 0;
+				scr_StopXMotion();
 				scr_StateSwitch(s_IDLE);
 			}
 		} else {
-			xSpeed = 0;
-			xSpeedFraction = 0;
+			scr_StopXMotion();
 			scr_StateSwitch(s_IDLE);
 		}
 	}
@@ -70,7 +68,7 @@ if(scr_SkaterCheckJump()) {
 }
 
 // If the player presses left or right, you skate
-if(input[LEFT] or input[RIGHT]) {
+if((input[LEFT] and !input[RIGHT]) or (input[RIGHT] and !input[LEFT])) {
 	scr_StateSwitch(s_MOVING);
 }
 

@@ -44,7 +44,7 @@ if(abs(xSpeed) > 0 and grounded and state != rollState) {
 }
 
 // Switch to Skating if horizontal movement. Can only be idle if grounded, so no need to check ground flag
-if(input[LEFT] or input[RIGHT]) {
+if((input[LEFT] and !input[RIGHT]) or (input[RIGHT] and !input[LEFT])) {
 	scr_StateSwitch(s_MOVING);
 } 
 

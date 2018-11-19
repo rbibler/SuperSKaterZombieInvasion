@@ -10,9 +10,9 @@
 
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	if(grounded) {
-		scr_StopXMotion();
-	}
+	//if(grounded) {
+	//	scr_StopXMotion();
+	//}
 	scr_SetCurrentAnimation(onFootIdleAnim);
 	//jump = 0;
 	stateVar[0] = random_range(60 * 3, 60 * 6); 
@@ -42,7 +42,7 @@ scr_SkaterLadderCollisions();
 
 
 // Switch to Skating if horizontal movement. Can only be idle if grounded, so no need to check ground flag
-if(input[LEFT] or input[RIGHT]) {
+if((input[LEFT] and !input[RIGHT]) or (input[RIGHT] and !input[LEFT])) {
 	scr_StateSwitch(s_RUNNING);
 } 
 

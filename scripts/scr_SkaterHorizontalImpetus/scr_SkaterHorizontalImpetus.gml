@@ -18,6 +18,9 @@ if(input[LEFT]) {
 		if(xSpeed > -speedThisFrame) {
 			xSpeed -= accel;
 		} 
+	} else if(input[RIGHT] and stateName != s_ROLLING) {
+		//scr_StopXMotion();
+		scr_StateSwitch(s_ROLLING);
 	}
 // If not moving left, check to see if moving right
 } else if(input[RIGHT]) {
@@ -27,6 +30,9 @@ if(input[LEFT]) {
 		if(xSpeed < speedThisFrame) {
 			xSpeed += accel;
 		} 
+	} else if(input[LEFT] and stateName != s_ROLLING) {
+		//scr_StopXMotion();
+		scr_StateSwitch(s_ROLLING);
 	}
 } else {
 	// If no directional input, slow the skater down until he stops
