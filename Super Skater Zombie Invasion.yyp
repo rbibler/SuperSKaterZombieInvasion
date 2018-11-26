@@ -831,6 +831,14 @@
             }
         },
         {
+            "Key": "34998408-3160-434b-a804-0695af82081c",
+            "Value": {
+                "id": "b7b5872c-0846-4ac2-a267-43df9b417f2f",
+                "resourcePath": "sprites\\spr_SkaterClimbing\\spr_SkaterClimbing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "34ec790d-38de-44ce-984a-c11615096df4",
             "Value": {
                 "id": "1a4def00-a572-4df6-b8bf-ac4245a73154",
