@@ -14,7 +14,9 @@ if(input[LEFT]) {
 		// If no directional input, slow the skater down until he stops
 		//if(abs(xSpeed) > 0 and grounded and stateName != s_ON_FOOT_IDLE) {
 			scr_StopXMotion();
-			scr_StateSwitch(s_ON_FOOT_IDLE);
+			if(stateName == s_RUNNING) {
+				scr_StateSwitch(s_ON_FOOT_IDLE);
+			}
 		//}
 	}
 // If not moving left, check to see if moving right
@@ -29,14 +31,18 @@ if(input[LEFT]) {
 		// If no directional input, slow the skater down until he stops
 		if(abs(xSpeed) > 0 and grounded and stateName != s_ON_FOOT_IDLE) {
 			scr_StopXMotion();
-			scr_StateSwitch(s_ON_FOOT_IDLE);
+			if(stateName == s_RUNNING) {
+				scr_StateSwitch(s_ON_FOOT_IDLE);
+			}
 		}
 	}
 } else {
 	// If no directional input, slow the skater down until he stops
 	//if(abs(xSpeed) > 0 and grounded and stateName != s_ON_FOOT_IDLE) {
 		scr_StopXMotion();
-		scr_StateSwitch(s_ON_FOOT_IDLE);
+		if(stateName == s_RUNNING) {
+			scr_StateSwitch(s_ON_FOOT_IDLE);
+		}
 	//}
 } 
 

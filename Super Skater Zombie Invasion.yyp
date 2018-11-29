@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0105072f-a061-4ff8-a366-83beca7917a2",
+            "Value": {
+                "id": "47d1ccd2-473a-4d0f-94e7-348490f44820",
+                "resourcePath": "scripts\\scr_FindMiddleOfLadder\\scr_FindMiddleOfLadder.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "023ca213-0a62-4607-8da7-07e9566ca2be",
             "Value": {
                 "id": "3ba4c03b-e059-4467-a97d-d295369e92c1",
@@ -1023,6 +1031,14 @@
             }
         },
         {
+            "Key": "42fcfea1-0f1f-4c92-ab6d-f0a40edc1a52",
+            "Value": {
+                "id": "bf6fbe1f-323f-4edc-9a95-481853594f95",
+                "resourcePath": "scripts\\scr_CheckOnLadder\\scr_CheckOnLadder.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "433baac1-18ec-44bd-a664-621679553a3f",
             "Value": {
                 "id": "84085f84-8e2b-4c21-856d-4d0ad9c0f192",
@@ -1511,6 +1527,14 @@
             }
         },
         {
+            "Key": "6468919b-b652-4890-998d-02dbb2645112",
+            "Value": {
+                "id": "ecb397f3-7a33-46a1-abf8-a77c6b3b4a60",
+                "resourcePath": "scripts\\scr_SkaterStateClimbout\\scr_SkaterStateClimbout.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "64cd7fcf-cc42-4d51-9ec0-2eb8c6c9ab3d",
             "Value": {
                 "id": "4b03de02-9154-458e-93db-f9e54a7ba422",
@@ -1755,6 +1779,14 @@
             "Value": {
                 "id": "4200aa39-2253-43a8-bd1a-9c347570f479",
                 "resourcePath": "scripts\\scr_ZeroInputs\\scr_ZeroInputs.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7691f108-d8cb-4e61-81a9-4fe960176dc9",
+            "Value": {
+                "id": "09d6b491-fd5b-4a46-9efb-5be761a67b16",
+                "resourcePath": "scripts\\scr_FindMiddleOfCurrentTile\\scr_FindMiddleOfCurrentTile.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2495,6 +2527,14 @@
             }
         },
         {
+            "Key": "a5585a4a-d6e6-494d-a9fb-8125307bcf3e",
+            "Value": {
+                "id": "b88092ed-ad3d-4e49-af97-6d2a7d934c31",
+                "resourcePath": "sprites\\spr_SkaterClimbout\\spr_SkaterClimbout.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a58ceede-3984-414c-ad51-6b0b8629bf8b",
             "Value": {
                 "id": "62e11d65-b254-404c-af21-154580b930e9",
@@ -2964,6 +3004,14 @@
                 "id": "bbb44721-379d-4750-8b64-7ec02b2878db",
                 "resourcePath": "scripts\\zombieSackerStateHitScript\\zombieSackerStateHitScript.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bd9675a7-c968-43bb-b297-621cc288ca89",
+            "Value": {
+                "id": "f59cfd33-c778-46a0-9319-8f4cddd603f4",
+                "resourcePath": "objects\\obj_Ladder\\obj_Ladder.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3703,6 +3751,14 @@
             }
         },
         {
+            "Key": "f800380b-1915-4125-82af-0b3c7f5eb3ca",
+            "Value": {
+                "id": "a0f02445-20f5-4fbb-a68e-05a5b925378e",
+                "resourcePath": "objects\\obj_Climbout\\obj_Climbout.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f8a9f84f-e463-4c3f-abd8-ec84eb4ba90d",
             "Value": {
                 "id": "7360f4e9-d013-4879-b352-34422d9cf08e",
@@ -3819,6 +3875,7 @@
         "df152fb6-c4e6-4d67-abd0-54daef416021",
         "f1283bbb-701b-445e-8af6-2640ac049709",
         "2f5bbd6f-4328-4674-bc5c-10f499e96ec0",
+        "6468919b-b652-4890-998d-02dbb2645112",
         "4126773c-7fd8-4d70-a51c-510728d18a6d",
         "33f51ec6-934e-4c29-a6c7-7799f2371541",
         "623ebf7a-4034-4fa7-88f7-4153497af716",
@@ -3853,6 +3910,7 @@
         "ad013edc-ab56-4d6f-8fa0-d31c67b162d0",
         "de2acaa8-8b37-4a3f-97e5-f8d4cb8a58ea",
         "239fc3ce-6446-4bc4-8cbc-1e5b80c35672",
+        "42fcfea1-0f1f-4c92-ab6d-f0a40edc1a52",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",
@@ -3971,6 +4029,8 @@
         "c7da6dd9-1612-4f3e-bade-b3e673f2e776",
         "45e38e1d-68ef-48d9-9df9-b1a3148186f8",
         "c15d28b3-fc34-4f9c-8603-7b38f53f1cf4",
+        "7691f108-d8cb-4e61-81a9-4fe960176dc9",
+        "0105072f-a061-4ff8-a366-83beca7917a2",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",

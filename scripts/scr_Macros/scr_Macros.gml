@@ -18,6 +18,7 @@
 #macro s_RECOVERING		"RECOVERING"
 #macro s_HIT			"HIT"
 #macro s_CLIMBING		"CLIMBING"
+#macro s_CLIMBOUT		"CLIMBOUT"
 #macro s_FALLING		"DYING"
 #macro s_ROLLING		"ROLLING"
 #macro s_DEAD			"DEAD"
@@ -43,6 +44,8 @@
 
 #macro GRID_X	8
 #macro GRID_Y	8
+
+#macro TILE_SIZE 16
 
 #macro NORMAL_ANIM_SPEED	5 / 60
 #macro FAST_ANIM_SPEED  10 / 60

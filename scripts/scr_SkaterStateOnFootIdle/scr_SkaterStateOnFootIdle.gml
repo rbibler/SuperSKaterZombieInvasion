@@ -35,6 +35,8 @@ if(input[DOWN] and state != climbState) {
 	scr_StateSwitch(s_CROUCHING);
 } 
 
+
+
 // Check how fast the skater should be moving
 scr_SkaterRunHorizontalImpetus();
 scr_MoveAndCollide();
@@ -46,6 +48,11 @@ if((input[LEFT] and !input[RIGHT]) or (input[RIGHT] and !input[LEFT])) {
 	scr_StateSwitch(s_RUNNING);
 } 
 
+
+if(input[UP] and scr_CheckOnLadder()) {
+	scr_StateSwitch(s_CLIMBING);
+	return;
+}
 //// If no directional input, slow the skater down until he stops
 //if(abs(xSpeed) > 0 and grounded and stateName != s_ON_FOOT_STOP) {
 //	scr_StateSwitch(s_ON_FOOT_STOP);

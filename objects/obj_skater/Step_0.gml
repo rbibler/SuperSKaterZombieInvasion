@@ -6,6 +6,7 @@
 if(newRoom) {
 	scr_NewRoom();
 }
+shouldAnimate = true;
 
 verticalMovementRun = false;
 frameTimer++;
@@ -40,7 +41,9 @@ if(input[JUMP] and !lastInput[JUMP] and !grounded) {
 
 // The real fun happens in the state machine
 scr_StateExecute();
-scr_UpdateStateAnimation(currentAnimation);
+if(shouldAnimate) {
+	scr_UpdateStateAnimation(currentAnimation);
+}
 
 // We don't want the camera to follow us in certain places, so check for them!
 if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_cameraFollowTrigger, false, false)) {

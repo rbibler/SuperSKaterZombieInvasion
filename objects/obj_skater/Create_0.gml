@@ -78,6 +78,7 @@ skateState = scr_StateCreate(s_MOVING, scr_SkaterStateSkating);
 jumpState = scr_StateCreate(s_JUMPING, scr_SkaterStateJumping);
 bounceState = scr_StateCreate(s_BOUNCING, scr_SkaterStateBouncing);
 climbState = scr_StateCreate(s_CLIMBING, scr_SkaterStateClimbing);
+climboutState = scr_StateCreate(s_CLIMBOUT, scr_SkaterStateClimbout);
 crouchState = scr_StateCreate(s_CROUCHING, scr_SkaterStateCrouching);
 fallState = scr_StateCreate(s_FALLING, scr_SkaterStateFalling);
 deadState = scr_StateCreate(s_DEAD, scr_SkaterStateDead);
@@ -110,6 +111,8 @@ runAnim = scr_RegisterStateAnimation(spr_SkaterRunning, NORMAL_ANIM_SPEED, true,
 onFootIdleAnim = scr_RegisterStateAnimation(spr_SkaterOnFootIdle, NORMAL_ANIM_SPEED, true, noone, "OnFootIdle", sprite_get_number(spr_SkaterOnFootIdle));
 footToSkateAnim = scr_RegisterStateAnimation(spr_SkaterTransition, FAST_ANIM_SPEED, false, noone, "FootToSkate", 1);
 onFootJumpAnim = scr_RegisterStateAnimation(spr_SkaterOnFootJump, NORMAL_ANIM_SPEED, true, noone, "OnFootJump", sprite_get_number(spr_SkaterOnFootJump));
+climbAnim = scr_RegisterStateAnimation(spr_SkaterClimbing, NORMAL_ANIM_SPEED, true, noone, "CLIMBING", sprite_get_number(spr_SkaterClimbing));
+climboutAnim = scr_RegisterStateAnimation(spr_SkaterClimbout, NORMAL_ANIM_SPEED, true, noone, "CLIMBOUT", sprite_get_number(spr_SkaterClimbout));
 
 idleAnim.persistent = true;
 skateAnim.persistent = true;
@@ -152,6 +155,8 @@ immuneStart = 0;
 drawToggle = true;
 canShoot = true;
 jumpInputBuffer = 0;
+climbOut = false;
+shouldAnimate = true;
 
 resetFromDeath = false;
 isDead = false;

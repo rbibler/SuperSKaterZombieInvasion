@@ -146,6 +146,20 @@
             "value": "-6",
             "varName": "onFootJumpSpeed",
             "varType": 0
+        },
+        {
+            "id": "f6a376cf-dc68-4d2f-b98e-5d355f028248",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "climbAmount",
+            "varType": 0
         }
     ],
     "solid": false,
