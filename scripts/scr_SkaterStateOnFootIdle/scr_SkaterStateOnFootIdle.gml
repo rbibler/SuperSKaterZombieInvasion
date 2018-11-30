@@ -32,7 +32,7 @@ if(stateTimer - stateVar[1] >= stateVar[0]) {
 
 // Crouch if the user presses down
 if(input[DOWN] and state != climbState) {
-	scr_StateSwitch(s_CROUCHING);
+	//scr_StateSwitch(s_ON_FOOT_CROUCHING);
 } 
 
 

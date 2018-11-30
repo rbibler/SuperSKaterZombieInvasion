@@ -2631,6 +2631,14 @@
             }
         },
         {
+            "Key": "a9f60143-1e79-4b87-a72a-cf9170d1ba9b",
+            "Value": {
+                "id": "3d7ec0d0-f579-446d-bd25-322099d98446",
+                "resourcePath": "objects\\obj_LadderBottom\\obj_LadderBottom.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "aa0533e2-b2c1-4d4a-acba-f4927a6a60df",
             "Value": {
                 "id": "ded5973e-305f-40bb-a11c-bfaee49b86d1",

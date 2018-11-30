@@ -6,7 +6,7 @@ if(stateNew) {
 if(!scr_CheckOnLadder()) {
 	if(climbOut) {
 		scr_StateSwitch(s_CLIMBOUT);
-	} else {
+	} else if(ladderBottom and input[DOWN]) {
 		scr_StateSwitch(s_ON_FOOT_IDLE);
 	}
 } else {
@@ -14,6 +14,7 @@ if(!scr_CheckOnLadder()) {
 		y -= climbAmount;
 		shouldAnimate = true;
 	} else if(input[DOWN] and !input[UP]) {
+		
 		y += climbAmount;
 		shouldAnimate = true;
 	} else {

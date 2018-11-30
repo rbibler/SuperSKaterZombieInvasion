@@ -156,6 +156,7 @@ drawToggle = true;
 canShoot = true;
 jumpInputBuffer = 0;
 climbOut = false;
+ladderBottom = false;
 shouldAnimate = true;
 
 resetFromDeath = false;
