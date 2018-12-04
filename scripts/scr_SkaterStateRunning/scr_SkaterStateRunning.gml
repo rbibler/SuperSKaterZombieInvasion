@@ -19,17 +19,25 @@ if(stateNew) {
 scr_SkaterWeaponFire();
 
 
-// Crouch if the user presses down
+// Crouch if the skater presses down
 if(input[DOWN] and stateName != s_CLIMBING) {
-	scr_StateSwitch(s_ON_FOOT_CROUCHING);
-} 
+	if(scr_CheckLadderClimbDown()) {
+		y += 12;
+		scr_StateSwitch(s_CLIMBOUT);
+		return;
+	}
+	//scr_StateSwitch(s_ON_FOOT_CROUCHING);
+}
 
 // Check how fast the skater should be moving
 scr_SkaterRunHorizontalImpetus();
 
 scr_MoveAndCollide()
 
-scr_SkaterLadderCollisions();
+if(input[UP] and scr_CheckOnLadder()) {
+	scr_StateSwitch(s_CLIMBING);
+	return;
+}
 
 
 // If we're not moving and there's no input, then we're idle

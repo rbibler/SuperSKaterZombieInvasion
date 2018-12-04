@@ -43,7 +43,10 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 }
 
 scr_MoveAndCollide();
-scr_SkaterLadderCollisions();
+if(input[UP] and scr_CheckOnLadder()) {
+	scr_StateSwitch(s_CLIMBING);
+	return;
+}
 
 // If yspeed is greater than zero, we've reached our apogee so it's time to fall
 if(jump == 1 and (ySpeed > 0 or (!input[JUMP]))){

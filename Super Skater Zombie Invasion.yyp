@@ -3383,6 +3383,14 @@
             }
         },
         {
+            "Key": "da5e8724-6d7c-49a2-a59f-b6f950a9b32d",
+            "Value": {
+                "id": "4e1906fb-9b10-45f2-a73a-84e1d1510188",
+                "resourcePath": "scripts\\scr_CheckLadderClimbDown\\scr_CheckLadderClimbDown.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
             "Value": {
                 "id": "608d1197-c083-4d79-b728-767708d6024d",
@@ -3516,6 +3524,14 @@
                 "id": "25361f73-f7f5-4d26-a09d-b1d62f8cd42f",
                 "resourcePath": "views\\e3945fbb-a8e0-444a-b12d-d7aff8cf2fc3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e3c28de0-bd4e-4ba4-b575-13b7cd8f4aba",
+            "Value": {
+                "id": "a26489c5-a2bd-4419-8ad0-d0da70b3ae3e",
+                "resourcePath": "scripts\\scr_FindMiddleOfBlock\\scr_FindMiddleOfBlock.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3919,6 +3935,7 @@
         "de2acaa8-8b37-4a3f-97e5-f8d4cb8a58ea",
         "239fc3ce-6446-4bc4-8cbc-1e5b80c35672",
         "42fcfea1-0f1f-4c92-ab6d-f0a40edc1a52",
+        "da5e8724-6d7c-49a2-a59f-b6f950a9b32d",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",
@@ -4039,6 +4056,7 @@
         "c15d28b3-fc34-4f9c-8603-7b38f53f1cf4",
         "7691f108-d8cb-4e61-81a9-4fe960176dc9",
         "0105072f-a061-4ff8-a366-83beca7917a2",
+        "e3c28de0-bd4e-4ba4-b575-13b7cd8f4aba",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",

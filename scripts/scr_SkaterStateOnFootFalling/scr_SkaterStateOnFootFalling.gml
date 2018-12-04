@@ -38,7 +38,10 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 }
 
 scr_MoveAndCollide();
-scr_SkaterLadderCollisions();
+if(input[UP] and scr_CheckOnLadder()) {
+	scr_StateSwitch(s_CLIMBING);
+	return;
+}
 
 // If we hit the ground, we're idle. Let the idle state take care of other checks
 if(grounded) {

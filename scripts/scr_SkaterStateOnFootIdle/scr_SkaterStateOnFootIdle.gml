@@ -30,17 +30,20 @@ if(stateTimer - stateVar[1] >= stateVar[0]) {
 }
 
 
-// Crouch if the user presses down
-if(input[DOWN] and state != climbState) {
+// Crouch if the skater presses down
+if(input[DOWN] and stateName != s_CLIMBING) {
+	if(scr_CheckLadderClimbDown()) {
+		y += 12;
+		scr_StateSwitch(s_CLIMBOUT);
+		return;
+	}
 	//scr_StateSwitch(s_ON_FOOT_CROUCHING);
 } 
-
 
 
 // Check how fast the skater should be moving
 scr_SkaterRunHorizontalImpetus();
 scr_MoveAndCollide();
-scr_SkaterLadderCollisions();
 
 
 // Switch to Skating if horizontal movement. Can only be idle if grounded, so no need to check ground flag

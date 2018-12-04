@@ -17,6 +17,7 @@ if(obj_persistent.gamepad != -1) {
 		other.input[START] = gamepad_button_check(gamepad, gp_start);
 		other.input[SHOOT] = gamepad_button_check(gamepad, gp_face3);
 		other.input[JUMP] = gamepad_button_check(gamepad, gp_face1);
+		other.input[SWITCH] = gamepad_button_check(gamepad, gp_face2);
 	}
 // If no gamepad, use the keyboard
 } else {
