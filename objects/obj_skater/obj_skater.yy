@@ -160,6 +160,20 @@
             "value": "1",
             "varName": "climbAmount",
             "varType": 0
+        },
+        {
+            "id": "f697d44b-f751-4be5-a125-6a87b210cb36",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "stairMovement",
+            "varType": 0
         }
     ],
     "solid": false,

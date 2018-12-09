@@ -37,6 +37,7 @@
 #macro s_FOOT_TO_SKATE		"FOOT_TO_SKATE"
 #macro s_SKATE_TO_FOOT		"SKATE_TO_FOOT"
 #macro s_ON_FOOT_STOP		"ON_FOOT_STOP"
+#macro s_STAIRS				"STAIRS"
 
 
 #macro RES_W	512

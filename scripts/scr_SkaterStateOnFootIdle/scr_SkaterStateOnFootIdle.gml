@@ -52,9 +52,16 @@ if((input[LEFT] and !input[RIGHT]) or (input[RIGHT] and !input[LEFT])) {
 } 
 
 
-if(input[UP] and scr_CheckOnLadder()) {
-	scr_StateSwitch(s_CLIMBING);
-	return;
+if(input[UP]) {
+	if(scr_CheckOnLadder()) {
+		scr_StateSwitch(s_CLIMBING);
+		return;
+	}
+	if(scr_CheckOnStairs()) {
+		currentStaircase = instance_place(x, y , obj_Stair);
+		scr_StateSwitch(s_STAIRS);
+		return;
+	}
 }
 //// If no directional input, slow the skater down until he stops
 //if(abs(xSpeed) > 0 and grounded and stateName != s_ON_FOOT_STOP) {

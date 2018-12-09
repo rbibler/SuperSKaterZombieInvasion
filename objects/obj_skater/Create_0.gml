@@ -94,6 +94,7 @@ onFootJumpState = scr_StateCreate(s_ON_FOOT_JUMPING, scr_SkaterStateOnFootJumpin
 onFootFallState = scr_StateCreate(s_ON_FOOT_FALLING, scr_SkaterStateOnFootFalling);
 footToSkateState = scr_StateCreate(s_FOOT_TO_SKATE, scr_SkaterStateFootToSkate);
 skateToFootState = scr_StateCreate(s_SKATE_TO_FOOT, scr_SkaterStateSkateToFoot);
+onStairs = scr_StateCreate(s_STAIRS, scr_SkaterStateOnStairs);
 
 // Set the default state to IDLE
 scr_StateInit(s_IDLE);
@@ -113,6 +114,7 @@ footToSkateAnim = scr_RegisterStateAnimation(spr_SkaterTransition, FAST_ANIM_SPE
 onFootJumpAnim = scr_RegisterStateAnimation(spr_SkaterOnFootJump, NORMAL_ANIM_SPEED, true, noone, "OnFootJump", sprite_get_number(spr_SkaterOnFootJump));
 climbAnim = scr_RegisterStateAnimation(spr_SkaterClimbing, NORMAL_ANIM_SPEED, true, noone, "CLIMBING", sprite_get_number(spr_SkaterClimbing));
 climboutAnim = scr_RegisterStateAnimation(spr_SkaterClimbout, NORMAL_ANIM_SPEED, true, noone, "CLIMBOUT", sprite_get_number(spr_SkaterClimbout));
+onStairsAnim = scr_RegisterStateAnimation(spr_SkaterRunning, NORMAL_ANIM_SPEED, true, noone, "ONSTAIRS", sprite_get_number(spr_SkaterRunning));
 
 idleAnim.persistent = true;
 skateAnim.persistent = true;
@@ -161,6 +163,7 @@ shouldAnimate = true;
 
 resetFromDeath = false;
 isDead = false;
+lastStep = 0;
 
 
 
