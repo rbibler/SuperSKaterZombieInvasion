@@ -37,7 +37,12 @@ if(input[DOWN] and stateName != s_CLIMBING) {
 		scr_StateSwitch(s_CLIMBOUT);
 		return;
 	}
-	//scr_StateSwitch(s_ON_FOOT_CROUCHING);
+	var stair = instance_place(x, y, obj_StairTop);
+	if(stair != noone) {
+		currentStaircase = stair;
+		scr_StateSwitch(s_STAIRS);
+		return;
+	}
 } 
 
 
@@ -52,13 +57,14 @@ if((input[LEFT] and !input[RIGHT]) or (input[RIGHT] and !input[LEFT])) {
 } 
 
 
-if(input[UP]) {
+if(input[UP] and !input[DOWN]) {
 	if(scr_CheckOnLadder()) {
 		scr_StateSwitch(s_CLIMBING);
 		return;
-	}
-	if(scr_CheckOnStairs()) {
-		currentStaircase = instance_place(x, y , obj_Stair);
+	} 
+	var stair = instance_place(x, y, obj_StairBottom);
+	if(stair != noone) {
+		currentStaircase = stair;
 		scr_StateSwitch(s_STAIRS);
 		return;
 	}

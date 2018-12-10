@@ -26,17 +26,31 @@ if(input[DOWN] and stateName != s_CLIMBING) {
 		scr_StateSwitch(s_CLIMBOUT);
 		return;
 	}
-	//scr_StateSwitch(s_ON_FOOT_CROUCHING);
-}
+	var stair = instance_place(x, y, obj_StairTop);
+	if(stair != noone) {
+		currentStaircase = stair;
+		scr_StateSwitch(s_STAIRS);
+		return;
+	}
+} 
 
 // Check how fast the skater should be moving
 scr_SkaterRunHorizontalImpetus();
 
 scr_MoveAndCollide()
 
-if(input[UP] and scr_CheckOnLadder()) {
-	scr_StateSwitch(s_CLIMBING);
-	return;
+
+if(input[UP] and !input[DOWN]) {
+	if(scr_CheckOnLadder()) {
+		scr_StateSwitch(s_CLIMBING);
+		return;
+	} 
+	var stair = instance_place(x, y, obj_StairBottom);
+	if(stair != noone) {
+		currentStaircase = stair;
+		scr_StateSwitch(s_STAIRS);
+		return;
+	}
 }
 
 

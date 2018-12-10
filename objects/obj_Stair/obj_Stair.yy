@@ -78,6 +78,20 @@
             "value": "0",
             "varName": "startX",
             "varType": 0
+        },
+        {
+            "id": "2f13bc66-69b2-4b4e-abcd-85c89d719177",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "totalSteps",
+            "varType": 0
         }
     ],
     "solid": false,

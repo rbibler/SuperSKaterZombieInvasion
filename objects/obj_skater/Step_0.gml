@@ -19,12 +19,14 @@ if(isImmune) {
 }
 // Get the user's input. 
 scr_SkaterInput();
-if(input[RIGHT]) {
-	if(!input[LEFT] and !lastInput[LEFT]) {
-		facing = 1;
+if(stateName != s_STAIRS) {
+	if(input[RIGHT]) {
+		if(!input[LEFT] and !lastInput[LEFT]) {
+			facing = 1;
+		}
+	} else if(input[LEFT]) {
+		facing = -1;
 	}
-} else if(input[LEFT]) {
-	facing = -1;
 }
 
 

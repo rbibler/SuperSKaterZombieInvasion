@@ -171,8 +171,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
-            "varName": "stairMovement",
+            "value": ".4444",
+            "varName": "stairClimbSpeed",
             "varType": 0
         }
     ],
