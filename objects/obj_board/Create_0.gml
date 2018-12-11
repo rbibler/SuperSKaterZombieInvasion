@@ -1,19 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Inherit the parent event
-event_inherited();
+x = obj_skater.x;
+y = obj_skater.y;
+frameTimer = 0;
+aliveCounter = 0;
+aliveTime = 0;
 
-var xOffset = 8;
-var yOffset = 8;
-image_xscale = 1;
-
-if(obj_skater.image_xscale == -1) {
-	image_xscale = -1;
-	xOffset = -8;
-}
-
-x = obj_skater.x + xOffset;
-y = obj_skater.y + yOffset;
-
-destructoCount = 1;
+image_xscale = obj_skater.myDirection;

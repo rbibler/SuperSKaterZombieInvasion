@@ -8,7 +8,7 @@ if(stateNew) {
 	stateVar[4] = x;									// What's my tether point?
 	stateVar[5] = 0;									// Am I defending or should I attack?
 	stateVar[6] = 0;									// How long have I been defending?
-	StopXMotion();
+	scr_StopXMotion();
 	input[LEFT] = 0 ;
 	input[RIGHT] = 0;
 }
@@ -32,7 +32,7 @@ if(stateVar[2] == 1) {
 				}
 				stateVar[1] = stateTimer;
 				stateVar[0] = random_range(15, 60);
-				StopXMotion();
+				scr_StopXMotion();
 				input[RIGHT] = 0;
 				input[LEFT] = 0;
 			}
@@ -67,9 +67,9 @@ if(stateVar[2] == 1) {
 	stateVar[4] = x;
 }
 
-EnemyHorizontalImpetus();
+scr_EnemyMovement();
 
-MoveAndCollide();
+scr_MoveAndCollide();
 
 
 

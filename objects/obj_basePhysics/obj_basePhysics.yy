@@ -2,7 +2,7 @@
     "id": "ed14a131-953f-411a-8370-232b4492166c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_basePhysics",
+    "name": "obj_BasePhysics",
     "eventList": [
         {
             "id": "f950c472-ffe9-4c1f-b9e2-03005687a3fd",
@@ -43,77 +43,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "2.5",
-            "varName": "normalSpeedX",
-            "varType": 0
-        },
-        {
-            "id": "869d67b1-2cd3-4240-871c-7c2126ef5a73",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "3.5",
-            "varName": "sprintSpeedX",
-            "varType": 0
-        },
-        {
-            "id": "367e0b56-719a-4b47-ad4d-2571ee18528c",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "jumpFramesAllowance",
-            "varType": 0
-        },
-        {
-            "id": "de2bec41-2131-47de-9fad-6fead8948c80",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "2",
-            "varName": "climbSpeed",
-            "varType": 0
-        },
-        {
-            "id": "a869a8af-a993-4e2c-8f19-4cad0d4179e8",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "-7",
-            "varName": "jumpSpeed",
-            "varType": 0
-        },
-        {
-            "id": "bd03d933-5ad3-4c06-b917-d8324839875d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "-15",
-            "varName": "bounceSpeed",
+            "varName": "speedX",
             "varType": 0
         },
         {
@@ -173,7 +103,7 @@
             "varType": 0
         },
         {
-            "id": "7d8e0fec-70e6-41e1-81ad-64d33d679a8d",
+            "id": "a3a9b21a-607a-4c3b-9eaf-d1d147524e2a",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -182,9 +112,37 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "horizCollisionScript",
-            "varType": 5
+            "value": "3.5",
+            "varName": "maxSpeedX",
+            "varType": 0
+        },
+        {
+            "id": "c6855c49-c015-4e3e-ae8f-1a2c679b993d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "4",
+            "varName": "maxSpeedXFlatland",
+            "varType": 0
+        },
+        {
+            "id": "89d5b467-3727-42f6-9919-4e441b3b9d6f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "8",
+            "varName": "maxSpeedXDownhill",
+            "varType": 0
         }
     ],
     "solid": false,

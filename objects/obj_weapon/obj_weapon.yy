@@ -28,7 +28,7 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -94,7 +94,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "noone",
             "varName": "fireScript",
             "varType": 5
         },
@@ -122,7 +122,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "noone",
             "varName": "ammoType",
             "varType": 5
         },
@@ -165,7 +165,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "projOffsetStandingX",
+            "varName": "ammoOffsetX",
             "varType": 0
         },
         {
@@ -179,7 +179,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "projOffsetStandingY",
+            "varName": "ammoOffsetY",
             "varType": 0
         },
         {
@@ -253,7 +253,7 @@
             "varType": 3
         },
         {
-            "id": "3b570c7d-3c11-4daa-bd7c-2ce1db627e43",
+            "id": "58a4034b-8b95-4008-b5d8-d803b88262df",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -262,8 +262,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "shootSequenceScript",
+            "value": "0",
+            "varName": "sprite",
             "varType": 5
         }
     ],

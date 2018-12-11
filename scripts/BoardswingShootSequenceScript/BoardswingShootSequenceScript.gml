@@ -1,1 +1,0 @@
-return input[SHOOT] and !lastInput[SHOOT];

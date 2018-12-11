@@ -22,5 +22,5 @@ if(stateVar[1] == 1) {
 
 var skaterDist = point_distance(obj_skater.x, obj_skater.y, x, y);
 if(skaterDist <= 400) {
-	stateSwitch("ATTACKING");
+	scr_StateSwitch("ATTACKING");
 }

@@ -4,20 +4,11 @@
     "mvc": "1.0",
     "name": "obj_slingshotPowerUp",
     "eventList": [
-        {
-            "id": "5c306fce-ed91-48dd-b08a-eb34ede1b56c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "8704d004-980a-46fb-8023-ba46a22c6ec1"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "b10d5bdb-094d-4b17-8e0a-df202870d9c1",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

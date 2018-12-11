@@ -56,7 +56,7 @@
             "value": "0.15"
         }
     ],
-    "parentObjectId": "ed14a131-953f-411a-8370-232b4492166c",
+    "parentObjectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -81,7 +81,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "15",
             "varName": "hitPoints",
             "varType": 0
         },

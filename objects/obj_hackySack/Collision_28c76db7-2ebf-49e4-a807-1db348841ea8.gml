@@ -3,7 +3,7 @@
 
 with(other) {
 	if(state != hitImmobilizedState and !isImmune) {
-		stateSwitch("HIT FALLBACK");
+		scr_StateSwitch("HIT FALLBACK");
 		health -= other.hitPoints;
 	}
 	

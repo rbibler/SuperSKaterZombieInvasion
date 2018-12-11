@@ -3,6 +3,6 @@
 
 // Inherit the parent event
 event_inherited();
-
+state = 0;
 
 aliveCounter = 0;

@@ -10,8 +10,7 @@
         "7ea1c4a0-019a-486d-9e0a-80ab06041e47",
         "6fff0a10-eef3-41e8-98a2-218e084732fd",
         "4d84bc15-fcfd-42db-8fe3-14338a5b98db",
-        "ccdfea6a-60e9-4786-a201-39134d0bebb9",
-        "ac20fad2-d0ac-4f8d-a61a-55071a528e44"
+        "ccdfea6a-60e9-4786-a201-39134d0bebb9"
     ],
     "filterType": "GMScript",
     "folderName": "BlockScripts",

@@ -4,12 +4,10 @@
     "mvc": "1.1",
     "name": "f8a9f84f-e463-4c3f-abd8-ec84eb4ba90d",
     "children": [
-        "8c78f50a-ad5d-4fa7-bebf-60d4aa0aec54",
-        "bb7f0192-a298-475e-8860-592ab6a9ea53",
-        "ea07c833-f4d3-4568-9a87-f6d31066251e",
-        "454416b0-895c-40d9-b724-9ba95ca00491",
-        "54864bdb-3341-4085-9cba-aa36f59e7277",
-        "f0f5df33-142a-4522-bd3a-b5b0cfa90e94"
+        "7d6fb317-5717-44f7-a16c-582aa45aed4d",
+        "5ba73ee5-f570-4275-a312-41e9c6e48a74",
+        "8d9093ec-4056-46ee-a667-e3e93c7005c1",
+        "8eee1c5c-371b-44a5-9444-b141bffc4f8c"
     ],
     "filterType": "GMSprite",
     "folderName": "EnemySprites",

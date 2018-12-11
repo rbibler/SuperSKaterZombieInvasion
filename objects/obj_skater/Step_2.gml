@@ -3,7 +3,7 @@
 
 //SkaterHorizontalMovement();
 if(!verticalMovementRun) {
-	GeneralVerticalMovement();
+	scr_GeneralVerticalMovement();
 }
 //if(abs(xSpeed + xSpeedFraction) < 0.15) {
 //	StopXMotion();
@@ -12,17 +12,24 @@ x += carrySpeed;
 carrySpeed = 0;
 
 lastXSpeed = xSpeed;
-SaveInput();
+scr_SaveInput();
 
 if(infected) {
 	if(frameTimer mod 360 == 0) {
-		//stateSwitch("HIT_IMMOBILIZED");
-		isImmune = true;
-		immuneStart = frameTimer;
-		health -= 5;
+		//scr_SkaterHit(noone, 15);
 	}
 }
-
-stateUpdate();
-
+if(isDead) {
+	scr_StartAtCheckpoint();
+	isDead = false;
+}
+scr_StateUpdate();
 image_xscale = facing;
+yMomentum += (y - lastY);
+lastY = y;
+
+slopeTouchTimer--;
+
+wasGrounded = grounded;
+wasGroundedRight = groundedRight;
+wasGroundedLeft = groundedLeft;

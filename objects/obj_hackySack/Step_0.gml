@@ -2,8 +2,8 @@
 // You can write your code in this editor
 ySpeed += myGravity;
 
-MoveAndCollide();
-GeneralCheckGrounded();
+scr_MoveAndCollide();
+scr_GeneralCheckGrounded();
 
 if(grounded) {
 	instance_destroy();

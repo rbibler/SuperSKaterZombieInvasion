@@ -5,6 +5,6 @@ var ammoType = argument0;
 
 if(state == stateDefending) {
 	if((facing == -1 and ammoType.x > x) or (facing == 1 and ammoType.x < x)) {
-		stateSwitch("HIT");
+		scr_StateSwitch("HIT");
 	} 
 }

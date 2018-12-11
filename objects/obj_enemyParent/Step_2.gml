@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-SaveInput();
-stateUpdate();
+scr_SaveInput();
+scr_StateUpdate();
 wasGrounded = grounded;
 wasGroundedRight = groundedRight;
 wasGroundedLeft = groundedLeft;

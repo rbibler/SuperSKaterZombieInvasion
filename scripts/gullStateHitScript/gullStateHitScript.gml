@@ -15,7 +15,7 @@ if(stateNew) {
 	stateVar[0] = 0;
 }
 
-MoveAndCollide();
+scr_MoveAndCollide();
 
 // If we're back on the ground, we can switch back to moving state after a pause
 if(grounded) {
@@ -37,6 +37,6 @@ if(grounded) {
 			input[LEFT] = 1;
 			input[RIGHT] = 0;
 		}
-		stateSwitch("MOVING");
+		scr_StateSwitch("MOVING");
 	}
 }

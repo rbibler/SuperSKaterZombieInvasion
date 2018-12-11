@@ -58,16 +58,40 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "46fbbf0f-d743-4c3c-9bfd-2f774ba7718f",
+            "id": "3ed17841-a682-4e68-b23a-c8329d42b945",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
-            "propertyId": "367e0b56-719a-4b47-ad4d-2571ee18528c",
+            "propertyId": "fe5f28ae-a0bc-401f-9c51-9691484fdbde",
+            "value": "3"
+        },
+        {
+            "id": "60a6b3c2-363d-48a5-a2cd-3db252b65ed7",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "a3a9b21a-607a-4c3b-9eaf-d1d147524e2a",
+            "value": "6"
+        },
+        {
+            "id": "4c59139e-8e08-4280-958d-f6613a3e6640",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
+            "propertyId": "dead12e9-df50-4b13-b85f-054b78f2cf1f",
+            "value": "7"
+        },
+        {
+            "id": "8865e12d-7f51-4bae-a0de-4c03bafc9dec",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "89d5b467-3727-42f6-9919-4e441b3b9d6f",
             "value": "7"
         }
     ],
-    "parentObjectId": "ed14a131-953f-411a-8370-232b4492166c",
-    "persistent": false,
+    "parentObjectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -80,7 +104,78 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "40646219-5ce2-44f0-b685-493871890193",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "minRampSpeed",
+            "varType": 0
+        },
+        {
+            "id": "6f12838a-bb1f-460b-803c-0463ca7073fc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "speedXRun",
+            "varType": 0
+        },
+        {
+            "id": "0fd607f6-d259-4469-b5c2-7f0eaf6b86e5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-6",
+            "varName": "onFootJumpSpeed",
+            "varType": 0
+        },
+        {
+            "id": "f6a376cf-dc68-4d2f-b98e-5d355f028248",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "climbAmount",
+            "varType": 0
+        },
+        {
+            "id": "f697d44b-f751-4be5-a125-6a87b210cb36",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": ".4444",
+            "varName": "stairClimbSpeed",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "5ca2ebe4-ff9a-4af3-b108-d406476ca53f",
     "visible": true

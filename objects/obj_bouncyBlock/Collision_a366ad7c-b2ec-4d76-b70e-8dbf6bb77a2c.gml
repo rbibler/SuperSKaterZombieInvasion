@@ -18,5 +18,5 @@ with(other) {
 	if(state == bounceState) {
 		state = -1;
 	}
-	stateSwitch("BOUNCING");
+	scr_StateSwitch("BOUNCING");
 }

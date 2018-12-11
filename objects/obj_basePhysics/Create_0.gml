@@ -8,14 +8,18 @@ frameTimer = 0;
 
 // current xSpeed
 xSpeed = 0;
+xSpeedFinal = 0;
 xSpeedFraction = 0;
 lastXSpeed = 0;
 carrySpeed = 0;
 
 // current ySpeed
 ySpeed = 0;
-ySpeedFraction = 0;
+ySpeedFraction = 0
+ySpeedFinal = 0;
 carrySpeedY = 0;
+yMomentum = 0;
+lastY = ystart;
 
 onSlope = false;
 verticalMovementRun = false;
@@ -43,8 +47,11 @@ wasGrounded = false;
 wasGroundedRight = false;
 wasGroundedLeft = false;
 
-var layerId = layer_get_id("CollisionTiles");
-collisionTiles = layer_tilemap_get_id(layerId);
+inFloorCenter = 0;
+inFloorLeft = 0;
+inFloorRight = 0;
+
+scr_GetCollisionTiles();
 
 collisionY = 0;
 collisionX = 0;

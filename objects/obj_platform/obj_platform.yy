@@ -25,7 +25,7 @@
             "m_owner": "30ce1638-3297-4f3c-835f-9ab49d93df3f"
         },
         {
-            "id": "8bb90bdd-ae2f-45e1-9faf-7f898b45f97a",
+            "id": "bb01e7ff-e131-43a0-b6c6-7cd604494155",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -43,10 +43,10 @@
             "mvc": "1.0",
             "objectId": "de9ae66e-f636-4141-bf2f-815a0308cf01",
             "propertyId": "746a4138-d01b-41a4-83ac-431b895df83e",
-            "value": "MovingPlatformVertCollisionScript"
+            "value": "scr_MovingPlatformVertCollision"
         }
     ],
-    "parentObjectId": "de9ae66e-f636-4141-bf2f-815a0308cf01",
+    "parentObjectId": "c63f57e4-0a7a-458f-9836-de71bde03190",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

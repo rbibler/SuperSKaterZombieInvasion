@@ -3,7 +3,7 @@
 if(state == 1) {
 	if(frameTimer - springBackStartTime >= springBackTime) {
 		state = 0;
-		SetSolid(true);
+		scr_SetSolid(true);
 		image_index = 0;
 		alarm[1] = 5;
 	}

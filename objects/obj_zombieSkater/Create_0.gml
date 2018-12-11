@@ -4,10 +4,30 @@
 // Inherit the parent event
 event_inherited();
 
-if(skateDirection == -1) {
-	input[LEFT] = 1;
-	input[RIGHT] = 0;
-} else {
-	input[LEFT] = 0;
-	input[RIGHT] = 1;
-}
+moveAnim = scr_RegisterStateAnimation(
+		spr_zombieSkater, 
+		ZOMBIE_ANIM_SPEED, 
+		true, noone, 
+		"", 
+		sprite_get_number(spr_zombieSkater)
+	);
+	
+jumpAnim = scr_RegisterStateAnimation(
+		spr_ZombieSkaterJumping, 
+		NORMAL_ANIM_SPEED, 
+		true, 
+		noone, 
+		"", 
+		sprite_get_number(spr_ZombieSkaterJumping)
+	);
+	
+deathAnim = scr_RegisterStateAnimation(
+		spr_ZombieSkaterDying, 
+		NORMAL_ANIM_SPEED, 
+		false, 
+		noone, 
+		"", 
+		sprite_get_number(spr_ZombieSkaterDying)
+	);
+	
+currentAnimation = idleAnim;

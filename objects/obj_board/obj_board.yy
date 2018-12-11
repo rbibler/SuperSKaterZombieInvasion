@@ -27,33 +27,10 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
-        {
-            "id": "783b85ae-71fd-469f-b56d-136f5780dba2",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
-            "propertyId": "51495703-9d0c-42ff-a027-821d2b674406",
-            "value": "0"
-        },
-        {
-            "id": "5570d86f-4224-4a37-8ff1-5f1b775b5223",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
-            "propertyId": "d647f0ec-87c6-4f07-95d2-3691b168544c",
-            "value": "10"
-        },
-        {
-            "id": "9582e93c-16cc-4458-abaa-d58130f3408c",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
-            "propertyId": "41ae2fc1-a00b-4191-9cad-e820d4ddb496",
-            "value": "obj_boardSwing"
-        }
+        
     ],
-    "parentObjectId": "678fee8a-8cb5-4ca1-8c61-d9cd099f6a0f",
-    "persistent": false,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -66,8 +43,37 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "6629681c-e0bd-4f1f-8f48-a9b5bf97f2f8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "30",
+            "varName": "strikeTime",
+            "varType": 0
+        },
+        {
+            "id": "b0a63c64-630f-42ad-96a0-8794125fe6df",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "weaponParent",
+            "varType": 0
+        }
+    ],
     "solid": false,
-    "spriteId": "6e59ce6e-6bb6-4bf2-9161-fa33e3c6b9e9",
-    "visible": false
+    "spriteId": "7afe6fe4-8748-42f9-80a3-dd5015e053f9",
+    "visible": true
 }

@@ -67,7 +67,7 @@ switch(stateVar[1]) {
 			stateVar[1] = 0;
 			input[LEFT] = 0;
 			input[RIGHT] = 0;
-			StopXMotion();
+			scr_StopXMotion();
 			stateVar[0] = random_range(15, 60);
 		}
 	break;
@@ -75,6 +75,6 @@ switch(stateVar[1]) {
 	break;
 }
 
-EnemyHorizontalImpetus();
-MoveAndCollide();
+scr_EnemyMovement();
+scr_MoveAndCollide();
 

@@ -3,7 +3,7 @@
 
 var ammo = argument0;
 if(state != stateDead and state != stateHit) {
-	stateSwitch("DEAD");
+	scr_StateSwitch("DEAD");
 	with(ammo) {
 		script_execute(destroyThyself);
 	}

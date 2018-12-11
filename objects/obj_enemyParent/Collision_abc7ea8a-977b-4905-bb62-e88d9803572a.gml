@@ -3,12 +3,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(state == stateHit or state == stateDead) {
+if(stateName == s_HIT or stateName == s_DEAD) {
 	return;
 }
 
-if(other.sprite_index != spr_SkaterBoardswing) {
-	with(other) {
-		SkaterHit(other);
-	}
+with(other) {
+	scr_SkaterHit(other, 0);
 }

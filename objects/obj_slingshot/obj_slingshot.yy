@@ -2,7 +2,7 @@
     "id": "8b2664bb-7445-4618-b912-b0d5a1c15985",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_slingshot",
+    "name": "obj_Slingshot",
     "eventList": [
         {
             "id": "66438330-0416-4a3c-b322-384f98a68408",
@@ -23,7 +23,7 @@
             "mvc": "1.0",
             "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
             "propertyId": "b9a69cc8-a029-45a7-8e72-5fad938dc014",
-            "value": "15"
+            "value": "30"
         },
         {
             "id": "e5879b0b-a798-4f5c-a11b-5978b7f4cb4c",
@@ -47,7 +47,7 @@
             "mvc": "1.0",
             "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
             "propertyId": "3cbe53f1-7d66-4925-bd2e-bdc1b9615816",
-            "value": "SkaterSlingshotFireScript"
+            "value": "scr_SkaterSlingshotFireScript"
         },
         {
             "id": "9db54aed-beb9-44a0-9e4c-4d0500523f3e",
@@ -128,18 +128,10 @@
             "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
             "propertyId": "3302d11f-3b03-4a06-841e-4e703ac0d0ac",
             "value": "-2"
-        },
-        {
-            "id": "bcc0f9d0-6ed8-4fc8-aec5-7143deedde89",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
-            "propertyId": "3b570c7d-3c11-4daa-bd7c-2ce1db627e43",
-            "value": "SlingshotShootSequenceScript"
         }
     ],
     "parentObjectId": "a895efa3-8807-4a53-b3ca-4fc28915d361",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,

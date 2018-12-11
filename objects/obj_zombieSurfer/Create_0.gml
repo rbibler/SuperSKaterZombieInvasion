@@ -9,4 +9,4 @@ xMax = xstart + (xRange / 2);
 
 myShield = noone;
 
-stateSwitch("MOVING");
+scr_StateSwitch("MOVING");

@@ -11,14 +11,14 @@ if(grounded) {
 		ySpeed = jumpSpeed;
 		grounded = false;
 	} else {
-		StopXMotion();
-		stateSwitch("IDLE");
+		scr_StopXMotion();
+		scr_StateSwitch("IDLE");
 	}
 }
 
 xSpeed = 1 * myDirection;
 facing = -sign(xSpeed);
-MoveAndCollide();
+scr_MoveAndCollide();
 
 if(grounded) {
 	if(stateVar[0] == 0) {
@@ -26,8 +26,8 @@ if(grounded) {
 		ySpeed = jumpSpeed;
 		grounded = false;
 	} else {
-		StopXMotion();
-		stateSwitch("IDLE");
+		scr_StopXMotion();
+		scr_StateSwitch("IDLE");
 	}
 }
 

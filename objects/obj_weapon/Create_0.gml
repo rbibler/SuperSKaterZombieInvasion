@@ -3,3 +3,5 @@
 ammoCount = 0;
 ammoOnScreen = 0;
 currentCooldownCount = 0;
+attackEffectAnimation = noone;
+state = WEAPONSTATES.IDLE;
