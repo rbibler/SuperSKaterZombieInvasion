@@ -22,7 +22,7 @@ if(ySpeed >= 0) {
 p1 = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_side + ySpeed);
 p2 = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_side + ySpeed);
 // if either of the corner tiles is between 1 and 4 (inclusive) it's a solid tile
-if(((p1 != 0 and p1 <= 4 and p1 > 0) or (p2 != 0 and p2 <= 4 and p2 > 0))) {
+if(stateName != s_JUMPING and ((p1 != 0 and p1 <= 4 and p1 > 0) or (p2 != 0 and p2 <= 4 and p2 > 0))) {
 	// if moving down, it's a collision with the floor
 	// so set the object's y value to the top of that tile (taking into account the distance
 	// between the object's origin and its bbox
@@ -33,6 +33,9 @@ if(((p1 != 0 and p1 <= 4 and p1 > 0) or (p2 != 0 and p2 <= 4 and p2 > 0))) {
 		grounded = true;
 
 	} 
+	if(object_index == obj_slimeball) {
+		show_debug_message("Stopping Y Motion normal");
+	}
 	// Stop the object from moving anymore
 	scr_StopYMotion();
 } 
@@ -50,6 +53,9 @@ if(floorDist >= 0) {
 		// Then set it back to one pixel above the floor
 		y -= (floorDist + 1);
 		// Stop its y motion
+		if(object_index == obj_slimeball) {
+			show_debug_message("Stopping Y Motion slope");
+		}
 		scr_StopYMotion();
 		// And update the floor distance variable to reflect it's new y pos
 		floorDist = -1;

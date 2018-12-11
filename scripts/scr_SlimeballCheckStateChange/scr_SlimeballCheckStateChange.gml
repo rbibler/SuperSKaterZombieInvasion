@@ -13,7 +13,7 @@ switch(currentState)
 				moveDirOnRestart = input[LEFT] ? LEFT : RIGHT;
 				scr_StateSwitch(s_JUMPING);
 			} else {
-				stateVar[0] = random_range(1 * 60, 7 * 60);
+				stateVar[0] = room_speed;
 			}
 		} else if(scr_ShouldChaseSkater(true)) {
 			scr_StateSwitch(s_ATTACKING);
@@ -29,7 +29,7 @@ switch(currentState)
 	break;
 	
 	case s_JUMPING:
-		if(ySpeed > 0) {
+		if(ySpeed > 0 and stateVar[0]) {
 			scr_StateSwitch(s_FALLING);
 		}
 	break;

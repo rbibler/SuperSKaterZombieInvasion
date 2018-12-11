@@ -32,18 +32,17 @@ switch(currentState) {
 	break;
 	
 	case s_DEAD:
-		if(scr_IsOnScreen() and stateTimer mod (60 / 5) == 0) {
-			if(stateVar[0] == 0 and scr_Chance(7)) {
-				stateVar[0] = 1;
-			}
-			if(stateVar[0] == 1) {
+		if(stateVar[0]) {
+			if(stateTimer mod ANIMATION.NORMAL == 0) {
 				image_index++;
 				if(image_index >= image_number) {
+					stateVar[0] = false;
 					image_index = 0;
-					stateVar[0] = 0;
 					scr_ExplodingBlockSpawnDrip();
 				}
 			}
-		}
+		} else if(scr_IsOnScreen() and stateTimer mod (room_speed * dripRateInSeconds) == 0) {
+			stateVar[0] = true;
+		} 
 	break;
 }
