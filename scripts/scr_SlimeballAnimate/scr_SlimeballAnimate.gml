@@ -35,6 +35,7 @@ switch(currentState) {
 			stateVar[0] = 1;
 			ySpeed += jumpSpeed;
 			grounded = false;
+			onSlope = false;
 		}
 
 		if(!grounded and ySpeed > 0) {

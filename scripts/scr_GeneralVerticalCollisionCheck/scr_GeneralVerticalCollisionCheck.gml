@@ -22,7 +22,7 @@ if(ySpeed >= 0) {
 p1 = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_side + ySpeed);
 p2 = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_side + ySpeed);
 // if either of the corner tiles is between 1 and 4 (inclusive) it's a solid tile
-if(stateName != s_JUMPING and ((p1 != 0 and p1 <= 4 and p1 > 0) or (p2 != 0 and p2 <= 4 and p2 > 0))) {
+if(((p1 != 0 and p1 <= 4 and p1 > 0) or (p2 != 0 and p2 <= 4 and p2 > 0))) {
 	// if moving down, it's a collision with the floor
 	// so set the object's y value to the top of that tile (taking into account the distance
 	// between the object's origin and its bbox
@@ -46,7 +46,7 @@ if(floorDist >= 0) {
 	// if the object is "in" the floor, find out what kind of floor it's in
 	var tileId = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + ySpeed);
 	// If it's a slope tile...
-	if(tileId != 0 and tileId != 4 and tileId != 5) {
+	if(tileId != 0 and tileId != 4 and tileId != 5 and stateName != s_JUMPING) {
 		onSlope = true;
 		// move it to where it wants to be
 		y += ySpeed;
