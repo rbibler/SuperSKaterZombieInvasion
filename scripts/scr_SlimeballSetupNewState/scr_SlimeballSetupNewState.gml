@@ -6,7 +6,7 @@ var currentState = argument0;
 switch(currentState) {
 	case s_MOVING:
 		// We want the Slimeball to jump every few seconds, so set up a jump timer
-		stateVar[0] = random_range(1 * 60, 7 * 60);
+		stateVar[0] = random_range(1 * room_speed, 4 * room_speed);
 		sprite_index = spr_slimeballMove;
 		image_index = 0;
 		input[moveDirOnRestart] = 1;
