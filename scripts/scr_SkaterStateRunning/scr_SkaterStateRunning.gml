@@ -16,7 +16,7 @@ if(stateNew) {
 }
 
 // Check if we should fire a weapon
-scr_SkaterWeaponFire();
+scr_CheckForBoardSwing();
 
 
 // Crouch if the skater presses down

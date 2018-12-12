@@ -3503,6 +3503,14 @@
             }
         },
         {
+            "Key": "dde218af-b1ed-4c8c-bf6a-19b087543a28",
+            "Value": {
+                "id": "c4e75a08-6f20-4c8d-a92f-8fdb808236e9",
+                "resourcePath": "scripts\\scr_CheckForBoardSwing\\scr_CheckForBoardSwing.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "de2acaa8-8b37-4a3f-97e5-f8d4cb8a58ea",
             "Value": {
                 "id": "aa19fc35-e312-4f2b-88f0-aca899224c6c",
@@ -4003,6 +4011,7 @@
         "42fcfea1-0f1f-4c92-ab6d-f0a40edc1a52",
         "da5e8724-6d7c-49a2-a59f-b6f950a9b32d",
         "a0f8a1fe-9ff4-458d-a308-c0ee9cb18589",
+        "dde218af-b1ed-4c8c-bf6a-19b087543a28",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",

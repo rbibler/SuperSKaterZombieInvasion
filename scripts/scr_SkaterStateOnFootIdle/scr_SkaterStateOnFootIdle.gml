@@ -20,7 +20,7 @@ if(stateNew) {
 	stateVar[2] = false;
 }
 
-scr_SkaterWeaponFire();
+scr_CheckForBoardSwing();
 
 // If enough time has passed to start the animation idle thing do it.
 // stateVar[0] = time in steps between idle animation cycles
