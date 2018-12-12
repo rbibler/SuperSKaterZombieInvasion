@@ -2,7 +2,3 @@
 
 ySpeed = 0;
 ySpeedFraction = 0;
-
-if(object_index = obj_slimeball) {
-	show_debug_message("Stopped y for slime");
-}

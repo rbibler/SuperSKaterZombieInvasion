@@ -33,9 +33,6 @@ if(((p1 != 0 and p1 <= 4 and p1 > 0) or (p2 != 0 and p2 <= 4 and p2 > 0))) {
 		grounded = true;
 
 	} 
-	if(object_index == obj_slimeball) {
-		show_debug_message("Stopping Y Motion normal");
-	}
 	// Stop the object from moving anymore
 	scr_StopYMotion();
 } 
@@ -46,16 +43,13 @@ if(floorDist >= 0) {
 	// if the object is "in" the floor, find out what kind of floor it's in
 	var tileId = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + ySpeed);
 	// If it's a slope tile...
-	if(tileId != 0 and tileId != 4 and tileId != 5 and stateName != s_JUMPING) {
+	if(tileId != 0 and tileId != 4 and tileId != 5) {
 		onSlope = true;
 		// move it to where it wants to be
 		y += ySpeed;
 		// Then set it back to one pixel above the floor
 		y -= (floorDist + 1);
 		// Stop its y motion
-		if(object_index == obj_slimeball) {
-			show_debug_message("Stopping Y Motion slope");
-		}
 		scr_StopYMotion();
 		// And update the floor distance variable to reflect it's new y pos
 		floorDist = -1;

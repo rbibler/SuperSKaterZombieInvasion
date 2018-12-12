@@ -9,11 +9,11 @@ switch(currentState)
 		// If the jump timer has counted down, see if we're pursuing the skater
 		// If not, jump, otherwise reset timer
 		if(stateTimer >= stateVar[0]) {
-			if(!input[SHOOT]) {
+			if(!input[SHOOT] and !onSlope) {
 				moveDirOnRestart = input[LEFT] ? LEFT : RIGHT;
 				scr_StateSwitch(s_JUMPING);
 			} else {
-				stateVar[0] = room_speed;
+				stateVar[0] = random_range(room_speed * 1, room_speed * 4);
 			}
 		} else if(scr_ShouldChaseSkater(true)) {
 			scr_StateSwitch(s_ATTACKING);
