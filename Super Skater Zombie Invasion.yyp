@@ -911,6 +911,14 @@
             }
         },
         {
+            "Key": "37a22d03-99b2-4748-8e84-2882e63f68e1",
+            "Value": {
+                "id": "0138b370-8f1a-4591-8bad-e366f7e9c0e1",
+                "resourcePath": "sprites\\spr_BoardSwingMask\\spr_BoardSwingMask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "37bade44-ac9e-45b5-b8ed-138fda7cbb9b",
             "Value": {
                 "id": "a692bf02-bdf3-45e6-ae5d-56ec201f7f72",
@@ -964,6 +972,14 @@
                 "id": "4e08c1fb-1b81-4236-9444-e4eefb7ff5d9",
                 "resourcePath": "scripts\\scr_TransitionToShootingPowerPush\\scr_TransitionToShootingPowerPush.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3bb48daa-8949-4733-b6a0-93ce5aca112c",
+            "Value": {
+                "id": "75e65da2-37b3-4116-9b48-6f4b2d0e82f4",
+                "resourcePath": "sprites\\spr_SkaterBoardSwing\\spr_SkaterBoardSwing.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1363,6 +1379,14 @@
             "Value": {
                 "id": "0e3f2812-7397-4d6b-80f0-0a3aa1d3bb69",
                 "resourcePath": "scripts\\scr_CanShootWeapon\\scr_CanShootWeapon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "56a35a79-93e9-4b25-a0b5-47a20c704c9d",
+            "Value": {
+                "id": "755cb341-8ce9-4da7-9bba-81c9456a814c",
+                "resourcePath": "scripts\\scr_SkaterStateBoardSwing\\scr_SkaterStateBoardSwing.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3977,6 +4001,7 @@
         "623ebf7a-4034-4fa7-88f7-4153497af716",
         "265d9001-0a0f-4511-8d72-c7187b078ce9",
         "82b30ed4-c1a4-455e-bd1c-930ce1e9890d",
+        "56a35a79-93e9-4b25-a0b5-47a20c704c9d",
         "f0aad53f-9c2e-45f9-820b-5d8e58cb54e1",
         "56aade88-259d-4fb7-8097-021b1bab6a74",
         "fd9dd186-7e7e-496f-846a-2fa7620db0f5",

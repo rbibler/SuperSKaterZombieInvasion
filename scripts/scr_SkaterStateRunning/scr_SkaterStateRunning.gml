@@ -13,6 +13,7 @@
 if(stateNew) {
 	stateVar[0] = false;
 	scr_SetCurrentAnimation(runAnim);
+	canShoot = true;
 }
 
 // Check if we should fire a weapon
@@ -36,6 +37,10 @@ if(input[DOWN] and stateName != s_CLIMBING) {
 
 // Check how fast the skater should be moving
 scr_SkaterRunHorizontalImpetus();
+if(currentAnimation == boardSwingAnim) {
+	scr_StopXMotion();
+	scr_ZeroInputs();
+}
 
 scr_MoveAndCollide()
 

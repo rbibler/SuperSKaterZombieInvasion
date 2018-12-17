@@ -38,6 +38,7 @@
 #macro s_SKATE_TO_FOOT		"SKATE_TO_FOOT"
 #macro s_ON_FOOT_STOP		"ON_FOOT_STOP"
 #macro s_STAIRS				"STAIRS"
+#macro s_BOARD_SWING		"BOARD_SWING"
 
 
 #macro RES_W	512

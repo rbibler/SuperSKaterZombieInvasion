@@ -8,11 +8,8 @@
 if(stateNew) {
 	scr_SetCurrentAnimation(onFootJumpAnim);
 	canSplash = true;
+	canShoot = true;
 }
-
-
-// Check if we should fire a weapon
-scr_CheckForBoardSwing();
 
 // Check how fast the skater should be moving
 scr_SkaterRunHorizontalImpetus();

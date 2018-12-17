@@ -18,6 +18,7 @@ if(stateNew) {
 	stateVar[0] = random_range(60 * 3, 60 * 6); 
 	stateVar[1] = 0;
 	stateVar[2] = false;
+	canShoot = true;
 }
 
 scr_CheckForBoardSwing();
