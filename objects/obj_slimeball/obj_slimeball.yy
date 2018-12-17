@@ -113,7 +113,7 @@
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "5eaae57f-b022-4bdb-9b63-088d61a795b0",
-            "value": "scr_SlimeballHitByAmmo"
+            "value": "scr_SlimeballBoardStrike"
         }
     ],
     "parentObjectId": "3d722df8-120e-43a7-abff-d5e21430611a",

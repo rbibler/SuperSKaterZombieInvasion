@@ -63,4 +63,10 @@ switch(currentState)
 			scr_StateSwitch(s_MOVING);
 		}
 	break;
+	
+	case s_BOARD_STRUCK:
+		if(grounded) {
+			scr_StateSwitch(s_MOVING);
+		}
+	break;
 }

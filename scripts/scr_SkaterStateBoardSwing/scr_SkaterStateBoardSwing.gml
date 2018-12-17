@@ -25,6 +25,7 @@ if(enemy != noone) {
 	with(enemy) {
 		script_execute(enemy.boardSmackedScript);
 	}
+	instance_create_layer(enemy.x, enemy.y, "FOREGROUND", obj_PowerBallStrike);
 }
 
 if(currentAnimation.isDone) {

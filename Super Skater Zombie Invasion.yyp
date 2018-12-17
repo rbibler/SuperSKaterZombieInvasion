@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "0a911551-632f-4096-819d-5c226ad93a45",
+            "Value": {
+                "id": "3475cfcd-f71b-419a-9faf-537100b1c18d",
+                "resourcePath": "scripts\\scr_SlimeballBoardStrike\\scr_SlimeballBoardStrike.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0bc24469-5665-4dbe-a397-214f5557607e",
             "Value": {
                 "id": "09b4f5b8-04fe-4136-9da5-de55ea8b11c8",
@@ -908,14 +916,6 @@
                 "id": "bd656c37-1954-4ca5-9875-4a05430f2280",
                 "resourcePath": "scripts\\scr_NewRoom\\scr_NewRoom.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "37a22d03-99b2-4748-8e84-2882e63f68e1",
-            "Value": {
-                "id": "0138b370-8f1a-4591-8bad-e366f7e9c0e1",
-                "resourcePath": "sprites\\spr_BoardSwingMask\\spr_BoardSwingMask.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -2463,6 +2463,14 @@
             }
         },
         {
+            "Key": "9c2298ee-8387-4bec-a3c2-b5316c9db63a",
+            "Value": {
+                "id": "add53b55-14d5-49e4-80c8-0dc8b274ad51",
+                "resourcePath": "scripts\\scr_EnemyBoardStruck\\scr_EnemyBoardStruck.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9cf9fdb2-80fe-48d7-9ef6-ff89e4b9bce2",
             "Value": {
                 "id": "632c4690-218c-4e69-980d-45b632bb056d",
@@ -3180,6 +3188,14 @@
                 "id": "9fa29d7a-974f-499a-8a52-d64036e192e8",
                 "resourcePath": "scripts\\scr_MovingPlatformVertCollision\\scr_MovingPlatformVertCollision.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c4d09ee2-67b1-40af-99bc-4a16da4c1fd5",
+            "Value": {
+                "id": "91b04ebd-c119-402a-80f5-9d7a85b265ec",
+                "resourcePath": "sprites\\spr_BoardSwingMask\\spr_BoardSwingMask.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4055,6 +4071,7 @@
         "f5c55b42-f1c1-4dee-a661-8703fb282348",
         "8aae74ee-62a5-48aa-930b-294a7b9263bb",
         "ff3b6811-0cd1-41bc-93ff-693f00035592",
+        "9c2298ee-8387-4bec-a3c2-b5316c9db63a",
         "a0a0f345-d037-4fe7-a6b8-3edde0b4f7f5",
         "698a235c-86fc-4d01-a1a1-e6d453d4612b",
         "13a97aa4-6668-4b15-9536-7356ddc3e7a4",
@@ -4063,6 +4080,7 @@
         "023ca213-0a62-4607-8da7-07e9566ca2be",
         "73f289cf-3c7a-4a54-b8b2-178031b69eb0",
         "2aa7644a-42e0-4a8d-9834-dce36f7f16d5",
+        "0a911551-632f-4096-819d-5c226ad93a45",
         "b936d745-8572-4971-be7a-681239abfba1",
         "8e3c750a-425d-4f17-a320-b959a0a58294",
         "c1205fd3-60e1-42a4-b3ef-8a364297fa66",
