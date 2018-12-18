@@ -167,6 +167,8 @@ resetFromDeath = false;
 isDead = false;
 lastStep = 0;
 
+boardSmacked = ds_list_create();
+
 
 
 

@@ -25,6 +25,7 @@ switch(currentState)
 			input[SPRINT] = 0;
 			moveDirOnRestart = input[RIGHT] == 1 ? RIGHT : LEFT;
 			scr_StateSwitch(s_MOVING);
+			show_debug_message("Switched to moving from attacking");
 		}
 	break;
 	
@@ -53,6 +54,7 @@ switch(currentState)
 					input[LEFT] = 1;
 					input[RIGHT] = 0;
 				}
+				show_debug_message("Switched to moving from hit");
 				scr_StateSwitch(s_MOVING);
 			}
 		}
@@ -60,12 +62,14 @@ switch(currentState)
 	
 	case s_FALLING:
 		if(grounded) {
+			show_debug_message("Switched to moving from falling");
 			scr_StateSwitch(s_MOVING);
 		}
 	break;
 	
 	case s_BOARD_STRUCK:
 		if(grounded) {
+			show_debug_message("Switched to moving from board struck during frame " + string(frameCount));
 			scr_StateSwitch(s_MOVING);
 		}
 	break;

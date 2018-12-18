@@ -1,5 +1,6 @@
 if(stateNew) {
 	scr_SetCurrentAnimation(boardSwingAnim);
+	ds_list_clear(boardSmacked);
 }
 
 //scr_StopXMotion();
@@ -20,13 +21,21 @@ scr_MoveAndCollide();
 
 
 mask_index = spr_BoardSwingMask;
-var enemy = instance_place(x, y, obj_enemyParent);
-if(enemy != noone) {
-	with(enemy) {
-		script_execute(enemy.boardSmackedScript);
+var hitList = ds_list_create();
+var enemyHits = instance_place_list(x, y, obj_enemyParent, hitList, false);
+if(enemyHits > 0) {
+	for(var i = 0; i < enemyHits; i++) {
+		var enemy = hitList[| i];
+		if(ds_list_find_index(boardSmacked, enemy) == -1) {
+			ds_list_add(boardSmacked, enemy);
+			with(enemy) {
+				script_execute(enemy.boardSmackedScript);
+			}
+			instance_create_layer(enemy.x, enemy.y, "FOREGROUND", obj_PowerBallStrike);
+		}
 	}
-	instance_create_layer(enemy.x, enemy.y, "FOREGROUND", obj_PowerBallStrike);
 }
+ds_list_destroy(hitList);
 
 if(currentAnimation.isDone) {
 	scr_StateSwitch(s_ON_FOOT_IDLE);
