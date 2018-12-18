@@ -1,3 +1,4 @@
+
 /// Skater's Rolling state. 
 /* 
 *	Exits: 
@@ -12,6 +13,7 @@
 if(stateNew) {
 	//sprite_index = spr_SkaterIdle;
 	//image_index = 0;
+	canShoot = true;
 
 }
 

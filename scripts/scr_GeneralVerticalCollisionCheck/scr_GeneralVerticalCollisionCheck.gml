@@ -31,6 +31,9 @@ if(((p1 != 0 and p1 <= 4 and p1 > 0) or (p2 != 0 and p2 <= 4 and p2 > 0))) {
 		bboxTile *= 16;
 		y = bboxTile - (bbox_bottom - y) - 1;
 		grounded = true;
+		if(object_index == obj_slimeball) {
+			show_debug_message("grounded at frame: " + string(frameCount));
+		}
 
 	} 
 	// Stop the object from moving anymore
@@ -54,6 +57,9 @@ if(floorDist >= 0) {
 		// And update the floor distance variable to reflect it's new y pos
 		floorDist = -1;
 		grounded = true;
+		if(object_index == obj_slimeball) {
+			show_debug_message("grounded at frame: " + string(frameCount));
+		}
 		
 	}
 }
@@ -84,6 +90,9 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		
 		if(!grounded and ySpeed > 0) {
 			grounded = true;
+			if(object_index == obj_slimeball) {
+			show_debug_message("grounded at frame: " + string(frameCount));
+		}
 			
 		}
 		if(bbox_bottom > obj.bbox_top and obj.object_index == obj_controlBlock) {

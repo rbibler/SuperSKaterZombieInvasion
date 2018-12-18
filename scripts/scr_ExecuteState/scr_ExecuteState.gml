@@ -12,6 +12,7 @@ script_execute(move);
 if(shouldMove) {
 	scr_EnemyMovement();
 }
+
 scr_MoveAndCollide();
 
 script_execute(animate, stateName);

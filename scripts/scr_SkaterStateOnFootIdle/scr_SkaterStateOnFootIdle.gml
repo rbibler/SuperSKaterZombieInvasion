@@ -18,9 +18,10 @@ if(stateNew) {
 	stateVar[0] = random_range(60 * 3, 60 * 6); 
 	stateVar[1] = 0;
 	stateVar[2] = false;
+	canShoot = true;
 }
 
-scr_SkaterWeaponFire();
+scr_CheckForBoardSwing();
 
 // If enough time has passed to start the animation idle thing do it.
 // stateVar[0] = time in steps between idle animation cycles

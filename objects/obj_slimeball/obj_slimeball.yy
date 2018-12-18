@@ -106,6 +106,14 @@
             "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
             "propertyId": "d2076d68-0b30-401c-af69-e1e7331b0585",
             "value": "-8"
+        },
+        {
+            "id": "e53f5203-587e-453f-9016-672d65c085f0",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "5eaae57f-b022-4bdb-9b63-088d61a795b0",
+            "value": "scr_SlimeballBoardStrike"
         }
     ],
     "parentObjectId": "3d722df8-120e-43a7-abff-d5e21430611a",

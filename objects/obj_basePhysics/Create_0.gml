@@ -5,6 +5,7 @@ facing = 1;
 
 // variable to hold a frame timer
 frameTimer = 0;
+frameCount = 0;
 
 // current xSpeed
 xSpeed = 0;

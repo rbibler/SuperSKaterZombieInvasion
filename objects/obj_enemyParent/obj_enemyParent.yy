@@ -469,6 +469,34 @@
             "value": "0",
             "varName": "attackThreshold",
             "varType": 0
+        },
+        {
+            "id": "5eaae57f-b022-4bdb-9b63-088d61a795b0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "boardSmackedScript",
+            "varType": 5
+        },
+        {
+            "id": "f9448d38-2855-49df-8712-104184c05fdc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "scr_EnemyBoardStruck",
+            "varName": "stateBoardStruckScript",
+            "varType": 5
         }
     ],
     "solid": false,

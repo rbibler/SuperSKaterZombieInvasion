@@ -28,7 +28,7 @@ else {
     stateNext = ds_map_find_value(stateMap, argument[0]);
     stateName = argument[0]; 
 	if(self.object_index == obj_slimeball) {
-		show_debug_message("Switched to: " + stateName);
+		show_debug_message("Switched to: " + stateName + " at " + string(frameCount));
 	}
   }
   else {

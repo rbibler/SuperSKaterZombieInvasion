@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "0a911551-632f-4096-819d-5c226ad93a45",
+            "Value": {
+                "id": "3475cfcd-f71b-419a-9faf-537100b1c18d",
+                "resourcePath": "scripts\\scr_SlimeballBoardStrike\\scr_SlimeballBoardStrike.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0bc24469-5665-4dbe-a397-214f5557607e",
             "Value": {
                 "id": "09b4f5b8-04fe-4136-9da5-de55ea8b11c8",
@@ -967,6 +975,14 @@
             }
         },
         {
+            "Key": "3bb48daa-8949-4733-b6a0-93ce5aca112c",
+            "Value": {
+                "id": "75e65da2-37b3-4116-9b48-6f4b2d0e82f4",
+                "resourcePath": "sprites\\spr_SkaterBoardSwing\\spr_SkaterBoardSwing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3caee927-542d-4ed2-b8ef-384d5e78f754",
             "Value": {
                 "id": "d455a03f-1b58-4b00-b541-62ca93cbdbeb",
@@ -1363,6 +1379,14 @@
             "Value": {
                 "id": "0e3f2812-7397-4d6b-80f0-0a3aa1d3bb69",
                 "resourcePath": "scripts\\scr_CanShootWeapon\\scr_CanShootWeapon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "56a35a79-93e9-4b25-a0b5-47a20c704c9d",
+            "Value": {
+                "id": "755cb341-8ce9-4da7-9bba-81c9456a814c",
+                "resourcePath": "scripts\\scr_SkaterStateBoardSwing\\scr_SkaterStateBoardSwing.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2439,6 +2463,14 @@
             }
         },
         {
+            "Key": "9c2298ee-8387-4bec-a3c2-b5316c9db63a",
+            "Value": {
+                "id": "add53b55-14d5-49e4-80c8-0dc8b274ad51",
+                "resourcePath": "scripts\\scr_EnemyBoardStruck\\scr_EnemyBoardStruck.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9cf9fdb2-80fe-48d7-9ef6-ff89e4b9bce2",
             "Value": {
                 "id": "632c4690-218c-4e69-980d-45b632bb056d",
@@ -3159,6 +3191,14 @@
             }
         },
         {
+            "Key": "c4d09ee2-67b1-40af-99bc-4a16da4c1fd5",
+            "Value": {
+                "id": "91b04ebd-c119-402a-80f5-9d7a85b265ec",
+                "resourcePath": "sprites\\spr_BoardSwingMask\\spr_BoardSwingMask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c63f57e4-0a7a-458f-9836-de71bde03190",
             "Value": {
                 "id": "a016ce4f-e167-42f8-a55c-184ab39a6575",
@@ -3500,6 +3540,14 @@
                 "id": "5efe33b6-721f-4631-b83d-5e3ffb420791",
                 "resourcePath": "views\\dd29000a-8237-47d6-8646-8c6547ee49d3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dde218af-b1ed-4c8c-bf6a-19b087543a28",
+            "Value": {
+                "id": "c4e75a08-6f20-4c8d-a92f-8fdb808236e9",
+                "resourcePath": "scripts\\scr_CheckForBoardSwing\\scr_CheckForBoardSwing.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3969,6 +4017,7 @@
         "623ebf7a-4034-4fa7-88f7-4153497af716",
         "265d9001-0a0f-4511-8d72-c7187b078ce9",
         "82b30ed4-c1a4-455e-bd1c-930ce1e9890d",
+        "56a35a79-93e9-4b25-a0b5-47a20c704c9d",
         "f0aad53f-9c2e-45f9-820b-5d8e58cb54e1",
         "56aade88-259d-4fb7-8097-021b1bab6a74",
         "fd9dd186-7e7e-496f-846a-2fa7620db0f5",
@@ -4003,6 +4052,7 @@
         "42fcfea1-0f1f-4c92-ab6d-f0a40edc1a52",
         "da5e8724-6d7c-49a2-a59f-b6f950a9b32d",
         "a0f8a1fe-9ff4-458d-a308-c0ee9cb18589",
+        "dde218af-b1ed-4c8c-bf6a-19b087543a28",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",
@@ -4021,6 +4071,7 @@
         "f5c55b42-f1c1-4dee-a661-8703fb282348",
         "8aae74ee-62a5-48aa-930b-294a7b9263bb",
         "ff3b6811-0cd1-41bc-93ff-693f00035592",
+        "9c2298ee-8387-4bec-a3c2-b5316c9db63a",
         "a0a0f345-d037-4fe7-a6b8-3edde0b4f7f5",
         "698a235c-86fc-4d01-a1a1-e6d453d4612b",
         "13a97aa4-6668-4b15-9536-7356ddc3e7a4",
@@ -4029,6 +4080,7 @@
         "023ca213-0a62-4607-8da7-07e9566ca2be",
         "73f289cf-3c7a-4a54-b8b2-178031b69eb0",
         "2aa7644a-42e0-4a8d-9834-dce36f7f16d5",
+        "0a911551-632f-4096-819d-5c226ad93a45",
         "b936d745-8572-4971-be7a-681239abfba1",
         "8e3c750a-425d-4f17-a320-b959a0a58294",
         "c1205fd3-60e1-42a4-b3ef-8a364297fa66",

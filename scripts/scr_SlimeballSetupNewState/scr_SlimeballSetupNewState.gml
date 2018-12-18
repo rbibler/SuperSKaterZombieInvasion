@@ -10,6 +10,7 @@ switch(currentState) {
 		sprite_index = spr_slimeballMove;
 		image_index = 0;
 		input[moveDirOnRestart] = 1;
+		shouldMove = true;
 	break;
 	
 	case s_JUMPING:
@@ -46,6 +47,14 @@ switch(currentState) {
 	
 	case s_ATTACKING:
 		input[SPRINT] = 1;
+	break;
+	
+	case s_BOARD_STRUCK:
+		ySpeed = -5;
+		xSpeed = sign(x - obj_skater.x) * 3;
+		grounded = false;
+		scr_ZeroInputs();
+		
 	break;
 	
 	case s_DEAD:

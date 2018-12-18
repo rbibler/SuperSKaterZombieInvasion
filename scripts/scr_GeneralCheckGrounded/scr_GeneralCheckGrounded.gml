@@ -25,8 +25,12 @@ if(grounded) {
 	canJump = 0;
 	// Skater isn't moving down 
 	//StopYMotion();
+	if(object_index == obj_slimeball) {
+		show_debug_message("grounded at frame: " + string(frameCount));
+	}
 	
 } else {
 	// If not grounded, increase jump affordance
 	canJump++;
 }
+

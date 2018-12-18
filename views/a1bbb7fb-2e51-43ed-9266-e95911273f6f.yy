@@ -13,7 +13,8 @@
         "33f51ec6-934e-4c29-a6c7-7799f2371541",
         "623ebf7a-4034-4fa7-88f7-4153497af716",
         "265d9001-0a0f-4511-8d72-c7187b078ce9",
-        "82b30ed4-c1a4-455e-bd1c-930ce1e9890d"
+        "82b30ed4-c1a4-455e-bd1c-930ce1e9890d",
+        "56a35a79-93e9-4b25-a0b5-47a20c704c9d"
     ],
     "filterType": "GMScript",
     "folderName": "OnFootStates",

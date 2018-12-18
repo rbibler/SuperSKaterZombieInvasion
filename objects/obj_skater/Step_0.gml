@@ -7,6 +7,7 @@ if(newRoom) {
 	scr_NewRoom();
 }
 shouldAnimate = true;
+mask_index = sprite_index;
 
 verticalMovementRun = false;
 frameTimer++;
@@ -19,7 +20,7 @@ if(isImmune) {
 }
 // Get the user's input. 
 scr_SkaterInput();
-if(stateName != s_STAIRS) {
+if(stateName != s_STAIRS and stateName != s_BOARD_SWING) {
 	if(input[RIGHT]) {
 		if(!input[LEFT] and !lastInput[LEFT]) {
 			facing = 1;
@@ -46,6 +47,8 @@ scr_StateExecute();
 if(shouldAnimate) {
 	scr_UpdateStateAnimation(currentAnimation);
 }
+
+
 
 // We don't want the camera to follow us in certain places, so check for them!
 if(collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_cameraFollowTrigger, false, false)) {
