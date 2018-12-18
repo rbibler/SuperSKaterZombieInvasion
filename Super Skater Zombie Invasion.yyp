@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "1de886a6-490d-4275-b892-462751c30858",
+            "Value": {
+                "id": "39d5b8a3-8150-4296-a24f-be04b2f213ee",
+                "resourcePath": "scripts\\scr_SlimeballStateMoving\\scr_SlimeballStateMoving.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1ecc2d29-9374-443a-afaf-fc64636297f0",
             "Value": {
                 "id": "51df8db0-df5e-4ef0-a49e-f2547618e789",
@@ -660,6 +668,14 @@
                 "id": "556c9440-29b3-4a76-a6b6-c8cc8e73f9af",
                 "resourcePath": "views\\280d69e1-5284-4123-9605-ddc489a7926e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2874402a-2f24-4587-ab2e-d20b00a28425",
+            "Value": {
+                "id": "964680ca-e161-4b8c-ada4-d6bef98162de",
+                "resourcePath": "scripts\\scr_SlimeballStateIdle\\scr_SlimeballStateIdle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1004,6 +1020,14 @@
                 "id": "d670fad0-1351-4c99-ac76-f2e280db837d",
                 "resourcePath": "sprites\\spr_ocean\\spr_ocean.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3d2053d2-7145-4adc-9947-896a1d57eb23",
+            "Value": {
+                "id": "1a3b39d2-87af-441a-9dd1-0d8ab21570ac",
+                "resourcePath": "scripts\\scr_SlimeballStateFalling\\scr_SlimeballStateFalling.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1439,6 +1463,14 @@
             }
         },
         {
+            "Key": "5a13d11a-8938-4324-b4c3-7b1e41dd6404",
+            "Value": {
+                "id": "26bbecf1-790d-4d83-b1e4-424958083590",
+                "resourcePath": "scripts\\scr_SlimeballStateDying\\scr_SlimeballStateDying.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5a26bff5-24e4-49ab-aaec-151cc1407635",
             "Value": {
                 "id": "f017b5f8-770b-416b-8d9a-3d2ca58a9d90",
@@ -1663,6 +1695,14 @@
             }
         },
         {
+            "Key": "6a3f3f78-0225-418e-8f54-03107b3973ad",
+            "Value": {
+                "id": "8ed77db1-77ed-488d-8ae2-139c68a226cf",
+                "resourcePath": "scripts\\scr_SlimeballStateJumping\\scr_SlimeballStateJumping.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6aab2f68-a6d9-4e57-ad58-7f108146993e",
             "Value": {
                 "id": "877adcc7-1b8b-4fb1-99a7-47e029320df9",
@@ -1835,6 +1875,14 @@
             "Value": {
                 "id": "4200aa39-2253-43a8-bd1a-9c347570f479",
                 "resourcePath": "scripts\\scr_ZeroInputs\\scr_ZeroInputs.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "765e3a8c-e0f0-4e9c-ae6a-cb46f85ec33d",
+            "Value": {
+                "id": "c7771da1-e959-4406-b816-e0ca53014762",
+                "resourcePath": "scripts\\scr_SlimeballStateAttacking\\scr_SlimeballStateAttacking.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2404,6 +2452,14 @@
                 "id": "e0cf7a15-b937-4136-9cde-293ccd163cb4",
                 "resourcePath": "views\\96d4bd6c-5188-462f-98d3-9448e146a319.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "974bc110-23b7-4b77-97d8-e5b6a1ef1f16",
+            "Value": {
+                "id": "da99ec10-fe4b-46eb-85d1-c21b327a1163",
+                "resourcePath": "scripts\\scr_SlimeballStateDead\\scr_SlimeballStateDead.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3495,6 +3551,14 @@
             }
         },
         {
+            "Key": "db07b9e9-176a-4284-ad47-00af4b009f46",
+            "Value": {
+                "id": "144f3a9f-0c7b-4392-80c9-078fbc3a51c0",
+                "resourcePath": "scripts\\scr_SlimeballStateBoardStruck\\scr_SlimeballStateBoardStruck.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
             "Value": {
                 "id": "608d1197-c083-4d79-b728-767708d6024d",
@@ -4081,6 +4145,14 @@
         "73f289cf-3c7a-4a54-b8b2-178031b69eb0",
         "2aa7644a-42e0-4a8d-9834-dce36f7f16d5",
         "0a911551-632f-4096-819d-5c226ad93a45",
+        "2874402a-2f24-4587-ab2e-d20b00a28425",
+        "1de886a6-490d-4275-b892-462751c30858",
+        "6a3f3f78-0225-418e-8f54-03107b3973ad",
+        "3d2053d2-7145-4adc-9947-896a1d57eb23",
+        "765e3a8c-e0f0-4e9c-ae6a-cb46f85ec33d",
+        "5a13d11a-8938-4324-b4c3-7b1e41dd6404",
+        "974bc110-23b7-4b77-97d8-e5b6a1ef1f16",
+        "db07b9e9-176a-4284-ad47-00af4b009f46",
         "b936d745-8572-4971-be7a-681239abfba1",
         "8e3c750a-425d-4f17-a320-b959a0a58294",
         "c1205fd3-60e1-42a4-b3ef-8a364297fa66",
