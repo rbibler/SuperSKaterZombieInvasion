@@ -1,17 +1,44 @@
+// SETUP LOCAL VARIABLES
+
+var isAirborne = stateVar[0];
+
 // SETUP NEW STATE, UH, STATE
+
 if(stateNew) {
-	if(sprite_index != spr_slimeballJump) {
-		sprite_index = spr_slimeballJump;
-	}
-	ySpeed = jumpSpeed;
-	grounded = false;
-	scr_ZeroInputs();
-	scr_StopXMotion();
+	moveDirOnRestart = sign(xSpeed);
+	isAirborne = 0;
 }
 
-// Update movement and collisions
+// UPDATE MOVEMENT AND COLLISIONS
 
 scr_MoveAndCollide();
+
+// ANIMATE
+
+if(stateTimer <= 5) {
+	sprite_index = spr_slimeballMove;
+	image_index = 1;
+} else if(stateTimer <= 10) {
+	image_index = 0;
+} else if(stateTimer <= 15) {
+	image_index = 1;
+} else if(stateTimer <= 20) {
+	image_index = 0;
+} else if(!isAirborne) {
+	sprite_index = spr_slimeballJump;
+	image_index = 0;
+	isAirborne = 1;
+	ySpeed = jumpSpeed;
+	grounded = false;
+	onSlope = false;
+}
+
+if(!grounded and ySpeed > 0) {
+	sprite_index = spr_slimeballJump;
+	image_index = 1;
+}
+
+
 
 // CHECK STATE TRANSITIONS
 
@@ -20,7 +47,7 @@ if(ySpeed > 0) {
 	scr_StateSwitch(s_FALLING);
 }
 
-// To Moving: Unlikely, but if somehow grounded
-if(grounded) {
-	scr_StateSwitch(s_MOVING);
-}
+// UPDATE STATE VARIABLES
+
+stateVar[0] = isAirborne;
+

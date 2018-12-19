@@ -7,8 +7,7 @@ if(stateNew) {
 		sprite_index = spr_slimeballMove;
 	}
 	lastJumpTime = 0;
-	var directionToMove = x - obj_skater.x;
-	if(directionToMove > 0) {
+	if(moveDirOnRestart > 0) {
 		input[RIGHT] = 1;
 		input[LEFT]= 0;
 	} else {
@@ -22,6 +21,12 @@ if(stateNew) {
 scr_PatrolMove();
 scr_EnemyMovement();
 scr_MoveAndCollide();
+
+// ANIMATE
+
+if(stateTimer mod 20 == 0) {
+	image_index ^= 1;
+}
 
 
 
