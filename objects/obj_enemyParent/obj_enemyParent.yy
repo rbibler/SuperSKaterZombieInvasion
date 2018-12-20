@@ -172,7 +172,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_EnemyIdle",
+            "value": "scr_EmptyAssScript",
             "varName": "stateIdleScript",
             "varType": 5
         },
@@ -186,7 +186,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_EnemyMove",
+            "value": "scr_EmptyAssScript",
             "varName": "stateMovingScript",
             "varType": 5
         },
@@ -200,7 +200,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_EnemyJump",
+            "value": "scr_EmptyAssScript",
             "varName": "stateJumpScript",
             "varType": 5
         },
@@ -214,8 +214,22 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_EnemyFall",
+            "value": "scr_EmptyAssScript",
             "varName": "stateFallScript",
+            "varType": 5
+        },
+        {
+            "id": "3d2d4671-9b58-4530-bcbf-d483952e5d7c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "scr_EmptyAssScript",
+            "varName": "stateMenacingScript",
             "varType": 5
         },
         {
@@ -228,12 +242,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_EnemyAttack",
+            "value": "scr_EmptyAssScript",
             "varName": "stateAttackScript",
             "varType": 5
         },
         {
-            "id": "0533c279-6e45-41ed-a49a-197ac06ede2a",
+            "id": "b03e31f2-7d82-454a-bd6e-20ebd23fdeeb",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -242,8 +256,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_EnemyDead",
-            "varName": "stateDeadScript",
+            "value": "scr_EmptyAssScript",
+            "varName": "stateDefendingScript",
             "varType": 5
         },
         {
@@ -256,7 +270,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_EnemyHit",
+            "value": "scr_EmptyAssScript",
             "varName": "stateHitScript",
             "varType": 5
         },
@@ -270,12 +284,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_EnemyBoardStruck",
+            "value": "scr_EmptyAssScript",
             "varName": "stateBoardStruckScript",
             "varType": 5
         },
         {
-            "id": "b03e31f2-7d82-454a-bd6e-20ebd23fdeeb",
+            "id": "6223a832-52ea-47dc-8174-713fe5676f03",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -284,12 +298,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_EnemyDefend",
-            "varName": "stateDefendingScript",
+            "value": "scr_EmptyAssScript",
+            "varName": "stateDyingScript",
             "varType": 5
         },
         {
-            "id": "3d2d4671-9b58-4530-bcbf-d483952e5d7c",
+            "id": "0533c279-6e45-41ed-a49a-197ac06ede2a",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -298,8 +312,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_EnemyMenacing",
-            "varName": "stateMenacingScript",
+            "value": "scr_EmptyAssScript",
+            "varName": "stateDeadScript",
             "varType": 5
         },
         {
@@ -343,6 +357,34 @@
             "value": "0",
             "varName": "boardSmackedScript",
             "varType": 5
+        },
+        {
+            "id": "42a11090-6df9-451f-8997-4a9e2bfef87c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "sprintSpeedX",
+            "varType": 0
+        },
+        {
+            "id": "d1e20f90-7184-44e1-8514-f4aaad1488f1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "slopeSpeedX",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -52,38 +52,6 @@
             "value": "True"
         },
         {
-            "id": "c4f93e55-1f4d-4fd2-9d88-fcd60010c7c8",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "405731c1-f231-47e3-b413-81e74de01247",
-            "value": "scr_ExplodingSlimeballNewState"
-        },
-        {
-            "id": "de5bd245-213e-4751-9516-86c0d044902f",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "6437486c-70ed-475a-a901-6d6545a33095",
-            "value": "scr_ExplodingSlimeballAnimate"
-        },
-        {
-            "id": "2c10bbfc-1501-4a12-b3b2-57ca154ef677",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "39b3545d-1cc5-44df-89ae-2d8e8c1eb118",
-            "value": "scr_ExplodingSlimeballCheckStateChange"
-        },
-        {
-            "id": "54830310-6c2b-4e51-b57a-9d39da1de1b8",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "29b75946-cc68-425e-98df-81aab9e40d89",
-            "value": "scr_EmptyAssScript"
-        },
-        {
             "id": "5b787a05-9ea2-44e4-8e4f-1ae2d41bc765",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",

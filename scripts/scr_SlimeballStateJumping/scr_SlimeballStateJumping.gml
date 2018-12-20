@@ -7,6 +7,8 @@ var isAirborne = stateVar[0];
 if(stateNew) {
 	moveDirOnRestart = sign(xSpeed);
 	isAirborne = 0;
+	scr_StopXMotion();
+	scr_ZeroInputs();
 }
 
 // UPDATE MOVEMENT AND COLLISIONS

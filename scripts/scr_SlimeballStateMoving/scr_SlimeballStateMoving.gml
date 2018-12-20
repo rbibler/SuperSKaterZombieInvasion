@@ -41,7 +41,7 @@ if(!grounded) {
 var skaterDistance = abs(x - obj_skater.x);
 if(skaterDistance < attackThreshold) {
 	if((obj_skater.x < x and xSpeed < 0) or (obj_skater.x > x and xSpeed > 0)) {
-		//scr_StateSwitch(s_ATTACKING);
+		scr_StateSwitch(s_ATTACKING);
 	}
 }
 

@@ -170,6 +170,30 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
             "value": "scr_EmptyAssScript"
+        },
+        {
+            "id": "df52f0df-0322-44e1-9450-191b166ca46d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "42a11090-6df9-451f-8997-4a9e2bfef87c",
+            "value": "2"
+        },
+        {
+            "id": "51083745-5611-457b-9181-62bb4ded570f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "d1e20f90-7184-44e1-8514-f4aaad1488f1",
+            "value": "2"
+        },
+        {
+            "id": "b010544f-a410-43aa-aeae-b23cfe290b08",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "54427283-bc64-40b4-bcef-3427097bb49b",
+            "value": "200"
         }
     ],
     "parentObjectId": "3d722df8-120e-43a7-abff-d5e21430611a",
