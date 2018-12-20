@@ -40,5 +40,4 @@ ds_list_destroy(hitList);
 if(currentAnimation.isDone) {
 	scr_StateSwitch(s_ON_FOOT_IDLE);
 	canShoot = true;
-	show_debug_message("can shoot!");
 }

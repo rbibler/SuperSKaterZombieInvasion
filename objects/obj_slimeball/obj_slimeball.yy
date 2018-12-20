@@ -224,6 +224,20 @@
             "value": "3",
             "varName": "jumpIntervalInSeconds",
             "varType": 0
+        },
+        {
+            "id": "0869789c-6954-4751-90d9-646daaf0530c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "recoveryTimeInSeconds",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -45,7 +45,6 @@ if(grounded) {
 	if(input[LEFT] or input[RIGHT]) {
 		scr_StateSwitch(s_RUNNING);
 	} else {
-		show_debug_message("I'm GRounded?!");
 		scr_StateSwitch(s_ON_FOOT_IDLE);
 	}
 }

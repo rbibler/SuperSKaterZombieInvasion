@@ -19,7 +19,7 @@
 #macro s_HIT			"HIT"
 #macro s_CLIMBING		"CLIMBING"
 #macro s_CLIMBOUT		"CLIMBOUT"
-#macro s_FALLING		"DYING"
+#macro s_FALLING		"FALLING"
 #macro s_ROLLING		"ROLLING"
 #macro s_DEAD			"DEAD"
 #macro s_DROWNED		"DROWNED"
