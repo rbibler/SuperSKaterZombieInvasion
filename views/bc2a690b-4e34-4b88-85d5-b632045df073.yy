@@ -6,9 +6,12 @@
     "children": [
         "3a864c05-d177-4256-b9af-934bca261491",
         "3f39a3eb-45e5-48d3-aa93-5d61bb948b1c",
-        "b6e0fca1-a190-4f5b-a578-f5151a184399",
-        "8710d91a-86ff-4ec5-9e69-377d36fcc65c",
-        "8ef7e867-918a-4d38-bdc3-e23938f12955"
+        "c4a40b9d-fdbf-4b75-9c8f-c77b15d5d4fb",
+        "df3375bd-9d6f-41ba-ba52-07f4ff4c60bc",
+        "e5e7fc6d-cfa8-4c6b-86c1-0ca15bd0bda7",
+        "c437f67b-cd94-4167-9ef6-b128785b26e4",
+        "23179eb7-9da7-4089-a3e4-012070d33289",
+        "ebfc1fa9-bbee-4aba-ab5c-8fe808e5c113"
     ],
     "filterType": "GMScript",
     "folderName": "ExplodingSlimeballScripts",

@@ -57,7 +57,55 @@
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "54427283-bc64-40b4-bcef-3427097bb49b",
-            "value": "250"
+            "value": "100"
+        },
+        {
+            "id": "208fa7ba-1a62-4662-9484-83404ddc904f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "bd3fe793-2816-4b49-94e6-b3e0644b239e",
+            "value": "scr_ExplodingSlimeballStateIdle"
+        },
+        {
+            "id": "9da69a84-09d7-43ce-965f-a14ac95fe1df",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "440516e8-a7b3-4e61-996a-7eebecb8ff41",
+            "value": "scr_ExplodingSlimeballStateJumping"
+        },
+        {
+            "id": "ae22e77a-305a-49ab-a9ec-bcee50600ddb",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "3d2d4671-9b58-4530-bcbf-d483952e5d7c",
+            "value": "scr_ExplodingSlimeballStateMenacing"
+        },
+        {
+            "id": "fd07ffed-16f4-4d50-9a82-805cccd52d7b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "d0382f87-f416-4c30-a2d4-4ade8290f50e",
+            "value": "scr_ExplodingSlimeballStateAttacking"
+        },
+        {
+            "id": "ff1c17ba-cdd5-40df-933e-e2da4e5cfa3a",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
+            "value": "scr_ExplodingSlimeballStateHit"
+        },
+        {
+            "id": "a44c259c-5caf-4e94-b6cb-02a281f4e788",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
+            "value": "scr_ExplodingSlimeballStateDead"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",

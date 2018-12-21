@@ -1,0 +1,10 @@
+// SETUP NEW STATE
+if(stateNew) {
+
+}
+
+// MOVE AND COLLIDE
+
+// ANIMATE
+
+// CHECK FOR STATE CHANGES

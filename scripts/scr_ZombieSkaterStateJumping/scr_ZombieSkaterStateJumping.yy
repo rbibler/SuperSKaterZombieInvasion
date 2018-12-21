@@ -1,8 +1,8 @@
 {
-    "id": "8ef7e867-918a-4d38-bdc3-e23938f12955",
+    "id": "d373bda3-109c-400c-82ab-0fa9a01cc32a",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_ExplodingSlimeballAnimate",
+    "name": "scr_ZombieSkaterStateJumping",
     "IsCompatibility": false,
     "IsDnD": false
 }

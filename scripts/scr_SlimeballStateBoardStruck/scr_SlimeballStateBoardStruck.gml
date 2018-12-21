@@ -5,7 +5,7 @@ if(stateNew) {
 	image_index = 0;
 	scr_StopXMotion();
 	scr_StopYMotion();
-	ySpeed = -5;
+	ySpeed = -4;
 	xSpeed = sign(x - obj_skater.x) * 5;
 	grounded = false;
 	scr_ZeroInputs();
