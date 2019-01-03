@@ -6,9 +6,10 @@
 
 // Reset animation when entering state
 if(stateNew) {
-	scr_SetCurrentAnimation(onFootJumpAnim);
+	scr_SetCurrentAnimation(onFootFallAnim);
 	canSplash = true;
 	canShoot = true;
+	show_debug_message("I fall");
 }
 
 // Check how fast the skater should be moving

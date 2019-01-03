@@ -33,6 +33,7 @@ if(input[DOWN] and stateName != s_CLIMBING) {
 		scr_StateSwitch(s_STAIRS);
 		return;
 	}
+	scr_StateSwitch(s_ON_FOOT_CROUCHING);
 } 
 
 // Check how fast the skater should be moving

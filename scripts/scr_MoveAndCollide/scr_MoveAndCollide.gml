@@ -6,4 +6,3 @@ if(noCollisions == false) {
 	scr_GeneralHorizontalCollisionCheck();
 	scr_GeneralVerticalCollisionCheck();
 }
-

@@ -9,13 +9,8 @@
 if(stateNew) {
 	//sprite_index = spr_SkaterCrouch;
 	//image_index = 0;
-	scr_SetCurrentAnimation(crouchAnim);
+	scr_SetCurrentAnimation(onFootCrouchAnim);
 }
-
-
-// Check if we should fire a weapon
-scr_SkaterWeaponFire();
-
 
 scr_GeneralCheckSlopeImpetus();
 
@@ -34,10 +29,10 @@ scr_MoveAndCollide();
 
 // Can't crouch unless down is pressed
 if(!input[DOWN]) {
-	scr_StateSwitch(s_IDLE);
+	scr_StateSwitch(s_ON_FOOT_IDLE);
 }
 
 // If the ground disappears, fall. 
 if(!grounded) {
-	scr_StateSwitch(s_FALLING);
+	scr_StateSwitch(s_ON_FOOT_FALLING);
 }

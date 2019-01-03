@@ -44,6 +44,7 @@ if(input[DOWN] and stateName != s_CLIMBING) {
 		scr_StateSwitch(s_STAIRS);
 		return;
 	}
+	scr_StateSwitch(s_ON_FOOT_CROUCHING);
 } 
 
 
