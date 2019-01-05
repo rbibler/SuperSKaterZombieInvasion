@@ -42,8 +42,8 @@
 #macro s_BOARD_STRUCK		"BOARD_STRUCK"
 
 
-#macro RES_W	512
-#macro RES_H	240
+#macro RES_W	640
+#macro RES_H	360
 
 #macro GRID_X	8
 #macro GRID_Y	8
