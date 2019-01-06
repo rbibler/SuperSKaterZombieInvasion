@@ -49,6 +49,6 @@ if(drawToggle) {
 	draw_sprite_ext(sprite_index, image_index, round(x), round(y), image_xscale, image_yscale, 0, color, 1);
 }
 
-show_debug_message("draw x " + string(x) + " draw y: " + string(y));
+
 
 

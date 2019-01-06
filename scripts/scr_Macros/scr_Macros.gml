@@ -40,6 +40,7 @@
 #macro s_STAIRS				"STAIRS"
 #macro s_BOARD_SWING		"BOARD_SWING"
 #macro s_BOARD_STRUCK		"BOARD_STRUCK"
+#macro s_ON_FOOT_HURT		"ON_FOOT_HURT"
 
 
 #macro RES_W	640

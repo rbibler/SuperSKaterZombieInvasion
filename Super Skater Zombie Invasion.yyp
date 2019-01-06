@@ -1143,6 +1143,14 @@
             }
         },
         {
+            "Key": "4587c3f2-e146-4789-8f4c-ae9dc7805d1e",
+            "Value": {
+                "id": "4470fa51-8344-4054-b29e-f8c9aad48e1c",
+                "resourcePath": "scripts\\scr_SkaterStateOnFootHurt\\scr_SkaterStateOnFootHurt.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "45d40686-618d-4d8d-b968-91a2004b52c1",
             "Value": {
                 "id": "21455ec6-4e87-47dd-a5a8-b4aa6d360f86",
@@ -1164,6 +1172,14 @@
                 "id": "10027801-2c88-47b0-9a4d-4b10d06710e7",
                 "resourcePath": "scripts\\scr_MoveAndCollide\\scr_MoveAndCollide.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "48a50626-05d8-4e75-bb74-3b386f2c4497",
+            "Value": {
+                "id": "64047228-1847-46ff-8f31-825dd29676a0",
+                "resourcePath": "sprites\\spr_hud_right\\spr_hud_right.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1863,6 +1879,14 @@
             }
         },
         {
+            "Key": "76929e61-7623-480e-b29b-cfd9d318f114",
+            "Value": {
+                "id": "fc342960-4968-4310-83e2-c1265aa21ca0",
+                "resourcePath": "sprites\\spr_black_bar\\spr_black_bar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "774b910d-b341-4e41-a8c8-074426529b7b",
             "Value": {
                 "id": "45394863-b26f-451f-924e-fa12b34a2022",
@@ -2419,6 +2443,14 @@
             "Value": {
                 "id": "d4a44732-9108-46cc-90c4-6c8c00ad6c24",
                 "resourcePath": "sprites\\spr_numbersBig\\spr_numbersBig.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "98f5aa7c-7924-4cd8-96d7-9740e3ea1551",
+            "Value": {
+                "id": "ec74f030-180a-474b-ad86-c52dd67af62d",
+                "resourcePath": "sprites\\spr_SkaterOnFootHurt\\spr_SkaterOnFootHurt.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3818,7 +3850,7 @@
             "Key": "ef0a4574-8f75-4ff8-bf74-8bc722d2a36f",
             "Value": {
                 "id": "ce767bf7-a16f-43fe-97ef-1425e2756c5b",
-                "resourcePath": "sprites\\spr_hud\\spr_hud.yy",
+                "resourcePath": "sprites\\spr_hud_left\\spr_hud_left.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4066,6 +4098,7 @@
         "265d9001-0a0f-4511-8d72-c7187b078ce9",
         "82b30ed4-c1a4-455e-bd1c-930ce1e9890d",
         "56a35a79-93e9-4b25-a0b5-47a20c704c9d",
+        "4587c3f2-e146-4789-8f4c-ae9dc7805d1e",
         "f0aad53f-9c2e-45f9-820b-5d8e58cb54e1",
         "56aade88-259d-4fb7-8097-021b1bab6a74",
         "fd9dd186-7e7e-496f-846a-2fa7620db0f5",

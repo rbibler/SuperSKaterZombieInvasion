@@ -2,13 +2,13 @@
     "id": "ef0a4574-8f75-4ff8-bf74-8bc722d2a36f",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_hud",
+    "name": "spr_hud_left",
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 15,
+    "bbox_bottom": 31,
     "bbox_left": 0,
-    "bbox_right": 511,
+    "bbox_right": 127,
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
@@ -16,34 +16,34 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "2fdf0f6f-8abe-45d5-8601-5c8f3a96f7b7",
+            "id": "79655c96-bb4d-4ed1-87db-c87ae4362bb5",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "ef0a4574-8f75-4ff8-bf74-8bc722d2a36f",
             "compositeImage": {
-                "id": "8efbd950-c3ed-4588-87ae-2c9d9a7635bd",
+                "id": "acb4f707-7488-4aee-93dc-e1ba01d5d639",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "2fdf0f6f-8abe-45d5-8601-5c8f3a96f7b7",
+                "FrameId": "79655c96-bb4d-4ed1-87db-c87ae4362bb5",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "c125517c-7c35-407f-a391-255b55fe1d3c",
+                    "id": "0a9df3e5-77ee-4875-9168-07266eb44d25",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "2fdf0f6f-8abe-45d5-8601-5c8f3a96f7b7",
-                    "LayerId": "726185e1-9541-46a3-9c0c-46b2be09152b"
+                    "FrameId": "79655c96-bb4d-4ed1-87db-c87ae4362bb5",
+                    "LayerId": "75e6b7d9-c590-4ec0-98b6-790f07dbfa6f"
                 }
             ]
         }
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 16,
+    "height": 32,
     "layers": [
         {
-            "id": "726185e1-9541-46a3-9c0c-46b2be09152b",
+            "id": "75e6b7d9-c590-4ec0-98b6-790f07dbfa6f",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "ef0a4574-8f75-4ff8-bf74-8bc722d2a36f",
@@ -56,7 +56,7 @@
     ],
     "origin": 0,
     "originLocked": false,
-    "playbackSpeed": 15,
+    "playbackSpeed": 0,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,
@@ -64,7 +64,7 @@
     "swfPrecision": 2.525,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
-    "width": 512,
+    "width": 128,
     "xorig": 0,
     "yorig": 0
 }
