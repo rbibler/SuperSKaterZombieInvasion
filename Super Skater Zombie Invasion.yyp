@@ -2255,6 +2255,14 @@
             }
         },
         {
+            "Key": "8baf4ce0-683d-439e-ac1f-9a65c3341d00",
+            "Value": {
+                "id": "a09df2cb-5458-4ccf-918d-66276ca7e081",
+                "resourcePath": "scripts\\scr_SkaterStateOnFootBored\\scr_SkaterStateOnFootBored.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8bed2e2b-ce2b-4d20-ad84-dd7305a48891",
             "Value": {
                 "id": "528007ef-84aa-44b1-b8ca-97b6ffe906d2",
@@ -4107,6 +4115,7 @@
         "82b30ed4-c1a4-455e-bd1c-930ce1e9890d",
         "56a35a79-93e9-4b25-a0b5-47a20c704c9d",
         "4587c3f2-e146-4789-8f4c-ae9dc7805d1e",
+        "8baf4ce0-683d-439e-ac1f-9a65c3341d00",
         "f0aad53f-9c2e-45f9-820b-5d8e58cb54e1",
         "56aade88-259d-4fb7-8097-021b1bab6a74",
         "fd9dd186-7e7e-496f-846a-2fa7620db0f5",

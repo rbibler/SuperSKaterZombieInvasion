@@ -8,22 +8,42 @@
 *		- Falling
 */
 
+var framesTillNextImage = stateVar[0];
+var frameCountAtLastImage = stateVar[1];
+
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	scr_SetCurrentAnimation(onFootIdleAnim);
-	stateVar[0] = random_range(60 * 3, 60 * 6); 
-	stateVar[1] = 0;
-	stateVar[2] = false;
+	sprite_index = spr_SkaterOnFootBored;
+	image_index = 0;
+	framesTillNextImage = random_range(60 * 2, 60 * 4); 
+	frameCountAtLastImage = 0;
 	canShoot = true;
 }
 
+shouldAnimate = false;
 scr_CheckForBoardSwing();
 
 // If enough time has passed to start the animation idle thing do it.
-// stateVar[0] = time in steps between idle animation cycles
-// stateVar[1] = amount of time since last animation cycle
-if(stateTimer - stateVar[1] >= stateVar[0]) {
-	scr_StateSwitch(s_ON_FOOT_BORED);
+if(stateTimer - frameCountAtLastImage >= framesTillNextImage) {
+	switch(image_index) {
+		case 0:
+			var oneOrTwo = scr_Chance(51);
+			image_index = oneOrTwo ? 1 : 2;
+			framesTillNextImage = random_range(2 * room_speed, 3 * room_speed);
+		break;
+		
+		case 1:
+			image_index = 0;
+			framesTillNextImage = random_range(5 * room_speed, 9 * room_speed);
+		break;
+		
+		case 2:
+			image_index = 0;
+			framesTillNextImage = random_range(5 * room_speed, 9 * room_speed);
+		break;
+	}
+	
+	frameCountAtLastImage = stateTimer;
 }
 
 // Crouch if the skater presses down
@@ -80,3 +100,6 @@ if(scr_SkaterCheckJump()) {
 		scr_StateSwitch(s_ON_FOOT_FALLING);
 	}
 }
+
+stateVar[0] = framesTillNextImage;
+stateVar[1] = frameCountAtLastImage;
