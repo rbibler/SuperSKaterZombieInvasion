@@ -5,4 +5,5 @@ if(noCollisions == false) {
 	// Check all possible collisions
 	scr_GeneralHorizontalCollisionCheck();
 	scr_GeneralVerticalCollisionCheck();
+	onEdge = scr_OnEdge();
 }

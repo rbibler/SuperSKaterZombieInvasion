@@ -13,7 +13,11 @@ var frameCountAtLastImage = stateVar[1];
 
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	sprite_index = spr_SkaterOnFootBored;
+	if(!onEdge) {
+		sprite_index = spr_SkaterOnFootBored;
+	} else {
+		sprite_index = spr_SkaterOnFootSitting;
+	}
 	image_index = 0;
 	framesTillNextImage = random_range(60 * 2, 60 * 4); 
 	frameCountAtLastImage = 0;

@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "34719bb2-8451-4abc-a9f3-64412c7ed093",
+            "Value": {
+                "id": "ee97eae2-0afd-442d-bc86-237b86c1c407",
+                "resourcePath": "sprites\\spr_SkaterOnFootSitting\\spr_SkaterOnFootSitting.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "34998408-3160-434b-a804-0695af82081c",
             "Value": {
                 "id": "b7b5872c-0846-4ac2-a267-43df9b417f2f",
@@ -1635,6 +1643,14 @@
             "Value": {
                 "id": "76b9f2ba-40f1-410b-8e81-f09ecb6eb7d8",
                 "resourcePath": "scripts\\scr_StopXMotion\\scr_StopXMotion.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "672e1104-801b-4784-9ff4-902740d97547",
+            "Value": {
+                "id": "68664540-1ce6-4e6b-be83-1b454fb1876a",
+                "resourcePath": "scripts\\scr_OnEdge\\scr_OnEdge.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4253,6 +4269,7 @@
         "4b664a73-b69c-498a-a0c9-36cf58a444c7",
         "35cfba20-7fc2-43a9-990c-e4ab189d84d9",
         "118672eb-6b39-494e-bbbb-ba1265d7c753",
+        "672e1104-801b-4784-9ff4-902740d97547",
         "060b7a68-fe71-45cf-9a92-8d03d06bf393",
         "f5411c22-a535-44e1-9a26-004b1e8816d0",
         "25ce7d6b-e6b7-4b23-a540-adde31a9e0d7",
