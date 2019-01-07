@@ -54,9 +54,10 @@
 #macro FACE_RIGHT	1
 #macro FACE_LEFT	-1
 
-#macro NORMAL_ANIM_SPEED	5 / 60
-#macro FAST_ANIM_SPEED  10 / 60
-#macro ZOMBIE_ANIM_SPEED 2 / 60
+#macro NORMAL_ANIM_SPEED		5 / 60
+#macro FAST_ANIM_SPEED			10 / 60
+#macro ZOMBIE_ANIM_SPEED		2 / 60
+#macro VERY_SLOW_ANIM_SPEED		3 / 120
 
 #macro HEALTH	1
 

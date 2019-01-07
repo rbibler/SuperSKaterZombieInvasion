@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "01579584-94d5-4ec2-95b0-e3c0ecdfe1b3",
+            "Value": {
+                "id": "6ac77c00-1b63-44b7-aa40-62d372cae483",
+                "resourcePath": "sprites\\spr_SkaterOnFootBored\\spr_SkaterOnFootBored.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "023cb9db-edfa-4990-ac54-3801261fbf89",
             "Value": {
                 "id": "5e77c7a2-60c4-4d75-b145-27105ff272d4",

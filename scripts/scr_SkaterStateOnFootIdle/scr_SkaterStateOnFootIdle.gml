@@ -27,7 +27,13 @@ scr_CheckForBoardSwing();
 // stateVar[0] = time in steps between idle animation cycles
 // stateVar[1] = amount of time since last animation cycle
 if(stateTimer - stateVar[1] >= stateVar[0]) {
-	stateVar[2] = true;
+	scr_SetCurrentAnimation(onFootBoredAnim);
+}
+
+if(currentAnimation == onFootBoredAnim and currentAnimation.isDone) {
+	scr_SetCurrentAnimation(onFootIdleAnim);
+	stateVar[0] = random_range(6 * room_speed, 10 * room_speed);
+	stateVar[1] = stateTimer;
 }
 
 
