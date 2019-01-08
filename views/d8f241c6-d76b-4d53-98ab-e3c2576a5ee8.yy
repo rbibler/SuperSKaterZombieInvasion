@@ -17,7 +17,9 @@
         "bb7c25be-b95f-4ee9-9e3d-383b5bf23f8b",
         "98f5aa7c-7924-4cd8-96d7-9740e3ea1551",
         "01579584-94d5-4ec2-95b0-e3c0ecdfe1b3",
-        "34719bb2-8451-4abc-a9f3-64412c7ed093"
+        "34719bb2-8451-4abc-a9f3-64412c7ed093",
+        "8974dd43-36ea-4f60-b70b-149084224dbe",
+        "f0ecf214-b44c-46cf-b180-36ec43a7dd03"
     ],
     "filterType": "GMSprite",
     "folderName": "OnFoot",

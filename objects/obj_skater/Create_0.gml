@@ -91,6 +91,7 @@ floatState = scr_StateCreate(s_FLOATING, scr_SkaterStateFloating);
 onFootIdleState = scr_StateCreate(s_ON_FOOT_IDLE, scr_SkaterStateOnFootIdle);
 onFootBoredState = scr_StateCreate(s_ON_FOOT_BORED, scr_SkaterStateOnFootBored);
 onFootSittingState = scr_StateCreate(s_ON_FOOT_SITTING, scr_SkaterStateOnFootSitting);
+onFootPushOffState = scr_StateCreate(s_ON_FOOT_PUSH_OFF, scr_SkaterStateOnFootPushOff);
 onFootStopState = scr_StateCreate(s_ON_FOOT_STOP, scr_SkaterStateOnFootStop);
 runningState = scr_StateCreate(s_RUNNING, scr_SkaterStateRunning);
 onFootJumpState = scr_StateCreate(s_ON_FOOT_JUMPING, scr_SkaterStateOnFootJumping);

@@ -13,7 +13,7 @@ var frameCountAtLastImage = stateVar[1];
 
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	sprite_index = spr_SkaterOnFootSitting;
+	sprite_index = spr_SkaterOnFootSit;
 	var edgeDirection = scr_FindEdgeDirection();
 	var tileStart = floor(x / TILE_SIZE) * TILE_SIZE;
 	var edgeDistance = abs(x - tileStart);
@@ -28,6 +28,10 @@ if(stateNew) {
 
 shouldAnimate = false;
 scr_CheckForBoardSwing();
+
+if(stateTimer >= 60 / 7) {
+	sprite_index = spr_SkaterOnFootSitting;
+}
 
 // If enough time has passed to start the animation idle thing do it.
 if(stateTimer - frameCountAtLastImage >= framesTillNextImage) {
@@ -77,12 +81,16 @@ scr_SkaterRunHorizontalImpetus();
 scr_MoveAndCollide();
 
 
-// Switch to Skating if horizontal movement. Can only be idle if grounded, so no need to check ground flag
-if((input[LEFT] and !input[RIGHT]) or (input[RIGHT] and !input[LEFT])) {
-	scr_StateSwitch(s_RUNNING);
-	drawOffsetX = 0;
+// Sitting on a rightward edge, so pushing off into the void
+if(input[RIGHT] and !input[LEFT]) {
+	if(image_xscale == FACE_RIGHT) {
+		scr_StateSwitch(s_ON_FOOT_PUSH_OFF);
+		drawOffsetX = 0;
+	} else {
+		sprite_index = spr_SkaterOnFootSit;
+		scr_StateSwitch(s_RUNNING);
+	}
 } 
-
 
 if(input[UP] and !input[DOWN]) {
 	if(scr_CheckOnLadder()) {

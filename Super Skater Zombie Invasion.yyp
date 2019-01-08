@@ -2223,6 +2223,14 @@
             }
         },
         {
+            "Key": "8974dd43-36ea-4f60-b70b-149084224dbe",
+            "Value": {
+                "id": "6b761299-b472-4efb-9c4c-5503c511ec5d",
+                "resourcePath": "sprites\\spr_SkaterOnFootSit\\spr_SkaterOnFootSit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8a10957e-f862-4a22-a40b-42511fc5741b",
             "Value": {
                 "id": "4803ce2f-4a55-4999-99e8-babf5eba15f9",
@@ -3183,6 +3191,14 @@
             }
         },
         {
+            "Key": "bea9d25a-eae4-42e7-9206-81c0fbabdd97",
+            "Value": {
+                "id": "e9de25d1-4bac-4ff6-87cc-75ce99e4365e",
+                "resourcePath": "scripts\\scr_SkaterStateOnFootPushOff\\scr_SkaterStateOnFootPushOff.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bf2394eb-462d-4659-9eaa-07537f92be4e",
             "Value": {
                 "id": "3aaeb459-1059-490e-949a-1e15b66d48c9",
@@ -3943,6 +3959,14 @@
             }
         },
         {
+            "Key": "f0ecf214-b44c-46cf-b180-36ec43a7dd03",
+            "Value": {
+                "id": "dee1f85b-eb34-4b51-98ad-a2451b9e7704",
+                "resourcePath": "sprites\\spr_SkaterOnFootPushOff\\spr_SkaterOnFootPushOff.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f0f5df33-142a-4522-bd3a-b5b0cfa90e94",
             "Value": {
                 "id": "81f15003-89b6-4043-bd32-7e46d7966343",
@@ -4157,6 +4181,7 @@
         "4587c3f2-e146-4789-8f4c-ae9dc7805d1e",
         "8baf4ce0-683d-439e-ac1f-9a65c3341d00",
         "09787af8-acd9-4586-b07f-21ead75cf667",
+        "bea9d25a-eae4-42e7-9206-81c0fbabdd97",
         "f0aad53f-9c2e-45f9-820b-5d8e58cb54e1",
         "56aade88-259d-4fb7-8097-021b1bab6a74",
         "fd9dd186-7e7e-496f-846a-2fa7620db0f5",
