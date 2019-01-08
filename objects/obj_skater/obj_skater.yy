@@ -188,6 +188,20 @@
             "value": ".15",
             "varName": "groundFrictionOnFoot",
             "varType": 0
+        },
+        {
+            "id": "54a93ba7-6cfe-4da4-bda4-c374031ca2fd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "minSitEdgeDistance",
+            "varType": 0
         }
     ],
     "solid": false,

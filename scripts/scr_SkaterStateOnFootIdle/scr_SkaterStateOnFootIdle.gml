@@ -23,7 +23,11 @@ scr_CheckForBoardSwing();
 // stateVar[0] = time in steps between idle animation cycles
 // stateVar[1] = amount of time since last animation cycle
 if(stateTimer - stateVar[1] >= stateVar[0]) {
-	scr_StateSwitch(s_ON_FOOT_BORED);
+	if(scr_ShouldSit()) {
+		scr_StateSwitch(s_ON_FOOT_SITTING);
+	} else {
+		scr_StateSwitch(s_ON_FOOT_BORED);
+	}
 }
 
 // Crouch if the skater presses down

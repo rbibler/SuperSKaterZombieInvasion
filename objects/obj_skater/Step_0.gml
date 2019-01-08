@@ -7,6 +7,7 @@ if(newRoom) {
 	scr_NewRoom();
 }
 shouldAnimate = true;
+
 mask_index = sprite_index;
 
 verticalMovementRun = false;

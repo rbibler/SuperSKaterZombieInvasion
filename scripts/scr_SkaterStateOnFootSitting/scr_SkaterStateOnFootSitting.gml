@@ -13,7 +13,13 @@ var frameCountAtLastImage = stateVar[1];
 
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	sprite_index = spr_SkaterOnFootBored;
+	sprite_index = spr_SkaterOnFootSitting;
+	var edgeDirection = scr_FindEdgeDirection();
+	var tileStart = floor(x / TILE_SIZE) * TILE_SIZE;
+	var edgeDistance = abs(x - tileStart);
+	var sitLocationX = (facing == FACE_RIGHT) ? (tileStart + TILE_SIZE - 1) : tileStart + 1;
+	drawOffsetX = sitLocationX - x;
+	
 	image_index = 0;
 	framesTillNextImage = random_range(60 * 2, 60 * 4); 
 	frameCountAtLastImage = 0;
