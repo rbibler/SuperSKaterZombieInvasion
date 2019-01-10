@@ -1,5 +1,9 @@
 /// This is a script that helps the skater determine if he should on the edge of a platform when bored.
 
+if(onSlope) {
+	return true;
+}
+
 if(!scr_OnEdge()) {
 	return false;
 }

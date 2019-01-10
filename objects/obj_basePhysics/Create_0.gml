@@ -23,6 +23,7 @@ yMomentum = 0;
 lastY = ystart;
 
 onSlope = false;
+slopeDirection = -1;
 verticalMovementRun = false;
 
 

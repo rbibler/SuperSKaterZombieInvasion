@@ -57,6 +57,9 @@
 #macro FACE_RIGHT	1
 #macro FACE_LEFT	-1
 
+#macro UP_SLOPE		1
+#macro DOWN_SLOPE	2
+
 #macro NORMAL_ANIM_SPEED		5 / 60
 #macro FAST_ANIM_SPEED			10 / 60
 #macro ZOMBIE_ANIM_SPEED		2 / 60

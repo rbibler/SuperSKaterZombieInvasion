@@ -13,5 +13,6 @@ slopeTouchTimer = rampAllowance;
 			xSpeed += sign(slopeImpetus) * 0.5;
 		}
 		onSlope = true;
+		slopeDirection = (tileId < 15) ? UP_SLOPE : DOWN_SLOPE;
 	}
 }

@@ -24,6 +24,14 @@ if(stateNew) {
 	startPos = x;
 	image_index = 0;
 	canShoot = false;
+	if(onSlope) {
+		if(slopeDirection == UP_SLOPE) {
+			facing = FACE_LEFT;
+			
+		} else {
+			facing = FACE_RIGHT;
+		}
+	}
 }
 
 // We want to control the animation for this state manually to preserve timing.
@@ -49,15 +57,17 @@ if(stateTimer >= 60 / 7) {
 } else {
 	// Make sure skater is at the edge. If not, scoot towards edge one unit per frame.
 	// But update drawOffset so the sprite doesn't move
-	if(edgeDirection == FACE_RIGHT or (image_xscale == FACE_RIGHT and edgeDirection == 0)) {
-		if(x < edgeLocation) {
-			x++;
-			drawOffsetX = startPos - x;
-		}
-	} else {
-		if(x > edgeLocation) {
-			x--;
-			drawOffsetX = startPos - x;
+	if(!onSlope) {
+		if(edgeDirection == FACE_RIGHT or (image_xscale == FACE_RIGHT and edgeDirection == 0)) {
+			if(x < edgeLocation) {
+				x++;
+				drawOffsetX = startPos - x;
+			}
+		} else {
+			if(x > edgeLocation) {
+				x--;
+				drawOffsetX = startPos - x;
+			}
 		}
 	}
 	

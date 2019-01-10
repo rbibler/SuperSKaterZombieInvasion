@@ -46,6 +46,7 @@ if(floorDist >= 0) {
 	// If it's a slope tile...
 	if(tileId != 0 and tileId != 4 and tileId != 5) {
 		onSlope = true;
+		slopeDirection = (tileId < 15) ? UP_SLOPE : DOWN_SLOPE;
 		// move it to where it wants to be
 		y += ySpeed;
 		// Then set it back to one pixel above the floor
