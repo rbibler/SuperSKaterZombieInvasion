@@ -1,5 +1,8 @@
 /// This is a script that helps the skater determine if he should on the edge of a platform when bored.
 
+if(!scr_OnEdge()) {
+	return false;
+}
 var edgeDirection = scr_FindEdgeDirection();
 if(edgeDirection == 0 or image_xscale == edgeDirection) {
 	var distanceFromEdge = 

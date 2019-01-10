@@ -179,6 +179,7 @@ lastStep = 0;
 boardSmacked = ds_list_create();
 onFoot = false;
 drawOffsetX = 0;
+drawOffsetY = 0;
 
 
 

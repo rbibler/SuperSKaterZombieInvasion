@@ -1,4 +1,4 @@
-/// Skater's idle state. 
+/// Skater's sitdown state. 
 /* 
 *	Exits: 
 *		- Left or right movement if on ground
@@ -8,55 +8,64 @@
 *		- Falling
 */
 
-var framesTillNextImage = stateVar[0];
-var frameCountAtLastImage = stateVar[1];
+// Set up some state variables
+var edgeLocation = stateVar[0];
+var startPos = stateVar[1];
+var standingUp = stateVar[2];
+var standUpStartTime = stateVar[3];
+var edgeDirection = stateVar[4];
 
-// Reset the animation and the jump counter if entering the state
+// Find out where the edge we're facing is and update sprite index
 if(stateNew) {
 	sprite_index = spr_SkaterOnFootSit;
-	var edgeDirection = scr_FindEdgeDirection();
+	edgeDirection = scr_FindEdgeDirection();
 	var tileStart = floor(x / TILE_SIZE) * TILE_SIZE;
-	var edgeDistance = abs(x - tileStart);
-	var sitLocationX = (facing == FACE_RIGHT) ? (tileStart + TILE_SIZE - 1) : tileStart + 1;
-	drawOffsetX = sitLocationX - x;
-	
+	edgeLocation = (facing == FACE_RIGHT) ? (tileStart + TILE_SIZE - 1) : tileStart + 1;
+	startPos = x;
 	image_index = 0;
-	framesTillNextImage = random_range(60 * 2, 60 * 4); 
-	frameCountAtLastImage = 0;
-	canShoot = true;
+	canShoot = false;
 }
 
+// We want to control the animation for this state manually to preserve timing.
 shouldAnimate = false;
-scr_CheckForBoardSwing();
 
+// Is the skater moving in the opposite direction from the edge? 
+if(standingUp) {
+	// If a full animation frame has passed update state and reset drawoffset
+	if(stateTimer - standUpStartTime >= (60 / 10)) {
+		scr_StateSwitch(s_RUNNING);
+		drawOffsetX = 0;
+		return;
+	} else {
+		// Once the stand up process has started, it can't be stopped!
+		return;
+	}
+}
+
+// Has skater completed the sitdown motion?
 if(stateTimer >= 60 / 7) {
 	sprite_index = spr_SkaterOnFootSitting;
-}
-
-// If enough time has passed to start the animation idle thing do it.
-if(stateTimer - frameCountAtLastImage >= framesTillNextImage) {
-	switch(image_index) {
-		case 0:
-			var oneOrTwo = scr_Chance(51);
-			image_index = oneOrTwo ? 1 : 2;
-			framesTillNextImage = random_range(2 * room_speed, 3 * room_speed);
-		break;
-		
-		case 1:
-			image_index = 0;
-			framesTillNextImage = random_range(5 * room_speed, 9 * room_speed);
-		break;
-		
-		case 2:
-			image_index = 0;
-			framesTillNextImage = random_range(5 * room_speed, 9 * room_speed);
-		break;
+	drawOffsetX = 0;
+} else {
+	// Make sure skater is at the edge. If not, scoot towards edge one unit per frame.
+	// But update drawOffset so the sprite doesn't move
+	if(edgeDirection == FACE_RIGHT or (image_xscale == FACE_RIGHT and edgeDirection == 0)) {
+		if(x < edgeLocation) {
+			x++;
+			drawOffsetX = startPos - x;
+		}
+	} else {
+		if(x > edgeLocation) {
+			x--;
+			drawOffsetX = startPos - x;
+		}
 	}
 	
-	frameCountAtLastImage = stateTimer;
 }
 
-// Crouch if the skater presses down
+
+// Is skater at the top of a ladder or a staircase? If not, crouch
+// No fancy transitions for these states. 
 if(input[DOWN] and stateName != s_CLIMBING) {
 	if(scr_CheckLadderClimbDown()) {
 		y += 12;
@@ -81,17 +90,33 @@ scr_SkaterRunHorizontalImpetus();
 scr_MoveAndCollide();
 
 
-// Sitting on a rightward edge, so pushing off into the void
+// If we're on a rightward edge, push off into the void. Otherwise, stand up
 if(input[RIGHT] and !input[LEFT]) {
 	if(image_xscale == FACE_RIGHT) {
 		scr_StateSwitch(s_ON_FOOT_PUSH_OFF);
 		drawOffsetX = 0;
 	} else {
 		sprite_index = spr_SkaterOnFootSit;
-		scr_StateSwitch(s_RUNNING);
+		standingUp = true;
+		standUpStartTime = stateTimer;
 	}
 } 
 
+// If we're on a leftward edge, push off into the void. Otherwise, stand up
+if(input[LEFT] and !input[RIGHT]) {
+	if(image_xscale == FACE_LEFT) {
+		scr_StateSwitch(s_ON_FOOT_PUSH_OFF);
+		drawOffsetX = 0;
+	} else {
+		sprite_index = spr_SkaterOnFootSit;
+		standingUp = true;
+		standUpStartTime = stateTimer;
+		//scr_StateSwitch(s_RUNNING);
+		//drawOffsetX = 0;
+	}
+} 
+
+// Is Skater below a ladder or at the bottom of a flight of stairs?
 if(input[UP] and !input[DOWN]) {
 	if(scr_CheckOnLadder()) {
 		scr_StateSwitch(s_CLIMBING);
@@ -107,12 +132,14 @@ if(input[UP] and !input[DOWN]) {
 	}
 }
 
+// Does the skater want to get on his board?
 if(input[SWITCH] and !lastInput[SWITCH]) {
 	scr_StateSwitch(s_FOOT_TO_SKATE);
 	drawOffsetX = 0;
 	return;
 }
 
+// Should the skater jump up?
 if(scr_SkaterCheckJump()) {
 	scr_StateSwitch(s_ON_FOOT_JUMPING);
 	drawOffsetX = 0;
@@ -124,5 +151,9 @@ if(scr_SkaterCheckJump()) {
 	}
 }
 
-stateVar[0] = framesTillNextImage;
-stateVar[1] = frameCountAtLastImage;
+// Save any changes to our state variables.
+stateVar[0] = edgeLocation;
+stateVar[1] = startPos;
+stateVar[2] = standingUp;
+stateVar[3] = standUpStartTime;
+stateVar[4] = edgeDirection;

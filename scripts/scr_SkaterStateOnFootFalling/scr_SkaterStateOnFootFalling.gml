@@ -10,6 +10,8 @@ if(stateNew) {
 	canSplash = true;
 	canShoot = true;
 	show_debug_message("I fall");
+	drawOffsetX = 0;
+	drawOffsetY = 0;
 }
 
 // Check how fast the skater should be moving
