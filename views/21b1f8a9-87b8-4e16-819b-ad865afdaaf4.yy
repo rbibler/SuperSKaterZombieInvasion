@@ -10,7 +10,8 @@
         "8fac1a95-9a05-43fe-9ffa-e5f76a2006e1",
         "08ec44c9-d0dd-4aa9-9f12-0c84e7a86cbd",
         "8b4a7edd-2feb-452f-8275-22bcaf0aa56b",
-        "d4c7470c-c8fa-4adb-b999-79ff17c28fc3"
+        "d4c7470c-c8fa-4adb-b999-79ff17c28fc3",
+        "f3087082-8e34-4470-95f8-99fdcc126cc6"
     ],
     "filterType": "GMSprite",
     "folderName": "Skating",

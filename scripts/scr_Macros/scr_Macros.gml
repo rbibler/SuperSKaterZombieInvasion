@@ -11,6 +11,7 @@
 
 
 #macro s_IDLE				"IDLE"
+#macro s_BORED				"BORED"
 #macro s_MOVING				"MOVING"
 #macro s_CROUCHING			"CROUCHING"
 #macro s_JUMPING			"JUMPING"

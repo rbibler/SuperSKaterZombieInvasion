@@ -75,6 +75,7 @@ scr_StateMachineInit();
 
 // Define the skater's states
 idleState = scr_StateCreate(s_IDLE, scr_SkaterStateIdle);
+boredState = scr_StateCreate(s_BORED, scr_SkaterStateBored);
 skateState = scr_StateCreate(s_MOVING, scr_SkaterStateSkating);
 jumpState = scr_StateCreate(s_JUMPING, scr_SkaterStateJumping);
 bounceState = scr_StateCreate(s_BOUNCING, scr_SkaterStateBouncing);

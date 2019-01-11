@@ -24,8 +24,9 @@ scr_SkaterWeaponFire();
 // If enough time has passed to start the animation idle thing do it.
 // stateVar[0] = time in steps between idle animation cycles
 // stateVar[1] = amount of time since last animation cycle
-if(stateTimer - stateVar[1] >= stateVar[0]) {
-	stateVar[2] = true;
+if(stateTimer >= 5 * room_speed) {
+	scr_StateSwitch(s_BORED);
+	return;
 }
 
 
