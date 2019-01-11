@@ -102,7 +102,7 @@ scr_MoveAndCollide();
 
 // If we're on a rightward edge, push off into the void. Otherwise, stand up
 if(input[RIGHT] and !input[LEFT]) {
-	if(image_xscale == FACE_RIGHT) {
+	if(image_xscale == FACE_RIGHT and !onSlope) {
 		scr_StateSwitch(s_ON_FOOT_PUSH_OFF);
 		drawOffsetX = 0;
 	} else {
@@ -114,15 +114,13 @@ if(input[RIGHT] and !input[LEFT]) {
 
 // If we're on a leftward edge, push off into the void. Otherwise, stand up
 if(input[LEFT] and !input[RIGHT]) {
-	if(image_xscale == FACE_LEFT) {
+	if(image_xscale == FACE_LEFT and !onSlope) {
 		scr_StateSwitch(s_ON_FOOT_PUSH_OFF);
 		drawOffsetX = 0;
 	} else {
 		sprite_index = spr_SkaterOnFootSit;
 		standingUp = true;
 		standUpStartTime = stateTimer;
-		//scr_StateSwitch(s_RUNNING);
-		//drawOffsetX = 0;
 	}
 } 
 

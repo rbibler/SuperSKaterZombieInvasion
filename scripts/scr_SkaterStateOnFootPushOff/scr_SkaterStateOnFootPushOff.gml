@@ -6,7 +6,7 @@ var edgeDirection = stateVar[4];
 
 
 
-// offsets x = 8 y = 7
+
 if(stateNew) {
 	sprite_index = spr_SkaterOnFootPushOff;
 	startPosX = x;
@@ -24,25 +24,24 @@ if(stateNew) {
 		targetLocationX -= ((bbox_right - bbox_left) / 2);
 	}
 	targetLocationY = tileEdgeY;
+	x += 4 * image_xscale;
+	y += 12;
 }
 
 shouldAnimate = false;
 
 if(x != targetLocationX) {
 	if(edgeDirection == FACE_RIGHT or (image_xscale == FACE_RIGHT and edgeDirection == 0)) {
-		x++;
-		drawOffsetX = 8 + (startPosX - x);
+		x += speedX;
 	} else {
-		x--;
-		drawOffsetX = -8 + (startPosX - x);
+		x -= speedX;
 	}
 }
-if(y != targetLocationY) {
-	y++;
-	drawOffsetY = 12 + (startPosY - y);
-}
 
-if(stateTimer >= (60 / 5)) {
+y += ySpeed;
+
+
+if(stateTimer >= (60 / 10)) {
 	scr_StateSwitch(s_ON_FOOT_FALLING);
 }
 
