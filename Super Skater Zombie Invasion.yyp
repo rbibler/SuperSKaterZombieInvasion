@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "11bd0aee-a991-4671-8e1a-dabe4e97f59f",
+            "Value": {
+                "id": "b28cef29-341c-4793-ba36-9f78aca7c8e1",
+                "resourcePath": "objects\\obj_Rail\\obj_Rail.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "12315a26-4e5d-46b2-a6e0-16874d88424a",
             "Value": {
                 "id": "21b83449-737f-4e1a-b40f-4923e3257b91",
@@ -1599,6 +1607,14 @@
             }
         },
         {
+            "Key": "5ff216e4-81fd-404c-8df9-3f6638044352",
+            "Value": {
+                "id": "b78a425b-8770-4d29-9372-e5bf922967d6",
+                "resourcePath": "sprites\\spr_RailBlockHelper\\spr_RailBlockHelper.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "623ebf7a-4034-4fa7-88f7-4153497af716",
             "Value": {
                 "id": "6946d881-b5d3-46a1-a00e-aab82f9732f3",
@@ -1748,6 +1764,14 @@
                 "id": "79498584-c2ce-425c-8a04-55779913da01",
                 "resourcePath": "objects\\obj_zombieGun\\obj_zombieGun.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6c433847-a2c0-4c08-8ed2-9bd8f2e1741d",
+            "Value": {
+                "id": "6de79480-de6f-48dd-9511-c29c67f634f0",
+                "resourcePath": "scripts\\scr_SkaterStateGrindRail\\scr_SkaterStateGrindRail.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2923,6 +2947,14 @@
             "Value": {
                 "id": "ee0799dd-7b28-45ad-a5f3-edd77f2db465",
                 "resourcePath": "scripts\\scr_GeneralMovementFractions\\scr_GeneralMovementFractions.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b2dd7197-706f-451e-b649-65f2d3a18c2a",
+            "Value": {
+                "id": "3a7859b3-f184-42a5-8fba-ae80b218d64c",
+                "resourcePath": "scripts\\scr_CheckOnRail\\scr_CheckOnRail.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4211,6 +4243,7 @@
         "b878156b-251c-40e5-8cf4-b66942a5d691",
         "77518758-dd36-44e6-a3cb-9e2782ec9d19",
         "a6da3803-7e0d-4956-bcb9-1f942e71d0cb",
+        "6c433847-a2c0-4c08-8ed2-9bd8f2e1741d",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "34ec790d-38de-44ce-984a-c11615096df4",
@@ -4235,6 +4268,7 @@
         "a0f8a1fe-9ff4-458d-a308-c0ee9cb18589",
         "dde218af-b1ed-4c8c-bf6a-19b087543a28",
         "c554054f-f034-4fb9-bac4-1cbc56254424",
+        "b2dd7197-706f-451e-b649-65f2d3a18c2a",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",

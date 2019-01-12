@@ -66,3 +66,10 @@ if(input[SWITCH] and !lastInput[SWITCH]) {
 	scr_StateSwitch(s_SKATE_TO_FOOT);
 	return;
 }
+
+
+if(scr_CheckOnRail()) {
+	if(input[DOWN]) {
+		scr_StateSwitch(s_GRINDING);
+	}
+}

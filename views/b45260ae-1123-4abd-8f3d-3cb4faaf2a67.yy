@@ -16,7 +16,8 @@
         "180c89d0-0108-43c2-bd51-de0725d3ee27",
         "b878156b-251c-40e5-8cf4-b66942a5d691",
         "77518758-dd36-44e6-a3cb-9e2782ec9d19",
-        "a6da3803-7e0d-4956-bcb9-1f942e71d0cb"
+        "a6da3803-7e0d-4956-bcb9-1f942e71d0cb",
+        "6c433847-a2c0-4c08-8ed2-9bd8f2e1741d"
     ],
     "filterType": "GMScript",
     "folderName": "SkateStates",

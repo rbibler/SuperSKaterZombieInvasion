@@ -78,6 +78,7 @@ idleState = scr_StateCreate(s_IDLE, scr_SkaterStateIdle);
 boredState = scr_StateCreate(s_BORED, scr_SkaterStateBored);
 skateState = scr_StateCreate(s_MOVING, scr_SkaterStateSkating);
 jumpState = scr_StateCreate(s_JUMPING, scr_SkaterStateJumping);
+grindState = scr_StateCreate(s_GRINDING, scr_SkaterStateGrindRail);
 bounceState = scr_StateCreate(s_BOUNCING, scr_SkaterStateBouncing);
 climbState = scr_StateCreate(s_CLIMBING, scr_SkaterStateClimbing);
 climboutState = scr_StateCreate(s_CLIMBOUT, scr_SkaterStateClimbout);
