@@ -1,3 +1,4 @@
+
 /// @description Insert description here
 // You can write your code in this editor
 
@@ -74,6 +75,7 @@ scr_StateMachineInit();
 
 // Define the skater's states
 idleState = scr_StateCreate(s_IDLE, scr_SkaterStateIdle);
+boredState = scr_StateCreate(s_BORED, scr_SkaterStateBored);
 skateState = scr_StateCreate(s_MOVING, scr_SkaterStateSkating);
 jumpState = scr_StateCreate(s_JUMPING, scr_SkaterStateJumping);
 bounceState = scr_StateCreate(s_BOUNCING, scr_SkaterStateBouncing);
@@ -88,6 +90,9 @@ knockedBackState = scr_StateCreate(s_KNOCKED_BACK, scr_SkaterStateKnockedBack);
 floatState = scr_StateCreate(s_FLOATING, scr_SkaterStateFloating);
 
 onFootIdleState = scr_StateCreate(s_ON_FOOT_IDLE, scr_SkaterStateOnFootIdle);
+onFootBoredState = scr_StateCreate(s_ON_FOOT_BORED, scr_SkaterStateOnFootBored);
+onFootSittingState = scr_StateCreate(s_ON_FOOT_SITTING, scr_SkaterStateOnFootSitting);
+onFootPushOffState = scr_StateCreate(s_ON_FOOT_PUSH_OFF, scr_SkaterStateOnFootPushOff);
 onFootStopState = scr_StateCreate(s_ON_FOOT_STOP, scr_SkaterStateOnFootStop);
 runningState = scr_StateCreate(s_RUNNING, scr_SkaterStateRunning);
 onFootJumpState = scr_StateCreate(s_ON_FOOT_JUMPING, scr_SkaterStateOnFootJumping);
@@ -95,7 +100,9 @@ onFootFallState = scr_StateCreate(s_ON_FOOT_FALLING, scr_SkaterStateOnFootFallin
 footToSkateState = scr_StateCreate(s_FOOT_TO_SKATE, scr_SkaterStateFootToSkate);
 skateToFootState = scr_StateCreate(s_SKATE_TO_FOOT, scr_SkaterStateSkateToFoot);
 onStairs = scr_StateCreate(s_STAIRS, scr_SkaterStateOnStairs);
-
+boardSwing = scr_StateCreate(s_BOARD_SWING, scr_SkaterStateBoardSwing);
+onFootCrouchState = scr_StateCreate(s_ON_FOOT_CROUCHING, scr_SkaterStateOnFootCrouching);
+onFootHurtState = scr_StateCreate(s_ON_FOOT_HURT, scr_SkaterStateOnFootHurt);
 // Set the default state to IDLE
 scr_StateInit(s_IDLE);
 
@@ -110,11 +117,16 @@ drownAnim = scr_RegisterStateAnimation(spr_SkaterDrowned, NORMAL_ANIM_SPEED, fal
 
 runAnim = scr_RegisterStateAnimation(spr_SkaterRunning, NORMAL_ANIM_SPEED, true, noone, "RUNNING", sprite_get_number(spr_SkaterRunning));
 onFootIdleAnim = scr_RegisterStateAnimation(spr_SkaterOnFootIdle, NORMAL_ANIM_SPEED, true, noone, "OnFootIdle", sprite_get_number(spr_SkaterOnFootIdle));
+onFootBoredAnim = scr_RegisterStateAnimation(spr_SkaterOnFootBored, 0, false, noone, "OnFootBored", sprite_get_number(spr_SkaterOnFootBored));
 footToSkateAnim = scr_RegisterStateAnimation(spr_SkaterTransition, FAST_ANIM_SPEED, false, noone, "FootToSkate", 1);
 onFootJumpAnim = scr_RegisterStateAnimation(spr_SkaterOnFootJump, NORMAL_ANIM_SPEED, true, noone, "OnFootJump", sprite_get_number(spr_SkaterOnFootJump));
 climbAnim = scr_RegisterStateAnimation(spr_SkaterClimbing, NORMAL_ANIM_SPEED, true, noone, "CLIMBING", sprite_get_number(spr_SkaterClimbing));
 climboutAnim = scr_RegisterStateAnimation(spr_SkaterClimbout, NORMAL_ANIM_SPEED, true, noone, "CLIMBOUT", sprite_get_number(spr_SkaterClimbout));
 onStairsAnim = scr_RegisterStateAnimation(spr_SkaterRunning, NORMAL_ANIM_SPEED, true, noone, "ONSTAIRS", sprite_get_number(spr_SkaterRunning));
+boardSwingAnim = scr_RegisterStateAnimation(spr_SkaterBoardSwing, FAST_ANIM_SPEED, false, noone, "SWINGING", sprite_get_number(spr_SkaterBoardSwing));
+onFootCrouchAnim = scr_RegisterStateAnimation(spr_SkaterOnFootCrouch, FAST_ANIM_SPEED, true, noone, "CROUCHING", sprite_get_number(spr_SkaterOnFootCrouch));
+onFootFallAnim = scr_RegisterStateAnimation(spr_SkaterOnFootFalling, FAST_ANIM_SPEED, true, noone, "FALLING", sprite_get_number(spr_SkaterOnFootFalling));
+onFootHurtAnim = scr_RegisterStateAnimation(spr_SkaterOnFootHurt, FAST_ANIM_SPEED, true, noone, "HURT", sprite_get_number(spr_SkaterOnFootHurt));
 
 idleAnim.persistent = true;
 skateAnim.persistent = true;
@@ -164,6 +176,11 @@ shouldAnimate = true;
 resetFromDeath = false;
 isDead = false;
 lastStep = 0;
+
+boardSmacked = ds_list_create();
+onFoot = false;
+drawOffsetX = 0;
+drawOffsetY = 0;
 
 
 

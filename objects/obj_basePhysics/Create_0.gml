@@ -5,6 +5,7 @@ facing = 1;
 
 // variable to hold a frame timer
 frameTimer = 0;
+frameCount = 0;
 
 // current xSpeed
 xSpeed = 0;
@@ -22,6 +23,7 @@ yMomentum = 0;
 lastY = ystart;
 
 onSlope = false;
+slopeDirection = -1;
 verticalMovementRun = false;
 
 
@@ -55,6 +57,8 @@ scr_GetCollisionTiles();
 
 collisionY = 0;
 collisionX = 0;
+
+onEdge = false;
 
 
 

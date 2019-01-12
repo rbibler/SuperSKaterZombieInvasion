@@ -70,36 +70,52 @@
             "value": "25"
         },
         {
-            "id": "96d15891-dd71-4097-8e72-51be1f1a5a30",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "405731c1-f231-47e3-b413-81e74de01247",
-            "value": "scr_ZombieSkaterSetupNewState"
-        },
-        {
-            "id": "5c0e90df-2b97-4228-b125-dc166605a5a8",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "6437486c-70ed-475a-a901-6d6545a33095",
-            "value": "scr_ZombieSkaterAnimate"
-        },
-        {
-            "id": "eca02cc1-4868-4a43-a8fc-9eb7bfdd3d6a",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "39b3545d-1cc5-44df-89ae-2d8e8c1eb118",
-            "value": "scr_ZombieSkaterCheckStateChange"
-        },
-        {
             "id": "30861e79-482d-42e7-81dd-ba37f06822ba",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
             "propertyId": "d2076d68-0b30-401c-af69-e1e7331b0585",
             "value": "-8"
+        },
+        {
+            "id": "7f4a4321-58b0-4b6a-a17c-0e5191aeb2a5",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "bd3fe793-2816-4b49-94e6-b3e0644b239e",
+            "value": "scr_ZombieSkaterStateIdle"
+        },
+        {
+            "id": "f371c6d2-6efd-4f38-bc76-e2c2d2caecc1",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "f880f527-c761-4432-993f-9f0800e1b2ba",
+            "value": "scr_ZombieSkaterStateMoving"
+        },
+        {
+            "id": "5af9c234-f349-4274-ba4e-9a976a7dff00",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "440516e8-a7b3-4e61-996a-7eebecb8ff41",
+            "value": "scr_ZombieSkaterStateJumping"
+        },
+        {
+            "id": "ea5515c7-8daa-49cf-a740-3de52a856174",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
+            "value": "scr_ZombieSkaterStateHit"
+        },
+        {
+            "id": "b0b55985-8d36-4097-9e11-cc86e7585677",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
+            "value": "scr_ZombieSkaterStateDead"
         }
     ],
     "parentObjectId": "c89e2c87-907a-434c-952e-bc59f6eb4851",

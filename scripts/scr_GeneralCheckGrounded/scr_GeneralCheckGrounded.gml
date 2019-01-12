@@ -26,7 +26,9 @@ if(grounded) {
 	// Skater isn't moving down 
 	//StopYMotion();
 	
+	
 } else {
 	// If not grounded, increase jump affordance
 	canJump++;
 }
+

@@ -30,4 +30,4 @@ deathAnim = scr_RegisterStateAnimation(
 		sprite_get_number(spr_ZombieSkaterDying)
 	);
 	
-currentAnimation = idleAnim;
+currentAnimation = moveAnim;

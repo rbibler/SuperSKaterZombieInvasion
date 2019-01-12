@@ -5,6 +5,7 @@
     "name": "64cd7fcf-cc42-4d51-9ec0-2eb8c6c9ab3d",
     "children": [
         "ef0a4574-8f75-4ff8-bf74-8bc722d2a36f",
+        "48a50626-05d8-4e75-bb74-3b386f2c4497",
         "e338222a-47c3-4668-b403-25de7b057148",
         "035b3230-7510-400b-b6fe-9ce97047ad0c",
         "5dc36945-53b7-4380-a26a-535a9ac66f9b",
@@ -12,7 +13,8 @@
         "219d85f6-df93-4624-bd83-e3b76a318224",
         "984862ff-d540-41e6-9761-f13947ad303a",
         "a33ab268-95e7-42d3-a75f-1e8dfff87a46",
-        "edf6bf9f-fd93-42e5-8c9e-5a724f97f9c9"
+        "edf6bf9f-fd93-42e5-8c9e-5a724f97f9c9",
+        "76929e61-7623-480e-b29b-cfd9d318f114"
     ],
     "filterType": "GMSprite",
     "folderName": "HudElements",

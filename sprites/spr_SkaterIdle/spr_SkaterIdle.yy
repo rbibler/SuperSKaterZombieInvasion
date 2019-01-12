@@ -7,33 +7,33 @@
     "HTile": false,
     "VTile": false,
     "bbox_bottom": 31,
-    "bbox_left": 7,
-    "bbox_right": 25,
-    "bbox_top": 0,
+    "bbox_left": 12,
+    "bbox_right": 23,
+    "bbox_top": 3,
     "bboxmode": 2,
     "colkind": 1,
     "coltolerance": 0,
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "d462ce95-444f-4140-813f-02598c40db8a",
+            "id": "03c191c8-f642-4def-a559-df322f1061c6",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "5ca2ebe4-ff9a-4af3-b108-d406476ca53f",
             "compositeImage": {
-                "id": "31004346-220d-4392-b707-ed77584c87d2",
+                "id": "b414ae6b-1124-4465-9888-b067417760b9",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "d462ce95-444f-4140-813f-02598c40db8a",
+                "FrameId": "03c191c8-f642-4def-a559-df322f1061c6",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "95e43d7f-1e0f-4ac7-93f8-72d09d59ee2a",
+                    "id": "a81ef1aa-4da1-4561-afbd-c9d23e8240e2",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "d462ce95-444f-4140-813f-02598c40db8a",
-                    "LayerId": "385d4c8a-d6d6-4868-a306-bb8ea37be6e0"
+                    "FrameId": "03c191c8-f642-4def-a559-df322f1061c6",
+                    "LayerId": "d3d21052-da8c-43d9-9895-c80ea0787333"
                 }
             ]
         }
@@ -43,7 +43,7 @@
     "height": 32,
     "layers": [
         {
-            "id": "385d4c8a-d6d6-4868-a306-bb8ea37be6e0",
+            "id": "d3d21052-da8c-43d9-9895-c80ea0787333",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "5ca2ebe4-ff9a-4af3-b108-d406476ca53f",
@@ -54,7 +54,7 @@
             "visible": true
         }
     ],
-    "origin": 9,
+    "origin": 4,
     "originLocked": false,
     "playbackSpeed": 0,
     "playbackSpeedType": 0,

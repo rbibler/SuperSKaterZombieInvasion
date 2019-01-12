@@ -31,6 +31,7 @@ if(((p1 != 0 and p1 <= 4 and p1 > 0) or (p2 != 0 and p2 <= 4 and p2 > 0))) {
 		bboxTile *= 16;
 		y = bboxTile - (bbox_bottom - y) - 1;
 		grounded = true;
+		
 
 	} 
 	// Stop the object from moving anymore
@@ -45,6 +46,7 @@ if(floorDist >= 0) {
 	// If it's a slope tile...
 	if(tileId != 0 and tileId != 4 and tileId != 5) {
 		onSlope = true;
+		slopeDirection = (tileId < 15) ? UP_SLOPE : DOWN_SLOPE;
 		// move it to where it wants to be
 		y += ySpeed;
 		// Then set it back to one pixel above the floor
@@ -54,6 +56,7 @@ if(floorDist >= 0) {
 		// And update the floor distance variable to reflect it's new y pos
 		floorDist = -1;
 		grounded = true;
+		
 		
 	}
 }
@@ -84,6 +87,7 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		
 		if(!grounded and ySpeed > 0) {
 			grounded = true;
+			
 			
 		}
 		if(bbox_bottom > obj.bbox_top and obj.object_index == obj_controlBlock) {

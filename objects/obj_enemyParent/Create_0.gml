@@ -50,6 +50,7 @@ stateMenacing = scr_StateCreate(s_MENACING, stateMenacingScript);
 stateFalling = scr_StateCreate(s_FALLING, stateFallScript);
 stateHit = scr_StateCreate(s_HIT, stateHitScript);
 stateDead = scr_StateCreate(s_DEAD, stateDeadScript);
+stateBoardStruck = scr_StateCreate(s_BOARD_STRUCK, stateBoardStruckScript);
 climbState = 0;
 
 // Set the default state to IDLE
@@ -58,3 +59,5 @@ scr_StateInit(initialState);
 currentAnim = noone;
 
 shouldMove = true;
+
+characterHealth = 100;

@@ -13,7 +13,8 @@
         "d9fca34a-0fba-453e-be49-8f41f0db2a8f",
         "f5c55b42-f1c1-4dee-a661-8703fb282348",
         "8aae74ee-62a5-48aa-930b-294a7b9263bb",
-        "ff3b6811-0cd1-41bc-93ff-693f00035592"
+        "ff3b6811-0cd1-41bc-93ff-693f00035592",
+        "9c2298ee-8387-4bec-a3c2-b5316c9db63a"
     ],
     "filterType": "GMScript",
     "folderName": "EnemyStateScripts",

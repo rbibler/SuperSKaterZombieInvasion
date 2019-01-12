@@ -10,25 +10,25 @@
 
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	//if(grounded) {
-	//	scr_StopXMotion();
-	//}
 	scr_SetCurrentAnimation(onFootIdleAnim);
-	//jump = 0;
 	stateVar[0] = random_range(60 * 3, 60 * 6); 
 	stateVar[1] = 0;
 	stateVar[2] = false;
+	canShoot = true;
 }
 
-scr_SkaterWeaponFire();
+scr_CheckForBoardSwing();
 
 // If enough time has passed to start the animation idle thing do it.
 // stateVar[0] = time in steps between idle animation cycles
 // stateVar[1] = amount of time since last animation cycle
 if(stateTimer - stateVar[1] >= stateVar[0]) {
-	stateVar[2] = true;
+	if(scr_ShouldSit()) {
+		scr_StateSwitch(s_ON_FOOT_SITTING);
+	} else {
+		scr_StateSwitch(s_ON_FOOT_BORED);
+	}
 }
-
 
 // Crouch if the skater presses down
 if(input[DOWN] and stateName != s_CLIMBING) {
@@ -43,6 +43,7 @@ if(input[DOWN] and stateName != s_CLIMBING) {
 		scr_StateSwitch(s_STAIRS);
 		return;
 	}
+	scr_StateSwitch(s_ON_FOOT_CROUCHING);
 } 
 
 
@@ -69,10 +70,6 @@ if(input[UP] and !input[DOWN]) {
 		return;
 	}
 }
-//// If no directional input, slow the skater down until he stops
-//if(abs(xSpeed) > 0 and grounded and stateName != s_ON_FOOT_STOP) {
-//	scr_StateSwitch(s_ON_FOOT_STOP);
-//}
 
 if(input[SWITCH] and !lastInput[SWITCH]) {
 	scr_StateSwitch(s_FOOT_TO_SKATE);
@@ -87,9 +84,3 @@ if(scr_SkaterCheckJump()) {
 		scr_StateSwitch(s_ON_FOOT_FALLING);
 	}
 }
-
-// Probably don't need this, but it's here to make sure we slow down to a stop
-if(abs(xSpeed) < 0.15) {
-	//StopXMotion();
-}
-

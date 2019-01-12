@@ -17,14 +17,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
-        {
-            "id": "be4a9fa9-610d-43c0-9eda-ffe2429ec162",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "29b75946-cc68-425e-98df-81aab9e40d89",
-            "value": "scr_SentryEnemyMove"
-        }
+        
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
     "persistent": false,
