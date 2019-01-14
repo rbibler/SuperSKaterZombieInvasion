@@ -67,9 +67,13 @@ if(input[SWITCH] and !lastInput[SWITCH]) {
 	return;
 }
 
-
-if(scr_CheckOnRail()) {
+var railHeight = scr_CheckOnRail(x, bbox_bottom + ySpeed);
+if(railHeight != -1) {
 	if(input[DOWN]) {
+		var tileStart = floor((bbox_bottom + ySpeed) / TILE_SIZE) * TILE_SIZE;
+		tileStart += railHeight;
+		y = tileStart - (bbox_bottom - y);
 		scr_StateSwitch(s_GRINDING);
+		scr_StopYMotion();
 	}
 }

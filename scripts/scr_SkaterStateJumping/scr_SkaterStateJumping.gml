@@ -81,8 +81,3 @@ if(input[SWITCH] and !lastInput[SWITCH]) {
 	return;
 }
 
-if(scr_CheckOnRail()) {
-	if(input[DOWN]) {
-		scr_StateSwitch(s_GRINDING);
-	}
-}
