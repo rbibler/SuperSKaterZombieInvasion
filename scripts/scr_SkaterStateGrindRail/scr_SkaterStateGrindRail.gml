@@ -18,28 +18,45 @@ if(stateNew) {
 	// What y offset did we start with?
 	lastRailHeight = scr_GetRailHeight(x mod TILE_SIZE, currentRailTile);
 	lastTeeterTime = 0;
-	teeterInterval = baseTeeterInterval - (baseTeeterInterval * (xSpeed / maxSpeedX));
+	teeterInterval = baseTeeterInterval - (baseTeeterInterval * (abs(xSpeed) / maxSpeedX));
+	if(xSpeed == 0) {
+		teeterInterval = baseTeeterInterval;
+	}
+	teeterInterval *= room_speed;
+	isTeetering = false;
 }
 
 if(isTeetering) {
+	show_debug_message("TEETERING!");
 	if(input[DOWN] and !lastInput[DOWN]) {
+		show_debug_message("CORRECTEd!");
 		isTeetering = false;
 		scr_SetCurrentAnimation(jumpAnim);
 		lastTeeterTime = stateTimer;
 	} else if(stateTimer - startTeeterTime >= teeterCorrectionAllowance) {
+		show_debug_message("Fall teeter");
 		scr_StateSwitch(s_FALLING);
 		return;
 	}
 }
 
-if(stateTimer - lastTeeterTime >= teeterInterval) {
+if(stateTimer - lastTeeterTime >= teeterInterval and !isTeetering) {
 	isTeetering = true;
 	startTeeterTime = stateTimer;
-	teeterCorrectionAllowance = baseTeeterCorrection - (baseTeeterCorrection * (xSpeed / maxSpeedX));
+	teeterCorrectionAllowance = baseTeeterCorrection - (baseTeeterCorrection * (abs(xSpeed) / maxSpeedX));
+	if(teeterCorrectionAllowance == 0) {
+		teeterCorrectionAllowance = 1;
+	}
+	teeterCorrectionAllowance *= room_speed;
 	scr_SetCurrentAnimation(idleAnim);
 }
 
-teeterInterval = baseTeeterInterval - (baseTeeterInterval * (xSpeed / maxSpeedX));
+teeterInterval = baseTeeterInterval - (baseTeeterInterval * (abs(xSpeed) / maxSpeedX));
+if(xSpeed == 0) {
+	teeterInterval = baseTeeterInterval;
+}
+teeterInterval *= room_speed;
+
 
 
 // check for exit conditions
@@ -49,6 +66,9 @@ if(scr_SkaterCheckJump()) {
 	// If still grinding, added the gravity impulse and update x position
 	var boost = obj_railController.railGravity[currentRailTile];
 	xSpeed += boost;
+	if(abs(xSpeed >= maxSpeedX)) {
+		xSpeed = maxSpeedX * sign(xSpeed);
+	}
 	scr_GeneralMovementFractions();
 	x += xSpeed;
 	
@@ -68,6 +88,7 @@ if(scr_SkaterCheckJump()) {
 				newTile = scr_GetRailTile(x, bbox_bottom - 24);
 				tileStart = (floor((bbox_bottom - 24) / TILE_SIZE)) * TILE_SIZE;
 				if(newTile < 1) {
+					show_debug_message("Fall no tile");
 					// If not horizontal, downhill, or uphill, the rail must have ended. Fall off.
 					scr_StateSwitch(s_FALLING);
 					return;
