@@ -16,14 +16,12 @@ if(stateNew) {
 	}
 	var rampObj = scr_IsOnRampBoostTile();
 	if(rampObj != noone) {
-		show_debug_message("Ramp!");
 		var howMuch = (xSpeed / maxSpeedX);
 		ySpeed -= rampObj.rampImpulseY * howMuch;
 		if(!getAir) {
 			xSpeed += (rampObj.rampImpulseX * howMuch * sign(myDirection));
 		}
 	}
-	show_debug_message("Jumping: " + string(ySpeed));
 	ySpeedFraction = 0;
 	// Set flag so we know the skater is jumping
 	jump = 1;

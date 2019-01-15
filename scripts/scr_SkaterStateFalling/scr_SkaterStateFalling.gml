@@ -70,6 +70,9 @@ if(input[SWITCH] and !lastInput[SWITCH]) {
 var railHeight = scr_CheckOnRail(x, bbox_bottom + ySpeed);
 if(railHeight != -1) {
 	if(input[DOWN]) {
+		if(scr_GetRailTile(x, bbox_bottom + ySpeed) == 6) {
+			show_debug_message("Hit a six");
+		}
 		var tileStart = floor((bbox_bottom + ySpeed) / TILE_SIZE) * TILE_SIZE;
 		tileStart += railHeight;
 		y = tileStart - (bbox_bottom - y);
