@@ -21,6 +21,9 @@ stateVar[3] = 0;
 stateVar[4] = 0;
 stateVar[5] = 0;
 stateVar[6] = 0;
+stateVar[7] = 0;
+stateVar[8] = 0;
+stateVar[9] = 0;
 
 //Add any new variables you might need for your game here.
 stateCanInterrupt = true;

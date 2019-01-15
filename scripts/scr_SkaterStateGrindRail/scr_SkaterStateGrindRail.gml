@@ -3,6 +3,11 @@
 var currentRailTile = stateVar[0];
 var currentTileX = stateVar[1];
 var lastRailHeight = stateVar[2];
+var teeterInterval = stateVar[3];
+var teeterCorrectionAllowance = stateVar[4];
+var lastTeeterTime = stateVar[5];
+var isTeetering = stateVar[6];
+var startTeeterTime = stateVar[7];
 
 if(stateNew) {
 	scr_SetCurrentAnimation(jumpAnim);
@@ -12,7 +17,30 @@ if(stateNew) {
 	currentTileX = floor(x / TILE_SIZE);
 	// What y offset did we start with?
 	lastRailHeight = scr_GetRailHeight(x mod TILE_SIZE, currentRailTile);
+	lastTeeterTime = 0;
+	teeterInterval = baseTeeterInterval - (baseTeeterInterval * (xSpeed / maxSpeedX));
 }
+
+if(isTeetering) {
+	if(input[DOWN] and !lastInput[DOWN]) {
+		isTeetering = false;
+		scr_SetCurrentAnimation(jumpAnim);
+		lastTeeterTime = stateTimer;
+	} else if(stateTimer - startTeeterTime >= teeterCorrectionAllowance) {
+		scr_StateSwitch(s_FALLING);
+		return;
+	}
+}
+
+if(stateTimer - lastTeeterTime >= teeterInterval) {
+	isTeetering = true;
+	startTeeterTime = stateTimer;
+	teeterCorrectionAllowance = baseTeeterCorrection - (baseTeeterCorrection * (xSpeed / maxSpeedX));
+	scr_SetCurrentAnimation(idleAnim);
+}
+
+teeterInterval = baseTeeterInterval - (baseTeeterInterval * (xSpeed / maxSpeedX));
+
 
 // check for exit conditions
 if(scr_SkaterCheckJump()) {
@@ -68,3 +96,8 @@ if(scr_SkaterCheckJump()) {
 stateVar[0] = currentRailTile;
 stateVar[1] = newTileX;
 stateVar[2] = lastRailHeight;
+stateVar[3] = teeterInterval;
+stateVar[4] = teeterCorrectionAllowance;
+stateVar[5] = lastTeeterTime;
+stateVar[6] = isTeetering;
+stateVar[7] = startTeeterTime;

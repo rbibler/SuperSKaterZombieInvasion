@@ -202,6 +202,34 @@
             "value": "10",
             "varName": "minSitEdgeDistance",
             "varType": 0
+        },
+        {
+            "id": "e676577e-feb6-4fb5-903b-3115005e745c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "baseTeeterInterval",
+            "varType": 0
+        },
+        {
+            "id": "f9d31743-afdd-4ee0-80f1-28b274177ada",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "baseTeeterCorrection",
+            "varType": 0
         }
     ],
     "solid": false,
