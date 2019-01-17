@@ -703,6 +703,14 @@
             }
         },
         {
+            "Key": "2897d86b-c026-4394-8c37-8b4d7cd510ec",
+            "Value": {
+                "id": "a9f03c62-ac5d-46a3-a0aa-ca6f18a36099",
+                "resourcePath": "scripts\\scr_CalculateTeeterInterval\\scr_CalculateTeeterInterval.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "29851e0f-09f0-41b3-828f-951505dba70d",
             "Value": {
                 "id": "1cf36513-10e6-4832-87ce-d31b313de33a",
@@ -3687,6 +3695,14 @@
             }
         },
         {
+            "Key": "dc02989c-ef9b-4271-9d41-78a4e5024bff",
+            "Value": {
+                "id": "30a24c80-2b38-49ca-a365-fc50d106bcf2",
+                "resourcePath": "sprites\\spr_SkaterTeetering\\spr_SkaterTeetering.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dc2643fc-c1bb-4ced-afcf-161cd1b690e1",
             "Value": {
                 "id": "27503fca-d803-4951-852f-964102d02519",
@@ -4303,6 +4319,7 @@
         "b2dd7197-706f-451e-b649-65f2d3a18c2a",
         "94c74252-2ca3-48af-9926-3fa10d0926e1",
         "9528d29f-88b8-4202-85b9-a60b0b6889a5",
+        "2897d86b-c026-4394-8c37-8b4d7cd510ec",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",

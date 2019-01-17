@@ -213,7 +213,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "1",
             "varName": "baseTeeterInterval",
             "varType": 0
         },
@@ -227,8 +227,36 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.5",
+            "value": ".5",
             "varName": "baseTeeterCorrection",
+            "varType": 0
+        },
+        {
+            "id": "19845972-b001-4d18-a3d3-ca63af8a5ea8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "railGrindButtonPressThreshold",
+            "varType": 0
+        },
+        {
+            "id": "9a9d14b7-53c3-4fd9-a902-dcff41c198c5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "maxSpeedRailX",
             "varType": 0
         }
     ],

@@ -29,6 +29,7 @@ if(stateNew) {
 	grounded = false;
 }
 
+
 //SkaterBasicStateAnimation();
 
 // Check if we should fire a weapon
@@ -78,4 +79,6 @@ if(input[SWITCH] and !lastInput[SWITCH]) {
 	scr_StateSwitch(s_SKATE_TO_FOOT);
 	return;
 }
+
+show_debug_message("X in jump: " + string(x));
 

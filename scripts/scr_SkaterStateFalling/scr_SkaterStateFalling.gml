@@ -10,6 +10,7 @@ if(stateNew) {
 	//image_index = 0;
 	scr_SetCurrentAnimation(jumpAnim);
 	canSplash = true;
+	railGrindButtonPressTimer = 0;
 }
 
 //SkaterBasicStateAnimation();
@@ -67,12 +68,15 @@ if(input[SWITCH] and !lastInput[SWITCH]) {
 	return;
 }
 
+if(input[DOWN]) {
+	railGrindButtonPressTimer++;
+} else {
+	railGrindButtonPressTimer = 0;
+}
+
 var railHeight = scr_CheckOnRail(x, bbox_bottom + ySpeed);
 if(railHeight != -1) {
-	if(input[DOWN]) {
-		if(scr_GetRailTile(x, bbox_bottom + ySpeed) == 6) {
-			show_debug_message("Hit a six");
-		}
+	if(input[DOWN] and railGrindButtonPressTimer <= railGrindButtonPressThreshold) {
 		var tileStart = floor((bbox_bottom + ySpeed) / TILE_SIZE) * TILE_SIZE;
 		tileStart += railHeight;
 		y = tileStart - (bbox_bottom - y);
