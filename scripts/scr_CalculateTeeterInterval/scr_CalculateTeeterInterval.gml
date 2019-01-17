@@ -6,6 +6,6 @@ if(abs(xSpeed) != maxSpeedX) {
 	teeterInterval = baseTeeterInterval / 2;
 }
 if(xSpeed == 0) {
-	teeterInterval = baseTeeterInterval;
+	teeterInterval = baseTeeterInterval / 2;
 }
 return teeterInterval * room_speed;
