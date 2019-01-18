@@ -25,14 +25,11 @@ if(stateNew) {
 teeterInterval = scr_CalculateTeeterInterval();
 
 if(isTeetering) {
-	show_debug_message("TEETERING! at: " + string(stateTimer));
 	if(input[DOWN] and !lastInput[DOWN]) {
-		show_debug_message("CORRECTED at:  " + string(stateTimer));
 		isTeetering = false;
 		scr_SetCurrentAnimation(jumpAnim);
 		lastTeeterTime = stateTimer;
 	} else if(stateTimer - startTeeterTime >= teeterCorrectionAllowance) {
-		show_debug_message("Fall teeter");
 		scr_StateSwitch(s_FALLING);
 		return;
 	}
@@ -46,7 +43,6 @@ if(stateTimer - lastTeeterTime >= teeterInterval and !isTeetering) {
 		teeterCorrectionAllowance = baseTeeterCorrection;
 	}
 	teeterCorrectionAllowance *= room_speed;
-	show_debug_message("Teeter correction: " + string(teeterCorrectionAllowance));
 	scr_SetCurrentAnimation(teeterAnim);
 }
 
@@ -78,7 +74,6 @@ if(newTileX != currentTileX) {
 			newTile = scr_GetRailTile(x, bbox_bottom - 24);
 			tileStart = (floor((bbox_bottom - 24) / TILE_SIZE)) * TILE_SIZE;
 			if(newTile < 1) {
-				show_debug_message("Fall no tile");
 				// If not horizontal, downhill, or uphill, the rail must have ended. Fall off.
 				scr_StateSwitch(s_FALLING);
 				return;
@@ -103,9 +98,11 @@ if(newTileX != currentTileX) {
 }
 
 // check for exit conditions
-if(input[JUMP] and !lastInput[JUMP]) {
-	show_debug_message("X at jump: " + string(x));
+if(input[JUMP] and !lastInput[JUMP] or jumpInputBuffer > 0) {
 	scr_StateSwitch(s_JUMPING);
+	if(stateTimer < room_speed / 2 and xSpeed != 0) {
+		xSpeed +=  railJumpBoost * sign(xSpeed);
+	}
 	return;
 }
 

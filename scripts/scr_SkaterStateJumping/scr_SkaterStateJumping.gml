@@ -80,5 +80,4 @@ if(input[SWITCH] and !lastInput[SWITCH]) {
 	return;
 }
 
-show_debug_message("X in jump: " + string(x));
 
