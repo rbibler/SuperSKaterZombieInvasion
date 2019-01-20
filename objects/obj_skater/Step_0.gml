@@ -31,6 +31,12 @@ if(stateName != s_STAIRS and stateName != s_BOARD_SWING) {
 	}
 }
 
+if(input[DOWN]) {
+	railGrindButtonPressTimer++;
+} else {
+	railGrindButtonPressTimer = 0;
+}
+
 
 // Impart gravity and limit the skater's terminal velocity
 ySpeed += myGravity;

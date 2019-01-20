@@ -78,6 +78,7 @@ idleState = scr_StateCreate(s_IDLE, scr_SkaterStateIdle);
 boredState = scr_StateCreate(s_BORED, scr_SkaterStateBored);
 skateState = scr_StateCreate(s_MOVING, scr_SkaterStateSkating);
 jumpState = scr_StateCreate(s_JUMPING, scr_SkaterStateJumping);
+grindState = scr_StateCreate(s_GRINDING, scr_SkaterStateGrindRail);
 bounceState = scr_StateCreate(s_BOUNCING, scr_SkaterStateBouncing);
 climbState = scr_StateCreate(s_CLIMBING, scr_SkaterStateClimbing);
 climboutState = scr_StateCreate(s_CLIMBOUT, scr_SkaterStateClimbout);
@@ -114,6 +115,7 @@ crouchAnim = scr_RegisterStateAnimation(spr_SkaterCrouch, NORMAL_ANIM_SPEED, tru
 hurtAnim = scr_RegisterStateAnimation(spr_SkaterTakeHit, NORMAL_ANIM_SPEED, true, noone, "HURT", 1);
 deadAnim = scr_RegisterStateAnimation(spr_SkaterDead, NORMAL_ANIM_SPEED, false, noone, "DEAD", sprite_get_number(spr_SkaterDead));
 drownAnim = scr_RegisterStateAnimation(spr_SkaterDrowned, NORMAL_ANIM_SPEED, false, noone, "DROWNED", sprite_get_number(spr_SkaterDrowned));
+teeterAnim = scr_RegisterStateAnimation(spr_SkaterTeetering, FAST_ANIM_SPEED, true, noone, "TEETERING", sprite_get_number(spr_SkaterTeetering));
 
 runAnim = scr_RegisterStateAnimation(spr_SkaterRunning, NORMAL_ANIM_SPEED, true, noone, "RUNNING", sprite_get_number(spr_SkaterRunning));
 onFootIdleAnim = scr_RegisterStateAnimation(spr_SkaterOnFootIdle, NORMAL_ANIM_SPEED, true, noone, "OnFootIdle", sprite_get_number(spr_SkaterOnFootIdle));
@@ -181,7 +183,8 @@ boardSmacked = ds_list_create();
 onFoot = false;
 drawOffsetX = 0;
 drawOffsetY = 0;
-
+railGrindButtonPressTimer = 0;
+railJumpBoost = 2;
 
 
 

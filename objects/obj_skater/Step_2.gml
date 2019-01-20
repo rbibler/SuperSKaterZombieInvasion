@@ -34,8 +34,6 @@ wasGrounded = grounded;
 wasGroundedRight = groundedRight;
 wasGroundedLeft = groundedLeft;
 
-if(onEdge) {
-	show_debug_message("I'm on edge");
-} else {
-	show_debug_message("I'm not on edge");
+if(global.debug) {
+	//surface_save(application_surface, string(current_time) + ".png");
 }

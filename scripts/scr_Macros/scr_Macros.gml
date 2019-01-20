@@ -9,12 +9,12 @@
 #macro	JUMP	7
 #macro	SWITCH	8
 
-
 #macro s_IDLE				"IDLE"
 #macro s_BORED				"BORED"
 #macro s_MOVING				"MOVING"
 #macro s_CROUCHING			"CROUCHING"
 #macro s_JUMPING			"JUMPING"
+#macro s_GRINDING			"GRINDING"
 #macro s_SLAMMING			"SLAMMING"
 #macro s_RECOVERING			"RECOVERING"
 #macro s_HIT				"HIT"

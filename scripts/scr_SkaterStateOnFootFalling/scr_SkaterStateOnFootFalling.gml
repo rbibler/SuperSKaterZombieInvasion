@@ -9,7 +9,6 @@ if(stateNew) {
 	scr_SetCurrentAnimation(onFootFallAnim);
 	canSplash = true;
 	canShoot = true;
-	show_debug_message("I fall");
 	drawOffsetX = 0;
 	drawOffsetY = 0;
 }

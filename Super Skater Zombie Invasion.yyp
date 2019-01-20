@@ -703,6 +703,14 @@
             }
         },
         {
+            "Key": "2897d86b-c026-4394-8c37-8b4d7cd510ec",
+            "Value": {
+                "id": "a9f03c62-ac5d-46a3-a0aa-ca6f18a36099",
+                "resourcePath": "scripts\\scr_CalculateTeeterInterval\\scr_CalculateTeeterInterval.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "29851e0f-09f0-41b3-828f-951505dba70d",
             "Value": {
                 "id": "1cf36513-10e6-4832-87ce-d31b313de33a",
@@ -1423,6 +1431,14 @@
             }
         },
         {
+            "Key": "568126d3-9150-46d3-92fc-3f51571d3fd7",
+            "Value": {
+                "id": "6f9d0343-c709-4b27-b185-75e0e33bb406",
+                "resourcePath": "sprites\\spr_RailTiles\\spr_RailTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "56a35a79-93e9-4b25-a0b5-47a20c704c9d",
             "Value": {
                 "id": "755cb341-8ce9-4da7-9bba-81c9456a814c",
@@ -1567,6 +1583,14 @@
             }
         },
         {
+            "Key": "5e417a9c-f8a3-40fc-8a53-6c12dd6a65f0",
+            "Value": {
+                "id": "f91de91e-c13f-46cf-8678-f4ee2a577c74",
+                "resourcePath": "tilesets\\tiles_Rails\\tiles_Rails.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "5ed5afac-37f3-4431-aa93-364700ffe6e3",
             "Value": {
                 "id": "9e60218d-74b7-4be8-8325-49b22668f40a",
@@ -1596,6 +1620,14 @@
                 "id": "b8d46ec1-28de-4bf2-af59-f56fc8b1c861",
                 "resourcePath": "views\\5fa55844-22d0-4b40-afe7-fe5404ea81a0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5ff216e4-81fd-404c-8df9-3f6638044352",
+            "Value": {
+                "id": "b78a425b-8770-4d29-9372-e5bf922967d6",
+                "resourcePath": "sprites\\spr_RailBlockHelper\\spr_RailBlockHelper.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1748,6 +1780,14 @@
                 "id": "79498584-c2ce-425c-8a04-55779913da01",
                 "resourcePath": "objects\\obj_zombieGun\\obj_zombieGun.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6c433847-a2c0-4c08-8ed2-9bd8f2e1741d",
+            "Value": {
+                "id": "6de79480-de6f-48dd-9511-c29c67f634f0",
+                "resourcePath": "scripts\\scr_SkaterStateGrindRail\\scr_SkaterStateGrindRail.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2431,6 +2471,22 @@
             }
         },
         {
+            "Key": "94c74252-2ca3-48af-9926-3fa10d0926e1",
+            "Value": {
+                "id": "9b4986c6-1a57-4630-8a25-b5e1fa0b8ee0",
+                "resourcePath": "scripts\\scr_GetRailTile\\scr_GetRailTile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9528d29f-88b8-4202-85b9-a60b0b6889a5",
+            "Value": {
+                "id": "5362e74f-ceee-4f17-9406-0098216a750c",
+                "resourcePath": "scripts\\scr_GetRailHeight\\scr_GetRailHeight.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
             "Value": {
                 "id": "b1234d0a-de40-4c66-aa7a-c7e0f94da50d",
@@ -2923,6 +2979,14 @@
             "Value": {
                 "id": "ee0799dd-7b28-45ad-a5f3-edd77f2db465",
                 "resourcePath": "scripts\\scr_GeneralMovementFractions\\scr_GeneralMovementFractions.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b2dd7197-706f-451e-b649-65f2d3a18c2a",
+            "Value": {
+                "id": "3a7859b3-f184-42a5-8fba-ae80b218d64c",
+                "resourcePath": "scripts\\scr_CheckOnRail\\scr_CheckOnRail.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3559,6 +3623,14 @@
             }
         },
         {
+            "Key": "d833bc4e-40e4-4033-9c98-e355ab44bda4",
+            "Value": {
+                "id": "575b7b29-6d33-4850-ae35-67187489d7a7",
+                "resourcePath": "objects\\obj_railController\\obj_railController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d850e202-a0f6-47bb-b9ce-915e00ed8a72",
             "Value": {
                 "id": "05d5ba3e-f8ab-451a-856a-19726a17515a",
@@ -3619,6 +3691,14 @@
             "Value": {
                 "id": "0946c439-c57e-4eaf-98f4-e6323797abff",
                 "resourcePath": "sprites\\spr_phantomBlock\\spr_phantomBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dc02989c-ef9b-4271-9d41-78a4e5024bff",
+            "Value": {
+                "id": "30a24c80-2b38-49ca-a365-fc50d106bcf2",
+                "resourcePath": "sprites\\spr_SkaterTeetering\\spr_SkaterTeetering.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4211,6 +4291,7 @@
         "b878156b-251c-40e5-8cf4-b66942a5d691",
         "77518758-dd36-44e6-a3cb-9e2782ec9d19",
         "a6da3803-7e0d-4956-bcb9-1f942e71d0cb",
+        "6c433847-a2c0-4c08-8ed2-9bd8f2e1741d",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "34ec790d-38de-44ce-984a-c11615096df4",
@@ -4235,6 +4316,10 @@
         "a0f8a1fe-9ff4-458d-a308-c0ee9cb18589",
         "dde218af-b1ed-4c8c-bf6a-19b087543a28",
         "c554054f-f034-4fb9-bac4-1cbc56254424",
+        "b2dd7197-706f-451e-b649-65f2d3a18c2a",
+        "94c74252-2ca3-48af-9926-3fa10d0926e1",
+        "9528d29f-88b8-4202-85b9-a60b0b6889a5",
+        "2897d86b-c026-4394-8c37-8b4d7cd510ec",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",

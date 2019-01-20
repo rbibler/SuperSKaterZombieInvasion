@@ -10,6 +10,7 @@ if(stateNew) {
 	//image_index = 0;
 	scr_SetCurrentAnimation(jumpAnim);
 	canSplash = true;
+		show_debug_message("FALLING");
 }
 
 //SkaterBasicStateAnimation();
@@ -65,4 +66,17 @@ if(input[JUMP]) {
 if(input[SWITCH] and !lastInput[SWITCH]) {
 	scr_StateSwitch(s_SKATE_TO_FOOT);
 	return;
+}
+
+
+var railHeight = scr_CheckOnRail(x, bbox_bottom + ySpeed);
+if(railHeight != -1) {
+	if(input[DOWN] and railGrindButtonPressTimer <= railGrindButtonPressThreshold) {
+		show_debug_message("Rail yo");
+		var tileStart = floor((bbox_bottom + ySpeed) / TILE_SIZE) * TILE_SIZE;
+		tileStart += railHeight;
+		y = tileStart - (bbox_bottom - y);
+		scr_StateSwitch(s_GRINDING);
+		scr_StopYMotion();
+	}
 }
