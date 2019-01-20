@@ -10,6 +10,7 @@ if(stateNew) {
 	//image_index = 0;
 	scr_SetCurrentAnimation(jumpAnim);
 	canSplash = true;
+		show_debug_message("FALLING");
 }
 
 //SkaterBasicStateAnimation();

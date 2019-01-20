@@ -27,6 +27,7 @@ if(stateNew) {
 	jump = 1;
 	onSlope = false;
 	grounded = false;
+		show_debug_message("JUMPING");
 }
 
 
@@ -57,6 +58,15 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 	
 }
 
+
+// If we hit the ground somehow (not likely) we should be idle. Let idle state take care of
+// skating check
+if(grounded) {
+	scr_StateSwitch(s_IDLE);
+	//scr_StopYMotion();
+	return;
+}
+
 scr_MoveAndCollide();
 scr_SkaterLadderCollisions();
 
@@ -69,11 +79,6 @@ if(jump == 1 and (ySpeed > 0 or (!getAir and !input[JUMP]))){
 	scr_StateSwitch(s_FALLING);
 }
 
-// If we hit the ground somehow (not likely) we should be idle. Let idle state take care of
-// skating check
-if(grounded) {
-	scr_StateSwitch(s_IDLE);
-}
 
 if(input[SWITCH] and !lastInput[SWITCH]) {
 	scr_StateSwitch(s_SKATE_TO_FOOT);

@@ -9,7 +9,6 @@
 #macro	JUMP	7
 #macro	SWITCH	8
 
-
 #macro s_IDLE				"IDLE"
 #macro s_BORED				"BORED"
 #macro s_MOVING				"MOVING"

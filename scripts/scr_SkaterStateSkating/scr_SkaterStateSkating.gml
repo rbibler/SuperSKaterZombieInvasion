@@ -15,6 +15,7 @@ if(stateNew) {
 	//image_index = 0;
 	stateVar[0] = false;
 	scr_SetCurrentAnimation(skateAnim);
+		show_debug_message("SKATING");
 }
 
 // Check if we should fire a weapon

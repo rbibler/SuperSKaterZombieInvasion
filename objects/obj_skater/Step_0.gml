@@ -36,7 +36,6 @@ if(input[DOWN]) {
 } else {
 	railGrindButtonPressTimer = 0;
 }
-show_debug_message("Rail timer: " + string(railGrindButtonPressTimer));
 
 
 // Impart gravity and limit the skater's terminal velocity
