@@ -1,9 +1,18 @@
-/// This is a script that manages everything to do with firing a weapon for the skater.
+var trigger = false;
+switch(currentWeapon) {
+	case STANDARD_SLINGSHOT:
+		trigger = input[SHOOT] and !lastInput[SHOOT];
+	break;
+	
+	case AUTO_SLINGSHOT:
+		trigger = input[SHOOT] and cooldown <= 0;
+	break;
+	
+	case SPREAD_SLINGSHOT:
+		trigger = input[SHOOT] and !lastInput[SHOOT];
+	break;
+}
 
-// Check if we should fire a weapon
-if(currentWeapon != noone) {
-	var shootNow = scr_CanShootWeapon(currentWeapon);
-	if(shootNow) {
-		script_execute(currentWeapon.fireScript, currentWeapon, stateName == s_CROUCHING);
-	}
+if(trigger and ammoOnScreen < maxAmmoOnScreen) {
+	scr_SkaterSlingshotFireScript();
 }

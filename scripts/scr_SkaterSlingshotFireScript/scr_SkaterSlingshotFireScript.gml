@@ -1,44 +1,34 @@
 /// Script to handle the firing of the weapon
-/// @arg weaponToFire
-/// @arg crouchingFlag
 
-var weapon = argument0
-var crouchingFlag = argument1;
-with(weapon) {
-	if(currentCooldownCount <= 0) {
-		if(ammoOnScreen < maxAmmoOnScreen and ammoCount > 0) {
-			// Fire the weapon
-			currentCooldownCount = cooldownTime;
-			ammoOnScreen++;
-			ammoCount--;
-			var xOffset = 0;
-			var yOffset = 0;
-			switch(other.state) {
-				case other.idleState:
-				case other.skateState:
-					xOffset = projOffsetStandingX;
-					yOffset = projOffsetStandingY;
-				break;
-				case other.jumpState:
-				case other.fallState:
-					xOffset = projOffsetJumpingX;
-					yOffset = projOffsetJumpingY;
-					break;
-				case other.crouchState:
-					xOffset = projOffsetCrouchingX;
-					yOffset = projOffsetCrouchingY;
-					break;
-			}
-			xOffset += other.x;
-			yOffset += other.y;
-			var ammo = instance_create_layer(xOffset, yOffset, "AMMO", ammoType);
-			ammo.ammoDirection = other.facing;
-			other.weaponAnimCounter = weaponAnimCount;
-			
-		} else if(ammoCount == 0) {
-			with(obj_skater) {
-				scr_PickupWeapon(obj_BoardPowerPush);
-			}
-		}
-	}
+ammoOnScreen++;
+var xOffset = 0;
+var yOffset = 0;
+switch(stateName) {
+	case s_IDLE:
+	case s_MOVING:
+		xOffset = projOffsetStandingX;
+		yOffset = projOffsetStandingY;
+	break;
+	case s_JUMPING:
+	case s_FALLING:
+		xOffset = projOffsetJumpingX;
+		yOffset = projOffsetJumpingY;
+		break;
+	case s_CROUCHING:
+		xOffset = projOffsetCrouchingX;
+		yOffset = projOffsetCrouchingY;
+		break;
 }
+xOffset += x;
+yOffset += y;
+var ammo = instance_create_layer(xOffset, yOffset, "AMMO", obj_SlingshotRock);
+ammo.ammoDirection = facing;
+cooldown = scr_GetSlingshotCooldown();
+ammo.xSpeed = slingshot.xSpeed * facing;
+ammo.ySpeed = 0;
+
+with(currentAnimation) {
+	currentSubstate = 2;
+	substateAnimations[currentSubstate].currentIndex = 0;
+}
+

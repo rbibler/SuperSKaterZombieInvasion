@@ -258,6 +258,34 @@
             "value": "5",
             "varName": "maxSpeedRailX",
             "varType": 0
+        },
+        {
+            "id": "bf1cccae-db3e-4ddd-9981-aa6348e8783b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "projOffsetStandingX",
+            "varType": 0
+        },
+        {
+            "id": "b87f18f9-e51e-4f94-9149-8c1ff80f9e01",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "projOffsetStandingY",
+            "varType": 0
         }
     ],
     "solid": false,

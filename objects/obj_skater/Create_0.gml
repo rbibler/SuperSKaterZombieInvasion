@@ -62,10 +62,13 @@ for(var i = 0; i < 9; i++) {
 
 
 // Reference to the weapon
-currentWeapon = noone;
+slingshot = instance_create_layer(0, 0, "WEAPONS", obj_Slingshot);
+currentWeapon = STANDARD_SLINGSHOT;
 currentPowerup = noone;
 weaponAnimCounter = 0;
-//scr_PickupWeapon(obj_BoardPowerPush);
+ammoOnScreen = 0;
+maxAmmoOnScreen = slingshot.maxAmmo[currentWeapon];
+cooldown = 0;
 
 // Reset the timer for the idle animation
 alarm[0] = 60 * 4;
@@ -162,6 +165,26 @@ scr_AddSpriteToSubstateAnimation(powerPushCrouch, spr_SkaterPowerPushCrouchOne, 
 scr_AddSpriteToSubstateAnimation(powerPushCrouch, spr_SkaterPowerPushCrouchTwo, 1);
 crouchAnim.substateAnimations[1] = powerPushCrouch;
 powerPushCrouch.persistent = true;
+
+slingshotIdle = scr_RegisterSubstateAnimation(1, NORMAL_ANIM_SPEED);
+scr_AddSpriteToSubstateAnimation(slingshotIdle, spr_SkaterIdleSlingshot, 0);
+idleAnim.substateAnimations[2] = slingshotIdle;
+slingshotIdle.persistent = true;
+
+slingshotJump = scr_RegisterSubstateAnimation(1, NORMAL_ANIM_SPEED);
+scr_AddSpriteToSubstateAnimation(slingshotJump, spr_SkaterJumpSlingshot, 0);
+jumpAnim.substateAnimations[2] = slingshotJump;
+slingshotJump.persistent = true;
+
+slingshotCrouch = scr_RegisterSubstateAnimation(1, NORMAL_ANIM_SPEED);
+scr_AddSpriteToSubstateAnimation(slingshotCrouch, spr_SkaterCrouchSlingshot, 0);
+crouchAnim.substateAnimations[2] = slingshotCrouch;
+slingshotCrouch.persistent = true;
+
+slingshotSkate = scr_RegisterSubstateAnimation(1, NORMAL_ANIM_SPEED);
+scr_AddSpriteToSubstateAnimation(slingshotSkate, spr_SkaterSkateSlingshot, 0);
+skateAnim.substateAnimations[2] = slingshotSkate;
+slingshotSkate.persistent = true;
 
 currentAnimation = idleAnim;
 

@@ -10,10 +10,7 @@
 
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	//sprite_index = spr_SkaterIdle;
-	//image_index = 0;
 	scr_SetCurrentAnimation(idleAnim);
-	//jump = 0;
 	stateVar[0] = random_range(60 * 3, 60 * 6); 
 	stateVar[1] = 0;
 	stateVar[2] = false;

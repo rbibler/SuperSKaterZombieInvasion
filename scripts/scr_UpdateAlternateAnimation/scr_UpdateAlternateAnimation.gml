@@ -8,8 +8,8 @@ var parentObject = argument1;
 with(animationToUpdate) {
 	var currentSprite = sprites[0];
 	if(animLength > 0) {
-		currentIndex = (animSpeed + currentIndex) mod animLength;
-		currentSprite = sprites[currentIndex];
+		currentIndex = (animSpeed + currentIndex);
+		currentSprite = sprites[currentIndex mod animLength];
 	}
 	if(parentObject.sprite_index != currentSprite) {
 		parentObject.sprite_index = currentSprite;
