@@ -15,4 +15,7 @@ switch(currentWeapon) {
 
 if(trigger and ammoOnScreen < maxAmmoOnScreen) {
 	scr_SkaterSlingshotFireScript();
+	return true;
 }
+
+return false;

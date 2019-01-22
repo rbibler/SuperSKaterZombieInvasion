@@ -9,7 +9,7 @@ if(abs(x - obj_skater.x) > 1000) {
 }
 
 var tile = tilemap_get_at_pixel(obj_skater.collisionTiles, x, y);
-if(tile != 0) {
+if(tile > 0) {
 	killThyself = true;
 }
 
