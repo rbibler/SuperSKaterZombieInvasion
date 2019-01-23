@@ -57,7 +57,7 @@ scr_StateExecute();
 if(shouldAnimate) {
 	scr_UpdateStateAnimation(currentAnimation);
 }
-
+isShooting = false;
 
 
 // We don't want the camera to follow us in certain places, so check for them!

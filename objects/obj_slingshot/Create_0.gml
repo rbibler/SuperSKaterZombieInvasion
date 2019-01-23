@@ -8,8 +8,8 @@ maxAmmo[STANDARD_SLINGSHOT] = 3;
 maxAmmo[AUTO_SLINGSHOT] = 10;
 maxAmmo[SPREAD_SLINGSHOT] = 9;
 
-cooldown[STANDARD_SLINGSHOT] = 0;
-cooldown[AUTO_SLINGSHOT] = 10;
-cooldown[SPREAD_SLINGSHOT] = 0;
+cooldown[STANDARD_SLINGSHOT] = 30;
+cooldown[AUTO_SLINGSHOT] = 18;
+cooldown[SPREAD_SLINGSHOT] = 30;
 
 xSpeed = 8;

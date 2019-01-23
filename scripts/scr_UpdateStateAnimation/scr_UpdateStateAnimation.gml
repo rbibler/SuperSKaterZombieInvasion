@@ -12,7 +12,7 @@ if(anim == noone) {
 
 with(anim) {
 	var substateAnim = substateAnimations[currentSubstate];
-	var alternateComplete = scr_UpdateAlternateAnimation(substateAnim, other);
+	alternateComplete = scr_UpdateAlternateAnimation(substateAnim, other);
 	if(alternateComplete) {
 		currentSubstate = 0;
 	}

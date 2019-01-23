@@ -63,7 +63,7 @@ for(var i = 0; i < 9; i++) {
 
 // Reference to the weapon
 slingshot = instance_create_layer(0, 0, "WEAPONS", obj_Slingshot);
-currentWeapon = SPREAD_SLINGSHOT;
+currentWeapon = STANDARD_SLINGSHOT;
 currentPowerup = noone;
 weaponAnimCounter = 0;
 ammoOnScreen = 0;
@@ -201,6 +201,8 @@ shouldAnimate = true;
 resetFromDeath = false;
 isDead = false;
 lastStep = 0;
+
+isShooting = false;
 
 boardSmacked = ds_list_create();
 onFoot = false;

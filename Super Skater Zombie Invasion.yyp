@@ -2527,6 +2527,14 @@
             }
         },
         {
+            "Key": "9dae673f-3b7e-4d87-bd56-90ebca516faf",
+            "Value": {
+                "id": "67344d15-a407-425b-a0aa-ff55dea4efdc",
+                "resourcePath": "views\\9dae673f-3b7e-4d87-bd56-90ebca516faf.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9e503d92-b874-4439-a5b2-3309f28f799e",
             "Value": {
                 "id": "b93d268c-f0d0-4f39-a3d3-f441f444dcfa",
@@ -2636,6 +2644,14 @@
                 "id": "7a514405-b95e-43cf-87ab-6ed7d778b0f1",
                 "resourcePath": "objects\\obj_hackySack\\obj_hackySack.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a41f840d-ea1b-45a3-b992-2185e62d4a7a",
+            "Value": {
+                "id": "2ccd0277-860f-4875-970a-ddb4aed80dc5",
+                "resourcePath": "sprites\\spr_RockStrike\\spr_RockStrike.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4036,6 +4052,14 @@
                 "id": "708e6811-56a7-4228-a859-7e3e069f871e",
                 "resourcePath": "scripts\\scr_FindEdgeDirection\\scr_FindEdgeDirection.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f67eb9f7-d018-471f-ba92-84c1dbac223c",
+            "Value": {
+                "id": "dddae6bd-4fa5-4470-a608-90a5ae68c2ec",
+                "resourcePath": "objects\\obj_RockStrikeEffect\\obj_RockStrikeEffect.yy",
+                "resourceType": "GMObject"
             }
         },
         {

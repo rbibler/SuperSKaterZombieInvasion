@@ -17,5 +17,6 @@ if(killThyself) {
 	with(obj_skater) {
 		ammoOnScreen--;
 	}
+	instance_create_layer(x, y, "AMMO", obj_RockStrikeEffect);
 	instance_destroy();
 }

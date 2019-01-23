@@ -11,3 +11,4 @@ substateAnimations[0] = 0;
 currentSubstate = 0;
 currentIndex = 0;
 isDone = false;
+alternateComplete = true;
