@@ -283,7 +283,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-6",
+            "value": "-2",
             "varName": "projOffsetStandingY",
             "varType": 0
         },
@@ -339,7 +339,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-6",
+            "value": "-2",
             "varName": "projOffsetJumpingY",
             "varType": 0
         }

@@ -3,17 +3,12 @@
 
 x += xSpeed;
 y += ySpeed;
-var killThyself = false;
+var killThyself = scr_AmmoCollisionCheck();
 if(abs(x - obj_skater.x) > 1000) {
 	killThyself = true;
 }
 
-var tile = tilemap_get_at_pixel(obj_skater.collisionTiles, x, y);
-if(tile > 0) {
-	killThyself = true;
-}
-
-if(killThyself) {
+if(killThyself or destroyNext) {
 	with(obj_skater) {
 		ammoOnScreen--;
 	}

@@ -5,7 +5,7 @@ var ammo = argument0;
 
 // Only want to switch states if this is the first hit
 if(state != stateDead) {
-	if(ammo.object_index == obj_slingshotRock) {
+	if(ammo.object_index == obj_SlingshotRock) {
 		// Insta death!
 		scr_StateSwitch(s_DEAD);
 		
@@ -15,7 +15,3 @@ if(state != stateDead) {
 		scr_StateSwitch(s_HIT);
 	}
 }
-
-// Adding one more than the projectile's alivetime will cause it to be destoryed
-// on its next step event
-other.aliveCounter = other.aliveTime + 1;
