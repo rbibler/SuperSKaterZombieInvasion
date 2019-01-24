@@ -55,6 +55,7 @@ inFloorRight = 0;
 
 scr_GetCollisionTiles();
 
+
 collisionY = 0;
 collisionX = 0;
 

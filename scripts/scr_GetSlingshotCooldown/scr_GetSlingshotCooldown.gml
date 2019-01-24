@@ -1,0 +1,1 @@
+return slingshot.cooldown[currentWeapon];

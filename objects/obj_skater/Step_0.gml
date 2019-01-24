@@ -6,6 +6,9 @@
 if(newRoom) {
 	scr_NewRoom();
 }
+
+cooldown--;
+
 shouldAnimate = true;
 
 mask_index = sprite_index;
@@ -54,7 +57,7 @@ scr_StateExecute();
 if(shouldAnimate) {
 	scr_UpdateStateAnimation(currentAnimation);
 }
-
+isShooting = false;
 
 
 // We don't want the camera to follow us in certain places, so check for them!
