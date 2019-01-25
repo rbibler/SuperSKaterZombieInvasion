@@ -14,7 +14,8 @@
         "984862ff-d540-41e6-9761-f13947ad303a",
         "a33ab268-95e7-42d3-a75f-1e8dfff87a46",
         "edf6bf9f-fd93-42e5-8c9e-5a724f97f9c9",
-        "76929e61-7623-480e-b29b-cfd9d318f114"
+        "76929e61-7623-480e-b29b-cfd9d318f114",
+        "6179dbc3-bef2-4275-aa9f-5c28c3132204"
     ],
     "filterType": "GMSprite",
     "folderName": "HudElements",
