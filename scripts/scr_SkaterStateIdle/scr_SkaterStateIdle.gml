@@ -7,25 +7,27 @@
 *		- Hit
 *		- Falling
 */
-
+var boredTimer = stateVar[3];
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	//sprite_index = spr_SkaterIdle;
-	//image_index = 0;
 	scr_SetCurrentAnimation(idleAnim);
-	//jump = 0;
 	stateVar[0] = random_range(60 * 3, 60 * 6); 
 	stateVar[1] = 0;
 	stateVar[2] = false;
+	boredTimer = 0;
 	show_debug_message("IDLE");
 }
 
-scr_SkaterWeaponFire();
+boredTimer++;
+
+if(scr_SkaterWeaponFire()) {
+	boredTimer = 0;
+}
 
 // If enough time has passed to start the animation idle thing do it.
 // stateVar[0] = time in steps between idle animation cycles
 // stateVar[1] = amount of time since last animation cycle
-if(stateTimer >= 5 * room_speed) {
+if(boredTimer >= 5 * room_speed) {
 	scr_StateSwitch(s_BORED);
 	return;
 }
@@ -71,3 +73,4 @@ if(abs(xSpeed) < 0.15) {
 	//StopXMotion();
 }
 
+stateVar[3] = boredTimer;
