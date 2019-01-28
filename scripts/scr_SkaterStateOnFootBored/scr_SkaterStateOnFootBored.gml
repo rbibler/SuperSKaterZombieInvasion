@@ -93,7 +93,7 @@ if(input[UP] and !input[DOWN]) {
 	}
 }
 
-if(input[SWITCH] and !lastInput[SWITCH]) {
+if(input[TRANSITION] and !lastInput[TRANSITION]) {
 	scr_StateSwitch(s_FOOT_TO_SKATE);
 	drawOffsetX = 0;
 	return;

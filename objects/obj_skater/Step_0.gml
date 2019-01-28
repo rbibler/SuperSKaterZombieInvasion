@@ -8,7 +8,6 @@ if(newRoom) {
 }
 
 cooldown--;
-
 shouldAnimate = true;
 
 mask_index = sprite_index;
@@ -24,6 +23,7 @@ if(isImmune) {
 }
 // Get the user's input. 
 scr_SkaterInput();
+scr_CheckForWeaponSwitch();
 if(stateName != s_STAIRS and stateName != s_BOARD_SWING) {
 	if(input[RIGHT]) {
 		if(!input[LEFT] and !lastInput[LEFT]) {
@@ -38,6 +38,10 @@ if(input[DOWN]) {
 	railGrindButtonPressTimer++;
 } else {
 	railGrindButtonPressTimer = 0;
+}
+
+if(!input[SHOOT]) {
+	shootCounter = 0;
 }
 
 

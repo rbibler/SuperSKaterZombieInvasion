@@ -66,7 +66,7 @@ if(xSpeed == 0 and !input[RIGHT] and !input[LEFT]) {
 	scr_StateSwitch(s_ON_FOOT_IDLE);
 }
 
-if(input[SWITCH] and !lastInput[SWITCH]) {
+if(input[TRANSITION] and !lastInput[TRANSITION]) {
 	scr_StateSwitch(s_FOOT_TO_SKATE);
 	return;
 }

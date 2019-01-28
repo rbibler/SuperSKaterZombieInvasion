@@ -5,6 +5,9 @@
 var xPos = argument0;
 var yPos = argument1;
 
+yPos += 4;
+xPos += 71;
+
 var imageIndex = scr_GetPlayerHealthImage();
 
-scr_DisplaySpriteAtGrid(spr_healthBar, imageIndex,9, 1, 1, 1, xPos, yPos);
+draw_sprite(spr_healthBar, imageIndex, xPos, yPos);

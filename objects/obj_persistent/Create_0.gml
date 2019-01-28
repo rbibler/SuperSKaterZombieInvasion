@@ -21,7 +21,7 @@ slopeTiles[15] = 14;
 gamepad = -1;
 
 lives = 3;
-global.diamondCount = 0;
+global.diamondCount = 50;
 
 application_surface_draw_enable(false);
 

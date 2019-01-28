@@ -1,13 +1,18 @@
-#macro	UP		0
-#macro	DOWN	1
-#macro	LEFT	2
-#macro	RIGHT	3
-#macro	SELECT	4
-#macro	START	5
-#macro	SHOOT	6
-#macro	SPRINT	6
-#macro	JUMP	7
-#macro	SWITCH	8
+// Directional Input
+#macro	UP				0
+#macro	DOWN			1
+#macro	LEFT			2
+#macro	RIGHT			3
+
+// Menu Input
+#macro	SELECT			4
+#macro	START			5
+
+// Action input
+#macro	SHOOT			6
+#macro	JUMP			7
+#macro	TRANSITION		8
+#macro	WEAPON_SWITCH	9
 
 #macro s_IDLE				"IDLE"
 #macro s_BORED				"BORED"
@@ -68,6 +73,8 @@
 
 #macro HEALTH	1
 
+#macro WEAPON_COUNT	3
+
 enum ANIMATION {
 
 	NORMAL = 60 / 5,
@@ -78,6 +85,8 @@ enum WEAPONSTATES {
 	IDLE = 1,
 	FIRING = 2
 }
+
+
 
 
 

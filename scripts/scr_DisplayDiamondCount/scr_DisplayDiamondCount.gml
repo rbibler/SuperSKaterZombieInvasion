@@ -5,8 +5,9 @@
 var xPos = argument0;
 var yPos = argument1;
 
+xPos -= 105
+yPos += 21;
+
 var diamondCount = global.diamondCount;
-var ones = diamondCount mod 10;
-var tens = floor(diamondCount / 10);
-scr_DisplaySpriteAtGrid(spr_numbersBig, tens, 23, 3, 1, 1, xPos, yPos);
-scr_DisplaySpriteAtGrid(spr_numbersBig, ones, 24, 3, 1, 1, xPos, yPos);
+var index = 20 - floor((diamondCount / 100) * 20);
+draw_sprite(spr_DiamondStatusBar, index, xPos, yPos);

@@ -12,4 +12,8 @@ cooldown[STANDARD_SLINGSHOT] = 30;
 cooldown[AUTO_SLINGSHOT] = 18;
 cooldown[SPREAD_SLINGSHOT] = 30;
 
+diamondExpense[STANDARD_SLINGSHOT] = 0;
+diamondExpense[AUTO_SLINGSHOT] = 5;
+diamondExpense[SPREAD_SLINGSHOT] = 6;
+
 xSpeed = 8;

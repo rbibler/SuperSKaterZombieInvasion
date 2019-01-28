@@ -61,7 +61,7 @@ if(grounded) {
 	scr_StateSwitch(s_ON_FOOT_IDLE);
 }
 
-if(input[SWITCH] and !lastInput[SWITCH]) {
+if(input[TRANSITION] and !lastInput[TRANSITION]) {
 	scr_StateSwitch(s_FOOT_TO_SKATE);
 	return;
 }

@@ -141,7 +141,7 @@ if(input[UP] and !input[DOWN]) {
 }
 
 // Does the skater want to get on his board?
-if(input[SWITCH] and !lastInput[SWITCH]) {
+if(input[TRANSITION] and !lastInput[TRANSITION]) {
 	scr_StateSwitch(s_FOOT_TO_SKATE);
 	drawOffsetX = 0;
 	return;
