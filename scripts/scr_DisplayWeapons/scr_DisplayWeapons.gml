@@ -3,7 +3,7 @@
 var xPos = argument0;
 var yPos = argument1;
 
-xPos -= 103;
+xPos -= 90;
 yPos++;
 
 

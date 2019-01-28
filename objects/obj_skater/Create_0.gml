@@ -8,6 +8,7 @@ ignoreInput = false;
 hasWeaponImmunity = false;
 num = 0;
 newRoom = false;
+shootCounter = 0;
 /// @description Insert description here
 // You can write your code in this editor
 
@@ -38,7 +39,8 @@ input[4] = SELECT;
 input[5] = START;
 input[6] = SHOOT;
 input[7] = JUMP;
-input[8] = SWITCH;
+input[8] = TRANSITION;
+input[9] = WEAPON_SWITCH;
 
 inputDownTime[UP] = 0;
 inputDownTime[DOWN] = 0;
@@ -56,7 +58,7 @@ tileColliderX = 0;
 tileColliderY = 0;
 
 // Initialize an array to hold the input from the last frame
-for(var i = 0; i < 9; i++) {
+for(var i = 0; i < 10; i++) {
 	lastInput[i] = input[i];
 }
 

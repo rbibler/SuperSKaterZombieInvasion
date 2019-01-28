@@ -1,5 +1,5 @@
 // Determine if skater is sprinting or not
-var speedThisFrame = input[SPRINT] ? sprintSpeedX : speedX;
+var speedThisFrame = input[SHOOT] ? sprintSpeedX : speedX;
 
 if(input[LEFT]) {
 	if(!input[RIGHT] and !input[DOWN]) {

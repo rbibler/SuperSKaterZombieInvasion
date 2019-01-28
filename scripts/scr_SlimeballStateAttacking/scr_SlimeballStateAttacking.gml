@@ -1,6 +1,6 @@
 // SETUP NEW STATE
 if(stateNew) {
-	input[SPRINT] = 1;
+	input[SHOOT] = 1;
 	moveDirOnRestart = sign(xSpeed);
 }
 

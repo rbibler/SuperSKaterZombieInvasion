@@ -1,5 +1,12 @@
 /// Script to handle the firing of the weapon
 
+if(currentWeapon == AUTO_SLINGSHOT) {
+	if(shootCounter > 0 and shootCounter mod 2 == 0) {
+		scr_UpdateDiamondCount(-obj_Slingshot.diamondExpense[currentWeapon]);
+	}
+} else {
+	scr_UpdateDiamondCount(-obj_Slingshot.diamondExpense[currentWeapon]);
+}
 ammoOnScreen++;
 var xOffset = 0;
 var yOffset = 0;

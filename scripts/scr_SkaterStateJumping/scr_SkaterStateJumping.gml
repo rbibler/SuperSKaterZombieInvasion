@@ -80,7 +80,7 @@ if(jump == 1 and (ySpeed > 0 or (!getAir and !input[JUMP]))){
 }
 
 
-if(input[SWITCH] and !lastInput[SWITCH]) {
+if(input[TRANSITION] and !lastInput[TRANSITION]) {
 	scr_StateSwitch(s_SKATE_TO_FOOT);
 	return;
 }

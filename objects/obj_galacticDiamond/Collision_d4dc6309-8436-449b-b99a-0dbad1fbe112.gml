@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.diamondCount++;
+scr_UpdateDiamondCount(5);
 score += 100;
-if(global.diamondCount == 100) {
+if(score mod 10000 == 0) {
 	lives++;
-	global.diamondCount = 0;
 }
+
 instance_destroy();

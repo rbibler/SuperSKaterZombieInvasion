@@ -58,7 +58,7 @@ if(input[JUMP]) {
 	} 
 } 
 
-if(input[SWITCH] and !lastInput[SWITCH]) {
+if(input[TRANSITION] and !lastInput[TRANSITION]) {
 	scr_StateSwitch(s_FOOT_TO_SKATE);
 	return;
 }

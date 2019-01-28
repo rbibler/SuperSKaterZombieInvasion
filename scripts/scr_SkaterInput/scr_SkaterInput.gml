@@ -17,7 +17,8 @@ if(obj_persistent.gamepad != -1) {
 		other.input[START] = gamepad_button_check(gamepad, gp_start);
 		other.input[SHOOT] = gamepad_button_check(gamepad, gp_face3);
 		other.input[JUMP] = gamepad_button_check(gamepad, gp_face1);
-		other.input[SWITCH] = gamepad_button_check(gamepad, gp_face4);
+		other.input[TRANSITION] = gamepad_button_check(gamepad, gp_face4);
+		other.input[WEAPON_SWITCH] = gamepad_button_check(gamepad, gp_face2);
 	}
 // If no gamepad, use the keyboard
 } else {
@@ -29,7 +30,8 @@ if(obj_persistent.gamepad != -1) {
 	input[START] = keyboard_check(vk_enter);
 	input[SHOOT] = keyboard_check(ord("A"));
 	input[JUMP] = keyboard_check(ord("S"));
-	input[SWITCH] = keyboard_check(ord("F"));
+	input[TRANSITION] = keyboard_check(ord("F"));
+	input[WEAPON_SWITCH] = keyboard_check(vk_tab);
 }
 
 if(!input[SHOOT] and lastInput[SHOOT]) {
