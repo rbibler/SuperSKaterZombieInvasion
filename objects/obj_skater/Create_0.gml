@@ -66,7 +66,7 @@ for(var i = 0; i < 10; i++) {
 // Reference to the weapon
 slingshot = instance_create_layer(0, 0, "WEAPONS", obj_Slingshot);
 currentWeapon = SPREAD_SLINGSHOT;
-currentPowerup = noone;
+currentPowerup = PB_SHIELD;
 weaponAnimCounter = 0;
 ammoOnScreen = 0;
 maxAmmoOnScreen = slingshot.maxAmmo[currentWeapon];
@@ -188,9 +188,15 @@ scr_AddSpriteToSubstateAnimation(slingshotSkate, spr_SkaterSkateSlingshot, 0);
 skateAnim.substateAnimations[2] = slingshotSkate;
 slingshotSkate.persistent = true;
 
+shieldIdle = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
+scr_AddSpriteToSubstateAnimation(shieldIdle, spr_SkaterShieldIdleOne, 0);
+scr_AddSpriteToSubstateAnimation(shieldIdle, spr_SkaterShieldIdleTwo, 1);
+shieldIdle.loop = true;
+idleAnim.substateAnimations[3] = shieldIdle;
+
 currentAnimation = idleAnim;
 
-
+shielded = false;
 isImmune = false;
 immuneStart = 0;
 drawToggle = true;

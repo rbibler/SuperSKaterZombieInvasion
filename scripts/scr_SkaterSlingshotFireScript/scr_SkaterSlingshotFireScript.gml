@@ -52,8 +52,6 @@ if(currentWeapon == SPREAD_SLINGSHOT) {
 	ammo.sprite_index = spr_slingshotRock;
 }
 
-with(currentAnimation) {
-	currentSubstate = 2;
-	substateAnimations[currentSubstate].currentIndex = 0;
-}
+scr_SetCurrentSubstateAnimation(2, true);
+
 

@@ -7,6 +7,10 @@ if(stateName == s_HIT or stateName == s_DEAD or other.stateName == s_BOARD_SWING
 	return;
 }
 
+if(scr_CheckForShieldProtection()) {
+	return;
+}
+
 with(other) {
 	scr_SkaterHit(other, 0);
 }

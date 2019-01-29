@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "1d1e251f-7c2f-4e5c-bacb-a76519d19e7d",
+            "Value": {
+                "id": "6f01cf84-ceaf-4bb2-872e-6a1f08e2b5e2",
+                "resourcePath": "scripts\\scr_SetCurrentSubstateAnimation\\scr_SetCurrentSubstateAnimation.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1da072bb-995d-413a-b5c4-73b9e349254f",
             "Value": {
                 "id": "2db67f3f-f47c-42fa-baa5-91eb4dbfb63e",
@@ -1343,6 +1351,14 @@
             }
         },
         {
+            "Key": "5186b508-5e94-422a-9ea0-1df69065fdb6",
+            "Value": {
+                "id": "b4d8399c-7a92-4593-967a-27463438428f",
+                "resourcePath": "sprites\\spr_SkaterShieldIdleTwo\\spr_SkaterShieldIdleTwo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5192cb27-cf7f-47d2-891c-9a44554fac03",
             "Value": {
                 "id": "98f626ce-a188-4087-b8ee-8c00264cf9e3",
@@ -2047,6 +2063,14 @@
             }
         },
         {
+            "Key": "7b6e56f1-8fdc-4038-8a0d-54eb25966720",
+            "Value": {
+                "id": "8fd65020-b8f7-40eb-ba60-8d99af690f37",
+                "resourcePath": "scripts\\scr_CheckForShieldProtection\\scr_CheckForShieldProtection.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7b7662da-dc88-464b-bac8-01fc0df4bc2c",
             "Value": {
                 "id": "664ce14d-e3b4-486f-a170-afea1ec16d4a",
@@ -2556,6 +2580,14 @@
                 "id": "48c47991-7338-4ac9-883e-9d7c71a2460a",
                 "resourcePath": "views\\9bfe4469-db1f-445e-80ec-aba1d5159ad9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9c61520d-660b-4227-91ab-b0fdf5ce9b21",
+            "Value": {
+                "id": "f0fd0872-799f-41e7-912f-60705fa76586",
+                "resourcePath": "scripts\\scr_SkaterMacros\\scr_SkaterMacros.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3346,7 +3378,7 @@
             "Key": "c7dbf68e-14ee-4099-bbff-0a4ea756e3c8",
             "Value": {
                 "id": "2ecf1f58-3640-4ca3-8335-7ac4b63a7967",
-                "resourcePath": "sprites\\spr_SkaterShieldIdle\\spr_SkaterShieldIdle.yy",
+                "resourcePath": "sprites\\spr_SkaterShieldIdleOne\\spr_SkaterShieldIdleOne.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4328,6 +4360,8 @@
         "9528d29f-88b8-4202-85b9-a60b0b6889a5",
         "2897d86b-c026-4394-8c37-8b4d7cd510ec",
         "e1f2cb35-17c9-4154-aa2e-d6d2de94c39b",
+        "9c61520d-660b-4227-91ab-b0fdf5ce9b21",
+        "7b6e56f1-8fdc-4038-8a0d-54eb25966720",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",
@@ -4461,6 +4495,7 @@
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",
         "bafb6114-6955-4ba7-9b57-6f5183c4b531",
         "e4c90f9f-6926-45ee-8c9f-75a8d949767b",
+        "1d1e251f-7c2f-4e5c-bacb-a76519d19e7d",
         "4c39cd0f-8023-4b40-b128-976ecd31044b",
         "6f600f77-8cb9-481d-aa3b-a3595dd988bf",
         "af191699-7cb3-4dc6-b75a-525cd41d66de",
