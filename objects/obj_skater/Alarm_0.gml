@@ -3,5 +3,7 @@
 
 shielded = false;
 if(ds_map_exists(stateAnimMap, stateName)) {
+	var currentAnimIndex  = currentAnimation.currentIndex;
 	scr_SetCurrentAnimation(ds_map_find_value(stateAnimMap, stateName));
+	scr_SetCurrentAnimationIndex(currentAnimation, currentAnimIndex);
 }

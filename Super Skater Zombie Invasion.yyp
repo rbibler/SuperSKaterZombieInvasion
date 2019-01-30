@@ -1207,6 +1207,14 @@
             }
         },
         {
+            "Key": "470f3af4-2d91-44f6-a622-f72b3517ec94",
+            "Value": {
+                "id": "afdb87a0-879c-4012-991d-627aea94dd16",
+                "resourcePath": "scripts\\scr_UpdateSkaterAnimation\\scr_UpdateSkaterAnimation.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "482ea287-633b-4cc3-b708-d90e6a9b73b2",
             "Value": {
                 "id": "10027801-2c88-47b0-9a4d-4b10d06710e7",
@@ -2324,6 +2332,14 @@
                 "id": "528007ef-84aa-44b1-b8ca-97b6ffe906d2",
                 "resourcePath": "sprites\\spr_Sparkle\\spr_Sparkle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8c4210a6-6aaa-4e48-9942-2cff793651b5",
+            "Value": {
+                "id": "1ce5a296-1551-48d0-836b-573328b55bc2",
+                "resourcePath": "scripts\\scr_SetCurrentAnimationIndex\\scr_SetCurrentAnimationIndex.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4362,6 +4378,7 @@
         "e1f2cb35-17c9-4154-aa2e-d6d2de94c39b",
         "9c61520d-660b-4227-91ab-b0fdf5ce9b21",
         "7b6e56f1-8fdc-4038-8a0d-54eb25966720",
+        "470f3af4-2d91-44f6-a622-f72b3517ec94",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",
@@ -4500,7 +4517,8 @@
         "6f600f77-8cb9-481d-aa3b-a3595dd988bf",
         "af191699-7cb3-4dc6-b75a-525cd41d66de",
         "6b4c0083-32d2-40fb-ae40-7f7752af7cd0",
-        "2ac690ff-f837-4881-9b51-823320b833ec"
+        "2ac690ff-f837-4881-9b51-823320b833ec",
+        "8c4210a6-6aaa-4e48-9942-2cff793651b5"
     ],
     "tutorial": ""
 }

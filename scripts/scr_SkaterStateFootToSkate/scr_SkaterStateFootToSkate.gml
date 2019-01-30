@@ -11,7 +11,7 @@
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
 	lastAnimIndex = image_index;
-	scr_SetCurrentAnimation(footToSkateAnim);
+	scr_UpdateSkaterAnimation(footToSkateAnim);
 	canShoot = true;
 	onFoot = false;
 }

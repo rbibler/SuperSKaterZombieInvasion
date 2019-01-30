@@ -6,7 +6,7 @@
 
 // Reset animation when entering state
 if(stateNew) {
-	scr_SetCurrentAnimation(onFootFallAnim);
+	scr_UpdateSkaterAnimation(onFootFallAnim);
 	canSplash = true;
 	canShoot = true;
 	drawOffsetX = 0;

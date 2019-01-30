@@ -139,14 +139,28 @@ onFootHurtAnim = scr_RegisterStateAnimation(spr_SkaterOnFootHurt, FAST_ANIM_SPEE
 // Shield animations
 shieldIdleSkate = scr_RegisterStateAnimation(spr_SkaterShieldIdle, FAST_ANIM_SPEED, true, noone, "SHIELD_IDLE_SKATE", sprite_get_number(spr_SkaterShieldIdle));
 shieldSkate = scr_RegisterStateAnimation(spr_SkaterShieldSkate, NORMAL_ANIM_SPEED, true, noone, "SHIELD_SKATE", sprite_get_number(spr_SkaterShieldSkate));
+shieldJumpSkate = scr_RegisterStateAnimation(spr_SkaterShieldIdle, FAST_ANIM_SPEED, true, noone, "SHIELD_IDLE_SKATE", sprite_get_number(spr_SkaterShieldIdle));
+shieldCrouchSkate = scr_RegisterStateAnimation(spr_SkaterShieldIdle, FAST_ANIM_SPEED, true, noone, "SHIELD_IDLE_SKATE", sprite_get_number(spr_SkaterShieldIdle));
+
+
+
 
 shieldAnimStateMap = ds_map_create();
 ds_map_add(shieldAnimStateMap, s_IDLE, shieldIdleSkate);
 ds_map_add(shieldAnimStateMap, s_MOVING, shieldSkate);
+ds_map_add(shieldAnimStateMap, s_JUMPING, shieldJumpSkate);
+ds_map_add(shieldAnimStateMap, s_CROUCHING, shieldCrouchSkate);
+ds_map_add(shieldAnimStateMap, s_FALLING, shieldJumpSkate);
+ds_map_add(shieldAnimStateMap, s_ROLLING, shieldIdleSkate);
 
 stateAnimMap = ds_map_create();
 ds_map_add(stateAnimMap, s_IDLE, idleAnim);
 ds_map_add(stateAnimMap, s_MOVING, skateAnim);
+ds_map_add(stateAnimMap, s_JUMPING, skateAnim);
+ds_map_add(stateAnimMap, s_CROUCHING, skateAnim);
+ds_map_add(stateAnimMap, s_FALLING, skateAnim);
+ds_map_add(stateAnimMap, s_ROLLING, idleAnim);
+
 
 idleAnim.persistent = true;
 skateAnim.persistent = true;

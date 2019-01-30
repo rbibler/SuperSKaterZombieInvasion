@@ -9,7 +9,7 @@
 if(stateNew) {
 	//sprite_index = spr_SkaterCrouch;
 	//image_index = 0;
-	scr_SetCurrentAnimation(onFootCrouchAnim);
+	scr_UpdateSkaterAnimation(onFootCrouchAnim);
 }
 
 scr_GeneralCheckSlopeImpetus();
