@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "06ea421e-3db4-4376-b673-4fbb1e5ccd95",
+            "Value": {
+                "id": "2232b99e-0355-4e52-ac74-69ee1090e42a",
+                "resourcePath": "sprites\\spr_SkaterShieldSkate\\spr_SkaterShieldSkate.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "07077631-e50a-4c9b-9cd6-b9752b06a64d",
             "Value": {
                 "id": "27ad1a2b-d861-49bc-8fb2-ecb738d4add5",
@@ -1348,14 +1356,6 @@
                 "id": "52904b4e-97bc-40b8-9eab-7ef893100756",
                 "resourcePath": "views\\512c89d8-dbb2-4316-ae46-e8370e301b1f.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "5186b508-5e94-422a-9ea0-1df69065fdb6",
-            "Value": {
-                "id": "b4d8399c-7a92-4593-967a-27463438428f",
-                "resourcePath": "sprites\\spr_SkaterShieldIdleTwo\\spr_SkaterShieldIdleTwo.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -3378,7 +3378,7 @@
             "Key": "c7dbf68e-14ee-4099-bbff-0a4ea756e3c8",
             "Value": {
                 "id": "2ecf1f58-3640-4ca3-8335-7ac4b63a7967",
-                "resourcePath": "sprites\\spr_SkaterShieldIdleOne\\spr_SkaterShieldIdleOne.yy",
+                "resourcePath": "sprites\\spr_SkaterShieldIdle\\spr_SkaterShieldIdle.yy",
                 "resourceType": "GMSprite"
             }
         },

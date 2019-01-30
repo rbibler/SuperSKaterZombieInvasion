@@ -2,4 +2,6 @@
 /// no shield and set "shielded" flag to false;
 
 shielded = false;
-scr_SetCurrentSubstateAnimation(0, false);
+if(ds_map_exists(stateAnimMap, stateName)) {
+	scr_SetCurrentAnimation(ds_map_find_value(stateAnimMap, stateName));
+}

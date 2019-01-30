@@ -135,6 +135,19 @@ onFootCrouchAnim = scr_RegisterStateAnimation(spr_SkaterOnFootCrouch, FAST_ANIM_
 onFootFallAnim = scr_RegisterStateAnimation(spr_SkaterOnFootFalling, FAST_ANIM_SPEED, true, noone, "FALLING", sprite_get_number(spr_SkaterOnFootFalling));
 onFootHurtAnim = scr_RegisterStateAnimation(spr_SkaterOnFootHurt, FAST_ANIM_SPEED, true, noone, "HURT", sprite_get_number(spr_SkaterOnFootHurt));
 
+
+// Shield animations
+shieldIdleSkate = scr_RegisterStateAnimation(spr_SkaterShieldIdle, FAST_ANIM_SPEED, true, noone, "SHIELD_IDLE_SKATE", sprite_get_number(spr_SkaterShieldIdle));
+shieldSkate = scr_RegisterStateAnimation(spr_SkaterShieldSkate, NORMAL_ANIM_SPEED, true, noone, "SHIELD_SKATE", sprite_get_number(spr_SkaterShieldSkate));
+
+shieldAnimStateMap = ds_map_create();
+ds_map_add(shieldAnimStateMap, s_IDLE, shieldIdleSkate);
+ds_map_add(shieldAnimStateMap, s_MOVING, shieldSkate);
+
+stateAnimMap = ds_map_create();
+ds_map_add(stateAnimMap, s_IDLE, idleAnim);
+ds_map_add(stateAnimMap, s_MOVING, skateAnim);
+
 idleAnim.persistent = true;
 skateAnim.persistent = true;
 jumpAnim.persistent = true;
@@ -188,11 +201,6 @@ scr_AddSpriteToSubstateAnimation(slingshotSkate, spr_SkaterSkateSlingshot, 0);
 skateAnim.substateAnimations[2] = slingshotSkate;
 slingshotSkate.persistent = true;
 
-shieldIdle = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
-scr_AddSpriteToSubstateAnimation(shieldIdle, spr_SkaterShieldIdleOne, 0);
-scr_AddSpriteToSubstateAnimation(shieldIdle, spr_SkaterShieldIdleTwo, 1);
-shieldIdle.loop = true;
-idleAnim.substateAnimations[3] = shieldIdle;
 
 currentAnimation = idleAnim;
 
