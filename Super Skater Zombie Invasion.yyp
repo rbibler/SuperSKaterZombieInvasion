@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "0c00033a-5de0-43cf-90e8-682c415604df",
+            "Value": {
+                "id": "22ff6d6f-568d-4457-abd7-9bd0e1c86753",
+                "resourcePath": "sprites\\spr_SkaterShieldJump\\spr_SkaterShieldJump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c0fb9c8-31a7-44b5-b1ac-41ae19ed19b1",
             "Value": {
                 "id": "21006554-8233-4388-97aa-e0899d371ebf",
@@ -3164,6 +3172,14 @@
                 "id": "516aea39-5f37-4e56-ba0d-31667a9018ac",
                 "resourcePath": "views\\b9b9c2ae-d73a-45b2-9315-2be44097656d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ba723526-c119-4819-b6d7-eaa748447004",
+            "Value": {
+                "id": "dc3b2f99-d0f8-4cea-8d7c-c663a22828d3",
+                "resourcePath": "sprites\\spr_SkaterShieldCrouch\\spr_SkaterShieldCrouch.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

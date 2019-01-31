@@ -137,10 +137,10 @@ onFootHurtAnim = scr_RegisterStateAnimation(spr_SkaterOnFootHurt, FAST_ANIM_SPEE
 
 
 // Shield animations
-shieldIdleSkate = scr_RegisterStateAnimation(spr_SkaterShieldIdle, FAST_ANIM_SPEED, true, noone, "SHIELD_IDLE_SKATE", sprite_get_number(spr_SkaterShieldIdle));
+shieldIdleSkate = scr_RegisterStateAnimation(spr_SkaterShieldIdle, NORMAL_ANIM_SPEED, true, noone, "SHIELD_IDLE_SKATE", sprite_get_number(spr_SkaterShieldIdle));
 shieldSkate = scr_RegisterStateAnimation(spr_SkaterShieldSkate, NORMAL_ANIM_SPEED, true, noone, "SHIELD_SKATE", sprite_get_number(spr_SkaterShieldSkate));
-shieldJumpSkate = scr_RegisterStateAnimation(spr_SkaterShieldIdle, FAST_ANIM_SPEED, true, noone, "SHIELD_IDLE_SKATE", sprite_get_number(spr_SkaterShieldIdle));
-shieldCrouchSkate = scr_RegisterStateAnimation(spr_SkaterShieldIdle, FAST_ANIM_SPEED, true, noone, "SHIELD_IDLE_SKATE", sprite_get_number(spr_SkaterShieldIdle));
+shieldJumpSkate = scr_RegisterStateAnimation(spr_SkaterShieldJump, NORMAL_ANIM_SPEED, true, noone, "SHIELD_IDLE_SKATE", sprite_get_number(spr_SkaterShieldJump));
+shieldCrouchSkate = scr_RegisterStateAnimation(spr_SkaterShieldCrouch, NORMAL_ANIM_SPEED, true, noone, "SHIELD_IDLE_SKATE", sprite_get_number(spr_SkaterShieldCrouch));
 
 
 
