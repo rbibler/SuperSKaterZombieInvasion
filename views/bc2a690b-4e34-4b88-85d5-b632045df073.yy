@@ -11,7 +11,8 @@
         "e5e7fc6d-cfa8-4c6b-86c1-0ca15bd0bda7",
         "c437f67b-cd94-4167-9ef6-b128785b26e4",
         "23179eb7-9da7-4089-a3e4-012070d33289",
-        "ebfc1fa9-bbee-4aba-ab5c-8fe808e5c113"
+        "ebfc1fa9-bbee-4aba-ab5c-8fe808e5c113",
+        "66a57d66-da9b-4433-80a6-3b632c6388ca"
     ],
     "filterType": "GMScript",
     "folderName": "ExplodingSlimeballScripts",

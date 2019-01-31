@@ -1,8 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-with(other) {
+if(!scr_CheckForShieldProtection() and !immume) {
 	scr_SkaterHit(other, 0);
 }
 
-instance_destroy();
+with(other) {
+	script_execute(struckSkaterScript);
+}

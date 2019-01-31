@@ -15,16 +15,6 @@
             "m_owner": "312d0ef5-a0f5-42a1-bccb-435dc6e027ae"
         },
         {
-            "id": "2cbbaec3-f6da-46e5-8c4e-7c2c92728e3d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "312d0ef5-a0f5-42a1-bccb-435dc6e027ae"
-        },
-        {
             "id": "c19d2979-4988-42f2-9c75-4ad3f4d0fdf6",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -54,9 +44,17 @@
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
             "propertyId": "26abc641-5803-47dd-828b-be5572c23118",
             "value": "0.15"
+        },
+        {
+            "id": "36de8de0-39cb-42c4-9deb-e43e3734f36d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "07ec105c-dcf1-4207-8a4b-daf59ab88154",
+            "propertyId": "5e20161a-a3e4-4f2c-b390-719bd19eaac0",
+            "value": "scr_ExplodingSlimeballProjectileStruckSkater"
         }
     ],
-    "parentObjectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
+    "parentObjectId": "07ec105c-dcf1-4207-8a4b-daf59ab88154",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

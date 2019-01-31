@@ -35,16 +35,6 @@
             "m_owner": "3d7b2056-82b8-4245-adf2-020b7fa8bb32"
         },
         {
-            "id": "abc7ea8a-977b-4905-bb62-e88d9803572a",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "3d7b2056-82b8-4245-adf2-020b7fa8bb32"
-        },
-        {
             "id": "7262557e-0ca7-4659-9dd4-ebd4b2b5852e",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -375,6 +365,34 @@
             "value": "0",
             "varName": "slopeSpeedX",
             "varType": 0
+        },
+        {
+            "id": "438d8e24-61ba-4d13-b180-a9e8f32f72d6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "scr_EmptyAssScript",
+            "varName": "collidedWithSkaterScript",
+            "varType": 5
+        },
+        {
+            "id": "6cdef82c-f9ec-4704-9d9c-82f57a95bfed",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "scr_EmptyAssScript",
+            "varName": "hitBySkaterShieldScript",
+            "varType": 5
         }
     ],
     "solid": false,

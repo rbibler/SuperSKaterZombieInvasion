@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "07ec105c-dcf1-4207-8a4b-daf59ab88154",
+            "Value": {
+                "id": "dfc5b66d-4361-443a-99cf-7235af1d6e58",
+                "resourcePath": "objects\\obj_enemyProjectile\\obj_enemyProjectile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "08e39931-4d25-4883-b362-ac5b335a9808",
             "Value": {
                 "id": "d5795b60-b5e1-4fb7-b2ae-0e6bb57d5325",
@@ -1699,6 +1707,14 @@
             "Value": {
                 "id": "76b9f2ba-40f1-410b-8e81-f09ecb6eb7d8",
                 "resourcePath": "scripts\\scr_StopXMotion\\scr_StopXMotion.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "66a57d66-da9b-4433-80a6-3b632c6388ca",
+            "Value": {
+                "id": "cf3792ef-823d-47f2-a3e6-78022c65769c",
+                "resourcePath": "scripts\\scr_ExplodingSlimeballProjectileStruckSkater\\scr_ExplodingSlimeballProjectileStruckSkater.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3599,6 +3615,14 @@
             }
         },
         {
+            "Key": "d62b7ca4-a8f4-45fc-aed3-8fe206486bf5",
+            "Value": {
+                "id": "9e44d79b-d710-472a-a0da-9c7d94ad21f7",
+                "resourcePath": "scripts\\scr_CanEnemyHurtSkater\\scr_CanEnemyHurtSkater.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d6b1c9da-e78c-4869-bac2-aa627bc93fa1",
             "Value": {
                 "id": "c9b3640f-953c-4fe2-a1ab-e1e75243277f",
@@ -4379,6 +4403,7 @@
         "9c61520d-660b-4227-91ab-b0fdf5ce9b21",
         "7b6e56f1-8fdc-4038-8a0d-54eb25966720",
         "470f3af4-2d91-44f6-a622-f72b3517ec94",
+        "d62b7ca4-a8f4-45fc-aed3-8fe206486bf5",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",
@@ -4452,6 +4477,7 @@
         "c437f67b-cd94-4167-9ef6-b128785b26e4",
         "23179eb7-9da7-4089-a3e4-012070d33289",
         "ebfc1fa9-bbee-4aba-ab5c-8fe808e5c113",
+        "66a57d66-da9b-4433-80a6-3b632c6388ca",
         "2c3277d4-be3f-4e62-88ad-322765305ca3",
         "6f7dc870-6862-4328-93cc-448c040e0f5d",
         "18393c12-b02f-4f70-a9d0-ef93470f2364",
