@@ -4,12 +4,5 @@
 
 var animationToSwitchTo = argument0;
 
-if(shielded) {
-	if(ds_map_exists(shieldAnimStateMap, stateName)) {
-		scr_SetCurrentAnimation(ds_map_find_value(shieldAnimStateMap, stateName));
-	} else {
-		scr_SetCurrentAnimation(animationToSwitchTo);
-	}
-} else {
-	scr_SetCurrentAnimation(animationToSwitchTo);
-}
+
+scr_SetCurrentAnimation(animationToSwitchTo);

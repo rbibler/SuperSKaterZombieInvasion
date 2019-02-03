@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(!scr_CheckForShieldProtection() and !immume) {
+if(!scr_CheckForShieldProtection(other) and !immume) {
 	scr_SkaterHit(other, 0);
 }
 

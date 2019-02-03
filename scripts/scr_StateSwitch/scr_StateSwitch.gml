@@ -20,16 +20,19 @@ if(ignoreSwitch) {
 if (is_real(argument[0])) { 
 //you passed a specific script, set it as our next state.
   stateNext = argument[0];
+  lastState = stateName;
   stateName = "Unknown (Use the name to switch next time)";
 }
 else {   
 	//you passed the name of a state, let's try and find it.
   if (ds_map_exists(stateMap , argument[0])) {
     stateNext = ds_map_find_value(stateMap, argument[0]);
+	lastState = stateName;
     stateName = argument[0]; 
   }
   else {
     stateNext = ds_map_find_first(stateMap);
+	lastState = stateName;
     stateName = "Unknown (Tried to switch to a non-existant state)";
   }
 }

@@ -15,7 +15,6 @@ if(stateNew) {
 	stateVar[1] = 0;
 	stateVar[2] = false;
 	boredTimer = 0;
-	show_debug_message("IDLE");
 }
 
 boredTimer++;

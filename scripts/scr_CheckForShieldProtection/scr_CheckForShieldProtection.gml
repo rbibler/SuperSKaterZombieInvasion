@@ -1,16 +1,31 @@
+/// This is a script that helps the skater determine if he should put up his shield
+/// @arg attacker
+
+var attacker = argument0;
+
 with(obj_skater) {
-	if(shielded) {
+	if(shielded or stateName == s_ON_FOOT_SHIELD) {
 		return true;
 	}
 	if(currentPowerup == PB_SHIELD and global.diamondCount > 0) {
+		scr_SetFacingSwitchEnable(false);
 		scr_UpdateDiamondCount(-pbShieldCost);
-		var currentAnimIndex  = currentAnimation.currentIndex;
-		if(ds_map_exists(shieldAnimStateMap, stateName)) {
-			scr_SetCurrentAnimation(ds_map_find_value(shieldAnimStateMap, stateName));
-			scr_SetCurrentAnimationIndex(currentAnimation, currentAnimIndex);
+		if(!grounded) {
+			if(scr_IsSkateState(stateName)) {
+				scr_StateSwitch(s_JUMP_SHIELD);
+			} else {
+				scr_StateSwitch(s_ON_FOOT_JUMP_SHIELD);
+			}
+		} else {
+			scr_StateSwitch(s_ON_FOOT_SHIELD);
 		}
+		currentAnimation.isDone = false;
 		shielded = true;
-		alarm[0] = 1 * room_speed;
+		if(attacker.x < x) {
+			facing = -1;
+		} else if(attacker.x > x) {
+			facing = 1;
+		}
 		return true;
 	}
 }

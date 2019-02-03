@@ -6,14 +6,14 @@
 if(newRoom) {
 	scr_NewRoom();
 }
-
+frameTimer++;
 cooldown--;
 shouldAnimate = true;
 
 mask_index = sprite_index;
 
 verticalMovementRun = false;
-frameTimer++;
+
 jumpInputBuffer--;
 
 if(isImmune) {
@@ -24,7 +24,7 @@ if(isImmune) {
 // Get the user's input. 
 scr_SkaterInput();
 scr_CheckForWeaponSwitch();
-if(stateName != s_STAIRS and stateName != s_BOARD_SWING) {
+if(facingEnabled) {
 	if(input[RIGHT]) {
 		if(!input[LEFT] and !lastInput[LEFT]) {
 			facing = 1;
