@@ -14,6 +14,7 @@ switch(stateToCheck) {
 	case s_FALLING:
 	case s_ROLLING:		
 	case s_BOUNCING:
+	case s_JUMP_SHIELD:
 		return true;
 	default:
 		return false;

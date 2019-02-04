@@ -9,6 +9,7 @@ if(stateNew) {
 	scr_StopXMotion();
 	scr_StopYMotion();
 	wasSkating = scr_IsSkateState(lastState);
+	shielded = true;
 }
 
 if(currentAnimation.isDone) {

@@ -1,5 +1,6 @@
 if(stateNew) {
 	scr_SetCurrentAnimation(onFootJumpShieldAnim);
+	shielded = true;
 }
 
 // Check how fast the skater should be moving

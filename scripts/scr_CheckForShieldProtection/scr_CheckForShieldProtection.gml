@@ -8,7 +8,9 @@ with(obj_skater) {
 		return true;
 	}
 	if(currentPowerup == PB_SHIELD and global.diamondCount > 0) {
+		show_debug_message("Shield");
 		scr_SetFacingSwitchEnable(false);
+		shielded = true;
 		scr_UpdateDiamondCount(-pbShieldCost);
 		if(!grounded) {
 			if(scr_IsSkateState(stateName)) {
@@ -19,8 +21,8 @@ with(obj_skater) {
 		} else {
 			scr_StateSwitch(s_ON_FOOT_SHIELD);
 		}
+		ignoreSwitch = true;
 		currentAnimation.isDone = false;
-		shielded = true;
 		if(attacker.x < x) {
 			facing = -1;
 		} else if(attacker.x > x) {
