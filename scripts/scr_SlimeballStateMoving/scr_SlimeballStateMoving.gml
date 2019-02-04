@@ -14,6 +14,7 @@ if(stateNew) {
 		input[LEFT] = 1;
 		input[RIGHT] = 0;
 	}
+	input[SHOOT] = 0;
 }
 
 // UPDATE MOVEMENT AND COLLISIONS
@@ -38,12 +39,14 @@ if(!grounded) {
 }
 
 // To Attacking: When skater is within range and the slimeball is facing him
-var skaterDistance = abs(x - obj_skater.x);
-if(skaterDistance < attackThreshold) {
-	if((obj_skater.x < x and xSpeed < 0) or (obj_skater.x > x and xSpeed > 0)) {
-		scr_StateSwitch(s_ATTACKING);
-	}
-}
+//var skaterDistance = abs(x - obj_skater.x);
+//if(skaterDistance < attackThreshold) {
+	//if((obj_skater.x < x and xSpeed < 0) or (obj_skater.x > x and xSpeed > 0)) {
+		if(scr_ShouldChaseSkater(false)) {
+			scr_StateSwitch(s_ATTACKING);
+		}
+	//}
+//}
 
 // To Jumping: When enough time has passed since last jump
 if(stateTimer - lastJumpTime >= (jumpIntervalInSeconds * room_speed)) {

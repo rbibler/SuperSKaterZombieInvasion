@@ -1,3 +1,4 @@
+
 var timeRestriction = argument0;
 
 var dist = x - obj_skater.x;

@@ -2943,6 +2943,14 @@
             }
         },
         {
+            "Key": "ab5b5cdb-e631-4418-aaf2-04520cf1fbde",
+            "Value": {
+                "id": "0ae63833-e696-4108-8c89-73aec8d6f4ce",
+                "resourcePath": "scripts\\scr_TurnAround\\scr_TurnAround.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ac06f7de-f96b-45a7-bdec-d9c68ee6a176",
             "Value": {
                 "id": "ce6b3626-932f-4012-b4e2-7c5f62abb1fd",
@@ -2971,6 +2979,14 @@
             "Value": {
                 "id": "ca76c3d3-5503-4af5-9cd1-4e9beee17c65",
                 "resourcePath": "scripts\\scr_RestorePreviousAnimation\\scr_RestorePreviousAnimation.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "af3d58fe-d30f-4dd2-bc77-08b4a8671241",
+            "Value": {
+                "id": "118593b1-25a1-4d3a-868b-f42e342f831f",
+                "resourcePath": "scripts\\scr_SlimeballShieldReact\\scr_SlimeballShieldReact.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4476,6 +4492,7 @@
         "a0a0f345-d037-4fe7-a6b8-3edde0b4f7f5",
         "698a235c-86fc-4d01-a1a1-e6d453d4612b",
         "13a97aa4-6668-4b15-9536-7356ddc3e7a4",
+        "ab5b5cdb-e631-4418-aaf2-04520cf1fbde",
         "2c488e5f-a640-4cac-ab84-c2cc96a36521",
         "2aa7644a-42e0-4a8d-9834-dce36f7f16d5",
         "0a911551-632f-4096-819d-5c226ad93a45",
@@ -4487,6 +4504,7 @@
         "5a13d11a-8938-4324-b4c3-7b1e41dd6404",
         "974bc110-23b7-4b77-97d8-e5b6a1ef1f16",
         "db07b9e9-176a-4284-ad47-00af4b009f46",
+        "af3d58fe-d30f-4dd2-bc77-08b4a8671241",
         "b936d745-8572-4971-be7a-681239abfba1",
         "8e3c750a-425d-4f17-a320-b959a0a58294",
         "c1205fd3-60e1-42a4-b3ef-8a364297fa66",
