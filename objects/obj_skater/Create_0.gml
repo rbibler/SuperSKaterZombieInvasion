@@ -66,7 +66,7 @@ for(var i = 0; i < 10; i++) {
 // Reference to the weapon
 slingshot = instance_create_layer(0, 0, "WEAPONS", obj_Slingshot);
 currentWeapon = SPREAD_SLINGSHOT;
-currentPowerup = PB_SHIELD;
+currentPowerup = PB_ROCKET;
 weaponAnimCounter = 0;
 ammoOnScreen = 0;
 maxAmmoOnScreen = slingshot.maxAmmo[currentWeapon];
@@ -94,6 +94,7 @@ drownedState = scr_StateCreate(s_DROWNED, scr_SkaterStateDrowned);
 rollState = scr_StateCreate(s_ROLLING, scr_SkaterStateRolling);
 knockedBackState = scr_StateCreate(s_KNOCKED_BACK, scr_SkaterStateKnockedBack);
 floatState = scr_StateCreate(s_FLOATING, scr_SkaterStateFloating);
+blastOffState = scr_StateCreate(s_BLAST_OFF, scr_SkaterStateBlastOff);
 
 onFootIdleState = scr_StateCreate(s_ON_FOOT_IDLE, scr_SkaterStateOnFootIdle);
 onFootBoredState = scr_StateCreate(s_ON_FOOT_BORED, scr_SkaterStateOnFootBored);

@@ -3279,6 +3279,14 @@
             }
         },
         {
+            "Key": "bc31ab4e-ba0c-41e8-bdc1-a633f6aa3f9d",
+            "Value": {
+                "id": "80a8232d-c87e-435d-8ec7-b461e1a68645",
+                "resourcePath": "scripts\\scr_SkaterStateBlastOff\\scr_SkaterStateBlastOff.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bc6328c8-9183-428d-b407-066593b55702",
             "Value": {
                 "id": "6457661a-f7a3-4dc5-800e-24e979de729e",
@@ -4446,6 +4454,7 @@
         "a6da3803-7e0d-4956-bcb9-1f942e71d0cb",
         "6c433847-a2c0-4c08-8ed2-9bd8f2e1741d",
         "34694f45-1fca-4aba-90f3-26b22ced61a8",
+        "bc31ab4e-ba0c-41e8-bdc1-a633f6aa3f9d",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "34ec790d-38de-44ce-984a-c11615096df4",

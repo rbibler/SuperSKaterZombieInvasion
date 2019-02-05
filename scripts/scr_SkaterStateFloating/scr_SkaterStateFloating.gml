@@ -17,18 +17,19 @@ if(stateNew) {
 	grounded = false;
 }
 
-ySpeed += currentPowerup.floatSpeed;
-currentPowerup.fuelRemaining--;
+ySpeed += floatSpeed;
+if(stateTimer mod 30 == 0) {
+	scr_UpdateDiamondCount(-5);
+}
 
-if(ySpeed <= currentPowerup.ySpeedMin) {
-	ySpeed = currentPowerup.ySpeedMin;
+if(ySpeed <= floatYSpeedMin) {
+	ySpeed = floatYSpeedMin;
 }
 
 
 
 // Check if we should fire a weapon
 scr_SkaterWeaponFire();
-
 
 // Check how fast the skater should be moving
 scr_SkaterHorizontalImpetus();
@@ -53,7 +54,7 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 scr_MoveAndCollide();
 scr_SkaterLadderCollisions();
 
-if(stateTimer >= 30 or !input[JUMP] or currentPowerup.fuelRemaining <= 0) {
+if(stateTimer >= 30 or !input[JUMP] or global.diamondCount <= 0) {
 	scr_StopYMotion();
 	scr_StateSwitch(s_FALLING);
 }

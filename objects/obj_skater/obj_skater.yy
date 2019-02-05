@@ -386,6 +386,34 @@
             "value": "5",
             "varName": "pbShieldCost",
             "varType": 0
+        },
+        {
+            "id": "853a3164-b5ca-4962-a8ff-dac930d8ab19",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "floatSpeed",
+            "varType": 0
+        },
+        {
+            "id": "49f8b33f-39c3-44f1-9341-f6ed11b5908e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-5",
+            "varName": "floatYSpeedMin",
+            "varType": 0
         }
     ],
     "solid": false,
