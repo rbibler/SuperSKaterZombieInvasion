@@ -8,13 +8,17 @@
 // Reset animation and grounded flags when entering state
 // Also add jump impetus to yspeed to make the skater jump
 if(stateNew) {
-	scr_UpdateSkaterAnimation(jumpAnim);
+	scr_UpdateSkaterAnimation(rocketSetupAnim);
 
 	ySpeedFraction = 0;
 	// Set flag so we know the skater is jumping
 	jump = 1;
 	onSlope = false;
 	grounded = false;
+}
+
+if(currentAnimation == rocketSetupAnim and currentAnimation.isDone) {
+	scr_SetCurrentAnimation(rocketAnim);
 }
 
 ySpeed += floatSpeed;

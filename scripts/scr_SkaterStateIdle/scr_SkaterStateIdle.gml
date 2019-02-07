@@ -55,9 +55,8 @@ if(input[TRANSITION] and !lastInput[TRANSITION]) {
 	scr_StateSwitch(s_SKATE_TO_FOOT);
 	return;
 }
-if(scr_CanFloat()) {
-	scr_StateSwitch(s_BLAST_OFF);
-} else if(scr_SkaterCheckJump()) {
+
+if(scr_SkaterCheckJump()) {
 	scr_StateSwitch(s_JUMPING);
 } else {
 	// If you aren't on the ground anymore, you're falling

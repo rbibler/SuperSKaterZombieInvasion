@@ -59,9 +59,7 @@ if(abs(xSpeed) > 0) {
 scr_MoveAndCollide();
 scr_SkaterLadderCollisions();
 
-if(scr_CanFloat()) {
-	scr_StateSwitch(s_BLAST_OFF);
-} else if(scr_SkaterCheckJump()) {
+if(scr_SkaterCheckJump()) {
 	scr_StateSwitch(s_JUMPING);
 } else {
 	// If the ground is gone, you fall

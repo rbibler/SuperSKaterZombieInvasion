@@ -32,7 +32,6 @@
 #macro s_BOUNCING				"BOUNCING"
 #macro s_KNOCKED_BACK			"KNOCKED BACK"
 #macro s_FLOATING				"FLOATING"
-#macro s_BLAST_OFF				"BLAST_OFF"
 #macro s_ATTACKING				"ATTACKING"
 #macro s_DEFENDING				"DEFENDING"
 #macro s_MENACING				"MENACING"

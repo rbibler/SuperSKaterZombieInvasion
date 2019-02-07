@@ -94,7 +94,6 @@ drownedState = scr_StateCreate(s_DROWNED, scr_SkaterStateDrowned);
 rollState = scr_StateCreate(s_ROLLING, scr_SkaterStateRolling);
 knockedBackState = scr_StateCreate(s_KNOCKED_BACK, scr_SkaterStateKnockedBack);
 floatState = scr_StateCreate(s_FLOATING, scr_SkaterStateFloating);
-blastOffState = scr_StateCreate(s_BLAST_OFF, scr_SkaterStateBlastOff);
 
 onFootIdleState = scr_StateCreate(s_ON_FOOT_IDLE, scr_SkaterStateOnFootIdle);
 onFootBoredState = scr_StateCreate(s_ON_FOOT_BORED, scr_SkaterStateOnFootBored);
@@ -146,6 +145,9 @@ onFootJumpShieldAnim = scr_RegisterStateAnimation(spr_SkaterOnFootJumpShield, FA
 jumpShieldAnim = scr_RegisterStateAnimation(spr_SkaterShieldJump, FAST_ANIM_SPEED, false, noone, "JUMP_SHIELD", sprite_get_number(spr_SkaterShieldJump));
 shieldAnimStateMap = ds_map_create();
 
+// Rocket Animations
+rocketSetupAnim = scr_RegisterStateAnimation(spr_SkaterRocketSetup, FAST_ANIM_SPEED, false, noone, "ROCKET_SETUP", sprite_get_number(spr_SkaterRocketSetup));
+rocketAnim = scr_RegisterStateAnimation(spr_SkaterRocketMotion, NORMAL_ANIM_SPEED, true, noone, "ROCKET_MOTION", sprite_get_number(spr_SkaterRocketMotion));
 
 stateAnimMap = ds_map_create();
 ds_map_add(stateAnimMap, s_IDLE, idleAnim);

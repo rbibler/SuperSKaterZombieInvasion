@@ -69,9 +69,7 @@ if(input[TRANSITION] and !lastInput[TRANSITION]) {
 	return;
 }
 
-if(scr_CanFloat()) {
-	scr_StateSwitch(s_BLAST_OFF);
-} else if(scr_SkaterCheckJump()) {
+if(scr_SkaterCheckJump()) {
 	scr_StateSwitch(s_JUMPING);
 } else {
 // If the ground has disappeared we're falling
