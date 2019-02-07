@@ -46,6 +46,14 @@ if(input[UP] and scr_CheckOnLadder()) {
 	return;
 }
 
+if(ySpeed > 0 or !lastInput[JUMP]) {
+	if(input[JUMP] or jumpInputBuffer > 0) {
+		if(scr_CanFloat()) {
+			scr_StateSwitch(s_FLOATING);
+		}
+	}
+}
+
 
 // If yspeed is greater than zero, we've reached our apogee so it's time to fall
 if(jump == 1 and ySpeed >= 6){

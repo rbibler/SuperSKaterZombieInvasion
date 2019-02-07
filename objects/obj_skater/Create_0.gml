@@ -146,8 +146,8 @@ jumpShieldAnim = scr_RegisterStateAnimation(spr_SkaterShieldJump, FAST_ANIM_SPEE
 shieldAnimStateMap = ds_map_create();
 
 // Rocket Animations
-rocketSetupAnim = scr_RegisterStateAnimation(spr_SkaterRocketSetup, FAST_ANIM_SPEED, false, noone, "ROCKET_SETUP", sprite_get_number(spr_SkaterRocketSetup));
-rocketAnim = scr_RegisterStateAnimation(spr_SkaterRocketMotion, NORMAL_ANIM_SPEED, true, noone, "ROCKET_MOTION", sprite_get_number(spr_SkaterRocketMotion));
+rocketSetupAnim = scr_RegisterStateAnimation(spr_SkaterRocketSetup, SUPER_FAST_ANIM_SPEED, false, noone, "ROCKET_SETUP", sprite_get_number(spr_SkaterRocketSetup));
+rocketAnim = scr_RegisterStateAnimation(spr_SkaterRocketMotion, SUPER_FAST_ANIM_SPEED, true, noone, "ROCKET_MOTION", sprite_get_number(spr_SkaterRocketMotion));
 
 stateAnimMap = ds_map_create();
 ds_map_add(stateAnimMap, s_IDLE, idleAnim);

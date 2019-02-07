@@ -7,18 +7,30 @@
 
 // Reset animation and grounded flags when entering state
 // Also add jump impetus to yspeed to make the skater jump
+
+var wasSkating = stateVar[0];
 if(stateNew) {
-	scr_UpdateSkaterAnimation(rocketSetupAnim);
+	wasSkating = scr_IsSkateState(lastState);
+	if(wasSkating) {
+		scr_UpdateSkaterAnimation(rocketSetupAnim);
+	} else {
+		scr_UpdateSkaterAnimation(footToSkateAnim);
+	}
 
 	ySpeedFraction = 0;
 	// Set flag so we know the skater is jumping
 	jump = 1;
 	onSlope = false;
 	grounded = false;
+	
 }
 
-if(currentAnimation == rocketSetupAnim and currentAnimation.isDone) {
-	scr_SetCurrentAnimation(rocketAnim);
+if(currentAnimation.isDone) {
+	if(currentAnimation == rocketSetupAnim) {
+		scr_SetCurrentAnimation(rocketAnim);
+	} else if(currentAnimation == footToSkateAnim ) {
+		scr_SetCurrentAnimation(rocketSetupAnim);
+	}
 }
 
 ySpeed += floatSpeed;
@@ -60,11 +72,21 @@ scr_SkaterLadderCollisions();
 
 if(stateTimer >= 30 or !input[JUMP] or global.diamondCount <= 0) {
 	scr_StopYMotion();
-	scr_StateSwitch(s_FALLING);
+	if(wasSkating) {
+		scr_StateSwitch(s_FALLING);
+	} else {
+		scr_StateSwitch(s_ON_FOOT_FALLING);
+	}
 }
 
 // If we hit the ground somehow (not likely) we should be idle. Let idle state take care of
 // skating check
 if(grounded) {
-	scr_StateSwitch(s_IDLE);
+	if(wasSkating) {
+		scr_StateSwitch(s_IDLE);
+	} else {
+		scr_StateSwitch(s_ON_FOOT_IDLE);
+	}
 }
+
+stateVar[0] = wasSkating;
