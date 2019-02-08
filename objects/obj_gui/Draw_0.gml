@@ -11,3 +11,4 @@ draw_sprite(spr_hud_right, 0, xPos, yPos);
 scr_DisplayDiamondCount(xPos, yPos);
 scr_DisplayLives(xPos, yPos);
 scr_DisplayWeapons(xPos, yPos);
+scr_DisplayPowerups(xPos, yPos);

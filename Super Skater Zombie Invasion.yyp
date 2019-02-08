@@ -2791,6 +2791,14 @@
             }
         },
         {
+            "Key": "a3e4bf7f-0dbc-4445-bbf0-d4edb3f4af3e",
+            "Value": {
+                "id": "6725ad11-4069-46c9-9fe5-b9fad7113bfb",
+                "resourcePath": "sprites\\spr_RocketIndicator\\spr_RocketIndicator.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a41f840d-ea1b-45a3-b992-2185e62d4a7a",
             "Value": {
                 "id": "2ccd0277-860f-4875-970a-ddb4aed80dc5",
@@ -2819,6 +2827,14 @@
             "Value": {
                 "id": "b88092ed-ad3d-4e49-af97-6d2a7d934c31",
                 "resourcePath": "sprites\\spr_SkaterClimbout\\spr_SkaterClimbout.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a5844994-5ffa-40dd-a23b-812684101667",
+            "Value": {
+                "id": "3b695bc9-2819-4772-9cf6-f20e4a9e5b73",
+                "resourcePath": "sprites\\spr_ShieldIndicator\\spr_ShieldIndicator.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4047,6 +4063,14 @@
             }
         },
         {
+            "Key": "e5e98e88-eea2-4c19-9109-3c7f3dcc707a",
+            "Value": {
+                "id": "41fd5339-0861-436c-9342-74d10a8e5a0b",
+                "resourcePath": "scripts\\scr_DisplayPowerups\\scr_DisplayPowerups.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e6f66038-dfd5-4bbe-b1ef-6be124d00838",
             "Value": {
                 "id": "dc18b7eb-d420-43f5-898d-03ebc2bb23ae",
@@ -4589,6 +4613,7 @@
         "05572da5-c758-480f-871b-ddfa284a19e0",
         "50b97c71-a535-42cf-a2c2-1cb1c23ded59",
         "a1b15312-bde7-4ba3-b3bd-baf81f23164c",
+        "e5e98e88-eea2-4c19-9109-3c7f3dcc707a",
         "531373e6-4946-4241-89a3-36a6ead1c75b",
         "82f6c3fe-8f50-4337-b1ea-db72ffc54cf8",
         "1c1c0f2d-d565-48dd-bea1-7ffadb93ba0c",
