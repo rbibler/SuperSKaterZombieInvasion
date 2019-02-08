@@ -8,7 +8,7 @@
 // Reset animation and grounded flags when entering state
 // Also add jump impetus to yspeed to make the skater jump
 if(stateNew) {
-	scr_SetCurrentAnimation(jumpAnim);
+	scr_UpdateSkaterAnimation(jumpAnim);
 	if(!getAir) {
 		ySpeed = jumpSpeed;
 	} else {

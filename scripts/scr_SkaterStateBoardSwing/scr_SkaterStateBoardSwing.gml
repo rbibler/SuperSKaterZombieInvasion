@@ -1,5 +1,5 @@
 if(stateNew) {
-	scr_SetCurrentAnimation(boardSwingAnim);
+	scr_UpdateSkaterAnimation(boardSwingAnim);
 	ds_list_clear(boardSmacked);
 }
 

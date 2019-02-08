@@ -53,6 +53,36 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
+        },
+        {
+            "id": "a2a9ccf8-43ce-4736-947d-bee0b89ebdb1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
+        },
+        {
+            "id": "18006a5c-97b8-48d6-8be0-eb47ae654ec5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "07ec105c-dcf1-4207-8a4b-daf59ab88154",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
+        },
+        {
+            "id": "68527364-ba3c-4b68-a2db-5c8e7997fb97",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -341,6 +371,48 @@
             "resourceFilter": 1023,
             "value": "-2",
             "varName": "projOffsetJumpingY",
+            "varType": 0
+        },
+        {
+            "id": "be78ccd2-cb02-40ae-a7fc-09f826c4d88f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "pbShieldCost",
+            "varType": 0
+        },
+        {
+            "id": "853a3164-b5ca-4962-a8ff-dac930d8ab19",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "floatSpeed",
+            "varType": 0
+        },
+        {
+            "id": "49f8b33f-39c3-44f1-9341-f6ed11b5908e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-5",
+            "varName": "floatYSpeedMin",
             "varType": 0
         }
     ],

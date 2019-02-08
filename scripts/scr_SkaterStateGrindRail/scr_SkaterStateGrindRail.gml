@@ -10,7 +10,7 @@ var isTeetering = stateVar[6];
 var startTeeterTime = stateVar[7];
 
 if(stateNew) {
-	scr_SetCurrentAnimation(jumpAnim);
+	scr_UpdateSkaterAnimation(jumpAnim);
 	// Which rail tile did we start on?
 	currentRailTile = scr_GetRailTile(x, bbox_bottom + 1);
 	// Which map grid did we start in?
@@ -27,7 +27,7 @@ teeterInterval = scr_CalculateTeeterInterval();
 if(isTeetering) {
 	if(input[DOWN] and !lastInput[DOWN]) {
 		isTeetering = false;
-		scr_SetCurrentAnimation(jumpAnim);
+		scr_UpdateSkaterAnimation(jumpAnim);
 		lastTeeterTime = stateTimer;
 	} else if(stateTimer - startTeeterTime >= teeterCorrectionAllowance) {
 		scr_StateSwitch(s_FALLING);
@@ -43,7 +43,7 @@ if(stateTimer - lastTeeterTime >= teeterInterval and !isTeetering) {
 		teeterCorrectionAllowance = baseTeeterCorrection;
 	}
 	teeterCorrectionAllowance *= room_speed;
-	scr_SetCurrentAnimation(teeterAnim);
+	scr_UpdateSkaterAnimation(teeterAnim);
 }
 
 

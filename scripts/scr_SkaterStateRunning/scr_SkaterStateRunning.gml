@@ -12,7 +12,7 @@
 // Reset the animation when entering the state
 if(stateNew) {
 	stateVar[0] = false;
-	scr_SetCurrentAnimation(runAnim);
+	scr_UpdateSkaterAnimation(runAnim);
 	canShoot = true;
 }
 

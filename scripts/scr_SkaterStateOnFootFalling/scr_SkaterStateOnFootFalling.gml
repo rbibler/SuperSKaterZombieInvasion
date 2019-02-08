@@ -6,12 +6,13 @@
 
 // Reset animation when entering state
 if(stateNew) {
-	scr_SetCurrentAnimation(onFootFallAnim);
+	scr_UpdateSkaterAnimation(onFootFallAnim);
 	canSplash = true;
 	canShoot = true;
 	drawOffsetX = 0;
 	drawOffsetY = 0;
 }
+
 
 // Check how fast the skater should be moving
 scr_SkaterRunHorizontalImpetus();
@@ -55,8 +56,11 @@ if(grounded) {
 if(input[JUMP]) {
 	if((jump == 0 and !lastInput[JUMP] and canJump < jumpFramesAllowance)) {
 		scr_StateSwitch(s_ON_FOOT_JUMPING);
-	} 
+	} else if(scr_CanFloat()) {
+		scr_StateSwitch(s_FLOATING);
+	}
 } 
+
 
 if(input[TRANSITION] and !lastInput[TRANSITION]) {
 	scr_StateSwitch(s_FOOT_TO_SKATE);

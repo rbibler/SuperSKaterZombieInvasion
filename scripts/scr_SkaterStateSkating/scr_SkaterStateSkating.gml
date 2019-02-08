@@ -14,7 +14,7 @@ if(stateNew) {
 	//sprite_index = spr_SkaterSkate;
 	//image_index = 0;
 	stateVar[0] = false;
-	scr_SetCurrentAnimation(skateAnim);
+	scr_UpdateSkaterAnimation(skateAnim);
 		show_debug_message("SKATING");
 }
 
@@ -31,10 +31,16 @@ if(((input[LEFT] and !input[RIGHT] and xSpeed > 0) or (input[RIGHT] and !input[L
 
 if(stateVar[0] == true) {
 	if(stateTimer - stateVar[1] < 10) {
-		scr_SetCurrentAnimation(jumpAnim);
+		if(shielded) {
+			if(ds_map_exists(shieldAnimStateMap, s_JUMPING)) {
+				scr_SetCurrentAnimation(ds_map_find_value(shieldAnimStateMap, s_JUMPING));
+			}
+		} else {
+			scr_SetCurrentAnimation(jumpAnim);
+		}
 	} else {
 		stateVar[0] = false;
-		scr_SetCurrentAnimation(skateAnim);
+		scr_UpdateSkaterAnimation(skateAnim);
 	}
 }
 

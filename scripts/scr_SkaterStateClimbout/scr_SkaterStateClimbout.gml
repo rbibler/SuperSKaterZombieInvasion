@@ -1,5 +1,5 @@
 if(stateNew) {
-	scr_SetCurrentAnimation(climboutAnim);
+	scr_UpdateSkaterAnimation(climboutAnim);
 	x = scr_FindMiddleOfBlock(obj_Climbout);
 	climbOut = false;
 	return;

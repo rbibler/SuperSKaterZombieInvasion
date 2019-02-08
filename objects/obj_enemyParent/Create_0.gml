@@ -62,3 +62,5 @@ currentAnim = noone;
 shouldMove = true;
 
 characterHealth = 100;
+
+ignoreShield = false;

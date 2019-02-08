@@ -10,7 +10,7 @@
 
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	scr_SetCurrentAnimation(onFootIdleAnim);
+	scr_UpdateSkaterAnimation(onFootIdleAnim);
 	stateVar[0] = random_range(60 * 3, 60 * 6); 
 	stateVar[1] = 0;
 	stateVar[2] = false;

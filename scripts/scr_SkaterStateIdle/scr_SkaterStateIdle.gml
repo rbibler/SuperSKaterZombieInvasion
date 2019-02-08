@@ -10,12 +10,11 @@
 var boredTimer = stateVar[3];
 // Reset the animation and the jump counter if entering the state
 if(stateNew) {
-	scr_SetCurrentAnimation(idleAnim);
+	scr_UpdateSkaterAnimation(idleAnim);
 	stateVar[0] = random_range(60 * 3, 60 * 6); 
 	stateVar[1] = 0;
 	stateVar[2] = false;
 	boredTimer = 0;
-	show_debug_message("IDLE");
 }
 
 boredTimer++;

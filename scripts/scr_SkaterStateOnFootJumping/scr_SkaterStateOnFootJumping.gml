@@ -8,7 +8,7 @@
 // Reset animation and grounded flags when entering state
 // Also add jump impetus to yspeed to make the skater jump
 if(stateNew) {
-	scr_SetCurrentAnimation(onFootJumpAnim);
+	scr_UpdateSkaterAnimation(onFootJumpAnim);
 	ySpeed = onFootJumpSpeed;
 	
 	ySpeedFraction = 0;
@@ -44,6 +44,14 @@ scr_MoveAndCollide();
 if(input[UP] and scr_CheckOnLadder()) {
 	scr_StateSwitch(s_CLIMBING);
 	return;
+}
+
+if(ySpeed > 0 or !lastInput[JUMP]) {
+	if(input[JUMP] or jumpInputBuffer > 0) {
+		if(scr_CanFloat()) {
+			scr_StateSwitch(s_FLOATING);
+		}
+	}
 }
 
 

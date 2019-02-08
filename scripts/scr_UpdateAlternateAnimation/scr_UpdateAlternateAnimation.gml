@@ -16,7 +16,7 @@ with(animationToUpdate) {
 	}
 	if(currentIndex >= animLength) {
 		currentIndex = 0;
-		return true;
+		return !loop;
 	} else {
 		return false;
 	}

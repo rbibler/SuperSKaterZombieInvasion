@@ -7,28 +7,45 @@
 
 // Reset animation and grounded flags when entering state
 // Also add jump impetus to yspeed to make the skater jump
+
+var wasSkating = stateVar[0];
 if(stateNew) {
-	scr_SetCurrentAnimation(jumpAnim);
+	wasSkating = scr_IsSkateState(lastState);
+	if(wasSkating) {
+		scr_UpdateSkaterAnimation(rocketSetupAnim);
+	} else {
+		scr_UpdateSkaterAnimation(footToSkateAnim);
+	}
 
 	ySpeedFraction = 0;
 	// Set flag so we know the skater is jumping
 	jump = 1;
 	onSlope = false;
 	grounded = false;
+	
 }
 
-ySpeed += currentPowerup.floatSpeed;
-currentPowerup.fuelRemaining--;
+if(currentAnimation.isDone) {
+	if(currentAnimation == rocketSetupAnim) {
+		scr_SetCurrentAnimation(rocketAnim);
+	} else if(currentAnimation == footToSkateAnim ) {
+		scr_SetCurrentAnimation(rocketSetupAnim);
+	}
+}
 
-if(ySpeed <= currentPowerup.ySpeedMin) {
-	ySpeed = currentPowerup.ySpeedMin;
+ySpeed += floatSpeed;
+if(stateTimer mod 30 == 0) {
+	scr_UpdateDiamondCount(-5);
+}
+
+if(ySpeed <= floatYSpeedMin) {
+	ySpeed = floatYSpeedMin;
 }
 
 
 
 // Check if we should fire a weapon
 scr_SkaterWeaponFire();
-
 
 // Check how fast the skater should be moving
 scr_SkaterHorizontalImpetus();
@@ -53,13 +70,23 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 scr_MoveAndCollide();
 scr_SkaterLadderCollisions();
 
-if(stateTimer >= 30 or !input[JUMP] or currentPowerup.fuelRemaining <= 0) {
+if(stateTimer >= 30 or !input[JUMP] or global.diamondCount <= 0) {
 	scr_StopYMotion();
-	scr_StateSwitch(s_FALLING);
+	if(wasSkating) {
+		scr_StateSwitch(s_FALLING);
+	} else {
+		scr_StateSwitch(s_ON_FOOT_FALLING);
+	}
 }
 
 // If we hit the ground somehow (not likely) we should be idle. Let idle state take care of
 // skating check
 if(grounded) {
-	scr_StateSwitch(s_IDLE);
+	if(wasSkating) {
+		scr_StateSwitch(s_IDLE);
+	} else {
+		scr_StateSwitch(s_ON_FOOT_IDLE);
+	}
 }
+
+stateVar[0] = wasSkating;

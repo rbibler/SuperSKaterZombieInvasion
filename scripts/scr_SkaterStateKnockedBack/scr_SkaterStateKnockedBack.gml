@@ -2,7 +2,7 @@ if(stateNew) {
 	xSpeed = 2 * stateVar[0];
 	ySpeed = -3;
 	grounded = false;
-	scr_SetCurrentAnimation(hurtAnim);
+	scr_UpdateSkaterAnimation(hurtAnim);
 }
 
 scr_MoveAndCollide();

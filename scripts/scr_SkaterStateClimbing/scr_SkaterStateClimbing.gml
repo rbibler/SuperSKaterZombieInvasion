@@ -1,5 +1,5 @@
 if(stateNew) {
-	scr_SetCurrentAnimation(climbAnim);
+	scr_UpdateSkaterAnimation(climbAnim);
 	x = scr_FindMiddleOfLadder();
 }
 
