@@ -1487,6 +1487,14 @@
             }
         },
         {
+            "Key": "56629cb7-bbe7-42d3-afd8-0008996e3fcc",
+            "Value": {
+                "id": "7dfc134b-69e0-4ead-9a83-00742d8f8ae6",
+                "resourcePath": "scripts\\scr_ZombieSkaterShieldReact\\scr_ZombieSkaterShieldReact.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "568126d3-9150-46d3-92fc-3f51571d3fd7",
             "Value": {
                 "id": "6f9d0343-c709-4b27-b185-75e0e33bb406",
@@ -4575,6 +4583,7 @@
         "5914e5c2-d890-4f6a-9715-90ca9a2baf1f",
         "d49dce76-46c4-40c5-b19e-5888f943744f",
         "fc197584-aca8-42e1-a4d3-160159a749b4",
+        "56629cb7-bbe7-42d3-afd8-0008996e3fcc",
         "b60f0430-ec0f-4b07-a922-ace59fde485f",
         "fba853fb-5f2d-4c4d-956a-c7884092fd15",
         "eb23d3f4-74fb-4cd5-b96a-f45904c7c4e6",

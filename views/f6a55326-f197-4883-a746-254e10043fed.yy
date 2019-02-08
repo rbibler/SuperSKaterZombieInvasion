@@ -12,7 +12,8 @@
         "ec4081ac-3f38-47d2-85e3-e5a4f832bf09",
         "5914e5c2-d890-4f6a-9715-90ca9a2baf1f",
         "d49dce76-46c4-40c5-b19e-5888f943744f",
-        "fc197584-aca8-42e1-a4d3-160159a749b4"
+        "fc197584-aca8-42e1-a4d3-160159a749b4",
+        "56629cb7-bbe7-42d3-afd8-0008996e3fcc"
     ],
     "filterType": "GMScript",
     "folderName": "ZombieSkaterScripts",

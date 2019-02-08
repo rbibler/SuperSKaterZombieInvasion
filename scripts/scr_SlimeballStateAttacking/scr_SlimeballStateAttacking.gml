@@ -1,4 +1,6 @@
-// SETUP NEW STATE
+// SETUP LOCAL VARIABLES TO MAKE IT EASIER TO WORK WITH THE STATE VARIABLES
+var lastJumpTime = stateVar[0];
+
 if(stateNew) {
 	input[SHOOT] = 1;
 	moveDirOnRestart = sign(xSpeed);
@@ -21,3 +23,11 @@ if(!scr_ShouldChaseSkater(false)) {
 	scr_ZeroInputs();
 	scr_StateSwitch(s_MOVING);
 }
+
+var dist = abs(obj_skater.x - x);
+if(dist < 50 and scr_Chance(50) and stateTimer > 60) {
+	scr_StateSwitch(s_JUMPING);
+	lastJumpTime = stateTimer;
+}
+
+stateVar[0] = lastJumpTime;
