@@ -2,7 +2,8 @@
 //Basically, he skates in a pre-determined unless he sees a wall or hits an edge, in which case he jumps
 
 if(scr_FellOffEdge()) {
-	scr_StateSwitch("JUMPING");
+	input[LEFT] = !input[LEFT];
+	input[RIGHT] = !input[RIGHT];
 }
 
 var bbox_side = bbox_right;
@@ -14,6 +15,7 @@ var colPoint = tilemap_get_at_pixel(collisionTiles, bbox_side + checkAhead, bbox
 if(colPoint == 1 and grounded) {
 	colPoint = tilemap_get_at_pixel(collisionTiles, bbox_side + checkAhead - (16 * sign(xSpeed)), bbox_bottom - ((bbox_bottom - bbox_top) / 2));
 	if(colPoint < 5) {
-		scr_StateSwitch("JUMPING");
+		input[LEFT] = !input[LEFT];
+		input[RIGHT] = !input[RIGHT];
 	}
 }

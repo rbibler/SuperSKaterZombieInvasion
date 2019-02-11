@@ -567,14 +567,6 @@
             }
         },
         {
-            "Key": "2134e59c-4399-427c-a45f-539dd762d38d",
-            "Value": {
-                "id": "d872eb74-dd56-499c-b584-bc7fd037c3f7",
-                "resourcePath": "sprites\\spr_ZombieSkaterJumping\\spr_ZombieSkaterJumping.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "218b2801-c8ce-423d-b658-f3d0d931286a",
             "Value": {
                 "id": "bab47f7b-b69e-4cd4-8967-e9acf5c52a75",
