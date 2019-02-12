@@ -134,6 +134,14 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "6cdef82c-f9ec-4704-9d9c-82f57a95bfed",
             "value": "scr_ZombieSkaterShieldReact"
+        },
+        {
+            "id": "c00a2af0-e8a9-4c94-8250-9f30c7f71e6c",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
+            "propertyId": "6f99264f-8f71-492f-bf4d-fe100af69405",
+            "value": "scr_ZombieSkaterHorizCollision"
         }
     ],
     "parentObjectId": "c89e2c87-907a-434c-952e-bc59f6eb4851",

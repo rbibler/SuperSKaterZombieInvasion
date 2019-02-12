@@ -21,6 +21,7 @@ ySpeedFinal = 0;
 carrySpeedY = 0;
 yMomentum = 0;
 lastY = ystart;
+lastX = xstart;
 
 onSlope = false;
 slopeDirection = -1;

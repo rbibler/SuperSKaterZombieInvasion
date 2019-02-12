@@ -2,8 +2,7 @@
 //Basically, he skates in a pre-determined unless he sees a wall or hits an edge, in which case he jumps
 
 if(scr_FellOffEdge()) {
-	input[LEFT] = !input[LEFT];
-	input[RIGHT] = !input[RIGHT];
+	scr_StateSwitch(s_JUMPING);
 }
 
 var bbox_side = bbox_right;
@@ -11,11 +10,27 @@ if(xSpeed < 0) {
 	bbox_side = bbox_left;
 }
 var checkAhead = 20 * sign(xSpeed);
-var colPoint = tilemap_get_at_pixel(collisionTiles, bbox_side + checkAhead, bbox_bottom - ((bbox_bottom - bbox_top) / 2));
-if(colPoint == 1 and grounded) {
-	colPoint = tilemap_get_at_pixel(collisionTiles, bbox_side + checkAhead - (16 * sign(xSpeed)), bbox_bottom - ((bbox_bottom - bbox_top) / 2));
-	if(colPoint < 5) {
-		input[LEFT] = !input[LEFT];
+
+// Check head level:
+var tileIndexX = floor((bbox_side + checkAhead) / TILE_SIZE);
+var tileIndexTop = floor(bbox_top / TILE_SIZE);
+var tileIndexBottom = floor((bbox_bottom - 1) / TILE_SIZE);
+
+for(var i = tileIndexTop; i <= tileIndexBottom; i++) {
+	var colPoint = tilemap_get(collisionTiles, tileIndexX, i);
+	if(colPoint < 5 and colPoint > 0 and !onSlope) {
+		if(tilemap_get(collisionTiles, tileIndexX - sign(xSpeed), i) < 5) {
+			scr_StateSwitch(s_JUMPING);
+			break;
+		}
+	}
+}
+
+if(x == lastX) {
+	stationaryCounter++;
+	if(stationaryCounter > 15) {
 		input[RIGHT] = !input[RIGHT];
+		input[LEFT] = !input[LEFT];
+		stationaryCounter = 0;
 	}
 }
