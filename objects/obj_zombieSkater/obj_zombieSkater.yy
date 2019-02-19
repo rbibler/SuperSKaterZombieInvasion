@@ -141,7 +141,7 @@
             "mvc": "1.0",
             "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
             "propertyId": "6f99264f-8f71-492f-bf4d-fe100af69405",
-            "value": "scr_ZombieSkaterHorizCollision"
+            "value": "scr_AttackEnemyHorizCollision"
         }
     ],
     "parentObjectId": "c89e2c87-907a-434c-952e-bc59f6eb4851",

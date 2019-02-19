@@ -11,25 +11,25 @@
 #macro DOWN_SLOPE_MED	20
 #macro DOWN_SLOPE_SHORT	22
 
-#macro SOLID			4
+#macro SOLID			1
 
 
-slopeHeights[4, 0] = 0
-slopeHeights[4, 1] = 0
-slopeHeights[4, 2] = 0
-slopeHeights[4, 3] = 0
-slopeHeights[4, 4] = 0
-slopeHeights[4, 5] = 0
-slopeHeights[4, 6] = 0
-slopeHeights[4, 7] = 0
-slopeHeights[4, 8] = 0
-slopeHeights[4, 9] = 0
-slopeHeights[4, 10] = 0
-slopeHeights[4, 11] = 0
-slopeHeights[4, 12] = 0
-slopeHeights[4, 13] = 0
-slopeHeights[4, 14] = 0
-slopeHeights[4, 15] = 0
+slopeHeights[SOLID, 0] = 0
+slopeHeights[SOLID, 1] = 0
+slopeHeights[SOLID, 2] = 0
+slopeHeights[SOLID, 3] = 0
+slopeHeights[SOLID, 4] = 0
+slopeHeights[SOLID, 5] = 0
+slopeHeights[SOLID, 6] = 0
+slopeHeights[SOLID, 7] = 0
+slopeHeights[SOLID, 8] = 0
+slopeHeights[SOLID, 9] = 0
+slopeHeights[SOLID, 10] = 0
+slopeHeights[SOLID, 11] = 0
+slopeHeights[SOLID, 12] = 0
+slopeHeights[SOLID, 13] = 0
+slopeHeights[SOLID, 14] = 0
+slopeHeights[SOLID, 15] = 0
 
 
 slopeHeights[UP_SLOPE_LONG, 0] = 15;

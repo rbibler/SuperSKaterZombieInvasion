@@ -1,6 +1,10 @@
 // Clear the slope flag so we don't have any confusion
+
+
+/*
 onSlope = false;
 
+if(ySpeed >= 0) {
 // Check to see if the player is grounded at the start of the frame
 inFloorCenter = scr_GeneralInFloor(collisionTiles, x, bbox_bottom + 1);
 inFloorLeft = scr_GeneralInFloor(collisionTiles, bbox_left, bbox_bottom + 1);
@@ -17,7 +21,8 @@ if(!grounded and ySpeed >= 0) {
 	grounded = place_meeting(x, y + 2, obj_baseBlock);
 	platformGrounded = grounded;
 }
-
+}
+*/
 // Deal with the implications of groundedness
 if(grounded) {
 	// Skater can now jump

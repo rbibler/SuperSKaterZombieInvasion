@@ -14,7 +14,7 @@ if(pos > 0) {
 	} else if(pos > 5) {
 
 		var thefloor = obj_slopeController.slopeHeights[pos, xCheck mod 16];
-		onSlope = true;
+		
 		slopeDirection = (pos < 15) ? UP_SLOPE : DOWN_SLOPE;
 		return ((yCheck mod 16) - thefloor);
 	}

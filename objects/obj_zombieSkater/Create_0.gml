@@ -4,8 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-stationaryCounter = 0;
-
 moveAnim = scr_RegisterStateAnimation(
 		spr_zombieSkater, 
 		ZOMBIE_ANIM_SPEED, 

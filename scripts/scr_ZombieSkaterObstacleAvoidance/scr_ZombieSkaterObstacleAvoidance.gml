@@ -25,12 +25,3 @@ for(var i = tileIndexTop; i <= tileIndexBottom; i++) {
 		}
 	}
 }
-
-if(x == lastX) {
-	stationaryCounter++;
-	if(stationaryCounter > 15) {
-		input[RIGHT] = !input[RIGHT];
-		input[LEFT] = !input[LEFT];
-		stationaryCounter = 0;
-	}
-}

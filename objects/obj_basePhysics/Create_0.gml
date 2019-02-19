@@ -25,6 +25,7 @@ lastX = xstart;
 
 onSlope = false;
 slopeDirection = -1;
+slopeImpetus = 0;
 verticalMovementRun = false;
 
 
