@@ -53,18 +53,19 @@ if(stateName == s_MOVING and currentAnimation == skateAnim) {
 // Skater can only go so fast
 // Choose max speed based on situation: faster if on a slope
 var maxSpeed = speedThisFrame;
-if(onSlope) {
+if(onSlope or !grounded) {
 	if(input[LEFT] or input[RIGHT]) {
 		maxSpeed = maxSpeedXDownhill;
-	} else {
-		maxSpeed = maxSpeedXFlatland;
-	}
+	} 
+} else {
+	maxSpeed = maxSpeedXFlatland;
 }
 
 // If the skater is skating too quickly, slow him down gradually until he reaches max speed
 // Don't just set to max speed, or the transition will feel weird
 if(abs(xSpeed) >= maxSpeed) {
-	xSpeed -= sign(xSpeed) * 0.15;
+	var difInSpeed = abs(xSpeed) - maxSpeed;
+	xSpeed -= sign(xSpeed) * 0.85 * difInSpeed;
 }
 
 

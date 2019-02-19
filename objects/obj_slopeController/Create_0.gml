@@ -12,6 +12,7 @@
 #macro DOWN_SLOPE_SHORT	22
 
 #macro SOLID			1
+#macro ONE_WAY_TOP		3
 
 
 slopeHeights[SOLID, 0] = 0
@@ -30,6 +31,23 @@ slopeHeights[SOLID, 12] = 0
 slopeHeights[SOLID, 13] = 0
 slopeHeights[SOLID, 14] = 0
 slopeHeights[SOLID, 15] = 0
+
+slopeHeights[ONE_WAY_TOP, 0] = 0
+slopeHeights[ONE_WAY_TOP, 1] = 0
+slopeHeights[ONE_WAY_TOP, 2] = 0
+slopeHeights[ONE_WAY_TOP, 3] = 0
+slopeHeights[ONE_WAY_TOP, 4] = 0
+slopeHeights[ONE_WAY_TOP, 5] = 0
+slopeHeights[ONE_WAY_TOP, 6] = 0
+slopeHeights[ONE_WAY_TOP, 7] = 0
+slopeHeights[ONE_WAY_TOP, 8] = 0
+slopeHeights[ONE_WAY_TOP, 9] = 0
+slopeHeights[ONE_WAY_TOP, 10] = 0
+slopeHeights[ONE_WAY_TOP, 11] = 0
+slopeHeights[ONE_WAY_TOP, 12] = 0
+slopeHeights[ONE_WAY_TOP, 13] = 0
+slopeHeights[ONE_WAY_TOP, 14] = 0
+slopeHeights[ONE_WAY_TOP, 15] = 0
 
 
 slopeHeights[UP_SLOPE_LONG, 0] = 15;

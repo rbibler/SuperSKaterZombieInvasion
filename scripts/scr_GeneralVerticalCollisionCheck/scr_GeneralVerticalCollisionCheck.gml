@@ -84,7 +84,7 @@ if(grounded) {
 		}
 		p3 = tilemap_get_at_pixel(collisionTiles, x, (targetBottomTile * TILE_SIZE) + 1);
 		var tile = p3;
-		if(tile > 5) {
+		if(tile > 0) {
 			var tileHorizIndex = x mod TILE_SIZE;
 			var tileHeight = obj_slopeController.slopeHeights[tile, tileHorizIndex];
 			grounded = true;
@@ -95,123 +95,6 @@ if(grounded) {
 }
 
 scr_GeneralVerticalMovement();
-y += ySpeed;
-
-if(y < oldY) {
-	show_debug_message("Moved up!");
-}
-
-/*
-* Adapted from Shaun Spaulding's tutorial: https://www.youtube.com/watch?v=Yre-XAE8DBA
-*/
-
-/*
-var bbox_side = 0;
-var p1 = 0;
-var p2 = 0;
-
-
-var oldY = y;
-// If moving down, then we check collisions with the bottom edge
-if(ySpeed >= 0) {
-	bbox_side = bbox_bottom;
-} else {
-	// when moving up we check the top edge
-	bbox_side = bbox_top;
-}
-// Find tile id for tiles at the bottom or top corners of where the object's bbox will be when 
-// yspeed is added
-p1 = tilemap_get_at_pixel(collisionTiles, bbox_left, bbox_side + ySpeed);
-p2 = tilemap_get_at_pixel(collisionTiles, bbox_right, bbox_side + ySpeed);
-// if either of the corner tiles is between 1 and 4 (inclusive) it's a solid tile
-if(((p1 != 0 and p1 <= 4 and p1 > 0) or (p2 != 0 and p2 <= 4 and p2 > 0))) {
-	// if moving down, it's a collision with the floor
-	// so set the object's y value to the top of that tile (taking into account the distance
-	// between the object's origin and its bbox
-	if(ySpeed > 0) {
-		show_debug_message("Y collision flat");
-		var bboxTile = floor((bbox_side + ySpeed) / 16);
-		bboxTile *= 16;
-		y = bboxTile - (bbox_bottom - y) - 1;
-		grounded = true;
-		
-
-	} 
-	// Stop the object from moving anymore
-	scr_StopYMotion();
-} 
-
-
-
-// Find out how far above the ground the object is for slope collisions 
-var floorDist = scr_GeneralInFloor(collisionTiles, x, bbox_bottom + ySpeed);
-if(floorDist >= 0) {
-	// if the object is "in" the floor, find out what kind of floor it's in
-	var tileId = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + ySpeed);
-	// If it's a slope tile...
-	if(tileId != 0 and tileId != 4 and tileId != 5 and ySpeed > 0) {
-		show_debug_message("Y collision slope");
-		onSlope = true;
-		slopeDirection = (tileId < 15) ? UP_SLOPE : DOWN_SLOPE;
-		// move it to where it wants to be
-		y += ySpeed;
-		// Then set it back to one pixel above the floor
-		y -= (floorDist + 1);
-		// Stop its y motion
-		scr_StopYMotion();
-		// And update the floor distance variable to reflect it's new y pos
-		floorDist = -1;
-		grounded = true;
-		
-		
-	}
-}
-
-// At this point, check to see if we haven't hit anything, and then look for intervening stuff
-if(ySpeed > 0 and !grounded) {
-	var tileBottom = floor(bbox_bottom / TILE_SIZE);
-	var tileBottomPlus = floor((bbox_bottom + ySpeed) / TILE_SIZE);
-	if(tileBottom != tileBottomPlus) {
-		var target = (tileBottom * TILE_SIZE) + TILE_SIZE;
-		// Find out how far above the ground the object is for slope collisions 
-		floorDist = scr_GeneralInFloor(collisionTiles, x, target);
-		if(floorDist >= 0) {
-			// if the object is "in" the floor, find out what kind of floor it's in
-			var tileId = tilemap_get_at_pixel(collisionTiles, x, target);
-			// If it's a slope tile...
-			if(tileId != 0 and tileId != 4 and tileId != 5 and ySpeed > 0) {
-				show_debug_message("Y collision slope intervening");
-				onSlope = true;
-				slopeDirection = (tileId < 15) ? UP_SLOPE : DOWN_SLOPE;
-				// move it to where it wants to be
-				y += (target - bbox_bottom);
-				// Then set it back to one pixel above the floor
-				y -= (floorDist + 1);
-				// Stop its y motion
-				scr_StopYMotion();
-				// And update the floor distance variable to reflect it's new y pos
-				floorDist = -1;
-				grounded = true;	
-			}
-		}
-	}
-}
-
-scr_GeneralVerticalMovement();
-
-// If the object was grounded at the start of the frame and is still grounded
-if(grounded and !platformGrounded) {
-	if(onSlope) {
-		y += abs(floorDist) - 1;
-		show_debug_message("ground and on slope adjustment");
-	}
-	if((bbox_bottom mod 16) == 15) {
-		var tileIdDown = tilemap_get_at_pixel(collisionTiles, x, bbox_bottom + 1);
-		if(tileIdDown > 5) {
-			y += abs(scr_GeneralInFloor(collisionTiles, x, bbox_bottom + 1));
-		}
-	}
-}
 
 
 if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
@@ -248,4 +131,3 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 }
 
 y += ySpeed;
-*/

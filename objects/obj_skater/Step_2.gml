@@ -37,3 +37,5 @@ wasGroundedLeft = groundedLeft;
 if(global.debug) {
 	//surface_save(application_surface, string(current_time) + ".png");
 }
+
+show_debug_message("X SPEED " + string(xSpeed));
