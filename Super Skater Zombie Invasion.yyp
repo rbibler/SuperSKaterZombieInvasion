@@ -1255,6 +1255,14 @@
             }
         },
         {
+            "Key": "481a72b0-26ab-4de4-acf4-dd9d9db0ea9f",
+            "Value": {
+                "id": "9e129148-0b34-436e-8451-b11cdd05b44c",
+                "resourcePath": "scripts\\scr_HeadingUpHill\\scr_HeadingUpHill.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "482ea287-633b-4cc3-b708-d90e6a9b73b2",
             "Value": {
                 "id": "10027801-2c88-47b0-9a4d-4b10d06710e7",
@@ -4579,6 +4587,7 @@
         "34ec790d-38de-44ce-984a-c11615096df4",
         "38edbb54-5306-4fa8-b04f-ea84fa87f01d",
         "526cebec-2574-434e-aa96-794a1638db9a",
+        "481a72b0-26ab-4de4-acf4-dd9d9db0ea9f",
         "a151bcd0-7db8-45a0-96ba-f9cd50020bfb",
         "04b58e47-71cc-4791-b1cf-2d9eecf7194d",
         "52176388-8e30-464b-b973-106c6f7935a1",

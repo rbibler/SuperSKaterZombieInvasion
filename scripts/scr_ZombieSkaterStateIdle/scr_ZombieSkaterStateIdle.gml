@@ -8,7 +8,7 @@ if(stateNew) {
 }
 
 // MOVE AND COLLIDE
-
+scr_MoveAndCollide();
 
 
 // ANIMATE

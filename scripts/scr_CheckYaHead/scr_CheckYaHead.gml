@@ -5,7 +5,7 @@
 
 var xPos = argument0;
 var targetTop = argument1;
-
+var smacked = false;
 var tile = tilemap_get_at_pixel(collisionTiles, xPos, targetTop);
 
 if(tile <= 0) {
@@ -18,7 +18,8 @@ if(tile <= 0) {
 	var dif = depthInTile - tileHeight;
 	if(dif >= 0 and tile == 1) {
 		scr_StopYMotion();
+		smacked = true;
 	} 
 }
 
-y += ySpeed;
+return smacked;

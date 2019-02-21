@@ -2,10 +2,15 @@
 var speedThisFrame = speedX;
 var accel = 0.25;
 
+if(scr_HeadingUpHill()) {
+	show_debug_message("Heading up hill!");
+	accel = 0.75;
+}
 
 var maxSpeed = scr_GetMaxSpeed();
 
-if(abs(xSpeed) + abs(accel) > maxSpeed) {
+if(abs(xSpeed + accel) > maxSpeed) {
+	show_debug_message("No! No Acceleration!");
 	accel = 0;
 }
 

@@ -7,7 +7,8 @@
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "34ec790d-38de-44ce-984a-c11615096df4",
         "38edbb54-5306-4fa8-b04f-ea84fa87f01d",
-        "526cebec-2574-434e-aa96-794a1638db9a"
+        "526cebec-2574-434e-aa96-794a1638db9a",
+        "481a72b0-26ab-4de4-acf4-dd9d9db0ea9f"
     ],
     "filterType": "GMScript",
     "folderName": "SkaterMovementScripts",

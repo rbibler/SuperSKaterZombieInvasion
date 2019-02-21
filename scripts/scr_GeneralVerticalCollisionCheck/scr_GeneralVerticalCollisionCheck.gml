@@ -4,7 +4,12 @@
 
 
 if(ySpeed < 0) {
-	scr_CheckYaHead(x, bbox_top + ySpeed);
+	if(!scr_CheckYaHead(x, bbox_top + ySpeed)) {
+		if(!scr_CheckYaHead(bbox_left, bbox_top + ySpeed)) {
+			scr_CheckYaHead(bbox_right, bbox_top + ySpeed);
+		}
+	}
+	y += ySpeed;
 	return;
 }
 
