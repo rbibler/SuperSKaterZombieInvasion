@@ -9,25 +9,20 @@
 // Also add jump impetus to yspeed to make the skater jump
 if(stateNew) {
 	scr_UpdateSkaterAnimation(jumpAnim);
-	if(!getAir) {
-		ySpeed = jumpSpeed;
-	} else {
-		ySpeed = minRampSpeed;
+	ySpeed = jumpSpeed;
+	if(scr_CheckForRamp()) {
+		ySpeed += yMomentum;
 	}
-	var rampObj = scr_IsOnRampBoostTile();
-	if(rampObj != noone) {
-		var howMuch = (xSpeed / maxSpeedX);
-		ySpeed -= rampObj.rampImpulseY * howMuch;
-		if(!getAir) {
-			xSpeed += (rampObj.rampImpulseX * howMuch * sign(myDirection));
-		}
+	if(ySpeed <= maxLaunchSpeed) {
+		ySpeed = maxLaunchSpeed;
 	}
 	ySpeedFraction = 0;
 	// Set flag so we know the skater is jumping
 	jump = 1;
 	onSlope = false;
 	grounded = false;
-		show_debug_message("JUMPING");
+	speedAtJump = abs(xSpeed);
+	show_debug_message("JUMPING!");
 }
 
 

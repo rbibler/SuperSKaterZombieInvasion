@@ -10,7 +10,8 @@
         "118672eb-6b39-494e-bbbb-ba1265d7c753",
         "672e1104-801b-4784-9ff4-902740d97547",
         "f5c98448-592e-4895-851a-8e1309298acc",
-        "2b2c4850-24d4-43a0-8c5a-c1d6e2f49eed"
+        "2b2c4850-24d4-43a0-8c5a-c1d6e2f49eed",
+        "ed0cf972-20b6-4935-8143-d804ed68e25c"
     ],
     "filterType": "GMScript",
     "folderName": "GeneralCollisionScripts",

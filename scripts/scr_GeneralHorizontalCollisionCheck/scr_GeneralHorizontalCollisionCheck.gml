@@ -59,4 +59,7 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 
 }
 
+if(object_index = obj_skater) {
+show_debug_message("x speed: " + string(xSpeed));
+}
 x += xSpeed;

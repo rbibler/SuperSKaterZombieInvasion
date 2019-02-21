@@ -4,6 +4,6 @@ scr_GeneralMovementFractions();
 if(noCollisions == false) {
 	// Check all possible collisions
 	scr_GeneralHorizontalCollisionCheck();
-	scr_GeneralVerticalCollisionCheck();
+	scr_GeneralVerticalCollisionCheck(grounded);
 	onEdge = scr_OnEdge();
 }

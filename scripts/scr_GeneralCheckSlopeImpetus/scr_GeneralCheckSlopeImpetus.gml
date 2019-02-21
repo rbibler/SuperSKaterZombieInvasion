@@ -17,9 +17,10 @@ slopeTouchTimer = rampAllowance;
 	}
 }*/
 
-slopeTouchTimer = rampAllowance;
-if(sign(xSpeed) == sign(lastXSpeed)) {	
+
+if(sign(xSpeed) == sign(lastXSpeed) and slopeImpetus != 0) {	
 	xSpeed += slopeImpetus;
+	show_debug_message("Slope Impetus!: " + string(slopeImpetus));
 	// Add some extra speed if speed is less than one to overcome the inertia
 	// caused by operating only with integers
 	if(abs(xSpeed) < 1) {

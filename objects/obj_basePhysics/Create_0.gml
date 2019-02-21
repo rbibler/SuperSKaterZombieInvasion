@@ -55,6 +55,17 @@ inFloorCenter = 0;
 inFloorLeft = 0;
 inFloorRight = 0;
 
+groundTile[LEFT_CORNER] = 0;
+groundTile[MIDDLE] = 0;
+groundTile[RIGHT_CORNER] = 0;
+
+horizTiles[TOP_LEFT] = 0;
+horizTiles[MIDDLE_LEFT] = 0;
+horizTiles[BOTTOM_LEFT] = 0;
+horizTiles[TOP_RIGHT] = 0;
+horizTiles[MIDDLE_RIGHT] = 0;
+horizTiles[BOTTOM_RIGHT] = 0;
+
 scr_GetCollisionTiles();
 
 

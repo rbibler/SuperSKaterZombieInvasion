@@ -321,3 +321,28 @@ slopeGravity[DOWN_SLOPE_MED + 1] = 0.2;
 
 slopeGravity[UP_SLOPE_SHORT] = -0.225;
 slopeGravity[DOWN_SLOPE_SHORT] = 0.225;
+
+
+// Array to hold the extra x impetus a slope should give the skater
+slopeMomentumMax[UP_SLOPE_LONG] = -5;
+slopeMomentumMax[UP_SLOPE_LONG + 1] = -5;
+slopeMomentumMax[UP_SLOPE_LONG + 2] = -5;
+slopeMomentumMax[UP_SLOPE_LONG + 3] = -5;
+	 
+slopeMomentumMax[DOWN_SLOPE_LONG] =  -5;
+slopeMomentumMax[DOWN_SLOPE_LONG + 1] =  -5;
+slopeMomentumMax[DOWN_SLOPE_LONG + 2] = -5;
+slopeMomentumMax[DOWN_SLOPE_LONG + 3] = -5;
+	
+slopeMomentumMax[UP_SLOPE_MED] = -7;
+slopeMomentumMax[UP_SLOPE_MED + 1] = -7;
+	
+slopeMomentumMax[DOWN_SLOPE_MED] = -7;
+slopeMomentumMax[DOWN_SLOPE_MED + 1] = -7;
+	 
+slopeMomentumMax[UP_SLOPE_SHORT] = -8;
+slopeMomentumMax[DOWN_SLOPE_SHORT] = -8;
+
+
+
+

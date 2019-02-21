@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 //SkaterHorizontalMovement();
+event_inherited();
 if(!verticalMovementRun) {
 	scr_GeneralVerticalMovement();
 }
@@ -25,10 +26,13 @@ if(isDead) {
 }
 scr_StateUpdate();
 image_xscale = facing;
-yMomentum += (y - lastY);
+
 lastY = y;
 
 slopeTouchTimer--;
+if(slopeTouchTimer < -3) {
+	yMomentum = 0;
+}
 
 wasGrounded = grounded;
 wasGroundedRight = groundedRight;
@@ -38,4 +42,3 @@ if(global.debug) {
 	//surface_save(application_surface, string(current_time) + ".png");
 }
 
-show_debug_message("X SPEED " + string(xSpeed));

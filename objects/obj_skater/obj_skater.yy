@@ -117,7 +117,7 @@
             "mvc": "1.0",
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
             "propertyId": "89d5b467-3727-42f6-9919-4e441b3b9d6f",
-            "value": "7"
+            "value": "5"
         },
         {
             "id": "f3f94e05-5a76-4011-900f-1251703342c3",
@@ -421,6 +421,20 @@
             "resourceFilter": 1023,
             "value": "-5",
             "varName": "floatYSpeedMin",
+            "varType": 0
+        },
+        {
+            "id": "6f889a66-2439-4ac2-b4d3-a614870dec98",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-10",
+            "varName": "maxLaunchSpeed",
             "varType": 0
         }
     ],

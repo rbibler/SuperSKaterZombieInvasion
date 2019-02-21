@@ -11,6 +11,11 @@ if(stateNew) {
 	scr_UpdateSkaterAnimation(jumpAnim);
 	canSplash = true;
 		show_debug_message("FALLING");
+	if(lastState != s_JUMPING) {
+		speedAtJump = abs(xSpeed);
+	}
+	ySpeed += yMomentum;
+	yMomentum = 0;
 }
 
 //SkaterBasicStateAnimation();
