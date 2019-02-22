@@ -48,3 +48,4 @@ if(!grounded) {
 
 
 y += ySpeed;
+scr_SaveVertColTiles();

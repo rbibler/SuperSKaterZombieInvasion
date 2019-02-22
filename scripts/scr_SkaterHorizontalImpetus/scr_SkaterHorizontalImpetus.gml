@@ -14,6 +14,12 @@ if(abs(xSpeed + accel) > maxSpeed) {
 	accel = 0;
 }
 
+if(groundedMiddle and groundTile[MIDDLE] < array_length_1d(obj_slopeController.tileFriction)) {
+	//var frictionValue = -1 * sign(xSpeed) * obj_slopeController.tileFriction[groundTile[MIDDLE]];
+	//accel += frictionValue;
+	show_debug_message("Friction: " + string(frictionValue));
+}
+
 // Are we moving left?
 if(input[LEFT]) {
 	if(!input[RIGHT] and !input[DOWN]) {

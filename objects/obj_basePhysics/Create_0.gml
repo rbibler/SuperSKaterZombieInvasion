@@ -44,10 +44,12 @@ maxYSpeed = 6;
 
 // Flag to indiciate that the skater is on the ground
 grounded = false;
+groundedMiddle = false;
 platformGrounded = false;
 groundedRight = false;
 groundedLeft = false;
 wasGrounded = false;
+wasGroundedMiddle = false;
 wasGroundedRight = false;
 wasGroundedLeft = false;
 

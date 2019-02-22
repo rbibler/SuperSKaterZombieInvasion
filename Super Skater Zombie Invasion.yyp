@@ -4151,6 +4151,14 @@
             }
         },
         {
+            "Key": "e6fd5a86-0ef9-4722-8917-51a91b14a68e",
+            "Value": {
+                "id": "1da79de4-7a3c-4723-bbfd-3689300f9406",
+                "resourcePath": "scripts\\scr_SaveVertColTiles\\scr_SaveVertColTiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e70a0e39-8c1b-4e15-b151-e4848696d12b",
             "Value": {
                 "id": "3e579690-2ba7-499b-939c-056ad34bdb3a",
@@ -4736,6 +4744,7 @@
         "7ba8aaaa-8410-4d1d-82f5-cc5c3911be30",
         "fee5208f-3485-46e6-b828-cf533f8c95be",
         "b6a68946-df3b-4ebc-a957-47a57b10eea7",
+        "e6fd5a86-0ef9-4722-8917-51a91b14a68e",
         "060b7a68-fe71-45cf-9a92-8d03d06bf393",
         "f5411c22-a535-44e1-9a26-004b1e8816d0",
         "25ce7d6b-e6b7-4b23-a540-adde31a9e0d7",

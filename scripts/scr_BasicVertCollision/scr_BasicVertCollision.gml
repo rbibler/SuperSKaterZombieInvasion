@@ -11,7 +11,6 @@ var xPos = argument3;
 
 if(tile <= 0) {
 	grounded = false;
-	show_debug_message("Grounded is false in basic!");
 } else {
 	var targetBottomTile = floor(targetBottom / TILE_SIZE);
 	var tileHorizIndex = xPos mod TILE_SIZE;
@@ -23,7 +22,6 @@ if(tile <= 0) {
 			return;
 		}
 		grounded = true;
-		show_debug_message("Grounded is True in basic!");
 		scr_StopYMotion();
 		y = (targetBottomTile * TILE_SIZE) + tileHeight + (y - bbox_bottom) - 1;
 	} 

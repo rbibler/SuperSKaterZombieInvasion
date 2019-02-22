@@ -346,3 +346,4 @@ slopeMomentumMax[DOWN_SLOPE_SHORT] = -8;
 
 
 
+tileFriction[SOLID] = 0.25;
