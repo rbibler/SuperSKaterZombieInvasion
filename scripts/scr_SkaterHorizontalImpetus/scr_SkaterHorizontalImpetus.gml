@@ -2,6 +2,38 @@
 var speedThisFrame = speedX;
 var accel = 0.25;
 
+var targetSpeed = 3.5;
+var maxSpeed = maxSpeedXFlatland;
+var curDirection = scr_GetDirection();
+
+accel = scr_GetAccelFromTile();
+
+if(curDirection != lastDirection and lastDirection != 0) {
+	accel += 0.5 * curDirection;
+	show_debug_message("THIS IS MY ACCEL: " + string(accel));
+}
+
+if(abs(xSpeed) < targetSpeed) {
+	xSpeed += curDirection * accel;
+
+}
+
+if(abs(xSpeed) > maxSpeed or curDirection == 0) {
+	xSpeed -= sign(xSpeed) * accel;
+}
+
+lastDirection = curDirection;
+
+
+
+
+
+
+
+
+
+
+/*
 if(scr_HeadingUpHill()) {
 	show_debug_message("Heading up hill!");
 	accel = 0.75;
@@ -50,15 +82,15 @@ if(input[LEFT]) {
 		scr_StateSwitch(s_ROLLING);
 	}
 } 
-
+*/
 scr_GeneralCheckSlopeImpetus();
 
 // If the skater is skating too quickly, slow him down gradually until he reaches max speed
 // Don't just set to max speed, or the transition will feel weird
-if(abs(xSpeed) >= maxSpeed) {
-	var difInSpeed = abs(xSpeed) - maxSpeed;
-	xSpeed -= sign(xSpeed) * 0.25 * difInSpeed;
-}
+//if(abs(xSpeed) >= maxSpeed) {
+	//var difInSpeed = abs(xSpeed) - maxSpeed;
+	//xSpeed -= sign(xSpeed) * 0.25 * difInSpeed;
+//}
 
 
 

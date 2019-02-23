@@ -751,6 +751,14 @@
             }
         },
         {
+            "Key": "294aef69-580c-4e3f-8b6d-8cf4d750bfb9",
+            "Value": {
+                "id": "9e15c479-466a-4d8d-b1e3-3276d3752806",
+                "resourcePath": "scripts\\scr_GetDirection\\scr_GetDirection.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "29851e0f-09f0-41b3-828f-951505dba70d",
             "Value": {
                 "id": "1cf36513-10e6-4832-87ce-d31b313de33a",
@@ -2575,6 +2583,14 @@
             }
         },
         {
+            "Key": "943cd42b-ed01-4a80-8613-3467b6c3792c",
+            "Value": {
+                "id": "00e20e85-4238-461d-b2a9-96477dbbdcc0",
+                "resourcePath": "scripts\\scr_CheckDirectionChange\\scr_CheckDirectionChange.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af",
             "Value": {
                 "id": "7aacc71a-e464-46df-b04e-25c92cd729ed",
@@ -2595,6 +2611,14 @@
             "Value": {
                 "id": "5362e74f-ceee-4f17-9406-0098216a750c",
                 "resourcePath": "scripts\\scr_GetRailHeight\\scr_GetRailHeight.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "959f5bf4-b192-4bbf-9fd5-188aca894eea",
+            "Value": {
+                "id": "1c5c2c72-f7d2-4383-b5e9-53ea6c23f5b3",
+                "resourcePath": "scripts\\scr_GetAccelFromTile\\scr_GetAccelFromTile.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4596,6 +4620,9 @@
         "38edbb54-5306-4fa8-b04f-ea84fa87f01d",
         "526cebec-2574-434e-aa96-794a1638db9a",
         "481a72b0-26ab-4de4-acf4-dd9d9db0ea9f",
+        "943cd42b-ed01-4a80-8613-3467b6c3792c",
+        "294aef69-580c-4e3f-8b6d-8cf4d750bfb9",
+        "959f5bf4-b192-4bbf-9fd5-188aca894eea",
         "a151bcd0-7db8-45a0-96ba-f9cd50020bfb",
         "04b58e47-71cc-4791-b1cf-2d9eecf7194d",
         "52176388-8e30-464b-b973-106c6f7935a1",
