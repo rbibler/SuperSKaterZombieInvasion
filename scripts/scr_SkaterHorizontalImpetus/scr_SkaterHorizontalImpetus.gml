@@ -19,10 +19,12 @@ if((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0)) {
 	}
 }
 
+
 // If skating, need a boost uphill on slopes to overcome slope impetus
 if(scr_HeadingUpHill() and !onFoot) {
 	accel = .8;
 }
+
 
 // Only accelerate if we haven't reached our target speed
 var shouldAccel = false;
@@ -31,6 +33,8 @@ if(curDirection == FACE_RIGHT) {
 } else if(curDirection == FACE_LEFT) {
 	shouldAccel = xSpeed > -targetSpeed;
 }
+
+
 
 // If we should accelerate, do it.
 if(shouldAccel) {
@@ -45,6 +49,7 @@ if((abs(xSpeed) > maxSpeed) or (curDirection == 0 and grounded)) {
 		decel *= 1.5;
 	}
 	xSpeed -= decel;
+	show_debug_message("Am decelerating");
 }
 
 lastDirection = curDirection;

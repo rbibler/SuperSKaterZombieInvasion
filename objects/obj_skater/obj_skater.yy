@@ -488,6 +488,20 @@
             "value": "2.5",
             "varName": "maxSpeedXOnFootSprinting",
             "varType": 0
+        },
+        {
+            "id": "0d490d44-03fb-4ad1-8e62-f5edc9aa0ec1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "boardSwingMaxHold",
+            "varType": 0
         }
     ],
     "solid": false,
