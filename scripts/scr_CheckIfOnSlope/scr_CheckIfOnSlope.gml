@@ -7,7 +7,6 @@ if(tile > 5) {
 	onSlope = true;
 	slopeDirection = (tile< 15) ? UP_SLOPE : DOWN_SLOPE;
 	slopeImpetus = obj_slopeController.slopeGravity[tile];
-	show_debug_message("Adding slope impetus");
 	if((slopeDirection == DOWN_SLOPE and xSpeed < 0) or (slopeDirection == UP_SLOPE and xSpeed > 0)) {
 		var speedMultiplier = abs(xSpeed / maxSpeedXDownhill);
 		yMomentum = obj_slopeController.slopeMomentumMax[tile] * speedMultiplier;

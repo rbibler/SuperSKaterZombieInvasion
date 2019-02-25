@@ -37,7 +37,7 @@ if(input[DOWN] and stateName != s_CLIMBING) {
 } 
 
 // Check how fast the skater should be moving
-scr_SkaterRunHorizontalImpetus();
+scr_SkaterHorizontalImpetus();
 if(currentAnimation == boardSwingAnim) {
 	scr_StopXMotion();
 	scr_ZeroInputs();

@@ -9,7 +9,6 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		
 		if(!grounded and ySpeed > 0) {
 			grounded = true;
-			show_debug_message("Grounded is true in block check!");
 		}
 		if(bbox_bottom > obj.bbox_top and obj.object_index == obj_controlBlock) {
 			y = obj.bbox_top - (bbox_bottom - y) - 1;

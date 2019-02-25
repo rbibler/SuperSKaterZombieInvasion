@@ -167,6 +167,20 @@
             "value": "0.25",
             "varName": "defaultAccel",
             "varType": 0
+        },
+        {
+            "id": "45353a6f-4222-4ceb-81a3-75167d4a7285",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "maxSpeedInAir",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -14,13 +14,13 @@ if(tilemap_get_at_pixel(collisionTiles, x, bbox_bottom) > 3) {
 }
 
 if((p1 == 1 or p2 == 1 or p3 == 1)) {// and (self.object_index == obj_skater and state != climbState)) {
-	show_debug_message("Collision");
 	if(xSpeed > 0) {
 		x = x - (x mod 16) + (15) - (bbox_right - x);
 	} else {
 		x = x - (x mod 16) - (bbox_left - x);
 	}
 	scr_StopXMotion();
+	show_debug_message("HORIZ COLLIZ");
 	if(script_exists(horizCollisionScript)) {
 		script_execute(horizCollisionScript);
 	}
@@ -59,7 +59,5 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 
 }
 
-if(object_index = obj_skater) {
-show_debug_message("x speed: " + string(xSpeed));
-}
 x += xSpeed;
+show_debug_message("XSPEED: " + string(xSpeed));

@@ -22,7 +22,7 @@ if(stateNew) {
 	jump = 1;
 	onSlope = false;
 	grounded = false;
-	
+	currentAirSpeedMax = scr_CalculateCurrentMaxAirSpeed();
 }
 
 if(currentAnimation.isDone) {

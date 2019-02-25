@@ -303,24 +303,24 @@ slopeHeights[DOWN_SLOPE_SHORT, 15] = 15
 
 
 // Array to hold the extra x impetus a slope should give the skater
-slopeGravity[UP_SLOPE_LONG] = -0.15;
-slopeGravity[UP_SLOPE_LONG + 1] = -0.15;
-slopeGravity[UP_SLOPE_LONG + 2] = -0.15;
-slopeGravity[UP_SLOPE_LONG + 3] = -0.15;
+slopeGravity[UP_SLOPE_LONG] = -0.1;
+slopeGravity[UP_SLOPE_LONG + 1] = -0.1;
+slopeGravity[UP_SLOPE_LONG + 2] = -0.1;
+slopeGravity[UP_SLOPE_LONG + 3] = -0.1;
 
-slopeGravity[DOWN_SLOPE_LONG] =  0.15;
-slopeGravity[DOWN_SLOPE_LONG + 1] =  0.15;
-slopeGravity[DOWN_SLOPE_LONG + 2] = 0.15;
-slopeGravity[DOWN_SLOPE_LONG + 3] = 0.15;
+slopeGravity[DOWN_SLOPE_LONG] =  0.1;
+slopeGravity[DOWN_SLOPE_LONG + 1] =  0.1;
+slopeGravity[DOWN_SLOPE_LONG + 2] = 0.1;
+slopeGravity[DOWN_SLOPE_LONG + 3] = 0.1;
 
-slopeGravity[UP_SLOPE_MED] = -0.2;
-slopeGravity[UP_SLOPE_MED + 1] = -0.2;
+slopeGravity[UP_SLOPE_MED] = -0.15;
+slopeGravity[UP_SLOPE_MED + 1] = -0.15;
 
-slopeGravity[DOWN_SLOPE_MED] = 0.2;
-slopeGravity[DOWN_SLOPE_MED + 1] = 0.2;
+slopeGravity[DOWN_SLOPE_MED] = 0.15;
+slopeGravity[DOWN_SLOPE_MED + 1] = 0.15;
 
-slopeGravity[UP_SLOPE_SHORT] = -0.225;
-slopeGravity[DOWN_SLOPE_SHORT] = 0.225;
+slopeGravity[UP_SLOPE_SHORT] = -0.2;
+slopeGravity[DOWN_SLOPE_SHORT] = 0.2;
 
 
 // Array to hold the extra x impetus a slope should give the skater
@@ -346,4 +346,4 @@ slopeMomentumMax[DOWN_SLOPE_SHORT] = -8;
 
 
 
-tileFriction[SOLID] = 0.0875;
+tileFriction[SOLID] = 0.2;

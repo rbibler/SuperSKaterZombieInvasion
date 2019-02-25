@@ -125,7 +125,31 @@
             "mvc": "1.0",
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
             "propertyId": "c6855c49-c015-4e3e-ae8f-1a2c679b993d",
-            "value": "3.5"
+            "value": "3"
+        },
+        {
+            "id": "97c0f9bf-b8f9-4e70-8770-c78e3e67c946",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "45353a6f-4222-4ceb-81a3-75167d4a7285",
+            "value": "5.5"
+        },
+        {
+            "id": "89113c1a-127d-4c28-8cfc-7bcd892678fb",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "e621ea79-5c5f-4c1f-a165-7a3edb236e10",
+            "value": "0.5"
+        },
+        {
+            "id": "24ca235e-b131-4b87-ad97-3f565d080fe8",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "86d2ae74-dcb1-4bf8-8df1-5101280fb7a1",
+            "value": "0.2"
         }
     ],
     "parentObjectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
@@ -158,20 +182,6 @@
             "varType": 0
         },
         {
-            "id": "6f12838a-bb1f-460b-803c-0463ca7073fc",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "2",
-            "varName": "speedXRun",
-            "varType": 0
-        },
-        {
             "id": "0fd607f6-d259-4469-b5c2-7f0eaf6b86e5",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -181,7 +191,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-6",
+            "value": "-7.5",
             "varName": "onFootJumpSpeed",
             "varType": 0
         },
@@ -435,6 +445,48 @@
             "resourceFilter": 1023,
             "value": "-10",
             "varName": "maxLaunchSpeed",
+            "varType": 0
+        },
+        {
+            "id": "278dadd6-058a-4773-b25d-e7ed7140cff3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2.75",
+            "varName": "minMaxAirSpeed",
+            "varType": 0
+        },
+        {
+            "id": "0c3beff7-6aa9-4726-ae96-63e851b38709",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1.5",
+            "varName": "maxSpeedXOnFootNormal",
+            "varType": 0
+        },
+        {
+            "id": "17db70d8-5ba3-4ef2-885a-16bef01f3f48",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2.5",
+            "varName": "maxSpeedXOnFootSprinting",
             "varType": 0
         }
     ],

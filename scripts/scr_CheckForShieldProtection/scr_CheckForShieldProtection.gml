@@ -8,7 +8,6 @@ with(obj_skater) {
 		return true;
 	}
 	if(currentPowerup == PB_SHIELD and global.diamondCount > 0) {
-		show_debug_message("Shield");
 		scr_SetFacingSwitchEnable(false);
 		shielded = true;
 		scr_UpdateDiamondCount(-pbShieldCost);

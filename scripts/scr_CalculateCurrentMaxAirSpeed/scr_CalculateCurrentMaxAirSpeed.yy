@@ -1,8 +1,8 @@
 {
-    "id": "34ec790d-38de-44ce-984a-c11615096df4",
+    "id": "61181018-f46a-47f5-82c1-474f49a21e09",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_SkaterRunHorizontalImpetus",
+    "name": "scr_CalculateCurrentMaxAirSpeed",
     "IsCompatibility": false,
     "IsDnD": false
 }

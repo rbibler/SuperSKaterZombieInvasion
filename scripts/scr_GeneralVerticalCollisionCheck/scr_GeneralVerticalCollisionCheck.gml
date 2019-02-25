@@ -43,7 +43,6 @@ scr_VerticalBlockCollisionCheck();
 if(!grounded) {
 	onSlope = false;
 	slopeImpetus = 0;
-	show_debug_message("Clearing slope impetus");
 }
 
 

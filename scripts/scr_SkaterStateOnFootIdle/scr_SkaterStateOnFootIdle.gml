@@ -48,7 +48,7 @@ if(input[DOWN] and stateName != s_CLIMBING) {
 
 
 // Check how fast the skater should be moving
-scr_SkaterRunHorizontalImpetus();
+scr_SkaterHorizontalImpetus();
 scr_MoveAndCollide();
 
 

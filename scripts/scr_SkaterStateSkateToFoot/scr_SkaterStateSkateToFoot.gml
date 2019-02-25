@@ -16,7 +16,7 @@ if(stateNew) {
 }
 
 // Check how fast the skater should be moving
-scr_SkaterRunHorizontalImpetus();
+scr_SkaterHorizontalImpetus();
 scr_MoveAndCollide();
 
 if(currentAnimation.isDone) {

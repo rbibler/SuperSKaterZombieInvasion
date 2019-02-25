@@ -244,6 +244,7 @@ drawOffsetX = 0;
 drawOffsetY = 0;
 railGrindButtonPressTimer = 0;
 railJumpBoost = 2;
+currentAirSpeedMax = 0;
 
 
 

@@ -16,6 +16,7 @@ if(stateNew) {
 	}
 	ySpeed += yMomentum;
 	yMomentum = 0;
+	currentAirSpeedMax = scr_CalculateCurrentMaxAirSpeed();
 }
 
 //SkaterBasicStateAnimation();
@@ -30,22 +31,6 @@ scr_SkaterHorizontalImpetus();
 // Figure out the fractional movement so that we're always working with integers
 scr_GeneralMovementFractions();
 
-// If no directional input, slow the skater down until he stops
-if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
-	
-	// If horiztonal direction is the same this frame as last, then need to slow down
-	if(sign(xSpeed) == sign(lastXSpeed)) {
-		// Air friction is less than ground friction, because of science.
-		xSpeed -= (airFriction * sign(xSpeed));
-		// If that last slow down has flipped the direction, stop the skater
-		if(sign(xSpeed) != sign(lastXSpeed)) {
-			scr_StopXMotion();
-		}
-	} else {
-		scr_StopXMotion();
-	}
-	
-}
 
 scr_MoveAndCollide();
 scr_SkaterLadderCollisions();
@@ -77,7 +62,6 @@ if(input[TRANSITION] and !lastInput[TRANSITION]) {
 var railHeight = scr_CheckOnRail(x, bbox_bottom + ySpeed);
 if(railHeight != -1) {
 	if(input[DOWN] and railGrindButtonPressTimer <= railGrindButtonPressThreshold) {
-		show_debug_message("Rail yo");
 		var tileStart = floor((bbox_bottom + ySpeed) / TILE_SIZE) * TILE_SIZE;
 		tileStart += railHeight;
 		y = tileStart - (bbox_bottom - y);

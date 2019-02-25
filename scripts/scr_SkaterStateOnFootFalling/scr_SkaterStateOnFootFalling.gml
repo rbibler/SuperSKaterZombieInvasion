@@ -15,7 +15,7 @@ if(stateNew) {
 
 
 // Check how fast the skater should be moving
-scr_SkaterRunHorizontalImpetus();
+scr_SkaterHorizontalImpetus();
 
 // Figure out the fractional movement so that we're always working with integers
 scr_GeneralMovementFractions();

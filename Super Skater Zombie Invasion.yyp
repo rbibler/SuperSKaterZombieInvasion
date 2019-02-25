@@ -983,14 +983,6 @@
             }
         },
         {
-            "Key": "34ec790d-38de-44ce-984a-c11615096df4",
-            "Value": {
-                "id": "1a4def00-a572-4df6-b8bf-ac4245a73154",
-                "resourcePath": "scripts\\scr_SkaterRunHorizontalImpetus\\scr_SkaterRunHorizontalImpetus.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "35b35670-7fe0-4533-b226-84ccbeab0cfb",
             "Value": {
                 "id": "ab997bcb-1c4d-473d-9d28-fc643c6cadcc",
@@ -1724,6 +1716,14 @@
                 "id": "b78a425b-8770-4d29-9372-e5bf922967d6",
                 "resourcePath": "sprites\\spr_RailBlockHelper\\spr_RailBlockHelper.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "61181018-f46a-47f5-82c1-474f49a21e09",
+            "Value": {
+                "id": "295c40da-c567-4667-8c25-5809ba9bdf81",
+                "resourcePath": "scripts\\scr_CalculateCurrentMaxAirSpeed\\scr_CalculateCurrentMaxAirSpeed.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2475,6 +2475,14 @@
             "Value": {
                 "id": "de8a540e-96d5-45ba-a39a-fa487ff2cd71",
                 "resourcePath": "scripts\\scr_ScaleGame\\scr_ScaleGame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8d8b1120-79af-44ee-a687-c2f9afcf2494",
+            "Value": {
+                "id": "d2e9c179-9120-41da-9775-5f713155d4e3",
+                "resourcePath": "scripts\\scr_IsSprinting\\scr_IsSprinting.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3791,6 +3799,14 @@
             }
         },
         {
+            "Key": "d65c3d6e-d9e3-4f39-a519-d844d39de04e",
+            "Value": {
+                "id": "9f90583c-8232-49b9-a4f5-19156701fd8a",
+                "resourcePath": "scripts\\scr_GetTargetSpeed\\scr_GetTargetSpeed.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d6b1c9da-e78c-4869-bac2-aa627bc93fa1",
             "Value": {
                 "id": "c9b3640f-953c-4fe2-a1ab-e1e75243277f",
@@ -4616,13 +4632,13 @@
         "34694f45-1fca-4aba-90f3-26b22ced61a8",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
-        "34ec790d-38de-44ce-984a-c11615096df4",
         "38edbb54-5306-4fa8-b04f-ea84fa87f01d",
         "526cebec-2574-434e-aa96-794a1638db9a",
         "481a72b0-26ab-4de4-acf4-dd9d9db0ea9f",
         "943cd42b-ed01-4a80-8613-3467b6c3792c",
         "294aef69-580c-4e3f-8b6d-8cf4d750bfb9",
         "959f5bf4-b192-4bbf-9fd5-188aca894eea",
+        "d65c3d6e-d9e3-4f39-a519-d844d39de04e",
         "a151bcd0-7db8-45a0-96ba-f9cd50020bfb",
         "04b58e47-71cc-4791-b1cf-2d9eecf7194d",
         "52176388-8e30-464b-b973-106c6f7935a1",
@@ -4654,6 +4670,8 @@
         "d62b7ca4-a8f4-45fc-aed3-8fe206486bf5",
         "b27f840e-b24d-407e-ab7c-525638ece144",
         "c161a26d-7b75-4fa7-a4a2-06fb226627c5",
+        "61181018-f46a-47f5-82c1-474f49a21e09",
+        "8d8b1120-79af-44ee-a687-c2f9afcf2494",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",

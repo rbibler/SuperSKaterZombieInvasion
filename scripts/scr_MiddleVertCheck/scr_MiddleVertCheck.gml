@@ -23,7 +23,6 @@ if(grounded) {
 			var tileHorizIndex = x mod TILE_SIZE;
 			var tileHeight = obj_slopeController.slopeHeights[tile, tileHorizIndex];
 			grounded = true;
-			show_debug_message("Grounded is true in middle vert check!");
 			scr_StopYMotion();
 			y = (targetBottomTile * TILE_SIZE) + tileHeight + (y - bbox_bottom) - 1;
 		}

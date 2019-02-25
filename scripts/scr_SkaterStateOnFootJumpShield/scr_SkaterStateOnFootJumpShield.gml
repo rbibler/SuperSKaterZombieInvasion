@@ -4,7 +4,7 @@ if(stateNew) {
 }
 
 // Check how fast the skater should be moving
-scr_SkaterRunHorizontalImpetus();
+scr_SkaterHorizontalImpetus();
 
 // If no directional input, slow the skater down until he stops
 if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {

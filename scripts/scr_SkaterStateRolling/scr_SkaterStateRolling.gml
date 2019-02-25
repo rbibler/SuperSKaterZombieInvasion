@@ -29,30 +29,7 @@ scr_SkaterHorizontalImpetus();
 scr_GeneralMovementFractions();
 
 
-// If no directional input, slow the skater down until he stops
-if(abs(xSpeed) > 0) {
-	if(!onSlope) {
-		// If horiztonal direction is the same this frame as last, then need to slow down
-		if(sign(xSpeed) == sign(lastXSpeed)) {
-			xSpeed -= (groundFriction * sign(xSpeed));
-			
-		} 
-	} else {
-		// If horiztonal direction is the same this frame as last, then need to slow down
-		if(sign(xSpeed) == sign(lastXSpeed)) {
-			xSpeed -= (slopeFriction * sign(xSpeed));
-		
-			// If that last slow down has flipped the direction, stop the skater
-			if(sign(xSpeed) != sign(lastXSpeed)) {
-				scr_StopXMotion();
-				scr_StateSwitch(s_IDLE);
-			}
-		} else {
-			scr_StopXMotion();
-			scr_StateSwitch(s_IDLE);
-		}
-	}
-} else if(abs(xSpeed) <= 0.15) {
+if(abs(xSpeed) <= 0.15) {
 	scr_StateSwitch(s_IDLE);
 }
 
