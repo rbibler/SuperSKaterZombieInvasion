@@ -10,7 +10,6 @@ if(stateNew) {
 	//sprite_index = spr_SkaterCrouch;
 	//image_index = 0;
 	scr_UpdateSkaterAnimation(crouchAnim);
-		show_debug_message("CROUCHING");
 }
 
 

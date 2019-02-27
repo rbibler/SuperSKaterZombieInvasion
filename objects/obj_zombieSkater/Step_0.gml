@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 // Inherit the parent event
+frameTimer++;
 
 ySpeed += myGravity;
 if(ySpeed >= maxYSpeed) {

@@ -8,7 +8,7 @@ if(stateNew) {
 }
 
 // MOVE AND COLLIDE
-
+scr_MoveAndCollide();
 
 
 // ANIMATE
@@ -22,4 +22,8 @@ active = dist <= activationRange;
 if(grounded and active) {
 	input[initialDirection] = true;
 	scr_StateSwitch(s_MOVING);
+}
+
+if(!grounded and active) {
+	scr_StateSwitch(s_FALLING);
 }

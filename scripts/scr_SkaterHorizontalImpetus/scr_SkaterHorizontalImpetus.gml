@@ -1,71 +1,70 @@
-// Determine if skater is sprinting or not
-onSlope = scr_IsOnSlope();
+/// This is a script that helps the skater determine how fast to go horizontally.
 
+// Local variables
+var accel = 0;
 
-var speedThisFrame = speedX;
-var accel = 0.25;
+var targetSpeed = scr_GetTargetSpeed();
+var curDirection = scr_GetDirection();
+var maxSpeed = scr_GetMaxSpeed();
 
-// Give the skater a boost if he's moving upslope
-if(onSlope and ((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0))) {
-	accel = 0.75;
-}
+// How fast should we accelerate?
+accel = scr_GetAccelFromTile();
 
-// Are we moving left?
-if(input[LEFT]) {
-	if(!input[RIGHT] and !input[DOWN]) {
-		// If so, accelerate left until max speed is reached
-		myDirection = -1;
-		if(xSpeed > -speedThisFrame) {
-			xSpeed -= accel;
-		} 
-	} else if(input[RIGHT] and stateName != s_ROLLING) {
-		//scr_StopXMotion();
-		scr_StateSwitch(s_ROLLING);
-	}
-// If not moving left, check to see if moving right
-} else if(input[RIGHT]) {
-	if(!input[LEFT] and !input[DOWN]) {
-		myDirection = 1;
-		// If so, accelerate right until max speed is reached
-		if(xSpeed < speedThisFrame) {
-			xSpeed += accel;
-		} 
-	} else if(input[LEFT] and stateName != s_ROLLING) {
-		//scr_StopXMotion();
-		scr_StateSwitch(s_ROLLING);
-	}
-} else {
-	// If no directional input, slow the skater down until he stops
-	if(abs(xSpeed) > 0 and grounded and stateName != s_ROLLING) {
-		scr_StateSwitch(s_ROLLING);
-	}
-} 
-
-scr_GeneralCheckSlopeImpetus();
-
-// Give the //skater a boost every time he pushes off with is drive foot
-if(stateName == s_MOVING and currentAnimation == skateAnim) {
-	if(currentAnimation.currentIndex >= 3) {
-		xSpeed += 0.225 * sign(xSpeed);
-	}
-}
-
-// Skater can only go so fast
-// Choose max speed based on situation: faster if on a slope
-var maxSpeed = speedThisFrame;
-if(onSlope) {
-	if(input[LEFT] or input[RIGHT]) {
-		maxSpeed = maxSpeedXDownhill;
+// If changing direction, slide a bit when skating. Otherwise jump to it.
+if((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0)) {
+	if(!onFoot) {
+		accel *= 0.75;
 	} else {
-		maxSpeed = maxSpeedXFlatland;
+		accel *= 0.9;
 	}
 }
 
-// If the skater is skating too quickly, slow him down gradually until he reaches max speed
-// Don't just set to max speed, or the transition will feel weird
-if(abs(xSpeed) >= maxSpeed) {
-	xSpeed -= sign(xSpeed) * 0.15;
+
+// If skating, need a boost uphill on slopes to overcome slope impetus
+if(scr_HeadingUpHill() and !onFoot) {
+	accel = (accel + abs(slopeImpetus)) * .8;
 }
+
+
+// Only accelerate if we haven't reached our target speed
+var shouldAccel = false;
+if(curDirection == FACE_RIGHT) {
+	shouldAccel = xSpeed < targetSpeed;
+} else if(curDirection == FACE_LEFT) {
+	shouldAccel = xSpeed > -targetSpeed;
+}
+show_debug_message("    MaxSpeed: " + string(maxSpeed));
+show_debug_message("    Direction: " + (curDirection == 0 ? "None" : (curDirection == 1 ? "Right" : "Left")));
+show_debug_message("    Direction Change: " + (lastDirection != curDirection ? "True" : "False"));
+show_debug_message("    Accel: " + string(accel));
+show_debug_message("    SlopeCounter: " + string(slopeCounter));
+show_debug_message("    JumpInput: " + (input[JUMP] ? "True" : "False"));
+
+// If we should accelerate, do it.
+if(shouldAccel) {
+	var toAdd = curDirection * accel;
+	xSpeed += toAdd;
+	show_debug_message("    Added?: true");
+}
+
+
+// Slow down to max speed when: No input and on the ground, or when above max speed
+if((abs(xSpeed) > maxSpeed) or (curDirection == 0 and grounded and !onSlope)) {
+	var decel = sign(xSpeed) * accel * ((onFoot and grounded) ? 1 : .5);
+	if(onFoot and scr_IsSprinting()) {
+		decel *= 1.5;
+	}
+	xSpeed -= decel;
+	show_debug_message("    Decel: " + string(decel));
+}
+
+lastDirection = curDirection;
+
+// If we're skating, see if we need to add any speed from the slope we're on. 
+if(!onFoot) {
+	scr_GeneralCheckSlopeImpetus();
+}
+
 
 
 

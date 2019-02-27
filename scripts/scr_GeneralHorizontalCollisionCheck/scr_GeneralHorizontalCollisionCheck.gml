@@ -13,7 +13,7 @@ if(tilemap_get_at_pixel(collisionTiles, x, bbox_bottom) > 3) {
 	p2 = 0;
 }
 
-if(p1 == 1 or p2 == 1 or p3 == 1 and (self.object_index == obj_skater and state != climbState)) {
+if((p1 == 1 or p2 == 1 or p3 == 1)) {// and (self.object_index == obj_skater and state != climbState)) {
 	if(xSpeed > 0) {
 		x = x - (x mod 16) + (15) - (bbox_right - x);
 	} else {
@@ -59,3 +59,4 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 }
 
 x += xSpeed;
+show_debug_message("    xSpeed: " + string(xSpeed));

@@ -12,14 +12,15 @@ moveAnim = scr_RegisterStateAnimation(
 		sprite_get_number(spr_zombieSkater)
 	);
 	
+
 jumpAnim = scr_RegisterStateAnimation(
-		spr_ZombieSkaterJumping, 
-		NORMAL_ANIM_SPEED, 
-		true, 
-		noone, 
-		"", 
-		sprite_get_number(spr_ZombieSkaterJumping)
+		spr_zombieSkaterJump,
+		NORMAL_ANIM_SPEED,
+		true, noone,
+		"ZOMBIE_JUMP",
+		sprite_get_number(spr_zombieSkaterJump)
 	);
+	
 	
 deathAnim = scr_RegisterStateAnimation(
 		spr_ZombieSkaterDying, 

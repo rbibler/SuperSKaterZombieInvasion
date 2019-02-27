@@ -9,6 +9,8 @@ if(newRoom) {
 frameTimer++;
 cooldown--;
 shouldAnimate = true;
+show_debug_message("");
+show_debug_message("Frame: " + string(frameTimer));
 
 mask_index = sprite_index;
 
@@ -56,6 +58,7 @@ if(input[JUMP] and !lastInput[JUMP] and !grounded) {
 	jumpInputBuffer = 10;
 }
 
+show_debug_message("    State: " + stateName);
 // The real fun happens in the state machine
 scr_StateExecute();
 if(shouldAnimate) {

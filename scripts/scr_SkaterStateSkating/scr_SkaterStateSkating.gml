@@ -15,7 +15,6 @@ if(stateNew) {
 	//image_index = 0;
 	stateVar[0] = false;
 	scr_UpdateSkaterAnimation(skateAnim);
-		show_debug_message("SKATING");
 }
 
 // Check if we should fire a weapon
@@ -59,9 +58,13 @@ scr_SkaterLadderCollisions();
 
 
 // If we're not moving and there's no input, then we're idle
-if(xSpeed == 0 and !input[RIGHT] and !input[LEFT]) {
-	scr_StateSwitch(s_IDLE);
-}
+if(!input[RIGHT] and !input[LEFT]) {
+	if(xSpeed == 0) {
+		scr_StateSwitch(s_IDLE);
+	} else {
+		scr_StateSwitch(s_ROLLING);
+	}
+} 
 
 
 if(input[TRANSITION] and !lastInput[TRANSITION]) {

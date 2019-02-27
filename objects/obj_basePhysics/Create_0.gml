@@ -21,9 +21,12 @@ ySpeedFinal = 0;
 carrySpeedY = 0;
 yMomentum = 0;
 lastY = ystart;
+lastX = xstart;
+lastDirection = 0;
 
 onSlope = false;
 slopeDirection = -1;
+slopeImpetus = 0;
 verticalMovementRun = false;
 
 
@@ -42,16 +45,29 @@ maxYSpeed = 6;
 
 // Flag to indiciate that the skater is on the ground
 grounded = false;
+groundedMiddle = false;
 platformGrounded = false;
 groundedRight = false;
 groundedLeft = false;
 wasGrounded = false;
+wasGroundedMiddle = false;
 wasGroundedRight = false;
 wasGroundedLeft = false;
 
 inFloorCenter = 0;
 inFloorLeft = 0;
 inFloorRight = 0;
+
+groundTile[LEFT_CORNER] = 0;
+groundTile[MIDDLE] = 0;
+groundTile[RIGHT_CORNER] = 0;
+
+horizTiles[TOP_LEFT] = 0;
+horizTiles[MIDDLE_LEFT] = 0;
+horizTiles[BOTTOM_LEFT] = 0;
+horizTiles[TOP_RIGHT] = 0;
+horizTiles[MIDDLE_RIGHT] = 0;
+horizTiles[BOTTOM_RIGHT] = 0;
 
 scr_GetCollisionTiles();
 

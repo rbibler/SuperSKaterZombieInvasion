@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "ca67fce5-fb0e-4e9f-89a6-d0dd4d28110a"
+        },
+        {
+            "id": "1c804e7f-3432-47aa-958a-773583c159f2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "ca67fce5-fb0e-4e9f-89a6-d0dd4d28110a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -116,6 +126,22 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
             "value": "scr_ZombieSkaterStateDead"
+        },
+        {
+            "id": "aabd2188-e6ab-43af-9c47-f90a3acbaa54",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "6cdef82c-f9ec-4704-9d9c-82f57a95bfed",
+            "value": "scr_ZombieSkaterShieldReact"
+        },
+        {
+            "id": "c00a2af0-e8a9-4c94-8250-9f30c7f71e6c",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
+            "propertyId": "6f99264f-8f71-492f-bf4d-fe100af69405",
+            "value": "scr_AttackEnemyHorizCollision"
         }
     ],
     "parentObjectId": "c89e2c87-907a-434c-952e-bc59f6eb4851",

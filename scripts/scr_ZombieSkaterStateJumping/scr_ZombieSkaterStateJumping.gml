@@ -11,7 +11,6 @@ scr_AttackEnemyMoveAI();
 scr_EnemyMovement();
 scr_MoveAndCollide();
 
-
 // ANIMATE
 scr_UpdateStateAnimation(currentAnimation);
 

@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "ed14a131-953f-411a-8370-232b4492166c"
+        },
+        {
+            "id": "de0f5038-c00b-4719-a396-80231b7725a0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 3,
+            "m_owner": "ed14a131-953f-411a-8370-232b4492166c"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -142,6 +152,34 @@
             "resourceFilter": 1023,
             "value": "8",
             "varName": "maxSpeedXDownhill",
+            "varType": 0
+        },
+        {
+            "id": "86d2ae74-dcb1-4bf8-8df1-5101280fb7a1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.25",
+            "varName": "defaultAccel",
+            "varType": 0
+        },
+        {
+            "id": "45353a6f-4222-4ceb-81a3-75167d4a7285",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "maxSpeedInAir",
             "varType": 0
         }
     ],

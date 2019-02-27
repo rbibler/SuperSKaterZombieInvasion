@@ -54,6 +54,18 @@
 #macro s_ON_FOOT_JUMP_SHIELD	"ON_FOOT_JUMP_SHIELD"
 #macro s_JUMP_SHIELD			"JUMP_SHIELD"
 
+// Collision Points
+#macro LEFT_CORNER				0
+#macro MIDDLE					1
+#macro RIGHT_CORNER				2
+
+#macro TOP_LEFT					0
+#macro MIDDLE_LEFT				1
+#macro BOTTOM_LEFT				2
+#macro TOP_RIGHT				3
+#macro MIDDLE_RIGHT				4
+#macro BOTTOM_RIGHT				5
+
 
 #macro RES_W	640
 #macro RES_H	360
