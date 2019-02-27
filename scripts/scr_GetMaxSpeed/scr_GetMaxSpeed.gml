@@ -11,7 +11,7 @@ if(onFoot) {
 } else {
 	// Don't care if we're going uphill for max speed. If there's a quick transition, don't want to kill
 	// the momentum.
-	if(onSlope) {
+	if(onSlope and slopeCounter > 10) {
 		maxSpeed = maxSpeedXDownhill;
 	} else if(!grounded) {
 		maxSpeed = currentAirSpeedMax;

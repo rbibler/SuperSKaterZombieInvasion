@@ -37,10 +37,12 @@ scr_SkaterLadderCollisions();
 
 if(scr_SkaterCheckJump()) {
 	scr_StateSwitch(s_JUMPING);
+	return;
 } else {
 	// If the ground is gone, you fall
 	if(!grounded) {
 		scr_StateSwitch(s_FALLING);
+		return;
 	}
 }
 

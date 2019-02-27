@@ -150,6 +150,14 @@
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
             "propertyId": "86d2ae74-dcb1-4bf8-8df1-5101280fb7a1",
             "value": "0.2"
+        },
+        {
+            "id": "355ca328-84f7-48b9-896a-1c905fc6208b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
+            "propertyId": "6f99264f-8f71-492f-bf4d-fe100af69405",
+            "value": "scr_EmptyAssScript"
         }
     ],
     "parentObjectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",

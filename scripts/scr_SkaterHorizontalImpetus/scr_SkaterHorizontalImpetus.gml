@@ -37,6 +37,8 @@ show_debug_message("    MaxSpeed: " + string(maxSpeed));
 show_debug_message("    Direction: " + (curDirection == 0 ? "None" : (curDirection == 1 ? "Right" : "Left")));
 show_debug_message("    Direction Change: " + (lastDirection != curDirection ? "True" : "False"));
 show_debug_message("    Accel: " + string(accel));
+show_debug_message("    SlopeCounter: " + string(slopeCounter));
+show_debug_message("    JumpInput: " + (input[JUMP] ? "True" : "False"));
 
 // If we should accelerate, do it.
 if(shouldAccel) {
@@ -47,7 +49,7 @@ if(shouldAccel) {
 
 
 // Slow down to max speed when: No input and on the ground, or when above max speed
-if((abs(xSpeed) > maxSpeed) or (curDirection == 0 and grounded)) {
+if((abs(xSpeed) > maxSpeed) or (curDirection == 0 and grounded and !onSlope)) {
 	var decel = sign(xSpeed) * accel * ((onFoot and grounded) ? 1 : .5);
 	if(onFoot and scr_IsSprinting()) {
 		decel *= 1.5;

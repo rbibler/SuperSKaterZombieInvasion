@@ -12,6 +12,17 @@ if(!verticalMovementRun) {
 x += carrySpeed;
 carrySpeed = 0;
 
+if(onSlope) {
+	if(sign(xSpeed) == sign(lastXSpeed)) {
+		slopeCounter++;
+	} else {
+		slopeCounter = 0;
+	}
+} else {
+	slopeCounter = 0;
+}
+
+
 lastXSpeed = xSpeed;
 scr_SaveInput();
 
@@ -32,6 +43,16 @@ lastY = y;
 slopeTouchTimer--;
 if(slopeTouchTimer < -3) {
 	yMomentum = 0;
+}
+
+if(onSlope) {
+	if(sign(xSpeed) == sign(lastXSpeed)) {
+		slopeCounter++;
+	} else {
+		slopeCounter = 0;
+	}
+} else {
+	slopeCounter = 0;
 }
 
 wasGrounded = grounded;
