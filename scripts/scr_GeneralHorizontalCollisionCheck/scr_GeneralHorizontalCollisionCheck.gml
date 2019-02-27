@@ -20,7 +20,6 @@ if((p1 == 1 or p2 == 1 or p3 == 1)) {// and (self.object_index == obj_skater and
 		x = x - (x mod 16) - (bbox_left - x);
 	}
 	scr_StopXMotion();
-	show_debug_message("HORIZ COLLIZ");
 	if(script_exists(horizCollisionScript)) {
 		script_execute(horizCollisionScript);
 	}
@@ -60,4 +59,4 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 }
 
 x += xSpeed;
-show_debug_message("XSPEED: " + string(xSpeed));
+show_debug_message("    xSpeed: " + string(xSpeed));

@@ -22,7 +22,6 @@ if(stateNew) {
 	onSlope = false;
 	grounded = false;
 	speedAtJump = abs(xSpeed);
-	show_debug_message("JUMPING!");
 	currentAirSpeedMax = scr_CalculateCurrentMaxAirSpeed();
 }
 

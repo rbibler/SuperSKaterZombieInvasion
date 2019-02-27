@@ -13,7 +13,6 @@ if(stateNew) {
 	//sprite_index = spr_SkaterIdle;
 	//image_index = 0;
 	scr_UpdateSkaterAnimation(idleAnim);
-		show_debug_message("ROLLING");
 }
 
 //SkaterBasicStateAnimation();

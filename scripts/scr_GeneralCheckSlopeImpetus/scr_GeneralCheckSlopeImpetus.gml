@@ -17,14 +17,18 @@ slopeTouchTimer = rampAllowance;
 	}
 }*/
 
-
+show_debug_message("    Slope: " + (onSlope ? "True" : "False"));
+var upHill = scr_HeadingUpHill();
 if(onSlope) {
-	if((!input[LEFT] and !input[RIGHT]) or scr_HeadingUpHill()) {
+	if((!input[LEFT] and !input[RIGHT]) or upHill) {
 		xSpeed += slopeImpetus;
+		show_debug_message("    SlopeImpetus: " + string(slopeImpetus));
 		// Add some extra speed if speed is less than one to overcome the inertia
 		// caused by operating only with integers
-		if(abs(xSpeed) < 1) {
-			xSpeed += sign(slopeImpetus) * 0.5;
+		if(abs(xSpeed) < 1 and !upHill) {
+			var slopeBoost = sign(slopeImpetus) * 0.5;
+			xSpeed += slopeBoost;
+			show_debug_message("    SlopeBoost: " + string(slopeBoost));
 		}		
 	}
 }

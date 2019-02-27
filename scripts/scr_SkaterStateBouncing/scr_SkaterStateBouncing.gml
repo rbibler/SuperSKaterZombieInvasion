@@ -19,7 +19,6 @@ if(stateNew) {
 	
 	onSlope = false;
 	grounded = false;
-		show_debug_message("BOUNCING");
 }
 
 //SkaterBasicStateAnimation();
