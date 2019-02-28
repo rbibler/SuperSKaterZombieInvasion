@@ -9,9 +9,7 @@ if(ySpeed < 0) {
 			scr_CheckYaHead(bbox_right, bbox_top + ySpeed);
 		}
 	}
-	y += ySpeed;
-	return;
-}
+} else {
 
 var groundedAtStart = argument0;
 var targetBottom = scr_VertCollisionChecks(x, groundedAtStart);
@@ -35,7 +33,7 @@ if(!grounded) {
 }
 
 
-
+}
 scr_GeneralVerticalMovement();
 
 scr_VerticalBlockCollisionCheck();
