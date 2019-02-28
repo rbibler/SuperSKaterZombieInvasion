@@ -1,6 +1,6 @@
 /// This is a script that helps an object determine if it's collided with a block.
 
-if(place_meeting(x, y + (ySpeed != 0 ? ySpeed : 2), obj_baseBlock)) {
+if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 	var obj = instance_place(x, y + ySpeed, obj_baseBlock);
 	if(obj != noone and obj.isSolid) {
 		while(!place_meeting(x, y + sign(ySpeed), obj_baseBlock)) {
@@ -18,13 +18,14 @@ if(place_meeting(x, y + (ySpeed != 0 ? ySpeed : 2), obj_baseBlock)) {
 			script_execute(skaterVertCollisionScript, other);
 		}
 	}
-} else if(grounded) {
+} else if(ySpeed >= 0) {
 	if(place_meeting(x, y + 2, obj_baseBlock)) {
 		var obj = instance_place(x, y + 2, obj_baseBlock);
 			if(obj != noone and obj.isSolid) {
 			y = obj.bbox_top - (bbox_bottom - y) - 1;
 			scr_StopYMotion();
 			show_debug_message("Block ground 2");
+			grounded = true;
 			with(obj) {
 				script_execute(skaterVertCollisionScript, other);
 			}
