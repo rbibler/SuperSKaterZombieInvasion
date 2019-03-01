@@ -7,7 +7,8 @@
         "71389310-860c-4d1f-ac07-8301ed7f12f7",
         "8ee9612b-9e38-4ea7-ba22-5c351db51aca",
         "80b5ccd1-f5d9-4a46-8c26-6301bba31aa3",
-        "f67eb9f7-d018-471f-ba92-84c1dbac223c"
+        "f67eb9f7-d018-471f-ba92-84c1dbac223c",
+        "6cfd49a2-12fa-4665-bc8d-34684ba19ab6"
     ],
     "filterType": "GMObject",
     "folderName": "Effects Objects",
