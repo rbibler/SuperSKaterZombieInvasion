@@ -1,5 +1,6 @@
 if(stateNew) {
 	sprite_index = spr_explodeBlockExploding;
+	image_index = 0;
 }
 
 if(stateTimer mod 10 == 0) {
