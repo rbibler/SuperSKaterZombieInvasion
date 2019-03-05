@@ -20,6 +20,15 @@ input[7] = 0;
 input[8] = 0;
 input[9] = 0;
 
+inputDownTime[UP] = 0;
+inputDownTime[DOWN] = 0;
+inputDownTime[LEFT] = 0;
+inputDownTime[RIGHT] = 0;
+inputDownTime[SELECT] = 0;
+inputDownTime[START] = 0;
+inputDownTime[SHOOT] = 0;
+inputDownTime[JUMP] = 0;
+
 tileColliderX = 0;
 tileColliderY = 0;
 
