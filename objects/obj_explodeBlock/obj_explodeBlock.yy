@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_explodeBlock",
     "eventList": [
-        
+        {
+            "id": "f2278b0a-002d-4732-892f-e9430f22ebea",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 7,
+            "eventtype": 7,
+            "m_owner": "54b1d764-b531-473a-a485-de47faeaa86d"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
@@ -49,30 +58,6 @@
             "value": "0"
         },
         {
-            "id": "976a442d-b71b-46e8-ad22-41fc9228b798",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "405731c1-f231-47e3-b413-81e74de01247",
-            "value": "scr_ExplodingBlockNewState"
-        },
-        {
-            "id": "30da1cc0-076b-4466-bb54-bf50e99f77c3",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "6437486c-70ed-475a-a901-6d6545a33095",
-            "value": "scr_ExplodingBlockAnimate"
-        },
-        {
-            "id": "64dbb809-7676-4ac7-9f10-6f218a73ab8b",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "39b3545d-1cc5-44df-89ae-2d8e8c1eb118",
-            "value": "scr_ExplodingBlockCheckStateChange"
-        },
-        {
             "id": "d3fbb3e3-d411-4da3-bef6-071cec379492",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -95,6 +80,54 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
             "value": "scr_EmptyAssScript"
+        },
+        {
+            "id": "3135b4cd-fcaf-4d8e-ab6e-302c48c8b8ad",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "bd3fe793-2816-4b49-94e6-b3e0644b239e",
+            "value": "scr_ExplodingBlockStateIdle"
+        },
+        {
+            "id": "185b754f-f24e-41be-b03a-c7f299f45e46",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "3d2d4671-9b58-4530-bcbf-d483952e5d7c",
+            "value": "scr_ExplodingBlockMenacing"
+        },
+        {
+            "id": "f4ac1f2c-9c92-415d-8bc7-515ae464123d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "d0382f87-f416-4c30-a2d4-4ade8290f50e",
+            "value": "scr_ExplodingBlockStateAttacking"
+        },
+        {
+            "id": "9483ac24-ea67-411a-af7e-42a497953253",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
+            "value": "scr_ExplodingBlockStateDead"
+        },
+        {
+            "id": "75657f05-f03c-4210-abce-31a7ee25e831",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "6223a832-52ea-47dc-8174-713fe5676f03",
+            "value": "scr_ExplodingBlockStateDead"
+        },
+        {
+            "id": "dd125325-3d3c-4a87-9d2e-43f56663cfd3",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "54427283-bc64-40b4-bcef-3427097bb49b",
+            "value": "150"
         }
     ],
     "parentObjectId": "29f06f95-3599-467a-8c1b-0011227dfc7d",
