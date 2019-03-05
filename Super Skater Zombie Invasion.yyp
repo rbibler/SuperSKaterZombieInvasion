@@ -3559,6 +3559,14 @@
             }
         },
         {
+            "Key": "c19c733d-62d4-4576-bacf-4144f3a13fe9",
+            "Value": {
+                "id": "963bb381-5e4a-43c8-b040-71b264f83d31",
+                "resourcePath": "scripts\\scr_CheckForSlope\\scr_CheckForSlope.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c2c6bc53-bb0c-49dc-b15e-f0d6504157d8",
             "Value": {
                 "id": "9fa29d7a-974f-499a-8a52-d64036e192e8",
@@ -4865,6 +4873,7 @@
         "0105072f-a061-4ff8-a366-83beca7917a2",
         "e3c28de0-bd4e-4ba4-b575-13b7cd8f4aba",
         "fa4b991f-9f8e-4994-8fd7-7bb9c3224b05",
+        "c19c733d-62d4-4576-bacf-4144f3a13fe9",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",

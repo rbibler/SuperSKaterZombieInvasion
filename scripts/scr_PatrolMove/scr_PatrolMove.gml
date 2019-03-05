@@ -2,16 +2,19 @@
 if(stateName == s_JUMPING) {
 	return;
 }
-if(input[RIGHT]) {
-	if(!groundedRight and wasGroundedRight and !onSlope) {
-		input[RIGHT] = 0;
-		input[LEFT] = 1;
 
+/*
+*		|	|
+		|MT	| x	|
+		|DT	|
+*/
+if(grounded) {
+	var sideToCheck = input[RIGHT] ? bbox_right : bbox_left;
+	var middleTile = tilemap_get_at_pixel(collisionTiles, sideToCheck + xSpeed, y);
+	var downTile = tilemap_get_at_pixel(collisionTiles, sideToCheck + xSpeed, y + 2);
+	if(downTile == 0 and middleTile == 0 and !onSlope) {
+		input[LEFT] = !input[LEFT];
+		input[RIGHT] = !input[RIGHT];
 	}
-} else if(input[LEFT]) {
-	if(!groundedLeft and wasGroundedLeft and !onSlope) {
-		input[LEFT] = 0;
-		input[RIGHT] = 1;
-
-	}
+	
 }

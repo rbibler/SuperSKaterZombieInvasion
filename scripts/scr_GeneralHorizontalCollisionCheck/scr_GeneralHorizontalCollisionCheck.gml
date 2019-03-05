@@ -59,4 +59,6 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 }
 
 x += xSpeed;
-show_debug_message("    xSpeed: " + string(xSpeed));
+if(global.debug) {
+	show_debug_message("    xSpeed: " + string(xSpeed));
+}

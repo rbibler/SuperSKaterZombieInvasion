@@ -33,18 +33,22 @@ if(curDirection == FACE_RIGHT) {
 } else if(curDirection == FACE_LEFT) {
 	shouldAccel = xSpeed > -targetSpeed;
 }
-show_debug_message("    MaxSpeed: " + string(maxSpeed));
-show_debug_message("    Direction: " + (curDirection == 0 ? "None" : (curDirection == 1 ? "Right" : "Left")));
-show_debug_message("    Direction Change: " + (lastDirection != curDirection ? "True" : "False"));
-show_debug_message("    Accel: " + string(accel));
-show_debug_message("    SlopeCounter: " + string(slopeCounter));
-show_debug_message("    JumpInput: " + (input[JUMP] ? "True" : "False"));
+if(global.debug) {
+	show_debug_message("    MaxSpeed: " + string(maxSpeed));
+	show_debug_message("    Direction: " + (curDirection == 0 ? "None" : (curDirection == 1 ? "Right" : "Left")));
+	show_debug_message("    Direction Change: " + (lastDirection != curDirection ? "True" : "False"));
+	show_debug_message("    Accel: " + string(accel));
+	show_debug_message("    SlopeCounter: " + string(slopeCounter));
+	show_debug_message("    JumpInput: " + (input[JUMP] ? "True" : "False"));
+}
 
 // If we should accelerate, do it.
 if(shouldAccel) {
 	var toAdd = curDirection * accel;
 	xSpeed += toAdd;
-	show_debug_message("    Added?: true");
+	if(global.debug) {
+		show_debug_message("    Added?: true");
+	}
 }
 
 
@@ -55,7 +59,9 @@ if((abs(xSpeed) > maxSpeed) or (curDirection == 0 and grounded and !onSlope)) {
 		decel *= 1.5;
 	}
 	xSpeed -= decel;
-	show_debug_message("    Decel: " + string(decel));
+	if(global.debug) {
+		show_debug_message("    Decel: " + string(decel));
+	}
 }
 
 lastDirection = curDirection;
