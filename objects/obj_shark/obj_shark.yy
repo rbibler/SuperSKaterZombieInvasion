@@ -70,30 +70,6 @@
             "value": "scr_SharkHitByAmmo"
         },
         {
-            "id": "2a5cddb1-4519-42be-b09e-53d81a8a7556",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "405731c1-f231-47e3-b413-81e74de01247",
-            "value": "scr_SharkSetupNewState"
-        },
-        {
-            "id": "6b85d411-63e6-49d0-825b-2ad3f39d87ee",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "6437486c-70ed-475a-a901-6d6545a33095",
-            "value": "scr_SharkAnimate"
-        },
-        {
-            "id": "3dcea9ab-e4e7-49c3-a17a-2a6a0696691d",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "39b3545d-1cc5-44df-89ae-2d8e8c1eb118",
-            "value": "scr_SharkCheckStateChange"
-        },
-        {
             "id": "c53df5c8-2750-43f0-aa72-36a73a51a65d",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -108,6 +84,38 @@
             "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
             "propertyId": "dead12e9-df50-4b13-b85f-054b78f2cf1f",
             "value": "12"
+        },
+        {
+            "id": "c5eaff2c-e633-428f-af39-cf7b52b0801c",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "bd3fe793-2816-4b49-94e6-b3e0644b239e",
+            "value": "scr_SharkStateIdle"
+        },
+        {
+            "id": "5b715bec-19a2-41df-a509-3f7db3251021",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "440516e8-a7b3-4e61-996a-7eebecb8ff41",
+            "value": "scr_SharkStateJumping"
+        },
+        {
+            "id": "973c60ee-0b07-4f49-b462-1b2e9da3f01d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "baf13921-fcd0-4557-98e6-03296607539b",
+            "value": "scr_SharkStateFalling"
+        },
+        {
+            "id": "1d743cfe-9ba5-477b-9a55-3e9da5f01c27",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
+            "value": "scr_SharkStateDead"
         }
     ],
     "parentObjectId": "a86d99fd-1017-4e75-9638-094c898c181b",

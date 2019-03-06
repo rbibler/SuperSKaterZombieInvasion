@@ -6,3 +6,4 @@ gravityOn = false;
 event_inherited();
 
 
+restY = ystart;

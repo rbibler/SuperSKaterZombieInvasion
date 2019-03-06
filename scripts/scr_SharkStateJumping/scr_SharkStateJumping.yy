@@ -1,8 +1,8 @@
 {
-    "id": "54c399eb-d616-4b86-8f69-d1cfd94d9760",
+    "id": "7ffbf770-fef4-45e3-a1d4-34ad0f029ded",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_SharkAnimate",
+    "name": "scr_SharkStateJumping",
     "IsCompatibility": false,
     "IsDnD": false
 }
