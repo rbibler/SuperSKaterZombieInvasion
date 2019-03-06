@@ -158,6 +158,20 @@
             "value": "3",
             "varName": "dripRateInSeconds",
             "varType": 0
+        },
+        {
+            "id": "8b008083-3867-4a04-8570-800c6f305444",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "RIGHT",
+            "varName": "initialDirection",
+            "varType": 0
         }
     ],
     "solid": false,

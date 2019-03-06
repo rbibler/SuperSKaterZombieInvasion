@@ -12,6 +12,7 @@ if(stateTimer mod 10 == 0) {
 			sprite_index = spr_slimeballJump;
 			image_index = 1;
 			myGravity = 0.5;
+			moveDirOnRestart = other.initialDirection;
 		}
 	} else if(image_index == image_number - 1) {
 		scr_StateSwitch(s_DEAD);
