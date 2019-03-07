@@ -212,6 +212,14 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "6cdef82c-f9ec-4704-9d9c-82f57a95bfed",
             "value": "scr_SlimeballShieldReact"
+        },
+        {
+            "id": "6b20b3dd-ebbb-4848-bed0-6b8dc4a6ab01",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "438d8e24-61ba-4d13-b180-a9e8f32f72d6",
+            "value": "scr_SlimeballCollideWithSkater"
         }
     ],
     "parentObjectId": "3d722df8-120e-43a7-abff-d5e21430611a",
