@@ -28,6 +28,7 @@ onSlope = false;
 slopeDirection = -1;
 slopeImpetus = 0;
 verticalMovementRun = false;
+decelImmediate = false;
 
 
 // Keeps track of skater's direction. -1 is left 1 is right. Should never be zero.

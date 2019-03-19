@@ -59,6 +59,6 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 }
 
 x += xSpeed;
-if(global.debug) {
+if(global.debug and object_index == obj_skater) {
 	show_debug_message("    xSpeed: " + string(xSpeed));
 }

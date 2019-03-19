@@ -58,6 +58,9 @@ if((abs(xSpeed) > maxSpeed) or (curDirection == 0 and grounded and !onSlope)) {
 	if(onFoot and scr_IsSprinting()) {
 		decel *= 1.5;
 	}
+	if(decelImmediate == true and curDirection != 0) {
+		decel = 1 * sign(xSpeed);
+	}
 	xSpeed -= decel;
 	if(global.debug) {
 		show_debug_message("    Decel: " + string(decel));
