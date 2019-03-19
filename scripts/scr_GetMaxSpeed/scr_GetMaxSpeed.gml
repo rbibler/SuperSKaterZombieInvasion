@@ -2,6 +2,15 @@
 /// It's similar to the target speed, but a bit different, 
 
 var maxSpeed = maxSpeedXFlatland;
+var centerTile = groundTile[MIDDLE];
+if(centerTile < array_length_1d(obj_slopeController.maxSpeedTile)) {
+	var tileMaxSpeed = obj_slopeController.maxSpeedTile[centerTile];
+	if(tileMaxSpeed > 0) {
+		masxSpeed = tileMaxSpeed
+		return maxSpeed;
+	}
+}
+
 
 if(onFoot) {
 	maxSpeed = maxSpeedXOnFootNormal;

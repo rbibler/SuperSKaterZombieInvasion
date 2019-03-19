@@ -13,6 +13,7 @@
 
 #macro SOLID			1
 #macro ONE_WAY_TOP		3
+#macro SAND				4
 
 
 slopeHeights[SOLID, 0] = 0
@@ -48,6 +49,23 @@ slopeHeights[ONE_WAY_TOP, 12] = 0
 slopeHeights[ONE_WAY_TOP, 13] = 0
 slopeHeights[ONE_WAY_TOP, 14] = 0
 slopeHeights[ONE_WAY_TOP, 15] = 0
+
+slopeHeights[SAND, 0] = 0
+slopeHeights[SAND, 1] = 0
+slopeHeights[SAND, 2] = 0
+slopeHeights[SAND, 3] = 0
+slopeHeights[SAND, 4] = 0
+slopeHeights[SAND, 5] = 0
+slopeHeights[SAND, 6] = 0
+slopeHeights[SAND, 7] = 0
+slopeHeights[SAND, 8] = 0
+slopeHeights[SAND, 9] = 0
+slopeHeights[SAND, 10] = 0
+slopeHeights[SAND, 11] = 0
+slopeHeights[SAND, 12] = 0
+slopeHeights[SAND, 13] = 0
+slopeHeights[SAND, 14] = 0
+slopeHeights[SAND, 15] = 0
 
 
 slopeHeights[UP_SLOPE_LONG, 0] = 15;
@@ -347,3 +365,12 @@ slopeMomentumMax[DOWN_SLOPE_SHORT] = -8;
 
 
 tileFriction[SOLID] = 0.175;
+
+tileFriction[SAND] = 0.75;
+
+
+for(var i = 0; i < 15; i++) {
+	maxSpeedTile[i] = -1;
+}
+
+maxSpeedTile[SAND] = 1;
