@@ -3,14 +3,14 @@
 decelImmediate = false;
 var maxSpeed = maxSpeedXFlatland;
 var centerTile = groundTile[MIDDLE];
-if(centerTile < array_length_1d(obj_slopeController.maxSpeedTile)) {
-	var tileMaxSpeed = obj_slopeController.maxSpeedTile[centerTile];
+
+	var tileMaxSpeed = obj_slopeController.maxSpeedTile[currentMovementState, centerTile];
 	if(tileMaxSpeed > 0) {
-		decelImmediate = true;
+		//decelImmediate = true;
 		maxSpeed = tileMaxSpeed
 		return maxSpeed;
 	}
-}
+
 
 
 if(onFoot) {

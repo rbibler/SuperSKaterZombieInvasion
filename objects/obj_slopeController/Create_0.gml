@@ -15,7 +15,7 @@
 #macro ONE_WAY_TOP		3
 #macro SAND				4
 
-
+numberOfTiles = 30;
 scr_SetupSlopeProperties();
 scr_SetupTileFrictionProperties();
 scr_SetupTileMaxSpeedProperties();

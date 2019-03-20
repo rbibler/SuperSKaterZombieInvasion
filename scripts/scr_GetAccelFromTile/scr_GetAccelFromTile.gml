@@ -8,7 +8,10 @@ if(!grounded) {
 // A hack for now: Check to see if we're center-grounded, then grab friction param for the tile we're 
 // touching if it exists. If no friction param is registered for that tile, return the default.
 // TODO: Add tile frictions for all tile types. 
-if(groundedMiddle and groundTile[MIDDLE] < array_length_1d(obj_slopeController.tileFriction)) {
-	return obj_slopeController.tileFriction[groundTile[MIDDLE]];
+if(groundedMiddle) {
+	var accelFromTile = obj_slopeController.tileFriction[currentMovementState, groundTile[MIDDLE]];
+	if(accelFromTile > 0) {
+		return accelFromTile;
+	}
 }
 return defaultAccel;

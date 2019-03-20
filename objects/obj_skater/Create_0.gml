@@ -20,6 +20,7 @@ slopeCounter = 0;
 // 0 - Idle; 1 - Skating; 2 - Crouching; 3 - Jumping; 
 // 4 - Slamming; 5 - Recovering; 6 - Hit; 7 - Climbing;
 //state = 0;
+currentMovementState = SKATE_STATE;
 
 // Hold on to the skater's state from the previous frame
 //lastState = 0;

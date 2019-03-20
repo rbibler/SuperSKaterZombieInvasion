@@ -54,13 +54,11 @@ if(shouldAccel) {
 
 // Slow down to max speed when: No input and on the ground, or when above max speed
 if((abs(xSpeed) > maxSpeed) or (curDirection == 0 and grounded and !onSlope)) {
-	var decel = sign(xSpeed) * accel * ((onFoot and grounded) ? 1 : .5);
+	var decel = sign(xSpeed) * accel;// * ((onFoot and grounded) ? 1 : .5);
 	if(onFoot and scr_IsSprinting()) {
 		decel *= 1.5;
 	}
-	if(decelImmediate == true and curDirection != 0) {
-		decel = 1 * sign(xSpeed);
-	}
+
 	xSpeed -= decel;
 	if(global.debug) {
 		show_debug_message("    Decel: " + string(decel));
