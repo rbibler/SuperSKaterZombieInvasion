@@ -1,4 +1,6 @@
-
+if(global.debug and object_index == obj_skater) {
+	show_debug_message("    xSpeedFrac: " + string(xSpeedFraction)); 
+}
 xSpeed += xSpeedFraction;
 ySpeed += ySpeedFraction;
 

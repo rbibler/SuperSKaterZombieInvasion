@@ -470,6 +470,20 @@
             "varType": 0
         },
         {
+            "id": "c8f8976e-dee2-43f2-be48-13efc6c2209e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3",
+            "varName": "targetSpeedXSkating",
+            "varType": 0
+        },
+        {
             "id": "0c3beff7-6aa9-4726-ae96-63e851b38709",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -480,7 +494,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "1.5",
-            "varName": "maxSpeedXOnFootNormal",
+            "varName": "targetSpeedXOnFoot",
             "varType": 0
         },
         {
@@ -494,7 +508,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "2.5",
-            "varName": "maxSpeedXOnFootSprinting",
+            "varName": "targetSpeedXOnFootSprinting",
             "varType": 0
         },
         {
@@ -509,6 +523,76 @@
             "resourceFilter": 1023,
             "value": "10",
             "varName": "boardSwingMaxHold",
+            "varType": 0
+        },
+        {
+            "id": "cc03b57c-41f4-4740-9141-21037133fd99",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3",
+            "varName": "maxSpeedXSkatingFlat",
+            "varType": 0
+        },
+        {
+            "id": "1c0e6556-42c1-4744-acd7-d1e44ce529f3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "maxSpeedXOnFoot",
+            "varType": 0
+        },
+        {
+            "id": "96479832-4b42-4ba4-b1c7-4dc16da65e72",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "6",
+            "varName": "maxSpeedXSkatingDownhill",
+            "varType": 0
+        },
+        {
+            "id": "db377cbd-1d3f-4981-823c-a1b3ada6a037",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3",
+            "varName": "maxSpeedXOnFootSprinting",
+            "varType": 0
+        },
+        {
+            "id": "cf11ccaa-a995-4122-8b6c-25ad02472cd1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": ".175",
+            "varName": "defaultDecel",
             "varType": 0
         }
     ],

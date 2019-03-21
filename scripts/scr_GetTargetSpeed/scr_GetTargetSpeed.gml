@@ -1,24 +1,16 @@
 /// This is a script that helps the skater determine what speed he should strive for.
 
-
-var targetSpeed = maxSpeedXFlatland;
+var targetSpeed = targetSpeedXSkating;
 
 // On foot is simple: Normal or sprinting
-if(onFoot) {
-	targetSpeed = maxSpeedXOnFootNormal;
+if(currentMovementState == ON_FOOT_STATE) {
+	targetSpeed = targetSpeedXOnFoot;
 	if(scr_IsSprinting()) {
-		targetSpeed = maxSpeedXOnFootSprinting;
+		targetSpeed = targetSpeedXSprinting;
 	}
-} else {
-	// When skating, are we going downhill? If not, we've already set our max to flatland speed.
-	if(onSlope) {
-		if(!scr_HeadingUpHill()) {
-			targetSpeed = maxSpeedXDownhill;
-		} 
-	} else if(!grounded) {
-		// When in the air, we use the airspeed max calculated when the skater went airborne.
-		targetSpeed = currentAirSpeedMax;
-	} 
-}
+} else if(!grounded) {
+	// When in the air, we use the airspeed max calculated when the skater went airborne.
+	targetSpeed = currentAirSpeedMax;
+} 
 
 return targetSpeed;

@@ -12,7 +12,7 @@ accel = scr_GetAccelFromTile();
 
 // If changing direction, slide a bit when skating. Otherwise jump to it.
 if((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0)) {
-	if(!onFoot) {
+	if(currentMovementState == SKATE_STATE) {
 		accel *= 0.75;
 	} else {
 		accel *= 0.9;
@@ -21,7 +21,7 @@ if((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0)) {
 
 
 // If skating, need a boost uphill on slopes to overcome slope impetus
-if(scr_HeadingUpHill() and !onFoot) {
+if(scr_HeadingUpHill() and currentMovementState == SKATE_STATE) {
 	accel = (accel + abs(slopeImpetus)) * .8;
 }
 
@@ -50,15 +50,22 @@ if(shouldAccel) {
 		show_debug_message("    Added?: true");
 	}
 }
-
+var shouldDecel = false;
+if(xSpeed != 0 and (abs(xSpeed) > maxSpeed)) {
+	shouldDecel = true;
+} else if(curDirection == 0 and grounded) {
+	if(currentMovementState == SKATE_STATE) {
+		if(!onSlope) {
+			shouldDecel = true;
+		}
+	} else {
+		shouldDecel = true;
+	}
+}
 
 // Slow down to max speed when: No input and on the ground, or when above max speed
-if((abs(xSpeed) > maxSpeed) or (curDirection == 0 and grounded and !onSlope)) {
-	var decel = sign(xSpeed) * accel;// * ((onFoot and grounded) ? 1 : .5);
-	if(onFoot and scr_IsSprinting()) {
-		decel *= 1.5;
-	}
-
+if(shouldDecel) {
+	var decel = scr_GetDecelFromTile() * sign(xSpeed);
 	xSpeed -= decel;
 	if(global.debug) {
 		show_debug_message("    Decel: " + string(decel));
@@ -68,7 +75,7 @@ if((abs(xSpeed) > maxSpeed) or (curDirection == 0 and grounded and !onSlope)) {
 lastDirection = curDirection;
 
 // If we're skating, see if we need to add any speed from the slope we're on. 
-if(!onFoot) {
+if(currentMovementState == SKATE_STATE) {
 	scr_GeneralCheckSlopeImpetus();
 }
 
