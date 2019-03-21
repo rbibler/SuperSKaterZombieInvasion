@@ -29,7 +29,7 @@ switch(stateName) {
 xOffset *= facing;
 xOffset += x;
 yOffset += y;
-var ammo = instance_create_layer(xOffset, yOffset, "AMMO", obj_SlingshotRock);
+var ammo = instance_create_layer(xOffset, yOffset, "Ammo", obj_SlingshotRock);
 ammo.ammoDirection = facing;
 cooldown = scr_GetSlingshotCooldown();
 ammo.xSpeed = slingshot.xSpeed * facing;
@@ -37,13 +37,13 @@ ammo.ySpeed = 0;
 
 if(currentWeapon == SPREAD_SLINGSHOT) {
 	ammo.sprite_index = spr_slingshotRockBig;
-	ammo = instance_create_layer(xOffset, yOffset, "AMMO", obj_SlingshotRock);
+	ammo = instance_create_layer(xOffset, yOffset, "Ammo", obj_SlingshotRock);
 	ammo.ammoDirection = facing;
 	ammo.xSpeed = slingshot.xSpeed * facing;
 	ammo.ySpeed = slingshot.xSpeed / 2;
 	ammo.sprite_index = spr_slingshotRockBig;
 	
-	ammo = instance_create_layer(xOffset, yOffset, "AMMO", obj_SlingshotRock);
+	ammo = instance_create_layer(xOffset, yOffset, "Ammo", obj_SlingshotRock);
 	ammo.ammoDirection = facing;
 	ammo.xSpeed = slingshot.xSpeed * facing;
 	ammo.ySpeed = -slingshot.xSpeed / 2;

@@ -14,7 +14,7 @@ with(weapon) {
 			ammoOnScreen++;
 			var ammoOffsetX = weapon.ammoOffsetX * sign(other.myDirection);
 			var ammoOffsetY = weapon.ammoOffsetY;
-			var ammo = instance_create_layer(obj_skater.x + ammoOffsetX, obj_skater.y + ammoOffsetY, "AMMO", obj_PowerPushBall);
+			var ammo = instance_create_layer(obj_skater.x + ammoOffsetX, obj_skater.y + ammoOffsetY, "Ammo", obj_PowerPushBall);
 			ammo.weaponParent = weapon;
 			ammo.ammoDirection = other.myDirection;
 			ammo.image_xscale = ammo.ammoDirection;

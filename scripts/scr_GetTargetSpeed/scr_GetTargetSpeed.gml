@@ -6,7 +6,7 @@ var targetSpeed = targetSpeedXSkating;
 if(currentMovementState == ON_FOOT_STATE) {
 	targetSpeed = targetSpeedXOnFoot;
 	if(scr_IsSprinting()) {
-		targetSpeed = targetSpeedXSprinting;
+		targetSpeed = targetSpeedXOnFootSprinting;
 	}
 } else if(!grounded) {
 	// When in the air, we use the airspeed max calculated when the skater went airborne.

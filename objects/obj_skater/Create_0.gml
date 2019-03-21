@@ -67,7 +67,7 @@ for(var i = 0; i < 10; i++) {
 
 
 // Reference to the weapon
-slingshot = instance_create_layer(0, 0, "WEAPONS", obj_Slingshot);
+slingshot = instance_create_layer(0, 0, "Weapons", obj_Slingshot);
 currentWeapon = SPREAD_SLINGSHOT;
 currentPowerup = PB_ROCKET;
 weaponAnimCounter = 0;

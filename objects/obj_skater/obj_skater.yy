@@ -367,7 +367,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "2",
             "varName": "projOffsetCrouchingY",
             "varType": 0
         },
@@ -493,7 +493,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1.5",
+            "value": "1.25",
             "varName": "targetSpeedXOnFoot",
             "varType": 0
         },
@@ -507,7 +507,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2.5",
+            "value": "2.25",
             "varName": "targetSpeedXOnFootSprinting",
             "varType": 0
         },
@@ -549,7 +549,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "1.5",
             "varName": "maxSpeedXOnFoot",
             "varType": 0
         },
@@ -577,7 +577,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "3",
+            "value": "2.25",
             "varName": "maxSpeedXOnFootSprinting",
             "varType": 0
         },
