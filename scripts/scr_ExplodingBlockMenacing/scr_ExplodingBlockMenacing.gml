@@ -1,5 +1,5 @@
 if(stateNew) {
-	sprite_index = spr_explodeBlockIdle
+	sprite_index = spr_ExplodingBlockMenacing;
 	
 }
 

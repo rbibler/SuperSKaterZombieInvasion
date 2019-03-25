@@ -594,6 +594,20 @@
             "value": ".175",
             "varName": "defaultDecel",
             "varType": 0
+        },
+        {
+            "id": "450ced93-fc13-4251-84f1-f24ac3ad69a3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3",
+            "varName": "immunityLengthInSeconds",
+            "varType": 0
         }
     ],
     "solid": false,

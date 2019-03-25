@@ -17,6 +17,7 @@ if(stateNew) {
 	onSlope = false;
 	grounded = false;
 	canShoot = true;
+	currentAirSpeedMax = scr_CalculateCurrentMaxAirSpeed();
 }
 
 

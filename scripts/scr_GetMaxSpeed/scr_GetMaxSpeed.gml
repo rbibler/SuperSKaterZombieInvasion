@@ -10,20 +10,20 @@ if(tileMaxSpeed > 0) {
 	return maxSpeed;
 }
 
-if(currentMovementState == ON_FOOT_STATE) {
+if(!grounded) {
+	maxSpeed = currentAirSpeedMax; 
+} else if(currentMovementState == ON_FOOT_STATE) {
 	if(scr_IsSprinting()) {
 		maxSpeed = maxSpeedXOnFootSprinting;
 	} else {
 		maxSpeed = maxSpeedXOnFoot;
 	}
-} else if(grounded) {
+} else {
 	if(onSlope and !scr_HeadingUpHill()) {
 		maxSpeed = maxSpeedXSkatingDownhill;
 	} else {
 		maxSpeed = maxSpeedXSkatingFlat;
 	}
-} else if(!grounded) {
-	maxSpeed = currentAirSpeedMax; 
-}
+} 
 
 return maxSpeed;

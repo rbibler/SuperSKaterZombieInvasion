@@ -116,6 +116,22 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
             "value": "scr_SharkStateDead"
+        },
+        {
+            "id": "684cf0f5-7a84-4ddc-902b-ff21af789d25",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "3d2d4671-9b58-4530-bcbf-d483952e5d7c",
+            "value": "scr_SharkStateMenacing"
+        },
+        {
+            "id": "16fb886e-cf39-4931-82cf-b8e540e6ff9c",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "54427283-bc64-40b4-bcef-3427097bb49b",
+            "value": "200"
         }
     ],
     "parentObjectId": "a86d99fd-1017-4e75-9638-094c898c181b",
@@ -136,6 +152,6 @@
         
     ],
     "solid": false,
-    "spriteId": "b4dc4710-4f8d-409b-b3be-d80b60e2817a",
+    "spriteId": "c633282b-d0cb-41b9-bec8-9674f414b315",
     "visible": true
 }

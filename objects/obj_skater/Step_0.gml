@@ -21,7 +21,7 @@ verticalMovementRun = false;
 jumpInputBuffer--;
 
 if(isImmune) {
-	if(frameTimer - immuneStart >= 60) {
+	if(frameTimer - immuneStart >= (immunityLengthInSeconds * room_speed)) {
 		isImmune = false;
 	}
 }

@@ -11,6 +11,7 @@ if(stateNew) {
 	canShoot = true;
 	drawOffsetX = 0;
 	drawOffsetY = 0;
+	currentAirSpeedMax = scr_CalculateCurrentMaxAirSpeed();
 }
 
 

@@ -211,7 +211,7 @@
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "438d8e24-61ba-4d13-b180-a9e8f32f72d6",
-            "value": "scr_SlimeballCollideWithSkater"
+            "value": "scr_EmptyAssScript"
         },
         {
             "id": "6274bbef-a5a7-4c49-9638-d0323a09a372",
