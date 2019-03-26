@@ -3,7 +3,14 @@
 
 var ammo = argument0;
 
-// Only want to switch states if this is the first hit
-if(state != stateDead) {
-	scr_StateSwitch(s_DEAD);
+
+if(scr_Chance(50)) {
+	// Only want to switch states if this is the first hit
+	if(state != stateDead) {
+		scr_StateSwitch(s_DEAD);
+		return true;
+	}
+} else {
+	scr_StateSwitch(s_DEFENDING);
+	return false;
 }

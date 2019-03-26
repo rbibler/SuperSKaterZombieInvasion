@@ -1,3 +1,7 @@
+// Movement states
+#macro	SKATE_STATE		1
+#macro	ON_FOOT_STATE	2
+
 // Directional Input
 #macro	UP				0
 #macro	DOWN			1

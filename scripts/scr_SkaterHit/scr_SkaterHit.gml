@@ -7,7 +7,7 @@ var hitPoints = argument1;
 var didGetHurt = false;
 var newState = stateName;
 
-if(onFoot) {
+if(currentMovementState == ON_FOOT_STATE) {
 	if(stateName != s_ON_FOOT_HURT and !isImmune) {
 		newState = s_ON_FOOT_HURT;
 		didGetHurt = true;

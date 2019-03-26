@@ -13,3 +13,4 @@ if(gravityOn) {
 
 event_inherited();
 
+y += ySpeed;

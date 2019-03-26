@@ -1,8 +1,12 @@
 var curXSpeed = abs(xSpeed);
 if(curXSpeed == 0) {
 	return minMaxAirSpeed;
-} else if(onFoot) {
-	return curXSpeed;
+} else if(currentMovementState == ON_FOOT_STATE) {
+	if(scr_IsSprinting()) {
+		return maxSpeedXOnFootSprinting * 1.5;
+	} else {
+		return maxSpeedXOnFoot;
+	}
 } else if(curXSpeed < maxSpeedXFlatland) {
 	return maxSpeedXFlatland;
 } else if(curXSpeed < maxSpeedXDownhill) {

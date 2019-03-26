@@ -19,11 +19,6 @@ if(stateTimer mod 10 == 0) {
 	image_index ^= 1;
 }
 
-if(!scr_ShouldChaseSkater(false)) {
-	scr_ZeroInputs();
-	scr_StateSwitch(s_MOVING);
-}
-
 var dist = abs(obj_skater.x - x);
 if(dist < 50 and scr_Chance(50) and stateTimer > 60) {
 	scr_StateSwitch(s_JUMPING);

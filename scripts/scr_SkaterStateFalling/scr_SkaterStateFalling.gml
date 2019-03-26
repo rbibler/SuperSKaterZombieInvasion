@@ -39,7 +39,7 @@ if(grounded) {
 	if(input[LEFT] or input[RIGHT]) {
 		scr_StateSwitch(s_MOVING);
 	} else {
-		scr_StateSwitch(s_IDLE);
+		scr_StateSwitch(s_ROLLING);
 	}
 }
 

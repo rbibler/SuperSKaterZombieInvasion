@@ -26,7 +26,9 @@
         "7691f108-d8cb-4e61-81a9-4fe960176dc9",
         "0105072f-a061-4ff8-a366-83beca7917a2",
         "e3c28de0-bd4e-4ba4-b575-13b7cd8f4aba",
-        "fa4b991f-9f8e-4994-8fd7-7bb9c3224b05"
+        "fa4b991f-9f8e-4994-8fd7-7bb9c3224b05",
+        "c19c733d-62d4-4576-bacf-4144f3a13fe9",
+        "1cf98098-67f9-4341-b8b8-29d6fc3d95df"
     ],
     "filterType": "GMScript",
     "folderName": "UtilityScripts",

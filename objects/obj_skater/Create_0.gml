@@ -20,6 +20,7 @@ slopeCounter = 0;
 // 0 - Idle; 1 - Skating; 2 - Crouching; 3 - Jumping; 
 // 4 - Slamming; 5 - Recovering; 6 - Hit; 7 - Climbing;
 //state = 0;
+currentMovementState = SKATE_STATE;
 
 // Hold on to the skater's state from the previous frame
 //lastState = 0;
@@ -66,9 +67,9 @@ for(var i = 0; i < 10; i++) {
 
 
 // Reference to the weapon
-slingshot = instance_create_layer(0, 0, "WEAPONS", obj_Slingshot);
-currentWeapon = SPREAD_SLINGSHOT;
-currentPowerup = PB_ROCKET;
+slingshot = instance_create_layer(0, 0, "Weapons", obj_Slingshot);
+currentWeapon = STANDARD_SLINGSHOT;
+currentPowerup = PB_NONE;
 weaponAnimCounter = 0;
 ammoOnScreen = 0;
 maxAmmoOnScreen = slingshot.maxAmmo[currentWeapon];
@@ -240,7 +241,6 @@ lastStep = 0;
 isShooting = false;
 
 boardSmacked = ds_list_create();
-onFoot = false;
 drawOffsetX = 0;
 drawOffsetY = 0;
 railGrindButtonPressTimer = 0;

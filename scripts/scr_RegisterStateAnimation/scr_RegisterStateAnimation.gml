@@ -13,7 +13,7 @@ var endScript = argument3;
 var name = argument4;
 var numberOfFrames = argument5;
 
-var anim = instance_create_layer(0, 0, "ANIMS", obj_StateAnimation);
+var anim = instance_create_layer(0, 0, "Anims", obj_StateAnimation);
 with(anim) {
 	animSpeed = aSpeed;
 	loop = isLoop;
