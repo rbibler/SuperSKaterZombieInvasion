@@ -727,6 +727,14 @@
             }
         },
         {
+            "Key": "261349b5-5514-442c-ad67-b784b04a12a8",
+            "Value": {
+                "id": "f36b745f-1aa3-4cfc-b8d4-75be1bf7d640",
+                "resourcePath": "views\\261349b5-5514-442c-ad67-b784b04a12a8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "265d9001-0a0f-4511-8d72-c7187b078ce9",
             "Value": {
                 "id": "6291475e-9992-4202-9ecb-b55a39e790e3",
@@ -820,6 +828,14 @@
                 "id": "b01d10e9-2fc7-47d3-9072-aa73f81682db",
                 "resourcePath": "scripts\\scr_AddScriptToAnim\\scr_AddScriptToAnim.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2b1af578-64c8-4102-a461-bdd57685db68",
+            "Value": {
+                "id": "ab77ec44-bdba-4afb-86b1-24c783bd0c97",
+                "resourcePath": "tilesets\\tiles_Pier\\tiles_Pier.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -1180,6 +1196,14 @@
                 "id": "d9075d4f-89b5-443b-97c1-86608958a4b7",
                 "resourcePath": "scripts\\scr_ExplodingSlimeballSpawnProjectile\\scr_ExplodingSlimeballSpawnProjectile.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3fb5f2a5-dcf5-4687-ba5a-87da1f742fa2",
+            "Value": {
+                "id": "c9c50ab6-559b-4514-84e1-d843e8322418",
+                "resourcePath": "sprites\\spr_PierTiles\\spr_PierTiles.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2975,6 +2999,14 @@
             }
         },
         {
+            "Key": "a3ddb5f7-9d64-43e9-8b56-e93976478b10",
+            "Value": {
+                "id": "b47705ff-9f5a-4a24-aeac-d06c8db31fbb",
+                "resourcePath": "views\\a3ddb5f7-9d64-43e9-8b56-e93976478b10.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a3e4bf7f-0dbc-4445-bbf0-d4edb3f4af3e",
             "Value": {
                 "id": "6725ad11-4069-46c9-9fe5-b9fad7113bfb",
@@ -4058,7 +4090,7 @@
             "Key": "dc48e41c-6a31-4b95-ab9a-9fdb07ee52bd",
             "Value": {
                 "id": "3bed8572-7dd4-4cba-b6e2-8d75eb1bcc7e",
-                "resourcePath": "rooms\\rm_world1_level1b\\rm_world1_level1b.yy",
+                "resourcePath": "rooms\\rm_world1_level2\\rm_world1_level2.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -4604,6 +4636,14 @@
                 "id": "62b8631d-676d-413b-8c20-630dc76d93b5",
                 "resourcePath": "scripts\\scr_SetupTileMaxSpeedProperties\\scr_SetupTileMaxSpeedProperties.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f7bdc49f-9aec-4ab1-b7f8-e6f2200edd24",
+            "Value": {
+                "id": "33604bac-8620-4121-adde-29dcc7252d72",
+                "resourcePath": "sprites\\spr_W1L2BgMid\\spr_W1L2BgMid.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
