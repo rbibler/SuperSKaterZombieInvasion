@@ -823,6 +823,14 @@
             }
         },
         {
+            "Key": "2a77face-899c-4a5f-8bd0-7d7d2e0f05f7",
+            "Value": {
+                "id": "143300a7-920c-48e8-90c0-a126f1b7a590",
+                "resourcePath": "sprites\\spr_W1L2BgFar\\spr_W1L2BgFar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2ac690ff-f837-4881-9b51-823320b833ec",
             "Value": {
                 "id": "b01d10e9-2fc7-47d3-9072-aa73f81682db",
@@ -884,6 +892,14 @@
                 "id": "b17f6ac1-7cd7-4622-b03a-df2cccc7d86e",
                 "resourcePath": "scripts\\scr_GeneralHorizontalMovement\\scr_GeneralHorizontalMovement.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2d68876f-a556-44a0-8c22-b52321260a00",
+            "Value": {
+                "id": "a4784ec0-3663-4fd6-a248-bb80fdb0a070",
+                "resourcePath": "sprites\\spr_W1L1BgClose\\spr_W1L1BgClose.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1324,6 +1340,14 @@
                 "id": "afdb87a0-879c-4012-991d-627aea94dd16",
                 "resourcePath": "scripts\\scr_UpdateSkaterAnimation\\scr_UpdateSkaterAnimation.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "47b5a39e-73d7-4c91-8b5e-e497fe9548c3",
+            "Value": {
+                "id": "bab35a3e-bb8a-4e52-b7bf-e540f4f41492",
+                "resourcePath": "sprites\\spr_W1L2BgNearMid\\spr_W1L2BgNearMid.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3215,6 +3239,14 @@
             }
         },
         {
+            "Key": "aef1b3e4-7483-408b-a22b-72c572bb6506",
+            "Value": {
+                "id": "e1dca40f-5b6f-482f-bdbf-866329fe74b5",
+                "resourcePath": "sprites\\spr_W1L2BgFarMid\\spr_W1L2BgFarMid.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "af191699-7cb3-4dc6-b75a-525cd41d66de",
             "Value": {
                 "id": "ca76c3d3-5503-4af5-9cd1-4e9beee17c65",
@@ -4636,14 +4668,6 @@
                 "id": "62b8631d-676d-413b-8c20-630dc76d93b5",
                 "resourcePath": "scripts\\scr_SetupTileMaxSpeedProperties\\scr_SetupTileMaxSpeedProperties.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f7bdc49f-9aec-4ab1-b7f8-e6f2200edd24",
-            "Value": {
-                "id": "33604bac-8620-4121-adde-29dcc7252d72",
-                "resourcePath": "sprites\\spr_W1L2BgMid\\spr_W1L2BgMid.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
