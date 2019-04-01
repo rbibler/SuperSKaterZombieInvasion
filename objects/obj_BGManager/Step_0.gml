@@ -11,6 +11,8 @@ var camX = camera_get_view_x(view_camera[0]);
 
 var i = 0; 
 for(i = 0; i < numBgLayers; i++) {
-	layer_x(bgLayers[i], camX * bgLayerSpeeds[i]);
+	if(bgLayerSpeeds[i] != -99) {
+		layer_x(bgLayers[i], camX * bgLayerSpeeds[i]);
+	}
 } 
 
