@@ -4239,6 +4239,14 @@
             }
         },
         {
+            "Key": "e00c37d4-2c86-4deb-9c15-e1343fa47f58",
+            "Value": {
+                "id": "7fd4f957-6f47-4b7f-b7a8-6a39d0bf59ab",
+                "resourcePath": "sprites\\spr_W1L2BgCloseSailboat\\spr_W1L2BgCloseSailboat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e038ccb8-dfbc-4f4f-aa43-e4ab1fc48d05",
             "Value": {
                 "id": "48623fae-d534-4901-b206-d0a49b703885",
