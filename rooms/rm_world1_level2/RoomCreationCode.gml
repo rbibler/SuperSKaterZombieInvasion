@@ -10,8 +10,8 @@ if(instance_exists(obj_BGManager)) {
 	bgLayerSpeeds[1] = -99;
 	bgLayerSpeeds[2] = 0.5;
 	bgLayerSpeeds[3] = 0.6;
-	bgLayerSpeeds[4] = .75;
-	bgLayerSpeeds[5] = .8
+	bgLayerSpeeds[4] = .899;
+	bgLayerSpeeds[5] = .899
 	bgLayerSpeeds[6] = .9;
 	}
 }

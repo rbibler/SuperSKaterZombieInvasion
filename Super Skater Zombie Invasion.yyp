@@ -1079,6 +1079,14 @@
             }
         },
         {
+            "Key": "37af7578-77e2-4c17-90fb-3dd93fbebb09",
+            "Value": {
+                "id": "957da9ae-457e-4603-af0e-3579699d953c",
+                "resourcePath": "sprites\\spr_W1L2BgFarFar\\spr_W1L2BgFarFar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "37bade44-ac9e-45b5-b8ed-138fda7cbb9b",
             "Value": {
                 "id": "a692bf02-bdf3-45e6-ae5d-56ec201f7f72",
@@ -4740,6 +4748,14 @@
                 "id": "6c538002-96fa-4138-8b07-29c01549b9be",
                 "resourcePath": "scripts\\scr_AttackEnemyHorizCollision\\scr_AttackEnemyHorizCollision.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fbaa964c-9fce-47d1-934e-feaf9ab8495d",
+            "Value": {
+                "id": "123c1942-6272-4298-a196-5d07501e1e90",
+                "resourcePath": "sprites\\spr_W1L2BgSun\\spr_W1L2BgSun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
