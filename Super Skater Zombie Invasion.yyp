@@ -1423,6 +1423,14 @@
             }
         },
         {
+            "Key": "4c1a2feb-621f-47c6-8c92-fa97f8c8d516",
+            "Value": {
+                "id": "6f8fd3f7-1ccf-448c-b5dd-c3729dcf962a",
+                "resourcePath": "sprites\\spr_ZombieSailor\\spr_ZombieSailor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4c39cd0f-8023-4b40-b128-976ecd31044b",
             "Value": {
                 "id": "4492e0e0-1cd8-4b30-b745-8180739fc7ec",
@@ -3255,6 +3263,14 @@
             }
         },
         {
+            "Key": "aec27f17-e358-4c07-9c83-6cd3f32d5948",
+            "Value": {
+                "id": "28a79176-0e7c-4ed5-a9b1-1623993142d4",
+                "resourcePath": "objects\\obj_ZombieSailor\\obj_ZombieSailor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "aef1b3e4-7483-408b-a22b-72c572bb6506",
             "Value": {
                 "id": "e1dca40f-5b6f-482f-bdbf-866329fe74b5",
@@ -4612,6 +4628,14 @@
                 "id": "5165ec63-e768-4e28-ae64-f69c3ba07e01",
                 "resourcePath": "sprites\\spr_ExplodingBlockMenacing\\spr_ExplodingBlockMenacing.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f2deb094-ab53-4d40-86a7-44049e2c5794",
+            "Value": {
+                "id": "c20c78b4-1429-43f1-8a84-c457bdbc8eb8",
+                "resourcePath": "views\\f2deb094-ab53-4d40-86a7-44049e2c5794.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

@@ -7,7 +7,8 @@
         "3d722df8-120e-43a7-abff-d5e21430611a",
         "ab534e9a-4f04-4bc2-ad56-bda342e896ee",
         "a853cf1c-bc94-43d7-ae90-77f690ea4b46",
-        "1cb4ff59-edba-445f-ba36-891b27d5e0df"
+        "1cb4ff59-edba-445f-ba36-891b27d5e0df",
+        "aec27f17-e358-4c07-9c83-6cd3f32d5948"
     ],
     "filterType": "GMObject",
     "folderName": "PatrolEnemies",
