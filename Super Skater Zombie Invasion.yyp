@@ -1351,6 +1351,14 @@
             }
         },
         {
+            "Key": "478b3dcf-24eb-44fb-8f11-e172c81bfc7b",
+            "Value": {
+                "id": "4292b774-0362-4269-8da6-05cd65a2b1c8",
+                "resourcePath": "scripts\\scr_PatrolParentShieldReact\\scr_PatrolParentShieldReact.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "47b5a39e-73d7-4c91-8b5e-e497fe9548c3",
             "Value": {
                 "id": "bab35a3e-bb8a-4e52-b7bf-e540f4f41492",
@@ -1695,6 +1703,14 @@
             }
         },
         {
+            "Key": "595eb2af-1fd6-46fc-beeb-bb5aaa972931",
+            "Value": {
+                "id": "8d09643c-7e12-415c-ae0e-132b27015ed5",
+                "resourcePath": "scripts\\scr_PatrolParentStateDead\\scr_PatrolParentStateDead.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "59998152-c975-44a0-bf32-7cf2d8299511",
             "Value": {
                 "id": "75b660b3-20c8-411f-b5b0-ffe30714472f",
@@ -1887,11 +1903,27 @@
             }
         },
         {
+            "Key": "6258b6bd-22e2-4d8f-a993-3ac3b11e2aac",
+            "Value": {
+                "id": "b3aa2796-7a53-4aa8-9d0e-4db5bfd739a2",
+                "resourcePath": "scripts\\scr_PatrolParentStateMoving\\scr_PatrolParentStateMoving.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
             "Value": {
                 "id": "d92f4194-aa4c-4cf1-9da6-a1f7a1dde310",
                 "resourcePath": "objects\\obj_CharacterPhysics\\obj_CharacterPhysics.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "63511c7f-d0f1-454a-823d-780de84f221b",
+            "Value": {
+                "id": "9177fe72-b164-4795-8446-069b0c7c6675",
+                "resourcePath": "scripts\\scr_PatrolParentBoardStrike\\scr_PatrolParentBoardStrike.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2171,6 +2203,14 @@
             "Value": {
                 "id": "4200aa39-2253-43a8-bd1a-9c347570f479",
                 "resourcePath": "scripts\\scr_ZeroInputs\\scr_ZeroInputs.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "761fd9f7-5f85-4e93-8eaa-ce4c27efc80a",
+            "Value": {
+                "id": "6f5c447e-ad35-449d-9252-6ad948d55f0b",
+                "resourcePath": "scripts\\scr_PatrolParentStateBoardStruck\\scr_PatrolParentStateBoardStruck.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2631,6 +2671,14 @@
             }
         },
         {
+            "Key": "8c4b283b-7605-4424-9114-a4638fc515a5",
+            "Value": {
+                "id": "ff665315-c405-4659-b6bc-9969878c860c",
+                "resourcePath": "scripts\\scr_PatrolParentStateJumping\\scr_PatrolParentStateJumping.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8c78f50a-ad5d-4fa7-bebf-60d4aa0aec54",
             "Value": {
                 "id": "410c5f03-533e-4052-a13e-4b8c717c5a3d",
@@ -2940,6 +2988,14 @@
                 "id": "cbb849d2-28ab-4122-918c-0eae5fd12a1a",
                 "resourcePath": "views\\9edf28dd-b8b6-45dc-9b57-d0ba35590081.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9fce91b3-60e5-4160-aa76-1149d0187492",
+            "Value": {
+                "id": "f19b2773-1112-4a97-b951-d713c6224bf6",
+                "resourcePath": "scripts\\scr_PatrolParentStateFalling\\scr_PatrolParentStateFalling.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3911,6 +3967,14 @@
             }
         },
         {
+            "Key": "cc77eac5-33d6-4026-9737-0f58f96434be",
+            "Value": {
+                "id": "9dea3d48-31ca-48ff-ade9-e44f00422b8f",
+                "resourcePath": "scripts\\scr_PatrolParentHitByAmmo\\scr_PatrolParentHitByAmmo.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "2f973524-e277-489e-aa12-3777e1225f00",
@@ -3923,6 +3987,14 @@
             "Value": {
                 "id": "cfd26999-bf57-40c3-94ba-d12e39393ed1",
                 "resourcePath": "scripts\\scr_MovingPlatformStepEvent\\scr_MovingPlatformStepEvent.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cd72e43b-7e82-4a52-9441-8e460c7e6887",
+            "Value": {
+                "id": "786cc8af-1cbb-4f71-ad18-1ccc4ac31238",
+                "resourcePath": "scripts\\scr_PatrolParentStateDying\\scr_PatrolParentStateDying.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4028,6 +4100,14 @@
                 "id": "c9b3640f-953c-4fe2-a1ab-e1e75243277f",
                 "resourcePath": "objects\\obj_BGManager\\obj_BGManager.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d7329327-fead-435f-bfc9-6ca8e2936e58",
+            "Value": {
+                "id": "31dca61a-8076-4038-a1bd-232a9342487a",
+                "resourcePath": "scripts\\scr_PatrolParentStateIdle\\scr_PatrolParentStateIdle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4391,6 +4471,14 @@
             }
         },
         {
+            "Key": "e4e77dae-f4f2-474d-ad63-65499075e769",
+            "Value": {
+                "id": "efedc00b-d534-47c8-bd03-035ed6deafb5",
+                "resourcePath": "scripts\\scr_PatrolParentStateAttacking\\scr_PatrolParentStateAttacking.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e5e7fc6d-cfa8-4c6b-86c1-0ca15bd0bda7",
             "Value": {
                 "id": "248584a1-f094-4bb6-96dd-25654a87e35f",
@@ -4436,6 +4524,14 @@
                 "id": "3e579690-2ba7-499b-939c-056ad34bdb3a",
                 "resourcePath": "objects\\obj_slopeController\\obj_slopeController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e77af8b7-9d93-48be-8f32-b389339ca452",
+            "Value": {
+                "id": "797835a4-f455-4fbf-8a55-32cbc4364737",
+                "resourcePath": "scripts\\scr_PatrolParentStateDefending\\scr_PatrolParentStateDefending.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4949,6 +5045,18 @@
         "698a235c-86fc-4d01-a1a1-e6d453d4612b",
         "13a97aa4-6668-4b15-9536-7356ddc3e7a4",
         "ab5b5cdb-e631-4418-aaf2-04520cf1fbde",
+        "cc77eac5-33d6-4026-9737-0f58f96434be",
+        "63511c7f-d0f1-454a-823d-780de84f221b",
+        "d7329327-fead-435f-bfc9-6ca8e2936e58",
+        "6258b6bd-22e2-4d8f-a993-3ac3b11e2aac",
+        "8c4b283b-7605-4424-9114-a4638fc515a5",
+        "9fce91b3-60e5-4160-aa76-1149d0187492",
+        "e4e77dae-f4f2-474d-ad63-65499075e769",
+        "cd72e43b-7e82-4a52-9441-8e460c7e6887",
+        "595eb2af-1fd6-46fc-beeb-bb5aaa972931",
+        "761fd9f7-5f85-4e93-8eaa-ce4c27efc80a",
+        "478b3dcf-24eb-44fb-8f11-e172c81bfc7b",
+        "e77af8b7-9d93-48be-8f32-b389339ca452",
         "2c488e5f-a640-4cac-ab84-c2cc96a36521",
         "0a911551-632f-4096-819d-5c226ad93a45",
         "2874402a-2f24-4587-ab2e-d20b00a28425",
