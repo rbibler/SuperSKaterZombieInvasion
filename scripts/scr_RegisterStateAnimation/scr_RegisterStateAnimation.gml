@@ -4,6 +4,7 @@
 /// @arg loop
 /// @arg endOfAnimScript
 /// @arg animName
+/// @arg numberOfFrames
 
 
 var sprite = argument0;

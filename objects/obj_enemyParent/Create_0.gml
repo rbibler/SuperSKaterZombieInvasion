@@ -66,7 +66,7 @@ climbState = 0;
 // Set the default state to IDLE
 scr_StateInit(initialState);
 
-currentAnim = noone;
+currentAnimation = noone;
 
 shouldMove = true;
 

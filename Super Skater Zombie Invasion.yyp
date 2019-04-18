@@ -3495,6 +3495,14 @@
             }
         },
         {
+            "Key": "b6430db3-b064-45fa-be4c-032123d5ac50",
+            "Value": {
+                "id": "2c60b126-a210-495a-9085-ade7c27f31c2",
+                "resourcePath": "scripts\\scr_ZombieSailorStateIdle\\scr_ZombieSailorStateIdle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b6a68946-df3b-4ebc-a957-47a57b10eea7",
             "Value": {
                 "id": "c11b7195-6486-4a97-850b-4377d60bc20b",
@@ -3715,6 +3723,14 @@
             "Value": {
                 "id": "e2dfcb38-f95a-4bcb-8f7a-7d68992b1794",
                 "resourcePath": "views\\bfa5b6d4-a48e-4a68-88d3-7f28efafac7f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c02065b4-5117-4200-8297-c3088f647540",
+            "Value": {
+                "id": "c58c4857-e013-437c-9734-a54cbd01a9d3",
+                "resourcePath": "views\\c02065b4-5117-4200-8297-c3088f647540.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -4139,6 +4155,14 @@
             "Value": {
                 "id": "05d5ba3e-f8ab-451a-856a-19726a17515a",
                 "resourcePath": "scripts\\scr_MuscleManAnimate\\scr_MuscleManAnimate.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d8ee6127-77ac-4ace-a8a8-93a63d554a48",
+            "Value": {
+                "id": "8f604137-2bdc-463f-bf61-8d93f1312be2",
+                "resourcePath": "scripts\\scr_ZombieSailorStateMoving\\scr_ZombieSailorStateMoving.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5082,6 +5106,8 @@
         "d850e202-a0f6-47bb-b9ce-915e00ed8a72",
         "bb0cc5eb-666e-4cb7-841e-a6b791827750",
         "c0bf8cdc-1791-4e9e-9b32-e365f68d7819",
+        "b6430db3-b064-45fa-be4c-032123d5ac50",
+        "d8ee6127-77ac-4ace-a8a8-93a63d554a48",
         "206d8dfd-3245-4e21-a39d-6141c1e55691",
         "7b9854e0-5d45-4604-a81f-f3a7906c1818",
         "e17c3b5d-50b7-441c-b13b-d3a003d4ab5d",
