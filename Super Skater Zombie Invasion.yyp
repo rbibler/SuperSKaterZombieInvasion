@@ -1391,6 +1391,14 @@
             }
         },
         {
+            "Key": "48879084-476d-464f-9bed-5fab9ce45db6",
+            "Value": {
+                "id": "1ed0d0e3-8e18-470f-9aba-1ca795e90303",
+                "resourcePath": "views\\48879084-476d-464f-9bed-5fab9ce45db6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "48a50626-05d8-4e75-bb74-3b386f2c4497",
             "Value": {
                 "id": "64047228-1847-46ff-8f31-825dd29676a0",
@@ -3495,14 +3503,6 @@
             }
         },
         {
-            "Key": "b6430db3-b064-45fa-be4c-032123d5ac50",
-            "Value": {
-                "id": "2c60b126-a210-495a-9085-ade7c27f31c2",
-                "resourcePath": "scripts\\scr_ZombieSailorStateIdle\\scr_ZombieSailorStateIdle.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "b6a68946-df3b-4ebc-a957-47a57b10eea7",
             "Value": {
                 "id": "c11b7195-6486-4a97-850b-4377d60bc20b",
@@ -4047,6 +4047,14 @@
             }
         },
         {
+            "Key": "d20ce40d-728a-4a5c-a5d7-380be2fe32a2",
+            "Value": {
+                "id": "3e239fd4-e2ab-4415-a55c-54b81071e486",
+                "resourcePath": "scripts\\scr_WhereAmIFacing\\scr_WhereAmIFacing.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d314375a-e814-42ef-8ef6-a9e06afca4fe",
             "Value": {
                 "id": "3a25529e-eb99-45a0-acda-d871e7b71527",
@@ -4155,14 +4163,6 @@
             "Value": {
                 "id": "05d5ba3e-f8ab-451a-856a-19726a17515a",
                 "resourcePath": "scripts\\scr_MuscleManAnimate\\scr_MuscleManAnimate.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d8ee6127-77ac-4ace-a8a8-93a63d554a48",
-            "Value": {
-                "id": "8f604137-2bdc-463f-bf61-8d93f1312be2",
-                "resourcePath": "scripts\\scr_ZombieSailorStateMoving\\scr_ZombieSailorStateMoving.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5066,21 +5066,22 @@
         "78b7ac21-588d-4bba-a745-648e6ed3b534",
         "cb9282be-2efe-4b81-bae3-a6fdbc0e19e0",
         "a0a0f345-d037-4fe7-a6b8-3edde0b4f7f5",
-        "698a235c-86fc-4d01-a1a1-e6d453d4612b",
-        "13a97aa4-6668-4b15-9536-7356ddc3e7a4",
+        "d20ce40d-728a-4a5c-a5d7-380be2fe32a2",
         "ab5b5cdb-e631-4418-aaf2-04520cf1fbde",
-        "cc77eac5-33d6-4026-9737-0f58f96434be",
-        "63511c7f-d0f1-454a-823d-780de84f221b",
         "d7329327-fead-435f-bfc9-6ca8e2936e58",
         "6258b6bd-22e2-4d8f-a993-3ac3b11e2aac",
         "8c4b283b-7605-4424-9114-a4638fc515a5",
         "9fce91b3-60e5-4160-aa76-1149d0187492",
         "e4e77dae-f4f2-474d-ad63-65499075e769",
+        "e77af8b7-9d93-48be-8f32-b389339ca452",
         "cd72e43b-7e82-4a52-9441-8e460c7e6887",
         "595eb2af-1fd6-46fc-beeb-bb5aaa972931",
+        "698a235c-86fc-4d01-a1a1-e6d453d4612b",
+        "13a97aa4-6668-4b15-9536-7356ddc3e7a4",
+        "cc77eac5-33d6-4026-9737-0f58f96434be",
+        "63511c7f-d0f1-454a-823d-780de84f221b",
         "761fd9f7-5f85-4e93-8eaa-ce4c27efc80a",
         "478b3dcf-24eb-44fb-8f11-e172c81bfc7b",
-        "e77af8b7-9d93-48be-8f32-b389339ca452",
         "2c488e5f-a640-4cac-ab84-c2cc96a36521",
         "0a911551-632f-4096-819d-5c226ad93a45",
         "2874402a-2f24-4587-ab2e-d20b00a28425",
@@ -5106,8 +5107,6 @@
         "d850e202-a0f6-47bb-b9ce-915e00ed8a72",
         "bb0cc5eb-666e-4cb7-841e-a6b791827750",
         "c0bf8cdc-1791-4e9e-9b32-e365f68d7819",
-        "b6430db3-b064-45fa-be4c-032123d5ac50",
-        "d8ee6127-77ac-4ace-a8a8-93a63d554a48",
         "206d8dfd-3245-4e21-a39d-6141c1e55691",
         "7b9854e0-5d45-4604-a81f-f3a7906c1818",
         "e17c3b5d-50b7-441c-b13b-d3a003d4ab5d",

@@ -43,6 +43,7 @@ maxYSpeed = 6;
 myGravity = .5;
 
 facing = -1;
+lastFacing = FACE_LEFT;
 
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);

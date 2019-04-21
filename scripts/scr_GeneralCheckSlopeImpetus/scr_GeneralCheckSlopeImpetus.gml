@@ -9,7 +9,6 @@ if(global.debug) {
 }
 var upHill = scr_HeadingUpHill();
 if(onSlope) {
-
 	xSpeed += slopeImpetus;
 	if(global.debug) {
 		show_debug_message("    SlopeImpetus: " + string(slopeImpetus));

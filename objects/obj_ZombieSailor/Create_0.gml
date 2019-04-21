@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-movementAnim = scr_RegisterStateAnimation(
+movingAnim = scr_RegisterStateAnimation(
 	spr_ZombieSailor, 
 	3/60, 
 	true, 
@@ -12,5 +12,5 @@ movementAnim = scr_RegisterStateAnimation(
 	"ZombieCaptainMove", 
 	sprite_get_number(spr_ZombieSailor)
 );
-scr_SetCurrentAnimation(movementAnim);
+scr_SetCurrentAnimation(movingAnim);
 

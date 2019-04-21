@@ -1,5 +1,4 @@
 if(stateNew) {
-	sprite_index = spr_slimeballIdle;
 	scr_StopXMotion();
 	scr_StopYMotion();
 	scr_ZeroInputs();
@@ -10,6 +9,6 @@ scr_MoveAndCollide();
 
 // CHECK FOR STATE CHANGE
 
-if(stateTimer >= recoveryTimeInSeconds * room_speed) {
+if(grounded) {
 	scr_StateSwitch(s_MOVING);
 }
