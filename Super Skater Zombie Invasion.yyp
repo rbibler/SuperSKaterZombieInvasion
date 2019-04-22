@@ -751,6 +751,14 @@
             }
         },
         {
+            "Key": "29ad161c-3f0b-4c07-999b-a8cac0fbec7e",
+            "Value": {
+                "id": "6524d9cf-e93b-49b1-a04a-7e4c260025be",
+                "resourcePath": "scripts\\scr_SlopeTableGenerator\\scr_SlopeTableGenerator.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "29f06f95-3599-467a-8c1b-0011227dfc7d",
             "Value": {
                 "id": "8352a957-2d3f-41f7-9a9c-e03639314231",
@@ -5076,6 +5084,7 @@
         "06a84f1f-f46e-49a4-9c72-c6e73b044a2f",
         "f7ba67c5-b3fc-4913-bace-8c269f425f4b",
         "5dd8bd2f-39f9-49ed-ad0b-60b21828e251",
+        "29ad161c-3f0b-4c07-999b-a8cac0fbec7e",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",

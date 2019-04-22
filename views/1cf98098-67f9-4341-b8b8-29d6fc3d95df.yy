@@ -7,7 +7,8 @@
         "fcabe5dc-9715-475c-a344-1a2ff945a09a",
         "06a84f1f-f46e-49a4-9c72-c6e73b044a2f",
         "f7ba67c5-b3fc-4913-bace-8c269f425f4b",
-        "5dd8bd2f-39f9-49ed-ad0b-60b21828e251"
+        "5dd8bd2f-39f9-49ed-ad0b-60b21828e251",
+        "29ad161c-3f0b-4c07-999b-a8cac0fbec7e"
     ],
     "filterType": "GMScript",
     "folderName": "TileSetupScripts",
