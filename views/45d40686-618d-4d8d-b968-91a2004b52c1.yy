@@ -12,7 +12,8 @@
         "38edbb54-5306-4fa8-b04f-ea84fa87f01d",
         "481a72b0-26ab-4de4-acf4-dd9d9db0ea9f",
         "943cd42b-ed01-4a80-8613-3467b6c3792c",
-        "294aef69-580c-4e3f-8b6d-8cf4d750bfb9"
+        "294aef69-580c-4e3f-8b6d-8cf4d750bfb9",
+        "840ed23e-2344-4adc-bde1-86247cf1448c"
     ],
     "filterType": "GMScript",
     "folderName": "SkaterMovementScripts",

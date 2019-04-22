@@ -39,7 +39,6 @@ for(var i = 0; i < 10; i++) {
 
 // Set the initial gravity to whatever our gravity is
 
-maxYSpeed = 6;
 myGravity = .5;
 
 facing = -1;

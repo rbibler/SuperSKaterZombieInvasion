@@ -7,10 +7,10 @@ if(curXSpeed == 0) {
 	} else {
 		return maxSpeedXOnFoot;
 	}
-} else if(curXSpeed < maxSpeedXFlatland) {
-	return maxSpeedXFlatland;
-} else if(curXSpeed < maxSpeedXDownhill) {
+} else if(curXSpeed < maxSpeedXSkatingFlat) {
+	return maxSpeedXSkatingFlat;
+} else if(curXSpeed < maxSpeedXSkatingDownhill) {
 	return curXSpeed;
 } else {
-	return maxSpeedXDownhill;
+	return maxSpeedXSkatingDownhill;
 }

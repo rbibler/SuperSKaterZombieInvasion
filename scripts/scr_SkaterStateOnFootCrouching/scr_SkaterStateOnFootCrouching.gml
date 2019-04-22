@@ -13,18 +13,7 @@ if(stateNew) {
 }
 
 scr_GeneralCheckSlopeImpetus();
-
-// If the skater crouches, he can't skate so slow him down till he stops
-if(sign(xSpeed) == sign(lastXSpeed)) {
-	xSpeed -= (groundFriction * sign(xSpeed));
-	// If that last slow down has flipped the direction, stop the skater
-	if(sign(xSpeed) != sign(lastXSpeed)) {
-		scr_StopXMotion();
-	}
-} else {
-	scr_StopXMotion();
-}
-
+scr_SlowMeDown();
 scr_MoveAndCollide();
 
 // Can't crouch unless down is pressed

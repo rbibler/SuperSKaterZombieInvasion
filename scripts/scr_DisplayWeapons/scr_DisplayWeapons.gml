@@ -3,8 +3,8 @@
 var xPos = argument0;
 var yPos = argument1;
 
-xPos -= 90;
-yPos++;
+xPos -= 180;
+yPos += 2;
 
 
 draw_sprite(spr_hud_slingshot, obj_skater.currentWeapon, xPos, yPos);

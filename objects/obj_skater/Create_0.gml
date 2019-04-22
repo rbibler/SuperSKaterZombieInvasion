@@ -176,29 +176,6 @@ deadAnim.persistent = true;
 drownAnim.persistent = true;
 runAnim.persistent = true;
 
-powerPushIdle = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
-scr_AddSpriteToSubstateAnimation(powerPushIdle, spr_SkaterPowerPushIdleOne, 0);
-scr_AddSpriteToSubstateAnimation(powerPushIdle, spr_SkaterPowerPushIdleTwo, 1);
-idleAnim.substateAnimations[1] = powerPushIdle;
-powerPushIdle.persistent = true;
-
-powerPushSkate = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
-scr_AddSpriteToSubstateAnimation(powerPushSkate, spr_SkaterPowerPushOne, 0);
-scr_AddSpriteToSubstateAnimation(powerPushSkate, spr_SkaterPowerPushTwo, 1);
-skateAnim.substateAnimations[1] = powerPushSkate;
-powerPushSkate.persistent = true;
-
-powerPushJump = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
-scr_AddSpriteToSubstateAnimation(powerPushJump, spr_SkaterPowerPushJumpingOne, 0);
-scr_AddSpriteToSubstateAnimation(powerPushJump, spr_SkaterPowerPushJumpingTwo, 1);
-jumpAnim.substateAnimations[1] = powerPushJump;
-powerPushJump.persistent = true;
-
-powerPushCrouch = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
-scr_AddSpriteToSubstateAnimation(powerPushCrouch, spr_SkaterPowerPushCrouchOne, 0);
-scr_AddSpriteToSubstateAnimation(powerPushCrouch, spr_SkaterPowerPushCrouchTwo, 1);
-crouchAnim.substateAnimations[1] = powerPushCrouch;
-powerPushCrouch.persistent = true;
 
 slingshotIdle = scr_RegisterSubstateAnimation(1, NORMAL_ANIM_SPEED);
 scr_AddSpriteToSubstateAnimation(slingshotIdle, spr_SkaterIdleSlingshot, 0);

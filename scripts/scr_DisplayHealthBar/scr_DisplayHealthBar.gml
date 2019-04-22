@@ -5,8 +5,8 @@
 var xPos = argument0;
 var yPos = argument1;
 
-yPos += 4;
-xPos += 71;
+yPos += 8;
+xPos += 142;
 
 var imageIndex = scr_GetPlayerHealthImage();
 

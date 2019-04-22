@@ -7,7 +7,7 @@ if(xSpeed < 0) {
 	bbox_side = bbox_left;
 }
 var p1 = tilemap_get_at_pixel(collisionTiles, bbox_side + xSpeed, bbox_top);
-var p2 = tilemap_get_at_pixel(collisionTiles, bbox_side + xSpeed, bbox_bottom - 2);
+var p2 = tilemap_get_at_pixel(collisionTiles, bbox_side + xSpeed, bbox_bottom - 4);
 var p3 = tilemap_get_at_pixel(collisionTiles, bbox_side + xSpeed, bbox_bottom - ((bbox_bottom - bbox_top) / 2));
 if(tilemap_get_at_pixel(collisionTiles, x, bbox_bottom) > 3) {
 	p2 = 0;
@@ -15,9 +15,9 @@ if(tilemap_get_at_pixel(collisionTiles, x, bbox_bottom) > 3) {
 
 if((p1 == 1 or p2 == 1 or p3 == 1)) {// and (self.object_index == obj_skater and state != climbState)) {
 	if(xSpeed > 0) {
-		x = x - (x mod 16) + (15) - (bbox_right - x);
+		x = x - (x mod TILE_SIZE) + (TILE_SIZE - 1) - (bbox_right - x);
 	} else {
-		x = x - (x mod 16) - (bbox_left - x);
+		x = x - (x mod TILE_SIZE) - (bbox_left - x);
 	}
 	show_debug_message("Horizontal Collision for real");
 	scr_StopXMotion();

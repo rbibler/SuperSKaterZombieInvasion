@@ -4,8 +4,8 @@
 // -1 indicates that the default max speed should be used. 
 
 for(var i = 0; i < numberOfTiles; i++) {
-	maxSpeedTile[SKATE_STATE, i] = -1;
-	maxSpeedTile[ON_FOOT_STATE, i] = -1;
+	maxSpeedTile[SKATE_STATE, i] = -2;
+	maxSpeedTile[ON_FOOT_STATE, i] = -2;
 }
 
-maxSpeedTile[SKATE_STATE, SAND] = 1;
+maxSpeedTile[SKATE_STATE, SAND] = 2;

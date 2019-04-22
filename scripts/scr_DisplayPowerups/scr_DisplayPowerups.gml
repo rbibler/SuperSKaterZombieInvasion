@@ -3,7 +3,7 @@
 var xPos = argument0;
 var yPos = argument1;
 
-xPos -= 66;
+xPos -= 132;
 yPos++;
 
 var spriteToDraw = noone;

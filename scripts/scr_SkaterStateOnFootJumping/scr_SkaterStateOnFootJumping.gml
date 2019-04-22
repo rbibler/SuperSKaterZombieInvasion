@@ -48,7 +48,7 @@ if(jump == 1 and (ySpeed > 0 or !input[JUMP])){
 
 
 // If yspeed is greater than zero, we've reached our apogee so it's time to fall
-if(jump == 1 and ySpeed >= 6){
+if(jump == 1 and ySpeed >= 12){
 	// Start falling. Can't set jump to zero, because that'll reset the can jump flag
 	jump = 2;
 	ySpeed--;

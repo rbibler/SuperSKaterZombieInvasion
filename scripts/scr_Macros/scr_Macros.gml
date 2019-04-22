@@ -77,7 +77,7 @@
 #macro GRID_X	8
 #macro GRID_Y	8
 
-#macro TILE_SIZE 16
+#macro TILE_SIZE 32
 
 #macro FACE_RIGHT	1
 #macro FACE_LEFT	-1
