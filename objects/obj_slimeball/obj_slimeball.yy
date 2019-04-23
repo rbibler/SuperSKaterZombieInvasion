@@ -264,6 +264,34 @@
             "value": "1",
             "varName": "recoveryTimeInSeconds",
             "varType": 0
+        },
+        {
+            "id": "d446c9b5-7ba6-4e27-b0bd-8a55129e111f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "isStationary",
+            "varType": 3
+        },
+        {
+            "id": "ebe5ae94-1232-49be-af1f-b54cf696b99f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": ".33",
+            "varName": "wiggleLengthInSeconds",
+            "varType": 0
         }
     ],
     "solid": false,

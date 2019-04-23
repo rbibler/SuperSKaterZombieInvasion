@@ -17,15 +17,11 @@ scr_MoveAndCollide();
 
 // ANIMATE
 
-if(stateTimer <= 5) {
-	sprite_index = spr_slimeballMove;
-	image_index = 1;
-} else if(stateTimer <= 10) {
-	image_index = 0;
-} else if(stateTimer <= 15) {
-	image_index = 1;
-} else if(stateTimer <= 20) {
-	image_index = 0;
+var wiggleTime = wiggleLengthInSeconds * room_speed;
+if(stateTimer < wiggleTime) {
+	if(stateTimer mod 5 == 0) {
+		image_index = (image_index + 1) mod 2;
+	}
 } else if(!isAirborne) {
 	sprite_index = spr_slimeballJump;
 	image_index = 0;

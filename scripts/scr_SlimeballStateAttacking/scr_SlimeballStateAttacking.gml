@@ -8,7 +8,9 @@ if(stateNew) {
 
 // UPDATE MOVEMENT AND COLLISIONS
 
-scr_PatrolMove();
+if(!isStationary) {
+	scr_PatrolMove();
+}
 scr_EnemyMovement();
 scr_MoveAndCollide();
 
