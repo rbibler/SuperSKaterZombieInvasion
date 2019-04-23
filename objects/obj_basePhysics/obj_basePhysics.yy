@@ -111,6 +111,20 @@
             "value": "12",
             "varName": "maxYSpeed",
             "varType": 0
+        },
+        {
+            "id": "b3f8fa00-efc7-4b93-9fae-18bb850f6732",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "maxSpeedXDownhill",
+            "varType": 0
         }
     ],
     "solid": false,

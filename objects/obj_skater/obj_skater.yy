@@ -126,6 +126,14 @@
             "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
             "propertyId": "6f99264f-8f71-492f-bf4d-fe100af69405",
             "value": "scr_EmptyAssScript"
+        },
+        {
+            "id": "a217b12e-66d6-4629-a61e-37619b9a1bff",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "b3f8fa00-efc7-4b93-9fae-18bb850f6732",
+            "value": "12"
         }
     ],
     "parentObjectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
@@ -505,20 +513,6 @@
             "resourceFilter": 1023,
             "value": "3",
             "varName": "maxSpeedXOnFoot",
-            "varType": 0
-        },
-        {
-            "id": "96479832-4b42-4ba4-b1c7-4dc16da65e72",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "12",
-            "varName": "maxSpeedXSkatingDownhill",
             "varType": 0
         },
         {

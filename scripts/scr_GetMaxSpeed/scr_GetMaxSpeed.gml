@@ -20,7 +20,7 @@ if(!grounded) {
 	}
 } else {
 	if(onSlope and !scr_HeadingUpHill()) {
-		maxSpeed = maxSpeedXSkatingDownhill;
+		maxSpeed = maxSpeedXDownhill;
 	} else {
 		maxSpeed = maxSpeedXSkatingFlat;
 	}
