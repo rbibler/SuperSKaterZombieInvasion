@@ -3471,6 +3471,14 @@
             }
         },
         {
+            "Key": "b75fef4b-2622-4092-998e-0dcaddba303d",
+            "Value": {
+                "id": "b2af3f8b-3182-4735-a22d-89830e2d78a2",
+                "resourcePath": "objects\\obj_PowerupPickup\\obj_PowerupPickup.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b7e0889c-f3f5-482a-86b9-28c41a4ac1c1",
             "Value": {
                 "id": "37961912-cb97-40fe-80c9-957b3fd65a7e",
