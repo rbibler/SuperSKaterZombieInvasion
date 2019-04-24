@@ -1479,6 +1479,14 @@
             }
         },
         {
+            "Key": "4f4a7cd5-50db-4257-9674-0db1b2d16703",
+            "Value": {
+                "id": "3837a701-58d6-4df2-a56a-51310d76ddff",
+                "resourcePath": "views\\4f4a7cd5-50db-4257-9674-0db1b2d16703.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "50cf439e-d4c9-4212-9e58-d989814b13bd",
             "Value": {
                 "id": "b3e76118-7431-47bb-9b0d-e2dad5a6b0ec",
@@ -2068,6 +2076,14 @@
                 "id": "2463d325-b541-45f3-a040-7794b688ac1d",
                 "resourcePath": "scripts\\scr_ControlBlockActivation\\scr_ControlBlockActivation.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "70259beb-992b-4884-b28d-67452768e3bd",
+            "Value": {
+                "id": "822dbb7e-3e67-48a3-aee5-55921239bc1d",
+                "resourcePath": "sprites\\spr_DestructibleCrateCollapse\\spr_DestructibleCrateCollapse.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

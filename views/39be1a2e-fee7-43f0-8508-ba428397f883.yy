@@ -4,7 +4,7 @@
     "mvc": "1.1",
     "name": "39be1a2e-fee7-43f0-8508-ba428397f883",
     "children": [
-        "96def1ca-a50b-40cd-afb1-a568c973d9ba"
+        "4f4a7cd5-50db-4257-9674-0db1b2d16703"
     ],
     "filterType": "GMSprite",
     "folderName": "InteractiveObjects",
