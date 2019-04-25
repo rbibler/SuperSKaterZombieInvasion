@@ -14,7 +14,7 @@
             "mvc": "1.0",
             "objectId": "b75fef4b-2622-4092-998e-0dcaddba303d",
             "propertyId": "104861ed-c897-4a27-a3a8-52a718c13e7a",
-            "value": "5"
+            "value": "1"
         },
         {
             "id": "8f4321fd-6e1d-41d4-84dd-30c425258bac",
@@ -22,7 +22,15 @@
             "mvc": "1.0",
             "objectId": "b75fef4b-2622-4092-998e-0dcaddba303d",
             "propertyId": "730a4503-7904-497f-80aa-023135135279",
-            "value": "0.5"
+            "value": "1"
+        },
+        {
+            "id": "54fc5a36-aca0-42a3-82bf-68f778a4d914",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "b75fef4b-2622-4092-998e-0dcaddba303d",
+            "propertyId": "1d912ddb-a675-4867-b5fa-deaec024cf7d",
+            "value": "7"
         }
     ],
     "parentObjectId": "b75fef4b-2622-4092-998e-0dcaddba303d",
@@ -39,7 +47,9 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        
+    ],
     "solid": false,
     "spriteId": "b0a263d5-f493-41f9-864a-831ba68884e9",
     "visible": true

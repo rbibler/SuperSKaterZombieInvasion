@@ -81,6 +81,20 @@
             "varType": 0
         },
         {
+            "id": "1d912ddb-a675-4867-b5fa-deaec024cf7d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "rotationSpeed",
+            "varType": 0
+        },
+        {
             "id": "dac60432-c14e-4197-bf0e-d820d97a4dc1",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

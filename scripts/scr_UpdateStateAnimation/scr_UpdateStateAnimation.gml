@@ -5,7 +5,7 @@
 var anim = argument0;
 var loop = anim.loop;
 var endScript = anim.endOfAnimScript;
-
+var animEnd = false;
 if(anim == noone) {
 	return;
 }
@@ -18,6 +18,7 @@ with(anim) {
 	}
 	currentIndex += animSpeed;
 	if(currentIndex >= animLength) {
+		animEnd = true;
 		isDone = true;
 		if(loop) {
 			currentIndex = 0;
@@ -30,3 +31,4 @@ with(anim) {
 	}
 	other.image_index = currentIndex;
 }
+return animEnd;
