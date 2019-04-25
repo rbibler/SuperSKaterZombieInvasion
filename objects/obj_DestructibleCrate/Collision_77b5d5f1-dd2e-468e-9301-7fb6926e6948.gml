@@ -12,4 +12,5 @@ with(other) {
 if(doCollapse) {
 	sprite_index = spr_DestructibleCrateCollapse;
 	self.isSolid = false;
+	powerUp = instance_create_layer(x, y, "POWERUPS", objectInside);
 }

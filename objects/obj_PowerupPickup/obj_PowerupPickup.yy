@@ -121,6 +121,20 @@
             "value": "scr_EmptyAssScript",
             "varName": "spawnObjectScript",
             "varType": 5
+        },
+        {
+            "id": "708f0d79-27c6-43a4-9fd5-698cff576aae",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "steadyTimeInSeconds",
+            "varType": 0
         }
     ],
     "solid": false,
