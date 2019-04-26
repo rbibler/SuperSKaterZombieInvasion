@@ -135,6 +135,20 @@
             "value": "0",
             "varName": "steadyTimeInSeconds",
             "varType": 0
+        },
+        {
+            "id": "081bc289-aefd-48b1-ac85-ff37b4d0d832",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "spawnObjectScriptArgument",
+            "varType": 0
         }
     ],
     "solid": false,

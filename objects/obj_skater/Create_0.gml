@@ -68,11 +68,11 @@ for(var i = 0; i < 10; i++) {
 
 // Reference to the weapon
 slingshot = instance_create_layer(0, 0, "Weapons", obj_Slingshot);
-currentWeapon = PB_NONE;
+currentWeapon = NO_SLINGSHOT;
 currentPowerup = PB_NONE;
 weaponAnimCounter = 0;
 ammoOnScreen = 0;
-maxAmmoOnScreen = slingshot.maxAmmo[currentWeapon];
+maxAmmoOnScreen = scr_GetMaxAmmo(currentWeapon); 
 cooldown = 0;
 
 // Reset the timer for the idle animation

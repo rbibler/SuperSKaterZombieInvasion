@@ -4,5 +4,5 @@ currentRotation = 0;
 dontMove = false;
 dontMoveStartTime = 0;
 frameTimer = 0;
-script_execute(spawnObjectScript);
+script_execute(spawnObjectScript, spawnObjectScriptArgument);
 currentAnimation = scr_RegisterStateAnimation(sprite_index, rotationSpeed / room_speed, true, noone, "", sprite_get_number(sprite_index));
