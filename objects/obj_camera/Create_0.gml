@@ -9,7 +9,7 @@ global.gameHeight = 360;
 
 camera = noone;
 
-surface = surface_create(global.gameWidth, global.gameHeight);
+surface = surface_create(global.windowWidth, global.windowHeight);
 view_enabled = true;
 view_visible[0] = true;
 
