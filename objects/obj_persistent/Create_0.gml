@@ -22,8 +22,9 @@ gamepad = -1;
 
 lives = 3;
 global.diamondCount = 50;
+global.checkPointReached = false;
 
-application_surface_draw_enable(false);
+
 
 global.MonitorW = display_get_width();
 global.MonitorH = display_get_height();
@@ -40,6 +41,7 @@ global.gridY = 8;
 global.debug = false;
 global.lastCheckpoint = noone;
 
-scr_ScaleGame(2, 2);
+application_surface_draw_enable(false);
+//scr_ScaleGame(2, 2);
 room_goto_next();
 

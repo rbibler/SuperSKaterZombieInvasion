@@ -34,6 +34,7 @@ if(infected) {
 if(isDead) {
 	scr_StartAtCheckpoint();
 	isDead = false;
+	return;
 }
 scr_StateUpdate();
 image_xscale = facing;

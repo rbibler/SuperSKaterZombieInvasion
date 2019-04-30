@@ -1495,6 +1495,14 @@
             }
         },
         {
+            "Key": "4f3e1721-9d2c-4209-b493-6513ad88ad01",
+            "Value": {
+                "id": "840ec85e-fa5f-4638-98ff-645a11d24459",
+                "resourcePath": "scripts\\scr_CheckForCheckpoint\\scr_CheckForCheckpoint.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4f4a7cd5-50db-4257-9674-0db1b2d16703",
             "Value": {
                 "id": "3837a701-58d6-4df2-a56a-51310d76ddff",
@@ -1671,6 +1679,14 @@
             }
         },
         {
+            "Key": "57255046-8549-4e63-8957-275350a7c2f0",
+            "Value": {
+                "id": "54b0f7b0-885c-44ec-ba65-65dbf0116765",
+                "resourcePath": "objects\\obj_FlagPole\\obj_FlagPole.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5914e5c2-d890-4f6a-9715-90ca9a2baf1f",
             "Value": {
                 "id": "a63e16cb-0733-4b32-9b33-beac816c40a6",
@@ -1747,6 +1763,14 @@
             "Value": {
                 "id": "30b7ebdd-330d-41c6-946f-3c2d261731db",
                 "resourcePath": "views\\5ba73ee5-f570-4275-a312-41e9c6e48a74.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5c6ca819-00e6-4276-9aaf-dc0a06f7271a",
+            "Value": {
+                "id": "08523cb4-2ca9-4f96-a01c-3169f74a2b15",
+                "resourcePath": "views\\5c6ca819-00e6-4276-9aaf-dc0a06f7271a.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -4007,6 +4031,14 @@
             }
         },
         {
+            "Key": "d1dbdb5c-9c04-4cba-83d4-2d87df09a185",
+            "Value": {
+                "id": "87cf81a2-67ab-42ae-96d3-34a21a94c638",
+                "resourcePath": "sprites\\spr_FlagWaving\\spr_FlagWaving.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d20ce40d-728a-4a5c-a5d7-380be2fe32a2",
             "Value": {
                 "id": "3e239fd4-e2ab-4415-a55c-54b81071e486",
@@ -4187,6 +4219,14 @@
             "Value": {
                 "id": "0946c439-c57e-4eaf-98f4-e6323797abff",
                 "resourcePath": "sprites\\spr_phantomBlock\\spr_phantomBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dbf2463f-aeb6-4ac0-9a8a-c0f2a74478de",
+            "Value": {
+                "id": "a60d2d08-a565-4b0b-865f-75995dd6475a",
+                "resourcePath": "sprites\\spr_FlagPole\\spr_FlagPole.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4911,6 +4951,14 @@
             }
         },
         {
+            "Key": "fefa36fc-5406-4bf2-a859-7546b9c91d98",
+            "Value": {
+                "id": "d585d702-b21b-477c-b985-f53c75df376e",
+                "resourcePath": "sprites\\spr_FlagGoingUp\\spr_FlagGoingUp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ff38fc98-f544-44e6-8409-1ab5e21222b3",
             "Value": {
                 "id": "1bd312f3-e5a3-4736-a46c-b270d5b75fce",
@@ -5004,6 +5052,7 @@
         "c161a26d-7b75-4fa7-a4a2-06fb226627c5",
         "61181018-f46a-47f5-82c1-474f49a21e09",
         "8d8b1120-79af-44ee-a687-c2f9afcf2494",
+        "4f3e1721-9d2c-4209-b493-6513ad88ad01",
         "bb7306c2-d0e5-4fe8-8670-0d9d34726b7d",
         "8f5540c3-5b5c-4d9b-b69f-75f261dfed77",
         "8a4d79bb-d068-414c-b460-d630f59607bd",

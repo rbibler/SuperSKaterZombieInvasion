@@ -224,5 +224,7 @@ railGrindButtonPressTimer = 0;
 railJumpBoost = 2;
 currentAirSpeedMax = 0;
 
+scr_CheckForCheckpoint();
+
 
 
