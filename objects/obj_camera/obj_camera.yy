@@ -63,6 +63,16 @@
             "enumb": 77,
             "eventtype": 8,
             "m_owner": "ab02f640-993d-4dfa-9f56-a334f2ae113f"
+        },
+        {
+            "id": "bf69eb79-46a3-4a4b-90cd-fd959f3c1314",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "ab02f640-993d-4dfa-9f56-a334f2ae113f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -108,6 +118,20 @@
             "resourceFilter": 1023,
             "value": "720",
             "varName": "cameraHeight",
+            "varType": 0
+        },
+        {
+            "id": "b534dfc6-4520-4386-8467-2d144e6e2c26",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "boundaryWidth",
             "varType": 0
         }
     ],

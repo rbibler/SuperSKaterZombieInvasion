@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "05125fa7-9c10-436b-ac51-28ee18247d8c",
+            "Value": {
+                "id": "6235d8ff-3397-4dfb-a94b-f18caf7ee9bc",
+                "resourcePath": "scripts\\scr_TrackTheSkater\\scr_TrackTheSkater.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "05416d16-822a-4469-ae10-af8f2c717d01",
             "Value": {
                 "id": "70265586-0394-4426-87b7-fc3a532ce7a1",
@@ -5212,6 +5220,7 @@
         "e3c28de0-bd4e-4ba4-b575-13b7cd8f4aba",
         "fa4b991f-9f8e-4994-8fd7-7bb9c3224b05",
         "c19c733d-62d4-4576-bacf-4144f3a13fe9",
+        "05125fa7-9c10-436b-ac51-28ee18247d8c",
         "fcabe5dc-9715-475c-a344-1a2ff945a09a",
         "06a84f1f-f46e-49a4-9c72-c6e73b044a2f",
         "f7ba67c5-b3fc-4913-bace-8c269f425f4b",

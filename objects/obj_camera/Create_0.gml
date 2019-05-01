@@ -9,6 +9,17 @@ global.gameHeight = 360;
 
 camera = noone;
 
+lastCamX = x;
+lastCamY = y;
+horizontalOffsetRight = cameraWidth * .35;
+horizontalOffsetLeft = cameraWidth * .65;
+
+leftBoundary = 0;
+rightBoundary = 0;
+focusAreaX = 0;
+shouldScrollHoriz = false;
+
+scr_TrackTheSkater();
 
 surface_resize(application_surface, global.windowWidth, global.windowHeight);
 view_enabled = true;
