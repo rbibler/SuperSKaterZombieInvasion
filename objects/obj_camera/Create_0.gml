@@ -7,6 +7,11 @@ global.windowHeight = cameraHeight;
 global.gameWidth = 640;
 global.gameHeight = 360;
 
+#macro		CAMERA_IDLE				0
+#macro		CAMERA_SCROLLING		1
+#macro		CAMERA_BOUNDARY_SCROLL	2
+
+state = 0;
 camera = noone;
 
 lastCamX = x;

@@ -11,3 +11,16 @@ draw_line_color(rightBoundary, 0, rightBoundary, 5000, color, color);
 color = c_black;
 drawX = camera_get_view_x(camera) + (cameraWidth / 2);
 draw_line_color(drawX, 0, drawX, 5000, color, color);
+var textToWrite = "";
+switch(state) {
+	case CAMERA_IDLE:
+		textToWrite = "IDLE";
+	break;
+	case CAMERA_SCROLLING:
+		textToWrite = "SCROLLING";
+	break;
+	case CAMERA_BOUNDARY_SCROLL:
+		textToWrite= "BOUNDARY_SCROLL";
+	break;
+}
+draw_text_color(drawX, 25, textToWrite, c_navy, c_navy, c_navy, c_navy, 1);
