@@ -15,6 +15,7 @@ global.gameHeight = 360;
 state = 0;
 scrollDirection = 0;
 cameraSpeed = 0;
+cameraOffset = cameraWidth / 2;
 camera = noone;
 
 lastCamX = x;
@@ -22,6 +23,7 @@ lastCamY = y;
 
 anchorWidth = cameraWidth * .4;
 boundaryWidth = cameraWidth * .3;
+anchorGap = (cameraWidth - boundaryWidth) - anchorWidth;
 
 leftBoundary = 0;
 rightBoundary = 0;
