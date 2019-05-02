@@ -1,16 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var camHorizOffset = obj_skater.facing > 0 ? horizontalOffsetRight : horizontalOffsetLeft;
-var drawX = leftBoundary + boundaryWidth;
+
+var drawX = x + cameraWidth / 2;
 draw_line_color(drawX, 0, drawX, 5000, c_green, c_green);
 
-var color = shouldScrollHoriz ? c_red : c_yellow;
-draw_line_color(leftBoundary, 0, leftBoundary, 5000, color, color);
-draw_line_color(rightBoundary, 0, rightBoundary, 5000, color, color);
-color = c_black;
-drawX = camera_get_view_x(camera) + (cameraWidth / 2);
-draw_line_color(drawX, 0, drawX, 5000, color, color);
+var color = c_yellow;
+draw_line_color(leftBoundary, -1000, leftBoundary, 1000, color, color);
+draw_line_color(rightBoundary, -1000, rightBoundary, 1000, color, color);
+color = c_white;
+draw_line_color(leftAnchor, -1000, leftAnchor, 1000, color, color);
+draw_line_color(rightAnchor, -1000, rightAnchor, 1000, color, color);
+
+
 var textToWrite = "";
 switch(state) {
 	case CAMERA_IDLE:
@@ -19,8 +21,11 @@ switch(state) {
 	case CAMERA_SCROLLING:
 		textToWrite = "SCROLLING";
 	break;
-	case CAMERA_BOUNDARY_SCROLL:
-		textToWrite= "BOUNDARY_SCROLL";
+	case CAMERA_SCROLL_TO_ANCHOR:
+		textToWrite= "ANCHOR_SCROLL";
+	break;
+	case CAMERA_EASE_TO_STOP:
+		textToWrite= "EASE TO STOP";
 	break;
 }
 draw_text_color(drawX, 25, textToWrite, c_navy, c_navy, c_navy, c_navy, 1);

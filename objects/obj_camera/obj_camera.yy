@@ -133,6 +133,20 @@
             "value": "100",
             "varName": "boundaryWidth",
             "varType": 0
+        },
+        {
+            "id": "504f532d-7adf-48ea-a7d9-6be6ffaaa063",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "scrollSpeed",
+            "varType": 0
         }
     ],
     "solid": false,

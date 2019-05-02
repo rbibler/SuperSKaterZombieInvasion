@@ -18,6 +18,5 @@ view_set_hport(0, 720);
 shouldScrollHoriz = true;
 
 if(instance_exists(obj_skater)) {
-	x = obj_skater.x - horizontalOffsetRight;
-	focusAreaX = x;
+	x = obj_skater.x - anchorWidth;
 }

@@ -22,7 +22,7 @@ gamepad = -1;
 
 lives = 3;
 global.diamondCount = 50;
-global.checkPointReached = false;
+global.checkPointReached = true;
 
 
 

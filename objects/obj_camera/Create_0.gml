@@ -9,20 +9,26 @@ global.gameHeight = 360;
 
 #macro		CAMERA_IDLE				0
 #macro		CAMERA_SCROLLING		1
-#macro		CAMERA_BOUNDARY_SCROLL	2
+#macro		CAMERA_SCROLL_TO_ANCHOR	2
+#macro		CAMERA_EASE_TO_STOP		3
 
 state = 0;
+scrollDirection = 0;
+cameraSpeed = 0;
 camera = noone;
 
 lastCamX = x;
 lastCamY = y;
-horizontalOffsetRight = cameraWidth * .35;
-horizontalOffsetLeft = cameraWidth * .65;
+
+anchorWidth = cameraWidth * .4;
+boundaryWidth = cameraWidth * .3;
 
 leftBoundary = 0;
 rightBoundary = 0;
-focusAreaX = 0;
-shouldScrollHoriz = false;
+leftAnchor = 0;
+rightAnchor = 0;
+
+
 
 scr_TrackTheSkater();
 
