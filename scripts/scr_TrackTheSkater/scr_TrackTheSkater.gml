@@ -11,6 +11,8 @@ rightBoundary = x + cameraWidth - boundaryWidth;
 leftAnchor = x + cameraWidth - anchorWidth;
 rightAnchor = x + anchorWidth;
 
+
+
 var distToSkater = 0;
 
 switch(state) {
@@ -19,10 +21,12 @@ switch(state) {
 			state = CAMERA_SCROLL_TO_ANCHOR;
 			show_debug_message("Camera Scroll to anchor");
 			scrollDirection = -1;
+			cameraSpeed = 0;
 		} else if(skater.x > rightBoundary) {
 			show_debug_message("Camera Scroll to anchor");
 			state = CAMERA_SCROLL_TO_ANCHOR;
 			scrollDirection = 1;
+			cameraSpeed = 0;
 		}
 	break;
 	case CAMERA_SCROLL_TO_ANCHOR:
@@ -33,12 +37,12 @@ switch(state) {
 			return;
 		}
 		if((scrollDirection < 0 and skater.x < leftAnchor) or (scrollDirection > 0 and skater.x > rightAnchor)) {
-			distToSkater = abs(skater.x - (scrollDirection < 0 ? leftAnchor : rightAnchor));
-			if(distToSkater > anchorGap) {
-				distToSkater = anchorGap;
-			}
-			cameraSpeed = ((skater.xSpeed + scrollSpeed) / (distToSkater / anchorGap)) * scrollDirection;
-			cameraSpeed = min(cameraSpeed, 10);
+			var cameraAccel = skater.xSpeed * .5;
+			var cameraSpeedMax = skater.xSpeed * 2.5;
+			//var distToSkater = abs(skater.x - targetAnchor);
+			cameraSpeed += cameraAccel;
+			cameraSpeed = min(cameraSpeed, cameraSpeedMax);
+
 			x += cameraSpeed;
 		} else {
 			if(skater.xSpeed != 0) {
@@ -48,7 +52,6 @@ switch(state) {
 				state = CAMERA_IDLE;
 				show_debug_message("Camera Idle");
 			}
-			scr_TrackTheSkater();
 			return;
 		}
 	break;
@@ -63,8 +66,12 @@ switch(state) {
 			} else {
 				distToSkater = skater.x - rightAnchor;
 			}
-			
-			x += distToSkater;
+			var scrollAmount = distToSkater;
+			var diffFromLastPos = x - lastCamX;
+			if(distToSkater < diffFromLastPos) {
+				scrollAmount = lerp(distToSkater, diffFromLastPos, .5);
+			}
+			x += scrollAmount;
 		}
 	break;
 	case CAMERA_EASE_TO_STOP:
@@ -84,6 +91,6 @@ y = room_height - cameraHeight;
 
 
 camera_set_view_pos(camera, x, y);
-show_debug_message("Camera loc: " + string(x));
+show_debug_message("Camera loc diff: " + string(x - lastCamX));
 
 lastCamX = x;
