@@ -1367,6 +1367,14 @@
             }
         },
         {
+            "Key": "467060b8-ca06-4e15-81a8-3de14150488b",
+            "Value": {
+                "id": "acfbc5f0-47cc-490c-b5d6-a8d23cecec86",
+                "resourcePath": "objects\\obj_KeyboardController\\obj_KeyboardController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "470f3af4-2d91-44f6-a622-f72b3517ec94",
             "Value": {
                 "id": "afdb87a0-879c-4012-991d-627aea94dd16",

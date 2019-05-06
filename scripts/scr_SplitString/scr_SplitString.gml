@@ -11,22 +11,20 @@ if(argument_count > 1) {
 var splitString;
 splitString[0] = stringToSplit;
 var i = 0;
-var startIndex = -1;
-var tokenIndex = 0;
+var word = "";
 var curChar;
+var currentToken = 0;
+stringToSplit += delimiter;
 var stringLength = string_length(stringToSplit);
-for(i = 0; i < stringLength; i++) {
+for(i = 0; i <= stringLength; i++) {
 	curChar = string_char_at(stringToSplit, i);
 	if(curChar == delimiter) {
-		if(startIndex > 0) {
-			splitString[tokenIndex++] = string_copy(stringToSplit, startIndex, i);
-			startIndex = i;
-		} else {
-			startIndex = i;
+		if(string_length(word) > 0) {
+			splitString[currentToken++] = word;
+			word = "";
 		}
+	} else {
+		word += curChar;
 	}
-}
-if(startIndex > 0) {
-	splitString[tokenIndex] = string_copy(stringToSplit, startIndex, string_length(stringToSplit));
 }
 return splitString;

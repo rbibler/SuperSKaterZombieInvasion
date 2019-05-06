@@ -10,6 +10,7 @@ if(!global.gamePaused) {
 
 	instance_deactivate_all(true);
 	instance_activate_object(obj_camera);
+	instance_activate_object(obj_KeyboardController);
 	visible = true;
 		
 }
