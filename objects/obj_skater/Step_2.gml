@@ -63,4 +63,5 @@ wasGroundedLeft = groundedLeft;
 if(global.debug) {
 	//surface_save(application_surface, string(current_time) + ".png");
 }
+scr_UpdateCamera();
 

@@ -10,7 +10,7 @@ var accel = defaultAccel;
 // touching if it exists. If no friction param is registered for that tile, return the default.
 // TODO: Add tile frictions for all tile types. 
 if(groundedMiddle) {
-	var accelFromTile = obj_slopeController.tileAccel[currentMovementState, groundTile[MIDDLE]];
+	var accelFromTile = scr_GetTileAccel(currentMovementState, groundTile[MIDDLE]); //obj_slopeController.tileAccel[currentMovementState, groundTile[MIDDLE]];
 	if(accelFromTile > 0) {
 		accel = accelFromTile;
 	}

@@ -13,7 +13,7 @@ if(pos > 0) {
 		
 	} else if(pos > 5) {
 
-		var thefloor = obj_slopeController.slopeHeights[pos, xCheck mod 16];
+		var thefloor = scr_GetTileHeight(pos, xCheck mod 16); //obj_slopeController.slopeHeights[pos, xCheck mod 16];
 		
 		slopeDirection = (pos < 15) ? UP_SLOPE : DOWN_SLOPE;
 		return ((yCheck mod 16) - thefloor);

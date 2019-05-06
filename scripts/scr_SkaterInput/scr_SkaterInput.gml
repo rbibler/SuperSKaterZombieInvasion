@@ -41,3 +41,5 @@ if(!input[SHOOT] and lastInput[SHOOT]) {
 if(input[SHOOT] and !lastInput[SHOOT]) {
 	inputPressTime[SHOOT] = frameTimer;
 }
+
+//input[RIGHT] = 1;

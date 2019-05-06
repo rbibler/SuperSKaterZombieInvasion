@@ -16,20 +16,15 @@ state = 0;
 scrollDirection = 0;
 cameraSpeed = 0;
 cameraOffset = cameraWidth / 2;
+cameraOffsetY = cameraHeight * .20;
+bottomLine = 0;
 camera = noone;
 
 lastCamX = x;
 lastCamY = y;
 
-anchorWidth = cameraWidth * .4;
-boundaryWidth = cameraWidth * .3;
-anchorGap = (cameraWidth - boundaryWidth) - anchorWidth;
-
-leftBoundary = 0;
-rightBoundary = 0;
-leftAnchor = 0;
-rightAnchor = 0;
-
+shouldFollowSkaterHoriz = false;
+shouldFollowSkaterVert = false;
 
 
 scr_TrackTheSkater();

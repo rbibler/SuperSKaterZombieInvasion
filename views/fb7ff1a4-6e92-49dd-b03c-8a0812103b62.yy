@@ -29,7 +29,13 @@
         "fa4b991f-9f8e-4994-8fd7-7bb9c3224b05",
         "c19c733d-62d4-4576-bacf-4144f3a13fe9",
         "05125fa7-9c10-436b-ac51-28ee18247d8c",
-        "1cf98098-67f9-4341-b8b8-29d6fc3d95df"
+        "a2bb2bd9-9474-4efb-9d48-8d356c1c7aab",
+        "1cf98098-67f9-4341-b8b8-29d6fc3d95df",
+        "05fee639-7569-48b6-87f5-b9f49d2a9200",
+        "7ab6e4ec-e166-4e32-8d0a-78015b15764c",
+        "8cc1b1d7-d505-4a40-abbf-464b05453c8b",
+        "b76e277e-df47-4ee0-84db-acdce805cfe9",
+        "be1278e9-418c-4d69-a990-4e9cc8e0ed75"
     ],
     "filterType": "GMScript",
     "folderName": "UtilityScripts",

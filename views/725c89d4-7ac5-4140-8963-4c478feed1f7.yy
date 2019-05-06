@@ -18,7 +18,9 @@
         "73071507-fcfd-4835-a0cf-5156b30ac767",
         "5a26bff5-24e4-49ab-aaec-151cc1407635",
         "17438184-2dd3-4418-957e-30bbe780b105",
-        "57255046-8549-4e63-8957-275350a7c2f0"
+        "57255046-8549-4e63-8957-275350a7c2f0",
+        "e62d8375-a824-41c5-9114-42acdb6be28d",
+        "8f7fd25c-004a-42dc-aa6d-ae4f2d727b13"
     ],
     "filterType": "GMObject",
     "folderName": "ControllerObjects",

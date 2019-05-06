@@ -10,7 +10,7 @@ var decel = defaultDecel;
 // touching if it exists. If no friction param is registered for that tile, return the default.
 // TODO: Add tile frictions for all tile types. 
 if(groundedMiddle) {
-	var decelFromTile = obj_slopeController.tileDecel[currentMovementState, groundTile[MIDDLE]];
+	var decelFromTile = scr_GetTileDecel(currentMovementState, groundTile[MIDDLE]); //obj_slopeController.tileDecel[currentMovementState, groundTile[MIDDLE]];
 	if(decelFromTile > 0) {
 		decel = decelFromTile;
 	}

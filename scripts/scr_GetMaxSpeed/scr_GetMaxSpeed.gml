@@ -4,7 +4,7 @@ decelImmediate = false;
 var maxSpeed = maxSpeedXSkatingFlat;
 var centerTile = groundTile[MIDDLE];
 
-var tileMaxSpeed = obj_slopeController.maxSpeedTile[currentMovementState, centerTile];
+var tileMaxSpeed = scr_GetTileMaxSpeed(currentMovementState, centerTile); //obj_slopeController.maxSpeedTile[currentMovementState, centerTile];
 if(tileMaxSpeed > 0) {
 	maxSpeed = tileMaxSpeed
 	return maxSpeed;

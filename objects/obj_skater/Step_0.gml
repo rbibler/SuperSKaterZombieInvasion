@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+event_inherited();
 // Clear the vertical movement flag to ensure we don't update the skater's y position more than once
 if(newRoom) {
 	scr_NewRoom();
