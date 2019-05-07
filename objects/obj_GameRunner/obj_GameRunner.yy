@@ -1,48 +1,38 @@
 {
-    "id": "467060b8-ca06-4e15-81a8-3de14150488b",
+    "id": "83817f82-91f4-4af6-bafd-1215d8c1d921",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_KeyboardController",
+    "name": "obj_GameRunner",
     "eventList": [
         {
-            "id": "d41d01a7-0f87-4ffd-a469-7bdcd15e25ed",
+            "id": "95bfd91a-8887-4f2d-b685-11ea47dc7443",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "467060b8-ca06-4e15-81a8-3de14150488b"
+            "m_owner": "83817f82-91f4-4af6-bafd-1215d8c1d921"
         },
         {
-            "id": "fad83a14-5737-4032-8291-f0af1bfcb4de",
+            "id": "d11c87ad-2e79-494a-a462-57fd5614f212",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "467060b8-ca06-4e15-81a8-3de14150488b"
+            "eventtype": 8,
+            "m_owner": "83817f82-91f4-4af6-bafd-1215d8c1d921"
         },
         {
-            "id": "699065b0-0a72-4653-8ee2-c34138c51bd7",
+            "id": "449d8adf-531d-40a6-8bf7-b77a49f37d83",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 10,
-            "m_owner": "467060b8-ca06-4e15-81a8-3de14150488b"
-        },
-        {
-            "id": "1b6c34a1-7fb7-428c-a473-db3100cef220",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
+            "enumb": 80,
             "eventtype": 9,
-            "m_owner": "467060b8-ca06-4e15-81a8-3de14150488b"
+            "m_owner": "83817f82-91f4-4af6-bafd-1215d8c1d921"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -61,22 +51,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "20d457d4-de71-4da5-9734-8ce080c3953d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "30",
-            "varName": "keyRepeatTime",
-            "varType": 0
-        }
-    ],
+    "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true

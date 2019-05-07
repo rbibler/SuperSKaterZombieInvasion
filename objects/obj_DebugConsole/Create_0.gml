@@ -7,10 +7,4 @@
 
 currentInput = "";
 state = DC_HIDDEN;
-screenshot = noone;
-keyboard = noone;
-if(!instance_exists(obj_KeyboardController)) {
-	keyboard = instance_create_layer(0, 0, "Controllers", obj_KeyboardController);
-} else {
-	keyboard = instance_find(obj_KeyboardController, 0);
-}
+

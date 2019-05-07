@@ -8,7 +8,6 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		}
 		if(!grounded and ySpeed > 0) {
 			grounded = true;
-			show_debug_message("Block ground");
 		}
 		if(bbox_bottom > obj.bbox_top and obj.object_index == obj_controlBlock) {
 			y = obj.bbox_top - (bbox_bottom - y) - 1;
@@ -24,7 +23,6 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 			if(obj != noone and obj.isSolid) {
 			y = obj.bbox_top - (bbox_bottom - y) - 1;
 			scr_StopYMotion();
-			show_debug_message("Block ground 2");
 			grounded = true;
 			with(obj) {
 				script_execute(skaterVertCollisionScript, other);

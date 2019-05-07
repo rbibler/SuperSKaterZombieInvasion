@@ -3,9 +3,10 @@
 /// @arg delimieter*
 
 var stringToSplit = argument[0];
+var toLower = argument[1];
 var delimiter = " ";
-if(argument_count > 1) {
-	delimiter = argument[1];
+if(argument_count > 2) {
+	delimiter = argument[2];
 }
 
 var splitString;
@@ -16,11 +17,11 @@ var curChar;
 var currentToken = 0;
 stringToSplit += delimiter;
 var stringLength = string_length(stringToSplit);
-for(i = 0; i <= stringLength; i++) {
+for(i = 1; i <= stringLength; i++) {
 	curChar = string_char_at(stringToSplit, i);
 	if(curChar == delimiter) {
 		if(string_length(word) > 0) {
-			splitString[currentToken++] = word;
+			splitString[currentToken++] = toLower ? string_lower(word) : word;
 			word = "";
 		}
 	} else {

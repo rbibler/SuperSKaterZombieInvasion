@@ -1,8 +1,24 @@
 var input = argument0;
-var split = scr_SplitString(input);
-if(scr_StringStartsWith("room", input, true)) {
-	global.gamePaused = false;
-	instance_activate_all();
-	var num = string_digits(input);
-	room_goto(num);
+var split = scr_SplitString(input, true);
+var argCount = array_length_1d(split);
+if(argCount <= 0) {
+	return;
+}
+var cmd = split[0];
+switch(cmd) {
+	case "room":
+		var roomNum = room;
+		var arg = room;
+		var checkpointReached = false;
+		for(var i = 1; i < argCount; i++) {
+			arg = string_digits(split[i]);
+			if(string_length(arg) > 0) {
+				roomNum = real(arg);
+			} else if(split[i] == "c") {
+				checkpointReached = true;
+			}
+		}
+		scr_UnpauseGame();
+		scr_SwitchRooms(roomNum, checkpointReached);
+	break;
 }

@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "0969112e-1371-4125-8ea9-1584321b7718",
+            "Value": {
+                "id": "ea3473fe-0061-4c4c-a505-0d0595e9bb4b",
+                "resourcePath": "scripts\\scr_UnpauseGame\\scr_UnpauseGame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "09787af8-acd9-4586-b07f-21ead75cf667",
             "Value": {
                 "id": "4e8d6a4e-2fbd-4459-a286-a03efae96d1b",
@@ -863,6 +871,14 @@
             }
         },
         {
+            "Key": "2b45dc57-c511-4bd0-8823-60a96e9beeea",
+            "Value": {
+                "id": "5ca97a0d-11ef-4f80-ab11-ed20f4292518",
+                "resourcePath": "scripts\\scr_SwitchRooms\\scr_SwitchRooms.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2c3277d4-be3f-4e62-88ad-322765305ca3",
             "Value": {
                 "id": "c20ffbd0-682a-4d86-ae22-a85cec98c8a6",
@@ -1364,14 +1380,6 @@
                 "id": "eab74562-2304-4b5e-8000-fb6829a6f374",
                 "resourcePath": "scripts\\scr_OnSlopeTile\\scr_OnSlopeTile.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "467060b8-ca06-4e15-81a8-3de14150488b",
-            "Value": {
-                "id": "acfbc5f0-47cc-490c-b5d6-a8d23cecec86",
-                "resourcePath": "objects\\obj_KeyboardController\\obj_KeyboardController.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -2567,6 +2575,14 @@
             }
         },
         {
+            "Key": "83817f82-91f4-4af6-bafd-1215d8c1d921",
+            "Value": {
+                "id": "94cafc55-e348-4f23-9d41-01791dbff9a7",
+                "resourcePath": "objects\\obj_GameRunner\\obj_GameRunner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "840ed23e-2344-4adc-bde1-86247cf1448c",
             "Value": {
                 "id": "88f753f8-81dd-41b2-95e8-b0ea385ddaf3",
@@ -2983,6 +2999,14 @@
             }
         },
         {
+            "Key": "97feecd1-c1c2-4aa2-8fd9-cc142ed0ba0b",
+            "Value": {
+                "id": "07097f04-9102-4caf-bb5a-36ad1d715f57",
+                "resourcePath": "scripts\\scr_PauseGame\\scr_PauseGame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "98427d9f-ed4e-407d-ba68-4a9cfa1c4ffb",
             "Value": {
                 "id": "945eb787-e615-4148-9d05-9324654a65ba",
@@ -3220,6 +3244,14 @@
                 "id": "6725ad11-4069-46c9-9fe5-b9fad7113bfb",
                 "resourcePath": "sprites\\spr_RocketIndicator\\spr_RocketIndicator.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a400a57e-0840-4d7f-9447-c3a760d26eab",
+            "Value": {
+                "id": "b3ee1759-c7e0-44bf-b5dd-45c5de8d15cb",
+                "resourcePath": "views\\a400a57e-0840-4d7f-9447-c3a760d26eab.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -5401,6 +5433,9 @@
         "796885f2-1bd9-4cc8-9301-a34e14ce1509",
         "38b31850-4ce4-4c76-8eea-2e15b3b4606c",
         "0ec61e34-4947-45a1-aebb-bddea09073b4",
+        "0969112e-1371-4125-8ea9-1584321b7718",
+        "2b45dc57-c511-4bd0-8823-60a96e9beeea",
+        "97feecd1-c1c2-4aa2-8fd9-cc142ed0ba0b",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",

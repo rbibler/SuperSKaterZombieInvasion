@@ -17,10 +17,8 @@ if(shouldFollowSkaterVert) {
 }
 if(skater.y >= bottomLine) {
 	y = room_height - cameraHeight;
-	show_debug_message("Bottom line!");
 }
 camera_set_view_pos(camera, x, y);
 scr_UpdateBackground(x);
-show_debug_message("Camera x: " + string(x));
 
 lastCamX = x;

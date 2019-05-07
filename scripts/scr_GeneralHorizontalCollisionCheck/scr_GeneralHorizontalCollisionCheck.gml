@@ -19,7 +19,6 @@ if((p1 == 1 or p2 == 1 or p3 == 1)) {// and (self.object_index == obj_skater and
 	} else {
 		x = x - (x mod TILE_SIZE) - (bbox_left - x);
 	}
-	show_debug_message("Horizontal Collision for real");
 	scr_StopXMotion();
 	if(script_exists(horizCollisionScript)) {
 		script_execute(horizCollisionScript);

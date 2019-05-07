@@ -12,3 +12,6 @@ if(!instance_exists(obj_slopeController)) {
 if(!instance_exists(obj_DebugConsole)) {
 	instance_create_layer(0, 0, "Controllers", obj_DebugConsole);
 }
+if(!instance_exists(obj_GameRunner)) {
+	instance_create_layer(0, 0, "Controllers", obj_GameRunner);
+}
