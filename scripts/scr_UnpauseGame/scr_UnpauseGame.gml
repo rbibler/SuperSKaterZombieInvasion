@@ -6,5 +6,6 @@ if(instance_exists(obj_GameRunner)) {
 			sprite_delete(screenshot);
 		}
 		instance_activate_all();
+		state = NORMAL_MODE;
 	}
 }

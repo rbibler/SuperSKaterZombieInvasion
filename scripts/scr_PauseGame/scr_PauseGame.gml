@@ -8,12 +8,7 @@ if(instance_exists(obj_GameRunner)) {
 		
 		instance_deactivate_all(true);
 		instance_activate_object(obj_camera);
-		if(instance_exists(obj_DebugConsole) and global.debug) {
-			instance_activate_object(obj_DebugConsole);
-			with(instance_find(obj_DebugConsole, 0)) {
-				alarm[0] = 1;
-			}
-		}
+		state = NORMAL_MODE;
 	}
 }
 

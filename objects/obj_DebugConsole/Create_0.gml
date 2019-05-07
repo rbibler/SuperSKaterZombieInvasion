@@ -7,4 +7,3 @@
 
 currentInput = "";
 state = DC_HIDDEN;
-

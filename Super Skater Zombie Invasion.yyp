@@ -895,6 +895,14 @@
             }
         },
         {
+            "Key": "2c7acd3e-53cb-4d50-bd67-b1bd9c857a51",
+            "Value": {
+                "id": "a8baf8de-7bee-42d0-97a9-dcc4891a7c6f",
+                "resourcePath": "scripts\\scr_DrawDebugConsole\\scr_DrawDebugConsole.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2d37b62b-5748-4ef7-8043-a564d059459b",
             "Value": {
                 "id": "722aa84c-f8e3-48d1-a9c8-1ecf1ab33095",
@@ -4199,6 +4207,14 @@
             }
         },
         {
+            "Key": "cfcfa9f9-cc9d-4db7-8808-57d0354a0be0",
+            "Value": {
+                "id": "149e1b7d-9246-4073-a63f-3df40fb6ef14",
+                "resourcePath": "scripts\\scr_EnterDebugConsoleMode\\scr_EnterDebugConsoleMode.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d0899fbb-440e-4a3f-b4d0-9e385206af16",
             "Value": {
                 "id": "46cc10f6-a957-42fc-901a-f80d3a53a411",
@@ -5071,6 +5087,14 @@
             }
         },
         {
+            "Key": "fb0bb39f-16c5-47b0-ad3c-6ab0c588a111",
+            "Value": {
+                "id": "469cb544-b4bc-4521-9db7-fc9876c5f086",
+                "resourcePath": "views\\fb0bb39f-16c5-47b0-ad3c-6ab0c588a111.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "fb7ff1a4-6e92-49dd-b03c-8a0812103b62",
             "Value": {
                 "id": "cf6a22fb-99de-4d91-bf6f-f3ac964913ff",
@@ -5429,13 +5453,15 @@
         "9035bf7b-4dca-46ef-92be-5f9df8272b0f",
         "7ab6e4ec-e166-4e32-8d0a-78015b15764c",
         "8cc1b1d7-d505-4a40-abbf-464b05453c8b",
-        "b76e277e-df47-4ee0-84db-acdce805cfe9",
         "796885f2-1bd9-4cc8-9301-a34e14ce1509",
         "38b31850-4ce4-4c76-8eea-2e15b3b4606c",
         "0ec61e34-4947-45a1-aebb-bddea09073b4",
         "0969112e-1371-4125-8ea9-1584321b7718",
         "2b45dc57-c511-4bd0-8823-60a96e9beeea",
         "97feecd1-c1c2-4aa2-8fd9-cc142ed0ba0b",
+        "cfcfa9f9-cc9d-4db7-8808-57d0354a0be0",
+        "b76e277e-df47-4ee0-84db-acdce805cfe9",
+        "2c7acd3e-53cb-4d50-bd67-b1bd9c857a51",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",
