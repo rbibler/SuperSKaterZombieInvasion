@@ -95,6 +95,8 @@
 
 #macro WEAPON_COUNT	3
 
+#macro CONTROLLER_LAYER	"Controllers"
+
 enum ANIMATION {
 
 	NORMAL = 60 / 5,

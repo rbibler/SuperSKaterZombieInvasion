@@ -1,0 +1,10 @@
+input[LEFT] = keyboard_check(vk_left);
+input[RIGHT] = keyboard_check(vk_right);
+input[UP] = keyboard_check(vk_up);
+input[DOWN] = keyboard_check(vk_down);
+input[SELECT]= keyboard_check(vk_space);
+input[START] = keyboard_check(vk_enter);
+input[SHOOT] = keyboard_check(ord("A"));
+input[JUMP] = keyboard_check(ord("S"));
+input[TRANSITION] = keyboard_check(ord("F"));
+input[WEAPON_SWITCH] = keyboard_check(vk_tab);

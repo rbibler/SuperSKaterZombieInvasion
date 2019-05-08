@@ -5,3 +5,14 @@
 
 screenshot = noone;
 state = NORMAL_MODE;
+gamepad = -1;
+
+// Global parameters that will persist throughout the game
+scr_Macros();
+scr_SetupGlobalParams();
+scr_CreatePersistentObjects();
+
+
+application_surface_draw_enable(false);
+
+room_goto(startRoom);

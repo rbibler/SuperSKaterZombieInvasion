@@ -136,7 +136,7 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Controllers",
+            "name": "Triggers",
             "id": "ba6f0143-4ef7-42e2-92e1-406aae61a335",
             "depth": 300,
             "grid_x": 16,

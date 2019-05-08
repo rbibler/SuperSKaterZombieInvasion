@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "1ca2d8b5-5b40-4d22-8778-d9b1cf8d7b84",
+            "Value": {
+                "id": "aebd48de-d416-4894-9209-33a27ef8bb56",
+                "resourcePath": "scripts\\scr_CheckKeyboardInput\\scr_CheckKeyboardInput.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1cb4ff59-edba-445f-ba36-891b27d5e0df",
             "Value": {
                 "id": "c9692cf6-95bc-45ac-b22b-ce90c72443b4",
@@ -1543,6 +1551,14 @@
             }
         },
         {
+            "Key": "4e9f4e5e-5b0f-469f-82e0-36b97e8dfa5f",
+            "Value": {
+                "id": "5bd23bd6-7ab1-4d89-add2-574dad090a7c",
+                "resourcePath": "objects\\obj_Gamepad\\obj_Gamepad.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4ebb9228-937f-4c04-81b1-c680a6651b16",
             "Value": {
                 "id": "b5f76d8b-ce7d-4d03-bc8e-3818af2336ce",
@@ -2315,6 +2331,14 @@
             "Value": {
                 "id": "f544b53b-95de-4966-8bfd-b776a8a06038",
                 "resourcePath": "scripts\\scr_SkaterStateSkateToFoot\\scr_SkaterStateSkateToFoot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7755fc4f-4918-401e-9924-2570275beada",
+            "Value": {
+                "id": "eff9dce6-b72f-47b3-95aa-4fb136d0f154",
+                "resourcePath": "scripts\\scr_CheckGamepadInput\\scr_CheckGamepadInput.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4047,6 +4071,14 @@
             }
         },
         {
+            "Key": "c8ad54ba-7156-45f8-990d-86b571a565ef",
+            "Value": {
+                "id": "5b579329-ebe2-491d-a9be-22b11ca50cf2",
+                "resourcePath": "scripts\\scr_SetupGlobalParams\\scr_SetupGlobalParams.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c8cf8c7b-2762-4fd9-a361-6865be5ff332",
             "Value": {
                 "id": "e84bbaaa-9465-437a-840e-703cd0dcae00",
@@ -4596,6 +4628,22 @@
                 "id": "f7a973ef-4d44-4bc7-b743-171da81ba1c4",
                 "resourcePath": "scripts\\scr_SkaterStateOnFootJumpShield\\scr_SkaterStateOnFootJumpShield.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e1367bc2-de96-4e8e-9779-8cd442650f95",
+            "Value": {
+                "id": "53a8af3b-8ddc-4391-822d-085e8a177c0a",
+                "resourcePath": "scripts\\scr_CreatePersistentObjects\\scr_CreatePersistentObjects.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e16e6057-7fe1-43df-81b5-de26a914a560",
+            "Value": {
+                "id": "1e91efba-4611-4414-b317-5062be259817",
+                "resourcePath": "views\\e16e6057-7fe1-43df-81b5-de26a914a560.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -5460,8 +5508,12 @@
         "2b45dc57-c511-4bd0-8823-60a96e9beeea",
         "97feecd1-c1c2-4aa2-8fd9-cc142ed0ba0b",
         "cfcfa9f9-cc9d-4db7-8808-57d0354a0be0",
+        "e1367bc2-de96-4e8e-9779-8cd442650f95",
+        "c8ad54ba-7156-45f8-990d-86b571a565ef",
         "b76e277e-df47-4ee0-84db-acdce805cfe9",
         "2c7acd3e-53cb-4d50-bd67-b1bd9c857a51",
+        "7755fc4f-4918-401e-9924-2570275beada",
+        "1ca2d8b5-5b40-4d22-8778-d9b1cf8d7b84",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",
