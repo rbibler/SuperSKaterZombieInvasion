@@ -3103,6 +3103,14 @@
             }
         },
         {
+            "Key": "9c130826-11f4-4036-91e0-6409b885f4ef",
+            "Value": {
+                "id": "46f877e8-e757-4108-b960-a0648108df5c",
+                "resourcePath": "scripts\\scr_CreateEmptyLayers\\scr_CreateEmptyLayers.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9c61520d-660b-4227-91ab-b0fdf5ce9b21",
             "Value": {
                 "id": "f0fd0872-799f-41e7-912f-60705fa76586",
@@ -5510,6 +5518,7 @@
         "cfcfa9f9-cc9d-4db7-8808-57d0354a0be0",
         "e1367bc2-de96-4e8e-9779-8cd442650f95",
         "c8ad54ba-7156-45f8-990d-86b571a565ef",
+        "9c130826-11f4-4036-91e0-6409b885f4ef",
         "b76e277e-df47-4ee0-84db-acdce805cfe9",
         "2c7acd3e-53cb-4d50-bd67-b1bd9c857a51",
         "7755fc4f-4918-401e-9924-2570275beada",

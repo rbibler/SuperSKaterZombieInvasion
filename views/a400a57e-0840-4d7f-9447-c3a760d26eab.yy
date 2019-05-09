@@ -9,7 +9,8 @@
         "97feecd1-c1c2-4aa2-8fd9-cc142ed0ba0b",
         "cfcfa9f9-cc9d-4db7-8808-57d0354a0be0",
         "e1367bc2-de96-4e8e-9779-8cd442650f95",
-        "c8ad54ba-7156-45f8-990d-86b571a565ef"
+        "c8ad54ba-7156-45f8-990d-86b571a565ef",
+        "9c130826-11f4-4036-91e0-6409b885f4ef"
     ],
     "filterType": "GMScript",
     "folderName": "GameFlowScripts",

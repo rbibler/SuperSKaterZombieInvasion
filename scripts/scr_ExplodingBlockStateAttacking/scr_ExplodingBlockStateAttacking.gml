@@ -5,7 +5,7 @@ if(stateNew) {
 
 if(stateTimer mod 10 == 0) {
 	if(stateVar[0] == 1) {
-		var slimeball = instance_create_layer(x, y + 24, "Enemies", obj_slimeball);
+		var slimeball = instance_create_layer(x, y + 24, ENEMIES_LAYER, obj_slimeball);
 		with(slimeball) {
 			scr_StateSwitch(s_FALLING);
 			sprite_index = spr_slimeballJump;

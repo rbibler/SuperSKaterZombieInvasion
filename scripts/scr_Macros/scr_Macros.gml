@@ -95,7 +95,18 @@
 
 #macro WEAPON_COUNT	3
 
-#macro CONTROLLER_LAYER	"Controllers"
+#macro CONTROLLER_LAYER			"Controllers"
+#macro WEAPONS_LAYER			"Weapons"
+#macro AMMO_LAYER				"Ammo"
+#macro ANIMS_LAYER				"Anims"
+#macro TRIGGERS_LAYER			"Triggers"
+#macro POWERUPS_LAYER			"Powerups"
+#macro FOREGROUND_LAYER			"Foreground"
+#macro FOREGROUND_ENEMIES_LAYER	"ForegroundEnemies"
+#macro ENEMIES_LAYER			"Enemies"
+#macro PLAYER_LAYER				"Player"
+#macro INTERACTIVES_LAYER		"Interactices"
+#macro BLOCKS_LAYER				"Blocks"
 
 enum ANIMATION {
 
