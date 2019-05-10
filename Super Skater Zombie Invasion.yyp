@@ -1399,6 +1399,14 @@
             }
         },
         {
+            "Key": "46124292-1052-4a3e-8b28-04dbeb9a44c7",
+            "Value": {
+                "id": "8b7b11b7-7d80-43c9-97b5-2334aff1494c",
+                "resourcePath": "views\\46124292-1052-4a3e-8b28-04dbeb9a44c7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "470f3af4-2d91-44f6-a622-f72b3517ec94",
             "Value": {
                 "id": "afdb87a0-879c-4012-991d-627aea94dd16",
@@ -1660,6 +1668,14 @@
                 "id": "283a9788-226f-4a23-a628-9dc3f5feeecf",
                 "resourcePath": "scripts\\gullStateFallScript\\gullStateFallScript.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "538671e3-46b1-4e0b-8674-49ebca5461e0",
+            "Value": {
+                "id": "bab6458b-3736-46d2-a883-d9ca06bfdcb8",
+                "resourcePath": "views\\538671e3-46b1-4e0b-8674-49ebca5461e0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2260,6 +2276,14 @@
                 "id": "8b7e8be4-5676-40bb-b35d-8df7122e3c2f",
                 "resourcePath": "objects\\obj_ramp\\obj_ramp.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "74fe7305-eda9-4650-a109-5393a91b367b",
+            "Value": {
+                "id": "505aba8f-e758-4a5f-a273-cd98613a75ea",
+                "resourcePath": "sprites\\spr_Jetski\\spr_Jetski.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3492,6 +3516,14 @@
                 "id": "43c061ee-a14e-43be-9de6-36216502741c",
                 "resourcePath": "scripts\\scr_SkaterCheckJump\\scr_SkaterCheckJump.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ad94b7db-06a3-4c5f-a780-0b474dbb7e5c",
+            "Value": {
+                "id": "0d4b8604-f299-4246-ae9c-7fb920662c5c",
+                "resourcePath": "objects\\obj_Jetski\\obj_Jetski.yy",
+                "resourceType": "GMObject"
             }
         },
         {
