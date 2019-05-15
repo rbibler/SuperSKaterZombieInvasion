@@ -5,7 +5,7 @@ if(sprite_index == spr_DestructibleCrateCollapse) {
 }
 var doCollapse = false;
 with(other) {
-	if(stateName == s_BOARD_SWING) {
+	if(stateID == s_BOARD_SWING) {
 		doCollapse = true;
 	}
 }

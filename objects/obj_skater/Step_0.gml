@@ -62,7 +62,7 @@ if(input[JUMP] and !lastInput[JUMP] and !grounded) {
 }
 
 if(global.debug) {
-	show_debug_message("    State: " + stateName);
+	show_debug_message("    State: " + string(stateID));
 }
 // The real fun happens in the state machine
 scr_StateExecute();

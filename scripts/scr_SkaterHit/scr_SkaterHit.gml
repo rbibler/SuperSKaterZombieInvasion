@@ -5,15 +5,15 @@
 var enemy = argument0;
 var hitPoints = argument1;
 var didGetHurt = false;
-var newState = stateName;
+var newState = stateID;
 
 if(currentMovementState == ON_FOOT_STATE) {
-	if(stateName != s_ON_FOOT_HURT and !isImmune) {
+	if(stateID != s_ON_FOOT_HURT and !isImmune) {
 		newState = s_ON_FOOT_HURT;
 		didGetHurt = true;
 	}
 } else {
-	if(stateName != s_KNOCKED_BACK and !isImmune) {
+	if(stateID != s_KNOCKED_BACK and !isImmune) {
 		newState = s_KNOCKED_BACK;
 		didGetHurt = true;
 	}

@@ -10,7 +10,7 @@ if(currentWeapon == AUTO_SLINGSHOT) {
 ammoOnScreen++;
 var xOffset = 0;
 var yOffset = 0;
-switch(stateName) {
+switch(stateID) {
 	case s_IDLE:
 	case s_MOVING:
 		xOffset = projOffsetStandingX;
