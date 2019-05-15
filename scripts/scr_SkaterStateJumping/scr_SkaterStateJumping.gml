@@ -37,7 +37,7 @@ scr_SkaterHorizontalImpetus();
 // If we hit the ground somehow (not likely) we should be idle. Let idle state take care of
 // skating check
 if(grounded) {
-	scr_StateSwitch(s_IDLE);
+	scr_StateSwitch(s_ROLLING);
 	//scr_StopYMotion();
 	return;
 }

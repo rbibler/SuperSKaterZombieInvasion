@@ -39,10 +39,10 @@ for(var i = 0; i < 10; i++) {
 
 // Set the initial gravity to whatever our gravity is
 
-maxYSpeed = 6;
 myGravity = .5;
 
 facing = -1;
+lastFacing = FACE_LEFT;
 
 var layerId = layer_get_id("CollisionTiles");
 collisionTiles = layer_tilemap_get_id(layerId);
@@ -66,7 +66,7 @@ climbState = 0;
 // Set the default state to IDLE
 scr_StateInit(initialState);
 
-currentAnim = noone;
+currentAnimation = noone;
 
 shouldMove = true;
 

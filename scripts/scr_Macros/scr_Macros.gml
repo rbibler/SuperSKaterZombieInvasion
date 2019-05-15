@@ -1,3 +1,11 @@
+// Movement states
+#macro	SKATE_STATE		1
+#macro	ON_FOOT_STATE	2
+
+// Vehciles
+#macro	NO_VEHICLE		0
+#macro	JET_SKI			1
+
 // Directional Input
 #macro	UP				0
 #macro	DOWN			1
@@ -53,6 +61,10 @@
 #macro s_ON_FOOT_SHIELD			"ON_FOOT_SHIELD"
 #macro s_ON_FOOT_JUMP_SHIELD	"ON_FOOT_JUMP_SHIELD"
 #macro s_JUMP_SHIELD			"JUMP_SHIELD"
+#macro s_JET_SKI_IDLE			"JET_SKI_IDLE"
+#macro s_JET_SKI_MOVING			"JET_SKI_MOVING"
+#macro s_JET_SKI_JUMPING		"JET_SKI_JUMPING"
+#macro s_JET_SKI_FALLING		"JET_SKI_FALLING"
 
 // Collision Points
 #macro LEFT_CORNER				0
@@ -73,7 +85,7 @@
 #macro GRID_X	8
 #macro GRID_Y	8
 
-#macro TILE_SIZE 16
+#macro TILE_SIZE 32
 
 #macro FACE_RIGHT	1
 #macro FACE_LEFT	-1
@@ -90,6 +102,20 @@
 #macro HEALTH	1
 
 #macro WEAPON_COUNT	3
+
+#macro CONTROLLER_LAYER			"Controllers"
+#macro WEAPONS_LAYER			"Weapons"
+#macro AMMO_LAYER				"Ammo"
+#macro ANIMS_LAYER				"Anims"
+#macro TRIGGERS_LAYER			"Triggers"
+#macro POWERUPS_LAYER			"Powerups"
+#macro FOREGROUND_LAYER			"Foreground"
+#macro FOREGROUND_ENEMIES_LAYER	"ForegroundEnemies"
+#macro ENEMIES_LAYER			"Enemies"
+#macro PLAYER_LAYER				"Player"
+#macro INTERACTIVES_LAYER		"Interactices"
+#macro BLOCKS_LAYER				"Blocks"
+#macro VEHICLES_LAYER			"Vehicles"
 
 enum ANIMATION {
 

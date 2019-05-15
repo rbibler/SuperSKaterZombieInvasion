@@ -20,6 +20,7 @@ slopeCounter = 0;
 // 0 - Idle; 1 - Skating; 2 - Crouching; 3 - Jumping; 
 // 4 - Slamming; 5 - Recovering; 6 - Hit; 7 - Climbing;
 //state = 0;
+currentMovementState = SKATE_STATE;
 
 // Hold on to the skater's state from the previous frame
 //lastState = 0;
@@ -66,12 +67,12 @@ for(var i = 0; i < 10; i++) {
 
 
 // Reference to the weapon
-slingshot = instance_create_layer(0, 0, "WEAPONS", obj_Slingshot);
-currentWeapon = SPREAD_SLINGSHOT;
-currentPowerup = PB_ROCKET;
+slingshot = instance_create_layer(0, 0, WEAPONS_LAYER, obj_Slingshot);
+currentWeapon = NO_SLINGSHOT;
+currentPowerup = PB_NONE;
 weaponAnimCounter = 0;
 ammoOnScreen = 0;
-maxAmmoOnScreen = slingshot.maxAmmo[currentWeapon];
+maxAmmoOnScreen = scr_GetMaxAmmo(currentWeapon); 
 cooldown = 0;
 
 // Reset the timer for the idle animation
@@ -114,6 +115,11 @@ onFootHurtState = scr_StateCreate(s_ON_FOOT_HURT, scr_SkaterStateOnFootHurt);
 onFootShieldState = scr_StateCreate(s_ON_FOOT_SHIELD, scr_SkaterStateOnFootShield);
 onFootJumpShieldState = scr_StateCreate(s_ON_FOOT_JUMP_SHIELD, scr_SkaterStateOnFootJumpShield);
 jumpShieldState = scr_StateCreate(s_JUMP_SHIELD, scr_SkaterStateJumpShield);
+
+jetSkiIdleState = scr_StateCreate(s_JET_SKI_IDLE, scr_SkaterStateJetSkiIdle);
+jetSkiMoveState = scr_StateCreate(s_JET_SKI_MOVING, scr_SkaterStateJetSkiMoving);
+jetSkiJumpState = scr_StateCreate(s_JET_SKI_JUMPING, scr_SkaterStateJetSkiJumping);
+jetSkiFallState = scr_StateCreate(s_JET_SKI_FALLING, scr_SkaterStateJetSkiFalling);
 // Set the default state to IDLE
 scr_StateInit(s_IDLE);
 
@@ -140,6 +146,7 @@ onFootCrouchAnim = scr_RegisterStateAnimation(spr_SkaterOnFootCrouch, FAST_ANIM_
 onFootFallAnim = scr_RegisterStateAnimation(spr_SkaterOnFootFalling, FAST_ANIM_SPEED, true, noone, "FALLING", sprite_get_number(spr_SkaterOnFootFalling));
 onFootHurtAnim = scr_RegisterStateAnimation(spr_SkaterOnFootHurt, FAST_ANIM_SPEED, true, noone, "HURT", sprite_get_number(spr_SkaterOnFootHurt));
 
+jetSkiIdleAnim = scr_RegisterStateAnimation(spr_SkaterJetSki, VERY_SLOW_ANIM_SPEED, true, noone, "JET SKI IDLE", sprite_get_number(spr_SkaterJetSki));
 
 // Shield animations
 onFootShieldAnim = scr_RegisterStateAnimation(spr_SkaterOnFootShield, FAST_ANIM_SPEED, false, noone, "ON_FOOT_SHIELD", sprite_get_number(spr_SkaterOnFootShield));
@@ -175,29 +182,6 @@ deadAnim.persistent = true;
 drownAnim.persistent = true;
 runAnim.persistent = true;
 
-powerPushIdle = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
-scr_AddSpriteToSubstateAnimation(powerPushIdle, spr_SkaterPowerPushIdleOne, 0);
-scr_AddSpriteToSubstateAnimation(powerPushIdle, spr_SkaterPowerPushIdleTwo, 1);
-idleAnim.substateAnimations[1] = powerPushIdle;
-powerPushIdle.persistent = true;
-
-powerPushSkate = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
-scr_AddSpriteToSubstateAnimation(powerPushSkate, spr_SkaterPowerPushOne, 0);
-scr_AddSpriteToSubstateAnimation(powerPushSkate, spr_SkaterPowerPushTwo, 1);
-skateAnim.substateAnimations[1] = powerPushSkate;
-powerPushSkate.persistent = true;
-
-powerPushJump = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
-scr_AddSpriteToSubstateAnimation(powerPushJump, spr_SkaterPowerPushJumpingOne, 0);
-scr_AddSpriteToSubstateAnimation(powerPushJump, spr_SkaterPowerPushJumpingTwo, 1);
-jumpAnim.substateAnimations[1] = powerPushJump;
-powerPushJump.persistent = true;
-
-powerPushCrouch = scr_RegisterSubstateAnimation(2, NORMAL_ANIM_SPEED);
-scr_AddSpriteToSubstateAnimation(powerPushCrouch, spr_SkaterPowerPushCrouchOne, 0);
-scr_AddSpriteToSubstateAnimation(powerPushCrouch, spr_SkaterPowerPushCrouchTwo, 1);
-crouchAnim.substateAnimations[1] = powerPushCrouch;
-powerPushCrouch.persistent = true;
 
 slingshotIdle = scr_RegisterSubstateAnimation(1, NORMAL_ANIM_SPEED);
 scr_AddSpriteToSubstateAnimation(slingshotIdle, spr_SkaterIdleSlingshot, 0);
@@ -240,12 +224,14 @@ lastStep = 0;
 isShooting = false;
 
 boardSmacked = ds_list_create();
-onFoot = false;
 drawOffsetX = 0;
 drawOffsetY = 0;
 railGrindButtonPressTimer = 0;
 railJumpBoost = 2;
 currentAirSpeedMax = 0;
+currentVehicle = NO_VEHICLE;
+
+scr_CheckForCheckpoint();
 
 
 

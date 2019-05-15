@@ -49,7 +49,7 @@ switch(stateVar[1]) {
 			var tossDirection = sign(obj_skater.x - x);
 			var tossSpeedX = random_range(1, 2.5) * tossDirection;
 			var tossSpeedY = random_range(-4, -6);
-			var hackeySack = instance_create_layer(x, y, "Enemies", obj_hackySack);
+			var hackeySack = instance_create_layer(x, y, ENEMIES_LAYER, obj_hackySack);
 			with(hackeySack) {
 				xSpeed = tossSpeedX;
 				ySpeed = tossSpeedY;

@@ -7,7 +7,8 @@
         "9d6911e6-8754-43a2-9448-8101d5986f6b",
         "b6d10f64-0f68-4742-87e5-cced5c8bd045",
         "7778930c-cd1f-4a79-bf60-cb3b5fc35c3d",
-        "48e1f4a4-2c9f-4a79-850a-d5b649e4a1c0"
+        "48e1f4a4-2c9f-4a79-850a-d5b649e4a1c0",
+        "c02065b4-5117-4200-8297-c3088f647540"
     ],
     "filterType": "GMScript",
     "folderName": "PatrolEnemies",

@@ -6,3 +6,5 @@ gravityOn = false;
 event_inherited();
 
 
+restY = ystart;
+startImageSpeed = image_speed;

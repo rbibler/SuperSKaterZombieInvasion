@@ -6,7 +6,7 @@ if(input[LEFT]) {
 		myDirection = -1;
 		// If so, accelerate left until max speed is reached
 		if(xSpeed > -speedThisFrame) {
-			xSpeed -= 0.75;
+			xSpeed -= (0.75 * speedX);
 		} 
 	}
 // If not moving left, check to see if moving right
@@ -15,21 +15,24 @@ if(input[LEFT]) {
 		myDirection = 1;
 		// If so, accelerate right until max speed is reached
 		if(xSpeed < speedThisFrame) {
-			xSpeed += 0.75;
+			xSpeed += (0.75 * speedX);
 		} 
 	}
 } 
-
-scr_GeneralCheckSlopeImpetus();
+if(!noSlope) {
+	scr_GeneralCheckSlopeImpetus();
+}
 
 // Can only go so fast
 // Choose max speed based on situation: faster if on a slope
 var maxSpeed = speedThisFrame;
-if(onSlope) {
-	if(input[LEFT] or input[RIGHT]) {
-		maxSpeed = slopeSpeedX;
-	} else {
-		maxSpeed = slopeSpeedX;
+if(!noSlope) {
+	if(onSlope) {
+		if(input[LEFT] or input[RIGHT]) {
+			maxSpeed = slopeSpeedX;
+		} else {
+			maxSpeed = slopeSpeedX;
+		}
 	}
 }
 

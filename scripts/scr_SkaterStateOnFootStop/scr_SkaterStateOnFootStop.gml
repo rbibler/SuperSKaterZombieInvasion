@@ -26,16 +26,7 @@ scr_SkaterHorizontalImpetus()
 // Figure out the fractional movement so that we're always working with integers
 scr_GeneralMovementFractions();
 
-// If no directional input, slow the skater down until he stops
-if(abs(xSpeed) > 0) {
-	// If horiztonal direction is the same this frame as last, then need to slow down
-	if(sign(xSpeed) == sign(lastXSpeed)) {
-		xSpeed -= (groundFriction * sign(xSpeed));
-		
-	} 
-} else if(abs(xSpeed) <= 0.15) {
-	scr_StateSwitch(s_ON_FOOT_IDLE);
-}
+
 
 scr_MoveAndCollide();
 scr_SkaterLadderCollisions();

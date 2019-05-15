@@ -10,7 +10,7 @@ scr_MoveAndCollide();
 if(grounded) {
 	var xPos = x;
 	var yPos = (floor(y / TILE_SIZE) * TILE_SIZE) + TILE_SIZE;
-	var effect = instance_create_layer(xPos, yPos, "FOREGROUND", obj_GenericEffect);
+	var effect = instance_create_layer(xPos, yPos, FOREGROUND_LAYER, obj_GenericEffect);
 	with(effect) {
 		sprite_index = spr_EffectSlimeSplash;
 	}

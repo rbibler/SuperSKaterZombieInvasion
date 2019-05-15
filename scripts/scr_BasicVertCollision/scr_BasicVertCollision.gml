@@ -14,7 +14,7 @@ if(tile <= 0) {
 } else {
 	var targetBottomTile = floor(targetBottom / TILE_SIZE);
 	var tileHorizIndex = xPos mod TILE_SIZE;
-	var tileHeight = obj_slopeController.slopeHeights[tile, tileHorizIndex];
+	var tileHeight = scr_GetTileHeight(tile, tileHorizIndex); //obj_slopeController.slopeHeights[tile, tileHorizIndex];
 	var depthInTile = targetBottom mod TILE_SIZE;
 	var dif = depthInTile - tileHeight;
 	if(dif >= 0  or (groundedAtStart and tile > 5)) {

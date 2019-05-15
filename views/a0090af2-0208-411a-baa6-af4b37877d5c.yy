@@ -9,7 +9,8 @@
         "e92db17b-7078-488e-8a00-d4ce723f6828",
         "6f726df5-b65d-4a1a-a365-5417d9bffdb6",
         "3cc45a08-ede0-4f39-afab-0619ed030afa",
-        "1f90dd5c-fd1b-4a5e-89a5-7f75e5f23af0"
+        "1f90dd5c-fd1b-4a5e-89a5-7f75e5f23af0",
+        "a3ddb5f7-9d64-43e9-8b56-e93976478b10"
     ],
     "filterType": "GMSprite",
     "folderName": "BackgroundSprites",

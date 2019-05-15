@@ -4,11 +4,18 @@
 if(!grounded) {
 	return airFriction;
 }
+if(currentVehicle == JET_SKI) {
+	return jetSkiAccel;
+}
 
+var accel = defaultAccel;
 // A hack for now: Check to see if we're center-grounded, then grab friction param for the tile we're 
 // touching if it exists. If no friction param is registered for that tile, return the default.
 // TODO: Add tile frictions for all tile types. 
-if(groundedMiddle and groundTile[MIDDLE] < array_length_1d(obj_slopeController.tileFriction)) {
-	return obj_slopeController.tileFriction[groundTile[MIDDLE]];
+if(groundedMiddle) {
+	var accelFromTile = scr_GetTileAccel(currentMovementState, groundTile[MIDDLE]); //obj_slopeController.tileAccel[currentMovementState, groundTile[MIDDLE]];
+	if(accelFromTile > 0) {
+		accel = accelFromTile;
+	}
 }
-return defaultAccel;
+return accel;

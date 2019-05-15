@@ -23,6 +23,16 @@
             "enumb": 2,
             "eventtype": 3,
             "m_owner": "ed14a131-953f-411a-8370-232b4492166c"
+        },
+        {
+            "id": "f7f98152-4350-406c-8ae4-6474874ae826",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "ed14a131-953f-411a-8370-232b4492166c"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -66,36 +76,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.5",
+            "value": "1",
             "varName": "standardGravity",
-            "varType": 0
-        },
-        {
-            "id": "df8e548c-8a57-4fb4-9019-4a59a192e20b",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0.25",
-            "varName": "groundFriction",
-            "varType": 0
-        },
-        {
-            "id": "9fac1221-b7dc-4333-a5b1-5259307c4e47",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0.075",
-            "varName": "slopeFriction",
             "varType": 0
         },
         {
@@ -113,48 +95,6 @@
             "varType": 0
         },
         {
-            "id": "a3a9b21a-607a-4c3b-9eaf-d1d147524e2a",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "3.5",
-            "varName": "maxSpeedX",
-            "varType": 0
-        },
-        {
-            "id": "c6855c49-c015-4e3e-ae8f-1a2c679b993d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "4",
-            "varName": "maxSpeedXFlatland",
-            "varType": 0
-        },
-        {
-            "id": "89d5b467-3727-42f6-9919-4e441b3b9d6f",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "8",
-            "varName": "maxSpeedXDownhill",
-            "varType": 0
-        },
-        {
             "id": "86d2ae74-dcb1-4bf8-8df1-5101280fb7a1",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -169,7 +109,21 @@
             "varType": 0
         },
         {
-            "id": "45353a6f-4222-4ceb-81a3-75167d4a7285",
+            "id": "5e525223-e1f6-4b2e-b45b-7d23112678c3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "12",
+            "varName": "maxYSpeed",
+            "varType": 0
+        },
+        {
+            "id": "b3f8fa00-efc7-4b93-9fae-18bb850f6732",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -179,7 +133,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "maxSpeedInAir",
+            "varName": "maxSpeedXDownhill",
             "varType": 0
         }
     ],

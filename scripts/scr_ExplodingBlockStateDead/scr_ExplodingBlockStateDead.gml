@@ -1,5 +1,5 @@
 if(stateNew) {
-	sprite_index = spr_explodeBlockDripping;
+	sprite_index = spr_ExplodingBlockOpen;
 	image_speed = 0;
 	stateVar[0] = 0;
 }

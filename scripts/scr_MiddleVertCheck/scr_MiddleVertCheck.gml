@@ -21,7 +21,7 @@ if(grounded) {
 		var tile = colPoint;
 		if(tile > 0) {
 			var tileHorizIndex = x mod TILE_SIZE;
-			var tileHeight = obj_slopeController.slopeHeights[tile, tileHorizIndex];
+			var tileHeight = scr_GetTileHeight(tile, tileHorizIndex); //obj_slopeController.slopeHeights[tile, tileHorizIndex];
 			grounded = true;
 			scr_StopYMotion();
 			y = (targetBottomTile * TILE_SIZE) + tileHeight + (y - bbox_bottom) - 1;

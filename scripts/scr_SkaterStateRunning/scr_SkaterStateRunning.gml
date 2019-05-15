@@ -14,6 +14,7 @@ if(stateNew) {
 	stateVar[0] = false;
 	scr_UpdateSkaterAnimation(runAnim);
 	canShoot = true;
+	currentVehicle = NO_VEHICLE;
 }
 
 // Check if we should fire a weapon

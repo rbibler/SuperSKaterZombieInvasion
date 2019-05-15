@@ -34,8 +34,10 @@ if(infected) {
 if(isDead) {
 	scr_StartAtCheckpoint();
 	isDead = false;
+	return;
 }
 scr_StateUpdate();
+scr_UpdateSkaterStateInfo():
 image_xscale = facing;
 
 lastY = y;
@@ -62,4 +64,5 @@ wasGroundedLeft = groundedLeft;
 if(global.debug) {
 	//surface_save(application_surface, string(current_time) + ".png");
 }
+scr_UpdateCamera();
 

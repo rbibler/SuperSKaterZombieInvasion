@@ -19,7 +19,7 @@ if(tile == SOLID) {
 } else if(tile >= 5) {
 	var tileDepth = y mod TILE_SIZE;
 	var tileIncursion = x mod TILE_SIZE;
-	var slopeHeight = obj_slopeController.slopeHeights[tile, tileIncursion];
+	var slopeHeight = scr_GetTileHeight(tile, tileIncursion); //obj_slopeController.slopeHeights[tile, tileIncursion];
 	if(tileDepth >= slopeHeight) {
 		didCollide = true;
 	}

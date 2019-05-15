@@ -8,7 +8,6 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		}
 		if(!grounded and ySpeed > 0) {
 			grounded = true;
-			show_debug_message("Block ground");
 		}
 		if(bbox_bottom > obj.bbox_top and obj.object_index == obj_controlBlock) {
 			y = obj.bbox_top - (bbox_bottom - y) - 1;
@@ -19,12 +18,11 @@ if(place_meeting(x, y + ySpeed, obj_baseBlock)) {
 		}
 	}
 } else if(ySpeed >= 0) {
-	if(place_meeting(x, y + 2, obj_baseBlock)) {
-		var obj = instance_place(x, y + 2, obj_baseBlock);
+	if(place_meeting(x, y + 4, obj_baseBlock)) {
+		var obj = instance_place(x, y + 4, obj_baseBlock);
 			if(obj != noone and obj.isSolid) {
 			y = obj.bbox_top - (bbox_bottom - y) - 1;
 			scr_StopYMotion();
-			show_debug_message("Block ground 2");
 			grounded = true;
 			with(obj) {
 				script_execute(skaterVertCollisionScript, other);

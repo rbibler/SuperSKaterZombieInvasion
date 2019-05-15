@@ -13,7 +13,7 @@ var endScript = argument3;
 var name = argument4;
 var hitBox = argument5;
 
-var anim = instance_create_layer(0, 0, "ANIMS", obj_Animation);
+var anim = instance_create_layer(0, 0, ANIMS_LAYER, obj_Animation);
 with(anim) {
 	animSpeed = aSpeed;
 	sprite_index = sprite;

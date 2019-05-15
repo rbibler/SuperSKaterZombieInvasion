@@ -13,7 +13,7 @@ if(stateNew) {
 	lastAnimIndex = image_index;
 	scr_UpdateSkaterAnimation(footToSkateAnim);
 	canShoot = true;
-	onFoot = false;
+	currentMovementState = SKATE_STATE;
 }
 
 

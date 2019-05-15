@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+event_inherited();
 // Clear the vertical movement flag to ensure we don't update the skater's y position more than once
 if(newRoom) {
 	scr_NewRoom();
@@ -9,8 +9,10 @@ if(newRoom) {
 frameTimer++;
 cooldown--;
 shouldAnimate = true;
-show_debug_message("");
-show_debug_message("Frame: " + string(frameTimer));
+if(global.debug) {
+	show_debug_message("");
+	show_debug_message("Frame: " + string(frameTimer));
+}
 
 mask_index = sprite_index;
 
@@ -19,7 +21,7 @@ verticalMovementRun = false;
 jumpInputBuffer--;
 
 if(isImmune) {
-	if(frameTimer - immuneStart >= 60) {
+	if(frameTimer - immuneStart >= (immunityLengthInSeconds * room_speed)) {
 		isImmune = false;
 	}
 }
@@ -48,6 +50,7 @@ if(!input[SHOOT]) {
 
 
 // Impart gravity and limit the skater's terminal velocity
+
 ySpeed += myGravity;
 if(ySpeed >= maxYSpeed) {
 	ySpeed = maxYSpeed;
@@ -58,7 +61,9 @@ if(input[JUMP] and !lastInput[JUMP] and !grounded) {
 	jumpInputBuffer = 10;
 }
 
-show_debug_message("    State: " + stateName);
+if(global.debug) {
+	show_debug_message("    State: " + stateName);
+}
 // The real fun happens in the state machine
 scr_StateExecute();
 if(shouldAnimate) {

@@ -15,6 +15,9 @@ if(stateNew) {
 	stateVar[1] = 0;
 	stateVar[2] = false;
 	boredTimer = 0;
+	if(lastState != s_FOOT_TO_SKATE) {
+		scr_StopXMotion();
+	}
 }
 
 boredTimer++;

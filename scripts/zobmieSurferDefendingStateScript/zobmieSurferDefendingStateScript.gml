@@ -1,7 +1,7 @@
 if(stateNew) {
 	sprite_index = spr_zombieSurfer;
 	image_index = 2;
-	instance_create_layer(x - 16, y, "Enemies", obj_surfboard);
+	instance_create_layer(x - 16, y, ENEMIES_LAYER, obj_surfboard);
 }
 
 

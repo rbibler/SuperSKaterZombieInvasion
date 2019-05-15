@@ -8,7 +8,9 @@ if(stateNew) {
 
 // UPDATE MOVEMENT AND COLLISIONS
 
-scr_PatrolMove();
+if(!isStationary) {
+	scr_PatrolMove();
+}
 scr_EnemyMovement();
 scr_MoveAndCollide();
 
@@ -17,11 +19,6 @@ scr_MoveAndCollide();
 
 if(stateTimer mod 10 == 0) {
 	image_index ^= 1;
-}
-
-if(!scr_ShouldChaseSkater(false)) {
-	scr_ZeroInputs();
-	scr_StateSwitch(s_MOVING);
 }
 
 var dist = abs(obj_skater.x - x);

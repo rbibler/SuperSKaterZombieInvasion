@@ -6,6 +6,7 @@ var scaleX = argument0;
 var scaleY = argument1;
 var aspectRatio = scaleX / scaleY;
 
+
 if(RES_W * scaleX <= global.MonitorW) {
 	global.scaleW = scaleX;
 } else {

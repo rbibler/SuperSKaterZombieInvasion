@@ -5,8 +5,8 @@
 var xPos = argument0;
 var yPos = argument1;
 
-xPos -= 105
-yPos += 21;
+xPos -= 210
+yPos += 42;
 
 var diamondCount = global.diamondCount;
 var index = 20 - floor((diamondCount / 100) * 20);

@@ -12,7 +12,7 @@
 if(stateNew) {
 	lastAnimIndex = image_index;
 	scr_UpdateSkaterAnimation(footToSkateAnim);
-	onFoot = true;
+	currentMovementState = ON_FOOT_STATE;
 }
 
 // Check how fast the skater should be moving

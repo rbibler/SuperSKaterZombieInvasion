@@ -1,7 +1,7 @@
-var fragment1 = instance_create_layer(x, y, "Enemies", obj_slimeballProjectile);
-var fragment2 = instance_create_layer(x, y, "Enemies", obj_slimeballProjectile);
-var fragment3 = instance_create_layer(x, y, "Enemies", obj_slimeballProjectile);
-var fragment4 = instance_create_layer(x, y, "Enemies", obj_slimeballProjectile);
+var fragment1 = instance_create_layer(x, y, ENEMIES_LAYER, obj_slimeballProjectile);
+var fragment2 = instance_create_layer(x, y, ENEMIES_LAYER, obj_slimeballProjectile);
+var fragment3 = instance_create_layer(x, y, ENEMIES_LAYER, obj_slimeballProjectile);
+var fragment4 = instance_create_layer(x, y, ENEMIES_LAYER, obj_slimeballProjectile);
 
 fragment1.xSpeed = -projSpeed;
 fragment2.xSpeed = 0;

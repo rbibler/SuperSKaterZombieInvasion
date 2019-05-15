@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0"
+        },
+        {
+            "id": "b5fa41cc-0d50-42c8-9109-54c90675b0f9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -70,7 +80,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-7",
+            "value": "-14",
             "varName": "jumpSpeed",
             "varType": 0
         },
@@ -84,7 +94,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-15",
+            "value": "-30",
             "varName": "bounceSpeed",
             "varType": 0
         },
@@ -129,20 +139,6 @@
             "value": "True",
             "varName": "splashes",
             "varType": 3
-        },
-        {
-            "id": "dba98411-44e0-427f-a1ff-08eed8b5dec6",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "5",
-            "varName": "rampAllowance",
-            "varType": 0
         }
     ],
     "solid": false,

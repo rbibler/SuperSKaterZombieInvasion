@@ -39,7 +39,7 @@ if(stateVar[2] == 1) {
 			if(stateVar[5] == 1) {
 				image_index = 2;
 				//if(myShield < 1000) {
-					//myShield = instance_create_layer(x - 16, y, "Enemies", obj_surfboard);
+					//myShield = instance_create_layer(x - 16, y, ENEMIES_LAYER, obj_surfboard);
 				//} else {
 					//myShield.x = x - 16;
 				//}

@@ -6,10 +6,10 @@ var tile = argument0;
 if(tile > 5) {
 	onSlope = true;
 	slopeDirection = (tile< 15) ? UP_SLOPE : DOWN_SLOPE;
-	slopeImpetus = obj_slopeController.slopeGravity[tile];
+	slopeImpetus = scr_GetTileGravity(tile);; //obj_slopeController.slopeGravity[tile];
 	if((slopeDirection == DOWN_SLOPE and xSpeed < 0) or (slopeDirection == UP_SLOPE and xSpeed > 0)) {
 		var speedMultiplier = abs(xSpeed / maxSpeedXDownhill);
-		yMomentum = obj_slopeController.slopeMomentumMax[tile] * speedMultiplier;
+		yMomentum = scr_GetTileMomentumMax(tile);  //obj_slopeController.slopeMomentumMax[tile] * speedMultiplier;
 		slopeTouchTimer = 1;
 	} else {
 		yMomentum = 0;

@@ -5,19 +5,22 @@
 var anim = argument0;
 var loop = anim.loop;
 var endScript = anim.endOfAnimScript;
-
+var animEnd = false;
 if(anim == noone) {
 	return;
 }
 
 with(anim) {
-	var substateAnim = substateAnimations[currentSubstate];
-	var alternateComplete = scr_UpdateAlternateAnimation(substateAnim, other);
-	if(alternateComplete) {
-		currentSubstate = 0;
+	if(array_length_1d(substateAnimations) > 0) {
+		var substateAnim = substateAnimations[currentSubstate];
+		var alternateComplete = scr_UpdateAlternateAnimation(substateAnim, other);
+		if(alternateComplete) {
+			currentSubstate = 0;
+		}
 	}
 	currentIndex += animSpeed;
 	if(currentIndex >= animLength) {
+		animEnd = true;
 		if(loop) {
 			currentIndex = 0;
 		} else {
@@ -28,3 +31,4 @@ with(anim) {
 		}
 	}
 }
+return animEnd;

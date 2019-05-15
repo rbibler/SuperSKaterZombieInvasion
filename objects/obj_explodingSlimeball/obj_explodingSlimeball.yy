@@ -136,6 +136,34 @@
             "value": "6",
             "varName": "projSpeed",
             "varType": 0
+        },
+        {
+            "id": "5383caae-4df6-4824-85af-59959c504708",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "objectLinkKey",
+            "varType": 2
+        },
+        {
+            "id": "791d1387-bb66-49cc-8735-e3713babf814",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "scr_ExplodingBlockTrigger",
+            "varName": "triggerControlScript",
+            "varType": 5
         }
     ],
     "solid": false,

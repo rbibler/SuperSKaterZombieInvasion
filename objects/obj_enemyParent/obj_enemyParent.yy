@@ -393,6 +393,20 @@
             "value": "scr_EmptyAssScript",
             "varName": "hitBySkaterShieldScript",
             "varType": 5
+        },
+        {
+            "id": "2a1fd468-3b01-47c4-8c03-82caa4025dcd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "noSlope",
+            "varType": 3
         }
     ],
     "solid": false,
