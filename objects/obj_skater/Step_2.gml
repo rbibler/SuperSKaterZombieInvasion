@@ -37,6 +37,7 @@ if(isDead) {
 	return;
 }
 scr_StateUpdate();
+scr_UpdateSkaterStateInfo():
 image_xscale = facing;
 
 lastY = y;

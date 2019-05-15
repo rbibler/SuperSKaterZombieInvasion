@@ -4,7 +4,7 @@
     "mvc": "1.1",
     "name": "46124292-1052-4a3e-8b28-04dbeb9a44c7",
     "children": [
-        "74fe7305-eda9-4650-a109-5393a91b367b"
+        "6dfad3e0-4e45-4ea1-b4d4-ba85c791d5b5"
     ],
     "filterType": "GMSprite",
     "folderName": "Vehicles",

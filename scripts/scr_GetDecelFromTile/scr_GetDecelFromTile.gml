@@ -5,6 +5,10 @@ if(!grounded) {
 	return airFriction;
 }
 
+if(currentVehicle == JET_SKI) {
+	return jetSkiDecel;
+}
+
 var decel = defaultDecel;
 // A hack for now: Check to see if we're center-grounded, then grab friction param for the tile we're 
 // touching if it exists. If no friction param is registered for that tile, return the default.

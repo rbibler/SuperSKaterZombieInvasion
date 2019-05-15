@@ -4,6 +4,9 @@
 if(!grounded) {
 	return airFriction;
 }
+if(currentVehicle == JET_SKI) {
+	return jetSkiAccel;
+}
 
 var accel = defaultAccel;
 // A hack for now: Check to see if we're center-grounded, then grab friction param for the tile we're 

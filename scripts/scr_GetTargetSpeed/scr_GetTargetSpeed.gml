@@ -1,5 +1,7 @@
 /// This is a script that helps the skater determine what speed he should strive for.
-
+if(currentVehicle == JET_SKI) {
+	return jetSkiSpeed;
+}
 var targetSpeed = targetSpeedXSkating;
 
 // On foot is simple: Normal or sprinting

@@ -115,6 +115,11 @@ onFootHurtState = scr_StateCreate(s_ON_FOOT_HURT, scr_SkaterStateOnFootHurt);
 onFootShieldState = scr_StateCreate(s_ON_FOOT_SHIELD, scr_SkaterStateOnFootShield);
 onFootJumpShieldState = scr_StateCreate(s_ON_FOOT_JUMP_SHIELD, scr_SkaterStateOnFootJumpShield);
 jumpShieldState = scr_StateCreate(s_JUMP_SHIELD, scr_SkaterStateJumpShield);
+
+jetSkiIdleState = scr_StateCreate(s_JET_SKI_IDLE, scr_SkaterStateJetSkiIdle);
+jetSkiMoveState = scr_StateCreate(s_JET_SKI_MOVING, scr_SkaterStateJetSkiMoving);
+jetSkiJumpState = scr_StateCreate(s_JET_SKI_JUMPING, scr_SkaterStateJetSkiJumping);
+jetSkiFallState = scr_StateCreate(s_JET_SKI_FALLING, scr_SkaterStateJetSkiFalling);
 // Set the default state to IDLE
 scr_StateInit(s_IDLE);
 
@@ -141,6 +146,7 @@ onFootCrouchAnim = scr_RegisterStateAnimation(spr_SkaterOnFootCrouch, FAST_ANIM_
 onFootFallAnim = scr_RegisterStateAnimation(spr_SkaterOnFootFalling, FAST_ANIM_SPEED, true, noone, "FALLING", sprite_get_number(spr_SkaterOnFootFalling));
 onFootHurtAnim = scr_RegisterStateAnimation(spr_SkaterOnFootHurt, FAST_ANIM_SPEED, true, noone, "HURT", sprite_get_number(spr_SkaterOnFootHurt));
 
+jetSkiIdleAnim = scr_RegisterStateAnimation(spr_SkaterJetSki, VERY_SLOW_ANIM_SPEED, true, noone, "JET SKI IDLE", sprite_get_number(spr_SkaterJetSki));
 
 // Shield animations
 onFootShieldAnim = scr_RegisterStateAnimation(spr_SkaterOnFootShield, FAST_ANIM_SPEED, false, noone, "ON_FOOT_SHIELD", sprite_get_number(spr_SkaterOnFootShield));
@@ -223,6 +229,7 @@ drawOffsetY = 0;
 railGrindButtonPressTimer = 0;
 railJumpBoost = 2;
 currentAirSpeedMax = 0;
+currentVehicle = NO_VEHICLE;
 
 scr_CheckForCheckpoint();
 

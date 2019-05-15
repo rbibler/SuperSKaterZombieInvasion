@@ -1,5 +1,9 @@
 /// This is a script that helps the skater determine his max speed
 /// It's similar to the target speed, but a bit different, 
+
+if(currentVehicle == JET_SKI) {
+	return jetSkiSpeed;
+}
 decelImmediate = false;
 var maxSpeed = maxSpeedXSkatingFlat;
 var centerTile = groundTile[MIDDLE];

@@ -2,6 +2,10 @@
 #macro	SKATE_STATE		1
 #macro	ON_FOOT_STATE	2
 
+// Vehciles
+#macro	NO_VEHICLE		0
+#macro	JET_SKI			1
+
 // Directional Input
 #macro	UP				0
 #macro	DOWN			1
@@ -57,6 +61,10 @@
 #macro s_ON_FOOT_SHIELD			"ON_FOOT_SHIELD"
 #macro s_ON_FOOT_JUMP_SHIELD	"ON_FOOT_JUMP_SHIELD"
 #macro s_JUMP_SHIELD			"JUMP_SHIELD"
+#macro s_JET_SKI_IDLE			"JET_SKI_IDLE"
+#macro s_JET_SKI_MOVING			"JET_SKI_MOVING"
+#macro s_JET_SKI_JUMPING		"JET_SKI_JUMPING"
+#macro s_JET_SKI_FALLING		"JET_SKI_FALLING"
 
 // Collision Points
 #macro LEFT_CORNER				0
@@ -107,6 +115,7 @@
 #macro PLAYER_LAYER				"Player"
 #macro INTERACTIVES_LAYER		"Interactices"
 #macro BLOCKS_LAYER				"Blocks"
+#macro VEHICLES_LAYER			"Vehicles"
 
 enum ANIMATION {
 

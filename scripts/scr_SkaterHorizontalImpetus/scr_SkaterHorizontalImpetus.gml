@@ -12,7 +12,9 @@ accel = scr_GetAccelFromTile();
 
 // If changing direction, slide a bit when skating. Otherwise jump to it.
 if((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0)) {
-	if(currentMovementState == SKATE_STATE) {
+	if(currentVehicle == JET_SKI) {
+		accel *= 0.5;
+	} else if(currentMovementState == SKATE_STATE) {
 		accel *= 0.75;
 	} else {
 		accel *= 0.9;
@@ -21,7 +23,7 @@ if((input[LEFT] and xSpeed > 0) or (input[RIGHT] and xSpeed < 0)) {
 
 
 // If skating, need a boost uphill on slopes to overcome slope impetus
-if(scr_HeadingUpHill() and currentMovementState == SKATE_STATE) {
+if(scr_HeadingUpHill() and currentMovementState == SKATE_STATE and currentVehicle == NO_VEHICLE) {
 	accel = (accel + abs(slopeImpetus)) * .8;
 }
 
@@ -35,6 +37,7 @@ if(curDirection == FACE_RIGHT) {
 }
 if(global.debug) {
 	show_debug_message("    MaxSpeed: " + string(maxSpeed));
+	show_debug_message("    TargetSpeed: " + string(targetSpeed));
 	show_debug_message("    Direction: " + (curDirection == 0 ? "None" : (curDirection == 1 ? "Right" : "Left")));
 	show_debug_message("    Direction Change: " + (lastDirection != curDirection ? "True" : "False"));
 	show_debug_message("    Accel: " + string(accel));
@@ -53,7 +56,7 @@ if(shouldAccel) {
 var shouldDecel = false;
 if(xSpeed != 0 and (abs(xSpeed) > maxSpeed)) {
 	shouldDecel = true;
-} else if(curDirection == 0 and grounded) {
+} else if(curDirection == 0 and (grounded or currentVehicle == JET_SKI)) {
 	if(currentMovementState == SKATE_STATE) {
 		if(!onSlope) {
 			shouldDecel = true;

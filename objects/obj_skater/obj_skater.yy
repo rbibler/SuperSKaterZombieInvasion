@@ -83,6 +83,16 @@
             "enumb": 0,
             "eventtype": 2,
             "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
+        },
+        {
+            "id": "4a23772f-a988-4d97-98ef-98ab42d0d649",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "ad94b7db-06a3-4c5f-a780-0b474dbb7e5c",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -555,6 +565,48 @@
             "resourceFilter": 1023,
             "value": "3",
             "varName": "immunityLengthInSeconds",
+            "varType": 0
+        },
+        {
+            "id": "5bde612e-a903-451d-840d-012c2771e05a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": ".1",
+            "varName": "jetSkiAccel",
+            "varType": 0
+        },
+        {
+            "id": "f6260428-baca-4dec-8683-4e3004d7ab63",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": ".2",
+            "varName": "jetSkiDecel",
+            "varType": 0
+        },
+        {
+            "id": "4713117b-8d0c-4844-9051-81210efc97ed",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "jetSkiSpeed",
             "varType": 0
         }
     ],
