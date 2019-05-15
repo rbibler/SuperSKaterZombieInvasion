@@ -1,4 +1,0 @@
-switch(stateName) {
-	case:
-	break;
-}
