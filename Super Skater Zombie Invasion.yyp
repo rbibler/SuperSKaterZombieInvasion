@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "11a3f714-62c8-4a65-90ff-4e5d6b5fa39e",
+            "Value": {
+                "id": "9e14dbd8-edff-48cd-a113-db02c7ca77fd",
+                "resourcePath": "scripts\\scr_DrawBoundingBox\\scr_DrawBoundingBox.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "12315a26-4e5d-46b2-a6e0-16874d88424a",
             "Value": {
                 "id": "21b83449-737f-4e1a-b40f-4923e3257b91",
@@ -404,6 +412,14 @@
                 "id": "39206fb5-aee8-41b7-ac0d-cd8357036e94",
                 "resourcePath": "scripts\\scr_SkaterStateJetSkiJumping\\scr_SkaterStateJetSkiJumping.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "17d6a9b7-5059-4f4a-a072-77962ee0be0b",
+            "Value": {
+                "id": "54685d36-9eb9-4c50-b7e3-963e9eaf89c1",
+                "resourcePath": "views\\17d6a9b7-5059-4f4a-a072-77962ee0be0b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -5751,6 +5767,7 @@
         "2c7acd3e-53cb-4d50-bd67-b1bd9c857a51",
         "7755fc4f-4918-401e-9924-2570275beada",
         "1ca2d8b5-5b40-4d22-8778-d9b1cf8d7b84",
+        "11a3f714-62c8-4a65-90ff-4e5d6b5fa39e",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",
