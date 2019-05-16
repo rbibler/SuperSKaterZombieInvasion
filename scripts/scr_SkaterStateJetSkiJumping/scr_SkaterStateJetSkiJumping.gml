@@ -36,3 +36,8 @@ if(jump == 1 and (ySpeed > 0 or !input[JUMP])){
 	scr_StateSwitch(s_JET_SKI_FALLING);
 }
 
+if(input[TRANSITION] and !lastInput[TRANSITION]) {
+	scr_StateSwitch(s_FOOT_TO_SKATE);
+	return;
+}
+

@@ -66,11 +66,11 @@
 #macro s_ON_FOOT_HURT			FOOT | 0x0F
 #macro s_ON_FOOT_SHIELD			FOOT | 0x10
 #macro s_ON_FOOT_JUMP_SHIELD	FOOT | 0x11
-#macro s_JUMP_SHIELD			VEHICLE | 0x01
-#macro s_JET_SKI_IDLE			VEHICLE | 0x02
-#macro s_JET_SKI_MOVING			VEHICLE | 0x03
-#macro s_JET_SKI_JUMPING		VEHICLE | 0x04
-#macro s_JET_SKI_FALLING		VEHICLE | 0x05
+#macro s_JUMP_SHIELD			VEHICLE | 0x01 | JET_SKI << 8
+#macro s_JET_SKI_IDLE			VEHICLE | 0x02 | JET_SKI << 8
+#macro s_JET_SKI_MOVING			VEHICLE | 0x03 | JET_SKI << 8
+#macro s_JET_SKI_JUMPING		VEHICLE | 0x04 | JET_SKI << 8
+#macro s_JET_SKI_FALLING		VEHICLE | 0x05 | JET_SKI << 8
 
 // Collision Points
 #macro LEFT_CORNER				0

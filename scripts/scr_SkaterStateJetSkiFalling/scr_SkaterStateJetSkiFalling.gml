@@ -33,3 +33,8 @@ if(grounded) {
 	}
 	currentVehicle = NO_VEHICLE;
 }
+
+if(input[TRANSITION] and !lastInput[TRANSITION]) {
+	scr_StateSwitch(s_FOOT_TO_SKATE);
+	return;
+}
