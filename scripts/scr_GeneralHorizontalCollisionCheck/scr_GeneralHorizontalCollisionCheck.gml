@@ -24,7 +24,7 @@ if((p1 == 1 or p2 == 1 or p3 == 1)) {// and (self.object_index == obj_skater and
 		x = tileX - (bbox_right - x) - 1;
 		
 	} else {
-		x = x - (collisionPointHoriz mod TILE_SIZE) - (bbox_left - x);
+		x = tileX + TILE_SIZE + (x - bbox_left);
 	}
 	scr_StopXMotion();
 	if(script_exists(horizCollisionScript)) {
