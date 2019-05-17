@@ -1503,6 +1503,14 @@
             }
         },
         {
+            "Key": "47c68ed6-e37c-4d6a-b55a-d3e672979ca1",
+            "Value": {
+                "id": "7d2fd750-f8ba-4b83-9de4-b6f3bed11653",
+                "resourcePath": "scripts\\scr_SkaterHorizCollision\\scr_SkaterHorizCollision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "481a72b0-26ab-4de4-acf4-dd9d9db0ea9f",
             "Value": {
                 "id": "9e129148-0b34-436e-8451-b11cdd05b44c",
@@ -1668,14 +1676,6 @@
                 "id": "3837a701-58d6-4df2-a56a-51310d76ddff",
                 "resourcePath": "views\\4f4a7cd5-50db-4257-9674-0db1b2d16703.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "4fb98443-0ab7-4a21-8b00-e86f02eae7b5",
-            "Value": {
-                "id": "a6b7c96b-fb75-405a-bb3b-12dceb12696d",
-                "resourcePath": "sprites\\spr_JetSkiRoosterMed\\spr_JetSkiRoosterMed.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -2372,6 +2372,14 @@
                 "id": "90d95709-5b0f-4cc6-ae95-d44758f01e32",
                 "resourcePath": "sprites\\spr_camera\\spr_camera.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "72e78663-44a6-47bf-bed7-c92a5fc66ff3",
+            "Value": {
+                "id": "9f0be127-0a28-49fa-88ff-84b98b0f7c87",
+                "resourcePath": "scripts\\scr_SkaterStateJetSkiPlastered\\scr_SkaterStateJetSkiPlastered.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5526,8 +5534,10 @@
         "17d2f7d7-39bc-4876-82e8-5b2681972951",
         "079c0465-8196-4927-ac41-b901123a63a8",
         "9f605cc4-6870-4eed-97f2-c69e409d6050",
+        "72e78663-44a6-47bf-bed7-c92a5fc66ff3",
         "43526784-458c-47c6-a98f-2df1db5716ca",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
+        "47c68ed6-e37c-4d6a-b55a-d3e672979ca1",
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "959f5bf4-b192-4bbf-9fd5-188aca894eea",
         "45a221b0-3307-4128-904b-75c007450d7e",

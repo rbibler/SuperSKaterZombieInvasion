@@ -5,3 +5,4 @@ if(skater.grounded) {
 	scr_StopYMotion();
 	scr_MoveAndCollide();
 }
+scr_UpdateRoosterTailEffect(s_MOVING);

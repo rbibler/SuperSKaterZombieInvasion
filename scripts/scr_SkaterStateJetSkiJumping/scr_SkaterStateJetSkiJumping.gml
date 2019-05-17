@@ -17,6 +17,7 @@ if(stateNew) {
 	onSlope = false;
 	grounded = false;
 	canShoot = true;
+	canSplash = true;
 	scr_SpawnJetSki(xSpeed, s_MOVING, image_index, image_xscale, x, y);
 	//currentVehicle = NO_VEHICLE;
 }

@@ -1,11 +1,12 @@
 /// This is a script that helps the skater figure out how fast he should accelerate.
 
 // Air has different properties than ground.
-if(!grounded) {
+if(!grounded and currentVehicle == NO_VEHICLE) {
 	return airFriction;
 }
 
 if(currentVehicle == JET_SKI) {
+	show_debug_message("Jet ski decel");
 	return jetSkiDecel;
 }
 

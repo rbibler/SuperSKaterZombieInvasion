@@ -26,11 +26,11 @@ if((p1 == 1 or p2 == 1 or p3 == 1)) {// and (self.object_index == obj_skater and
 	} else {
 		x = tileX + TILE_SIZE + (x - bbox_left);
 	}
-	scr_StopXMotion();
-	if(script_exists(horizCollisionScript)) {
-		script_execute(horizCollisionScript);
-	}
 	
+	if(script_exists(horizCollisionScript)) {
+		script_execute(horizCollisionScript, p1, p2, p3, xSpeed);
+	}
+	scr_StopXMotion();
 }
 
 if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {	

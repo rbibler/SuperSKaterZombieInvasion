@@ -120,6 +120,7 @@ jetSkiIdleState = scr_StateCreate(s_JET_SKI_IDLE, scr_SkaterStateJetSkiIdle);
 jetSkiMoveState = scr_StateCreate(s_JET_SKI_MOVING, scr_SkaterStateJetSkiMoving);
 jetSkiJumpState = scr_StateCreate(s_JET_SKI_JUMPING, scr_SkaterStateJetSkiJumping);
 jetSkiFallState = scr_StateCreate(s_JET_SKI_FALLING, scr_SkaterStateJetSkiFalling);
+jetSkiFallState = scr_StateCreate(s_JET_SKI_PLASTERED, scr_SkaterStateJetSkiPlastered);
 // Set the default state to IDLE
 scr_StateInit(s_IDLE);
 
@@ -230,6 +231,7 @@ railGrindButtonPressTimer = 0;
 railJumpBoost = 2;
 currentAirSpeedMax = 0;
 currentVehicle = NO_VEHICLE;
+canBoardVehicle = true;
 
 scr_CheckForCheckpoint();
 

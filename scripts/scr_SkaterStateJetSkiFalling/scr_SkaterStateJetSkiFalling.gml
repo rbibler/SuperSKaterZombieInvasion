@@ -6,8 +6,7 @@
 
 // Reset animation when entering state
 if(stateNew) {
-	//sprite_index = spr_SkaterJump;
-	//image_index = 0;
+	canSplash = true;
 
 }
 
@@ -24,7 +23,7 @@ scr_GeneralMovementFractions();
 
 
 scr_MoveAndCollide();
-
+scr_UpdateRoosterTailEffect(s_IDLE)
 if(grounded) {
 	if(input[LEFT] or input[RIGHT]) {
 		scr_StateSwitch(s_RUNNING);
