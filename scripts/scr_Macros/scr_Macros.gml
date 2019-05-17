@@ -72,6 +72,7 @@
 #macro s_JET_SKI_JUMPING		VEHICLE | 0x04 | JET_SKI << 8
 #macro s_JET_SKI_FALLING		VEHICLE | 0x05 | JET_SKI << 8
 #macro s_JET_SKI_PLASTERED		VEHICLE | 0x06 | JET_SKI << 8
+#macro s_JET_SKI_DUCKING		VEHICLE | 0x07 | JET_SKI << 8
 
 // Collision Points
 #macro LEFT_CORNER				0

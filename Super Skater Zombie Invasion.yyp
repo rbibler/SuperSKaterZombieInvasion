@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "113ec360-de68-4e8d-8ac4-1aa18074955b",
+            "Value": {
+                "id": "b1d069bb-47a4-4049-8a22-3cbbb1f22976",
+                "resourcePath": "sprites\\spr_SkaterJetSkiDucking\\spr_SkaterJetSkiDucking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "118672eb-6b39-494e-bbbb-ba1265d7c753",
             "Value": {
                 "id": "d2d56c71-a1eb-489a-88e9-ef8eaf3cc982",
@@ -5439,6 +5447,14 @@
             }
         },
         {
+            "Key": "fd319d74-79b7-4dd4-8d4e-8ad4089dd097",
+            "Value": {
+                "id": "d1bacb99-bcb3-46a3-898b-4c19373b20aa",
+                "resourcePath": "scripts\\scr_SkaterStateJetSkiDucking\\scr_SkaterStateJetSkiDucking.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fd3feea6-3e19-4a91-9ced-759334c65434",
             "Value": {
                 "id": "28b5ecf6-7ba6-4750-9b7c-efffbe16cc77",
@@ -5535,6 +5551,7 @@
         "079c0465-8196-4927-ac41-b901123a63a8",
         "9f605cc4-6870-4eed-97f2-c69e409d6050",
         "72e78663-44a6-47bf-bed7-c92a5fc66ff3",
+        "fd319d74-79b7-4dd4-8d4e-8ad4089dd097",
         "43526784-458c-47c6-a98f-2df1db5716ca",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "47c68ed6-e37c-4d6a-b55a-d3e672979ca1",

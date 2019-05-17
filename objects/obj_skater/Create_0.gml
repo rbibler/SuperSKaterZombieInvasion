@@ -120,7 +120,8 @@ jetSkiIdleState = scr_StateCreate(s_JET_SKI_IDLE, scr_SkaterStateJetSkiIdle);
 jetSkiMoveState = scr_StateCreate(s_JET_SKI_MOVING, scr_SkaterStateJetSkiMoving);
 jetSkiJumpState = scr_StateCreate(s_JET_SKI_JUMPING, scr_SkaterStateJetSkiJumping);
 jetSkiFallState = scr_StateCreate(s_JET_SKI_FALLING, scr_SkaterStateJetSkiFalling);
-jetSkiFallState = scr_StateCreate(s_JET_SKI_PLASTERED, scr_SkaterStateJetSkiPlastered);
+jetSkiPlasteredState = scr_StateCreate(s_JET_SKI_PLASTERED, scr_SkaterStateJetSkiPlastered);
+jetSkiFallState = scr_StateCreate(s_JET_SKI_DUCKING, scr_SkaterStateJetSkiDucking);
 // Set the default state to IDLE
 scr_StateInit(s_IDLE);
 
@@ -148,7 +149,7 @@ onFootFallAnim = scr_RegisterStateAnimation(spr_SkaterOnFootFalling, FAST_ANIM_S
 onFootHurtAnim = scr_RegisterStateAnimation(spr_SkaterOnFootHurt, FAST_ANIM_SPEED, true, noone, "HURT", sprite_get_number(spr_SkaterOnFootHurt));
 
 jetSkiIdleAnim = scr_RegisterStateAnimation(spr_SkaterJetSki, VERY_SLOW_ANIM_SPEED, true, noone, "JET SKI IDLE", sprite_get_number(spr_SkaterJetSki));
-
+jetSkiDuckingAnim = scr_RegisterStateAnimation(spr_SkaterJetSkiDucking, VERY_SLOW_ANIM_SPEED, true, noone, "JET SKI DUCKING", sprite_get_number(spr_SkaterJetSkiDucking));
 // Shield animations
 onFootShieldAnim = scr_RegisterStateAnimation(spr_SkaterOnFootShield, FAST_ANIM_SPEED, false, noone, "ON_FOOT_SHIELD", sprite_get_number(spr_SkaterOnFootShield));
 onFootJumpShieldAnim = scr_RegisterStateAnimation(spr_SkaterOnFootJumpShield, FAST_ANIM_SPEED, false, noone, "ON_FOOT_JUMP_SHIELD", sprite_get_number(spr_SkaterOnFootJumpShield));

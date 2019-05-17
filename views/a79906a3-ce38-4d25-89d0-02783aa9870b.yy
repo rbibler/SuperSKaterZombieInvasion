@@ -10,7 +10,8 @@
         "17d2f7d7-39bc-4876-82e8-5b2681972951",
         "079c0465-8196-4927-ac41-b901123a63a8",
         "9f605cc4-6870-4eed-97f2-c69e409d6050",
-        "72e78663-44a6-47bf-bed7-c92a5fc66ff3"
+        "72e78663-44a6-47bf-bed7-c92a5fc66ff3",
+        "fd319d74-79b7-4dd4-8d4e-8ad4089dd097"
     ],
     "filterType": "GMScript",
     "folderName": "JetSkiStates",

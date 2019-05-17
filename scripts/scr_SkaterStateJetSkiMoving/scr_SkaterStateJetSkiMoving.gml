@@ -17,4 +17,6 @@ if(!input[RIGHT] and !input[LEFT]) {
 
 if(scr_SkaterCheckJump()) {
 	scr_StateSwitch(s_JET_SKI_JUMPING);
-} 
+}  else if(input[DOWN]) {
+	scr_StateSwitch(s_JET_SKI_DUCKING);
+}
