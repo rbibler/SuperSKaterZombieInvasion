@@ -23,6 +23,11 @@
 #macro	TRANSITION		8
 #macro	WEAPON_SWITCH	9
 
+// Horizontal Collision Point Indexes
+#macro HC_TOP		0
+#macro HC_BOTTOM	1
+#macro HC_MIDDLE	2
+
 #macro SKATE			0x8000
 #macro FOOT				0xA000
 #macro VEHICLE			0xC000
