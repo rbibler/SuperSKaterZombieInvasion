@@ -5,7 +5,7 @@
 
 var collisionPointHoriz = scr_CalculateNewHorizLocation();
 scr_CheckHorizCollisionPoints(collisionPointHoriz);
-scr_BasicHorizCollisionResponse(collisionPointHoriz);
+script_execute(horizontalCollisionResponseScript, collisionPointHoriz);
 scr_CheckHorizBlockCollisions();
 
 x += xSpeed;

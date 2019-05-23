@@ -145,6 +145,20 @@
             "value": "0",
             "varName": "maxSpeedXDownhill",
             "varType": 0
+        },
+        {
+            "id": "ea8a1ff0-60d8-4af4-b32e-f60ad909837a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "scr_BasicHorizCollisionResponse",
+            "varName": "horizontalCollisionResponseScript",
+            "varType": 5
         }
     ],
     "solid": false,
