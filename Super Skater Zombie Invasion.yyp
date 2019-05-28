@@ -1207,6 +1207,14 @@
             }
         },
         {
+            "Key": "385fe259-971b-49b7-b685-27c0205009fd",
+            "Value": {
+                "id": "6f9bed68-040a-4877-9ea8-efe21cac4597",
+                "resourcePath": "objects\\obj_ZombiePelican\\obj_ZombiePelican.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "38b31850-4ce4-4c76-8eea-2e15b3b4606c",
             "Value": {
                 "id": "2a10e56a-7ef8-4372-a60d-f54dc0ade073",
@@ -1522,7 +1530,7 @@
             "Key": "47c68ed6-e37c-4d6a-b55a-d3e672979ca1",
             "Value": {
                 "id": "7d2fd750-f8ba-4b83-9de4-b6f3bed11653",
-                "resourcePath": "scripts\\scr_SkaterHorizCollision\\scr_SkaterHorizCollision.yy",
+                "resourcePath": "scripts\\scr_SkaterJetSkiCheckYaHead\\scr_SkaterJetSkiCheckYaHead.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1932,6 +1940,14 @@
                 "id": "f017b5f8-770b-416b-8d9a-3d2ca58a9d90",
                 "resourcePath": "objects\\obj_Checkpoint\\obj_Checkpoint.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5a403916-6690-48c8-95f5-feb8bfd64143",
+            "Value": {
+                "id": "89347b70-ce68-44d6-be5c-a89cdbc4eba4",
+                "resourcePath": "views\\5a403916-6690-48c8-95f5-feb8bfd64143.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2818,7 +2834,7 @@
             "Key": "862a256b-67f8-4bb6-8429-979fb364f0f0",
             "Value": {
                 "id": "ccece984-2d56-46eb-bb0a-53c6a4d6b5e3",
-                "resourcePath": "scripts\\scr_SkaterJetSkiHorizontalCollisionResponse\\scr_SkaterJetSkiHorizontalCollisionResponse.yy",
+                "resourcePath": "scripts\\scr_SkaterJetSkiHorizontalCollision\\scr_SkaterJetSkiHorizontalCollision.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3420,6 +3436,14 @@
                 "id": "2569dd6f-0d4b-4702-b55e-2fad6cf20a6a",
                 "resourcePath": "scripts\\scr_SkaterInput\\scr_SkaterInput.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a15b203e-d4c7-45aa-b47c-928527241c17",
+            "Value": {
+                "id": "a991b786-7dc6-477e-b6e4-b071ec8b08b3",
+                "resourcePath": "sprites\\spr_PelicanIdle\\spr_PelicanIdle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4532,6 +4556,14 @@
                 "id": "3e239fd4-e2ab-4415-a55c-54b81071e486",
                 "resourcePath": "scripts\\scr_WhereAmIFacing\\scr_WhereAmIFacing.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d2a4bed2-46e8-4e0a-8656-1525f8fc0bb8",
+            "Value": {
+                "id": "d1a3f3e6-d364-4135-8676-cff326df43db",
+                "resourcePath": "sprites\\spr_SkaterJetSkiHeadMask\\spr_SkaterJetSkiHeadMask.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

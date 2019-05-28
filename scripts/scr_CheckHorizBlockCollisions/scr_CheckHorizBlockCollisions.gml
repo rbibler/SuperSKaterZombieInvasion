@@ -24,7 +24,7 @@ if(place_meeting(x  + xSpeed, y, obj_baseBlock)) {
 				x = x + sign(xSpeed);
 			}
 			scr_StopXMotion(); 
-			script_execute(horizCollisionScript, obj);
+			script_execute(horizCollisionScript);
 		}
 	}
 }

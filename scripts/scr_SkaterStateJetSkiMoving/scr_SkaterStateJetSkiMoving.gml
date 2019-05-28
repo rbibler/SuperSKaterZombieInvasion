@@ -4,10 +4,9 @@ if(stateNew) {
 	canSplash = false;
 }
 // Check how fast the skater should be moving
-horizontalCollisionResponseScript = scr_SkaterJetSkiHorizontalCollisionResponse;
 scr_SkaterHorizontalImpetus();
 scr_StopYMotion();
-scr_MoveAndCollide();
+scr_SkaterJetSkiHorizontalCollision();
 scr_UpdateRoosterTailEffect(s_MOVING);
 
 // If we're not moving and there's no input, then we're idle

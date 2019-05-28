@@ -145,7 +145,7 @@
             "mvc": "1.0",
             "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
             "propertyId": "6f99264f-8f71-492f-bf4d-fe100af69405",
-            "value": "scr_SkaterHorizCollision"
+            "value": "scr_SkaterJetSkiCheckYaHead"
         },
         {
             "id": "a217b12e-66d6-4629-a61e-37619b9a1bff",

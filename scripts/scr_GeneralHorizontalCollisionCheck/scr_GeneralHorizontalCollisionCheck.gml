@@ -8,7 +8,3 @@ scr_CheckHorizCollisionPoints(collisionPointHoriz);
 script_execute(horizontalCollisionResponseScript, collisionPointHoriz);
 scr_CheckHorizBlockCollisions();
 
-x += xSpeed;
-if(global.debug and object_index == obj_skater) {
-	show_debug_message("    xSpeed: " + string(xSpeed));
-}
