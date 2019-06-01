@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_ZombiePelican",
     "eventList": [
-        
+        {
+            "id": "54c18639-f5bf-47ee-bfcb-2d0447e36d11",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "385fe259-971b-49b7-b685-27c0205009fd"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
@@ -71,7 +80,36 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "13543fd9-e5ff-414a-9bf5-ff2d9d338fdc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "pth_Pelican",
+            "varName": "pathToFollow",
+            "varType": 5
+        },
+        {
+            "id": "e517ca63-990a-49d1-a998-e905afed1005",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "objectLinkKey",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "a15b203e-d4c7-45aa-b47c-928527241c17",
     "visible": true
