@@ -11,7 +11,6 @@ if(path_position == 1) {
 } 
 if(scr_CheckPathPointPassed(pathToFollow, path_get_number(pathToFollow) - 2)) {
 	sprite_index = spr_PelicanGliding;
-	path_speed = 100;
 }
 
 

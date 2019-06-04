@@ -15,3 +15,4 @@ if(pathEndPoint != noone) {
 	endPathX = path_get_point_x(pathToFollow, endPathIndex - 1);
 	path_change_point(pathToFollow, endPathIndex - 1, endPathX, newEndPoint + 40, 100);
 }
+
