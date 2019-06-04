@@ -2263,6 +2263,14 @@
             }
         },
         {
+            "Key": "68b22ced-946a-4eef-a5d6-8e17c0501420",
+            "Value": {
+                "id": "a82cbb40-f7b4-44c2-8244-6bad74ecdae7",
+                "resourcePath": "paths\\pth_bobbingBarrel\\pth_bobbingBarrel.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "698a235c-86fc-4d01-a1a1-e6d453d4612b",
             "Value": {
                 "id": "4fd43bad-12b8-41d0-9ecc-668ac54722f7",
@@ -4879,6 +4887,14 @@
             }
         },
         {
+            "Key": "dc28e540-9681-4376-8870-320019cc5bbd",
+            "Value": {
+                "id": "51f03bf1-65a8-4ba8-a103-e4b3ac5fa4e3",
+                "resourcePath": "objects\\obj_FloatingCrate\\obj_FloatingCrate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "dc3c3ee4-c681-4949-bd1e-f4c3595b985c",
             "Value": {
                 "id": "32eefda8-646e-4a93-b65e-9d85967b0330",
@@ -5252,6 +5268,14 @@
                 "id": "9843edd4-6622-4245-8afa-a97160d552e4",
                 "resourcePath": "scripts\\scr_SharkHitByAmmo\\scr_SharkHitByAmmo.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e999a2b0-a067-4dc6-9416-cf2e34f17389",
+            "Value": {
+                "id": "f5fac740-0612-4f62-93fe-967a7eb92807",
+                "resourcePath": "views\\e999a2b0-a067-4dc6-9416-cf2e34f17389.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
