@@ -126,7 +126,7 @@
 #macro FOREGROUND_ENEMIES_LAYER	"ForegroundEnemies"
 #macro ENEMIES_LAYER			"Enemies"
 #macro PLAYER_LAYER				"Player"
-#macro INTERACTIVES_LAYER		"Interactices"
+#macro INTERACTIVES_LAYER		"Interactives"
 #macro BLOCKS_LAYER				"Blocks"
 #macro VEHICLES_LAYER			"Vehicles"
 

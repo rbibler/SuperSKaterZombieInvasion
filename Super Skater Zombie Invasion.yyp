@@ -2215,6 +2215,14 @@
             }
         },
         {
+            "Key": "63eb985a-335f-4746-ac56-c629bdaf0069",
+            "Value": {
+                "id": "5b55d55f-29d1-4311-aa14-9716218135fd",
+                "resourcePath": "objects\\obj_Helicopter\\obj_Helicopter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6468919b-b652-4890-998d-02dbb2645112",
             "Value": {
                 "id": "ecb397f3-7a33-46a1-abf8-a77c6b3b4a60",
@@ -3391,6 +3399,14 @@
             }
         },
         {
+            "Key": "9b4c50f0-1f70-4331-8403-f431658c88a1",
+            "Value": {
+                "id": "6345576d-88ec-4cf3-b1a0-f8726a68dbef",
+                "resourcePath": "views\\9b4c50f0-1f70-4331-8403-f431658c88a1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9b847b33-8b20-41ef-ad5f-674c2cd53318",
             "Value": {
                 "id": "3355885d-5d77-493e-9d8e-4945fb6cb35f",
@@ -3420,6 +3436,14 @@
                 "id": "f0fd0872-799f-41e7-912f-60705fa76586",
                 "resourcePath": "scripts\\scr_SkaterMacros\\scr_SkaterMacros.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9ce6280b-6f2c-4e38-a3d9-5100c7480e43",
+            "Value": {
+                "id": "e78daa47-5def-48a0-b4cb-10df524349c9",
+                "resourcePath": "objects\\obj_ExplosionEffect\\obj_ExplosionEffect.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -5491,6 +5515,14 @@
             "Value": {
                 "id": "5165ec63-e768-4e28-ae64-f69c3ba07e01",
                 "resourcePath": "sprites\\spr_ExplodingBlockMenacing\\spr_ExplodingBlockMenacing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f2dd3c73-c87e-478c-864c-ebb141df3ebc",
+            "Value": {
+                "id": "d9d04538-f576-4760-8425-f0e1e2187a53",
+                "resourcePath": "sprites\\spr_Explosion\\spr_Explosion.yy",
                 "resourceType": "GMSprite"
             }
         },
