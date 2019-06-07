@@ -14,3 +14,12 @@
 //		stuckToJetSki = false;
 //	}
 //}
+
+if(falling) {
+	ySpeed += myGravity;
+	y += ySpeed;
+	if(place_meeting(x, y, obj_ForegroundWave)) {
+		falling = false;
+		path_start(pathToFollow, 0.1, path_action_continue, false);
+	}
+}
