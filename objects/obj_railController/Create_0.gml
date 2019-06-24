@@ -11,7 +11,7 @@
 #macro DOWN_RAIL_MED	12
 #macro DOWN_RAIL_SHORT	15
 
-#macro SOLID			1
+//#macro SOLID			1
 
 
 
