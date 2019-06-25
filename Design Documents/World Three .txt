@@ -1,0 +1,41 @@
+World Three
+	- Desert cliffs
+		- Cube world
+	- Cave
+		- Cube world
+	- The Strip
+		- Cube world
+	- Inside the Luxor
+		- Cube world
+		
+Desert Cliffs:
+	- Enemies:
+		- Zombie coyote
+		- Zombie hawk
+		- Zombie hiker
+		- Slimeball
+		- Exploding Slimeball
+		- Some kind of projectile enemy
+
+Cave:
+	- Enemies
+		- Zombie bat
+		- Zombie park ranger
+		- Slimeball
+		- Exploding Slimeball
+		- Zombie cave shark
+The Strip:
+	- Enemies
+		- Zombie man in suit
+		- Slimbeball
+		- Exploding slimeball
+	
+Inside the Luxor:
+	- Enemies:
+		- Zombie man in suit
+		- Zombie old person
+		- Slimeball
+		- Exploding slimeball
+		- Alien Projectile Enemy
+		- Alien Bouncy Enemy
+		

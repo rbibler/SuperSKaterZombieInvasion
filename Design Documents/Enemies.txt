@@ -1,0 +1,33 @@
+Alien Enemies:
+	- Slimeball
+		- Patrol
+	- Exploding slimeball
+		- Sentry
+	- Wesley (short, fast, claws)
+		- Attack
+	- Bouncin' Bradley (slow, bouncy)
+		- Patrol
+	- Slimeball Slinger (shoots slimeballs)
+		- Sentry 
+	- Flyin' Fanny (floats and drips slime)
+		- Patrol
+		
+		
+Human Enemies:
+	- Zombie skater
+	- Zombie roller blader
+	- Zombie muscle man
+	- Zombie sailor
+	- Zombie Cop
+	- Zombie man in suit
+	- Zombie gambler
+	- Zombie park ranger
+	- Zombie military person
+	
+Animal Enemies:
+	- Zombie shark
+	- Zombie pelican
+	- Zombie fish
+	- Zombie coyote
+	- Zombie hawk
+	

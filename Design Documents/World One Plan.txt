@@ -1,0 +1,82 @@
+Milestone: 
+	- September 15: Complete world one with all mechanics and menus
+	- Large tasks:
+		- Player mechanics
+			- Movement
+				- Running (done)
+				- Skating (done)
+				- Climbing (done)
+				- Underwater
+			- Attacking
+				- Board swing (done)
+				- Slingshot (done)
+			- Damage
+			- Death
+			- Idle (done)
+		- Camera (done)
+		- Enemy mechanics
+			- Patrol
+			- Attack
+			- Defend
+			- Idle
+		- Animations (done)
+		- Backgrounds (done)
+		- Tile based collisions (done)
+		- Platform collisions (done)
+		- Collectibles
+		- Score
+		- Lives (done)
+		- Artwork
+			- Level tiles
+				- Beach
+				- Pier
+				- Underwater
+				- Carnival
+			- Backgrounds
+				- Beach
+				- Pier (done)
+				- Underwater
+				- Carnival
+			- Collectibles
+				- Food bags
+				- Crates (done)
+			- Enemies
+				- Slimeball (done)
+				- Exploding slimeball (done)
+				- Wesley
+				- Bouncing Bradley
+				- Slimeball slinger
+				- Zombie skater
+				- Zombie muscle man
+				- Zombie sailor (done)
+				- Boss
+			- Player (done)
+			- Menus
+			- Splash screen
+		- Level design
+			- Beach
+			- Pier
+			- Underwater
+			- Carnival
+		- Set pieces
+			- Jet ski / helicopter chase
+			- Boss
+			
+	Tasks:
+		Artwork:
+			- Enemies (order listed above)
+			- Level tiles (order listed above)
+			- Backgrounds (order listed above)
+			- Collectibles (order listed above)
+		
+		Mechanics:
+			- Damage
+			- Death
+			- Underwater movement
+		Enemy mechanics (in order of enemies listed above)
+		Collectibles
+		Score
+		Set pieces
+		Level design
+		
+		

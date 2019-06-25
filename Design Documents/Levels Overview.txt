@@ -1,0 +1,35 @@
+World One
+	- Beach/Muscle Beach 
+		- Cube world
+	- Pier/Jet Ski
+		- Cube world
+	- Underwater
+		- Cube world
+	- Amusement Park
+		- Cube world
+World Two
+	- City Streets
+		- Cube world
+	- Rooftops
+		- Cube world
+	- Mall
+		- Cube world
+	- 
+World Three
+	- Desert cliffs
+		- Cube world
+	- Cave
+		- Cube world
+	- The Strip
+		- Cube world
+	- Inside the Luxor
+		- Cube world
+World Four
+	- Secret military base outskirts
+		- Cube world
+	- Hanger
+	- Alien Ship landing bays
+	- Alien Ship Inner Sanctum
+	
+	
+Can't unlock the alien ship until all Cubeworlds have been completed. Need to collect all the Galactic Diamonds.
