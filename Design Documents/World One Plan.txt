@@ -43,11 +43,11 @@ Milestone:
 			- Enemies
 				- Slimeball (done)
 				- Exploding slimeball (done)
-				- Wesley
-				- Bouncing Bradley
-				- Slimeball slinger
-				- Zombie skater
-				- Zombie muscle man
+				- Wesley (done)
+				- Bouncing Bradley (done)
+				- Shootin Sally (done)
+				- Zombie skater (done)
+				- Zombie muscle man (done)
 				- Zombie sailor (done)
 				- Boss
 			- Player (done)
