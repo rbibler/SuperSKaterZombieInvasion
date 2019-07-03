@@ -1,1 +1,0 @@
-moveDirOnRestart = -1;
