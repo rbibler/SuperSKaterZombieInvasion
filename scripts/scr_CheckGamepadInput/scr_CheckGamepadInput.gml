@@ -12,5 +12,5 @@ if(instance_exists(obj_Gamepad)) {
 	input[SHOOT] = gamepad_button_check(gamepad, gp_face3);
 	input[JUMP] = gamepad_button_check(gamepad, gp_face1);
 	input[TRANSITION] = gamepad_button_check(gamepad, gp_face4);
-	input[WEAPON_SWITCH] = gamepad_button_check(gamepad, gp_face2);
+	input[ACTION] = gamepad_button_check(gamepad, gp_face2);
 }

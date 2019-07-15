@@ -21,7 +21,7 @@
 #macro	SHOOT			6
 #macro	JUMP			7
 #macro	TRANSITION		8
-#macro	WEAPON_SWITCH	9
+#macro  ACTION			9
 
 // Horizontal Collision Point Indexes
 #macro HC_TOP		0

@@ -18,43 +18,43 @@ if(stateNew) {
 	// What y offset did we start with?
 	lastRailHeight = scr_GetRailHeight(x mod TILE_SIZE, currentRailTile);
 	lastTeeterTime = 0;
-	teeterInterval = scr_CalculateTeeterInterval();
+	//teeterInterval = scr_CalculateTeeterInterval();
 	isTeetering = false;
 }
 
-teeterInterval = scr_CalculateTeeterInterval();
+//teeterInterval = scr_CalculateTeeterInterval();
 
-if(isTeetering) {
-	if(input[DOWN] and !lastInput[DOWN]) {
-		isTeetering = false;
-		scr_UpdateSkaterAnimation(jumpAnim);
-		lastTeeterTime = stateTimer;
-	} else if(stateTimer - startTeeterTime >= teeterCorrectionAllowance) {
-		scr_StateSwitch(s_FALLING);
-		return;
-	}
-}
+//if(isTeetering) {
+	//if(input[DOWN] and !lastInput[DOWN]) {
+		//isTeetering = false;
+		//scr_UpdateSkaterAnimation(jumpAnim);
+		//lastTeeterTime = stateTimer;
+	//} else if(stateTimer - startTeeterTime >= teeterCorrectionAllowance) {
+		//scr_StateSwitch(s_FALLING);
+		//return;
+	//}
+//}
 
-if(stateTimer - lastTeeterTime >= teeterInterval and !isTeetering) {
-	isTeetering = true;
-	startTeeterTime = stateTimer;
-	teeterCorrectionAllowance = baseTeeterCorrection - (baseTeeterCorrection * (abs(xSpeed) / maxSpeedRailX));
-	if(teeterCorrectionAllowance == 0) {
-		teeterCorrectionAllowance = baseTeeterCorrection;
-	}
-	teeterCorrectionAllowance *= room_speed;
-	scr_UpdateSkaterAnimation(teeterAnim);
-}
+//if(stateTimer - lastTeeterTime >= teeterInterval and !isTeetering) {
+	//isTeetering = true;
+	//startTeeterTime = stateTimer;
+	//teeterCorrectionAllowance = baseTeeterCorrection - (baseTeeterCorrection * (abs(xSpeed) / maxSpeedRailX));
+	//if(teeterCorrectionAllowance == 0) {
+		//teeterCorrectionAllowance = baseTeeterCorrection;
+	//}
+	//teeterCorrectionAllowance *= room_speed;
+	//scr_UpdateSkaterAnimation(teeterAnim);
+//}
 
 
 
 
 // If still grinding, added the gravity impulse and update x position
-var boost = obj_railController.railGravity[currentRailTile];
-xSpeed += boost;
-if( abs(xSpeed) >= maxSpeedRailX) {
-	xSpeed = maxSpeedRailX * .9 * sign(xSpeed);
-}
+//var boost = obj_railController.railGravity[currentRailTile];
+//xSpeed += boost;
+//if( abs(xSpeed) >= maxSpeedRailX) {
+	//xSpeed = maxSpeedRailX * .9 * sign(xSpeed);
+//}
 scr_GeneralMovementFractions();
 x += xSpeed;
 
@@ -100,9 +100,9 @@ if(newTileX != currentTileX) {
 // check for exit conditions
 if(input[JUMP] and !lastInput[JUMP] or jumpInputBuffer > 0) {
 	scr_StateSwitch(s_JUMPING);
-	if(stateTimer < room_speed / 2 and xSpeed != 0) {
-		xSpeed +=  railJumpBoost * sign(xSpeed);
-	}
+	//if(stateTimer < room_speed / 2 and xSpeed != 0) {
+		//xSpeed +=  railJumpBoost * sign(xSpeed);
+	//}
 	return;
 }
 

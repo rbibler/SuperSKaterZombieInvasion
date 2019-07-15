@@ -43,7 +43,7 @@ input[5] = START;
 input[6] = SHOOT;
 input[7] = JUMP;
 input[8] = TRANSITION;
-input[9] = WEAPON_SWITCH;
+input[9] = ACTION;
 
 inputDownTime[UP] = 0;
 inputDownTime[DOWN] = 0;

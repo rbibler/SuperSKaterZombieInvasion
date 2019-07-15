@@ -7,6 +7,9 @@ if(!instance_exists(obj_BGManager)) {
 if(!instance_exists(obj_slopeController)) {
 	instance_create_layer(0, 0, CONTROLLER_LAYER, obj_slopeController);
 }
+if(!instance_exists(obj_railController)) {
+	instance_create_layer(0, 0, CONTROLLER_LAYER, obj_railController);
+}
 if(!instance_exists(obj_DebugConsole)) {
 	instance_create_layer(0, 0, CONTROLLER_LAYER, obj_DebugConsole);
 }
