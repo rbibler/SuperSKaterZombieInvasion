@@ -7,4 +7,4 @@ input[START] = keyboard_check(vk_enter);
 input[SHOOT] = keyboard_check(ord("A"));
 input[JUMP] = keyboard_check(ord("S"));
 input[TRANSITION] = keyboard_check(ord("F"));
-input[WEAPON_SWITCH] = keyboard_check(vk_tab);
+input[ACTION] = keyboard_check(ord("E"));
