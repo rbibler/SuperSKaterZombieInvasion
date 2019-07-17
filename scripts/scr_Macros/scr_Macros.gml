@@ -22,6 +22,7 @@
 #macro	JUMP			7
 #macro	TRANSITION		8
 #macro  ACTION			9
+#macro  TRICK			9
 
 // Horizontal Collision Point Indexes
 #macro HC_TOP		0
@@ -54,6 +55,7 @@
 #macro s_ATTACKING				SKATE | 0x13
 #macro s_DEFENDING				SKATE | 0x14
 #macro s_MENACING				SKATE | 0x15
+#macro s_TRICK_FLIPTRICK		SKATE | 0x16
 #macro s_ON_FOOT_IDLE			FOOT | 0x01
 #macro s_ON_FOOT_BORED			FOOT | 0x02
 #macro s_ON_FOOT_SITTING		FOOT | 0x03
@@ -78,6 +80,11 @@
 #macro s_JET_SKI_FALLING		VEHICLE | 0x05 | JET_SKI << 8
 #macro s_JET_SKI_PLASTERED		VEHICLE | 0x06 | JET_SKI << 8
 #macro s_JET_SKI_DUCKING		VEHICLE | 0x07 | JET_SKI << 8
+
+// Tricks
+#macro NO_TRICK					0
+#macro SHOVE_IT					1
+#macro KICKFLIP					2
 
 // Collision Points
 #macro LEFT_CORNER				0

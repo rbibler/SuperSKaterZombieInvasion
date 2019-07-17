@@ -11,6 +11,7 @@ newRoom = false;
 shootCounter = 0;
 speedAtJump = 0;
 slopeCounter = 0;
+currentTrick = NO_TRICK;
 /// @description Insert description here
 // You can write your code in this editor
 
@@ -98,6 +99,10 @@ rollState = scr_StateCreate(s_ROLLING, scr_SkaterStateRolling);
 knockedBackState = scr_StateCreate(s_KNOCKED_BACK, scr_SkaterStateKnockedBack);
 floatState = scr_StateCreate(s_FLOATING, scr_SkaterStateFloating);
 
+// Trick states
+trickFlipTrickState = scr_StateCreate(s_TRICK_FLIPTRICK, scr_SkaterStateFlipTrick);
+
+// On Foot States
 onFootIdleState = scr_StateCreate(s_ON_FOOT_IDLE, scr_SkaterStateOnFootIdle);
 onFootBoredState = scr_StateCreate(s_ON_FOOT_BORED, scr_SkaterStateOnFootBored);
 onFootSittingState = scr_StateCreate(s_ON_FOOT_SITTING, scr_SkaterStateOnFootSitting);
@@ -125,7 +130,7 @@ jetSkiFallState = scr_StateCreate(s_JET_SKI_DUCKING, scr_SkaterStateJetSkiDuckin
 // Set the default state to IDLE
 scr_StateInit(s_IDLE);
 
-
+// Skate Animations
 idleAnim = scr_RegisterStateAnimation(spr_SkaterIdle, NORMAL_ANIM_SPEED, true, noone, "Idle", 1);
 skateAnim = scr_RegisterStateAnimation(spr_SkaterSkate, NORMAL_ANIM_SPEED, true, noone, "Skate", 4);
 jumpAnim = scr_RegisterStateAnimation(spr_SkaterJump, NORMAL_ANIM_SPEED, true, noone, "Jump", 1);
@@ -135,6 +140,11 @@ deadAnim = scr_RegisterStateAnimation(spr_SkaterDead, NORMAL_ANIM_SPEED, false, 
 drownAnim = scr_RegisterStateAnimation(spr_SkaterDrowned, NORMAL_ANIM_SPEED, false, noone, "DROWNED", sprite_get_number(spr_SkaterDrowned));
 teeterAnim = scr_RegisterStateAnimation(spr_SkaterTeetering, FAST_ANIM_SPEED, true, noone, "TEETERING", sprite_get_number(spr_SkaterTeetering));
 
+
+// Trick Animations
+kickflipAnim = scr_RegisterStateAnimation(spr_SkaterTrickKickflip, FAST_ANIM_SPEED, false, noone, "KICKFLIP", sprite_get_number(spr_SkaterTrickKickflip));
+
+// On Foot Animations
 runAnim = scr_RegisterStateAnimation(spr_SkaterRunning, NORMAL_ANIM_SPEED, true, noone, "RUNNING", sprite_get_number(spr_SkaterRunning));
 onFootIdleAnim = scr_RegisterStateAnimation(spr_SkaterOnFootIdle, NORMAL_ANIM_SPEED, true, noone, "OnFootIdle", sprite_get_number(spr_SkaterOnFootIdle));
 onFootBoredAnim = scr_RegisterStateAnimation(spr_SkaterOnFootBored, 0, false, noone, "OnFootBored", sprite_get_number(spr_SkaterOnFootBored));
