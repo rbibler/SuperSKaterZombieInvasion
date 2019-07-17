@@ -11,7 +11,7 @@
 #macro DOWN_RAIL_MED	12
 #macro DOWN_RAIL_SHORT	15
 
-#macro SOLID			1
+//#macro SOLID			1
 
 
 
@@ -31,6 +31,22 @@ railHeights[SOLID, 12] = 1
 railHeights[SOLID, 13] = 1
 railHeights[SOLID, 14] = 1
 railHeights[SOLID, 15] = 1
+railHeights[SOLID, 16] = 1
+railHeights[SOLID, 17] = 1
+railHeights[SOLID, 18] = 1
+railHeights[SOLID, 19] = 1
+railHeights[SOLID, 20] = 1
+railHeights[SOLID, 21] = 1
+railHeights[SOLID, 22] = 1
+railHeights[SOLID, 23] = 1
+railHeights[SOLID, 24] = 1
+railHeights[SOLID, 25] = 1
+railHeights[SOLID, 26] = 1
+railHeights[SOLID, 27] = 1
+railHeights[SOLID, 28] = 1
+railHeights[SOLID, 29] = 1
+railHeights[SOLID, 30] = 1
+railHeights[SOLID, 31] = 1
 
 railHeights[SOLID + 1, 0] = 1
 railHeights[SOLID + 1, 1] = 1
@@ -48,6 +64,22 @@ railHeights[SOLID + 1, 12] = 1
 railHeights[SOLID + 1, 13] = 1
 railHeights[SOLID + 1, 14] = 1
 railHeights[SOLID + 1, 15] = 1
+railHeights[SOLID + 1, 16] = 1
+railHeights[SOLID + 1, 17] = 1
+railHeights[SOLID + 1, 18] = 1
+railHeights[SOLID + 1, 19] = 1
+railHeights[SOLID + 1, 20] = 1
+railHeights[SOLID + 1, 21] = 1
+railHeights[SOLID + 1, 22] = 1
+railHeights[SOLID + 1, 23] = 1
+railHeights[SOLID + 1, 24] = 1
+railHeights[SOLID + 1, 25] = 1
+railHeights[SOLID + 1, 26] = 1
+railHeights[SOLID + 1, 27] = 1
+railHeights[SOLID + 1, 28] = 1
+railHeights[SOLID + 1, 29] = 1
+railHeights[SOLID + 1, 30] = 1
+railHeights[SOLID + 1, 31] = 1
 
 
 railHeights[UP_RAIL_MED, 0]  = 7

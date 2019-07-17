@@ -1,5 +1,5 @@
 // Super simple movement script. If you hit an edge, turn around
-if(stateName == s_JUMPING) {
+if(stateID == s_JUMPING) {
 	return;
 }
 

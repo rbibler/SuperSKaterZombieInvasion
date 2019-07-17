@@ -62,8 +62,11 @@ if(input[JUMP] and !lastInput[JUMP] and !grounded) {
 }
 
 if(global.debug) {
-	show_debug_message("    State: " + stateName);
+	show_debug_message("    State: " + string(stateID));
 }
+
+horizontalCollisionResponseScript = scr_BasicHorizCollisionResponse;
+
 // The real fun happens in the state machine
 scr_StateExecute();
 if(shouldAnimate) {

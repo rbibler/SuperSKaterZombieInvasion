@@ -138,9 +138,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "IDLE",
+            "value": "s_IDLE",
             "varName": "initialState",
-            "varType": 2
+            "varType": 4
         },
         {
             "id": "bd3fe793-2816-4b49-94e6-b3e0644b239e",

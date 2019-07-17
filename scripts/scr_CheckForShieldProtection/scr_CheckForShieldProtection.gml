@@ -4,7 +4,7 @@
 var attacker = argument0;
 
 with(obj_skater) {
-	if(shielded or stateName == s_ON_FOOT_SHIELD) {
+	if(shielded or stateID == s_ON_FOOT_SHIELD) {
 		return true;
 	}
 	if(currentPowerup == PB_SHIELD and global.diamondCount > 0) {
@@ -12,7 +12,7 @@ with(obj_skater) {
 		shielded = true;
 		scr_UpdateDiamondCount(-pbShieldCost);
 		if(!grounded) {
-			if(scr_IsSkateState(stateName)) {
+			if(scr_IsSkateState(stateID)) {
 				scr_StateSwitch(s_JUMP_SHIELD);
 			} else {
 				scr_StateSwitch(s_ON_FOOT_JUMP_SHIELD);

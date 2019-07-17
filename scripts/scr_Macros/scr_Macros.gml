@@ -1,6 +1,7 @@
 // Movement states
 #macro	SKATE_STATE		1
 #macro	ON_FOOT_STATE	2
+#macro	VEHICLE_STATE	3
 
 // Vehciles
 #macro	NO_VEHICLE		0
@@ -20,51 +21,63 @@
 #macro	SHOOT			6
 #macro	JUMP			7
 #macro	TRANSITION		8
-#macro	WEAPON_SWITCH	9
+#macro  ACTION			9
 
-#macro s_IDLE					"IDLE"
-#macro s_BORED					"BORED"
-#macro s_MOVING					"MOVING"
-#macro s_CROUCHING				"CROUCHING"
-#macro s_JUMPING				"JUMPING"
-#macro s_GRINDING				"GRINDING"
-#macro s_SLAMMING				"SLAMMING"
-#macro s_RECOVERING				"RECOVERING"
-#macro s_HIT					"HIT"
-#macro s_CLIMBING				"CLIMBING"
-#macro s_CLIMBOUT				"CLIMBOUT"
-#macro s_FALLING				"FALLING"
-#macro s_ROLLING				"ROLLING"
-#macro s_DEAD					"DEAD"
-#macro s_DROWNED				"DROWNED"
-#macro s_BOUNCING				"BOUNCING"
-#macro s_KNOCKED_BACK			"KNOCKED BACK"
-#macro s_FLOATING				"FLOATING"
-#macro s_ATTACKING				"ATTACKING"
-#macro s_DEFENDING				"DEFENDING"
-#macro s_MENACING				"MENACING"
-#macro s_ON_FOOT_IDLE			"ON_FOOT_IDLE"
-#macro s_ON_FOOT_BORED			"ON_FOOT_BORED"
-#macro s_ON_FOOT_SITTING		"ON_FOOT_SITTING"
-#macro s_ON_FOOT_PUSH_OFF		"ON_FOOT_PUSH_OFF"
-#macro s_RUNNING				"RUNNING"
-#macro s_ON_FOOT_JUMPING		"ON_FOOT_JUMPING"
-#macro s_ON_FOOT_FALLING		"ON_FOOT_FALLING"
-#macro s_ON_FOOT_CROUCHING		"ON_FOOT_CROUCHING"
-#macro s_FOOT_TO_SKATE			"FOOT_TO_SKATE"
-#macro s_SKATE_TO_FOOT			"SKATE_TO_FOOT"
-#macro s_ON_FOOT_STOP			"ON_FOOT_STOP"
-#macro s_STAIRS					"STAIRS"
-#macro s_BOARD_SWING			"BOARD_SWING"
-#macro s_BOARD_STRUCK			"BOARD_STRUCK"
-#macro s_ON_FOOT_HURT			"ON_FOOT_HURT"
-#macro s_ON_FOOT_SHIELD			"ON_FOOT_SHIELD"
-#macro s_ON_FOOT_JUMP_SHIELD	"ON_FOOT_JUMP_SHIELD"
-#macro s_JUMP_SHIELD			"JUMP_SHIELD"
-#macro s_JET_SKI_IDLE			"JET_SKI_IDLE"
-#macro s_JET_SKI_MOVING			"JET_SKI_MOVING"
-#macro s_JET_SKI_JUMPING		"JET_SKI_JUMPING"
-#macro s_JET_SKI_FALLING		"JET_SKI_FALLING"
+// Horizontal Collision Point Indexes
+#macro HC_TOP		0
+#macro HC_BOTTOM	1
+#macro HC_MIDDLE	2
+
+#macro SKATE			0x8000
+#macro FOOT				0xA000
+#macro VEHICLE			0xC000
+
+
+#macro s_IDLE					SKATE | 0x01
+#macro s_BORED					SKATE | 0x02
+#macro s_MOVING					SKATE | 0x03
+#macro s_CROUCHING				SKATE | 0x04
+#macro s_JUMPING				SKATE | 0x05
+#macro s_GRINDING				SKATE | 0x06
+#macro s_SLAMMING				SKATE | 0x07
+#macro s_RECOVERING				SKATE | 0x08
+#macro s_HIT					SKATE | 0x09
+#macro s_CLIMBING				SKATE | 0x0A
+#macro s_CLIMBOUT				SKATE | 0x0B
+#macro s_FALLING				SKATE | 0x0C
+#macro s_ROLLING				SKATE | 0x0D
+#macro s_DEAD					SKATE | 0x0E
+#macro s_DROWNED				SKATE | 0x0F
+#macro s_BOUNCING				SKATE | 0x10
+#macro s_KNOCKED_BACK			SKATE | 0x11
+#macro s_FLOATING				SKATE | 0x12
+#macro s_ATTACKING				SKATE | 0x13
+#macro s_DEFENDING				SKATE | 0x14
+#macro s_MENACING				SKATE | 0x15
+#macro s_ON_FOOT_IDLE			FOOT | 0x01
+#macro s_ON_FOOT_BORED			FOOT | 0x02
+#macro s_ON_FOOT_SITTING		FOOT | 0x03
+#macro s_ON_FOOT_PUSH_OFF		FOOT | 0x04
+#macro s_RUNNING				FOOT | 0x05
+#macro s_ON_FOOT_JUMPING		FOOT | 0x06
+#macro s_ON_FOOT_FALLING		FOOT | 0x07
+#macro s_ON_FOOT_CROUCHING		FOOT | 0x08
+#macro s_FOOT_TO_SKATE			FOOT | 0x09
+#macro s_SKATE_TO_FOOT			FOOT | 0x0A
+#macro s_ON_FOOT_STOP			FOOT | 0x0B
+#macro s_STAIRS					FOOT | 0x0C
+#macro s_BOARD_SWING			FOOT | 0x0D
+#macro s_BOARD_STRUCK			FOOT | 0x0E
+#macro s_ON_FOOT_HURT			FOOT | 0x0F
+#macro s_ON_FOOT_SHIELD			FOOT | 0x10
+#macro s_ON_FOOT_JUMP_SHIELD	FOOT | 0x11
+#macro s_JUMP_SHIELD			VEHICLE | 0x01 | JET_SKI << 8
+#macro s_JET_SKI_IDLE			VEHICLE | 0x02 | JET_SKI << 8
+#macro s_JET_SKI_MOVING			VEHICLE | 0x03 | JET_SKI << 8
+#macro s_JET_SKI_JUMPING		VEHICLE | 0x04 | JET_SKI << 8
+#macro s_JET_SKI_FALLING		VEHICLE | 0x05 | JET_SKI << 8
+#macro s_JET_SKI_PLASTERED		VEHICLE | 0x06 | JET_SKI << 8
+#macro s_JET_SKI_DUCKING		VEHICLE | 0x07 | JET_SKI << 8
 
 // Collision Points
 #macro LEFT_CORNER				0
@@ -113,7 +126,7 @@
 #macro FOREGROUND_ENEMIES_LAYER	"ForegroundEnemies"
 #macro ENEMIES_LAYER			"Enemies"
 #macro PLAYER_LAYER				"Player"
-#macro INTERACTIVES_LAYER		"Interactices"
+#macro INTERACTIVES_LAYER		"Interactives"
 #macro BLOCKS_LAYER				"Blocks"
 #macro VEHICLES_LAYER			"Vehicles"
 

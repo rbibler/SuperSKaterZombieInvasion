@@ -1,0 +1,1 @@
+var daBomb = instance_create_layer(x, y, ENEMIES_LAYER, obj_FloatingCrate);

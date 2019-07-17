@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 state = 0;
-stateName = 0;
+stateID = 0;

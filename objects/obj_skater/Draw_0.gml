@@ -11,7 +11,7 @@ if(global.debug == true) {
 	var xStart = tileColliderX * 16;
 	var yStart = tileColliderY * 16;
 	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red);
-	/*switch(stateName) {
+	/*switch(stateID) {
 		case s_IDLE:
 			color = c_white;
 		break;

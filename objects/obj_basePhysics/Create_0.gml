@@ -69,6 +69,10 @@ horizTiles[TOP_RIGHT] = 0;
 horizTiles[MIDDLE_RIGHT] = 0;
 horizTiles[BOTTOM_RIGHT] = 0;
 
+horizColPoints[0] = false;		// top
+horizColPoints[1] = false;		// bottom
+horizColPoints[2] = false;		// middle
+
 scr_GetCollisionTiles();
 
 

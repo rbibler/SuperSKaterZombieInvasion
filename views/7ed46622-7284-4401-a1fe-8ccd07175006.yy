@@ -5,7 +5,8 @@
     "name": "7ed46622-7284-4401-a1fe-8ccd07175006",
     "children": [
         "ca67fce5-fb0e-4e9f-89a6-d0dd4d28110a",
-        "c89e2c87-907a-434c-952e-bc59f6eb4851"
+        "c89e2c87-907a-434c-952e-bc59f6eb4851",
+        "385fe259-971b-49b7-b685-27c0205009fd"
     ],
     "filterType": "GMObject",
     "folderName": "AttackEnemies",

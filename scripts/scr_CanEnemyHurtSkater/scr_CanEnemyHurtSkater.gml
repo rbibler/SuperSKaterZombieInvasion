@@ -4,7 +4,7 @@
 var enemy = argument0;
 
 with(enemy) {
-	if(stateName == s_HIT or stateName == s_DEAD) {
+	if(stateID == s_HIT or stateID == s_DEAD) {
 		return false;
 	}
 	return true;

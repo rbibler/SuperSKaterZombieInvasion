@@ -1,3 +1,5 @@
+var tailState = argument0;
+
 var roosterTail = noone;
 if(!instance_exists(obj_JetSkiRoosterTail)) {
 	roosterTail = instance_create_layer(x, y, "Effects", obj_JetSkiRoosterTail);
@@ -5,10 +7,7 @@ if(!instance_exists(obj_JetSkiRoosterTail)) {
 	roosterTail = instance_find(obj_JetSkiRoosterTail, 0);
 }
 var tailImage = spr_JetSkiRoosterIdle;
-var absSpeed = abs(xSpeed);
-if(absSpeed > 1 and absSpeed < 4) {
-	tailImage = spr_JetSkiRoosterMed
-} else if(absSpeed > 4) {
+if(tailState == s_MOVING) {
 	tailImage = spr_JetSkiRoosterFullSpeed;
 }
 

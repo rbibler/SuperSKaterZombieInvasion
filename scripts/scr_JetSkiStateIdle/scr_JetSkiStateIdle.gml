@@ -4,3 +4,4 @@ if(abs(xSpeed) < 1) {
 	scr_StopXMotion();
 }
 scr_MoveAndCollide();
+scr_UpdateRoosterTailEffect(s_IDLE);

@@ -93,6 +93,16 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
+        },
+        {
+            "id": "09a8d5db-57a8-432e-a3ef-5d129baa2854",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 5,
+            "eventtype": 2,
+            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -135,7 +145,7 @@
             "mvc": "1.0",
             "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
             "propertyId": "6f99264f-8f71-492f-bf4d-fe100af69405",
-            "value": "scr_EmptyAssScript"
+            "value": "scr_SkaterJetSkiCheckYaHead"
         },
         {
             "id": "a217b12e-66d6-4629-a61e-37619b9a1bff",
@@ -465,7 +475,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "3",
             "varName": "targetSpeedXOnFoot",
             "varType": 0
         },
@@ -591,7 +601,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": ".2",
+            "value": ".05",
             "varName": "jetSkiDecel",
             "varType": 0
         },

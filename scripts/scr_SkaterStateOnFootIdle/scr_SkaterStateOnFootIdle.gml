@@ -31,7 +31,7 @@ if(stateTimer - stateVar[1] >= stateVar[0]) {
 }
 
 // Crouch if the skater presses down
-if(input[DOWN] and stateName != s_CLIMBING) {
+if(input[DOWN] and stateID != s_CLIMBING) {
 	if(scr_CheckLadderClimbDown()) {
 		y += 12;
 		scr_StateSwitch(s_CLIMBOUT);

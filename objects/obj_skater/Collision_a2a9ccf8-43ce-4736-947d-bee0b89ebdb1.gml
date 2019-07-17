@@ -6,7 +6,7 @@ if(scr_CheckForShieldProtection(other)) {
 		script_execute(hitBySkaterShieldScript);
 	}
 } else {
-	if(!isImmune and stateName != s_BOARD_SWING) {
+	if(!isImmune and stateID != s_BOARD_SWING) {
 		if(scr_CanEnemyHurtSkater(other)) {
 			scr_SkaterHit(other, 0);
 			with(other) {
