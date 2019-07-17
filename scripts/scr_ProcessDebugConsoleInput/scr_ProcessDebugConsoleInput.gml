@@ -21,4 +21,8 @@ switch(cmd) {
 		scr_UnpauseGame();
 		scr_SwitchRooms(roomNum, checkpointReached);
 	break;
+	case "fps":
+		var arg = string_digits(split[1]);
+		room_speed = real(arg);
+	break;
 }

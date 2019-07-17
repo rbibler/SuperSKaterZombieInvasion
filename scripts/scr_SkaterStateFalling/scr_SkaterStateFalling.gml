@@ -68,3 +68,5 @@ if(railHeight != -1) {
 		scr_StopYMotion();
 	}
 }
+
+scr_CheckForTrick();

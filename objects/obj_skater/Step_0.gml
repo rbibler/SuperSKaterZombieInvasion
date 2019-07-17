@@ -19,6 +19,7 @@ mask_index = sprite_index;
 verticalMovementRun = false;
 
 jumpInputBuffer--;
+trickPressedTimer--;
 
 if(isImmune) {
 	if(frameTimer - immuneStart >= (immunityLengthInSeconds * room_speed)) {
@@ -59,6 +60,10 @@ if(ySpeed >= maxYSpeed) {
 scr_GeneralCheckGrounded();
 if(input[JUMP] and !lastInput[JUMP] and !grounded) {
 	jumpInputBuffer = 10;
+}
+
+if(input[TRICK]) {
+	trickPressedTimer = 10;
 }
 
 if(global.debug) {
