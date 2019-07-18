@@ -85,6 +85,7 @@
 #macro NO_TRICK					0
 #macro SHOVE_IT					1
 #macro KICKFLIP					2
+#macro IMPOSSIBLE				3
 
 // Collision Points
 #macro LEFT_CORNER				0

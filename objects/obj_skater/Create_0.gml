@@ -38,16 +38,16 @@ infected = false;
 
 
 // Array to hold the user's input. 
-input[0] = UP;
-input[1] = DOWN;
-input[2] = LEFT;
-input[3] = RIGHT;
-input[4] = SELECT;
-input[5] = START;
-input[6] = SHOOT;
-input[7] = JUMP;
-input[8] = TRANSITION;
-input[9] = ACTION;
+input[UP] = 0;
+input[DOWN] = 0;
+input[LEFT] = 0;
+input[RIGHT] = 0;
+input[SELECT] = 0;
+input[START] = 0;
+input[SHOOT] = 0;
+input[JUMP] = 0;
+input[TRANSITION] = 0;
+input[ACTION] = 0;
 
 inputDownTime[UP] = 0;
 inputDownTime[DOWN] = 0;
@@ -57,6 +57,8 @@ inputDownTime[SELECT] = 0;
 inputDownTime[START] = 0;
 inputDownTime[SHOOT] = 0;
 inputDownTime[JUMP] = 0;
+inputDownTime[TRANSITION] = 0;
+inputDownTime[ACTION] = 0;
 
 inputPressTime[SHOOT] = 0;
 
@@ -146,6 +148,9 @@ teeterAnim = scr_RegisterStateAnimation(spr_SkaterTeetering, FAST_ANIM_SPEED, tr
 
 // Trick Animations
 kickflipAnim = scr_RegisterStateAnimation(spr_SkaterTrickKickflip, FAST_ANIM_SPEED, false, noone, "KICKFLIP", sprite_get_number(spr_SkaterTrickKickflip));
+shoveItAnim = scr_RegisterStateAnimation(spr_SkaterTrickShoveIt, FAST_ANIM_SPEED, false, noone, "SHOVE_IT", sprite_get_number(spr_SkaterTrickShoveIt));
+impossibleAnim = scr_RegisterStateAnimation(spr_SkaterTrickImpossible, FAST_ANIM_SPEED, false, noone, "IMPOSSIBLE", sprite_get_number(spr_SkaterTrickImpossible));
+
 
 // On Foot Animations
 runAnim = scr_RegisterStateAnimation(spr_SkaterRunning, NORMAL_ANIM_SPEED, true, noone, "RUNNING", sprite_get_number(spr_SkaterRunning));

@@ -34,7 +34,7 @@ if(facingEnabled) {
 	if(trickPressedTimer > 0 and !grounded) {
 		if(xSpeed > 0) {
 			facing = 1;
-		} else {
+		} else if xSpeed < 0 {
 			facing = -1;
 		}
 	} else {

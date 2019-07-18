@@ -3,6 +3,10 @@
 switch(currentTrick) {
 	case KICKFLIP:
 	return kickflipAnim;
+	case SHOVE_IT:
+	return shoveItAnim;
+	case IMPOSSIBLE:
+	return impossibleAnim;
 	default:
 	return jumpAnim;
 }

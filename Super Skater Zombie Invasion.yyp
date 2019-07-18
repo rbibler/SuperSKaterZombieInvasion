@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "0ed73b1e-d836-4ae6-abfb-b0bd9c061536",
+            "Value": {
+                "id": "68c434c9-e55a-4155-9469-c671e7e4b089",
+                "resourcePath": "sprites\\spr_SkaterTrickImpossible\\spr_SkaterTrickImpossible.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "11354f83-8288-44e7-b0af-bf5fb8aee6e0",
             "Value": {
                 "id": "a5d5c49d-28be-49b2-982d-bd77bc5a864f",
@@ -2956,6 +2964,14 @@
                 "id": "6d57a638-12e5-4243-96b3-03462e3d772b",
                 "resourcePath": "objects\\obj_surfboard\\obj_surfboard.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "85c0896d-e590-480b-93ee-8b732df7afdf",
+            "Value": {
+                "id": "0a23e34d-2585-45f4-95d5-0d29e53578e9",
+                "resourcePath": "sprites\\spr_SkaterTrickShoveIt\\spr_SkaterTrickShoveIt.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
