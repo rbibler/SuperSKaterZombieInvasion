@@ -20,6 +20,7 @@ verticalMovementRun = false;
 
 jumpInputBuffer--;
 trickPressedTimer--;
+directionButtonTimer--;
 
 if(isImmune) {
 	if(frameTimer - immuneStart >= (immunityLengthInSeconds * room_speed)) {
@@ -30,12 +31,20 @@ if(isImmune) {
 scr_SkaterInput();
 scr_CheckForWeaponSwitch();
 if(facingEnabled) {
-	if(input[RIGHT]) {
-		if(!input[LEFT] and !lastInput[LEFT]) {
+	if(trickPressedTimer > 0 and !grounded) {
+		if(xSpeed > 0) {
 			facing = 1;
+		} else {
+			facing = -1;
 		}
-	} else if(input[LEFT]) {
-		facing = -1;
+	} else {
+		if(input[RIGHT]) {
+			if(!input[LEFT] and !lastInput[LEFT]) {
+				facing = 1;
+			}
+		} else if(input[LEFT]) {
+			facing = -1;
+		}
 	}
 }
 

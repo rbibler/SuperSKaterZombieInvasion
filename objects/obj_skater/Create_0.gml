@@ -13,6 +13,8 @@ speedAtJump = 0;
 slopeCounter = 0;
 currentTrick = NO_TRICK;
 trickPressedTimer = 0;
+directionButtonTimer = 0;
+
 /// @description Insert description here
 // You can write your code in this editor
 
