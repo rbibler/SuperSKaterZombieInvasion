@@ -618,6 +618,20 @@
             "value": "10",
             "varName": "jetSkiSpeed",
             "varType": 0
+        },
+        {
+            "id": "ae9366ee-f31c-4db3-8470-51c1c075892e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "inputQueueValidTime",
+            "varType": 0
         }
     ],
     "solid": false,

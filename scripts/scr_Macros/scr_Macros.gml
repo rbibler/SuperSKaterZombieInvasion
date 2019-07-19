@@ -7,6 +7,8 @@
 #macro	NO_VEHICLE		0
 #macro	JET_SKI			1
 
+#macro NUM_INPUTS	10
+
 // Directional Input
 #macro	UP				0
 #macro	DOWN			1
