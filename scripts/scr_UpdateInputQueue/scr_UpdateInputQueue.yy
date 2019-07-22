@@ -1,8 +1,8 @@
 {
-    "id": "166e2984-5c9e-4d25-b69c-9ef74783d282",
+    "id": "597010a0-3e45-4c66-b9c1-70c1187b8904",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_CheckForTrick",
+    "name": "scr_UpdateInputQueue",
     "IsCompatibility": false,
     "IsDnD": false
 }

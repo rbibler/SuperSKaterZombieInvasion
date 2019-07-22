@@ -1,2 +1,3 @@
-inputQueueOne = ds_queue_create();
-inputQueueTwo = ds_queue_create();
+inputBuffer[0] = 0;
+inputQueueWritePos = 0;
+inputsInQueue = 0;

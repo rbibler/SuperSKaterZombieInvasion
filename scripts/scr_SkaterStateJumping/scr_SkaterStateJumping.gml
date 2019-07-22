@@ -60,6 +60,5 @@ if(input[TRANSITION] and !lastInput[TRANSITION]) {
 	return;
 }
 
-scr_CheckForTrick();
-
+scr_TricksAreForKids();
 

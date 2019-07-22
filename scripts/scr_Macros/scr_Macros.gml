@@ -26,6 +26,16 @@
 #macro  ACTION			9
 #macro  TRICK			9
 
+// Input will be stored in 10 bits like this:
+// A T J S ST SL R L D U
+
+
+#macro INPUT_UP			0x01		// 0001
+#macro INPUT_DOWN		0x02		// 0010
+#macro INPUT_LEFT		0x04		// 0100
+#macro INPUT_RIGHT		0x08		// 1000
+#macro INPUT_TRICK		0x200		// 1000000000
+
 // Horizontal Collision Point Indexes
 #macro HC_TOP		0
 #macro HC_BOTTOM	1

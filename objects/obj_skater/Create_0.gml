@@ -62,6 +62,8 @@ inputDownTime[ACTION] = 0;
 
 inputPressTime[SHOOT] = 0;
 
+scr_SetupInputQueue();
+
 
 tileColliderX = 0;
 tileColliderY = 0;
