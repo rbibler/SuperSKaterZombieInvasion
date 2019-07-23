@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "0799a26e-8cd2-481c-87db-fbab3d1ce473",
+            "Value": {
+                "id": "5020c393-9935-488c-bd2a-fa996dde1e2a",
+                "resourcePath": "sprites\\spr_KickflipHitMask\\spr_KickflipHitMask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "079c0465-8196-4927-ac41-b901123a63a8",
             "Value": {
                 "id": "9a5d2d80-9a0e-4025-9783-a0719ca38d04",
@@ -611,6 +619,14 @@
             "Value": {
                 "id": "39d5b8a3-8150-4296-a24f-be04b2f213ee",
                 "resourcePath": "scripts\\scr_SlimeballStateMoving\\scr_SlimeballStateMoving.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1eb1b488-e7c0-4950-a2dc-2223883f1cbd",
+            "Value": {
+                "id": "0c30635b-8a0b-4a7f-a1cd-215d68109405",
+                "resourcePath": "scripts\\scr_ClearInputQueue\\scr_ClearInputQueue.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1524,6 +1540,14 @@
                 "id": "e3d04986-e204-4b07-88cc-8e3dc3336692",
                 "resourcePath": "objects\\DebugDrawer\\DebugDrawer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4491b070-edb7-435d-b19a-287357f6b63c",
+            "Value": {
+                "id": "ed3467c2-cd0a-4198-add3-ddf920a19d8e",
+                "resourcePath": "views\\4491b070-edb7-435d-b19a-287357f6b63c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -6086,6 +6110,7 @@
         "7755fc4f-4918-401e-9924-2570275beada",
         "1ca2d8b5-5b40-4d22-8778-d9b1cf8d7b84",
         "4a7a6eae-0372-425e-bf7b-22e44922bc94",
+        "1eb1b488-e7c0-4950-a2dc-2223883f1cbd",
         "bd460c4c-c8ef-4016-85c9-f28577155cdf",
         "166e2984-5c9e-4d25-b69c-9ef74783d282",
         "b33499d1-71a4-4ddd-99c7-43b1f9e6384d",

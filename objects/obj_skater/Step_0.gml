@@ -75,6 +75,10 @@ if(input[TRICK]) {
 	trickPressedTimer = 10;
 }
 
+if(grounded) {
+	scr_ClearInputQueue();
+}
+
 if(global.debug) {
 	show_debug_message("    State: " + string(stateID));
 }
