@@ -52,6 +52,7 @@ if(jump == 1 and (ySpeed > 0 or (!getAir and !input[JUMP]))){
 	getAir = false;
 	scr_StopYMotion();
 	scr_StateSwitch(s_FALLING);
+	show_debug_message("Top of jump: " + string(y));
 }
 
 
