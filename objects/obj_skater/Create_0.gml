@@ -63,6 +63,7 @@ inputDownTime[ACTION] = 0;
 inputPressTime[SHOOT] = 0;
 
 scr_SetupInputQueue();
+scr_SetupTrickBlastRadii();
 
 
 tileColliderX = 0;

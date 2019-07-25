@@ -1407,6 +1407,14 @@
             }
         },
         {
+            "Key": "3d68c0ae-b97d-4564-a6e3-c1059e692e39",
+            "Value": {
+                "id": "38492889-f24e-4444-8719-0777d482da96",
+                "resourcePath": "scripts\\scr_SetupTrickBlastRadii\\scr_SetupTrickBlastRadii.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3d722df8-120e-43a7-abff-d5e21430611a",
             "Value": {
                 "id": "a06d5a0c-3d01-4dc1-8081-4aadcc56d33c",
@@ -1715,6 +1723,14 @@
             "Value": {
                 "id": "d0b9f382-78ae-41a3-bd59-073b2d28e887",
                 "resourcePath": "scripts\\scr_CheckInputPressed\\scr_CheckInputPressed.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4b40c85f-8d13-4146-95f2-0a29d32d3be6",
+            "Value": {
+                "id": "04106323-cdaa-4a6b-abc2-f66c1c4a1791",
+                "resourcePath": "scripts\\scr_InterpolateBlastRadii\\scr_InterpolateBlastRadii.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3764,6 +3780,14 @@
                 "id": "7a514405-b95e-43cf-87ab-6ed7d778b0f1",
                 "resourcePath": "objects\\obj_hackySack\\obj_hackySack.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a3d18068-05cf-4132-ada9-a0ab50e0c5f9",
+            "Value": {
+                "id": "9f310315-b7ac-4b79-a96e-4df618d0b3fd",
+                "resourcePath": "scripts\\scr_CheckBlastRadius\\scr_CheckBlastRadius.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6117,6 +6141,9 @@
         "573b6563-891a-48dc-8a92-3e868d314655",
         "b25175d5-86bf-4b40-8183-9c794cf224f9",
         "36f406b5-2266-497f-9ae5-c8c799e89709",
+        "a3d18068-05cf-4132-ada9-a0ab50e0c5f9",
+        "3d68c0ae-b97d-4564-a6e3-c1059e692e39",
+        "4b40c85f-8d13-4146-95f2-0a29d32d3be6",
         "01ea4b44-cb92-4c2d-acd2-7d83f0d222db",
         "f829909d-5e29-433c-90cc-f2ab84483b4b",
         "7ad484b5-20f1-4d83-8847-e5c5603abf79",
