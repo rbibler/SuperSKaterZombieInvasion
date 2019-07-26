@@ -1,8 +1,8 @@
 {
-    "id": "a3d18068-05cf-4132-ada9-a0ab50e0c5f9",
+    "id": "dac60550-6920-4d8e-a49a-9bb171948291",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_CheckBlastRadius",
+    "name": "scr_GetTrickBlastParams",
     "IsCompatibility": false,
     "IsDnD": false
 }

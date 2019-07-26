@@ -1735,14 +1735,6 @@
             }
         },
         {
-            "Key": "4b40c85f-8d13-4146-95f2-0a29d32d3be6",
-            "Value": {
-                "id": "04106323-cdaa-4a6b-abc2-f66c1c4a1791",
-                "resourcePath": "scripts\\scr_InterpolateBlastRadii\\scr_InterpolateBlastRadii.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "4b664a73-b69c-498a-a0c9-36cf58a444c7",
             "Value": {
                 "id": "2fdf79db-ca71-4b17-8b4c-6d3660f49674",
@@ -1788,6 +1780,14 @@
                 "id": "4e573314-edd1-4d07-9ff4-236922ad5875",
                 "resourcePath": "sprites\\spr_levelTiles\\spr_levelTiles.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4d4d2332-e0a4-40fd-b917-d10a6d9029c1",
+            "Value": {
+                "id": "3da58925-d2f6-4b4d-a3e0-e35768dc898a",
+                "resourcePath": "scripts\\scr_SpawnTrickBlast\\scr_SpawnTrickBlast.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1947,6 +1947,14 @@
             "Value": {
                 "id": "2e14ce22-714c-44cf-93b8-535e4871dc7d",
                 "resourcePath": "objects\\obj_explodeBlock\\obj_explodeBlock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5575410c-46de-4631-b2f6-690cf2f63201",
+            "Value": {
+                "id": "42c0045d-5610-4df8-bdf4-dfee20497f67",
+                "resourcePath": "objects\\obj_TrickBlast\\obj_TrickBlast.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3799,14 +3807,6 @@
             }
         },
         {
-            "Key": "a3d18068-05cf-4132-ada9-a0ab50e0c5f9",
-            "Value": {
-                "id": "9f310315-b7ac-4b79-a96e-4df618d0b3fd",
-                "resourcePath": "scripts\\scr_CheckBlastRadius\\scr_CheckBlastRadius.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "a3ddb5f7-9d64-43e9-8b56-e93976478b10",
             "Value": {
                 "id": "b47705ff-9f5a-4a24-aeac-d06c8db31fbb",
@@ -5071,6 +5071,14 @@
             }
         },
         {
+            "Key": "d7e913d0-b2e1-4d57-a279-c26a35b4b042",
+            "Value": {
+                "id": "38e2ba0e-115e-4154-8bf4-dc9ef39abf4d",
+                "resourcePath": "objects\\obj_TrickController\\obj_TrickController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d833bc4e-40e4-4033-9c98-e355ab44bda4",
             "Value": {
                 "id": "575b7b29-6d33-4850-ae35-67187489d7a7",
@@ -5124,6 +5132,14 @@
                 "id": "904989d1-9b05-4945-bd06-45446e5e5d1e",
                 "resourcePath": "views\\daa6d0ff-6bbb-4301-8185-85a30c0545f5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dac60550-6920-4d8e-a49a-9bb171948291",
+            "Value": {
+                "id": "9d362804-f85a-4dcd-973d-2637fece654d",
+                "resourcePath": "scripts\\scr_GetTrickBlastParams\\scr_GetTrickBlastParams.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6157,9 +6173,9 @@
         "573b6563-891a-48dc-8a92-3e868d314655",
         "b25175d5-86bf-4b40-8183-9c794cf224f9",
         "36f406b5-2266-497f-9ae5-c8c799e89709",
-        "a3d18068-05cf-4132-ada9-a0ab50e0c5f9",
+        "4d4d2332-e0a4-40fd-b917-d10a6d9029c1",
+        "dac60550-6920-4d8e-a49a-9bb171948291",
         "3d68c0ae-b97d-4564-a6e3-c1059e692e39",
-        "4b40c85f-8d13-4146-95f2-0a29d32d3be6",
         "01ea4b44-cb92-4c2d-acd2-7d83f0d222db",
         "f829909d-5e29-433c-90cc-f2ab84483b4b",
         "7ad484b5-20f1-4d83-8847-e5c5603abf79",

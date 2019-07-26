@@ -1,4 +1,3 @@
-
 /// @description Insert description here
 // You can write your code in this editor
 
@@ -63,7 +62,6 @@ inputDownTime[ACTION] = 0;
 inputPressTime[SHOOT] = 0;
 
 scr_SetupInputQueue();
-scr_SetupTrickBlastRadii();
 
 
 tileColliderX = 0;
@@ -254,7 +252,6 @@ railJumpBoost = 2;
 currentAirSpeedMax = 0;
 currentVehicle = NO_VEHICLE;
 canBoardVehicle = true;
-blastRadius = 0;
 
 scr_CheckForCheckpoint();
 

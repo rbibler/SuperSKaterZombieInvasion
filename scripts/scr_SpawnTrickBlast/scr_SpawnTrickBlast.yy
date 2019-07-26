@@ -1,8 +1,8 @@
 {
-    "id": "4b40c85f-8d13-4146-95f2-0a29d32d3be6",
+    "id": "4d4d2332-e0a4-40fd-b917-d10a6d9029c1",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_InterpolateBlastRadii",
+    "name": "scr_SpawnTrickBlast",
     "IsCompatibility": false,
     "IsDnD": false
 }

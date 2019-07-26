@@ -10,6 +10,7 @@
 if(stateNew) {
 	scr_UpdateSkaterAnimation(scr_WhichTrick());
 	show_debug_message("new trick!");
+	scr_SpawnTrickBlast(currentTrick, x, y);
 }
 
 
@@ -25,12 +26,8 @@ if(grounded) {
 }
 
 scr_MoveAndCollide();
-scr_CheckBlastRadius(
-	currentTrick, 
-	floor(image_index),
-	scr_GetAnimationSpeed(currentAnimation),
-	scr_GetCurrentSubframe(currentAnimation));
-show_debug_message("Blast radius: " + string(blastRadius));
+
+
 
 
 

@@ -13,3 +13,6 @@ if(!instance_exists(obj_railController)) {
 if(!instance_exists(obj_DebugConsole)) {
 	instance_create_layer(0, 0, CONTROLLER_LAYER, obj_DebugConsole);
 }
+if(!instance_exists(obj_TrickController)) {
+	instance_create_layer(0, 0, CONTROLLER_LAYER, obj_TrickController);
+}
