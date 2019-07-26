@@ -10,6 +10,7 @@ var endRadius = argument1;
 var frameWithinAnim = argument2;
 var animSpeed = argument3;
 
+show_debug_message("Frame: " + string(frameWithinAnim) + " speed: " + string(animSpeed));
 var percentage = frameWithinAnim / animSpeed;
 
 return startRadius + ((endRadius - startRadius) * percentage);

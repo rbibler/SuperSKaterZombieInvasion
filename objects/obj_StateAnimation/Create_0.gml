@@ -12,3 +12,5 @@ currentSubstate = 0;
 currentIndex = 0;
 isDone = false;
 alternateComplete = true;
+lastFrameIndex = 0;
+animFrameCounter = 0;

@@ -254,6 +254,7 @@ railJumpBoost = 2;
 currentAirSpeedMax = 0;
 currentVehicle = NO_VEHICLE;
 canBoardVehicle = true;
+blastRadius = 0;
 
 scr_CheckForCheckpoint();
 
