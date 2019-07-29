@@ -407,6 +407,20 @@
             "value": "False",
             "varName": "noSlope",
             "varType": 3
+        },
+        {
+            "id": "146cc11e-6b11-45b5-be47-9b134b3d174a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "hitImmobileTime",
+            "varType": 0
         }
     ],
     "solid": false,

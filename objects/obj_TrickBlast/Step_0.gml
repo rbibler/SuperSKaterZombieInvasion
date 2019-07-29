@@ -1,9 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 frameCounter++;
-//x = obj_skater.x;
-//y = obj_skater.y;
+x += xSpeed;
+y += ySpeed;
 currentBlastRadius = floor(blastRadius * (frameCounter / blastDuration));
+var skaterImmune = false;
 if(frameCounter >= blastDuration) {
-	instance_destroy();
+	instance_destroy();	
+} else {
+	skaterImmune = true;
 }
+with(obj_skater) {
+	isImmune = skaterImmune;
+}
+
+
+scr_CheckForBlastRadiusHits(currentBlastRadius);

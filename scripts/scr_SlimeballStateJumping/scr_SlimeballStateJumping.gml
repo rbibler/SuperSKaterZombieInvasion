@@ -9,6 +9,7 @@ if(stateNew) {
 	isAirborne = 0;
 	scr_StopXMotion();
 	scr_ZeroInputs();
+	harmless = false;
 }
 
 // UPDATE MOVEMENT AND COLLISIONS

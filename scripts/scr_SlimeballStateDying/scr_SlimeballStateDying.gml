@@ -1,0 +1,3 @@
+if(stateNew) {
+	harmless = true;
+}

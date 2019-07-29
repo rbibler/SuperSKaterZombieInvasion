@@ -10,6 +10,7 @@ if(stateNew) {
 	grounded = false;
 	scr_ZeroInputs();
 	moveDirOnRestart = xSpeed > 0 ? LEFT : RIGHT; 
+	harmless = true;
 }
 
 scr_MoveAndCollide();

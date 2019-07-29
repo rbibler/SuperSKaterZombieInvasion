@@ -4,3 +4,6 @@ blastDuration = 0;
 currentBlastRadius = 0;
 frameCounter = 0;
 
+xSpeed = 0;
+ySpeed = 0;
+

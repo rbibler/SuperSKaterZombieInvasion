@@ -37,7 +37,7 @@ if(global.debug == true) {
 	}
 }
 
-if(isImmune) {
+if(flashing) {
 	if(frameTimer mod 5 == 0) {
 		drawToggle = !drawToggle;
 	}

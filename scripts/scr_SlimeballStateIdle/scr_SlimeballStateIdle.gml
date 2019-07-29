@@ -5,6 +5,7 @@ if(stateNew) {
 	scr_ZeroInputs();
 }
 
+harmless = true;
 
 scr_MoveAndCollide();
 

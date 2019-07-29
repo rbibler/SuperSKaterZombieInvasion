@@ -1695,6 +1695,14 @@
             }
         },
         {
+            "Key": "489f75ee-6c2e-485b-afbe-34600e1f8545",
+            "Value": {
+                "id": "43d3090a-5f34-41f4-9ecc-e35c9586562a",
+                "resourcePath": "scripts\\scr_AmIDead\\scr_AmIDead.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "48a50626-05d8-4e75-bb74-3b386f2c4497",
             "Value": {
                 "id": "64047228-1847-46ff-8f31-825dd29676a0",
@@ -2391,6 +2399,14 @@
             }
         },
         {
+            "Key": "6665d692-849f-47de-bcc4-aca0d15f61c8",
+            "Value": {
+                "id": "957cdaf6-5ca0-44b9-a6b9-e0e42ac305ee",
+                "resourcePath": "scripts\\scr_CircleRectangle\\scr_CircleRectangle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "66a57d66-da9b-4433-80a6-3b632c6388ca",
             "Value": {
                 "id": "cf3792ef-823d-47f2-a3e6-78022c65769c",
@@ -3063,6 +3079,14 @@
             }
         },
         {
+            "Key": "84caa9c3-f191-4d15-a9f7-3e5f99913e77",
+            "Value": {
+                "id": "19796eb4-614a-4607-be41-e3730c355b28",
+                "resourcePath": "scripts\\scr_CheckForBlastRadiusHits\\scr_CheckForBlastRadiusHits.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "85c0896d-e590-480b-93ee-8b732df7afdf",
             "Value": {
                 "id": "0a23e34d-2585-45f4-95d5-0d29e53578e9",
@@ -3383,6 +3407,14 @@
             }
         },
         {
+            "Key": "9039f1a7-20ba-469b-9f8f-920ec34ff50a",
+            "Value": {
+                "id": "c34847c9-2b6b-4039-bf1d-2dc84dd7be19",
+                "resourcePath": "scripts\\scr_ZombieSailorHitScript\\scr_ZombieSailorHitScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "90669bf8-93ca-49e3-a084-d3e064a2c3e0",
             "Value": {
                 "id": "80a5a6d9-aa8e-4102-a5d5-0edb375825c3",
@@ -3683,6 +3715,14 @@
             "Value": {
                 "id": "f19b2773-1112-4a97-b951-d713c6224bf6",
                 "resourcePath": "scripts\\scr_PatrolParentStateFalling\\scr_PatrolParentStateFalling.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9ffe7304-25cb-46f4-92b3-cfc5fbad1c08",
+            "Value": {
+                "id": "13686c61-ee12-4a8a-8162-cbd109ac4d58",
+                "resourcePath": "scripts\\scr_ZombieSailorStateHitScript\\scr_ZombieSailorStateHitScript.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6175,6 +6215,7 @@
         "36f406b5-2266-497f-9ae5-c8c799e89709",
         "4d4d2332-e0a4-40fd-b917-d10a6d9029c1",
         "dac60550-6920-4d8e-a49a-9bb171948291",
+        "84caa9c3-f191-4d15-a9f7-3e5f99913e77",
         "3d68c0ae-b97d-4564-a6e3-c1059e692e39",
         "01ea4b44-cb92-4c2d-acd2-7d83f0d222db",
         "f829909d-5e29-433c-90cc-f2ab84483b4b",
@@ -6192,6 +6233,7 @@
         "a0a0f345-d037-4fe7-a6b8-3edde0b4f7f5",
         "d20ce40d-728a-4a5c-a5d7-380be2fe32a2",
         "ab5b5cdb-e631-4418-aaf2-04520cf1fbde",
+        "489f75ee-6c2e-485b-afbe-34600e1f8545",
         "d7329327-fead-435f-bfc9-6ca8e2936e58",
         "6258b6bd-22e2-4d8f-a993-3ac3b11e2aac",
         "8c4b283b-7605-4424-9114-a4638fc515a5",
@@ -6231,6 +6273,8 @@
         "d850e202-a0f6-47bb-b9ce-915e00ed8a72",
         "bb0cc5eb-666e-4cb7-841e-a6b791827750",
         "c0bf8cdc-1791-4e9e-9b32-e365f68d7819",
+        "9039f1a7-20ba-469b-9f8f-920ec34ff50a",
+        "9ffe7304-25cb-46f4-92b3-cfc5fbad1c08",
         "206d8dfd-3245-4e21-a39d-6141c1e55691",
         "7b9854e0-5d45-4604-a81f-f3a7906c1818",
         "e17c3b5d-50b7-441c-b13b-d3a003d4ab5d",
@@ -6386,6 +6430,7 @@
         "07326a30-c0b0-483a-9df2-16d3e982e70e",
         "9e64d3e4-873e-4db5-b436-41c930bf689c",
         "c5aebc23-f153-4760-a5c9-57923ac9fc64",
+        "6665d692-849f-47de-bcc4-aca0d15f61c8",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",

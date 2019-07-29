@@ -1,5 +1,6 @@
 if(stateNew) {
 	sprite_index = spr_SlimeballHit;
+	harmless = true;
 }
 
 

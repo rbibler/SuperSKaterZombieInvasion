@@ -73,3 +73,5 @@ shouldMove = true;
 characterHealth = 100;
 
 ignoreShield = false;
+
+harmless = false;

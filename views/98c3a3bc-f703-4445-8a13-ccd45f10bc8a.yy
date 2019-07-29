@@ -11,7 +11,8 @@
         "b25175d5-86bf-4b40-8183-9c794cf224f9",
         "36f406b5-2266-497f-9ae5-c8c799e89709",
         "4d4d2332-e0a4-40fd-b917-d10a6d9029c1",
-        "dac60550-6920-4d8e-a49a-9bb171948291"
+        "dac60550-6920-4d8e-a49a-9bb171948291",
+        "84caa9c3-f191-4d15-a9f7-3e5f99913e77"
     ],
     "filterType": "GMScript",
     "folderName": "TrickChecks",
