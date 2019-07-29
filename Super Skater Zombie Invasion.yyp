@@ -1311,6 +1311,14 @@
             }
         },
         {
+            "Key": "3964e91c-2d03-46da-b00d-c2d01a1f10bc",
+            "Value": {
+                "id": "417da392-6814-4bc7-ab37-ced1b0ce267a",
+                "resourcePath": "scripts\\scr_BlastRadiusTileCollision\\scr_BlastRadiusTileCollision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3985ed05-f2c0-4c58-a2f6-9f4b1951918f",
             "Value": {
                 "id": "7d2eb592-3767-4154-b7e7-6766240901ff",
@@ -5351,6 +5359,14 @@
             }
         },
         {
+            "Key": "df19e90d-3a1c-482d-8d1c-b2b839689c64",
+            "Value": {
+                "id": "363400bd-ee9d-47fb-aada-1c48792e1186",
+                "resourcePath": "views\\df19e90d-3a1c-482d-8d1c-b2b839689c64.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "df3375bd-9d6f-41ba-ba52-07f4ff4c60bc",
             "Value": {
                 "id": "07a9115d-ff4d-45a2-94b1-00d8a11e4962",
@@ -6217,6 +6233,7 @@
         "dac60550-6920-4d8e-a49a-9bb171948291",
         "84caa9c3-f191-4d15-a9f7-3e5f99913e77",
         "3d68c0ae-b97d-4564-a6e3-c1059e692e39",
+        "3964e91c-2d03-46da-b00d-c2d01a1f10bc",
         "01ea4b44-cb92-4c2d-acd2-7d83f0d222db",
         "f829909d-5e29-433c-90cc-f2ab84483b4b",
         "7ad484b5-20f1-4d83-8847-e5c5603abf79",

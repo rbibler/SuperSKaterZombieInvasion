@@ -16,3 +16,4 @@ with(obj_skater) {
 
 
 scr_CheckForBlastRadiusHits(currentBlastRadius);
+scr_BlastRadiusTileCollision(x, y, currentBlastRadius, xSpeed, ySpeed);
