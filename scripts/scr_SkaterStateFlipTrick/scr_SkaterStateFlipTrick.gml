@@ -10,7 +10,11 @@
 if(stateNew) {
 	scr_UpdateSkaterAnimation(scr_WhichTrick());
 	show_debug_message("new trick!");
-	scr_SpawnTrickBlast(currentTrick, x, y);
+	//scr_SpawnTrickBlast(currentTrick, x, y);
+	scr_ClearInputQueue();
+	canJump = -20;
+	jump = 0;
+	tricksSinceGrounded++;
 }
 
 
@@ -26,6 +30,10 @@ if(grounded) {
 }
 
 scr_MoveAndCollide();
+
+if(tricksSinceGrounded < 2 and scr_SkaterCheckJump()) {
+	scr_StateSwitch(s_JUMPING);
+}
 
 
 

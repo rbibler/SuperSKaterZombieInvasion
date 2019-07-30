@@ -28,6 +28,7 @@ if(grounded) {
 	// Skater can now jump
 	jump = 0;
 	canJump = 0;
+	tricksSinceGrounded = 0;
 	// Skater isn't moving down 
 	//StopYMotion();
 	
