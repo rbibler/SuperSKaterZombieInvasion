@@ -1871,6 +1871,14 @@
             }
         },
         {
+            "Key": "4f61a694-d10f-4ae2-91bf-70b271afc09e",
+            "Value": {
+                "id": "b372061a-6f8a-4e44-95c6-d158d2e63666",
+                "resourcePath": "scripts\\scr_SpawnKickflipBlast\\scr_SpawnKickflipBlast.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4fc6a28f-a6bb-4dce-ab6b-625e6c899aed",
             "Value": {
                 "id": "32d22237-3e0b-47c1-b5aa-abe9f3624766",
@@ -1939,6 +1947,14 @@
             "Value": {
                 "id": "f6007ddc-992a-44c4-aad0-2c0343be6d09",
                 "resourcePath": "scripts\\scr_DisplayDiamondCount\\scr_DisplayDiamondCount.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "53805860-5077-4d0a-babf-cd61ac84ff5d",
+            "Value": {
+                "id": "722df831-b0b6-4781-aab7-20b179206bf3",
+                "resourcePath": "scripts\\scr_GetTrickParam\\scr_GetTrickParam.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5031,6 +5047,14 @@
             }
         },
         {
+            "Key": "d2c6ce09-e43d-406b-aea9-6e2346769e66",
+            "Value": {
+                "id": "5caab44f-c8ee-4ddd-8a37-d369d858bb9a",
+                "resourcePath": "scripts\\scr_CheckForTrickBonus\\scr_CheckForTrickBonus.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d314375a-e814-42ef-8ef6-a9e06afca4fe",
             "Value": {
                 "id": "3a25529e-eb99-45a0-acda-d871e7b71527",
@@ -5059,6 +5083,14 @@
             "Value": {
                 "id": "c41e31cf-1288-4a25-8752-11f8d1e8b6c7",
                 "resourcePath": "scripts\\scr_ZombieSkaterStateDead\\scr_ZombieSkaterStateDead.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d4a2d9da-1808-4357-bfc2-fffecfce2af1",
+            "Value": {
+                "id": "aa7d653c-aa31-4c12-96b5-2b47d2dbf4c1",
+                "resourcePath": "scripts\\scr_IsAnimationDone\\scr_IsAnimationDone.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6194,6 +6226,7 @@
         "fd319d74-79b7-4dd4-8d4e-8ad4089dd097",
         "862a256b-67f8-4bb6-8429-979fb364f0f0",
         "66b4cb8f-e721-441d-8fcb-e47dd1abcf38",
+        "d2c6ce09-e43d-406b-aea9-6e2346769e66",
         "43526784-458c-47c6-a98f-2df1db5716ca",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "47c68ed6-e37c-4d6a-b55a-d3e672979ca1",
@@ -6256,7 +6289,9 @@
         "4d4d2332-e0a4-40fd-b917-d10a6d9029c1",
         "dac60550-6920-4d8e-a49a-9bb171948291",
         "84caa9c3-f191-4d15-a9f7-3e5f99913e77",
+        "53805860-5077-4d0a-babf-cd61ac84ff5d",
         "3d68c0ae-b97d-4564-a6e3-c1059e692e39",
+        "4f61a694-d10f-4ae2-91bf-70b271afc09e",
         "3964e91c-2d03-46da-b00d-c2d01a1f10bc",
         "01ea4b44-cb92-4c2d-acd2-7d83f0d222db",
         "f829909d-5e29-433c-90cc-f2ab84483b4b",
@@ -6480,6 +6515,7 @@
         "1d1e251f-7c2f-4e5c-bacb-a76519d19e7d",
         "7ff62360-2c79-4156-a99a-9d6e7ad7f221",
         "458356a1-7650-4142-9721-fcc7e41e25db",
+        "d4a2d9da-1808-4357-bfc2-fffecfce2af1",
         "4c39cd0f-8023-4b40-b128-976ecd31044b",
         "6f600f77-8cb9-481d-aa3b-a3595dd988bf",
         "af191699-7cb3-4dc6-b75a-525cd41d66de",

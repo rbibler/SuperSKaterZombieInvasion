@@ -11,7 +11,8 @@
         "e4c90f9f-6926-45ee-8c9f-75a8d949767b",
         "1d1e251f-7c2f-4e5c-bacb-a76519d19e7d",
         "7ff62360-2c79-4156-a99a-9d6e7ad7f221",
-        "458356a1-7650-4142-9721-fcc7e41e25db"
+        "458356a1-7650-4142-9721-fcc7e41e25db",
+        "d4a2d9da-1808-4357-bfc2-fffecfce2af1"
     ],
     "filterType": "GMScript",
     "folderName": "StateAnimations",

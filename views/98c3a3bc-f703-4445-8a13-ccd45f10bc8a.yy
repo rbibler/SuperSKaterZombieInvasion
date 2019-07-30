@@ -12,10 +12,13 @@
         "36f406b5-2266-497f-9ae5-c8c799e89709",
         "4d4d2332-e0a4-40fd-b917-d10a6d9029c1",
         "dac60550-6920-4d8e-a49a-9bb171948291",
-        "84caa9c3-f191-4d15-a9f7-3e5f99913e77"
+        "84caa9c3-f191-4d15-a9f7-3e5f99913e77",
+        "53805860-5077-4d0a-babf-cd61ac84ff5d",
+        "3d68c0ae-b97d-4564-a6e3-c1059e692e39",
+        "4f61a694-d10f-4ae2-91bf-70b271afc09e"
     ],
     "filterType": "GMScript",
-    "folderName": "TrickChecks",
+    "folderName": "TrickUtilities",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

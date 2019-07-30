@@ -7,14 +7,17 @@
 
 // Reset animation and grounded flags when entering state
 // Also add jump impetus to yspeed to make the skater jump
+
+var bonusConsumed = stateVar[0];
+
+
 if(stateNew) {
 	scr_UpdateSkaterAnimation(scr_WhichTrick());
 	show_debug_message("new trick!");
 	//scr_SpawnTrickBlast(currentTrick, x, y);
 	scr_ClearInputQueue();
-	canJump = -20;
-	jump = 0;
 	tricksSinceGrounded++;
+	bonusConsumed = false;
 }
 
 
@@ -30,10 +33,14 @@ if(grounded) {
 }
 
 scr_MoveAndCollide();
-
+if(!bonusConsumed) {
+	bonusConsumed = scr_CheckForTrickBonus();
+}
 if(tricksSinceGrounded < 2 and scr_SkaterCheckJump()) {
 	scr_StateSwitch(s_JUMPING);
 }
+
+stateVar[0] = bonusConsumed;
 
 
 
