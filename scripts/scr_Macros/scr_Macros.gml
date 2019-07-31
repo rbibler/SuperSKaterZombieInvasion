@@ -155,6 +155,12 @@
 #macro BLOCKS_LAYER				"Blocks"
 #macro VEHICLES_LAYER			"Vehicles"
 
+enum HIT_TYPE {
+	TRICK_BLAST = 0,
+	AMMO = 1,
+	BOARD = 2
+}
+
 enum ANIMATION {
 
 	NORMAL = 60 / 5,

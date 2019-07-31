@@ -14,6 +14,8 @@ switch(currentTrick) {
 	case KICKFLIP:
 		scr_SpawnKickflipBlast();
 	break;
+	case IMPOSSIBLE:
+		scr_SpawnImpossibleTrickBlast();
 	
 }
 return true;

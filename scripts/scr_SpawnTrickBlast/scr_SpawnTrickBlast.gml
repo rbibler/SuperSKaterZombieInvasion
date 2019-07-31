@@ -12,6 +12,9 @@ switch(trick) {
 	case KICKFLIP:
 		scr_SpawnTrickBlastProjectile(25, 0);
 	break;
+	case IMPOSSIBLE:
+		scr_SpawnImpossibleTrickBlast();
+	break;
 }
 
 //var trickParams = scr_GetTrickBlastParams(trick);

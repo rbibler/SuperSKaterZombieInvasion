@@ -64,6 +64,14 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
             "value": "scr_SlimeballStateDead"
+        },
+        {
+            "id": "f9616917-05bc-4ebf-93f7-bece8b8db431",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "eaf74d8d-0c34-4703-8677-cdf8faab29f6",
+            "value": "scr_ZombieSailorHitScript"
         }
     ],
     "parentObjectId": "3d722df8-120e-43a7-abff-d5e21430611a",

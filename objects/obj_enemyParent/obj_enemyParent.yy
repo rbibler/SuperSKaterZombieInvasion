@@ -421,6 +421,20 @@
             "value": "0",
             "varName": "hitImmobileTime",
             "varType": 0
+        },
+        {
+            "id": "eaf74d8d-0c34-4703-8677-cdf8faab29f6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "scr_EmptyAssScript",
+            "varName": "hitScript",
+            "varType": 5
         }
     ],
     "solid": false,
