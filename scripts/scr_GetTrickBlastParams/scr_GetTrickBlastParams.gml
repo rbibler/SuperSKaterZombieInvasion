@@ -5,6 +5,8 @@ switch(trick) {
 		return obj_TrickController.kickflipTrickParams;
 	case SHOVE_IT:
 		return obj_TrickController.shoveItTrickParams;
+	case IMPOSSIBLE:
+		return obj_TrickController.impossibleTrickParams;
 	default:
 		return 0;
 }

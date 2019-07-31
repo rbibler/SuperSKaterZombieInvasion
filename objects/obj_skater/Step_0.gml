@@ -20,13 +20,13 @@ verticalMovementRun = false;
 
 jumpInputBuffer--;
 trickPressedTimer--;
-directionButtonTimer--;
 
 if(isImmune) {
 	if(frameTimer - immuneStart >= (immunityLengthInSeconds * room_speed)) {
 		isImmune = false;
 	}
 }
+
 // Get the user's input. 
 scr_SkaterInput();
 scr_CheckForWeaponSwitch();
@@ -57,7 +57,6 @@ if(input[DOWN]) {
 if(!input[SHOOT]) {
 	shootCounter = 0;
 }
-
 
 // Impart gravity and limit the skater's terminal velocity
 

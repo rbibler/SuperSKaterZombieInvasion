@@ -11,8 +11,6 @@ shootCounter = 0;
 speedAtJump = 0;
 slopeCounter = 0;
 currentTrick = NO_TRICK;
-trickPressedTimer = 0;
-directionButtonTimer = 0;
 flashing = false;
 tricksSinceGrounded = 0;
 
@@ -61,13 +59,8 @@ inputDownTime[JUMP] = 0;
 inputDownTime[TRANSITION] = 0;
 inputDownTime[ACTION] = 0;
 
-inputPressTime[SHOOT] = 0;
-
 scr_SetupInputQueue();
 
-
-tileColliderX = 0;
-tileColliderY = 0;
 
 // Initialize an array to hold the input from the last frame
 for(var i = 0; i < 10; i++) {
@@ -254,6 +247,7 @@ railJumpBoost = 2;
 currentAirSpeedMax = 0;
 currentVehicle = NO_VEHICLE;
 canBoardVehicle = true;
+trickPressedTimer = 0;
 
 scr_CheckForCheckpoint();
 
