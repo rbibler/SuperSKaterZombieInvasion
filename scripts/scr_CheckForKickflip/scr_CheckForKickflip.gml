@@ -10,14 +10,8 @@ for(var i = 0; i < inputsInQueue; i++) {
 	switch(curStep) {
 		case 0:
 		// When facing right, forward is right
-			if(facing == 1) {
-				if(scr_CheckInputPressed(curInput, INPUT_RIGHT) and !scr_CheckInputPressed(lastInput, INPUT_RIGHT)) {
-					curStep++;
-				}
-			} else if(facing == -1) {
-				if(scr_CheckInputPressed(curInput, INPUT_LEFT) and !scr_CheckInputPressed(lastInput, INPUT_LEFT)) {
-					curStep++;
-				}
+			if(scr_CheckDirectionInput(FORWARD, curInput, lastInput, true)) {
+				curStep++;
 			}
 		break;
 		case 1:

@@ -7,6 +7,8 @@ switch(currentTrick) {
 	return shoveItAnim;
 	case IMPOSSIBLE:
 	return impossibleAnim;
+	case MCTWIST:
+	return mctwistAnim;
 	default:
 	return jumpAnim;
 }

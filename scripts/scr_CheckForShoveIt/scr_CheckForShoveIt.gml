@@ -9,8 +9,8 @@ for(var i = 0; i < inputsInQueue; i++) {
 	}
 	switch(curStep) {
 		case 0:
-		if(scr_CheckInputPressed(curInput, INPUT_DOWN) and !scr_CheckInputPressed(lastInput, INPUT_DOWN)) {
-					curStep++;
+		if(scr_CheckDirectionInput(DOWN, curInput, lastInput, true)) {
+			curStep++;
 		}
 		break;
 		case 1:

@@ -36,6 +36,11 @@
 #macro INPUT_RIGHT		0x08		// 1000
 #macro INPUT_TRICK		0x200		// 1000000000
 
+// Trick directional input
+#macro FORWARD	0x04
+#macro BACK		0x08
+
+
 // Horizontal Collision Point Indexes
 #macro HC_TOP		0
 #macro HC_BOTTOM	1
@@ -98,6 +103,7 @@
 #macro SHOVE_IT					1
 #macro KICKFLIP					2
 #macro IMPOSSIBLE				3
+#macro MCTWIST					4
 
 // Collision Points
 #macro LEFT_CORNER				0
