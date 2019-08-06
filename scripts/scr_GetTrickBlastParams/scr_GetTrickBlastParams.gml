@@ -7,6 +7,8 @@ switch(trick) {
 		return obj_TrickController.shoveItTrickParams;
 	case IMPOSSIBLE:
 		return obj_TrickController.impossibleTrickParams;
+		case MCTWIST:
+		return obj_TrickController.mctwistTrickParams;
 	default:
 		return 0;
 }

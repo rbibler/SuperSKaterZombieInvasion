@@ -11,7 +11,8 @@
         "7755fc4f-4918-401e-9924-2570275beada",
         "1ca2d8b5-5b40-4d22-8778-d9b1cf8d7b84",
         "4a7a6eae-0372-425e-bf7b-22e44922bc94",
-        "1eb1b488-e7c0-4950-a2dc-2223883f1cbd"
+        "1eb1b488-e7c0-4950-a2dc-2223883f1cbd",
+        "c91cedf6-c66d-4b7e-b002-ce1e51a0394e"
     ],
     "filterType": "GMScript",
     "folderName": "InputUtilities",
