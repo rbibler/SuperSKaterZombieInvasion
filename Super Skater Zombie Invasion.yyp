@@ -6229,6 +6229,14 @@
                 "resourcePath": "objects\\obj_phantomBlock\\obj_phantomBlock.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "ffc6a28b-a541-45a8-858d-19ae31fbaa4b",
+            "Value": {
+                "id": "1797df10-e9ea-4ca9-a948-ffb439807db2",
+                "resourcePath": "scripts\\scr_SetupTrickInputs\\scr_SetupTrickInputs.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
@@ -6353,6 +6361,7 @@
         "0b23cad1-2aa5-4236-b519-9f3641d78f4f",
         "aa057ca3-b9f7-460a-a63a-34d4c1339a2b",
         "8551ea39-c27e-49c6-a171-0cd9c897da8a",
+        "ffc6a28b-a541-45a8-858d-19ae31fbaa4b",
         "3964e91c-2d03-46da-b00d-c2d01a1f10bc",
         "01ea4b44-cb92-4c2d-acd2-7d83f0d222db",
         "f829909d-5e29-433c-90cc-f2ab84483b4b",

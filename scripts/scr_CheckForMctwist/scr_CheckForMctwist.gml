@@ -1,20 +1,36 @@
-// Check for Impossible: TR -> U -> F -> D -> B
 var curInput = 0;
-var back = -1;
-var down = -1;
-var trick = -1;
+var previousInput = 0;
 
-var inputValues = scr_ProcessInputQueue();
-var trick = inputValues[TRICK];
-var down = inputValues[DOWN];
-var back = inputValues[BACK];
+var downPressed = -1;
+var upPressed = -1;
+var backPressed = -1;
+var forwardPressed = -1;
 
+for(var i = 0; i < inputsInQueue - 1; i++) {
+	curInput = scr_PeekBufferFromLastWrite(i);
+	previousInput = scr_PeekBufferFromLastWrite(i + i);
+	if(scr_CheckDirectionInput(UP, curInput, previousInput, true)) {
+		upPressed = i;
+	}
 
-if(trick != -1) {
-	if(back != - 1 and down != -1) {
-		if(down <= back) {
-			return MCTWIST;
+	if(scr_CheckDirectionInput(DOWN, curInput, previousInput, true)) {
+		downPressed = i;
+	}
+	if(scr_CheckDirectionInput(FORWARD, curInput, previousInput, true)) {
+		forwardPressed = i;
+	}
+	if(scr_CheckDirectionInput(BACK, curInput, previousInput, true)) {
+		backPressed = i;
+	}
+	if(scr_CheckInputPressed(curInput, INPUT_TRICK) and  !scr_CheckInputPressed(previousInput, INPUT_TRICK)) {
+		if(downPressed < 0 or backPressed < 0 or forwardPressed < 0 or upPressed < 0) {
+			return false;
+		}
+		if(downPressed > backPressed and backPressed > upPressed and upPressed > forwardPressed) {
+			return true;
 		}
 	}
 }
-return NO_TRICK;
+
+return false;
+

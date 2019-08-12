@@ -1,29 +1,39 @@
-// Check for Impossible: TR -> U -> F
 var curInput = 0;
-var lastInput = 0;
-var curStep = 0;
-for(var i = 0; i < inputsInQueue; i++) {
+var previousInput = 0;
+
+var downPressed = -1;
+var upPressed = -1;
+var backPressed = -1;
+var forwardPressed = -1;
+
+for(var i = 0; i < inputsInQueue - 1; i++) {
 	curInput = scr_PeekBufferFromLastWrite(i);
-	if(i < inputsInQueue - 1) {
-		lastInput = scr_PeekBufferFromLastWrite(i + 1);
+	previousInput = scr_PeekBufferFromLastWrite(i + i);
+	if(scr_CheckDirectionInput(UP, curInput, previousInput, true)) {
+		upPressed = i;
 	}
-	switch(curStep) {
-		case 0:
-		// When facing right, forward is right
-			if(scr_CheckDirectionInput(FORWARD, curInput, lastInput, true)) {
-				curStep++;
-			}
-		break;
-		case 1:
-			if(scr_CheckDirectionInput(UP, curInput, lastInput, true)) {
-				curStep++;
-			}
-		break;
-		case 2:
-			if(curInput & INPUT_TRICK) {
-				return IMPOSSIBLE;
-			}
-		break;
+
+	if(scr_CheckDirectionInput(DOWN, curInput, previousInput, true)) {
+		downPressed = i;
+	}
+	if(scr_CheckDirectionInput(FORWARD, curInput, previousInput, true)) {
+		forwardPressed = i;
+	}
+	if(scr_CheckDirectionInput(BACK, curInput, previousInput, true)) {
+		backPressed = i;
+	}
+	if(scr_CheckInputPressed(curInput, INPUT_TRICK) and  !scr_CheckInputPressed(previousInput, INPUT_TRICK)) {
+		if(backPressed or downPressed) {
+			return false;
+		}
+		if(upPressed < 0 or forwardPressed < 0) {
+			return false;
+		}
+		if(forwardPressed < upPressed) {
+			return true;
+		}
 	}
 }
-return NO_TRICK;
+
+return false;
+
