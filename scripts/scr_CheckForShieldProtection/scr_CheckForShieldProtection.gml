@@ -7,7 +7,7 @@ with(obj_skater) {
 	if(shielded or stateID == s_ON_FOOT_SHIELD) {
 		return true;
 	}
-	if(currentPowerup == PB_SHIELD and global.diamondCount > 0) {
+	if(currentPowerup == PB_SHIELD and global.juice > 0) {
 		scr_SetFacingSwitchEnable(false);
 		shielded = true;
 		scr_UpdateDiamondCount(-pbShieldCost);

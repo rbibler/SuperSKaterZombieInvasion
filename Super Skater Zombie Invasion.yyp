@@ -3503,6 +3503,14 @@
             }
         },
         {
+            "Key": "90d68c00-944d-4e31-9b52-b205dcddc33e",
+            "Value": {
+                "id": "70b47593-91d7-4fa0-8f18-67113aeeb189",
+                "resourcePath": "scripts\\scr_SpawnMctwistBlast\\scr_SpawnMctwistBlast.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9172f944-1520-4ab2-aded-d680cc4438bc",
             "Value": {
                 "id": "9c29ac65-f575-4e77-9e8e-2e8d547f722c",
@@ -6362,6 +6370,7 @@
         "aa057ca3-b9f7-460a-a63a-34d4c1339a2b",
         "8551ea39-c27e-49c6-a171-0cd9c897da8a",
         "ffc6a28b-a541-45a8-858d-19ae31fbaa4b",
+        "90d68c00-944d-4e31-9b52-b205dcddc33e",
         "3964e91c-2d03-46da-b00d-c2d01a1f10bc",
         "01ea4b44-cb92-4c2d-acd2-7d83f0d222db",
         "f829909d-5e29-433c-90cc-f2ab84483b4b",

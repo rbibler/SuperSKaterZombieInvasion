@@ -70,7 +70,7 @@ if(abs(xSpeed) > 0 and !input[LEFT] and !input[RIGHT]) {
 scr_MoveAndCollide();
 scr_SkaterLadderCollisions();
 
-if(stateTimer >= 30 or !input[JUMP] or global.diamondCount <= 0) {
+if(stateTimer >= 30 or !input[JUMP] or global.juice <= 0) {
 	scr_StopYMotion();
 	if(wasSkating) {
 		scr_StateSwitch(s_FALLING);

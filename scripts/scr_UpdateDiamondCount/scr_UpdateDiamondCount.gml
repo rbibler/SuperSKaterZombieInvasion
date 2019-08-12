@@ -1,11 +1,11 @@
 var amountToChange = argument0;
 
-global.diamondCount += amountToChange;
+global.juice += amountToChange;
 
-if(global.diamondCount < 0) {
-	global.diamondCount = 0;
+if(global.juice < 0) {
+	global.juice = 0;
 }
 
-if(global.diamondCount > 100) {
-	global.diamondCount = 100;
+if(global.juice > 100) {
+	global.juice = 100;
 }

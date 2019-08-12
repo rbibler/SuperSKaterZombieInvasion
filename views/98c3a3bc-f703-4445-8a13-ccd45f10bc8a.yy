@@ -20,7 +20,8 @@
         "0b23cad1-2aa5-4236-b519-9f3641d78f4f",
         "aa057ca3-b9f7-460a-a63a-34d4c1339a2b",
         "8551ea39-c27e-49c6-a171-0cd9c897da8a",
-        "ffc6a28b-a541-45a8-858d-19ae31fbaa4b"
+        "ffc6a28b-a541-45a8-858d-19ae31fbaa4b",
+        "90d68c00-944d-4e31-9b52-b205dcddc33e"
     ],
     "filterType": "GMScript",
     "folderName": "TrickUtilities",

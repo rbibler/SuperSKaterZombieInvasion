@@ -8,6 +8,6 @@ var yPos = argument1;
 xPos -= 210
 yPos += 42;
 
-var diamondCount = global.diamondCount;
+var diamondCount = global.juice;
 var index = 20 - floor((diamondCount / 100) * 20);
 draw_sprite(spr_DiamondStatusBar, index, xPos, yPos);

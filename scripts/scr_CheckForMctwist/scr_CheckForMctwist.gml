@@ -23,10 +23,10 @@ for(var i = 0; i < inputsInQueue - 1; i++) {
 		backPressed = i;
 	}
 	if(scr_CheckInputPressed(curInput, INPUT_TRICK) and  !scr_CheckInputPressed(previousInput, INPUT_TRICK)) {
-		if(downPressed < 0 or backPressed < 0 or forwardPressed < 0 or upPressed < 0) {
+		if(downPressed < 0 or backPressed < 0 ) {
 			return false;
 		}
-		if(downPressed > backPressed and backPressed > upPressed and upPressed > forwardPressed) {
+		if(downPressed > backPressed ) {
 			return true;
 		}
 	}

@@ -7,5 +7,6 @@
 #macro TRICK_BLAST_X_SPEED_INDEX	4
 #macro TRICK_BLAST_Y_SPEED_INDEX	5
 #macro TRICK_FRAMES_TIL_BONUS_INDEX	6
+#macro TRICK_JUICE					7
 scr_SetupTrickBlastRadii();
 scr_SetupTrickInputs();
