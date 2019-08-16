@@ -99,6 +99,7 @@ drownedState = scr_StateCreate(s_DROWNED, scr_SkaterStateDrowned);
 rollState = scr_StateCreate(s_ROLLING, scr_SkaterStateRolling);
 knockedBackState = scr_StateCreate(s_KNOCKED_BACK, scr_SkaterStateKnockedBack);
 floatState = scr_StateCreate(s_FLOATING, scr_SkaterStateFloating);
+attackState = scr_StateCreate(s_ATTACKING, scr_SkaterBoardPokeAttack);
 
 // Trick states
 trickFlipTrickState = scr_StateCreate(s_TRICK_FLIPTRICK, scr_SkaterStateFlipTrick);
@@ -140,8 +141,8 @@ hurtAnim = scr_RegisterStateAnimation(spr_SkaterTakeHit, NORMAL_ANIM_SPEED, true
 deadAnim = scr_RegisterStateAnimation(spr_SkaterDead, NORMAL_ANIM_SPEED, false, noone, "DEAD", sprite_get_number(spr_SkaterDead));
 drownAnim = scr_RegisterStateAnimation(spr_SkaterDrowned, NORMAL_ANIM_SPEED, false, noone, "DROWNED", sprite_get_number(spr_SkaterDrowned));
 teeterAnim = scr_RegisterStateAnimation(spr_SkaterTeetering, FAST_ANIM_SPEED, true, noone, "TEETERING", sprite_get_number(spr_SkaterTeetering));
-
-
+stationaryAttackAnim = scr_RegisterStateAnimation(spr_SkaterStationaryAttack, FAST_ANIM_SPEED, false, noone, "Stationary attack", sprite_get_number(spr_SkaterStationaryAttack));
+movingAttackAnim  = scr_RegisterStateAnimation(spr_SkaterMovingAttack, FAST_ANIM_SPEED, false, noone, "Moving attack", sprite_get_number(spr_SkaterMovingAttack));
 // Trick Animations
 kickflipAnim = scr_RegisterStateAnimation(spr_SkaterTrickKickflip, FAST_ANIM_SPEED, false, noone, "KICKFLIP", sprite_get_number(spr_SkaterTrickKickflip));
 shoveItAnim = scr_RegisterStateAnimation(spr_SkaterTrickShoveIt, FAST_ANIM_SPEED, false, noone, "SHOVE_IT", sprite_get_number(spr_SkaterTrickShoveIt));

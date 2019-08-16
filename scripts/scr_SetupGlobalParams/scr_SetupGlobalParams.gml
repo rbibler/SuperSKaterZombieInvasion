@@ -22,3 +22,4 @@ global.gridY = 8;
 global.debug = false;
 global.lastCheckpoint = noone;
 
+global.godmode = false;

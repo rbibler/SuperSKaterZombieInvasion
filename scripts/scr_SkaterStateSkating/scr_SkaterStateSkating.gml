@@ -86,6 +86,8 @@ if(scr_SkaterCheckJump()) {
 	}
 }
 
+scr_CheckForAttack();
+
 
 
 

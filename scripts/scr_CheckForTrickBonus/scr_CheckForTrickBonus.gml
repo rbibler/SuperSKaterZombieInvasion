@@ -18,7 +18,7 @@ switch(currentTrick) {
 		scr_SpawnImpossibleTrickBlast();
 		break;
 	case MCTWIST:
-		scr_SpawnMctwistBlast();
+		scr_SpawnMctwistBlast(x, y);
 	break;
 	
 }

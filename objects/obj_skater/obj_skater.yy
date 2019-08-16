@@ -640,6 +640,20 @@
             "value": "60",
             "varName": "inputQueueCapacity",
             "varType": 0
+        },
+        {
+            "id": "9417588e-a3bd-4810-aeaf-5644feef636b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "25",
+            "varName": "boardPokeStrength",
+            "varType": 0
         }
     ],
     "solid": false,

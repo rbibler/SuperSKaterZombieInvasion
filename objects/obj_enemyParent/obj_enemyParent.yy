@@ -255,20 +255,6 @@
             "varType": 5
         },
         {
-            "id": "f9448d38-2855-49df-8712-104184c05fdc",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "scr_EmptyAssScript",
-            "varName": "stateBoardStruckScript",
-            "varType": 5
-        },
-        {
             "id": "6223a832-52ea-47dc-8174-713fe5676f03",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -297,20 +283,6 @@
             "varType": 5
         },
         {
-            "id": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "hitByAmmoScript",
-            "varType": 5
-        },
-        {
             "id": "54427283-bc64-40b4-bcef-3427097bb49b",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -323,20 +295,6 @@
             "value": "0",
             "varName": "attackThreshold",
             "varType": 0
-        },
-        {
-            "id": "5eaae57f-b022-4bdb-9b63-088d61a795b0",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "boardSmackedScript",
-            "varType": 5
         },
         {
             "id": "42a11090-6df9-451f-8997-4a9e2bfef87c",
@@ -423,7 +381,7 @@
             "varType": 0
         },
         {
-            "id": "eaf74d8d-0c34-4703-8677-cdf8faab29f6",
+            "id": "7d25bbfb-4b0f-4ccf-9712-9317f8be3452",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -432,7 +390,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_EmptyAssScript",
+            "value": "scr_EnemyGenericHitScript",
             "varName": "hitScript",
             "varType": 5
         }
