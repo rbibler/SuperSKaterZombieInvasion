@@ -21,12 +21,6 @@ verticalMovementRun = false;
 jumpInputBuffer--;
 trickPressedTimer--;
 
-if(isImmune) {
-	if(frameTimer - immuneStart >= (immunityLengthInSeconds * room_speed)) {
-		isImmune = false;
-	}
-}
-
 // Get the user's input. 
 scr_SkaterInput();
 scr_CheckForWeaponSwitch();
@@ -74,9 +68,9 @@ if(input[TRICK]) {
 	trickPressedTimer = 10;
 }
 
-if(grounded) {
-	scr_ClearInputQueue();
-}
+//if(grounded) {
+	//scr_ClearInputQueue();
+//}
 
 if(global.debug) {
 	show_debug_message("    State: " + string(stateID));
@@ -86,6 +80,16 @@ horizontalCollisionResponseScript = scr_BasicHorizCollisionResponse;
 
 // The real fun happens in the state machine
 scr_StateExecute();
+if(scr_AmIVulnerable()) {
+	var enemyThatMayHaveHitMe = scr_HaveIBeenHIt();
+	if(enemyThatMayHaveHitMe != noone) {
+		scr_SkaterHit(enemyThatMayHaveHitMe, 0);
+	}
+}
+
+
+
+
 if(shouldAnimate) {
 	scr_UpdateStateAnimation(currentAnimation);
 }

@@ -161,6 +161,10 @@
 #macro INTERACTIVES_LAYER		"Interactives"
 #macro BLOCKS_LAYER				"Blocks"
 #macro VEHICLES_LAYER			"Vehicles"
+#macro EFFECTS_LAYER			"Effects"
+
+// Alarm constants
+#macro IMMUNITY_ALARM			8
 
 enum HIT_TYPE {
 	TRICK_BLAST = 0,

@@ -4,4 +4,10 @@ if(state == s_DEAD or state == s_HIT or stateNext == s_DEAD or stateNext == s_HI
 	return false;
 }
 
+if(object_index == obj_skater) {
+	if(isImmune) {
+		return false;
+	}
+}
+
 return true;

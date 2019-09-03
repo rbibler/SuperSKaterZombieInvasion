@@ -55,26 +55,6 @@
             "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
         },
         {
-            "id": "a2a9ccf8-43ce-4736-947d-bee0b89ebdb1",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
-        },
-        {
-            "id": "18006a5c-97b8-48d6-8be0-eb47ae654ec5",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "07ec105c-dcf1-4207-8a4b-daf59ab88154",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
-        },
-        {
             "id": "68527364-ba3c-4b68-a2db-5c8e7997fb97",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -653,6 +633,34 @@
             "resourceFilter": 1023,
             "value": "25",
             "varName": "boardPokeStrength",
+            "varType": 0
+        },
+        {
+            "id": "df95544a-fb41-4bb4-bcb2-1390ae72355b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "60",
+            "varName": "immunityTimeAfterAttack",
+            "varType": 0
+        },
+        {
+            "id": "e9f66e97-a297-499d-ae5a-1ba98e4bc53b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "15",
+            "varName": "attackBufferTime",
             "varType": 0
         }
     ],

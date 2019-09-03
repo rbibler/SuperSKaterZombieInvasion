@@ -4,6 +4,7 @@ if(trick != NO_TRICK) {
 	if(global.juice >= howMuchJuice) {
 		scr_UpdateDiamondCount(howMuchJuice);
 		currentTrick = trick;
+		
 		scr_StateSwitch(s_TRICK_FLIPTRICK);
 	}
 	

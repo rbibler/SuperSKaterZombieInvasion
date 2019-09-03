@@ -1,5 +1,6 @@
 /// This is a script that the skater uses to help him figure out what to do when he's attack without moving
 
+
 if(stateNew) {
 	if(abs(xSpeed) < 0.5) {
 		scr_UpdateSkaterAnimation(stationaryAttackAnim);
@@ -8,6 +9,7 @@ if(stateNew) {
 	}
 	ds_list_clear(boardSmacked);
 }
+isImmune = true;
 
 // Check how fast the skater should be moving
 scr_SkaterHorizontalImpetus();
@@ -33,12 +35,21 @@ if(enemyHits > 0) {
 }
 ds_list_destroy(hitList);
 
+var stateToChangeTo = -1;
 
+if(scr_SkaterCheckJump()) {
+	stateToChangeTo = s_JUMPING;
+}
 
 if(currentAnimation.isDone) {
 	if(abs(xSpeed) > 0.5) {
-		scr_StateSwitch(s_MOVING);
+		stateToChangeTo = s_MOVING;
 	} else {
-		scr_StateSwitch(s_IDLE);
+		stateToChangeTo = s_IDLE;
 	}
+}
+
+if(stateToChangeTo >= 0) {
+	scr_StateSwitch(stateToChangeTo);
+	scr_SetImmunityTime(immunityTimeAfterAttack);
 }

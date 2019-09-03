@@ -1,7 +1,6 @@
 if(input[ACTION] and !lastInput[ACTION]) {
-	//if(abs(xSpeed) < 0.5) {
-		scr_StateSwitch(s_ATTACKING);
-	//} else {
-	//	scr_StateSwitch(s_JOUSTING);
-	//}
+	show_debug_message("IT is here");
+}
+if(scr_HaveIPressedThisRecently(INPUT_TRICK, attackBufferTime)) {
+	scr_StateSwitch(s_ATTACKING);
 }

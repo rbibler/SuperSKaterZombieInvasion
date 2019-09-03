@@ -22,4 +22,5 @@ switch(currentTrick) {
 	break;
 	
 }
+scr_SpawnEffect(obj_SparkleEffect);
 return true;
