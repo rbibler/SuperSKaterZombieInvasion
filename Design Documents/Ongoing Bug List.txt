@@ -1,0 +1,9 @@
+Bugs:
+	- [8/27/2019] Jumping while holding down trick and forward automatically triggers a kickflip. It should only trigger if the foward press is new. 
+		- Resolved: [9/4/2019]
+	- [8/27/2019] Not immune when attacking THIS IS NOT A BUG ANYMORE!
+		- Resolved: [8/28/2019]
+
+Feature:
+	- [8/27/2019] Add a bit of cushion to the attack button so that if player presses attack in air and lands soon after, they'll attack I'VE DONE THIS!
+		- Resolved: [9/3/2019]

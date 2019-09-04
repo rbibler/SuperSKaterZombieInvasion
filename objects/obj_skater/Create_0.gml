@@ -249,7 +249,7 @@ currentAirSpeedMax = 0;
 currentVehicle = NO_VEHICLE;
 canBoardVehicle = true;
 trickPressedTimer = 0;
-
+framesSinceGround = 0;
 scr_CheckForCheckpoint();
 
 

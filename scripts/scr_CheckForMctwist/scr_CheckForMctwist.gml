@@ -23,7 +23,7 @@ for(var i = 0; i < inputsInQueue - 1; i++) {
 		backPressed = i;
 	}
 	if(scr_CheckInputPressed(curInput, INPUT_TRICK) and  !scr_CheckInputPressed(previousInput, INPUT_TRICK)) {
-		if(downPressed < 0 or backPressed < 0 ) {
+		if(downPressed < 0 or backPressed < 0 or forwardPressed or upPressed) {
 			return false;
 		}
 		if(downPressed > backPressed ) {

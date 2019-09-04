@@ -60,6 +60,10 @@ if(ySpeed >= maxYSpeed) {
 }
 
 scr_GeneralCheckGrounded();
+framesSinceGround++;
+if(grounded) {
+	framesSinceGround = 0;
+}
 if(input[JUMP] and !lastInput[JUMP] and !grounded) {
 	jumpInputBuffer = 10;
 }

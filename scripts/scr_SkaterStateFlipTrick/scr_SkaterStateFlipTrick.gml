@@ -14,8 +14,6 @@ var bonusConsumed = stateVar[0];
 if(stateNew) {
 	scr_UpdateSkaterAnimation(scr_WhichTrick());
 	show_debug_message("new trick!");
-	//scr_SpawnTrickBlast(currentTrick, x, y);
-	scr_ClearInputQueue();
 	tricksSinceGrounded++;
 	bonusConsumed = false;
 }

@@ -23,7 +23,6 @@ if(stateNew) {
 	grounded = false;
 	speedAtJump = abs(xSpeed);
 	currentAirSpeedMax = scr_CalculateCurrentMaxAirSpeed();
-	scr_ClearInputQueue();
 }
 
 
