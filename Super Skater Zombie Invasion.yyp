@@ -5327,6 +5327,14 @@
             }
         },
         {
+            "Key": "d79adefd-7d77-492e-9924-6306fbec62a5",
+            "Value": {
+                "id": "5792bf3c-dadb-4fc8-9031-f7ac25e3c87c",
+                "resourcePath": "scripts\\scr_CheckDoubleJump\\scr_CheckDoubleJump.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d7c5a7d0-463e-4734-a8c1-46b8d002b780",
             "Value": {
                 "id": "ba2a2c52-1c2e-4daf-8f5b-23b1f7920d30",
@@ -6493,6 +6501,7 @@
         "8551ea39-c27e-49c6-a171-0cd9c897da8a",
         "ffc6a28b-a541-45a8-858d-19ae31fbaa4b",
         "90d68c00-944d-4e31-9b52-b205dcddc33e",
+        "d79adefd-7d77-492e-9924-6306fbec62a5",
         "3964e91c-2d03-46da-b00d-c2d01a1f10bc",
         "543b977a-1266-4b9a-80aa-311f000fa8d1",
         "94c27466-e1c0-4f70-8db5-7646ccf6702a",

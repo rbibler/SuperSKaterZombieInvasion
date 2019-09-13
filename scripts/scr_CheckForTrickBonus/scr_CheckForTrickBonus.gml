@@ -5,12 +5,8 @@ if(currentAnimFrame <= framesTilBonus) {
 	return false;
 }
 
-
+scr_CheckDoubleJump();
 switch(currentTrick) {
-	case SHOVE_IT:
-		canJump = -20;
-		jump = 0;
-	break;
 	case KICKFLIP:
 		scr_SpawnKickflipBlast();
 	break;
@@ -22,5 +18,5 @@ switch(currentTrick) {
 	break;
 	
 }
-scr_SpawnEffect(obj_SparkleEffect);
+
 return true;

@@ -14,6 +14,8 @@ currentTrick = NO_TRICK;
 flashing = false;
 tricksSinceGrounded = 0;
 
+doubleJumpIncrement = 0;
+
 /// @description Insert description here
 // You can write your code in this editor
 
@@ -185,6 +187,9 @@ currentVehicle = NO_VEHICLE;
 canBoardVehicle = true;
 trickPressedTimer = 0;
 framesSinceGround = 0;
+
+doubleJumpMeter = 100;
+
 scr_CheckForCheckpoint();
 
 

@@ -190,6 +190,10 @@ enum WEAPONSTATES {
 	FIRING = 2
 }
 
+enum Alarms {
+	DoubleJumpAlarm = 1
+}
+
 
 
 
