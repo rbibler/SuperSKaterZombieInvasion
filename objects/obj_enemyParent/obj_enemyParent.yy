@@ -43,16 +43,6 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "3d7b2056-82b8-4245-adf2-020b7fa8bb32"
-        },
-        {
-            "id": "59245507-49a8-49a9-9d79-9ffe8b456c6d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "76e1c1b3-92cf-4e45-b913-c7d07eeaadad",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "3d7b2056-82b8-4245-adf2-020b7fa8bb32"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -255,20 +245,6 @@
             "varType": 5
         },
         {
-            "id": "f9448d38-2855-49df-8712-104184c05fdc",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "scr_EmptyAssScript",
-            "varName": "stateBoardStruckScript",
-            "varType": 5
-        },
-        {
             "id": "6223a832-52ea-47dc-8174-713fe5676f03",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -297,20 +273,6 @@
             "varType": 5
         },
         {
-            "id": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "hitByAmmoScript",
-            "varType": 5
-        },
-        {
             "id": "54427283-bc64-40b4-bcef-3427097bb49b",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -323,20 +285,6 @@
             "value": "0",
             "varName": "attackThreshold",
             "varType": 0
-        },
-        {
-            "id": "5eaae57f-b022-4bdb-9b63-088d61a795b0",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "boardSmackedScript",
-            "varType": 5
         },
         {
             "id": "42a11090-6df9-451f-8997-4a9e2bfef87c",
@@ -407,6 +355,48 @@
             "value": "False",
             "varName": "noSlope",
             "varType": 3
+        },
+        {
+            "id": "146cc11e-6b11-45b5-be47-9b134b3d174a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "hitImmobileTime",
+            "varType": 0
+        },
+        {
+            "id": "7d25bbfb-4b0f-4ccf-9712-9317f8be3452",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "scr_EnemyGenericHitScript",
+            "varName": "hitScript",
+            "varType": 5
+        },
+        {
+            "id": "ef611fef-6a9b-4e61-8479-325ef6d9d322",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "characterHealth",
+            "varType": 0
         }
     ],
     "solid": false,

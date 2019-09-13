@@ -58,7 +58,7 @@ if(input[TRANSITION] and !lastInput[TRANSITION]) {
 }
 
 
-var railHeight = scr_CheckOnRail(x, bbox_bottom + ySpeed);
+/*var railHeight = scr_CheckOnRail(x, bbox_bottom + ySpeed);
 if(railHeight != -1) {
 	if(input[ACTION] and railGrindButtonPressTimer <= railGrindButtonPressThreshold) {
 		var tileStart = floor((bbox_bottom + ySpeed) / TILE_SIZE) * TILE_SIZE;
@@ -67,4 +67,6 @@ if(railHeight != -1) {
 		scr_StateSwitch(s_GRINDING);
 		scr_StopYMotion();
 	}
-}
+}*/
+
+scr_TricksAreForKids();

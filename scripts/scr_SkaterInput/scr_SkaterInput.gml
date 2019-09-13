@@ -10,6 +10,7 @@ if(state == knockedBackState or ignoreInput == true) {
 
 scr_CheckKeyboardInput();
 scr_CheckGamepadInput();
+scr_UpdateInputQueue();
 
 
 if(!input[SHOOT] and lastInput[SHOOT]) {
@@ -20,4 +21,3 @@ if(input[SHOOT] and !lastInput[SHOOT]) {
 	inputPressTime[SHOOT] = frameTimer;
 }
 
-//input[RIGHT] = 1;

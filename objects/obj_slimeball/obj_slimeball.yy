@@ -54,14 +54,6 @@
             "value": "0.5"
         },
         {
-            "id": "43fa1b42-f748-479e-afc9-f832364c4fac",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
-            "value": "scr_SlimeballHitByAmmo"
-        },
-        {
             "id": "a1297a95-29d7-4d3c-b7ea-1482c7771da7",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -92,14 +84,6 @@
             "objectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
             "propertyId": "d2076d68-0b30-401c-af69-e1e7331b0585",
             "value": "-8"
-        },
-        {
-            "id": "e53f5203-587e-453f-9016-672d65c085f0",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "5eaae57f-b022-4bdb-9b63-088d61a795b0",
-            "value": "scr_SlimeballBoardStrike"
         },
         {
             "id": "bf440f45-66f5-4b86-a5f1-88993d681114",
@@ -148,14 +132,6 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
             "value": "scr_SlimeballStateDead"
-        },
-        {
-            "id": "abb4d011-6f37-48db-a231-391049285c23",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "f9448d38-2855-49df-8712-104184c05fdc",
-            "value": "scr_SlimeballStateBoardStruck"
         },
         {
             "id": "11a81b1a-3c9a-4ee9-93e4-fdd42d9a4ffc",
@@ -220,6 +196,22 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "b03e31f2-7d82-454a-bd6e-20ebd23fdeeb",
             "value": "scr_SlimeballStateDefending"
+        },
+        {
+            "id": "9a04bb27-46e5-485f-9fea-6b44dc66fc33",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "7d25bbfb-4b0f-4ccf-9712-9317f8be3452",
+            "value": "scr_SomethingHitMe_Slimeball"
+        },
+        {
+            "id": "2a6b080e-c27e-41f5-86e7-ddf832c208c7",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "ef611fef-6a9b-4e61-8479-325ef6d9d322",
+            "value": "1"
         }
     ],
     "parentObjectId": "3d722df8-120e-43a7-abff-d5e21430611a",
@@ -291,6 +283,20 @@
             "resourceFilter": 1023,
             "value": ".33",
             "varName": "wiggleLengthInSeconds",
+            "varType": 0
+        },
+        {
+            "id": "0dc3de64-91a1-46bc-949f-6ed00c9ba740",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "6",
+            "varName": "boardSmackSpeed",
             "varType": 0
         }
     ],

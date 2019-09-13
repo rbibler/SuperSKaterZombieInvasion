@@ -8,9 +8,6 @@ var color = c_white;
 
 
 if(global.debug == true) {
-	var xStart = tileColliderX * 16;
-	var yStart = tileColliderY * 16;
-	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, c_red);
 	/*switch(stateID) {
 		case s_IDLE:
 			color = c_white;
@@ -37,7 +34,7 @@ if(global.debug == true) {
 	}
 }
 
-if(isImmune) {
+if(flashing) {
 	if(frameTimer mod 5 == 0) {
 		drawToggle = !drawToggle;
 	}
@@ -48,6 +45,7 @@ if(isImmune) {
 if(drawToggle) {
 	draw_sprite_ext(sprite_index, image_index, round(x) + drawOffsetX, round(y) + drawOffsetY, image_xscale, image_yscale, 0, color, 1);
 }
+
 
 
 

@@ -47,6 +47,10 @@ if(slopeTouchTimer < -3) {
 	yMomentum = 0;
 }
 
+if(input[LEFT] or input[RIGHT]) {
+	directionButtonTimer = 20;
+}
+
 if(onSlope) {
 	if(sign(xSpeed) == sign(lastXSpeed)) {
 		slopeCounter++;

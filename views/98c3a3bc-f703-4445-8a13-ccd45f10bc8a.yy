@@ -1,0 +1,30 @@
+{
+    "id": "98c3a3bc-f703-4445-8a13-ccd45f10bc8a",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "98c3a3bc-f703-4445-8a13-ccd45f10bc8a",
+    "children": [
+        "bd460c4c-c8ef-4016-85c9-f28577155cdf",
+        "166e2984-5c9e-4d25-b69c-9ef74783d282",
+        "b33499d1-71a4-4ddd-99c7-43b1f9e6384d",
+        "573b6563-891a-48dc-8a92-3e868d314655",
+        "b25175d5-86bf-4b40-8183-9c794cf224f9",
+        "36f406b5-2266-497f-9ae5-c8c799e89709",
+        "53d7d56e-c5eb-46d0-9269-0dcf5994fd2e",
+        "4d4d2332-e0a4-40fd-b917-d10a6d9029c1",
+        "dac60550-6920-4d8e-a49a-9bb171948291",
+        "84caa9c3-f191-4d15-a9f7-3e5f99913e77",
+        "53805860-5077-4d0a-babf-cd61ac84ff5d",
+        "3d68c0ae-b97d-4564-a6e3-c1059e692e39",
+        "4f61a694-d10f-4ae2-91bf-70b271afc09e",
+        "0b23cad1-2aa5-4236-b519-9f3641d78f4f",
+        "aa057ca3-b9f7-460a-a63a-34d4c1339a2b",
+        "8551ea39-c27e-49c6-a171-0cd9c897da8a",
+        "ffc6a28b-a541-45a8-858d-19ae31fbaa4b",
+        "90d68c00-944d-4e31-9b52-b205dcddc33e"
+    ],
+    "filterType": "GMScript",
+    "folderName": "TrickUtilities",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

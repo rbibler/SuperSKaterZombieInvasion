@@ -88,17 +88,17 @@ slopeHeights[SAND, 14] = 0
 slopeHeights[SAND, 15] = 0
 
 
-scr_SlopeTableGenerator(UP_SLOPE_LONG, 4, 1, 30, UP_SLOPE);
+scr_SlopeTableGenerator(UP_SLOPE_LONG, 4, 1, 31, UP_SLOPE);
 
 
 // Tile 9 (Upslope Long 2)
-scr_SlopeTableGenerator(UP_SLOPE_LONG + 1, 4, 1, 22, UP_SLOPE);
+scr_SlopeTableGenerator(UP_SLOPE_LONG + 1, 4, 1, 24, UP_SLOPE);
 
 // Tile 10 (Upslope long 3)
-scr_SlopeTableGenerator(UP_SLOPE_LONG + 2, 4, 1, 14, UP_SLOPE);
+scr_SlopeTableGenerator(UP_SLOPE_LONG + 2, 4, 1, 16, UP_SLOPE);
 
 // Tile 11 (Upslope long 4)
-scr_SlopeTableGenerator(UP_SLOPE_LONG + 3, 4, 1, 6, UP_SLOPE);
+scr_SlopeTableGenerator(UP_SLOPE_LONG + 3, 4, 1, 8, UP_SLOPE);
 
 // Tile 8 (Downslope long 1)
 scr_SlopeTableGenerator(DOWN_SLOPE_LONG, 4, 1, 0, DOWN_SLOPE);
@@ -113,10 +113,10 @@ scr_SlopeTableGenerator(DOWN_SLOPE_LONG + 2, 4, 1, 16, DOWN_SLOPE);
 scr_SlopeTableGenerator(DOWN_SLOPE_LONG + 3, 4, 1, 24, DOWN_SLOPE);
 
 // Tile 12 (Upslope medium 1)
-scr_SlopeTableGenerator(UP_SLOPE_MED, 2, 1, 30, UP_SLOPE);
+scr_SlopeTableGenerator(UP_SLOPE_MED, 2, 1, 31, UP_SLOPE);
 
 // Tile 13 (Upslope medium 2)
-scr_SlopeTableGenerator(UP_SLOPE_MED + 1, 2, 1, 14, UP_SLOPE);
+scr_SlopeTableGenerator(UP_SLOPE_MED + 1, 2, 1, 16, UP_SLOPE);
 
 // Tile 14 (Downslope medium 1)
 scr_SlopeTableGenerator(DOWN_SLOPE_MED, 2, 1, 0, DOWN_SLOPE);
@@ -125,7 +125,7 @@ scr_SlopeTableGenerator(DOWN_SLOPE_MED, 2, 1, 0, DOWN_SLOPE);
 scr_SlopeTableGenerator(DOWN_SLOPE_MED + 1, 2, 1, 16, DOWN_SLOPE);
 
 // Tile 16 (Upslope short 1)
-scr_SlopeTableGenerator(UP_SLOPE_SHORT, 1, 1, 30, UP_SLOPE);
+scr_SlopeTableGenerator(UP_SLOPE_SHORT, 1, 1, 31, UP_SLOPE);
 
 // Tile 17 (Downslope short 2)
 scr_SlopeTableGenerator(DOWN_SLOPE_SHORT, 1, 1, 0, DOWN_SLOPE);

@@ -35,6 +35,10 @@ if(curDirection == FACE_RIGHT) {
 } else if(curDirection == FACE_LEFT) {
 	shouldAccel = xSpeed > -targetSpeed;
 }
+
+if(input[TRICK] and (input[LEFT] or input[RIGHT]) and !grounded) {
+	shouldAccel = false;
+}
 if(global.debug) {
 	show_debug_message("    MaxSpeed: " + string(maxSpeed));
 	show_debug_message("    TargetSpeed: " + string(targetSpeed));

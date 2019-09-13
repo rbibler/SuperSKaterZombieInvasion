@@ -29,7 +29,7 @@ if(enemyHits > 0) {
 		if(ds_list_find_index(boardSmacked, enemy) == -1) {
 			ds_list_add(boardSmacked, enemy);
 			with(enemy) {
-				script_execute(enemy.boardSmackedScript);
+				script_execute(enemy.hitScript, BOARD_SWING, hitPoints);
 			}
 			instance_create_layer(enemy.x, enemy.y, FOREGROUND_LAYER, obj_PowerBallStrike);
 		}

@@ -3,6 +3,7 @@ if(stateNew) {
 	if(sprite_index != spr_slimeballJump) {
 		sprite_index = spr_slimeballJump;
 	}
+	harmless = false;
 }
 
 // UPDATE MOVEMENT AND COLLISIONS

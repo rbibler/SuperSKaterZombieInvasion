@@ -1,7 +1,7 @@
 
 
 lives = 3;
-global.diamondCount = 50;
+global.juice = 50;
 global.checkPointReached = false;
 global.gamePaused = false;
 
@@ -22,3 +22,4 @@ global.gridY = 8;
 global.debug = false;
 global.lastCheckpoint = noone;
 
+global.godmode = false;

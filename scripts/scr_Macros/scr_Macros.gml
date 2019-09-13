@@ -7,6 +7,8 @@
 #macro	NO_VEHICLE		0
 #macro	JET_SKI			1
 
+#macro NUM_INPUTS	10
+
 // Directional Input
 #macro	UP				0
 #macro	DOWN			1
@@ -18,10 +20,27 @@
 #macro	START			5
 
 // Action input
-#macro	SHOOT			6
-#macro	JUMP			7
-#macro	TRANSITION		8
-#macro  ACTION			9
+#macro	SHOOT				6
+#macro	JUMP				7
+#macro	TRANSITION			8
+#macro  ACTION				9
+#macro  TRICK				9
+#macro  BOARD_SWING_BUTTON	9
+
+// Input will be stored in 10 bits like this:
+// A T J S ST SL R L D U
+
+
+#macro INPUT_UP			0x01		// 0001
+#macro INPUT_DOWN		0x02		// 0010
+#macro INPUT_LEFT		0x04		// 0100
+#macro INPUT_RIGHT		0x08		// 1000
+#macro INPUT_TRICK		0x200		// 1000000000
+
+// Trick directional input
+#macro FORWARD	0x04
+#macro BACK		0x08
+
 
 // Horizontal Collision Point Indexes
 #macro HC_TOP		0
@@ -54,6 +73,8 @@
 #macro s_ATTACKING				SKATE | 0x13
 #macro s_DEFENDING				SKATE | 0x14
 #macro s_MENACING				SKATE | 0x15
+#macro s_TRICK_FLIPTRICK		SKATE | 0x16
+#macro s_JOUSTING				SKATE | 0x17
 #macro s_ON_FOOT_IDLE			FOOT | 0x01
 #macro s_ON_FOOT_BORED			FOOT | 0x02
 #macro s_ON_FOOT_SITTING		FOOT | 0x03
@@ -78,6 +99,14 @@
 #macro s_JET_SKI_FALLING		VEHICLE | 0x05 | JET_SKI << 8
 #macro s_JET_SKI_PLASTERED		VEHICLE | 0x06 | JET_SKI << 8
 #macro s_JET_SKI_DUCKING		VEHICLE | 0x07 | JET_SKI << 8
+#macro s_AIRBORNE_HIT			0x8000
+
+// Tricks
+#macro NO_TRICK					0
+#macro SHOVE_IT					1
+#macro KICKFLIP					2
+#macro IMPOSSIBLE				3
+#macro MCTWIST					4
 
 // Collision Points
 #macro LEFT_CORNER				0
@@ -90,6 +119,11 @@
 #macro TOP_RIGHT				3
 #macro MIDDLE_RIGHT				4
 #macro BOTTOM_RIGHT				5
+
+// Enemy hit related stuff
+#macro BOARD_SWING				0
+#macro BOARD_JOUST				1
+#macro PROJECTILE				2
 
 
 #macro RES_W	640
@@ -112,6 +146,11 @@
 #macro ZOMBIE_ANIM_SPEED		2 / 60
 #macro VERY_SLOW_ANIM_SPEED		3 / 120
 
+#macro NORMAL_ANIM_SPEED_FRAME_RATE		5
+#macro FAST_ANIM_SPEED_FRAME_RATE		10
+#macro SUPER_FAST_ANIM_SPEED_FRAME_RATE	15
+#macro VERY_SLOW_ANIM_SPEED_FRAME_RATE	3
+
 #macro HEALTH	1
 
 #macro WEAPON_COUNT	3
@@ -129,6 +168,16 @@
 #macro INTERACTIVES_LAYER		"Interactives"
 #macro BLOCKS_LAYER				"Blocks"
 #macro VEHICLES_LAYER			"Vehicles"
+#macro EFFECTS_LAYER			"Effects"
+
+// Alarm constants
+#macro IMMUNITY_ALARM			8
+
+enum HIT_TYPE {
+	TRICK_BLAST = 0,
+	AMMO = 1,
+	BOARD = 2
+}
 
 enum ANIMATION {
 

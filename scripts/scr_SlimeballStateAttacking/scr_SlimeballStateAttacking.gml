@@ -4,6 +4,7 @@ var lastJumpTime = stateVar[0];
 if(stateNew) {
 	input[SHOOT] = 1;
 	moveDirOnRestart = sign(xSpeed);
+	harmless = false;
 }
 
 // UPDATE MOVEMENT AND COLLISIONS

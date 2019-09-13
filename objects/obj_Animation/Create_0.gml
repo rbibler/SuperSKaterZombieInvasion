@@ -8,3 +8,5 @@ currentIndex = 0;
 animLength = 0;
 animName = "";
 isHitBox = false;
+lastFrameIndex = 0;
+animFrameCounter = 0;

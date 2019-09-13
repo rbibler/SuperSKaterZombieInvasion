@@ -19,22 +19,26 @@ mask_index = sprite_index;
 verticalMovementRun = false;
 
 jumpInputBuffer--;
+trickPressedTimer--;
 
-if(isImmune) {
-	if(frameTimer - immuneStart >= (immunityLengthInSeconds * room_speed)) {
-		isImmune = false;
-	}
-}
 // Get the user's input. 
 scr_SkaterInput();
 scr_CheckForWeaponSwitch();
 if(facingEnabled) {
-	if(input[RIGHT]) {
-		if(!input[LEFT] and !lastInput[LEFT]) {
+	if(trickPressedTimer > 0 and !grounded) {
+		if(xSpeed > 0) {
 			facing = 1;
+		} else if xSpeed < 0 {
+			facing = -1;
 		}
-	} else if(input[LEFT]) {
-		facing = -1;
+	} else {
+		if(input[RIGHT]) {
+			if(!input[LEFT] and !lastInput[LEFT]) {
+				facing = 1;
+			}
+		} else if(input[LEFT]) {
+			facing = -1;
+		}
 	}
 }
 
@@ -48,7 +52,6 @@ if(!input[SHOOT]) {
 	shootCounter = 0;
 }
 
-
 // Impart gravity and limit the skater's terminal velocity
 
 ySpeed += myGravity;
@@ -57,9 +60,21 @@ if(ySpeed >= maxYSpeed) {
 }
 
 scr_GeneralCheckGrounded();
+framesSinceGround++;
+if(grounded) {
+	framesSinceGround = 0;
+}
 if(input[JUMP] and !lastInput[JUMP] and !grounded) {
 	jumpInputBuffer = 10;
 }
+
+if(input[TRICK]) {
+	trickPressedTimer = 10;
+}
+
+//if(grounded) {
+	//scr_ClearInputQueue();
+//}
 
 if(global.debug) {
 	show_debug_message("    State: " + string(stateID));
@@ -69,6 +84,16 @@ horizontalCollisionResponseScript = scr_BasicHorizCollisionResponse;
 
 // The real fun happens in the state machine
 scr_StateExecute();
+if(scr_AmIVulnerable()) {
+	var enemyThatMayHaveHitMe = scr_HaveIBeenHIt();
+	if(enemyThatMayHaveHitMe != noone) {
+		scr_SkaterHit(enemyThatMayHaveHitMe, 0);
+	}
+}
+
+
+
+
 if(shouldAnimate) {
 	scr_UpdateStateAnimation(currentAnimation);
 }

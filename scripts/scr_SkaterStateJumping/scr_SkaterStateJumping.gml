@@ -10,9 +10,9 @@
 if(stateNew) {
 	scr_UpdateSkaterAnimation(jumpAnim);
 	ySpeed = jumpSpeed;
-	if(scr_CheckForRamp()) {
-		ySpeed += yMomentum;
-	}
+	//if(scr_CheckForRamp()) {
+		//ySpeed += yMomentum;
+	//}
 	if(ySpeed <= maxLaunchSpeed) {
 		ySpeed = maxLaunchSpeed;
 	}
@@ -60,4 +60,5 @@ if(input[TRANSITION] and !lastInput[TRANSITION]) {
 	return;
 }
 
+scr_TricksAreForKids();
 

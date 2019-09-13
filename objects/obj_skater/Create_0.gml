@@ -1,4 +1,3 @@
-
 /// @description Insert description here
 // You can write your code in this editor
 
@@ -11,6 +10,10 @@ newRoom = false;
 shootCounter = 0;
 speedAtJump = 0;
 slopeCounter = 0;
+currentTrick = NO_TRICK;
+flashing = false;
+tricksSinceGrounded = 0;
+
 /// @description Insert description here
 // You can write your code in this editor
 
@@ -34,16 +37,16 @@ infected = false;
 
 
 // Array to hold the user's input. 
-input[0] = UP;
-input[1] = DOWN;
-input[2] = LEFT;
-input[3] = RIGHT;
-input[4] = SELECT;
-input[5] = START;
-input[6] = SHOOT;
-input[7] = JUMP;
-input[8] = TRANSITION;
-input[9] = ACTION;
+input[UP] = 0;
+input[DOWN] = 0;
+input[LEFT] = 0;
+input[RIGHT] = 0;
+input[SELECT] = 0;
+input[START] = 0;
+input[SHOOT] = 0;
+input[JUMP] = 0;
+input[TRANSITION] = 0;
+input[ACTION] = 0;
 
 inputDownTime[UP] = 0;
 inputDownTime[DOWN] = 0;
@@ -53,12 +56,11 @@ inputDownTime[SELECT] = 0;
 inputDownTime[START] = 0;
 inputDownTime[SHOOT] = 0;
 inputDownTime[JUMP] = 0;
+inputDownTime[TRANSITION] = 0;
+inputDownTime[ACTION] = 0;
 
-inputPressTime[SHOOT] = 0;
+scr_SetupInputQueue();
 
-
-tileColliderX = 0;
-tileColliderY = 0;
 
 // Initialize an array to hold the input from the last frame
 for(var i = 0; i < 10; i++) {
@@ -97,7 +99,12 @@ drownedState = scr_StateCreate(s_DROWNED, scr_SkaterStateDrowned);
 rollState = scr_StateCreate(s_ROLLING, scr_SkaterStateRolling);
 knockedBackState = scr_StateCreate(s_KNOCKED_BACK, scr_SkaterStateKnockedBack);
 floatState = scr_StateCreate(s_FLOATING, scr_SkaterStateFloating);
+attackState = scr_StateCreate(s_ATTACKING, scr_SkaterBoardPokeAttack);
 
+// Trick states
+trickFlipTrickState = scr_StateCreate(s_TRICK_FLIPTRICK, scr_SkaterStateFlipTrick);
+
+// On Foot States
 onFootIdleState = scr_StateCreate(s_ON_FOOT_IDLE, scr_SkaterStateOnFootIdle);
 onFootBoredState = scr_StateCreate(s_ON_FOOT_BORED, scr_SkaterStateOnFootBored);
 onFootSittingState = scr_StateCreate(s_ON_FOOT_SITTING, scr_SkaterStateOnFootSitting);
@@ -125,64 +132,7 @@ jetSkiFallState = scr_StateCreate(s_JET_SKI_DUCKING, scr_SkaterStateJetSkiDuckin
 // Set the default state to IDLE
 scr_StateInit(s_IDLE);
 
-
-idleAnim = scr_RegisterStateAnimation(spr_SkaterIdle, NORMAL_ANIM_SPEED, true, noone, "Idle", 1);
-skateAnim = scr_RegisterStateAnimation(spr_SkaterSkate, NORMAL_ANIM_SPEED, true, noone, "Skate", 4);
-jumpAnim = scr_RegisterStateAnimation(spr_SkaterJump, NORMAL_ANIM_SPEED, true, noone, "Jump", 1);
-crouchAnim = scr_RegisterStateAnimation(spr_SkaterCrouch, NORMAL_ANIM_SPEED, true, noone, "Crouch", 1);
-hurtAnim = scr_RegisterStateAnimation(spr_SkaterTakeHit, NORMAL_ANIM_SPEED, true, noone, "HURT", 1);
-deadAnim = scr_RegisterStateAnimation(spr_SkaterDead, NORMAL_ANIM_SPEED, false, noone, "DEAD", sprite_get_number(spr_SkaterDead));
-drownAnim = scr_RegisterStateAnimation(spr_SkaterDrowned, NORMAL_ANIM_SPEED, false, noone, "DROWNED", sprite_get_number(spr_SkaterDrowned));
-teeterAnim = scr_RegisterStateAnimation(spr_SkaterTeetering, FAST_ANIM_SPEED, true, noone, "TEETERING", sprite_get_number(spr_SkaterTeetering));
-
-runAnim = scr_RegisterStateAnimation(spr_SkaterRunning, NORMAL_ANIM_SPEED, true, noone, "RUNNING", sprite_get_number(spr_SkaterRunning));
-onFootIdleAnim = scr_RegisterStateAnimation(spr_SkaterOnFootIdle, NORMAL_ANIM_SPEED, true, noone, "OnFootIdle", sprite_get_number(spr_SkaterOnFootIdle));
-onFootBoredAnim = scr_RegisterStateAnimation(spr_SkaterOnFootBored, 0, false, noone, "OnFootBored", sprite_get_number(spr_SkaterOnFootBored));
-footToSkateAnim = scr_RegisterStateAnimation(spr_SkaterTransition, FAST_ANIM_SPEED, false, noone, "FootToSkate", 1);
-onFootJumpAnim = scr_RegisterStateAnimation(spr_SkaterOnFootJump, NORMAL_ANIM_SPEED, true, noone, "OnFootJump", sprite_get_number(spr_SkaterOnFootJump));
-climbAnim = scr_RegisterStateAnimation(spr_SkaterClimbing, NORMAL_ANIM_SPEED, true, noone, "CLIMBING", sprite_get_number(spr_SkaterClimbing));
-climboutAnim = scr_RegisterStateAnimation(spr_SkaterClimbout, NORMAL_ANIM_SPEED, true, noone, "CLIMBOUT", sprite_get_number(spr_SkaterClimbout));
-onStairsAnim = scr_RegisterStateAnimation(spr_SkaterRunning, NORMAL_ANIM_SPEED, true, noone, "ONSTAIRS", sprite_get_number(spr_SkaterRunning));
-boardSwingAnim = scr_RegisterStateAnimation(spr_SkaterBoardSwing, FAST_ANIM_SPEED, false, noone, "SWINGING", sprite_get_number(spr_SkaterBoardSwing));
-onFootCrouchAnim = scr_RegisterStateAnimation(spr_SkaterOnFootCrouch, FAST_ANIM_SPEED, true, noone, "CROUCHING", sprite_get_number(spr_SkaterOnFootCrouch));
-onFootFallAnim = scr_RegisterStateAnimation(spr_SkaterOnFootFalling, FAST_ANIM_SPEED, true, noone, "FALLING", sprite_get_number(spr_SkaterOnFootFalling));
-onFootHurtAnim = scr_RegisterStateAnimation(spr_SkaterOnFootHurt, FAST_ANIM_SPEED, true, noone, "HURT", sprite_get_number(spr_SkaterOnFootHurt));
-
-jetSkiIdleAnim = scr_RegisterStateAnimation(spr_SkaterJetSki, VERY_SLOW_ANIM_SPEED, true, noone, "JET SKI IDLE", sprite_get_number(spr_SkaterJetSki));
-jetSkiDuckingAnim = scr_RegisterStateAnimation(spr_SkaterJetSkiDucking, VERY_SLOW_ANIM_SPEED, true, noone, "JET SKI DUCKING", sprite_get_number(spr_SkaterJetSkiDucking));
-// Shield animations
-onFootShieldAnim = scr_RegisterStateAnimation(spr_SkaterOnFootShield, FAST_ANIM_SPEED, false, noone, "ON_FOOT_SHIELD", sprite_get_number(spr_SkaterOnFootShield));
-onFootJumpShieldAnim = scr_RegisterStateAnimation(spr_SkaterOnFootJumpShield, FAST_ANIM_SPEED, false, noone, "ON_FOOT_JUMP_SHIELD", sprite_get_number(spr_SkaterOnFootJumpShield));
-jumpShieldAnim = scr_RegisterStateAnimation(spr_SkaterShieldJump, FAST_ANIM_SPEED, false, noone, "JUMP_SHIELD", sprite_get_number(spr_SkaterShieldJump));
-shieldAnimStateMap = ds_map_create();
-
-// Rocket Animations
-rocketSetupAnim = scr_RegisterStateAnimation(spr_SkaterRocketSetup, SUPER_FAST_ANIM_SPEED, false, noone, "ROCKET_SETUP", sprite_get_number(spr_SkaterRocketSetup));
-rocketAnim = scr_RegisterStateAnimation(spr_SkaterRocketMotion, SUPER_FAST_ANIM_SPEED, true, noone, "ROCKET_MOTION", sprite_get_number(spr_SkaterRocketMotion));
-
-stateAnimMap = ds_map_create();
-ds_map_add(stateAnimMap, s_IDLE, idleAnim);
-ds_map_add(stateAnimMap, s_MOVING, skateAnim);
-ds_map_add(stateAnimMap, s_JUMPING, skateAnim);
-ds_map_add(stateAnimMap, s_CROUCHING, skateAnim);
-ds_map_add(stateAnimMap, s_FALLING, skateAnim);
-ds_map_add(stateAnimMap, s_ROLLING, idleAnim);
-
-ds_map_add(stateAnimMap, s_ON_FOOT_IDLE, onFootIdleAnim);
-ds_map_add(stateAnimMap, s_RUNNING, runAnim);
-ds_map_add(stateAnimMap, s_ON_FOOT_JUMPING, onFootJumpAnim);
-ds_map_add(stateAnimMap, s_ON_FOOT_FALLING, onFootFallAnim);
-
-
-
-idleAnim.persistent = true;
-skateAnim.persistent = true;
-jumpAnim.persistent = true;
-crouchAnim.persistent = true;
-hurtAnim.persistent = true;
-deadAnim.persistent = true;
-drownAnim.persistent = true;
-runAnim.persistent = true;
+scr_SetupSkaterAnimations();
 
 
 slingshotIdle = scr_RegisterSubstateAnimation(1, NORMAL_ANIM_SPEED);
@@ -233,7 +183,8 @@ railJumpBoost = 2;
 currentAirSpeedMax = 0;
 currentVehicle = NO_VEHICLE;
 canBoardVehicle = true;
-
+trickPressedTimer = 0;
+framesSinceGround = 0;
 scr_CheckForCheckpoint();
 
 

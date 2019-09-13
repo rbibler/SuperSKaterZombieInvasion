@@ -4,8 +4,6 @@
     "mvc": "1.1",
     "name": "810a41d1-e072-40f7-81c1-bc01e2224bbd",
     "children": [
-        "a151bcd0-7db8-45a0-96ba-f9cd50020bfb",
-        "04b58e47-71cc-4791-b1cf-2d9eecf7194d",
         "52176388-8e30-464b-b973-106c6f7935a1",
         "2b3f7dcb-da90-4fed-9d22-f164f5ecf091",
         "2386e240-ad8a-4091-9d25-edcf06644b62",
@@ -37,7 +35,13 @@
         "c161a26d-7b75-4fa7-a4a2-06fb226627c5",
         "61181018-f46a-47f5-82c1-474f49a21e09",
         "8d8b1120-79af-44ee-a687-c2f9afcf2494",
-        "4f3e1721-9d2c-4209-b493-6513ad88ad01"
+        "4f3e1721-9d2c-4209-b493-6513ad88ad01",
+        "e3c799b1-d9a3-424e-b6e9-2de29b1ecb1d",
+        "98c3a3bc-f703-4445-8a13-ccd45f10bc8a",
+        "df19e90d-3a1c-482d-8d1c-b2b839689c64",
+        "543b977a-1266-4b9a-80aa-311f000fa8d1",
+        "94c27466-e1c0-4f70-8db5-7646ccf6702a",
+        "587ce48a-d90f-464e-804a-b26fa2d2eba8"
     ],
     "filterType": "GMScript",
     "folderName": "SkaterUtilityScripts",

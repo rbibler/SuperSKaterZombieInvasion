@@ -1,7 +1,6 @@
 
 var jetSkiObject = argument0;
 if(canBoardVehicle and (currentVehicle == NO_VEHICLE or (currentVehicle == JET_SKI and !scr_OnTheJetSki()))) {
-	show_debug_message("I try to board jet ski");
 	currentVehicle = JET_SKI;
 	scr_StateSwitch(s_JET_SKI_IDLE);
 	//x = jetSkiObject.x;

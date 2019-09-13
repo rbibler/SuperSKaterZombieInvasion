@@ -17,6 +17,11 @@ with(anim) {
 		currentSubstate = 0;
 	}
 	currentIndex += animSpeed;
+	if(floor(currentIndex) != floor(lastFrameIndex)) {
+		animFrameCounter = 0;
+	} else {
+		animFrameCounter++;
+	}
 	if(currentIndex >= animLength) {
 		animEnd = true;
 		isDone = true;
@@ -30,5 +35,6 @@ with(anim) {
 		}
 	}
 	other.image_index = currentIndex;
+	lastFrameIndex = currentIndex;
 }
 return animEnd;

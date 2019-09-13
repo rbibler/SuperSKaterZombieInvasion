@@ -23,7 +23,8 @@
         "8f7fd25c-004a-42dc-aa6d-ae4f2d727b13",
         "83817f82-91f4-4af6-bafd-1215d8c1d921",
         "4e9f4e5e-5b0f-469f-82e0-36b97e8dfa5f",
-        "cffc5207-1bbd-4d69-b824-504443afff62"
+        "cffc5207-1bbd-4d69-b824-504443afff62",
+        "d7e913d0-b2e1-4d57-a279-c26a35b4b042"
     ],
     "filterType": "GMObject",
     "folderName": "ControllerObjects",

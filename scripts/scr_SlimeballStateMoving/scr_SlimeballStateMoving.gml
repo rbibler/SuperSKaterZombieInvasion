@@ -15,6 +15,7 @@ if(stateNew) {
 		input[RIGHT] = 0;
 	}
 	input[SHOOT] = 0;
+	harmless = false;
 }
 
 // UPDATE MOVEMENT AND COLLISIONS
