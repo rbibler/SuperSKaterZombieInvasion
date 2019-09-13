@@ -22,5 +22,9 @@ scr_SkaterHorizontalImpetus();
 scr_MoveAndCollide();
 
 if(currentAnimation.isDone) {
-	scr_StateSwitch(s_IDLE);
+	if(stateVar[1] > 0) {
+		scr_StateSwitch(stateVar[1]);
+	} else {
+		scr_StateSwitch(s_IDLE);
+	}
 }

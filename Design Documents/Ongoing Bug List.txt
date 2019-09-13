@@ -2,8 +2,16 @@ Bugs:
 	- [8/27/2019] Jumping while holding down trick and forward automatically triggers a kickflip. It should only trigger if the foward press is new. 
 		- Resolved: [9/4/2019]
 	- [8/27/2019] Not immune when attacking THIS IS NOT A BUG ANYMORE!
-		- Resolved: [8/28/2019]
+		- Resolved: [8/28/2019] Using a single "Immune" flag instead of doing checks for states and the like. 
+	- [9/4/2019] Skater jumps a bit when at the top of a ramp
+		- Resolved: [9/5/2019] Slope heights setup scripts were a bit screwy and were setting height above ground at -1 for a few inter-tile pixels. 
+	- [9/6/2019] Slimeball freezes when hit and stays stuck forever 
+		- Resolved: [9/9/2019] Reworked the enemy hit behavior. All enemies now have a "I'veBeenHIt" routine that calls other hit routines based on hit type. 
+		
 
 Feature:
 	- [8/27/2019] Add a bit of cushion to the attack button so that if player presses attack in air and lands soon after, they'll attack I'VE DONE THIS!
 		- Resolved: [9/3/2019]
+	- [9/10/2019] When Skater starts moving in the middle of a board swing, and he's in skate state not on foot, switch to transition state before moving state. Likewise, if skater
+		jumps in the middle of a board swing, switch to transition then jump (may have to have a state queue of some kind). 
+	

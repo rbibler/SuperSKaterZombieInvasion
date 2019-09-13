@@ -60,6 +60,7 @@ stateMenacing = scr_StateCreate(s_MENACING, stateMenacingScript);
 stateFalling = scr_StateCreate(s_FALLING, stateFallScript);
 stateHit = scr_StateCreate(s_HIT, stateHitScript);
 stateDead = scr_StateCreate(s_DEAD, stateDeadScript);
+
 climbState = 0;
 
 // Set the default state to IDLE
@@ -68,8 +69,6 @@ scr_StateInit(initialState);
 currentAnimation = noone;
 
 shouldMove = true;
-
-characterHealth = 100;
 
 ignoreShield = false;
 

@@ -6,7 +6,6 @@ if(!grounded and currentVehicle == NO_VEHICLE) {
 }
 
 if(currentVehicle == JET_SKI) {
-	show_debug_message("Jet ski decel");
 	return jetSkiDecel;
 }
 

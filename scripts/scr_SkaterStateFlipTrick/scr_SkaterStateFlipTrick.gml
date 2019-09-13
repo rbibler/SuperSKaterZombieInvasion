@@ -13,7 +13,6 @@ var bonusConsumed = stateVar[0];
 
 if(stateNew) {
 	scr_UpdateSkaterAnimation(scr_WhichTrick());
-	show_debug_message("new trick!");
 	tricksSinceGrounded++;
 	bonusConsumed = false;
 }
@@ -35,9 +34,11 @@ if(!bonusConsumed) {
 	bonusConsumed = scr_CheckForTrickBonus();
 }
 if(tricksSinceGrounded < 2 and scr_SkaterCheckJump()) {
+	show_debug_message("I Am Jumper");
 	scr_StateSwitch(s_JUMPING);
 }
 
+show_debug_message(image_index);
 stateVar[0] = bonusConsumed;
 
 

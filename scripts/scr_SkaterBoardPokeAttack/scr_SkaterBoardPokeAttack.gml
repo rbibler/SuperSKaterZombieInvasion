@@ -1,19 +1,23 @@
 /// This is a script that the skater uses to help him figure out what to do when he's attack without moving
 
-
+var boardOrPoke = stateVar[0];
 if(stateNew) {
 	if(abs(xSpeed) < 0.5) {
-		scr_UpdateSkaterAnimation(stationaryAttackAnim);
+		scr_UpdateSkaterAnimation(boardSwingSkateAnim);
+		boardOrPoke = BOARD_SWING;
 	} else {
 		scr_UpdateSkaterAnimation(movingAttackAnim);
+		boardOrPoke = BOARD_JOUST;
 	}
 	ds_list_clear(boardSmacked);
 }
 isImmune = true;
 
 // Check how fast the skater should be moving
-scr_SkaterHorizontalImpetus();
-scr_MoveAndCollide();
+if(boardOrPoke == BOARD_JOUST) {
+	scr_SkaterHorizontalImpetus();	
+	scr_MoveAndCollide();
+}
 scr_SkaterLadderCollisions();
 
 
@@ -27,7 +31,7 @@ if(enemyHits > 0) {
 		if(ds_list_find_index(boardSmacked, enemy) == -1) {
 			ds_list_add(boardSmacked, enemy);
 			with(enemy) {
-				script_execute(enemy.hitScript, hitPoints);
+				script_execute(enemy.hitScript, BOARD_JOUST, hitPoints);
 			}
 			instance_create_layer(enemy.x, enemy.y, FOREGROUND_LAYER, obj_PowerBallStrike);
 		}
@@ -41,8 +45,12 @@ if(scr_SkaterCheckJump()) {
 	stateToChangeTo = s_JUMPING;
 }
 
+if((input[RIGHT] or input[LEFT]) and image_index >= 3 and boardOrPoke == BOARD_SWING) {
+	stateToChangeTo = s_MOVING;
+}
+
 if(currentAnimation.isDone) {
-	if(abs(xSpeed) > 0.5) {
+	if(abs(xSpeed) >= 0.5) {
 		stateToChangeTo = s_MOVING;
 	} else {
 		stateToChangeTo = s_IDLE;
@@ -50,6 +58,13 @@ if(currentAnimation.isDone) {
 }
 
 if(stateToChangeTo >= 0) {
-	scr_StateSwitch(stateToChangeTo);
+	stateVar[1] = stateToChangeTo;
+	if(boardOrPoke == BOARD_SWING) {
+		scr_StateSwitch(s_FOOT_TO_SKATE);
+	} else {
+		scr_StateSwitch(stateToChangeTo);
+	}
 	scr_SetImmunityTime(immunityTimeAfterAttack);
 }
+
+stateVar[0] = boardOrPoke;

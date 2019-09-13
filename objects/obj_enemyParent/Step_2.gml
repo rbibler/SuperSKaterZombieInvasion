@@ -6,4 +6,3 @@ wasGrounded = grounded;
 wasGroundedRight = groundedRight;
 wasGroundedLeft = groundedLeft;
 scr_WhereAmIFacing();
-scr_AmIDead();

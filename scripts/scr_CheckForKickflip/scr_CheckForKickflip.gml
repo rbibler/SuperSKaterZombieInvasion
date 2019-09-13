@@ -32,7 +32,6 @@ for(var i = 0; i < inputsInQueue - 1; i++) {
 		}
 		// Have to hit trick first, then forward. So they can't happen simultaneously. 
 		if(forwardPressed > 0 and i > 0 and scr_HappenedInTheAir(i)) {
-			show_debug_message("Forward pressed: " + string(forwardPressed));
 			return true;
 		}
 	}

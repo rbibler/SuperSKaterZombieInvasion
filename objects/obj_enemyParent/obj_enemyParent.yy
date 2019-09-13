@@ -43,16 +43,6 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "3d7b2056-82b8-4245-adf2-020b7fa8bb32"
-        },
-        {
-            "id": "59245507-49a8-49a9-9d79-9ffe8b456c6d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "76e1c1b3-92cf-4e45-b913-c7d07eeaadad",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "3d7b2056-82b8-4245-adf2-020b7fa8bb32"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -393,6 +383,20 @@
             "value": "scr_EnemyGenericHitScript",
             "varName": "hitScript",
             "varType": 5
+        },
+        {
+            "id": "ef611fef-6a9b-4e61-8479-325ef6d9d322",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "characterHealth",
+            "varType": 0
         }
     ],
     "solid": false,

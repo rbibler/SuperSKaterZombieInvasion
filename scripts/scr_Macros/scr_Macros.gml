@@ -20,11 +20,12 @@
 #macro	START			5
 
 // Action input
-#macro	SHOOT			6
-#macro	JUMP			7
-#macro	TRANSITION		8
-#macro  ACTION			9
-#macro  TRICK			9
+#macro	SHOOT				6
+#macro	JUMP				7
+#macro	TRANSITION			8
+#macro  ACTION				9
+#macro  TRICK				9
+#macro  BOARD_SWING_BUTTON	9
 
 // Input will be stored in 10 bits like this:
 // A T J S ST SL R L D U
@@ -98,6 +99,7 @@
 #macro s_JET_SKI_FALLING		VEHICLE | 0x05 | JET_SKI << 8
 #macro s_JET_SKI_PLASTERED		VEHICLE | 0x06 | JET_SKI << 8
 #macro s_JET_SKI_DUCKING		VEHICLE | 0x07 | JET_SKI << 8
+#macro s_AIRBORNE_HIT			0x8000
 
 // Tricks
 #macro NO_TRICK					0
@@ -117,6 +119,11 @@
 #macro TOP_RIGHT				3
 #macro MIDDLE_RIGHT				4
 #macro BOTTOM_RIGHT				5
+
+// Enemy hit related stuff
+#macro BOARD_SWING				0
+#macro BOARD_JOUST				1
+#macro PROJECTILE				2
 
 
 #macro RES_W	640

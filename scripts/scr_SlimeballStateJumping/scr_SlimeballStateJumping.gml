@@ -13,8 +13,8 @@ if(stateNew) {
 }
 
 // UPDATE MOVEMENT AND COLLISIONS
-
 scr_MoveAndCollide();
+
 
 // ANIMATE
 

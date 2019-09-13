@@ -17,7 +17,6 @@ for(var i = 0; i < enemyCount; i++) {
 	) {
 		with(currentEnemy) {
 			//script_execute(boardSmackedScript, other.blastPower);
-			show_debug_message("Hit an enemy!");
 		}
 	}
 }
