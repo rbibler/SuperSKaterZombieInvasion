@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -46,7 +49,18 @@ namespace ImageResizer
 
         private static int ProcessImages(string file)
         {
+            Image tempImg = Image.FromFile(file);
+            tempImg.
+            Bitmap image = ResizeImage(tempImg, 100, 150);
+            image.Save(@"C:\Users\...\Pictures\books.jpg");
             return 0;
         }
+
+        private static Bitmap ResizeImage(Image image, int width, int height)
+        {
+            
+        }
+
+
     }
 }
