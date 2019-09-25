@@ -22,7 +22,11 @@ var upPressed = -1;
 var backPressed = -1;
 var forwardPressed = -1;
 
-for(var i = 0; i < inputsInQueue - 1; i++) {
+var inputsInQueueMinusOne = inputsInQueue - 1;
+var numInputsToCheck = stateTimer < inputsInQueueMinusOne ? stateTimer : inputsInQueueMinusOne;
+
+
+for(var i = 0; i < numInputsToCheck; i++) {
 	curInput = scr_PeekBufferFromLastWrite(i);
 	previousInput = scr_PeekBufferFromLastWrite(i + i);
 	if(scr_CheckDirectionInput(UP, curInput, previousInput, true)) {

@@ -6,6 +6,14 @@ if(currentAnimFrame <= framesTilBonus) {
 }
 
 scr_CheckDoubleJump();
+
+var howMuchJuice = scr_GetTrickParam(currentTrick, TRICK_JUICE);
+if(global.juice <= howMuchJuice) {
+	return;
+}
+
+scr_UpdateDiamondCount(howMuchJuice);
+
 switch(currentTrick) {
 	case KICKFLIP:
 		scr_SpawnKickflipBlast();

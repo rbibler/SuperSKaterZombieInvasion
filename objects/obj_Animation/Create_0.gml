@@ -10,3 +10,4 @@ animName = "";
 isHitBox = false;
 lastFrameIndex = 0;
 animFrameCounter = 0;
+animMask = noone;

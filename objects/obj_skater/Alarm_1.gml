@@ -2,5 +2,6 @@
 // You can write your code in this editor
 if(doubleJumpTimedOut) {
 	doubleJumpTimedOut = false;
-	doubleJumpIncrement = doubleJumpMeterTimeTilFull / 100;
+	var framesTilFull = room_speed * doubleJumpMeterTimeTilFull;
+	doubleJumpIncrement = 100 / framesTilFull;
 }

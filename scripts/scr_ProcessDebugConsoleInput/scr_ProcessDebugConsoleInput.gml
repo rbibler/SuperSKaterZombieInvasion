@@ -29,4 +29,9 @@ switch(cmd) {
 		global.godmode = !global.godmode;
 		show_debug_message("This is god mode");
 	break;
+	case "juice":
+		var arg = string_digits(split[1]);
+		global.juice = real(arg);
+		break;
+		
 }

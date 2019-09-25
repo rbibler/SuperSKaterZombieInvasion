@@ -36,6 +36,10 @@ if(!bonusConsumed) {
 if(tricksSinceGrounded < 2 and scr_SkaterCheckJump()) {
 	show_debug_message("I Am Jumper");
 	scr_StateSwitch(s_JUMPING);
+	alarm[Alarms.DoubleJumpAlarm] = doubleJumpMeterTimeout;
+	doubleJumpTimedOut = true;
+	doubleJumpIncrement = 0;
+	doubleJumpMeter = 0;
 }
 
 show_debug_message(image_index);

@@ -683,7 +683,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "60",
+            "value": "120",
             "varName": "doubleJumpMeterTimeout",
             "varType": 0
         },
@@ -697,7 +697,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "240",
+            "value": "6",
             "varName": "doubleJumpMeterTimeTilFull",
             "varType": 0
         }

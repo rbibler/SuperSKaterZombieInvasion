@@ -34,6 +34,11 @@ with(anim) {
 			}
 		}
 	}
+	if(animMask != noone) {
+		other.mask_index = animMask[currentIndex];
+	} else {
+		other.mask_index = other.sprite_index;
+	}
 	other.image_index = currentIndex;
 	lastFrameIndex = currentIndex;
 }

@@ -8,7 +8,11 @@ var forwardPressed = -1;
 
 // Start at the most recent input and go through to see if we have stuff happening
 
-for(var i = 0; i < inputsInQueue - 1; i++) {
+var inputsInQueueMinusOne = inputsInQueue - 1;
+var numInputsToCheck = stateTimer < inputsInQueueMinusOne ? stateTimer : inputsInQueueMinusOne;
+
+
+for(var i = 0; i < numInputsToCheck; i++) {
 	curInput = scr_PeekBufferFromLastWrite(i);
 	previousInput = scr_PeekBufferFromLastWrite(i + 1);
 	if(scr_CheckDirectionInput(UP, curInput, previousInput, true)) {
@@ -31,7 +35,7 @@ for(var i = 0; i < inputsInQueue - 1; i++) {
 			return false;
 		}
 		// Have to hit trick first, then forward. So they can't happen simultaneously. 
-		if(forwardPressed > 0 and i > 0 and scr_HappenedInTheAir(i)) {
+		if(forwardPressed > 0 and i > 0 and forwardPressed <= i and scr_HappenedInTheAir(i)) {
 			return true;
 		}
 	}

@@ -16,3 +16,7 @@ if(!instance_exists(obj_DebugConsole)) {
 if(!instance_exists(obj_TrickController)) {
 	instance_create_layer(0, 0, CONTROLLER_LAYER, obj_TrickController);
 }
+
+if(layer_exists("CollisionTiles")) {
+	layer_set_visible("CollisionTiles", false);
+}
