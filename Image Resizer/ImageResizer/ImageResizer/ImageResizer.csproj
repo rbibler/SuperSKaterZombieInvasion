@@ -44,9 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ImageFileFetcher.cs" />
+    <Compile Include="ImageFileSaver.cs" />
+    <Compile Include="ImageResizer.cs" />
     <Compile Include="ImageSplitter.cs" />
+    <Compile Include="MainModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplitterAndSizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

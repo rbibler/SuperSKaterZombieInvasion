@@ -15,52 +15,60 @@ namespace ImageResizer
         static void Main(string[] args)
         {
             string dir = "";
-            if (args.Length > 0)
+            int frameWidth = 0;
+            int frameHeight = 0;
+            int scaleFactor = 0;
+            string imageName = "";
+            int argsLength = args.Length;
+            if (argsLength > 0)
             {
                 dir = args[0];
             }
             else
             {
                 Console.WriteLine("You need to enter a directory!");
-            }
-            int exitCode = ProcessDirectory(dir);
-        }
 
-        private static int ProcessDirectory(string dir)
-        {
-            string[] files = null;
-            int fileCount = 0;
-            files = System.IO.Directory.GetFiles(dir);
-            FileAttributes attr;
-            foreach (string f in files)
+            }
+            if (argsLength > 1) {
+                try
+                {
+                    frameWidth = Int32.Parse(args[1]);
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine("Must enter a numeric value for frame width!");
+                }
+            }
+            if (argsLength > 2)
             {
-                attr = File.GetAttributes(f);
-                if (attr.HasFlag(FileAttributes.Directory))
+                try
                 {
-                    ProcessDirectory(f);
+                    frameHeight = Int32.Parse(args[2]);
                 }
-                else
+                catch (FormatException e)
                 {
-                    ProcessImages(f);
+                    Console.WriteLine("Must enter a numeric value for frame height!");
                 }
             }
-            return 0;
+            if (argsLength > 3)
+            {
+                try
+                {
+                    scaleFactor = Int32.Parse(args[3]);
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine("Must enter a numeric value for scale factor!");
+                }
+            }
+            if (argsLength > 0)
+            {
+                imageName = args[0];
+            }
+
+            MainModule mainModule = new MainModule(dir, imageName, frameWidth, frameHeight, scaleFactor);
+            mainModule.ProcessDirectory(dir);
         }
-
-        private static int ProcessImages(string file)
-        {
-            Image tempImg = Image.FromFile(file);
-            tempImg.
-            Bitmap image = ResizeImage(tempImg, 100, 150);
-            image.Save(@"C:\Users\...\Pictures\books.jpg");
-            return 0;
-        }
-
-        private static Bitmap ResizeImage(Image image, int width, int height)
-        {
-            
-        }
-
-
+       
     }
 }

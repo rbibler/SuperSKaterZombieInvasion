@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,9 +19,14 @@ namespace ImageResizer
             FrameHeight = frameHeight;
         }
 
-        public List<Bitmap> SplitImage(Image imageToSplit)
+        public List<Image> SplitImage(Image imageToSplit)
         {
-            List<Bitmap> frames = new List<Bitmap>();
+            List<Image> frames = new List<Image>();
+            int numberOfFrames = imageToSplit.Width / FrameWidth;
+            for (int i = 0; i < numberOfFrames; i++)
+            {
+                frames.Add(GetSubFrame(imageToSplit, i));
+            }
             return frames;
         }
 
@@ -28,8 +35,6 @@ namespace ImageResizer
             var destRect = new Rectangle(0, 0, FrameWidth, FrameHeight);
             var destImage = new Bitmap(FrameWidth, FrameHeight);
 
-            destImage.SetResolution(.HorizontalResolution, image.VerticalResolution);
-
             using (var graphics = Graphics.FromImage(destImage))
             {
                 graphics.CompositingMode = CompositingMode.SourceCopy;
@@ -37,15 +42,14 @@ namespace ImageResizer
                 graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
                 graphics.SmoothingMode = SmoothingMode.HighQuality;
                 graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
-
+                int x = frameNumber * FrameWidth;
                 using (var wrapMode = new ImageAttributes())
                 {
                     wrapMode.SetWrapMode(WrapMode.TileFlipXY);
-                    graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
+                    graphics.DrawImage(sourceImage, destRect, x, 0, FrameWidth, FrameHeight, GraphicsUnit.Pixel, wrapMode);
                 }
             }
             return destImage;
-            return null;
         }
     }
 }
