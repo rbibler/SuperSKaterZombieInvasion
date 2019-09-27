@@ -18,7 +18,6 @@ namespace ImageResizer
             int frameWidth = 0;
             int frameHeight = 0;
             int scaleFactor = 0;
-            string imageName = "";
             int argsLength = args.Length;
             if (argsLength > 0)
             {
@@ -61,12 +60,8 @@ namespace ImageResizer
                     Console.WriteLine("Must enter a numeric value for scale factor!");
                 }
             }
-            if (argsLength > 4)
-            {
-                imageName = args[4];
-            }
 
-            MainModule mainModule = new MainModule(dir, imageName, frameWidth, frameHeight, scaleFactor);
+            MainModule mainModule = new MainModule(dir, frameWidth, frameHeight, scaleFactor);
             mainModule.ProcessDirectory(dir);
         }
        

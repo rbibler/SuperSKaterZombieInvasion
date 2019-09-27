@@ -12,38 +12,33 @@ namespace ImageResizer
         private SplitterAndSizer SplitterAndSizer { get; set; }
         private ImageFileFetcher ImageFetcher = new ImageFileFetcher();
 
-        public MainModule(string topLevelFile, string imageName, int frameWidth, int frameHeight, int scaleFactor)
+        public MainModule(string topLevelFile, int frameWidth, int frameHeight, int scaleFactor)
         {
-            string baseName = imageName;
-            if (String.IsNullOrEmpty(baseName))
-            {
-                string[] splitPath = topLevelFile.Split('/');
-                baseName = splitPath[splitPath.Length - 1];
-            }
+            string[] splitPath = topLevelFile.Split('\\');
+            string    baseName = splitPath[splitPath.Length - 2];
             SplitterAndSizer = new SplitterAndSizer(
                 new ImageResizer(frameWidth, frameHeight, scaleFactor),
                 new ImageSplitter(frameWidth, frameHeight),
                 new ImageFileSaver(),
-                topLevelFile + "/" + baseName);
+                topLevelFile + "/frames/" + baseName);
         }
 
         public int ProcessDirectory(string dir)
         {
-            string[] files = null;
-            files = System.IO.Directory.GetFiles(dir);
-            FileAttributes attr;
+            string[] dirs = System.IO.Directory.GetDirectories(dir);
+            foreach (string d in dirs)
+            {
+                ProcessDirectory(d);
+            }
 
+            string[] files = System.IO.Directory.GetFiles(dir);
             foreach (string f in files)
             {
-                attr = File.GetAttributes(f);
-                if (attr.HasFlag(FileAttributes.Directory))
-                {
-                    ProcessDirectory(f);
-                }
-                else
+                if(f.EndsWith("strip.png"))
                 {
                     ProcessImages(f);
                 }
+                    
             }
             return 0;
         }
