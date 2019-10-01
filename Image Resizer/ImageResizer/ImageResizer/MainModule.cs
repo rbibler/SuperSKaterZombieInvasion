@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace ImageResizer
 {
@@ -11,16 +12,14 @@ namespace ImageResizer
     {
         private SplitterAndSizer SplitterAndSizer { get; set; }
         private ImageFileFetcher ImageFetcher = new ImageFileFetcher();
+        private ImageFileSaver ImageSaver = new ImageFileSaver();
 
         public MainModule(string topLevelFile, int frameWidth, int frameHeight, int scaleFactor)
         {
-            string[] splitPath = topLevelFile.Split('\\');
-            string    baseName = splitPath[splitPath.Length - 2];
+           
             SplitterAndSizer = new SplitterAndSizer(
                 new ImageResizer(frameWidth, frameHeight, scaleFactor),
-                new ImageSplitter(frameWidth, frameHeight),
-                new ImageFileSaver(),
-                topLevelFile + "/frames/" + baseName);
+                new ImageSplitter(frameWidth, frameHeight));
         }
 
         public int ProcessDirectory(string dir)
@@ -45,9 +44,11 @@ namespace ImageResizer
 
         private int ProcessImages(string file)
         {
-            SplitterAndSizer.SplitAndResize(ImageFetcher.FetchImageFromFile(file));
+            List<Image> images = SplitterAndSizer.SplitAndResize(ImageFetcher.FetchImageFromFile(file));
+            ImageSaver.SaveImages(images, file);
             return 0;
         }
+
 
     }
 }
