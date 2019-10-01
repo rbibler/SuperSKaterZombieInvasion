@@ -83,6 +83,16 @@
             "enumb": 5,
             "eventtype": 2,
             "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
+        },
+        {
+            "id": "ce683a40-c976-4bee-8948-9b4fe083179a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 2,
+            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -661,6 +671,34 @@
             "resourceFilter": 1023,
             "value": "15",
             "varName": "attackBufferTime",
+            "varType": 0
+        },
+        {
+            "id": "7fec6922-6065-48c7-b985-ce8f63916b1a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "120",
+            "varName": "doubleJumpMeterTimeout",
+            "varType": 0
+        },
+        {
+            "id": "d7bcadeb-2951-4f92-a0a0-02c2366c38b3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "6",
+            "varName": "doubleJumpMeterTimeTilFull",
             "varType": 0
         }
     ],

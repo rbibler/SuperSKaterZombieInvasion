@@ -7,6 +7,10 @@ Bugs:
 		- Resolved: [9/5/2019] Slope heights setup scripts were a bit screwy and were setting height above ground at -1 for a few inter-tile pixels. 
 	- [9/6/2019] Slimeball freezes when hit and stays stuck forever 
 		- Resolved: [9/9/2019] Reworked the enemy hit behavior. All enemies now have a "I'veBeenHIt" routine that calls other hit routines based on hit type. 
+	- [9/13/2019] Skater executes kickflip after double jump automatically	
+		- Resolved: [9/16/19] Limited the inputs that are checked for tricks to only those entered since the start of the current state. 
+	- [9/19/201] Collision boxes on some animations (particularly McTwist) are bad, so skater can clip through barriers
+		- Solution: will probably have to implement a per-frame collision mask system. Probably integrate with the animation system. 
 		
 
 Feature:

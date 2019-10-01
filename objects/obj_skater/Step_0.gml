@@ -21,6 +21,13 @@ verticalMovementRun = false;
 jumpInputBuffer--;
 trickPressedTimer--;
 
+doubleJumpMeter += doubleJumpIncrement;
+if(doubleJumpMeter >= 100) {
+	doubleJumpMeter = 100;
+}
+show_debug_message(doubleJumpMeter);
+show_debug_message(doubleJumpIncrement);
+
 // Get the user's input. 
 scr_SkaterInput();
 scr_CheckForWeaponSwitch();

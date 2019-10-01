@@ -8,6 +8,9 @@ var color = c_white;
 
 
 if(global.debug == true) {
+
+	scr_DrawBoundingBox();
+
 	/*switch(stateID) {
 		case s_IDLE:
 			color = c_white;

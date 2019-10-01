@@ -11,3 +11,7 @@ yPos += 42;
 var diamondCount = global.juice;
 var index = 20 - floor((diamondCount / 100) * 20);
 draw_sprite(spr_DiamondStatusBar, index, xPos, yPos);
+
+var doubleJumpJuice = obj_skater.doubleJumpMeter;
+index = 20 - floor((doubleJumpJuice / 100) * 20);
+draw_sprite(spr_DoubleJumpMeter, index, xPos, yPos);

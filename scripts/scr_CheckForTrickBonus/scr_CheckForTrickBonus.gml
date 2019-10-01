@@ -5,12 +5,16 @@ if(currentAnimFrame <= framesTilBonus) {
 	return false;
 }
 
+scr_CheckDoubleJump();
+
+var howMuchJuice = scr_GetTrickParam(currentTrick, TRICK_JUICE);
+if(global.juice <= howMuchJuice) {
+	return;
+}
+
+scr_UpdateDiamondCount(howMuchJuice);
 
 switch(currentTrick) {
-	case SHOVE_IT:
-		canJump = -20;
-		jump = 0;
-	break;
 	case KICKFLIP:
 		scr_SpawnKickflipBlast();
 	break;
@@ -22,5 +26,5 @@ switch(currentTrick) {
 	break;
 	
 }
-scr_SpawnEffect(obj_SparkleEffect);
+
 return true;
