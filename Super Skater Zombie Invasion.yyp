@@ -3511,14 +3511,6 @@
             }
         },
         {
-            "Key": "8df84733-3c7d-426d-909c-68bfe1bf1104",
-            "Value": {
-                "id": "dbb40ed2-4e01-4ac1-9392-80e7ada38a39",
-                "resourcePath": "sprites\\spr_SkaterTrickMcTwistColMask2\\spr_SkaterTrickMcTwistColMask2.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "8e3c750a-425d-4f17-a320-b959a0a58294",
             "Value": {
                 "id": "7ade2779-45af-4d9e-9db6-b3449a376c5f",
@@ -5135,14 +5127,6 @@
             }
         },
         {
-            "Key": "cc427a5d-c9d9-44a6-a33e-097646d22e62",
-            "Value": {
-                "id": "e5107215-0807-408f-bd75-44e95db72099",
-                "resourcePath": "sprites\\spr_SkaterTrickMcTwistColMask1\\spr_SkaterTrickMcTwistColMask1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "cc77eac5-33d6-4026-9737-0f58f96434be",
             "Value": {
                 "id": "9dea3d48-31ca-48ff-ade9-e44f00422b8f",
@@ -5555,14 +5539,6 @@
             "Value": {
                 "id": "3327c273-cdc0-4bb5-9c95-0134cd3002de",
                 "resourcePath": "sprites\\spr_SkaterOnFootShield\\spr_SkaterOnFootShield.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "dd58824d-53dd-40f1-9b07-31572ec5a5a6",
-            "Value": {
-                "id": "62e3453b-0d2c-4cb5-b6b0-151cb76f2177",
-                "resourcePath": "sprites\\spr_SkaterTrickMcTwistColMask\\spr_SkaterTrickMcTwistColMask.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6276,14 +6252,6 @@
                 "id": "a799a571-fff9-4858-b725-d07f209c3482",
                 "resourcePath": "objects\\obj_gui\\obj_gui.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "fa289dd3-ca6c-4a50-afc9-6135d310a75c",
-            "Value": {
-                "id": "9c952e39-b237-4f5f-8570-4fc7096ac3c8",
-                "resourcePath": "sprites\\spr_SkaterTrickMcTwistColMask3\\spr_SkaterTrickMcTwistColMask3.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
