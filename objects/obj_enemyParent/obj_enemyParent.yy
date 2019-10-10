@@ -315,34 +315,6 @@
             "varType": 0
         },
         {
-            "id": "438d8e24-61ba-4d13-b180-a9e8f32f72d6",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "scr_EmptyAssScript",
-            "varName": "collidedWithSkaterScript",
-            "varType": 5
-        },
-        {
-            "id": "6cdef82c-f9ec-4704-9d9c-82f57a95bfed",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "scr_EmptyAssScript",
-            "varName": "hitBySkaterShieldScript",
-            "varType": 5
-        },
-        {
             "id": "2a1fd468-3b01-47c4-8c03-82caa4025dcd",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
