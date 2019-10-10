@@ -6,4 +6,5 @@
 // Impart gravity and limit the skater's terminal velocity
 frameCount++;
 event_inherited();
+scr_DebugStateName();
 

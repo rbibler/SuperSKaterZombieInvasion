@@ -60,6 +60,7 @@ stateMenacing = scr_StateCreate(s_MENACING, stateMenacingScript);
 stateFalling = scr_StateCreate(s_FALLING, stateFallScript);
 stateHit = scr_StateCreate(s_HIT, stateHitScript);
 stateDead = scr_StateCreate(s_DEAD, stateDeadScript);
+stateInWater = scr_StateCreate(s_IN_WATER, stateInWaterScript);
 
 climbState = 0;
 

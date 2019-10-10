@@ -43,6 +43,16 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "3d7b2056-82b8-4245-adf2-020b7fa8bb32"
+        },
+        {
+            "id": "b0a9d2c3-0aa6-490f-beff-c2937fa0524d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "d0899fbb-440e-4a3f-b4d0-9e385206af16",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "3d7b2056-82b8-4245-adf2-020b7fa8bb32"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -270,6 +280,20 @@
             "resourceFilter": 1023,
             "value": "scr_EmptyAssScript",
             "varName": "stateDeadScript",
+            "varType": 5
+        },
+        {
+            "id": "90e75253-4ce6-4e06-812c-89baca3ed9a4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "scr_EmptyAssScript",
+            "varName": "stateInWaterScript",
             "varType": 5
         },
         {

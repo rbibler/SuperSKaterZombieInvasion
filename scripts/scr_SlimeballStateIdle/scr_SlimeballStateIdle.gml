@@ -14,3 +14,4 @@ scr_MoveAndCollide();
 if(stateTimer >= recoveryTimeInSeconds * room_speed) {
 	scr_StateSwitch(s_MOVING);
 }
+

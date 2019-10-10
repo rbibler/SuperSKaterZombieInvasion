@@ -99,7 +99,8 @@
 #macro s_JET_SKI_FALLING		VEHICLE | 0x05 | JET_SKI << 8
 #macro s_JET_SKI_PLASTERED		VEHICLE | 0x06 | JET_SKI << 8
 #macro s_JET_SKI_DUCKING		VEHICLE | 0x07 | JET_SKI << 8
-#macro s_AIRBORNE_HIT			0x8000
+#macro s_AIRBORNE_HIT			0xB000
+#macro s_IN_WATER				0xB001
 
 // Tricks
 #macro NO_TRICK					0
@@ -176,7 +177,8 @@
 enum HIT_TYPE {
 	TRICK_BLAST = 0,
 	AMMO = 1,
-	BOARD = 2
+	BOARD = 2,
+	CERTAIN_DEATH = 3
 }
 
 enum ANIMATION {
