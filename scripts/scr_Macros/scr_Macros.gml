@@ -173,6 +173,7 @@
 
 // Alarm constants
 #macro IMMUNITY_ALARM			8
+#macro FLASH_ALARM				0
 
 enum HIT_TYPE {
 	TRICK_BLAST = 0,

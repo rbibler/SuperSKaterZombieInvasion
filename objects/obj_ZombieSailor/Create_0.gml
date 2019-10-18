@@ -12,5 +12,18 @@ movingAnim = scr_RegisterStateAnimation(
 	"ZombieCaptainMove", 
 	sprite_get_number(spr_ZombieSailor)
 );
+
+hurtAnim = scr_RegisterStateAnimation(
+	spr_ZombieSailorHurt, 
+	3/60, 
+	true, 
+	noone, 
+	"ZombieCaptainHurt", 
+	sprite_get_number(spr_ZombieSailorHurt)
+);
+
+recoveryAnim = hurtAnim;
+
 scr_SetCurrentAnimation(movingAnim);
+input[LEFT] = 1;
 

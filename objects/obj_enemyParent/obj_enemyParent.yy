@@ -297,6 +297,20 @@
             "varType": 5
         },
         {
+            "id": "5e5b470a-d084-4b27-8f2a-88393a3ad694",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "scr_EmptyAssScript",
+            "varName": "stateRecoveringScript",
+            "varType": 5
+        },
+        {
             "id": "54427283-bc64-40b4-bcef-3427097bb49b",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -362,7 +376,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "30",
             "varName": "hitImmobileTime",
             "varType": 0
         },
@@ -392,6 +406,48 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "characterHealth",
+            "varType": 0
+        },
+        {
+            "id": "43ee794c-c295-4d4a-9cf0-395898eaca75",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "4",
+            "varName": "hitFlybackSpeed",
+            "varType": 0
+        },
+        {
+            "id": "7f5a8738-9901-4f3b-a901-3794681ee59b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "hitFlashInterval",
+            "varType": 0
+        },
+        {
+            "id": "88a442c9-c0af-4bdf-a704-92309cae43c6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1000",
+            "varName": "hitFlashDuration",
             "varType": 0
         }
     ],

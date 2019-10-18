@@ -1,7 +1,6 @@
 // SETUP NEW STATE... STATE
 if(stateNew) {
 	scr_SetCurrentAnimation(movingAnim);
-	input[LEFT] = 1;
 }
 
 // UPDATE MOVEMENT AND COLLISIONS

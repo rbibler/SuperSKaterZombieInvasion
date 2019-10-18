@@ -3,4 +3,6 @@
 if(global.debug) {
 	scr_DrawBoundingBox();
 }
-draw_self();
+if(!hideMeWhenDrawing) {
+	draw_self();
+}

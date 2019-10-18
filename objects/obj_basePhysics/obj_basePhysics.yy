@@ -43,6 +43,16 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "ed14a131-953f-411a-8370-232b4492166c"
+        },
+        {
+            "id": "01496d99-6ef2-4b82-b4f6-6ab55cb4b19c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "ed14a131-953f-411a-8370-232b4492166c"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -159,6 +169,48 @@
             "value": "scr_BasicHorizCollisionResponse",
             "varName": "horizontalCollisionResponseScript",
             "varType": 5
+        },
+        {
+            "id": "8d1a6898-f5aa-4c33-9766-e4f80bc336c9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "flashInterval",
+            "varType": 0
+        },
+        {
+            "id": "5343f468-f688-4eb7-b2b6-982a02b7eae5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "howManyTimesIShouldFlash",
+            "varType": 0
+        },
+        {
+            "id": "17fae245-db2d-4b50-90b3-dbcbfdbd7515",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "flashMe",
+            "varType": 3
         }
     ],
     "solid": false,

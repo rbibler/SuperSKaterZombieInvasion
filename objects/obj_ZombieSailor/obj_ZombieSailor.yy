@@ -39,15 +39,7 @@
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "146cc11e-6b11-45b5-be47-9b134b3d174a",
-            "value": "60"
-        },
-        {
-            "id": "bd7a11f9-a829-4072-8c42-f1a03aa74c89",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "5eaae57f-b022-4bdb-9b63-088d61a795b0",
-            "value": "scr_ZombieSailorHitScript"
+            "value": "20"
         },
         {
             "id": "8da2d4e9-f111-4962-a9cb-23f054571b66",
@@ -66,12 +58,52 @@
             "value": "scr_SlimeballStateDead"
         },
         {
-            "id": "f9616917-05bc-4ebf-93f7-bece8b8db431",
+            "id": "2fd178d6-0cb3-4ed4-859d-74d09cd25a8f",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "eaf74d8d-0c34-4703-8677-cdf8faab29f6",
-            "value": "scr_ZombieSailorHitScript"
+            "propertyId": "ef611fef-6a9b-4e61-8479-325ef6d9d322",
+            "value": "49"
+        },
+        {
+            "id": "36e5f426-00c3-413b-aab8-33da19175e15",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "5e5b470a-d084-4b27-8f2a-88393a3ad694",
+            "value": "scr_PatrolParentStateRecovering"
+        },
+        {
+            "id": "13cb1062-386a-49b3-a80d-59886474fb78",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "43ee794c-c295-4d4a-9cf0-395898eaca75",
+            "value": "1"
+        },
+        {
+            "id": "06e1cc76-10de-452b-8139-445e0e8cd004",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "88a442c9-c0af-4bdf-a704-92309cae43c6",
+            "value": "1000"
+        },
+        {
+            "id": "aaba27e5-aab6-447b-8cb9-2bb50170c55b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "7f5a8738-9901-4f3b-a901-3794681ee59b",
+            "value": "4"
+        },
+        {
+            "id": "4be1c79e-e102-4d05-b51c-474c094b489b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "6f8ebc97-0ffa-41f3-a633-c5360e58cc06",
+            "value": "s_MOVING"
         }
     ],
     "parentObjectId": "3d722df8-120e-43a7-abff-d5e21430611a",

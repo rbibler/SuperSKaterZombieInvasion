@@ -1783,6 +1783,14 @@
             }
         },
         {
+            "Key": "49836482-2920-49cc-80ba-2add32db02a2",
+            "Value": {
+                "id": "6e0d7a14-37b8-4ed5-9d69-cda2750670be",
+                "resourcePath": "sprites\\spr_ZombieSailorHurt\\spr_ZombieSailorHurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4a2d21f8-f7b9-421d-b9cb-c41673654d61",
             "Value": {
                 "id": "e894a7bd-fe9c-4b75-bcec-023189d769ab",
@@ -2844,6 +2852,14 @@
                 "id": "b81faab1-755d-4715-9711-4cb9d9d0f12d",
                 "resourcePath": "sprites\\spr_SlimeballHit\\spr_SlimeballHit.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "756fb620-fba9-4125-94f5-47513fa3f3a6",
+            "Value": {
+                "id": "97757218-f5de-4776-ab20-3a3b42333aad",
+                "resourcePath": "scripts\\scr_PatrolParentStateRecovering\\scr_PatrolParentStateRecovering.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5399,6 +5415,14 @@
             }
         },
         {
+            "Key": "d8611fd4-9096-4621-83ee-218799945efb",
+            "Value": {
+                "id": "80392c1b-5ab3-4dc9-be40-fde8d925b811",
+                "resourcePath": "scripts\\scr_FlashMe\\scr_FlashMe.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d8f241c6-d76b-4d53-98ab-e3c2576a5ee8",
             "Value": {
                 "id": "8789c4fb-6ece-48a6-a564-3ac89ef8e582",
@@ -6566,6 +6590,7 @@
         "e77af8b7-9d93-48be-8f32-b389339ca452",
         "cd72e43b-7e82-4a52-9441-8e460c7e6887",
         "595eb2af-1fd6-46fc-beeb-bb5aaa972931",
+        "756fb620-fba9-4125-94f5-47513fa3f3a6",
         "698a235c-86fc-4d01-a1a1-e6d453d4612b",
         "13a97aa4-6668-4b15-9536-7356ddc3e7a4",
         "cc77eac5-33d6-4026-9737-0f58f96434be",
@@ -6761,6 +6786,7 @@
         "8c421c31-0662-4e42-b0cb-990b7a769ceb",
         "3ad889a3-e180-4c4e-a9c7-55adc50235e2",
         "6dc35a85-90dd-4a05-9980-8b5b78cc4e71",
+        "d8611fd4-9096-4621-83ee-218799945efb",
         "c9995271-593e-4ac8-9573-d35a21d7ee3e",
         "5cdeceb9-3eba-4e64-9229-fc94418d1a65",
         "56f6274d-d1eb-435c-9f47-cab0b2b8f6e6",
