@@ -12,7 +12,8 @@
         "e77af8b7-9d93-48be-8f32-b389339ca452",
         "cd72e43b-7e82-4a52-9441-8e460c7e6887",
         "595eb2af-1fd6-46fc-beeb-bb5aaa972931",
-        "756fb620-fba9-4125-94f5-47513fa3f3a6"
+        "756fb620-fba9-4125-94f5-47513fa3f3a6",
+        "5b6bd493-032b-4d82-a61e-6ccdd17d5efa"
     ],
     "filterType": "GMScript",
     "folderName": "PatrolParentStateScripts",

@@ -39,14 +39,6 @@
             }
         },
         {
-            "Key": "0125057d-cb79-4716-95ad-24e9d511a9b3",
-            "Value": {
-                "id": "b69efb9b-bdd8-427b-8833-8ffc98cd4862",
-                "resourcePath": "scripts\\scr_SlimeballStateInWater\\scr_SlimeballStateInWater.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "01579584-94d5-4ec2-95b0-e3c0ecdfe1b3",
             "Value": {
                 "id": "6ac77c00-1b63-44b7-aa40-62d372cae483",
@@ -2276,6 +2268,14 @@
                 "id": "c2102d17-4c3e-4e5a-b7b2-68a8bc4f8e62",
                 "resourcePath": "sprites\\spr_ExplodingSlimeballJumping\\spr_ExplodingSlimeballJumping.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5b6bd493-032b-4d82-a61e-6ccdd17d5efa",
+            "Value": {
+                "id": "e2d00672-8be2-4820-8eec-a3fffa23b59d",
+                "resourcePath": "scripts\\scr_PatrolParentStateInWater\\scr_PatrolParentStateInWater.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6591,6 +6591,7 @@
         "cd72e43b-7e82-4a52-9441-8e460c7e6887",
         "595eb2af-1fd6-46fc-beeb-bb5aaa972931",
         "756fb620-fba9-4125-94f5-47513fa3f3a6",
+        "5b6bd493-032b-4d82-a61e-6ccdd17d5efa",
         "698a235c-86fc-4d01-a1a1-e6d453d4612b",
         "13a97aa4-6668-4b15-9536-7356ddc3e7a4",
         "cc77eac5-33d6-4026-9737-0f58f96434be",
@@ -6609,7 +6610,6 @@
         "4ebb9228-937f-4c04-81b1-c680a6651b16",
         "39604718-e241-4771-9359-a9984bc2b86a",
         "4cd7d1eb-7cfb-4a99-b4fb-9e59a636ea3f",
-        "0125057d-cb79-4716-95ad-24e9d511a9b3",
         "b936d745-8572-4971-be7a-681239abfba1",
         "8e3c750a-425d-4f17-a320-b959a0a58294",
         "c1205fd3-60e1-42a4-b3ef-8a364297fa66",

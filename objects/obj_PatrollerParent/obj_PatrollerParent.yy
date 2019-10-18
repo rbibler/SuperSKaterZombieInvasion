@@ -88,6 +88,14 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
             "value": "scr_PatrolParentStateDead"
+        },
+        {
+            "id": "e7c919a5-d536-4da5-8e8f-b4c564a5e793",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "90e75253-4ce6-4e06-812c-89baca3ed9a4",
+            "value": "scr_PatrolParentStateInWater"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",

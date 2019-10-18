@@ -1,8 +1,8 @@
 {
-    "id": "0125057d-cb79-4716-95ad-24e9d511a9b3",
+    "id": "5b6bd493-032b-4d82-a61e-6ccdd17d5efa",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_SlimeballStateInWater",
+    "name": "scr_PatrolParentStateInWater",
     "IsCompatibility": false,
     "IsDnD": false
 }

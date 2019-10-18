@@ -196,14 +196,6 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "ef611fef-6a9b-4e61-8479-325ef6d9d322",
             "value": "1"
-        },
-        {
-            "id": "4ed0dc98-4f9a-41a9-b764-fe0c935c396e",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "90e75253-4ce6-4e06-812c-89baca3ed9a4",
-            "value": "scr_SlimeballStateInWater"
         }
     ],
     "parentObjectId": "3d722df8-120e-43a7-abff-d5e21430611a",
