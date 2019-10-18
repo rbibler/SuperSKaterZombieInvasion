@@ -13,3 +13,6 @@ scr_MoveAndCollide();
 scr_UpdateStateAnimation(currentAnimation);
 
 // CHECK FOR STATE CHANGES
+if(currentAnimation.isDone) {
+	scr_StateSwitch(s_DEAD);
+}

@@ -44,6 +44,7 @@ deadAnim = scr_RegisterStateAnimation(
 		"",
 		sprite_get_number(spr_ExplodingSlimeballExplosion)
 	);
+hitAnim = deadAnim;
 
 currentAnimation = idleAnim;
 isImmune = true;
