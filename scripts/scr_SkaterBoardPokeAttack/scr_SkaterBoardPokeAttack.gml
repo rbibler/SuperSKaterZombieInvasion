@@ -4,17 +4,17 @@ var boardOrPoke = stateVar[0];
 if(stateNew) {
 	if(abs(xSpeed) < 0.5) {
 		scr_UpdateSkaterAnimation(boardSwingSkateAnim);
-		boardOrPoke = BOARD_SWING;
+		boardOrPoke = HIT_TYPE.BOARD;
 	} else {
 		scr_UpdateSkaterAnimation(movingAttackAnim);
-		boardOrPoke = BOARD_JOUST;
+		boardOrPoke = HIT_TYPE.BOARD_POKE;
 	}
 	ds_list_clear(boardSmacked);
 }
 isImmune = true;
 
 // Check how fast the skater should be moving
-if(boardOrPoke == BOARD_JOUST) {
+if(boardOrPoke == HIT_TYPE.BOARD_POKE) {
 	scr_SkaterHorizontalImpetus();	
 	scr_MoveAndCollide();
 }
@@ -45,7 +45,7 @@ if(scr_SkaterCheckJump()) {
 	stateToChangeTo = s_JUMPING;
 }
 
-if((input[RIGHT] or input[LEFT]) and image_index >= 3 and boardOrPoke == BOARD_SWING) {
+if((input[RIGHT] or input[LEFT]) and image_index >= 3 and boardOrPoke == HIT_TYPE.BOARD) {
 	stateToChangeTo = s_MOVING;
 }
 
@@ -59,7 +59,7 @@ if(currentAnimation.isDone) {
 
 if(stateToChangeTo >= 0) {
 	stateVar[1] = stateToChangeTo;
-	if(boardOrPoke == BOARD_SWING) {
+	if(boardOrPoke == HIT_TYPE.BOARD) {
 		scr_StateSwitch(s_FOOT_TO_SKATE);
 	} else {
 		scr_StateSwitch(stateToChangeTo);

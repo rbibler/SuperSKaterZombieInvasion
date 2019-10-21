@@ -1,7 +1,7 @@
 if(stateNew) {
 grounded = false;
-xSpeed = boardSmackSpeed * obj_skater.image_xscale;
-ySpeed = -boardSmackSpeed;
+xSpeed = flybackSpeed * obj_skater.image_xscale;
+ySpeed = -flybackSpeed;
 sprite_index = spr_slimeballJump;
 }
 

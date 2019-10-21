@@ -12,6 +12,10 @@ if(!scr_AmIVulnerable()) {
 
 scr_ReduceMyHealth(characterHealth + 1);
 
-
+if(hitType == HIT_TYPE.BOARD_POKE) {
+	flybackSpeed = abs(obj_skater.xSpeed);
+} else {
+	flybackSpeed = boardSmackSpeed;
+}
 scr_StateSwitch(s_AIRBORNE_HIT);
 
