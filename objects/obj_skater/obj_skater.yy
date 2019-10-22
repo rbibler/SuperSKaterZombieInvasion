@@ -725,7 +725,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "15",
+            "value": "10",
             "varName": "skaterAttackImmunityTimeInFrames",
             "varType": 0
         }
