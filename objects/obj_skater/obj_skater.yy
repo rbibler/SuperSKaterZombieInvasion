@@ -700,6 +700,34 @@
             "value": "6",
             "varName": "doubleJumpMeterTimeTilFull",
             "varType": 0
+        },
+        {
+            "id": "26937f78-5628-4f57-b1ec-d851fa3ff5e5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "120",
+            "varName": "skaterHitImmunityTimeInFrames",
+            "varType": 0
+        },
+        {
+            "id": "4aa0c428-5762-4051-9ab2-581fafe7183b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "15",
+            "varName": "skaterAttackImmunityTimeInFrames",
+            "varType": 0
         }
     ],
     "solid": false,

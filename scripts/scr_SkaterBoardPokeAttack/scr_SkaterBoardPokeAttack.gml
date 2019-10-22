@@ -11,7 +11,7 @@ if(stateNew) {
 	}
 	ds_list_clear(boardSmacked);
 }
-isImmune = true;
+scr_MakeMeImmune(skaterAttackImmunityTimeInFrames);
 
 // Check how fast the skater should be moving
 if(boardOrPoke == HIT_TYPE.BOARD_POKE) {

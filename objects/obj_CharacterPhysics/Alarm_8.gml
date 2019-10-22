@@ -1,3 +1,2 @@
-/// This is the Immunity alarm. When it goes off, the object loses Immunity!
-
+/// @description Immunity alarm
 isImmune = false;

@@ -4823,6 +4823,14 @@
             }
         },
         {
+            "Key": "be328cf1-423b-4fd7-bdeb-fdc4d18ca7ea",
+            "Value": {
+                "id": "860ba847-d2bb-467c-aca4-bbadd9b07ed5",
+                "resourcePath": "scripts\\scr_MakeMeImmune\\scr_MakeMeImmune.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "be6530d9-1060-4340-a233-f7d549da7207",
             "Value": {
                 "id": "052c812a-038f-47f4-8e26-0cb6ea99d9a9",
@@ -6570,6 +6578,7 @@
         "543b977a-1266-4b9a-80aa-311f000fa8d1",
         "94c27466-e1c0-4f70-8db5-7646ccf6702a",
         "587ce48a-d90f-464e-804a-b26fa2d2eba8",
+        "be328cf1-423b-4fd7-bdeb-fdc4d18ca7ea",
         "01ea4b44-cb92-4c2d-acd2-7d83f0d222db",
         "f829909d-5e29-433c-90cc-f2ab84483b4b",
         "7ad484b5-20f1-4d83-8847-e5c5603abf79",

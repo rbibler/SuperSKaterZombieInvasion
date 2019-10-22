@@ -28,8 +28,7 @@ if(didGetHurt) {
 	} else {
 		health -= hitPoints;
 	}
-	isImmune = true;
-	immuneStart = frameTimer;
+	scr_MakeMeImmune(skaterHitImmunityTimeInFrames);
 	if(health <= 0) {
 		scr_StateSwitch(s_DEAD);
 	}
