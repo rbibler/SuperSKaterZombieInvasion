@@ -11,4 +11,7 @@ scr_MoveAndCollide();
 
 // ANIMATE
 scr_UpdateStateAnimation(currentAnimation);
+with(shieldOverlayObject) {
+	scr_UpdateStateAnimation(currentAnimation);
+}
 

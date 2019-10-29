@@ -9,7 +9,10 @@
         "7c1a905a-b4f9-415e-9a10-530eeb00bd85",
         "5b22de09-8842-4d25-8846-4e2288e9ade5",
         "ba8a3b02-fdca-47c7-a632-f75e833f751d",
-        "a94f7834-8144-4b7e-87b1-a8d8da9b10d4"
+        "a94f7834-8144-4b7e-87b1-a8d8da9b10d4",
+        "627c9fdc-c8cb-4363-abbc-99315f6381a3",
+        "9f2a92a3-8a3c-49dc-9635-778b88da50a1",
+        "9b28678e-c219-4c19-94ff-430d53040bac"
     ],
     "filterType": "GMSprite",
     "folderName": "ExplodingSlimeballSprites",

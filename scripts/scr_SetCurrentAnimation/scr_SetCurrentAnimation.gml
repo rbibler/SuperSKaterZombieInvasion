@@ -13,4 +13,8 @@ currentAnimation = animation;
 currentAnimation.currentSubstate = 0;
 currentAnimation.currentIndex = 0;
 currentAnimation.isDone = false;
+if(sprite_index != currentAnimation.sprite_index)
+{
+	sprite_index = currentAnimation.sprite_index;
+}
 scr_UpdateStateAnimation(currentAnimation);

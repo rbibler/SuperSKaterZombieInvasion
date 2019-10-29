@@ -4,6 +4,8 @@ if(stateNew) {
 	scr_SetCurrentAnimation(jumpAnim);
 	ySpeed = -7;
 	grounded = false;
+	shieldValue = 0;
+	instance_destroy(shieldOverlayObject);
 }
 
 

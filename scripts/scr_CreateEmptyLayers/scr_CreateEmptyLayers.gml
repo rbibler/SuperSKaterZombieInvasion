@@ -11,3 +11,10 @@ if(!layer_exists(AMMO_LAYER)) {
 if(!layer_exists(ANIMS_LAYER)) {
 	layer_create(0, ANIMS_LAYER);
 }
+if(!layer_exists(ENEMY_OVERLAY_LAYER)) {
+	var enemyLayerDepth = 0;
+	if(layer_exists(ENEMIES_LAYER)) {
+		enemyLayerDepth = layer_get_depth(ENEMIES_LAYER);
+	}
+	layer_create(enemyLayerDepth - 1, ENEMY_OVERLAY_LAYER);
+}

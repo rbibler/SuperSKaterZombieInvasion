@@ -165,6 +165,7 @@
 #macro FOREGROUND_LAYER			"Foreground"
 #macro FOREGROUND_ENEMIES_LAYER	"ForegroundEnemies"
 #macro ENEMIES_LAYER			"Enemies"
+#macro ENEMY_OVERLAY_LAYER		"EnemyOverlay"
 #macro PLAYER_LAYER				"Player"
 #macro INTERACTIVES_LAYER		"Interactives"
 #macro BLOCKS_LAYER				"Blocks"

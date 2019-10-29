@@ -4,6 +4,8 @@ if(stateNew) {
 	scr_SetCurrentAnimation(attackAnim);
 	scr_ExplodingSlimeballSpawnProjectile();
 	myGravity = 0;
+	shieldValue = 0;
+	instance_destroy(shieldOverlayObject);
 }
 
 

@@ -8,3 +8,10 @@ scr_GeneralCheckGrounded();
 
 event_inherited();
 
+if(instance_exists(shieldOverlayObject)) {
+	with(shieldOverlayObject) {
+		x = other.x - 2;
+		y = other.y;
+	}
+}
+

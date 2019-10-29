@@ -2,6 +2,8 @@
 
 if(stateNew) {
 	scr_SetCurrentAnimation(menaceAnim);
+	shieldValue = 0;
+	instance_destroy(shieldOverlayObject);
 }
 
 

@@ -98,6 +98,14 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
             "value": "scr_ExplodingSlimeballStateDead"
+        },
+        {
+            "id": "1e3cf1a0-2f1b-4123-9c77-e605129f27f1",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "7d25bbfb-4b0f-4ccf-9712-9317f8be3452",
+            "value": "scr_ExplodingSlimeballSomethingHitMe"
         }
     ],
     "parentObjectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
