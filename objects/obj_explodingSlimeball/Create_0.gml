@@ -37,12 +37,12 @@ menaceAnim = scr_RegisterStateAnimation(
 	);
 	
 deadAnim = scr_RegisterStateAnimation(
-		spr_ExplodingSlimeballExplosion,
-		8/60,
+		spr_SlimeballHit,
+		5/60,
 		false,
 		noone,
 		"",
-		sprite_get_number(spr_ExplodingSlimeballExplosion)
+		sprite_get_number(spr_SlimeballHit)
 	);
 shieldFullAnim = scr_RegisterStateAnimation(
 		spr_ExplodingSlimeballShieldFull,

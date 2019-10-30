@@ -2,10 +2,7 @@
 
 if(stateNew) {
 	scr_SetCurrentAnimation(deadAnim);
-	myGravity = 0;
-	if(ySpeed < 0) {
-		ySpeed = -3;
-	}
+	
 }
 
 

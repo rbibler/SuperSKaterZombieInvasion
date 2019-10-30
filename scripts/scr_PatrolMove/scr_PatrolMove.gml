@@ -11,7 +11,7 @@ if(stateID == s_JUMPING) {
 if(grounded) {
 	var sideToCheck = input[RIGHT] ? bbox_right : bbox_left;
 	var middleTile = tilemap_get_at_pixel(collisionTiles, sideToCheck + xSpeed, y);
-	var downTile = tilemap_get_at_pixel(collisionTiles, sideToCheck + xSpeed, y + 2);
+	var downTile = tilemap_get_at_pixel(collisionTiles, sideToCheck + xSpeed, bbox_bottom + 2);
 	if(downTile == 0 and middleTile == 0 and !onSlope) {
 		input[LEFT] = !input[LEFT];
 		input[RIGHT] = !input[RIGHT];
