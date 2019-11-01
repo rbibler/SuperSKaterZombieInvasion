@@ -7,5 +7,6 @@ if(flashMe) {
 	} else {
 		alarm[FLASH_ALARM] = flashInterval;
 		hideMeWhenDrawing = !hideMeWhenDrawing;
+		flashCount += 0.5;
 	}
 }

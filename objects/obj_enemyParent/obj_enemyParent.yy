@@ -404,7 +404,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "50",
             "varName": "characterHealth",
             "varType": 0
         },

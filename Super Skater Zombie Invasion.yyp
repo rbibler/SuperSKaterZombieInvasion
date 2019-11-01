@@ -783,6 +783,14 @@
             }
         },
         {
+            "Key": "22031e3d-bda8-41ab-96a6-4186264dcecd",
+            "Value": {
+                "id": "141271b9-3f24-48ce-a11d-ae36f66235f7",
+                "resourcePath": "scripts\\scr_EnemyGenericDeathScript\\scr_EnemyGenericDeathScript.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "22510bb3-9235-4cb3-82a2-692b08603eb8",
             "Value": {
                 "id": "02356a31-ff28-4a64-84b4-cd32b9b8db93",
@@ -5983,6 +5991,14 @@
             }
         },
         {
+            "Key": "e93c0e76-c5d2-457f-aed8-9153665ffd03",
+            "Value": {
+                "id": "6587d414-65f4-4560-9841-d4436a4c69b5",
+                "resourcePath": "scripts\\scr_SharkStateHit\\scr_SharkStateHit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e973e7e4-0635-42f7-9c52-daad505564f4",
             "Value": {
                 "id": "9843edd4-6622-4245-8afa-a97160d552e4",
@@ -6698,6 +6714,7 @@
         "a0b03e99-76c6-43fa-ae5e-07c5c19e6f1b",
         "b4bf7b98-329b-4e35-b1c2-fed589b6f368",
         "de9a6ed9-9c49-4abf-a0b7-c4f3b052b646",
+        "e93c0e76-c5d2-457f-aed8-9153665ffd03",
         "6c6ba03d-5abd-4a67-bbd5-a12542cfd2fe",
         "7a5faf8a-794a-40a0-8da8-2e12455f212d",
         "2a53f802-bc4f-480d-9b16-e93c9eaa5932",
@@ -6735,6 +6752,7 @@
         "5d4d8ef9-bb7b-4939-bc7f-757e44500a35",
         "1a6d0408-c787-4c52-99f6-acc125a9b52a",
         "995395a0-d650-4ce7-92fb-7d2c9712595f",
+        "22031e3d-bda8-41ab-96a6-4186264dcecd",
         "a1b15312-bde7-4ba3-b3bd-baf81f23164c",
         "e5e98e88-eea2-4c19-9109-3c7f3dcc707a",
         "531373e6-4946-4241-89a3-36a6ead1c75b",

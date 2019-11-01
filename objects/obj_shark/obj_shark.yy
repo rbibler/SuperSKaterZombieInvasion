@@ -62,14 +62,6 @@
             "value": "False"
         },
         {
-            "id": "67e44b3d-37cd-4c3d-8c83-4781b9fc7150",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
-            "propertyId": "f2562049-d3c5-4f41-8099-14b2ae2adac9",
-            "value": "scr_SharkHitByAmmo"
-        },
-        {
             "id": "c53df5c8-2750-43f0-aa72-36a73a51a65d",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -115,7 +107,7 @@
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
-            "value": "scr_SharkStateDead"
+            "value": "scr_EnemyGenericDeathScript"
         },
         {
             "id": "684cf0f5-7a84-4ddc-902b-ff21af789d25",
@@ -132,6 +124,22 @@
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "54427283-bc64-40b4-bcef-3427097bb49b",
             "value": "200"
+        },
+        {
+            "id": "dbfaad72-3da4-4ef4-9021-670cc98532f3",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "8060bcb0-5315-472b-b928-b1c4a2be74af",
+            "value": "scr_SharkStateHit"
+        },
+        {
+            "id": "f8d6dab4-b2ab-4937-98bc-fbe4643bb958",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
+            "propertyId": "88a442c9-c0af-4bdf-a704-92309cae43c6",
+            "value": "10"
         }
     ],
     "parentObjectId": "a86d99fd-1017-4e75-9638-094c898c181b",
