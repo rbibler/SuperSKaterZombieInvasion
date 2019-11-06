@@ -83,7 +83,7 @@ if(scr_SkaterCheckJump()) {
 		scr_StateSwitch(s_FALLING);
 	}
 }
-
+scr_CheckForAttack();
 stateVar[0] = substate;
 stateVar[1] = lastSubstateChange;
 stateVar[2] = lastFrameChange;
