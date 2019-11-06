@@ -11,6 +11,7 @@ Bugs:
 		- Resolved: [9/16/19] Limited the inputs that are checked for tricks to only those entered since the start of the current state. 
 	- [9/19/201] Collision boxes on some animations (particularly McTwist) are bad, so skater can clip through barriers
 		- Solution: will probably have to implement a per-frame collision mask system. Probably integrate with the animation system. 
+	- [11/5/2019] Shark jump height reduced after hit
 		
 
 Feature:

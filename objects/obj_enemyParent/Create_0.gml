@@ -85,5 +85,13 @@ ds_list_add(dsHarmlessStates, s_AIRBORNE_HIT);
 ds_list_add(dsHarmlessStates, s_HIT);
 ds_list_add(dsHarmlessStates, s_DEAD);
 ds_list_add(dsHarmlessStates, s_BOARD_STRUCK);
-ds_list_add(dsHarmlessStates, s_RECOVERING);
+//ds_list_add(dsHarmlessStates, s_RECOVERING);
 
+deathAnim = scr_RegisterStateAnimation(
+	spr_SlimeballHit,
+	NORMAL_ANIM_SPEED,
+	false,
+	noone,
+	"",
+	sprite_get_number(spr_SlimeballHit)
+);

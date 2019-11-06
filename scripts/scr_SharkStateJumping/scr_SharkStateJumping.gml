@@ -2,6 +2,7 @@
 if(stateNew) {
 	stateVar[0] = 0;
 	sprite_index = spr_shark;
+	scr_StopYMotion();
 	scr_StopXMotion();
 	ySpeed = jumpSpeed;
 	gravityOn = true;

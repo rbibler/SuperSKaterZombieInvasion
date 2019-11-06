@@ -8,3 +8,4 @@ event_inherited();
 
 restY = ystart;
 startImageSpeed = image_speed;
+noCollisions = true;

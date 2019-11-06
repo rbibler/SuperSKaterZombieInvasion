@@ -82,6 +82,7 @@ collisionX = 0;
 onEdge = false;
 
 hideMeWhenDrawing = false;
+noCollisions = false;
 
 
 

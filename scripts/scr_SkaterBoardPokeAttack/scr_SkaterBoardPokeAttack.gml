@@ -9,9 +9,9 @@ if(stateNew) {
 		scr_UpdateSkaterAnimation(movingAttackAnim);
 		boardOrPoke = HIT_TYPE.BOARD_POKE;
 	}
+	isImmune = true;
 	ds_list_clear(boardSmacked);
 }
-scr_MakeMeImmune(skaterAttackImmunityTimeInFrames);
 
 // Check how fast the skater should be moving
 if(boardOrPoke == HIT_TYPE.BOARD_POKE) {
@@ -32,8 +32,12 @@ if(enemyHits > 0) {
 			ds_list_add(boardSmacked, enemy);
 			with(enemy) {
 				script_execute(enemy.hitScript, hitPoints, boardOrPoke, false);
+				
 			}
 			instance_create_layer(enemy.x, enemy.y, FOREGROUND_LAYER, obj_PowerBallStrike);
+		}
+		if(boardOrPoke == HIT_TYPE.BOARD_POKE and enemy.characterHealth > 0) {
+				scr_StopXMotion();
 		}
 	}
 }
@@ -64,7 +68,7 @@ if(stateToChangeTo >= 0) {
 	} else {
 		scr_StateSwitch(stateToChangeTo);
 	}
-	scr_SetImmunityTime(immunityTimeAfterAttack);
+	isImmune = false;
 }
 
 stateVar[0] = boardOrPoke;

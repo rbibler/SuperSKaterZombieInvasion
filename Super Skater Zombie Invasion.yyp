@@ -1823,6 +1823,14 @@
             }
         },
         {
+            "Key": "4c006c76-8a12-4904-8bc6-4d8c7abeb37f",
+            "Value": {
+                "id": "87defd0c-65aa-44e2-bf8f-2eae20b968d5",
+                "resourcePath": "rooms\\rm_world1_level21\\rm_world1_level21.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "4c1a2feb-621f-47c6-8c92-fa97f8c8d516",
             "Value": {
                 "id": "6f8fd3f7-1ccf-448c-b5dd-c3729dcf962a",
@@ -4084,6 +4092,14 @@
                 "id": "162c47f8-62af-4630-aa51-a4d600a6f630",
                 "resourcePath": "views\\a1bbb7fb-2e51-43ed-9266-e95911273f6f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a1d23586-09e2-4839-b272-22455af724b3",
+            "Value": {
+                "id": "64fdb319-84eb-4a34-b150-d68258b0690f",
+                "resourcePath": "sprites\\spr_ZombieSailorDead\\spr_ZombieSailorDead.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

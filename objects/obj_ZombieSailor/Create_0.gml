@@ -22,6 +22,16 @@ hurtAnim = scr_RegisterStateAnimation(
 	sprite_get_number(spr_ZombieSailorHurt)
 );
 
+deathAnim = scr_RegisterStateAnimation(
+	spr_ZombieSailorDead,
+	NORMAL_ANIM_SPEED,
+	false,
+	noone,
+	"",
+	sprite_get_number(spr_ZombieSailorDead)
+
+);
+
 recoveryAnim = hurtAnim;
 
 scr_SetCurrentAnimation(movingAnim);

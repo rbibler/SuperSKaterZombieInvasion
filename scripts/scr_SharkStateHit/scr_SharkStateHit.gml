@@ -2,14 +2,13 @@ if(stateNew) {
 	scr_StopXMotion();
 	scr_FlashMe(hitFlashInterval, hitFlashDuration);
 	scr_StopYMotion();
-	myGravity = 0;
+	gravityOn = false;
+	scr_AmIDead();
 }
-
-scr_MoveAndCollide();
 
 if(!flashMe) 
 {
 	scr_StateSwitch(s_FALLING);
-	myGravity = standardGravity;
+	gravityOn = true;
 	scr_AmIDead();
 }

@@ -55,7 +55,7 @@
             "mvc": "1.0",
             "objectId": "3d7b2056-82b8-4245-adf2-020b7fa8bb32",
             "propertyId": "0533c279-6e45-41ed-a49a-197ac06ede2a",
-            "value": "scr_SlimeballStateDead"
+            "value": "scr_EnemyGenericDeathScript"
         },
         {
             "id": "2fd178d6-0cb3-4ed4-859d-74d09cd25a8f",
