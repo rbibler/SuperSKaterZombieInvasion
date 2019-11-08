@@ -14,7 +14,7 @@ kickflipAnim = scr_RegisterStateAnimation(spr_SkaterTrickKickflip, FAST_ANIM_SPE
 shoveItAnim = scr_RegisterStateAnimation(spr_SkaterTrickShoveIt, FAST_ANIM_SPEED, false, noone, "SHOVE_IT", sprite_get_number(spr_SkaterTrickShoveIt));
 impossibleAnim = scr_RegisterStateAnimation(spr_SkaterTrickImpossible, FAST_ANIM_SPEED, false, noone, "IMPOSSIBLE", sprite_get_number(spr_SkaterTrickImpossible));
 mctwistAnim = scr_RegisterStateAnimation(spr_SkaterTrickMcTwist, FAST_ANIM_SPEED, false, noone, "MCTWIST", sprite_get_number(spr_SkaterTrickMcTwist));
-
+bailAnim = scr_RegisterStateAnimation(spr_SkaterBail, NORMAL_ANIM_SPEED, false, noone, "BAIL", sprite_get_number(spr_SkaterBail));
 // On Foot Animations
 runAnim = scr_RegisterStateAnimation(spr_SkaterRunning, NORMAL_ANIM_SPEED, true, noone, "RUNNING", sprite_get_number(spr_SkaterRunning));
 onFootIdleAnim = scr_RegisterStateAnimation(spr_SkaterOnFootIdle, NORMAL_ANIM_SPEED, true, noone, "OnFootIdle", sprite_get_number(spr_SkaterOnFootIdle));

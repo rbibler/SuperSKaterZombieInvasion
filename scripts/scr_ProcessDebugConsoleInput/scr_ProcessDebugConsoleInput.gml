@@ -32,6 +32,12 @@ switch(cmd) {
 	case "juice":
 		var arg = string_digits(split[1]);
 		global.juice = real(arg);
-		break;
+	break;
+	case "bail":
+		with(obj_skater) {
+			scr_StateSwitch(s_BAIL);
+			scr_StateUpdate();
+		}
+	break;
 		
 }

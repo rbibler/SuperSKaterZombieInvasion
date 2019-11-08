@@ -911,6 +911,14 @@
             }
         },
         {
+            "Key": "26a9781c-cbf5-40e1-8be8-d082635e09f5",
+            "Value": {
+                "id": "e20e5b7e-b007-44af-9ca5-b2916e7afbd0",
+                "resourcePath": "sprites\\spr_SkaterBail\\spr_SkaterBail.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "26e1c0fd-c0da-429b-a0a1-993df1aa10cb",
             "Value": {
                 "id": "54638838-537d-44ca-bbd3-f04f098bae3c",
@@ -3260,6 +3268,14 @@
                 "id": "20232f09-4458-4872-8ee6-34844af5a47e",
                 "resourcePath": "sprites\\spr_escalatorReset\\spr_escalatorReset.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "836a9440-a3c8-4969-aca5-f8faa5461891",
+            "Value": {
+                "id": "26e8d3d2-99e3-4f36-9f86-2ef6599a6a58",
+                "resourcePath": "scripts\\scr_SkaterStateBail\\scr_SkaterStateBail.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6564,6 +6580,7 @@
         "862a256b-67f8-4bb6-8429-979fb364f0f0",
         "66b4cb8f-e721-441d-8fcb-e47dd1abcf38",
         "d2c6ce09-e43d-406b-aea9-6e2346769e66",
+        "836a9440-a3c8-4969-aca5-f8faa5461891",
         "43526784-458c-47c6-a98f-2df1db5716ca",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "47c68ed6-e37c-4d6a-b55a-d3e672979ca1",

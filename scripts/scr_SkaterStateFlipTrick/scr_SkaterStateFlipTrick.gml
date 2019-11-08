@@ -24,7 +24,11 @@ scr_SkaterHorizontalImpetus();
 // If we hit the ground somehow (not likely) we should be idle. Let idle state take care of
 // skating check
 if(grounded) {
-	scr_StateSwitch(s_ROLLING);
+	if(!bonusConsumed) {
+		scr_StateSwitch(s_BAIL);
+	} else {
+		scr_StateSwitch(s_ROLLING);
+	}
 	currentTrick = NO_TRICK;
 	return;
 }

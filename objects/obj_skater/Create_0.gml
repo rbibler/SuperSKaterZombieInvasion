@@ -105,6 +105,7 @@ attackState = scr_StateCreate(s_ATTACKING, scr_SkaterBoardPokeAttack);
 
 // Trick states
 trickFlipTrickState = scr_StateCreate(s_TRICK_FLIPTRICK, scr_SkaterStateFlipTrick);
+bailState = scr_StateCreate(s_BAIL, scr_SkaterStateBail);
 
 // On Foot States
 onFootIdleState = scr_StateCreate(s_ON_FOOT_IDLE, scr_SkaterStateOnFootIdle);

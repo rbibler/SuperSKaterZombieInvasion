@@ -75,6 +75,7 @@
 #macro s_MENACING				SKATE | 0x15
 #macro s_TRICK_FLIPTRICK		SKATE | 0x16
 #macro s_JOUSTING				SKATE | 0x17
+#macro s_BAIL					SKATE | 0x18
 #macro s_ON_FOOT_IDLE			FOOT | 0x01
 #macro s_ON_FOOT_BORED			FOOT | 0x02
 #macro s_ON_FOOT_SITTING		FOOT | 0x03

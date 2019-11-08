@@ -55,16 +55,6 @@
             "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
         },
         {
-            "id": "68527364-ba3c-4b68-a2db-5c8e7997fb97",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "94c67c4f-47d8-4ad3-b4c2-c4f1ddd7a8af"
-        },
-        {
             "id": "4a23772f-a988-4d97-98ef-98ab42d0d649",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -152,6 +142,22 @@
             "objectId": "ed14a131-953f-411a-8370-232b4492166c",
             "propertyId": "26abc641-5803-47dd-828b-be5572c23118",
             "value": ".75"
+        },
+        {
+            "id": "de572ad4-7a7f-4d00-bed2-20fd73867284",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "5343f468-f688-4eb7-b2b6-982a02b7eae5",
+            "value": "10"
+        },
+        {
+            "id": "ce320606-98aa-4519-84b4-2ea9e9cfaf8f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ed14a131-953f-411a-8370-232b4492166c",
+            "propertyId": "8d1a6898-f5aa-4c33-9766-e4f80bc336c9",
+            "value": "2"
         }
     ],
     "parentObjectId": "62a3600e-7aa5-4a62-90b7-1de5e2c9c7a0",
