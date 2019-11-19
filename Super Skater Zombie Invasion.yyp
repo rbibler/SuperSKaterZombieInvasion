@@ -4087,6 +4087,14 @@
             }
         },
         {
+            "Key": "a158f3f0-dfd0-4634-a0e1-c52307815348",
+            "Value": {
+                "id": "fdc72e77-732f-4d86-9275-589bad763936",
+                "resourcePath": "scripts\\scr_SkaterHorizontalCollisionResponse\\scr_SkaterHorizontalCollisionResponse.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a15b203e-d4c7-45aa-b47c-928527241c17",
             "Value": {
                 "id": "a991b786-7dc6-477e-b6e4-b071ec8b08b3",
@@ -6584,6 +6592,7 @@
         "43526784-458c-47c6-a98f-2df1db5716ca",
         "db0fbf2a-5b09-418a-a8ab-46ec11c57cfc",
         "47c68ed6-e37c-4d6a-b55a-d3e672979ca1",
+        "a158f3f0-dfd0-4634-a0e1-c52307815348",
         "95c42c7f-858c-4f65-b5c7-f06cb49217b2",
         "959f5bf4-b192-4bbf-9fd5-188aca894eea",
         "45a221b0-3307-4128-904b-75c007450d7e",

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Shared
 {
-    class ImageSplitter
+    public class ImageSplitter
     {
         private int FrameWidth { get; }
         private int FrameHeight { get; }

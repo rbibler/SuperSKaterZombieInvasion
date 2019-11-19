@@ -21,9 +21,17 @@ if(stateNew) {
 // Check how fast the skater should be moving
 scr_SkaterHorizontalImpetus();
 
+if(horizontallyCollided) {
+	show_debug_message("Still horiz col");
+} else {
+	show_debug_message("No horiz col");
+}
+
+scr_MoveAndCollide();
+
 // If we hit the ground somehow (not likely) we should be idle. Let idle state take care of
 // skating check
-if(grounded) {
+if(grounded or horizontallyCollided) {
 	if(!bonusConsumed) {
 		scr_StateSwitch(s_BAIL);
 	} else {
@@ -33,7 +41,7 @@ if(grounded) {
 	return;
 }
 
-scr_MoveAndCollide();
+
 if(!bonusConsumed) {
 	bonusConsumed = scr_CheckForTrickBonus();
 }

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace ImageResizer
+namespace Shared
 {
     class MainModule
     {

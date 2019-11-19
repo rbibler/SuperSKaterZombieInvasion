@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace ImageResizer
+namespace Shared
 {
     class ImageResizer
     {

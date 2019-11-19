@@ -16,6 +16,8 @@ tricksSinceGrounded = 0;
 
 doubleJumpIncrement = 0;
 
+horizontallyCollided = false;
+
 /// @description Insert description here
 // You can write your code in this editor
 

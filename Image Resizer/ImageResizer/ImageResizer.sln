@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageResizer", "ImageResizer\ImageResizer.csproj", "{8E4840BB-18F3-422B-8993-A99E9EDDC1A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeightMapGenerator", "HeightMapGenerator\HeightMapGenerator.csproj", "{3B3AA082-AA33-4BAF-98AF-236B76ECC0AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{1D9679D0-D14C-4318-BB45-477A87359C6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{8E4840BB-18F3-422B-8993-A99E9EDDC1A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E4840BB-18F3-422B-8993-A99E9EDDC1A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E4840BB-18F3-422B-8993-A99E9EDDC1A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B3AA082-AA33-4BAF-98AF-236B76ECC0AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B3AA082-AA33-4BAF-98AF-236B76ECC0AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B3AA082-AA33-4BAF-98AF-236B76ECC0AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B3AA082-AA33-4BAF-98AF-236B76ECC0AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9679D0-D14C-4318-BB45-477A87359C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9679D0-D14C-4318-BB45-477A87359C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9679D0-D14C-4318-BB45-477A87359C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9679D0-D14C-4318-BB45-477A87359C6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

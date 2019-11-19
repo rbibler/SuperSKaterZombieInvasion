@@ -25,7 +25,8 @@ doubleJumpMeter += doubleJumpIncrement;
 if(doubleJumpMeter >= 100) {
 	doubleJumpMeter = 100;
 }
-
+horizontallyCollided = false;
+show_debug_message("Cleared horiz col");
 
 // Get the user's input. 
 scr_SkaterInput();
