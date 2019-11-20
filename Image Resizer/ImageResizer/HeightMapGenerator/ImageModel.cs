@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Shared;
 
 namespace HeightMapGenerator
@@ -20,6 +21,17 @@ namespace HeightMapGenerator
         {
             Image = image;
             GetImageInfo();
+        }
+
+        public string ProcessRows()
+        {
+            StringBuilder builder = new StringBuilder();
+            foreach (var row in Rows)
+            {
+                row.ProcessRow();
+                builder.Append(JsonConvert.SerializeObject(row.HeightMaps));
+            }
+            return builder.ToString();
         }
 
         private void GetImageInfo()

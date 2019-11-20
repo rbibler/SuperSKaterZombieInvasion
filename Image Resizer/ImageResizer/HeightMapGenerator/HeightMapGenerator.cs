@@ -16,6 +16,8 @@ namespace HeightMapGenerator
         public void ProcessImage()
         {
             Image = new ImageModel(ImageFileFetcher.FetchImageFromFile(ImageFile));
+            var processedImages = Image.ProcessRows();
+            StringWriter.WriteString(processedImages, "C:/users/ryan/desktop/output.txt");
 
         }
     }

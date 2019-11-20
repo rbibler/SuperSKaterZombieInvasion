@@ -10,6 +10,8 @@ namespace HeightMapGenerator
     {
         static void Main(string[] args)
         {
+            HeightMapGenerator hmg = new HeightMapGenerator("C:/users/ryan/desktop/heightmap.png");
+            hmg.ProcessImage();
         }
     }
 }

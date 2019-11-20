@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3B3AA082-AA33-4BAF-98AF-236B76ECC0AA}</ProjectGuid>
+    <ProjectGuid>{C8EC9D6E-BA42-4A42-AEB3-6F1BC8FA0262}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HeightMapGenerator</RootNamespace>
-    <AssemblyName>HeightMapGenerator</AssemblyName>
+    <RootNamespace>FrequencyChartGenerator</RootNamespace>
+    <AssemblyName>FrequencyChartGenerator</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,10 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,22 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HeightMapGenerator.cs" />
-    <Compile Include="HeightMapInfo.cs" />
-    <Compile Include="HeightMapModel.cs" />
-    <Compile Include="ImageModel.cs" />
-    <Compile Include="ImageRow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Shared\Shared.csproj">
-      <Project>{1d9679d0-d14c-4318-bb45-477a87359c6a}</Project>
-      <Name>Shared</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
