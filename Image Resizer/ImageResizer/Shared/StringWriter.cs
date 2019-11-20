@@ -11,11 +11,7 @@ namespace Shared
     {
         public static void WriteString(string stringToWrite, string filePath)
         {
-            using (var tw = new StreamWriter(filePath, true))
-            {
-                tw.WriteLine(stringToWrite);
-                tw.Close();
-            }
+            System.IO.File.WriteAllText(filePath, stringToWrite);
         }
     }
 }

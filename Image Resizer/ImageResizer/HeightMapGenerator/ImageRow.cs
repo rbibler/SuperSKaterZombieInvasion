@@ -49,14 +49,14 @@ namespace HeightMapGenerator
             var width = frame.Width;
             var height = frame.Height;
             bool[,] heightMap = new bool[width, height];
-            for (int x = 0; x < width; x++)
+            for (int y = 0; y < height; y++)
             {
-                for (int y = 0; y < height; y++)
+                for (int x = 0; x < width; x++)
                 {
                     pixel = frame.GetPixel(x, y);
                     if (pixel.A != 0)
                     {
-                        heightMap[x, y] = true;
+                        heightMap[y, x] = true;
                         var isItAnEdge = IsThisPixelAnEdge(x, y, frame);
                         if (isItAnEdge)
                         {
@@ -74,7 +74,7 @@ namespace HeightMapGenerator
                     }
                     else
                     {
-                        heightMap[x, y] = false;
+                        heightMap[y, x] = false;
                     }
                 }
                         
@@ -83,7 +83,7 @@ namespace HeightMapGenerator
             {
                 Width = width,
                 Height = height,
-                //HeightMap = heightMap,
+                HeightMap = heightMap,
                 Slope = CalculateSlope(new Point(firstX, firstY), new Point(lastX, lastY))
             };
         }
