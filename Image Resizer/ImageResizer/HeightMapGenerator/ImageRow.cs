@@ -25,13 +25,16 @@ namespace HeightMapGenerator
         {
             var splitter = new ImageSplitter(32, 32);
             var frames = splitter.SplitImage(RowImage);
+            var tileNo = RowNum * (RowImage.Width / 32);
             foreach (var frame in frames)
             {
                 using (Bitmap bmp = new Bitmap(frame))
                 {
                     if(bmp != null)
                     {
-                        HeightMaps.Add(GetHeightMapInfoForFrame(bmp));
+                        var heightMap = GetHeightMapInfoForFrame(bmp);
+                        heightMap.TileNo = tileNo++;
+                        HeightMaps.Add(heightMap);
                     }
                     
                 }
@@ -81,8 +84,6 @@ namespace HeightMapGenerator
             }
             return new HeightMapInfo()
             {
-                Width = width,
-                Height = height,
                 HeightMap = heightMap,
                 Slope = CalculateSlope(new Point(firstX, firstY), new Point(lastX, lastY))
             };

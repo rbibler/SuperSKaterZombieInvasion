@@ -1,5 +1,6 @@
 ﻿using Shared;
 using System.Drawing;
+using Newtonsoft.Json;
 
 namespace HeightMapGenerator
 {
@@ -16,8 +17,9 @@ namespace HeightMapGenerator
         public void ProcessImage()
         {
             Image = new ImageModel(ImageFileFetcher.FetchImageFromFile(ImageFile));
-            var processedImages = Image.ProcessRows();
-            StringWriter.WriteString(processedImages, "C:/users/ryan/desktop/output.txt");
+            var heightMaps = Image.ProcessRows();
+            var heightMapJson = JsonConvert.SerializeObject(heightMaps);
+            StringWriter.WriteString(heightMapJson, "C:/users/ryan/desktop/output.txt");
 
         }
     }
